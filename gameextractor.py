@@ -55,13 +55,46 @@ def extractLinks(url : str) -> None:
 
 
 
+def removeDuplicates():
+    WIKI_URL = "https://fictionalcrossover.fandom.com/wiki/"
+    with open('franchises.txt', 'r', encoding='utf-8') as file:
+        redirects : list[str] = []
+        i : int = 0
+        for line in file.readlines():
+            response : requests.Response = requests.get(WIKI_URL + line, allow_redirects=False)
+            if response.is_redirect or response.is_permanent_redirect:
+                redirects.append(line)
+            
+            i += 1
+            print(i)
+        
+        print(redirects)
+
+
+
 if __name__ == "__main__":
-    for link in LINKS:
-        extractLinks(link)
-        time.sleep(2)
+    # for link in LINKS:
+    #     extractLinks(link)
+    #     time.sleep(1)
+
+    removeDuplicates()
 
     # to clean franchises.txt
     # find and replace ".* X .*" with nothing
-    # then replace \n\n with nothing
+    # .* Commercial to remove any commercials
+    # .* promo.*
+    # .*appearances
+    # .*bumper.*
+    # .*crossover wiki.*
+    # .*[c|C]ameo.*
+    # .*reference.*
+    # .*trailer.*
+    # .*\(mascot\).*
+    # ^(.*)(\r?\n\1) \(.*\)  --> $1 to replace ShowName\nShowName (Disney)
+    # removed.txt contains ads that should be removed
+    # ^\n to remove empty lines
+    # ^(.*)(\r?\n\1)+$ to find duplicate lines
+    # need to replace ? with %3f
+
 
             
