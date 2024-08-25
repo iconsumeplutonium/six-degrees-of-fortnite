@@ -39,3 +39,23 @@ def scrape(url : str) -> list[str]:
 
 if __name__ == "__main__":
     scrape("https://fictionalcrossover.fandom.com/wiki/Minecraft#Links_to_Other_Series")
+
+
+'''
+Table game {
+  id integer [primary key]
+  name varchar
+  url varchar
+}
+
+Table links {
+  gameID integer
+  linkedID integer
+  description varchar
+  crossoverDate integer
+}
+
+Ref: game.id < links.gameID
+Ref: links.linkedID < game.id
+
+'''
