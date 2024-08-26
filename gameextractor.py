@@ -1,4 +1,4 @@
-import requests, bs4, lxml, time
+import requests, bs4, lxml, time, urllib.parse, sqlite3, argparse, re
 
 LINKS = [
     "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=%22Michael%22",
@@ -25,16 +25,17 @@ LINKS = [
     "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Two+and+a+Half+Men+X+Donkey+Kong",
     "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Wreck-It+Ralph+X+Rally-X",
 ]  
+WIKI_URL : str = "https://fictionalcrossover.fandom.com/wiki/"
 
-
-# given a text file of links to all fictionallcrossover wiki pages, it gets the names of all the pages and puts it into a text file
-# text file will need to be manually reviewed to remove the pages of stuff that isnt games (theres pages dedicated to explaining the crossover between 2 franchises)
 def sanitize(name : str) -> str:
     return name.replace("“", '"').replace("”", '"')
 
+def convertFranchiseToURL(name : str) -> str:
+    return name.strip().replace(" ", "_").replace('&', "%26").replace('?', "%3f")
+
 
 def extractLinks(url : str) -> None:
-    print(f"testing {url}")
+    print(f"Extracting: {url}")
     webpage : requests.Response = requests.get(url)
     if webpage.status_code != 200:
         print(f"ERROR: Could not reach {url}")
@@ -49,39 +50,168 @@ def extractLinks(url : str) -> None:
         franchises.append(franchiseName)
 
     
-    with open('franchises.txt', 'a', encoding='utf-8') as file:
+    with open('franchises_unfiltered.txt', 'a', encoding='utf-8') as file:
         for franchise in franchises:
             file.write(sanitize(franchise) + "\n")
 
 
+# for every franchise in franchise.txt, it sends a GET request and checks if the response is a redirect (code 301 or 302)
+def updateKnownRedirects():
+    disallowedCaptures : list[re.Pattern] = [
+        re.compile(r".* X .*"),
+        re.compile(r".*[c|C]ommercial"),
+        re.compile(r".*[p|P]romo.*"),
+        re.compile(r".*[a|A]ppearances"),
+        re.compile(r".*[b|B]umper"),
+        re.compile(r".*[c|C]rossover [w|W]iki.*"),
+        re.compile(r".*[c|C]ameo.*"),
+        re.compile(r".*[r|R]reference.*"),
+        re.compile(r".*[t|T]railer.*"),
+        re.compile(r".*[m|M]ascot.*")
+    ]
 
-def removeDuplicates():
-    WIKI_URL = "https://fictionalcrossover.fandom.com/wiki/"
-    with open('franchises.txt', 'r', encoding='utf-8') as file:
-        redirects : list[str] = []
-        i : int = 0
+    with open('franchises_unfiltered.txt', 'r', encoding='utf-8') as file:
+        with open('known_redirects.txt', 'w', encoding='utf-8') as redirectsFile:
+            i : int = 1
+            for franchise in file.readlines():
+                franchise : str = franchise.strip()
+
+                # check if it matches the regex pattern
+                matchesRegex : bool = False
+                for regex in disallowedCaptures:
+                    if regex.match(franchise) is not None:
+                        matchesRegex = True
+                        break
+                
+                if matchesRegex:
+                    print(i)
+                    i += 1
+                    continue
+                    
+                #doesnt match regex. check if redirect
+                response : requests.Response = requests.get(WIKI_URL + convertFranchiseToURL(franchise), allow_redirects=False)
+                if response.is_redirect or response.is_permanent_redirect:
+                    redirectsFile.write(franchise + '\n')
+
+                print(i, "request was made")
+                i += 1
+
+
+
+
+def filterAll():
+    # .* X .*
+    # .* Commercial
+    # .* promo.*
+    # .*appearances
+    # .*bumper.*
+    # .*crossover wiki.*
+    # .*[c|C]ameo.*
+    # .*reference.*
+    # .*trailer.*
+    # .*\(mascot\).*
+    disallowedCaptures : list[re.Pattern] = [
+        re.compile(r".* X .*"),
+        re.compile(r".*[c|C]ommercial"),
+        re.compile(r".*[p|P]romo.*"),
+        re.compile(r".*[a|A]ppearances"),
+        re.compile(r".*[b|B]umper"),
+        re.compile(r".*[c|C]rossover [w|W]iki.*"),
+        re.compile(r".*[c|C]ameo.*"),
+        re.compile(r".*[r|R]reference.*"),
+        re.compile(r".*[t|T]railer.*"),
+        re.compile(r".*[m|M]ascot.*")
+    ]
+
+    knownRedirects : set[str] = set()
+    with open('known_redirects.txt', 'r', encoding='utf-8') as redirects:
+        for redirect in redirects.readlines():
+            knownRedirects.add(redirect.strip())
+
+    miscRemovals : set[str] = set()
+    with open('misc_removals.txt', 'r', encoding='utf-8') as removals:
+        for removal in removals.readlines():
+            miscRemovals.add(removal.strip())
+
+    with open('franchises_unfiltered.txt', 'r', encoding='utf-8') as unfiltered:
+        with open('filtered_franchises.txt', 'w', encoding='utf-8') as filtered:
+            for franchise in unfiltered:
+                franchise : str = franchise.strip()
+                
+                if franchise in knownRedirects or franchise in miscRemovals:
+                    continue
+
+                matchesRegex : bool = False
+                for regex in disallowedCaptures:
+                    if regex.match(franchise) is not None:
+                        matchesRegex = True
+                        break
+                
+                if matchesRegex:
+                    continue
+
+                filtered.write(franchise + '\n')
+
+
+
+def filterFromFile():
+    duplicates = set()
+    with open('redirects.txt', 'r', encoding='utf-8') as file:
         for line in file.readlines():
-            response : requests.Response = requests.get(WIKI_URL + line, allow_redirects=False)
-            if response.is_redirect or response.is_permanent_redirect:
-                redirects.append(line)
-            
-            i += 1
-            print(i)
-        
-        print(redirects)
-
+            duplicates.add(line.strip())
+    
+    with open('uniqueFranchises.txt', 'w', encoding='utf-8') as outputFile:
+        with open('franchises.txt', 'r', encoding='utf-8') as inputFile:
+            for line in inputFile.readlines():
+                franchise : str = line.strip()
+                if franchise in duplicates:
+                    continue
+                    
+                outputFile.write(franchise + '\n')
 
 
 if __name__ == "__main__":
-    # for link in LINKS:
-    #     extractLinks(link)
-    #     time.sleep(1)
+    parser : argparse.ArgumentParser = argparse.ArgumentParser(description="stuff")
+    parser.add_argument('-e', "--extract",          action='store_true', help="Extract all webpages on fictional crossover wiki")
+    parser.add_argument('-u', "--update-redirects", action='store_true', help="Updates the list of known redirect links")
+    parser.add_argument('-f', "--filter",           action='store_true', help="Filters franchise list by removing commercials, cameos, trailers, redirects, etc.")
+    parser.add_argument('-i', "--insert",           action='store_true', help="Inserts filtered franchise list into database")
+    args : argparse.ArgumentParser = parser.parse_args()
 
-    removeDuplicates()
 
-    # to clean franchises.txt
-    # find and replace ".* X .*" with nothing
-    # .* Commercial to remove any commercials
+    # (1) Extract all pages from the All Pages section of the wiki --------------------------------------------------------------------------------------------------------------------------------
+    if args.extract:
+        for link in LINKS:
+            extractLinks(link)
+
+    # (Optional) Go through all 7000 pages of the wiki and send a request to each one to determine if it is a redirect or not, then updates known_redirects.txt -----------------------------------
+    if args.update_redirects:
+        updateKnownRedirects()
+
+    # (2) Go through franchises_unfiltered.txt and remove ads, redirects, etc ---------------------------------------------------------------------------------------------------------------------
+    if args.filter:
+        filterAll()
+
+    # (3) Insert filtered franchise list into database --------------------------------------------------------------------------------------------------------------------------------------------
+    if args.insert:
+        conn : sqlite3.Connection = sqlite3.connect('crossovers.db')
+        cursor : sqlite3.Cursor = conn.cursor()
+        query : str = "INSERT INTO game (name, url) VALUES (?, ?)"
+
+        with open('filtered_franchises.txt', 'r', encoding='utf-8') as file:
+            for line in file.readlines():
+                url : str = WIKI_URL + convertFranchiseToURL(line)
+                cursor.execute(query, (line.strip(), url))
+        
+        conn.commit()
+        conn.close()
+                
+            
+
+
+
+    # .* X .*
+    # .* Commercial
     # .* promo.*
     # .*appearances
     # .*bumper.*
@@ -91,10 +221,7 @@ if __name__ == "__main__":
     # .*trailer.*
     # .*\(mascot\).*
     # ^(.*)(\r?\n\1) \(.*\)  --> $1 to replace ShowName\nShowName (Disney)
-    # removed.txt contains ads that should be removed
+
     # ^\n to remove empty lines
     # ^(.*)(\r?\n\1)+$ to find duplicate lines
-    # need to replace ? with %3f
-
-
-            
+    # need to replace ? with %3f, & with %26
