@@ -1,4 +1,4 @@
-import requests, bs4, lxml, time, urllib.parse, sqlite3, argparse, re
+import requests, bs4, sqlite3, argparse, re
 
 LINKS = [
     "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=%22Michael%22",
@@ -50,7 +50,7 @@ def extractLinks(url : str) -> None:
         franchises.append(franchiseName)
 
     
-    with open('franchises_unfiltered.txt', 'a', encoding='utf-8') as file:
+    with open('text/franchises_unfiltered.txt', 'a', encoding='utf-8') as file:
         for franchise in franchises:
             file.write(sanitize(franchise) + "\n")
 
@@ -70,8 +70,8 @@ def updateKnownRedirects():
         re.compile(r".*[m|M]ascot.*")
     ]
 
-    with open('franchises_unfiltered.txt', 'r', encoding='utf-8') as file:
-        with open('known_redirects.txt', 'w', encoding='utf-8') as redirectsFile:
+    with open('text/franchises_unfiltered.txt', 'r', encoding='utf-8') as file:
+        with open('text/known_redirects.txt', 'w', encoding='utf-8') as redirectsFile:
             i : int = 1
             for franchise in file.readlines():
                 franchise : str = franchise.strip()
@@ -124,17 +124,17 @@ def filterAll():
     ]
 
     knownRedirects : set[str] = set()
-    with open('known_redirects.txt', 'r', encoding='utf-8') as redirects:
+    with open('text/known_redirects.txt', 'r', encoding='utf-8') as redirects:
         for redirect in redirects.readlines():
             knownRedirects.add(redirect.strip())
 
     miscRemovals : set[str] = set()
-    with open('misc_removals.txt', 'r', encoding='utf-8') as removals:
+    with open('text/misc_removals.txt', 'r', encoding='utf-8') as removals:
         for removal in removals.readlines():
             miscRemovals.add(removal.strip())
 
-    with open('franchises_unfiltered.txt', 'r', encoding='utf-8') as unfiltered:
-        with open('filtered_franchises.txt', 'w', encoding='utf-8') as filtered:
+    with open('text/franchises_unfiltered.txt', 'r', encoding='utf-8') as unfiltered:
+        with open('text/filtered_franchises.txt', 'w', encoding='utf-8') as filtered:
             for franchise in unfiltered:
                 franchise : str = franchise.strip()
                 
@@ -156,12 +156,12 @@ def filterAll():
 
 def filterFromFile():
     duplicates = set()
-    with open('redirects.txt', 'r', encoding='utf-8') as file:
+    with open('text/redirects.txt', 'r', encoding='utf-8') as file:
         for line in file.readlines():
             duplicates.add(line.strip())
     
-    with open('uniqueFranchises.txt', 'w', encoding='utf-8') as outputFile:
-        with open('franchises.txt', 'r', encoding='utf-8') as inputFile:
+    with open('text/uniqueFranchises.txt', 'w', encoding='utf-8') as outputFile:
+        with open('text/franchises.txt', 'r', encoding='utf-8') as inputFile:
             for line in inputFile.readlines():
                 franchise : str = line.strip()
                 if franchise in duplicates:
