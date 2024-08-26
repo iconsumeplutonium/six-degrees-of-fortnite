@@ -33,6 +33,23 @@ def sanitize(name : str) -> str:
 def convertFranchiseToURL(name : str) -> str:
     return name.strip().replace(" ", "_").replace('&', "%26").replace('?', "%3f")
 
+def getRedirects() -> set[str]:
+    knownRedirects : set[str] = set()
+    with open('text/known_redirects.txt', 'r', encoding='utf-8') as redirects:
+        for redirect in redirects.readlines():
+            knownRedirects.add(redirect.strip())
+    
+    return knownRedirects
+
+def getRemovals() -> set[str]:
+    miscRemovals : set[str] = set()
+    with open('text/misc_removals.txt', 'r', encoding='utf-8') as removals:
+        for removal in removals.readlines():
+            miscRemovals.add(removal.strip())
+    
+    return miscRemovals
+
+
 
 def extractLinks(url : str) -> None:
     print(f"Extracting: {url}")
@@ -100,16 +117,6 @@ def updateKnownRedirects():
 
 
 def filterAll():
-    # .* X .*
-    # .* Commercial
-    # .* promo.*
-    # .*appearances
-    # .*bumper.*
-    # .*crossover wiki.*
-    # .*[c|C]ameo.*
-    # .*reference.*
-    # .*trailer.*
-    # .*\(mascot\).*
     disallowedCaptures : list[re.Pattern] = [
         re.compile(r".* X .*"),
         re.compile(r".*[c|C]ommercial"),
@@ -123,15 +130,8 @@ def filterAll():
         re.compile(r".*[m|M]ascot.*")
     ]
 
-    knownRedirects : set[str] = set()
-    with open('text/known_redirects.txt', 'r', encoding='utf-8') as redirects:
-        for redirect in redirects.readlines():
-            knownRedirects.add(redirect.strip())
-
-    miscRemovals : set[str] = set()
-    with open('text/misc_removals.txt', 'r', encoding='utf-8') as removals:
-        for removal in removals.readlines():
-            miscRemovals.add(removal.strip())
+    knownRedirects : set[str] = getRedirects()
+    miscRemovals   : set[str] = getRemovals()
 
     with open('text/franchises_unfiltered.txt', 'r', encoding='utf-8') as unfiltered:
         with open('text/filtered_franchises.txt', 'w', encoding='utf-8') as filtered:
@@ -152,22 +152,6 @@ def filterAll():
 
                 filtered.write(franchise + '\n')
 
-
-
-def filterFromFile():
-    duplicates = set()
-    with open('text/redirects.txt', 'r', encoding='utf-8') as file:
-        for line in file.readlines():
-            duplicates.add(line.strip())
-    
-    with open('text/uniqueFranchises.txt', 'w', encoding='utf-8') as outputFile:
-        with open('text/franchises.txt', 'r', encoding='utf-8') as inputFile:
-            for line in inputFile.readlines():
-                franchise : str = line.strip()
-                if franchise in duplicates:
-                    continue
-                    
-                outputFile.write(franchise + '\n')
 
 
 if __name__ == "__main__":
