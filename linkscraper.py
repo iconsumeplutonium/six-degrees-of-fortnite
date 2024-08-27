@@ -27,7 +27,6 @@ def scrape(url : str) -> list[dict]:
         coType      : str = TDs[4].get_text().replace('a', '')
         if '3' in coType:
             continue
-        #print(coType, end=' ')
 
         arrowType   : str = TDs[0].find('a').find('img').get('alt')
         if arrowType == "Arrow R":
@@ -42,34 +41,27 @@ def scrape(url : str) -> list[dict]:
         # for each descendent tag, find an <a> tag. 
         #      if the <a> tag is of class "mw-redirect", extract the URL and send a request to follow the redirect to the original page. Use this to determine this franchise's
         #      actual name.
-        #      if no tag is fo
+        #      otherwise, just extract the string
+        # If there is no hyperlink in this tag, that means there is no associated wiki page for the given franchise, which means it will not be in the database. Skip and continue.
 
         for element in TDs[1].descendants:
-            # print(element, TDs[1].string)
-            # continue
-            if element.name == 'a':  # Check if the element is an <a> tag
-                if 'mw-redirect' in element.get('class', []):  # Check if it has the class "mw-redirect"
-                    url = element.get('href')  # Extract URL from the href attribute
+            if element.name == 'a': 
+                if 'mw-redirect' in element.get('class', []): 
+                    url = element.get('href')
                     originalURL : str = getURLAfterRedirects(URL_START + url)
                     gameName : str = utilities.convertURLtoFranchise(originalURL)
-
-                    print(f"Updated game Name: {gameName}")
                     hyperlinkedNameWasFound = True
                     break
                 else:
-                    # url : str = URL_START + element.get('href')
-                    # gameName : str = utilities.convertURLtoFranchise(url)
                     gameName = TDs[1].string
                     hyperlinkedNameWasFound = True
                     break
                     
         if not hyperlinkedNameWasFound:
             continue
-        print("\n\n")
-        gameName.replace('')
+
         description = description.replace("(see details)", "")
 
-        #print(f"Arrow type: {arrowType},    game: {gameName},    date: {date},    description: {description},      type: {coType}")
         crossovers.append({
             #"arrow": arrowType.replace(".png", "").replace("_", " "),
             "game": gameName,
