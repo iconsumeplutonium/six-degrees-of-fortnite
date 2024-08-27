@@ -179,7 +179,7 @@ if __name__ == "__main__":
         cursor : sqlite3.Cursor = conn.cursor()
         query : str = "INSERT INTO game (name, url) VALUES (?, ?)"
 
-        with open('filtered_franchises.txt', 'r', encoding='utf-8') as file:
+        with open('text/filtered_franchises.txt', 'r', encoding='utf-8') as file:
             for line in file.readlines():
                 url : str = WIKI_URL + utilities.convertFranchiseToURL(line)
                 cursor.execute(query, (line.strip(), url))

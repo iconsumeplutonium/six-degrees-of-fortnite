@@ -96,15 +96,14 @@ if __name__ == "__main__":
         urlLookup[name] = url
     
     INSERT_QUERY : str = "INSERT INTO links (gameID, COgameID, description, crossoverDate) VALUES (?, ?, ?, ?)"
-    i : int = 1
+    i : int = 0
     for franchise in franchises:
-        print("On", franchise)
-        crossovers : list[dict] = scrape("https://fictionalcrossover.fandom.com/wiki/Disney_Sorcerer%27s_Arena")#scrape(urlLookup[franchise])
+        print(f"On {i} ({franchise})")
+        crossovers : list[dict] = scrape(urlLookup[franchise])
         id : int = idLookup[franchise]
 
 
         for crossover in crossovers:
-            print(crossover, end='\n')
             if crossover["game"] not in idLookup:
                 print(f"{crossover['game']} not in known ids")
                 print(crossover)
@@ -114,9 +113,8 @@ if __name__ == "__main__":
             cursor.execute(INSERT_QUERY, (id, thisID, crossover["description"], crossover["date"]))
         
         i += 1
-        if (i == 2): break
     
-    # conn.commit()
+    conn.commit()
 
 
 
@@ -137,6 +135,13 @@ if __name__ == "__main__":
 
 # ignore any connectionst that arent 2.5 or above
 # type 3 is out-of-universe references, e.g "A character looking like Mario appears in a mini game in McPixel"
+
+
+# some good test URLs
+#"https://fictionalcrossover.fandom.com/wiki/Disney_Sorcerer%27s_Arena ---> has many redirects on page
+# https://fictionalcrossover.fandom.com/wiki/1001_Spikes               ---> has several franchises with no wiki pages
+
+
 
 '''
 Table game {
