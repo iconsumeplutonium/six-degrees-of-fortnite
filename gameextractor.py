@@ -1,4 +1,4 @@
-import requests, bs4, sqlite3, argparse, re
+import requests, bs4, sqlite3, argparse, re, utilities
 
 LINKS = [
     "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=%22Michael%22",
@@ -29,9 +29,6 @@ WIKI_URL : str = "https://fictionalcrossover.fandom.com/wiki/"
 
 def sanitize(name : str) -> str:
     return name.replace("“", '"').replace("”", '"')
-
-def convertFranchiseToURL(name : str) -> str:
-    return name.strip().replace(" ", "_").replace('&', "%26").replace('?', "%3f")
 
 def getRedirects() -> set[str]:
     knownRedirects : set[str] = set()
@@ -106,7 +103,7 @@ def updateKnownRedirects():
                     continue
                     
                 #doesnt match regex. check if redirect
-                response : requests.Response = requests.get(WIKI_URL + convertFranchiseToURL(franchise), allow_redirects=False)
+                response : requests.Response = requests.get(WIKI_URL + utilities.convertFranchiseToURL(franchise), allow_redirects=False)
                 if response.is_redirect or response.is_permanent_redirect:
                     redirectsFile.write(franchise + '\n')
 
@@ -184,7 +181,7 @@ if __name__ == "__main__":
 
         with open('filtered_franchises.txt', 'r', encoding='utf-8') as file:
             for line in file.readlines():
-                url : str = WIKI_URL + convertFranchiseToURL(line)
+                url : str = WIKI_URL + utilities.convertFranchiseToURL(line)
                 cursor.execute(query, (line.strip(), url))
         
         conn.commit()
