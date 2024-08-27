@@ -67,8 +67,6 @@ def extractLinks(url : str) -> None:
     with open('text/franchises_unfiltered.txt', 'a', encoding='utf-8') as file:
         for franchise in franchises:
             file.write(sanitize(franchise) + "\n")
-    
-        file.write("Sanford and Son\n") #not included in all pages for some reason
 
 
 # for every franchise in franchise.txt, it sends a GET request and checks if the response is a redirect (code 301 or 302)
@@ -168,6 +166,18 @@ if __name__ == "__main__":
     if args.extract:
         for link in LINKS:
             extractLinks(link)
+
+        # not included in all pages for some reason
+        missing : list[str] = [
+            "Sanford and Son",
+            "Magic Sword",
+            "Kingdom Hearts"
+        ]
+        
+        with open('text/franchises_unfiltered.txt', 'a', encoding='utf-8') as file:
+            for m in missing:
+                print(m)
+                file.write(sanitize(m) + '\n')
 
     # (Optional) Go through all 7000 pages of the wiki and send a request to each one to determine if it is a redirect or not, then updates known_redirects.txt -----------------------------------
     if args.update_redirects:

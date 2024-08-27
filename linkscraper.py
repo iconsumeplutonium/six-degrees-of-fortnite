@@ -1,6 +1,7 @@
 import requests, bs4, utilities, sqlite3, argparse, json
 
 redirectMap = None
+crossoverJSON = None
 
 def getURLAfterRedirects(url : str) -> str:
     response : requests.Response = requests.get(url, allow_redirects=True)
@@ -112,6 +113,12 @@ if __name__ == "__main__":
     with open('text/redirects.json', 'r', encoding='utf-8') as file:
         redirectMap = json.load(file)
     
+    # json representation
+    # if script crashes, it can reload data from json file instead of making requests
+    with open('text/crossovers.json', 'r', encoding='utf-8') as file:
+        crossoverJSON = json.load(file)
+
+
     INSERT_QUERY : str = "INSERT INTO links (gameID, COgameID, description, crossoverDate) VALUES (?, ?, ?, ?)"
     i : int = 1
 
@@ -123,7 +130,12 @@ if __name__ == "__main__":
                 continue
 
             print(f"On {i} ({franchise})")
-            crossovers : list[dict] = scrape(urlLookup[franchise])
+            if franchise in crossoverJSON:
+                print("pulled from cache")
+                crossovers = crossoverJSON[franchise]
+            else:
+                crossovers : list[dict] = scrape(urlLookup[franchise])
+
             id : int = idLookup[franchise]
 
             for crossover in crossovers:
@@ -135,6 +147,8 @@ if __name__ == "__main__":
                 thisID = idLookup[crossover["game"]]
                 cursor.execute(INSERT_QUERY, (id, thisID, crossover["description"], crossover["date"]))
             
+            crossoverJSON[franchise] = crossovers
+            
             i += 1
     except Exception as e:
         print("ERROR: Something went wrong")
@@ -143,7 +157,10 @@ if __name__ == "__main__":
         conn.commit()
 
         with open('text/redirects.json', 'w', encoding='utf-8') as file:
-            json.dump(redirectMap, file)
+            json.dump(redirectMap, file, indent=4)
+        
+        with open('text/crossovers.json', 'w', encoding='utf-8') as file:
+            json.dump(crossoverJSON, file, indent=4)
 
 
 
@@ -183,7 +200,7 @@ Table links {
   gameID integer
   COgameID integer
   description varchar
-  crossoverDate integer
+  crossoverDate varchar
 }
 
 Ref: game.id < links.gameID
