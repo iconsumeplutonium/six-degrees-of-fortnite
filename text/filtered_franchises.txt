@@ -104,7 +104,6 @@ Alien Hominid
 Alien Nation
 All-Star Fighters
 All My Children
-All Together Cereal
 All in the Family
 Alleyway
 Ally McBeal
@@ -158,7 +157,6 @@ Another World (NBC)
 Anpanman
 Ant-Man
 Antarctic Adventure
-Anthology rule
 Antonball
 Antz
 Any Malu
@@ -185,7 +183,6 @@ Are We There Yet?
 Are You Afraid of the Dark?
 Are You Being Served?
 Arena of Valor
-Arguable link
 Arkanoid
 Arkista's Ring
 Arknights
@@ -214,7 +211,6 @@ Assassination Classroom
 Assault Lily
 Astal
 Asterix
-Asterix & Obelix XXL 2 references
 Asteroids (Atari)
 Astral Chain
 Astro Bot
@@ -763,7 +759,6 @@ Cotton
 Cougar Town
 Counter-Strike
 Courage The Cowardly Dog
-Cover rule
 Cow and Chicken
 Cowboy Bebop
 Craig of the Creek
@@ -785,7 +780,6 @@ Creatures
 Creepy Castle
 Criminal Minds
 Croc
-Croc advertisement references
 Crooked Rot
 CrossCode
 Cross Edge
@@ -992,7 +986,6 @@ Donkey Kong
 Donkey Konga songs
 Donnie Darko
 Doodle God
-Doodle God references
 Doodle Jump
 Doogie Howser, M.D.
 Doom (ID Software)
@@ -1362,7 +1355,6 @@ Ghost in the Shell
 Ghost of Tsushima
 Ghostbusters
 Ghosthunter
-Ghosthunter references
 Ghostrunner
 Ghosts 'n Goblins
 Ghosts (TV)
@@ -1504,7 +1496,6 @@ Hamtaro
 Handy Manny
 Hang On
 Hangin' with Mr. Cooper
-Hanna-Barbera references in Scoob!
 Hannah Montana
 Hannibal Lecter
 Happy!
@@ -1684,7 +1675,6 @@ Ikki Tousen
 Illusion of Gaia
 Ilomilo
 Image Fight
-Imaginationland references
 Imagine (Ubisoft)
 Immortals Fenyx Rising
 InFamous
@@ -2203,7 +2193,6 @@ Medabots
 Medaka Box
 Medal of Honor
 MediEvil
-MediEvil: Resurrection film references
 Meego
 Meet The Spartans
 Meet the Robinsons
@@ -2717,7 +2706,6 @@ Power Instinct
 Power Pros
 Power Punch
 Power Rangers
-Power Rangers sub-series links
 Power Shovel
 Power Stone
 Predator (Fox)
@@ -2796,7 +2784,6 @@ Rad Mobile
 Radar Scope
 Rage of Bahamut
 Ragnarok (Daewon CI)
-Raiders of the Lost Arcade references
 Raimais
 Rain Shower (G&W)
 Rain World
@@ -2830,7 +2817,6 @@ Ready Player One
 Ready to Learn
 Real Account
 Real Husbands of Hollywood
-Real Life Representation rule
 Recess
 Record of Ragnarok
 Red Arremer
@@ -2973,7 +2959,6 @@ Santa Paws
 Sapo Xulé
 Sasa
 Satella-Q
-Saturday Supercade links
 Sausage Party
 Sausage Sports Club
 Savage Dragon
@@ -3266,7 +3251,6 @@ Stranger Things
 Strawberry Shortcake
 Stray
 Street Fighter
-Street Fighter V's Ring of Arcade stage references
 Streets of Fury
 Streets of Rage
 Stretch Dungeon
@@ -3806,7 +3790,6 @@ Tower of Saviors
 Toy Pop
 Toy Soldiers
 Toy Story
-Toy Story rule
 Track & Field
 Trackmania
 Transformers
@@ -3882,7 +3865,6 @@ Underhero
 Undertale
 Underwater (Fox)
 Underworld
-Undirect link
 Unfabulous
 Unicorn: Warriors Eternal
 Unikitty!
@@ -3931,8 +3913,6 @@ Video Game High School
 Video Mods
 Video Mods/Video list
 Video Violence
-Video game references in My Name Is Earl
-Videogame references in Pokémon Stadium 2
 Viewtiful Joe
 Villainous (Cartoon Network)
 Vindicators

@@ -1,4 +1,6 @@
-import requests, bs4, utilities, sqlite3
+import requests, bs4, utilities, sqlite3, argparse, json
+
+redirectMap = None
 
 def getURLAfterRedirects(url : str) -> str:
     response : requests.Response = requests.get(url, allow_redirects=True)
@@ -19,6 +21,8 @@ def scrape(url : str) -> list[dict]:
             continue
             
         TDs : bs4.ResultSet = table[i].find_all('td')
+        if len(TDs) != 5:
+            continue
         # 0: image (arrow)
         # 1: game name
         # 2: date
@@ -48,8 +52,13 @@ def scrape(url : str) -> list[dict]:
             if element.name == 'a': 
                 if 'mw-redirect' in element.get('class', []): 
                     url = element.get('href')
-                    originalURL : str = getURLAfterRedirects(URL_START + url)
-                    gameName : str = utilities.convertURLtoFranchise(originalURL)
+                    if url in redirectMap:
+                        gameName = redirectMap[url]
+                    else:
+                        originalURL : str = getURLAfterRedirects(URL_START + url)
+                        gameName : str = utilities.convertURLtoFranchise(originalURL)
+                        redirectMap[url] = gameName
+
                     hyperlinkedNameWasFound = True
                     break
                 else:
@@ -75,12 +84,15 @@ def scrape(url : str) -> list[dict]:
 
 
 if __name__ == "__main__":
-    #s = scrape("https://fictionalcrossover.fandom.com/wiki/100_Things_to_Do_Before_High_School")
-    # s = scrape("https://fictionalcrossover.fandom.com/wiki/Disney_Sorcerer%27s_Arena")
+    parser : argparse.ArgumentParser = argparse.ArgumentParser(description="stuff")
+    parser.add_argument('-s', "--start-index", type=int, default=-1, help="The index from which to continue scraping (used if script crashes in the middle)")
+    args : argparse.ArgumentParser = parser.parse_args()
+
+    startIndex : int = args.start_index
 
     idLookup = {}
     urlLookup = {}
-    franchises = []
+    franchises = [None]
     conn : sqlite3.Connection = sqlite3.connect('crossovers.db')
     cursor : sqlite3.Cursor = conn.cursor()
 
@@ -95,26 +107,43 @@ if __name__ == "__main__":
         idLookup[name] = id
         urlLookup[name] = url
     
+    with open('text/redirects.json', 'r', encoding='utf-8') as file:
+        redirectMap = json.load(file)
+    
     INSERT_QUERY : str = "INSERT INTO links (gameID, COgameID, description, crossoverDate) VALUES (?, ?, ?, ?)"
-    i : int = 0
-    for franchise in franchises:
-        print(f"On {i} ({franchise})")
-        crossovers : list[dict] = scrape(urlLookup[franchise])
-        id : int = idLookup[franchise]
+    i : int = 1
 
-
-        for crossover in crossovers:
-            if crossover["game"] not in idLookup:
-                print(f"{crossover['game']} not in known ids")
-                print(crossover)
+    try: 
+        for franchise in franchises:
+            if franchise is None: continue # skip the first one (make list indices align with SQL ids [which are 1 indexed])
+            if i < startIndex:
+                i += 1
                 continue
 
-            thisID = idLookup[crossover["game"]]
-            cursor.execute(INSERT_QUERY, (id, thisID, crossover["description"], crossover["date"]))
-        
-        i += 1
-    
-    conn.commit()
+            print(f"On {i} ({franchise})")
+            crossovers : list[dict] = scrape(urlLookup[franchise])
+            id : int = idLookup[franchise]
+
+            for crossover in crossovers:
+                if crossover["game"] not in idLookup:
+                    print(f"{crossover['game']} not in known ids")
+                    print(crossover)
+                    continue
+
+                thisID = idLookup[crossover["game"]]
+                cursor.execute(INSERT_QUERY, (id, thisID, crossover["description"], crossover["date"]))
+            
+            i += 1
+            if i == 100:
+                raise
+    except Exception as e:
+        print("ERROR: Something went wrong")
+        print(e)
+    finally:
+        conn.commit()
+
+        with open('text/redirects.json', 'w', encoding='utf-8') as file:
+            json.dump(redirectMap, file)
 
 
 
