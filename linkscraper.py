@@ -36,17 +36,13 @@ def scrape(url : str) -> list[dict]:
         date        : str = TDs[2].get_text()
         description : str = TDs[3].get_text()
 
-        # for element in TDs[1].descendants:
-        #     if element.name:  # Ensure it's a tag
-        #         if element.string:  # Check if the tag has text
-        #             gameName : str = element.string
-
         gameName = ""
         URL_START : str = "https://fictionalcrossover.fandom.com"
         hyperlinkedNameWasFound : bool = False
-        # if a crossover has no hyperlink (eg https://fictionalcrossover.fandom.com/wiki/1001_Spikes), then it will not be in the database. break and continue
-        # if a crossover has a hyperlink, check if its <a> tag has "class=mw-redirect"
-        #       if it is not a redirect,  
+        # for each descendent tag, find an <a> tag. 
+        #      if the <a> tag is of class "mw-redirect", extract the URL and send a request to follow the redirect to the original page. Use this to determine this franchise's
+        #      actual name.
+        #      if no tag is fo
 
         for element in TDs[1].descendants:
             # print(element, TDs[1].string)
@@ -61,8 +57,9 @@ def scrape(url : str) -> list[dict]:
                     hyperlinkedNameWasFound = True
                     break
                 else:
-                    url : str = URL_START + element.get('href')
-                    gameName : str = utilities.convertURLtoFranchise(url)
+                    # url : str = URL_START + element.get('href')
+                    # gameName : str = utilities.convertURLtoFranchise(url)
+                    gameName = TDs[1].string
                     hyperlinkedNameWasFound = True
                     break
                     
