@@ -69,6 +69,8 @@ def scrape(url : str) -> list[dict]:
         if not hyperlinkedNameWasFound:
             continue
 
+        gameName.replace("maimai", "Maimai") #random edge case
+
         description = description.replace("(see details)", "")
 
         crossovers.append({
@@ -134,8 +136,6 @@ if __name__ == "__main__":
                 cursor.execute(INSERT_QUERY, (id, thisID, crossover["description"], crossover["date"]))
             
             i += 1
-            if i == 100:
-                raise
     except Exception as e:
         print("ERROR: Something went wrong")
         print(e)

@@ -67,6 +67,8 @@ def extractLinks(url : str) -> None:
     with open('text/franchises_unfiltered.txt', 'a', encoding='utf-8') as file:
         for franchise in franchises:
             file.write(sanitize(franchise) + "\n")
+    
+        file.write("Sanford and Son\n") #not included in all pages for some reason
 
 
 # for every franchise in franchise.txt, it sends a GET request and checks if the response is a redirect (code 301 or 302)
