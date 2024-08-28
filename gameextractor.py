@@ -122,11 +122,10 @@ def filterAll():
         re.compile(r".*[b|B]umper"),
         re.compile(r".*[c|C]rossover [w|W]iki.*"),
         re.compile(r".*[c|C]ameo.*"),
-        re.compile(r".*[r|R]reference.*"),
+        re.compile(r".*[r|R]eference.*"),
         re.compile(r".*[t|T]railer.*"),
         re.compile(r".*[m|M]ascot.*"),
         re.compile(r".* [r|R]ule.*"),
-        re.compile(r".*[r|R]eferences.*")
     ]
 
     knownRedirects : set[str] = getRedirects()
