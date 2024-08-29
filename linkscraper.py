@@ -161,14 +161,23 @@ if __name__ == "__main__":
 
             for crossover in crossovers:
                 if crossover["game"] not in idLookup:
-                    if crossover["game"] == "Wii games":
-                        print("Wii games" in removedLinks)
                     print(f"{crossover['game']} not in known ids")
                     print(crossover)
                     continue
 
                 thisID = idLookup[crossover["game"]]
                 cursor.execute(INSERT_QUERY, (id, thisID, crossover["description"], crossover["date"]))
+                
+                #bandaid because i forgot to do this earlier
+                if franchise == "Fortnite":
+                    print(thisID, id, crossover["description"], crossover["date"])
+                    cursor.execute(INSERT_QUERY, (thisID, id, crossover["description"], crossover["date"]))
+                    crossoverJSON[crossover["game"]].append({
+                        "game": "Fortnite", 
+                        "date": crossover["date"], 
+                        "description": crossover["description"]
+                    })
+
             
             crossoverJSON[franchise] = crossovers
             
