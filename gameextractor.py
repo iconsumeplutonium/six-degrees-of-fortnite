@@ -149,6 +149,16 @@ def filterAll():
                     continue
 
                 filtered.write(franchise + '\n')
+            
+            # several franchises with " X " in the name get filtered out by the regex
+            # manually insert them back in
+            insertion : list[str] = [
+                "Daemon X Machina",
+                "Project X Zone"
+            ]
+
+            for i in insertion:
+                filtered.write(i + "\n")
 
 
 
@@ -170,7 +180,11 @@ if __name__ == "__main__":
         missing : list[str] = [
             "Sanford and Son",
             "Magic Sword",
-            "Kingdom Hearts"
+            "Kingdom Hearts",
+            "Magic: The Gathering",
+            "Magic Knight Rayearth",
+            "Billy Madison",
+            "Magi",
         ]
         
         with open('text/franchises_unfiltered.txt', 'a', encoding='utf-8') as file:

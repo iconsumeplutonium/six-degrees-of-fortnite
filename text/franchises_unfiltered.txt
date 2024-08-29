@@ -3675,6 +3675,7 @@ Lies of P
 LifeAfter
 Life Is Strange
 Light Tennis
+Like a Dragon
 Lilo & Stitch
 Lilo & Stitch X Lion King
 Lilo & Stitch X The Lion King
@@ -3792,7 +3793,6 @@ Madea
 Madeline
 Madman (Mike Allred)
 Madness
-Magi
 Magic Touch: Wizard for Hire
 Magic Tree House
 Magical Battle Arena
@@ -7824,3 +7824,7 @@ Zuma
 Sanford and Son
 Magic Sword
 Kingdom Hearts
+Magic: The Gathering
+Magic Knight Rayearth
+Billy Madison
+Magi

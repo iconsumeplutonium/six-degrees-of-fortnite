@@ -1,7 +1,8 @@
-import requests, bs4, utilities, sqlite3, argparse, json
+import requests, bs4, utilities, sqlite3, argparse, json, urllib.parse
 
 redirectMap = None
 crossoverJSON = None
+removedLinks = None
 
 def getURLAfterRedirects(url : str) -> str:
     response : requests.Response = requests.get(url, allow_redirects=True)
@@ -49,8 +50,13 @@ def scrape(url : str) -> list[dict]:
         #      otherwise, just extract the string
         # If there is no hyperlink in this tag, that means there is no associated wiki page for the given franchise, which means it will not be in the database. Skip and continue.
 
+        # https://fictionalcrossover.fandom.com/wiki/Jujutsu_Kaisen
+        # one piece link has square brackets around it ("[[One Piece]]") for some reason, which breaks the script
+        # if square brackes are found just skip the entry entirely
+        if TDs[1].string == "[[":
+            continue
+
         for element in TDs[1].descendants:
-            print(element.string)
             if element.name == 'a': 
                 if 'mw-redirect' in element.get('class', []): 
                     url = element.get('href')
@@ -71,8 +77,16 @@ def scrape(url : str) -> list[dict]:
         if not hyperlinkedNameWasFound:
             continue
         
-        print(gameName)
-        gameName.replace("maimai", "Maimai") #random edge case
+        # random edge case related to the double square bracket entries
+        if gameName is None:
+            continue
+
+        gameName = urllib.parse.unquote(gameName)
+
+        if gameName == "Wii games":
+            print("\n\n\n\n")
+        if gameName in removedLinks:
+            continue
 
         description = description.replace("(see details)", "")
 
@@ -120,49 +134,56 @@ if __name__ == "__main__":
     with open('text/crossovers.json', 'r', encoding='utf-8') as file:
         crossoverJSON = json.load(file)
 
+    # sometimes pages have links to articles that were filtered out
+    # remove them from consideration when scraping
+    with open('text/misc_removals.txt', 'r', encoding='utf-8') as file:
+        removedLinks = set([r.strip() for r in file.readlines()])
+
 
     INSERT_QUERY : str = "INSERT INTO links (gameID, COgameID, description, crossoverDate) VALUES (?, ?, ?, ?)"
     i : int = 1
 
-    #try: 
-    for franchise in franchises:
-        if franchise is None: continue # skip the first one (make list indices align with SQL ids [which are 1 indexed])
-        if i < startIndex:
-            i += 1
-            continue
-
-        print(f"On {i} ({franchise})")
-        if franchise in crossoverJSON:
-            print("pulled from cache")
-            crossovers = crossoverJSON[franchise]
-        else:
-            crossovers : list[dict] = scrape(urlLookup[franchise])
-
-        id : int = idLookup[franchise]
-
-        for crossover in crossovers:
-            if crossover["game"] not in idLookup:
-                print(f"{crossover['game']} not in known ids")
-                print(crossover)
+    try: 
+        for franchise in franchises:
+            if franchise is None: continue # skip the first one (make list indices align with SQL ids [which are 1 indexed])
+            if i < startIndex:
+                i += 1
                 continue
 
-            thisID = idLookup[crossover["game"]]
-            cursor.execute(INSERT_QUERY, (id, thisID, crossover["description"], crossover["date"]))
-        
-        crossoverJSON[franchise] = crossovers
-        
-        i += 1
-    # except Exception as e:
-    #     print("ERROR: Something went wrong")
-    #     print(e)
-    # finally:
-    #     conn.commit()
+            #print(f"On {i} ({franchise})")
+            if franchise in crossoverJSON:
+                #print("pulled from cache")
+                crossovers = crossoverJSON[franchise]
+            else:
+                crossovers : list[dict] = scrape(urlLookup[franchise])
 
-    #     with open('text/redirects.json', 'w', encoding='utf-8') as file:
-    #         json.dump(redirectMap, file, indent=4)
+            id : int = idLookup[franchise]
+
+            for crossover in crossovers:
+                if crossover["game"] not in idLookup:
+                    if crossover["game"] == "Wii games":
+                        print("Wii games" in removedLinks)
+                    print(f"{crossover['game']} not in known ids")
+                    print(crossover)
+                    continue
+
+                thisID = idLookup[crossover["game"]]
+                cursor.execute(INSERT_QUERY, (id, thisID, crossover["description"], crossover["date"]))
+            
+            crossoverJSON[franchise] = crossovers
+            
+            i += 1
+    except Exception as e:
+        print("ERROR: Something went wrong")
+        print(e)
+    finally:
+        conn.commit()
+
+        with open('text/redirects.json', 'w', encoding='utf-8') as file:
+            json.dump(redirectMap, file, indent=4)
         
-    #     with open('text/crossovers.json', 'w', encoding='utf-8') as file:
-    #         json.dump(crossoverJSON, file, indent=4)
+        with open('text/crossovers.json', 'w', encoding='utf-8') as file:
+            json.dump(crossoverJSON, file, indent=4)
 
 
 

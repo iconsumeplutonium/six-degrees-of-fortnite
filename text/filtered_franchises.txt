@@ -1927,12 +1927,10 @@ Lego Brawls
 Lego Castle
 Lego Chess
 Lego City
-Lego City/sets
 Lego City Space
 Lego Creator
 Lego Dimensions
 Lego Dino
-Lego Divers
 Lego Dreamzzz
 Lego Extreme Team
 Lego Flight
@@ -1950,8 +1948,6 @@ Lego Mars Mission
 Lego Marvel Super Heroes
 Lego Minifigures
 Lego Monster Fighters
-Lego Nautica
-Lego Outback
 Lego Paradisa
 Lego Pharaoh's Quest
 Lego Pirates
@@ -1960,7 +1956,6 @@ Lego Quest & Collect
 Lego Race
 Lego Racers
 Lego Res-Q
-Lego Rescue
 Lego Rock Raiders
 Lego Space
 Lego Space Police
@@ -1995,11 +1990,11 @@ Lies of P
 LifeAfter
 Life Is Strange
 Light Tennis
+Like a Dragon
 Lilo & Stitch
 Lily for President?
 Limbo
 Lineage
-Link
 Link's Crossbow Training
 Lion (G&W)
 Lippy The Lion and Hardy Har Har
@@ -2083,7 +2078,6 @@ Madea
 Madeline
 Madman (Mike Allred)
 Madness
-Magi
 Magic Touch: Wizard for Hire
 Magic Tree House
 Magical Battle Arena
@@ -2198,7 +2192,6 @@ Meteor Man
 Metro
 Metro-Cross
 Metroid
-Michael - PS3 Long Live Play
 Michael Jackson's Moonwalker
 Mickey Mouse
 Micronauts
@@ -2319,7 +2312,6 @@ Muppets
 Murder, She Wrote
 Murder Drones
 Murder by Numbers
-Murdered: Soul Suspect
 Murdoch Mysteries
 Murphy Brown
 Muse Dash
@@ -2720,7 +2712,6 @@ Punishing: Gray Raven
 Puppet Master
 Pure Pwnage
 Pushmo
-Pushmo Nintendo Murales
 Puss in Boots (DreamWorks)
 Putt-Putt
 Puyo Puyo
@@ -2819,7 +2810,6 @@ Riddle School
 Ridge Racer
 Ring Fit Adventure
 Rio (Blue Sky Studios)
-Rise of Nightmares
 Rising Dusk
 Risk of Rain
 Risky Business
@@ -3706,7 +3696,6 @@ Tom and Jerry
 Tomato Adventure
 Tomb Raider
 Tommy Boy
-Tommy Westphall Universe
 Tomodachi Collection
 Tomoe
 Tomorrowland
@@ -3754,7 +3743,6 @@ Trick 'r Treat
 Trigun
 Trinity Universe
 Trip World
-Tris
 Trix
 Trog (Midway)
 Trojan
@@ -3861,7 +3849,6 @@ Vermin
 Victorious
 Video Game High School
 Video Mods
-Video Mods/Video list
 Video Violence
 Viewtiful Joe
 Villainous (Cartoon Network)
@@ -3988,7 +3975,6 @@ World of (Wargaming)
 World of Goo
 Worms (Team17)
 Wreck-It Ralph
-Wreckateer
 Wrecking Crew
 WrestleQuest
 X-Men
@@ -3999,7 +3985,6 @@ X (A24)
 X (Nintendo)
 Xavier: Renegade Angel
 Xena
-Xeno (Series)
 Xenoblade
 Xenogears
 Xenosaga
@@ -4064,3 +4049,9 @@ Zuma
 Sanford and Son
 Magic Sword
 Kingdom Hearts
+Magic: The Gathering
+Magic Knight Rayearth
+Billy Madison
+Magi
+Daemon X Machina
+Project X Zone
