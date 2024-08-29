@@ -50,14 +50,29 @@ if __name__ == "__main__":
                 print("Path to fortnite found.")
 
                 path = []
-                i = franchise
-                while i != -1:
-                    print(i)
-                    path.append(i)
-                    i = predecessor.get(i)
-
+                f : int = franchise
+                while f != -1:
+                    path.append(f)
+                    f = predecessor[f]
                 path.reverse()
                 print(path)
+                print("\n", end='')
+
+                cursor.execute(f"SELECT name FROM game WHERE id = {path[0]};")
+                g1 = cursor.fetchall()[0][0]
+                print(g1)
+
+                for i in range(1, len(path)):
+                    cursor.execute(f"SELECT crossoverDate, description FROM links WHERE gameID = {path[i - 1]} AND COgameID = {path[i]};")
+                    coInfo : list[tuple] = cursor.fetchall()[0]
+                    
+                    
+                    cursor.execute(f"SELECT name FROM game WHERE id = {path[i]};")
+                    g2 = cursor.fetchall()[0][0]
+
+
+                    print(f"\n{g2} ({coInfo[0]})\n {coInfo[1]}")
+
                 exit(1)
 
             for crossover in adj[franchise]:
