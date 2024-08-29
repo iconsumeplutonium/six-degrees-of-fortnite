@@ -105,7 +105,7 @@ def scrape(url : str) -> list[dict]:
 if __name__ == "__main__":
     parser : argparse.ArgumentParser = argparse.ArgumentParser(description="stuff")
     parser.add_argument('-s', "--start-index", type=int, default=-1, help="The index from which to continue scraping (used if script crashes in the middle)")
-    args : argparse.ArgumentParser = parser.parse_args()
+    args : argparse.Namespace = parser.parse_args()
 
     startIndex : int = args.start_index
 
