@@ -47,16 +47,13 @@ if __name__ == "__main__":
         for i in range(qSize):
             franchise : int = queue.popleft()
             if franchise == 1237:
-                print("Path to fortnite found.")
-
                 path = []
                 f : int = franchise
                 while f != -1:
                     path.append(f)
                     f = predecessor[f]
                 path.reverse()
-                print(path)
-                print("\n", end='')
+                print(f"Path to Fortnite found: {path}\n")
 
                 cursor.execute(f"SELECT name FROM game WHERE id = {path[0]};")
                 g1 = cursor.fetchall()[0][0]
@@ -82,12 +79,6 @@ if __name__ == "__main__":
                 visited.add(crossover)
                 predecessor[crossover] = franchise
 
-    print("no path could be found")
-
-# star wars 3174
-
-
-
-
-
-
+    cursor.execute(f"SELECT name FROM game WHERE id = {start};")
+    name : str = cursor.fetchall()[0][0]
+    print(f"no path could be found from {name} to Fortnite")
