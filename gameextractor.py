@@ -1,29 +1,30 @@
 import requests, bs4, sqlite3, argparse, re, utilities
 
 LINKS = [
-    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=%22Michael%22",
-    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Arm+Wrestling+%28Nintendo%29+X+Punch-Out%21%21",
-    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Billy+Madison+X+Donkey+Kong",
-    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Captain+Toad",
-    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Crossroads+%28ITV%29",
-    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Dollars+Triology",
-    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Elvira",
-    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Friday+the+13th+X+MultiVersus",
-    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Gunbird+X+Mobile+Light+Force",
-    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Indiana+Jones+X+Taiko+no+Tatsujin",
-    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Kingdom+Hearts+X+Winnie+the+Pooh",
-    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Magic+Touch%3A+Wizard+for+Hire",
-    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Mario+X+Tiny+Toon+Adventures",
-    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Motoko-chan+no+Wonder+Kitchen",
-    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Octopus+X+Super+Smash+Bros.",
-    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Power+Stone+X+Legendary+Wings",
-    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Roger+Rabbit",
-    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Snow+White+and+the+Seven+Dwarfs+%28Disney%29",
-    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Sunset+Paradise",
-    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Tekken+X+Fast+and+Furious",
-    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=The+Mask+X+Mario",
-    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Two+and+a+Half+Men+X+Donkey+Kong",
-    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Wreck-It+Ralph+X+Rally-X",
+    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=%22Michael%22+-+PS3+Long+Live+Play",
+    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Arcaea",
+    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Better+Call+Saul",
+    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Cap%27n+Crunch",
+    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Core",
+    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Disney%27s+101+Dalmatians",
+    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Duck+Dodgers",
+    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Firewatch",
+    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Golden+sun",
+    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Hong+Kong+Phooey",
+    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Jump+Rope+Challenge",
+    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Lego+Outback",
+    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Mario+X+Diddy+Kong+Racing",
+    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Megaman+X+Gal%2AGun",
+    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Namco+High",
+    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Panzer+Dragoon",
+    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Punkstar",
+    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Samurai+Shodown",
+    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Soulcalibur",
+    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Super+Robot+Monkey+Team+Hyperforce+Go%21+X+Donkey+Kong",
+    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Terraria",
+    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=The+Mouse+and+the+Monster",
+    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=TwinBee",
+    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Wonder+Boy",
 ]  
 WIKI_URL : str = "https://fictionalcrossover.fandom.com/wiki/"
 
@@ -161,13 +162,19 @@ def filterAll():
                 filtered.write(i + "\n")
 
 
+# franchises_unfiltered.txt ->   list of all franchises from the wiki. includes ads, redirects, etc.
+# franchises_filtered.txt   ->   filtered list of franchises from the wiki, filtering out ads, redirects, etc.
+# misc_removals.txt         ->   list of articles that are known to be ads, redirects, etc.
+# redirects.json            ->   json representation of all known redirects. key is the name of the redirect, value is the original url
+# crossovers.json           ->   json representation of all crossovers. key is the name of the franchise, value is a list of crossovers
+
 
 if __name__ == "__main__":
     parser : argparse.ArgumentParser = argparse.ArgumentParser(description="stuff")
     parser.add_argument('-e', "--extract",          action='store_true', help="Extract all webpages on fictional crossover wiki")
     parser.add_argument('-u', "--update-redirects", action='store_true', help="Updates the list of known redirect links")
     parser.add_argument('-f', "--filter",           action='store_true', help="Filters franchise list by removing commercials, cameos, trailers, redirects, etc.")
-    parser.add_argument('-i', "--insert",           action='store_true', help="Inserts filtered franchise list into database")
+    parser.add_argument('-i', "--insert",           action='store_true', help="Inserts filtered franchise list into filtered_franchises.txt")
     args : argparse.ArgumentParser = parser.parse_args()
 
 
@@ -175,22 +182,6 @@ if __name__ == "__main__":
     if args.extract:
         for link in LINKS:
             extractLinks(link)
-
-        # not included in all pages for some reason
-        missing : list[str] = [
-            "Sanford and Son",
-            "Magic Sword",
-            "Kingdom Hearts",
-            "Magic: The Gathering",
-            "Magic Knight Rayearth",
-            "Billy Madison",
-            "Magi",
-        ]
-        
-        with open('text/franchises_unfiltered.txt', 'a', encoding='utf-8') as file:
-            for m in missing:
-                print(m)
-                file.write(sanitize(m) + '\n')
 
     # (Optional) Go through all 7000 pages of the wiki and send a request to each one to determine if it is a redirect or not, then updates known_redirects.txt -----------------------------------
     if args.update_redirects:
