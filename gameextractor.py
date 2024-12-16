@@ -1,4 +1,4 @@
-import requests, bs4, sqlite3, argparse, re, utilities
+import requests, bs4, sqlite3, argparse, re, Utilities
 
 LINKS = [
     "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=%22Michael%22+-+PS3+Long+Live+Play",
@@ -25,28 +25,7 @@ LINKS = [
     "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=The+Mouse+and+the+Monster",
     "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=TwinBee",
     "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Wonder+Boy",
-]  
-WIKI_URL : str = "https://fictionalcrossover.fandom.com/wiki/"
-
-def sanitize(name : str) -> str:
-    return name.replace("“", '"').replace("”", '"')
-
-def getRedirects() -> set[str]:
-    knownRedirects : set[str] = set()
-    with open('text/known_redirects.txt', 'r', encoding='utf-8') as redirects:
-        for redirect in redirects.readlines():
-            knownRedirects.add(redirect.strip())
-    
-    return knownRedirects
-
-def getRemovals() -> set[str]:
-    miscRemovals : set[str] = set()
-    with open('text/misc_removals.txt', 'r', encoding='utf-8') as removals:
-        for removal in removals.readlines():
-            miscRemovals.add(removal.strip())
-    
-    return miscRemovals
-
+]
 
 
 def extractLinks(url : str) -> None:
@@ -67,44 +46,18 @@ def extractLinks(url : str) -> None:
     
     with open('text/franchises_unfiltered.txt', 'a', encoding='utf-8') as file:
         for franchise in franchises:
-            file.write(sanitize(franchise) + "\n")
+            file.write(Utilities.sanitize(franchise) + "\n")
 
 
 # for every franchise in franchise.txt, it sends a GET request and checks if the response is a redirect (code 301 or 302)
 def updateKnownRedirects():
-    disallowedCaptures : list[re.Pattern] = [
-        re.compile(r".* X .*"),
-        re.compile(r".*[c|C]ommercial"),
-        re.compile(r".*[p|P]romo.*"),
-        re.compile(r".*[a|A]ppearances"),
-        re.compile(r".*[b|B]umper"),
-        re.compile(r".*[c|C]rossover [w|W]iki.*"),
-        re.compile(r".*[c|C]ameo.*"),
-        re.compile(r".*[r|R]reference.*"),
-        re.compile(r".*[t|T]railer.*"),
-        re.compile(r".*[m|M]ascot.*")
-    ]
-
-    with open('text/franchises_unfiltered.txt', 'r', encoding='utf-8') as file:
+    with open('text/franchises_unfiltered.txt', 'r', encoding='utf-8') as unfilteredFranchisesFile:
         with open('text/known_redirects.txt', 'w', encoding='utf-8') as redirectsFile:
             i : int = 1
-            for franchise in file.readlines():
+            for franchise in unfilteredFranchisesFile.readlines():
                 franchise : str = franchise.strip()
-
-                # check if it matches the regex pattern
-                matchesRegex : bool = False
-                for regex in disallowedCaptures:
-                    if regex.match(franchise) is not None:
-                        matchesRegex = True
-                        break
+                response : requests.Response = requests.get(Utilities.URL_BASE + Utilities.convertFranchiseToURL(franchise), allow_redirects=False)
                 
-                if matchesRegex:
-                    print(i)
-                    i += 1
-                    continue
-                    
-                #doesnt match regex. check if redirect
-                response : requests.Response = requests.get(WIKI_URL + utilities.convertFranchiseToURL(franchise), allow_redirects=False)
                 if response.is_redirect or response.is_permanent_redirect:
                     redirectsFile.write(franchise + '\n')
 
@@ -129,8 +82,8 @@ def filterAll():
         re.compile(r".* [r|R]ule.*"),
     ]
 
-    knownRedirects : set[str] = getRedirects()
-    miscRemovals   : set[str] = getRemovals()
+    knownRedirects : set[str] = Utilities.getRedirects()
+    miscRemovals   : set[str] = Utilities.getRemovals()
 
     with open('text/franchises_unfiltered.txt', 'r', encoding='utf-8') as unfiltered:
         with open('text/filtered_franchises.txt', 'w', encoding='utf-8') as filtered:
@@ -199,7 +152,7 @@ if __name__ == "__main__":
 
         with open('text/filtered_franchises.txt', 'r', encoding='utf-8') as file:
             for line in file.readlines():
-                url : str = WIKI_URL + utilities.convertFranchiseToURL(line)
+                url : str = Utilities.URL_BASE + Utilities.convertFranchiseToURL(line)
                 cursor.execute(query, (line.strip(), url))
         
         conn.commit()

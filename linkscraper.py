@@ -1,4 +1,4 @@
-import requests, bs4, utilities, sqlite3, argparse, json, urllib.parse
+import requests, bs4, Utilities, sqlite3, argparse, json, urllib.parse
 
 redirectMap = None
 crossoverJSON = None
@@ -64,7 +64,7 @@ def scrape(url : str) -> list[dict]:
                         gameName = redirectMap[url]
                     else:
                         originalURL : str = getURLAfterRedirects(URL_START + url)
-                        gameName : str = utilities.convertURLtoFranchise(originalURL)
+                        gameName : str = Utilities.convertURLtoFranchise(originalURL)
                         redirectMap[url] = gameName
 
                     hyperlinkedNameWasFound = True
