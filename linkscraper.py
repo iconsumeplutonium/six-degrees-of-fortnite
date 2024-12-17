@@ -23,6 +23,7 @@ def scrape(url : str) -> list[dict]:
             continue
             
         TDs : bs4.ResultSet = table[i].find_all('td')
+
         if len(TDs) != 5:
             continue
         # 0: image (arrow)
@@ -30,63 +31,64 @@ def scrape(url : str) -> list[dict]:
         # 2: date
         # 3: description
         # 4: crossover type
-        coType      : str = TDs[4].get_text().replace('a', '')
-        if '3' in coType:
-            continue
 
-        arrowType   : str = TDs[0].find('a').find('img').get('alt')
-        if arrowType == "Arrow R":
-            continue
+        # crossover type: 1, 2, 3, (sometimes 1.5, 2.5, etc)
+        linkType: str = TDs[4].get_text().replace('a', '')
 
+        # arrow type: Left, Right, Left & Right, Double Left, Double Right, Dash
+        crossoverDirection: str = TDs[0].find('a').find('img').get('alt')
+
+        # date and description
         date        : str = TDs[2].get_text()
         description : str = TDs[3].get_text()
 
-        gameName = ""
+        gameName = None
         URL_START : str = "https://fictionalcrossover.fandom.com"
-        hyperlinkedNameWasFound : bool = False
-        # for each descendent tag, find an <a> tag. 
-        #      if the <a> tag is of class "mw-redirect", extract the URL and send a request to follow the redirect to the original page. Use this to determine this franchise's
-        #      actual name.
-        #      otherwise, just extract the string
-        # If there is no hyperlink in this tag, that means there is no associated wiki page for the given franchise, which means it will not be in the database. Skip and continue.
 
         # https://fictionalcrossover.fandom.com/wiki/Jujutsu_Kaisen
         # one piece link has square brackets around it ("[[One Piece]]") for some reason, which breaks the script
         # if square brackes are found just skip the entry entirely
-        if TDs[1].string == "[[":
-            continue
+        # if TDs[1].string == "[[":
+        #     continue
 
+        # for TDs[1] (the name of the franchise this one references), find a descendant <a> tag
+        # if the <a> tag is of class "mw-redirect", extract the URL and send a request to follow the redirect to the original page. 
+        # Use this to determine this franchise's actual name. otherwise, just extract the string
+        # If there is no hyperlink in this tag, that means there is no associated wiki page for the given franchise, which means it will not be in the database. Skip and continue.
         for element in TDs[1].descendants:
-            if element.name == 'a': 
-                if 'mw-redirect' in element.get('class', []): 
-                    url = element.get('href')
-                    if url in redirectMap:
-                        gameName = redirectMap[url]
-                    else:
-                        originalURL : str = getURLAfterRedirects(URL_START + url)
-                        gameName : str = Utilities.convertURLtoFranchise(originalURL)
-                        redirectMap[url] = gameName
+            if element.name != 'a': continue
 
-                    hyperlinkedNameWasFound = True
-                    break
+            # sometimes, a crossover is listed in the table, but it is crossed out (but not removed for some reason)
+            # ignore this tag if it is a child of an <s> tag
+            if element.find_parent('s'): continue
+
+            if 'mw-redirect' in element.get('class', []): 
+                url: str = element.get('href')
+                # if we know where this url redirects to, use that instead of making a new request
+                if url in redirectMap:
+                    gameName: str = redirectMap[url]
                 else:
-                    gameName = TDs[1].string
-                    hyperlinkedNameWasFound = True
-                    break
+                    originalURL : str = getURLAfterRedirects(URL_START + url)
+                    gameName : str = Utilities.convertURLtoFranchise(originalURL)
+                    redirectMap[url] = gameName
+            else:
+                gameName: str = TDs[1].string
+            
+            break
                     
-        if not hyperlinkedNameWasFound:
-            continue
+        if gameName is None: continue
         
         # random edge case related to the double square bracket entries
-        if gameName is None:
-            continue
+        # if gameName is None:
+        #     continue
 
-        gameName = urllib.parse.unquote(gameName)
+        gameName: str = str(urllib.parse.unquote(gameName))
 
-        if gameName == "Wii games":
-            print("\n\n\n\n")
-        if gameName in removedLinks:
-            continue
+        if gameName in removedLinks: continue
+
+        # random edge case: first letter of these articles need to be capitalized to match wiki article
+        if gameName in set(["maimai", "asdfmovie", "eFootball", "normalman"]):
+            gameName = gameName[0].upper() + gameName[1:]
 
         description = description.replace("(see details)", "")
 
@@ -95,22 +97,24 @@ def scrape(url : str) -> list[dict]:
             "game": gameName,
             "date": ' '.join(date.split(' ')[1:]),
             "description": description,
-            #"type": coType.strip()
+            "linkType": float(linkType.strip())
         })
-    
+
     return crossovers
 
 
 
 if __name__ == "__main__":
-    parser : argparse.ArgumentParser = argparse.ArgumentParser(description="stuff")
+    parser: argparse.ArgumentParser = argparse.ArgumentParser(description="stuff")
     parser.add_argument('-s', "--start-index", type=int, default=-1, help="The index from which to continue scraping (used if script crashes in the middle)")
-    args : argparse.Namespace = parser.parse_args()
+    args: argparse.Namespace = parser.parse_args()
 
     startIndex : int = args.start_index
 
-    idLookup = {}
-    urlLookup = {}
+    # idLookup maps franchise name to its id in the database
+    # urlLookup maps franchise name to its wiki url
+    idLookup: dict = {}
+    urlLookup: dict = {}
     franchises = [None]
     conn : sqlite3.Connection = sqlite3.connect('crossovers.db')
     cursor : sqlite3.Cursor = conn.cursor()
@@ -130,7 +134,7 @@ if __name__ == "__main__":
         redirectMap = json.load(file)
     
     # json representation
-    # if script crashes, it can reload data from json file instead of making requests
+    # if script crashes, it can reload data from local json file cache instead of making requests from the beginning again
     with open('text/crossovers.json', 'r', encoding='utf-8') as file:
         crossoverJSON = json.load(file)
 
@@ -140,7 +144,7 @@ if __name__ == "__main__":
         removedLinks = set([r.strip() for r in file.readlines()])
 
 
-    INSERT_QUERY : str = "INSERT INTO links (gameID, COgameID, description, crossoverDate) VALUES (?, ?, ?, ?)"
+    INSERT_QUERY : str = "INSERT INTO links (gameID, COgameID, description, crossoverDate, linkType) VALUES (?, ?, ?, ?, ?)"
     i : int = 1
 
     try: 
@@ -150,9 +154,11 @@ if __name__ == "__main__":
                 i += 1
                 continue
 
-            #print(f"On {i} ({franchise})")
+            print(f"Scraping {franchise} ({i}/{len(franchises)})")
+
+            # pull crossover data from cache if present in json file
+            # otherwise, scrape its wiki page
             if franchise in crossoverJSON:
-                #print("pulled from cache")
                 crossovers = crossoverJSON[franchise]
             else:
                 crossovers : list[dict] = scrape(urlLookup[franchise])
@@ -161,22 +167,22 @@ if __name__ == "__main__":
 
             for crossover in crossovers:
                 if crossover["game"] not in idLookup:
-                    print(f"{crossover['game']} not in known ids")
-                    print(crossover)
-                    continue
+                    raise Exception(f"{crossover['game']} not in known ids. Full data is as follows:\n {crossover}")
 
                 thisID = idLookup[crossover["game"]]
-                cursor.execute(INSERT_QUERY, (id, thisID, crossover["description"], crossover["date"]))
+                cursor.execute(INSERT_QUERY, (id, thisID, crossover["description"], crossover["date"], crossover["linkType"]))
                 
                 #bandaid because i forgot to do this earlier
-                if franchise == "Fortnite":
-                    print(thisID, id, crossover["description"], crossover["date"])
-                    cursor.execute(INSERT_QUERY, (thisID, id, crossover["description"], crossover["date"]))
-                    crossoverJSON[crossover["game"]].append({
-                        "game": "Fortnite", 
-                        "date": crossover["date"], 
-                        "description": crossover["description"]
-                    })
+                #add links from other games into fortnite? idk why this is needed
+                #todo: have this include link type (1, 2, 2.5, etc)
+                # if franchise == "Fortnite":
+                #     print(thisID, id, crossover["description"], crossover["date"])
+                #     cursor.execute(INSERT_QUERY, (thisID, id, crossover["description"], crossover["date"]))
+                #     crossoverJSON[crossover["game"]].append({
+                #         "game": "Fortnite", 
+                #         "date": crossover["date"], 
+                #         "description": crossover["description"]
+                #     })
 
             
             crossoverJSON[franchise] = crossovers

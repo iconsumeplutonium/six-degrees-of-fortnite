@@ -1,51 +1,29 @@
-import requests, bs4, sqlite3, argparse, re, Utilities
+import requests, bs4, sqlite3, argparse, re, Utilities, json
 
-LINKS = [
-    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=%22Michael%22+-+PS3+Long+Live+Play",
-    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Arcaea",
-    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Better+Call+Saul",
-    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Cap%27n+Crunch",
-    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Core",
-    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Disney%27s+101+Dalmatians",
-    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Duck+Dodgers",
-    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Firewatch",
-    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Golden+sun",
-    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Hong+Kong+Phooey",
-    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Jump+Rope+Challenge",
-    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Lego+Outback",
-    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Mario+X+Diddy+Kong+Racing",
-    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Megaman+X+Gal%2AGun",
-    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Namco+High",
-    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Panzer+Dragoon",
-    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Punkstar",
-    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Samurai+Shodown",
-    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Soulcalibur",
-    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Super+Robot+Monkey+Team+Hyperforce+Go%21+X+Donkey+Kong",
-    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Terraria",
-    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=The+Mouse+and+the+Monster",
-    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=TwinBee",
-    "https://fictionalcrossover.fandom.com/wiki/Special:AllPages?from=Wonder+Boy",
-]
+ALL_PAGES_API = "https://fictionalcrossover.fandom.com/api.php?action=query&list=allpages&aplimit=max&format=json"
 
-
-def extractLinks(url : str) -> None:
-    print(f"Extracting: {url}")
-    webpage : requests.Response = requests.get(url)
-    if webpage.status_code != 200:
-        print(f"ERROR: Could not reach {url}")
-        
+# call API to get all articles
+def extractLinks() -> None:
+    allArticles: list[str] = []
+    url: str = str(ALL_PAGES_API)
     
-    soup : bs4.BeautifulSoup = bs4.BeautifulSoup(webpage.content, 'lxml')
-    div : bs4.NavigableString = soup.find("ul", class_="mw-allpages-chunk").find_all("li")
+    # api paginates the Special:AllPages article (500 max per page), so we loop until there is no continue parameter
+    while url:
+        response: requests.Response = requests.get(url)
+        data: dict = response.json()
 
-    franchises = []
-    for li in div:
-        franchiseName : str = li.find('a').get_text()
-        franchises.append(franchiseName)
+        if 'query' in data:
+            for page in data['query']['allpages']:
+                allArticles.append(page['title'])
+        
+        if 'continue' in data:
+            url = ALL_PAGES_API + f"&apcontinue={data['continue']['apcontinue']}"
+        else:
+            break
 
     
     with open('text/franchises_unfiltered.txt', 'a', encoding='utf-8') as file:
-        for franchise in franchises:
+        for franchise in allArticles:
             file.write(Utilities.sanitize(franchise) + "\n")
 
 
@@ -133,8 +111,7 @@ if __name__ == "__main__":
 
     # (1) Extract all pages from the All Pages section of the wiki --------------------------------------------------------------------------------------------------------------------------------
     if args.extract:
-        for link in LINKS:
-            extractLinks(link)
+        extractLinks()
 
     # (Optional) Go through all 7000 pages of the wiki and send a request to each one to determine if it is a redirect or not, then updates known_redirects.txt -----------------------------------
     if args.update_redirects:

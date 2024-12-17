@@ -2496,6 +2496,7 @@ Fox and the Crow (Columbia)
 Fox and the Hound
 Fraggle Rock
 Fraidy Cat
+Fran Bow
 Frank Bruno's Boxing
 Frank Bruno's Boxing X Punch-Out!!
 Frankenstein (Universal)
@@ -5408,6 +5409,7 @@ Portal X X-Men
 Postal
 Postman Pat
 Pot of Gold Pinball
+Potion Craft
 Pou
 PowerWash Simulator
 Power Drift
@@ -5615,6 +5617,7 @@ Ralph (Disney)
 Rambo
 Rammie (Mascot)
 Rampage
+Random Encounters
 Randy Cunningham: 9th Grade Ninja
 Rango
 Ranma ½
