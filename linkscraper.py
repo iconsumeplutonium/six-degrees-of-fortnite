@@ -33,7 +33,9 @@ def scrape(url : str) -> list[dict]:
         # 4: crossover type
 
         # crossover type: 1, 2, 3, (sometimes 1.5, 2.5, etc)
-        linkType: str = TDs[4].get_text().replace('a', '')
+        # Dead or Alive has a 2.5 crossover with The Dangers in my Heart, listed as a 2.5a crossover. However, the HTML structure has a hidden
+        # ".25" in a <span> tag with display:none. This fucks it up. Just remove the ".25" from the string
+        linkType: str = TDs[4].get_text().replace('a', '').replace('.25', '') 
 
         # arrow type: Left, Right, Left & Right, Double Left, Double Right, Dash
         crossoverDirection: str = TDs[0].find('a').find('img').get('alt')
@@ -55,6 +57,9 @@ def scrape(url : str) -> list[dict]:
         # if the <a> tag is of class "mw-redirect", extract the URL and send a request to follow the redirect to the original page. 
         # Use this to determine this franchise's actual name. otherwise, just extract the string
         # If there is no hyperlink in this tag, that means there is no associated wiki page for the given franchise, which means it will not be in the database. Skip and continue.
+        
+        # Note: This code will also ignore links to articles that dont exist (e.g red links on Crash Bandicoot). Despite what the fandom webpage html says in the browser,
+        # links to articles that don't exist are stored as a <span> tag not an <a> tag, conveniently.
         for element in TDs[1].descendants:
             if element.name != 'a': continue
 
@@ -87,18 +92,21 @@ def scrape(url : str) -> list[dict]:
         if gameName in removedLinks: continue
 
         # random edge case: first letter of these articles need to be capitalized to match wiki article
-        if gameName in set(["maimai", "asdfmovie", "eFootball", "normalman"]):
+        if gameName in set(["maimai", "asdfmovie", "eFootball", "normalman", "iCarly"]):
             gameName = gameName[0].upper() + gameName[1:]
 
         description = description.replace("(see details)", "")
 
         crossovers.append({
             #"arrow": arrowType.replace(".png", "").replace("_", " "),
-            "game": gameName,
+            "game": gameName.strip(),
             "date": ' '.join(date.split(' ')[1:]),
             "description": description,
             "linkType": float(linkType.strip())
         })
+
+    # print(crossovers)
+    # exit(0)
 
     return crossovers
 

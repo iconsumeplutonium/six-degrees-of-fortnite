@@ -62,6 +62,7 @@ def filterAll():
 
     knownRedirects : set[str] = Utilities.getRedirects()
     miscRemovals   : set[str] = Utilities.getRemovals()
+    removalsWasUpdated : bool = False
 
     with open('text/franchises_unfiltered.txt', 'r', encoding='utf-8') as unfiltered:
         with open('text/filtered_franchises.txt', 'w', encoding='utf-8') as filtered:
@@ -78,6 +79,8 @@ def filterAll():
                         break
                 
                 if matchesRegex:
+                    miscRemovals.add(franchise)
+                    removalsWasUpdated = True
                     continue
 
                 filtered.write(franchise + '\n')
@@ -91,6 +94,11 @@ def filterAll():
 
             for i in insertion:
                 filtered.write(i + "\n")
+    
+    if removalsWasUpdated:
+        with open('text/misc_removals.txt', 'w', encoding='utf-8') as removals:
+            for removal in miscRemovals:
+                removals.write(removal + '\n')
 
 
 # franchises_unfiltered.txt ->   list of all franchises from the wiki. includes ads, redirects, etc.
