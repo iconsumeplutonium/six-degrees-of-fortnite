@@ -69,6 +69,7 @@ def scrape(url : str) -> list[dict]:
 
             if 'mw-redirect' in element.get('class', []): 
                 url: str = element.get('href')
+
                 # if we know where this url redirects to, use that instead of making a new request
                 if url in redirectMap:
                     gameName: str = redirectMap[url]
@@ -88,8 +89,11 @@ def scrape(url : str) -> list[dict]:
         #     continue
 
         gameName: str = str(urllib.parse.unquote(gameName))
-
         if gameName in removedLinks: continue
+
+        # these franchises just link to the "Shonen Jump covers" article, which is just an article about a magazone cover. skip it.
+        # see One Piece article for examples
+        if gameName in set(["Hard-Boiled Cop and Dolphin", "High School Family"]): continue
 
         # random edge case: first letter of these articles need to be capitalized to match wiki article
         if gameName in set(["maimai", "asdfmovie", "eFootball", "normalman", "iCarly"]):
