@@ -2825,7 +2825,6 @@ Pou
 PowerWash Simulator
 Power Drift
 Power Instinct
-Power Lords
 Power Pros
 Power Punch
 Power Rangers
@@ -2876,7 +2875,6 @@ Punch Punch Forever
 Punishing: Gray Raven
 Punk Rock Holocaust
 Punkstar
-Puppet Aid
 Puppet Master
 Pure Pwnage
 Pushmo
@@ -2907,7 +2905,6 @@ RESEARCH and DESTROY
 RPG World
 RWBY
 Rabbids
-Race Across Yorkshire
 Rad Mobile
 Rad Rodgers
 Radar Scope
@@ -3002,7 +2999,6 @@ Robin Hood (Disney)
 Roblox
 RoboCop
 Robo Army
-Robo Force
 Robot Chicken
 Robot Odyssey
 Robotron
@@ -3037,7 +3033,6 @@ Rotaeno
 Rover Dangerfield
 Royal Crackers
 Royal Pride
-Rubbadubbers
 Rubble Trouble
 Rude Dog
 Rudolph the Red-Nosed Reindeer
@@ -3049,7 +3044,6 @@ Runbow
 RuneScape
 Rune (Malibu Comics)
 Rune Factory
-Running to the Moon for a Banquet
 Rurouni Kenshin
 Rust Bucket
 Rusty's Real Deal Baseball
@@ -3138,7 +3132,6 @@ Secret Life of Toys
 Secret Mountain Fort Awesome
 Secret Squirrel
 Secret of Evermore
-Sectaurs
 Section Z
 Seer
 Sega Hard Girls
@@ -3168,7 +3161,6 @@ Shadow Warrior
 Shadow of the Colossus
 Shadow the Hedgehog
 Shadowverse
-Shaggy Dog Story
 Shake It Up
 Shakugan no Shana
 Shaman King
@@ -3546,7 +3538,6 @@ Tenchu
 Tenmaku Cinema
 Tennis (Nintendo)
 Terminator
-Terrahawks
 Terranigma
 Terraria
 Terrifier
@@ -3686,7 +3677,6 @@ The Good Fight
 The Good Place
 The Good Wife
 The Goodies
-The Great Garloo
 The Great Gatsby
 The Green Hornet
 The Grid (Midway)
@@ -3733,7 +3723,6 @@ The Last Guardian
 The Last Of Us
 The Last Unicorn
 The Lawnmower Man
-The League of Gentlemen
 The Legend of Heroes
 The Legend of Isis (Blue Water Comics)
 The Legend of Kage
@@ -3781,7 +3770,6 @@ The Next Penelope
 The Nightmare Before Christmas
 The Ninja Kids
 The Office
-The Official BBC Children in Need Medley
 The Orange Box
 The Order: 1886
 The Owl House
@@ -4173,7 +4161,6 @@ Warped Kart Racers
 Warriors (Koei)
 Watch Dogs
 Watchmen
-Waterloo Road
 Waterworld
 Wave Race
 Wayne's World

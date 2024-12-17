@@ -1,3 +1,5 @@
+import signal
+
 import requests, bs4, Utilities, sqlite3, argparse, json, urllib.parse
 
 redirectMap = None
@@ -87,7 +89,6 @@ def scrape(url : str) -> list[dict]:
         # random edge case related to the double square bracket entries
         # if gameName is None:
         #     continue
-
         gameName: str = str(urllib.parse.unquote(gameName))
         if gameName in removedLinks: continue
 
@@ -96,8 +97,16 @@ def scrape(url : str) -> list[dict]:
         if gameName in set(["Hard-Boiled Cop and Dolphin", "High School Family"]): continue
 
         # random edge case: first letter of these articles need to be capitalized to match wiki article
-        if gameName in set(["maimai", "asdfmovie", "eFootball", "normalman", "iCarly"]):
+        if gameName in set(["maimai", "asdfmovie", "eFootball", "normalman", "iCarly", "ilomilo", "bit Generations"]):
             gameName = gameName[0].upper() + gameName[1:]
+
+        # "Malcolm in the Middle" has two spaces between "in" and "the" in the Powerpuff Girls article for some reason
+        if gameName == "Malcolm in  the Middle":
+            gameName = "Malcolm in the Middle"
+        
+        # "Journey (Thatgamecompany)" has two spaces in The Unfinished Swan article for some reason
+        if gameName == "Journey  (Thatgamecompany)":
+            gameName = "Journey (Thatgamecompany)"
 
         description = description.replace("(see details)", "")
 
@@ -115,8 +124,20 @@ def scrape(url : str) -> list[dict]:
     return crossovers
 
 
+def signal_handler(sig, frame):
+    print("\nGracefully shutting down...")
+    conn.commit()
+    conn.close()
+    with open('text/redirects.json', 'w', encoding='utf-8') as file:
+        json.dump(redirectMap, file, indent=4)
+    with open('text/crossovers.json', 'w', encoding='utf-8') as file:
+        json.dump(crossoverJSON, file, indent=4)
+    exit(0)
+
 
 if __name__ == "__main__":
+    signal.signal(signal.SIGINT, signal_handler)
+
     parser: argparse.ArgumentParser = argparse.ArgumentParser(description="stuff")
     parser.add_argument('-s', "--start-index", type=int, default=-1, help="The index from which to continue scraping (used if script crashes in the middle)")
     args: argparse.Namespace = parser.parse_args()
@@ -204,16 +225,17 @@ if __name__ == "__main__":
         print("ERROR: Something went wrong")
         print(e)
     finally:
-        conn.commit()
+        # errors if the script was killed with control c
+        try:
+            conn.commit()
+        except Exception as e:
+            pass
 
         with open('text/redirects.json', 'w', encoding='utf-8') as file:
             json.dump(redirectMap, file, indent=4)
         
         with open('text/crossovers.json', 'w', encoding='utf-8') as file:
             json.dump(crossoverJSON, file, indent=4)
-
-
-
 
 
 
