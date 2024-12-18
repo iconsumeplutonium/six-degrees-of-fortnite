@@ -1,8 +1,9 @@
-import sqlite3, argparse
+import sqlite3, argparse, json
 from collections import deque, defaultdict
 from typing import DefaultDict, List, Set, Deque, Dict
 
 paths = []
+FORTNITE = 1311
 
 def dfs(start : int, adj : DefaultDict[int, list[int]], currentPath : list[int], visited = None):
     if visited is None:
@@ -58,37 +59,46 @@ def bfs(adj):
 if __name__ == "__main__":
     parser : argparse.ArgumentParser = argparse.ArgumentParser(description="connects franchise")
     parser.add_argument("-s", "--start", type=int, help="The franchise to start from")
-    args : argparse.Namespace = parser.parse_args() 
+    parser.add_argument("-l", "--min-link", type=int, help="The minimum link type to consider as a valid path")
+    args : argparse.Namespace = parser.parse_args()
+
 
     if not args.start:
         print("Error: start is required")
 
-    start : int = args.start 
+    start: int = args.start
+    minLinkType: int = args.min_link if args.min_link else float('inf')
 
     conn : sqlite3.Connection = sqlite3.connect('crossovers.db')
     cursor : sqlite3.Cursor = conn.cursor()
 
     # create a dictionary for easy franchise ID lookup
-    idLookup : dict = {}
+    idFromName: dict = {}
+    nameFromID: dict = {}
     cursor.execute("SELECT id, name, url FROM game;")
     rows = cursor.fetchall()
     for row in rows:
         id   : int = row[0]
         name : str = row[1]
 
-        idLookup[name] = id
+        idFromName[name] = id
+        nameFromID[id] = name
 
     # create an adjacency list representation of all crossovers
-    adj : DefaultDict[int, List[int]] = defaultdict(list)
-    cursor.execute("SELECT gameID, COgameID FROM links;")
-    rows = cursor.fetchall()
-    for row in rows:
-        adj[row[0]].append(row[1])
+    # adj : DefaultDict[int, List[int]] = defaultdict(list)
+    # cursor.execute("SELECT gameID, COgameID FROM links;")
+    # rows = cursor.fetchall()
+    # for row in rows:
+    #     adj[row[0]].append(row[1])
+    with open('text/crossovers.json', 'r') as crossoverJSON:
+        adj: dict = json.load(crossoverJSON)
 
 
-    queue : Deque[int] = deque()
-    visited : Set[int] = set()
-    predecessor : Dict[int, int] = dict()
+    queue: Deque[int] = deque()
+    visited: Set[int] = set()
+    predecessor: Dict[int, int] = {
+        start: -1
+    }
     #queue.append(idLookup[start])
 
     queue.append(start)
@@ -96,6 +106,8 @@ if __name__ == "__main__":
     visited.add(start)
 
     #bfs(adj)
+
+    print(predecessor)
 
     useMultiplePaths : bool = False
     if useMultiplePaths:
@@ -125,10 +137,10 @@ if __name__ == "__main__":
             while (len(queue) > 0):
                 qSize : int = len(queue)
                 for i in range(qSize):
-                    franchise : int = queue.popleft()
-                    if franchise == 1237:
+                    franchiseID : int = queue.popleft()
+                    if franchiseID == 1237:
                         p = []
-                        f : int = franchise
+                        f : int = franchiseID
                         while f != -1:
                             p.append(f)
                             f = predecessor[f]
@@ -154,12 +166,12 @@ if __name__ == "__main__":
 
                         # exit(1)
 
-                    for crossover in adj[franchise]:
+                    for crossover in adj[franchiseID]:
                         if crossover in visited: continue
 
                         queue.append(crossover)
                         visited.add(crossover)
-                        predecessor[crossover] = franchise
+                        predecessor[crossover] = franchiseID
 
 
         print(allPaths)
@@ -167,12 +179,13 @@ if __name__ == "__main__":
         while (len(queue) > 0):
             qSize : int = len(queue)
             for i in range(qSize):
-                franchise : int = queue.popleft()
-                if franchise == 1237:
-                    path = []
-                    f : int = franchise
+                franchiseID: int = queue.popleft()
+                if franchiseID == FORTNITE:
+                    path: list[int] = []
+                    f: int = franchiseID
                     while f != -1:
                         path.append(f)
+                        print(f"appending {f}")
                         f = predecessor[f]
                     path.reverse()
                     print(f"Path to Fortnite found: {path}\n")
@@ -194,12 +207,19 @@ if __name__ == "__main__":
 
                     exit(1)
 
-                for crossover in adj[franchise]:
-                    if crossover in visited: continue
+                franchiseName: str = nameFromID[franchiseID]
+                print(start in visited)
+                for crossover in adj[franchiseName]:
+                    crossoverName: str = crossover["game"]
+                    crossoverID: int = idFromName[crossoverName]
 
-                    queue.append(crossover)
-                    visited.add(crossover)
-                    predecessor[crossover] = franchise
+                    if crossoverID in visited: continue
+                    if crossover["linkType"] > minLinkType: continue
+
+
+                    queue.append(crossoverID)
+                    visited.add(crossoverID)
+                    predecessor[crossoverID] = franchiseID
 
         cursor.execute(f"SELECT name FROM game WHERE id = {start};")
         name : str = cursor.fetchall()[0][0]
