@@ -1,25 +1,24 @@
 import sqlite3, argparse, json
 from collections import deque
 
-FORTNITE = 1311
-
+# globals
+FORTNITE: int
 conn: sqlite3.Connection
 cursor: sqlite3.Cursor
-
 idFromName: dict
 nameFromID: dict
 adj: dict
 
-def loadCrossoverData() -> None:
-    global conn, cursor, idFromName, nameFromID, adj
+
+def setup() -> None:
+    global conn, cursor, idFromName, nameFromID, adj, FORTNITE
 
     conn = sqlite3.connect('crossovers.db')
     cursor = conn.cursor()
 
+    # create mappings to get franchise ID from name and vice versa
     idFromName = {}
     nameFromID = {}
-
-    # create easy mappings to get franchise ID from name and vice versa
     cursor.execute("SELECT id, name, url FROM game;")
     rows = cursor.fetchall()
     for row in rows:
@@ -32,9 +31,13 @@ def loadCrossoverData() -> None:
     # load adjacency list representation of all crossovers
     with open('text/crossovers.json', 'r') as crossoverJSON:
         adj = json.load(crossoverJSON)
+    
+    # get Fortnite ID
+    cursor.execute("SELECT id FROM game WHERE name = 'Fortnite';")
+    FORTNITE = cursor.fetchall()[0][0]
 
 
-def bfs(startingFranchise: str, minLinkType: int) -> None:
+def bfs(startingFranchise: int, minLinkType: int, log: bool = False) -> None:
     queue: deque[int] = deque()
     visited: set[int] = set()
     predecessor: dict[int, int] = {startingFranchise: -1}
@@ -43,7 +46,7 @@ def bfs(startingFranchise: str, minLinkType: int) -> None:
     predecessor[startingFranchise] = -1
     visited.add(startingFranchise)
 
-    print(f"\nSearching for path from {nameFromID[startingFranchise]} to Fortnite...")
+    if log: print(f"\nSearching for path from {nameFromID[startingFranchise]} to Fortnite...")
     
     while (len(queue) > 0):
         qSize: int = len(queue)
@@ -59,17 +62,36 @@ def bfs(startingFranchise: str, minLinkType: int) -> None:
                     f = predecessor[f]
                 path.reverse()
 
-                print(f"Path to Fortnite found: {path}\n")
-                print(nameFromID[startingFranchise])
+                apiResponse: dict = {
+                    "found": True,
+                    "path": []
+                }
+
+                if log:
+                    print(f"Path to Fortnite found: {path}\n")
+                    print(nameFromID[startingFranchise])
 
                 # print path in readable format
                 for i in range(1, len(path)):
-                    cursor.execute(f"SELECT crossoverDate, description FROM links WHERE gameID = {path[i - 1]} AND COgameID = {path[i]};")
+                    cursor.execute(f"SELECT crossoverDate, description, linkType FROM links WHERE gameID = {path[i - 1]} AND COgameID = {path[i]};")
                     crossoverInfo: list[tuple] = cursor.fetchall()[0]
 
-                    print(f"\n{nameFromID[path[i]]} ({crossoverInfo[0]})\n {crossoverInfo[1]}")
-
-                exit(0)
+                    name: str = nameFromID[path[i]]
+                    date: str = crossoverInfo[0]
+                    description: str = crossoverInfo[1]
+                    linkType: int = crossoverInfo[2]
+                    
+                    if log:
+                        print(f"\n{name} ({date})\n {description}")
+                    else:
+                        apiResponse["path"].append({
+                            "name": name,
+                            "date": date,
+                            "description": description,
+                            "linkType": linkType
+                        })
+                
+                if not log: return apiResponse
 
             franchiseName: str = nameFromID[franchiseID]
             for crossover in adj[franchiseName]:
@@ -83,7 +105,7 @@ def bfs(startingFranchise: str, minLinkType: int) -> None:
                 visited.add(crossoverID)
                 predecessor[crossoverID] = franchiseID
 
-    print(f"No path could be found from {nameFromID[startingFranchise]} to Fortnite")
+    if log: print(f"No path could be found from {nameFromID[startingFranchise]} to Fortnite")
 
 
 if __name__ == "__main__":
@@ -96,7 +118,7 @@ if __name__ == "__main__":
         print("Error: start is required")
         exit(1)
 
-    loadCrossoverData()
+    setup()
 
     if args.start not in idFromName:
         print(f"Error: franchise {args.start} does not exist.")
@@ -105,4 +127,4 @@ if __name__ == "__main__":
     start: str = idFromName[args.start]
     minLinkType: int = args.min_link if args.min_link else float('inf')
 
-    bfs(start, minLinkType)
+    bfs(start, minLinkType, True)
