@@ -9,6 +9,11 @@ idFromName: dict
 nameFromID: dict
 adj: dict
 
+def pathToNames(path: list[int]) -> list[str]:
+    return [nameFromID[franchise] for franchise in path]
+
+def neighbors(franchise: str) -> list[tuple[int, int]]:
+    return [(idFromName[crossover["game"]], crossover["linkType"]) for crossover in adj[nameFromID[franchise]]]
 
 def setup() -> None:
     global conn, cursor, idFromName, nameFromID, adj, FORTNITE
@@ -37,6 +42,7 @@ def setup() -> None:
     FORTNITE = cursor.fetchall()[0][0]
 
 
+# finds the shortest path from start to Fortnite
 def bfs(startingFranchise: int, minLinkType: int, log: bool = False) -> None:
     queue: deque[int] = deque()
     visited: set[int] = set()
@@ -91,15 +97,18 @@ def bfs(startingFranchise: int, minLinkType: int, log: bool = False) -> None:
                             "linkType": linkType
                         })
                 
-                if not log: return apiResponse
+                if log: 
+                    exit(0)
+                else:
+                    return apiResponse
 
-            franchiseName: str = nameFromID[franchiseID]
-            for crossover in adj[franchiseName]:
-                crossoverID: int = idFromName[crossover["game"]]
+            adjacent: list[int] = neighbors(franchiseID)
+            for crossover in adjacent:
+                crossoverID:   int = crossover[0]
+                crossovertype: int = crossover[1]
 
                 if crossoverID in visited: continue
-                if crossover["linkType"] > minLinkType: continue
-
+                if crossovertype > minLinkType: continue
 
                 queue.append(crossoverID)
                 visited.add(crossoverID)
@@ -108,10 +117,55 @@ def bfs(startingFranchise: int, minLinkType: int, log: bool = False) -> None:
     if log: print(f"No path could be found from {nameFromID[startingFranchise]} to Fortnite")
 
 
+
+# experimental: finds multiple short paths, the same way Six Degrees of Wikipedia does
+# works sometimes, doesnt work with others (eg can only find paths from Under Night In-Birth if theres no min link type, and it wont find the same path bfs does)
+def dfs(startingFranchise: int, minLinkType: int) -> None:
+    # trivial path:
+    if startingFranchise == FORTNITE:
+        return [startingFranchise]
+
+    visited: set[int] = set()
+    allPaths: list[list] = []
+
+    recurse(startingFranchise, minLinkType, visited, [], allPaths)
+
+    for path in allPaths:
+        print(pathToNames(path))
+
+
+def recurse(franchise: int, minLinktype: int, visited: set[int], currentPath: list, allPaths: list):
+    currentPath.append(franchise)
+    if len(currentPath) > 6:
+        currentPath.pop()
+        return
+    
+    visited.add(franchise)
+
+    if franchise == FORTNITE:
+        allPaths.append(currentPath[:])
+        currentPath.pop()
+        visited.remove(franchise)
+        return
+
+
+    adjacent: list = neighbors(franchise)
+    for crossover in adjacent:
+        crossoverID:   int = crossover[0]
+        crossovertype: int = crossover[1]
+
+        if crossoverID in visited or crossovertype > minLinkType: continue
+
+        recurse(crossoverID, minLinkType, visited, currentPath, allPaths)
+    
+    currentPath.pop()
+
+
 if __name__ == "__main__":
     parser: argparse.ArgumentParser = argparse.ArgumentParser(description="connects franchise")
     parser.add_argument("-s", "--start", type=str, help="The franchise to start from")
     parser.add_argument("-l", "--min-link", type=int, help="The minimum link type to consider as a valid path")
+    parser.add_argument("-d", "--dfs", action="store_true", help="Use depth-first search instead of breadth-first search")
     args: argparse.Namespace = parser.parse_args()
 
     if not args.start:
@@ -127,4 +181,7 @@ if __name__ == "__main__":
     start: str = idFromName[args.start]
     minLinkType: int = args.min_link if args.min_link else float('inf')
 
-    bfs(start, minLinkType, True)
+    if args.dfs:
+        dfs(start, minLinkType)
+    else:
+        bfs(start, minLinkType, True)
