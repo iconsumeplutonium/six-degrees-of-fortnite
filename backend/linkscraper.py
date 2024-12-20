@@ -49,12 +49,6 @@ def scrape(url : str) -> list[dict]:
         gameName = None
         URL_START : str = "https://fictionalcrossover.fandom.com"
 
-        # https://fictionalcrossover.fandom.com/wiki/Jujutsu_Kaisen
-        # one piece link has square brackets around it ("[[One Piece]]") for some reason, which breaks the script
-        # if square brackes are found just skip the entry entirely
-        # if TDs[1].string == "[[":
-        #     continue
-
         # for TDs[1] (the name of the franchise this one references), find a descendant <a> tag
         # if the <a> tag is of class "mw-redirect", extract the URL and send a request to follow the redirect to the original page. 
         # Use this to determine this franchise's actual name. otherwise, just extract the string
@@ -86,9 +80,6 @@ def scrape(url : str) -> list[dict]:
                     
         if gameName is None: continue
         
-        # random edge case related to the double square bracket entries
-        # if gameName is None:
-        #     continue
         gameName: str = str(urllib.parse.unquote(gameName))
         if gameName in removedLinks: continue
 
@@ -204,20 +195,7 @@ if __name__ == "__main__":
 
                 thisID = idLookup[crossover["game"]]
                 cursor.execute(INSERT_QUERY, (id, thisID, crossover["description"], crossover["date"], crossover["linkType"]))
-                
-                #bandaid because i forgot to do this earlier
-                #add links from other games into fortnite? idk why this is needed
-                #todo: have this include link type (1, 2, 2.5, etc)
-                # if franchise == "Fortnite":
-                #     print(thisID, id, crossover["description"], crossover["date"])
-                #     cursor.execute(INSERT_QUERY, (thisID, id, crossover["description"], crossover["date"]))
-                #     crossoverJSON[crossover["game"]].append({
-                #         "game": "Fortnite", 
-                #         "date": crossover["date"], 
-                #         "description": crossover["description"]
-                #     })
-
-            
+                            
             crossoverJSON[franchise] = crossovers
             
             i += 1
@@ -251,12 +229,9 @@ if __name__ == "__main__":
 # ---        Dash.png
 # --->       Arrow_R.png (ignore this)
 
-# ignore any connectionst that arent 2.5 or above
-# type 3 is out-of-universe references, e.g "A character looking like Mario appears in a mini game in McPixel"
-
 
 # some good test URLs
-#"https://fictionalcrossover.fandom.com/wiki/Disney_Sorcerer%27s_Arena ---> has many redirects on page
+# https://fictionalcrossover.fandom.com/wiki/Disney_Sorcerer%27s_Arena ---> has many redirects on page
 # https://fictionalcrossover.fandom.com/wiki/1001_Spikes               ---> has several franchises with no wiki pages
 
 

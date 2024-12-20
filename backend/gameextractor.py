@@ -27,24 +27,6 @@ def extractLinks() -> None:
             file.write(Utilities.sanitize(franchise) + "\n")
 
 
-# for every franchise in franchise.txt, it sends a GET request and checks if the response is a redirect (code 301 or 302)
-def updateKnownRedirects():
-    with open('text/franchises_unfiltered.txt', 'r', encoding='utf-8') as unfilteredFranchisesFile:
-        with open('text/known_redirects.txt', 'w', encoding='utf-8') as redirectsFile:
-            i : int = 1
-            for franchise in unfilteredFranchisesFile.readlines():
-                franchise : str = franchise.strip()
-                response : requests.Response = requests.get(Utilities.URL_BASE + Utilities.convertFranchiseToURL(franchise), allow_redirects=False)
-                
-                if response.is_redirect or response.is_permanent_redirect:
-                    redirectsFile.write(franchise + '\n')
-
-                print(i, "request was made")
-                i += 1
-
-
-
-
 def filterAll():
     disallowedCaptures : list[re.Pattern] = [
         re.compile(r".* X .*"),
@@ -111,7 +93,6 @@ def filterAll():
 if __name__ == "__main__":
     parser : argparse.ArgumentParser = argparse.ArgumentParser(description="stuff")
     parser.add_argument('-e', "--extract",          action='store_true', help="Extract all webpages on fictional crossover wiki")
-    parser.add_argument('-u', "--update-redirects", action='store_true', help="Updates the list of known redirect links")
     parser.add_argument('-f', "--filter",           action='store_true', help="Filters franchise list by removing commercials, cameos, trailers, redirects, etc.")
     parser.add_argument('-i', "--insert",           action='store_true', help="Inserts filtered franchise list into filtered_franchises.txt")
     args : argparse.ArgumentParser = parser.parse_args()
@@ -120,10 +101,6 @@ if __name__ == "__main__":
     # (1) Extract all pages from the All Pages section of the wiki --------------------------------------------------------------------------------------------------------------------------------
     if args.extract:
         extractLinks()
-
-    # (Optional) Go through all 7000 pages of the wiki and send a request to each one to determine if it is a redirect or not, then updates known_redirects.txt -----------------------------------
-    if args.update_redirects:
-        updateKnownRedirects()
 
     # (2) Go through franchises_unfiltered.txt and remove ads, redirects, etc ---------------------------------------------------------------------------------------------------------------------
     if args.filter:
