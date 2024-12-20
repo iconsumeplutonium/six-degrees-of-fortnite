@@ -1,60 +1,8 @@
 import sqlite3, argparse, json
-from collections import deque, defaultdict
-from typing import DefaultDict, List, Set, Deque, Dict
+from collections import deque
 
 paths = []
 FORTNITE = 1311
-
-def dfs(start : int, adj : DefaultDict[int, list[int]], currentPath : list[int], visited = None):
-    if visited is None:
-        visited = set()
-
-    currentPath.append(start)
-    visited.add(start)
-
-    if start == 1237:
-        print(f"found one path of length {len(currentPath)}")
-        paths.append(list(currentPath))
-        return
-
-    for crossover in adj[start]:
-        if crossover in visited: continue
-
-        dfs(crossover, adj, currentPath, visited)
-        if 1237 in visited:
-            return
-    
-    currentPath.pop()
-    visited.remove(start)
-
-def bfs(adj):
-    queue : Deque[int] = deque()
-    visited : Set[int] = set()
-
-    queue.append([start])
-    shortestLength = float('inf')
-    allPaths = []
-
-    while (len(queue) > 0):
-        path : list = queue.popleft()
-        franchise : int = path[-1]
-        print(len(queue))
-
-        # if len(path) > 50:
-        #     continue
-
-        if franchise == 1237:
-            shortestLength = min(shortestLength, len(path))
-            allPaths.append(path)
-            continue
-
-        for crossover in adj[franchise]:
-            if crossover in visited: continue
-            queue.append(path + [crossover])
-            visited.add(crossover)
-    
-    for p in allPaths:
-        print(p)
 
 if __name__ == "__main__":
     parser : argparse.ArgumentParser = argparse.ArgumentParser(description="connects franchise")
@@ -68,6 +16,7 @@ if __name__ == "__main__":
 
     conn : sqlite3.Connection = sqlite3.connect('crossovers.db')
     cursor : sqlite3.Cursor = conn.cursor()
+    
     # create a dictionary for easy franchise ID lookup
     idFromName: dict = {}
     nameFromID: dict = {}
