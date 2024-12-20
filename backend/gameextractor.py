@@ -28,7 +28,7 @@ def extractLinks() -> None:
 
 
 def filterAll():
-    disallowedCaptures : list[re.Pattern] = [
+    disallowedCaptures: list[re.Pattern] = [
         re.compile(r".* X .*"),
         re.compile(r".*[c|C]ommercial"),
         re.compile(r".*[p|P]romo.*"),
