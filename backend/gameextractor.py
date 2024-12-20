@@ -85,7 +85,7 @@ def filterAll():
 
 # franchises_unfiltered.txt ->   list of all franchises from the wiki. includes ads, redirects, etc.
 # franchises_filtered.txt   ->   filtered list of franchises from the wiki, filtering out ads, redirects, etc.
-# misc_removals.txt         ->   list of articles that are known to be ads, redirects, etc.
+# misc_removals.txt         ->   list of articles that are ads/promos/etc. that were filtered out, or can't be caught by regex (found manually)
 # redirects.json            ->   json representation of all known redirects. key is the name of the redirect, value is the original url
 # crossovers.json           ->   json representation of all crossovers. key is the name of the franchise, value is a list of crossovers
 
@@ -108,34 +108,14 @@ if __name__ == "__main__":
 
     # (3) Insert filtered franchise list into database --------------------------------------------------------------------------------------------------------------------------------------------
     if args.insert:
-        conn : sqlite3.Connection = sqlite3.connect('crossovers.db')
-        cursor : sqlite3.Cursor = conn.cursor()
-        query : str = "INSERT INTO game (name, url) VALUES (?, ?)"
+        conn: sqlite3.Connection = sqlite3.connect('crossovers.db')
+        cursor: sqlite3.Cursor = conn.cursor()
+        query: str = "INSERT INTO game (name, url) VALUES (?, ?)"
 
         with open('text/filtered_franchises.txt', 'r', encoding='utf-8') as file:
             for line in file.readlines():
-                url : str = Utilities.URL_BASE + Utilities.convertFranchiseToURL(line)
+                url: str = Utilities.URL_BASE + Utilities.convertFranchiseToURL(line)
                 cursor.execute(query, (line.strip(), url))
         
         conn.commit()
         conn.close()
-                
-            
-
-
-
-    # .* X .*
-    # .* Commercial
-    # .* promo.*
-    # .*appearances
-    # .*bumper.*
-    # .*crossover wiki.*
-    # .*[c|C]ameo.*
-    # .*reference.*
-    # .*trailer.*
-    # .*\(mascot\).*
-    # ^(.*)(\r?\n\1) \(.*\)  --> $1 to replace ShowName\nShowName (Disney)
-
-    # ^\n to remove empty lines
-    # ^(.*)(\r?\n\1)+$ to find duplicate lines
-    # need to replace ? with %3f, & with %26

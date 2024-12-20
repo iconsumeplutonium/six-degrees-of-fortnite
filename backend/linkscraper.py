@@ -6,25 +6,25 @@ redirectMap = None
 crossoverJSON = None
 removedLinks = None
 
-def getURLAfterRedirects(url : str) -> str:
-    response : requests.Response = requests.get(url, allow_redirects=True)
+def getURLAfterRedirects(url: str) -> str:
+    response: requests.Response = requests.get(url, allow_redirects=True)
     return response.url
 
-def scrape(url : str) -> list[dict]:
-    webpage : requests.Response = requests.get(url)
+def scrape(url: str) -> list[dict]:
+    webpage: requests.Response = requests.get(url)
     if webpage.status_code != 200:
         return []
     
-    soup : bs4.BeautifulSoup = bs4.BeautifulSoup(webpage.content, 'lxml')
-    table : bs4.ResultSet = soup.find('table').find('tbody').find_all('tr')
+    soup: bs4.BeautifulSoup = bs4.BeautifulSoup(webpage.content, 'lxml')
+    table: bs4.ResultSet = soup.find('table').find('tbody').find_all('tr')
 
-    crossovers : list[dict] = []
+    crossovers: list[dict] = []
 
     for i in range(len(table)):
         if i == 0:
             continue
             
-        TDs : bs4.ResultSet = table[i].find_all('td')
+        TDs: bs4.ResultSet = table[i].find_all('td')
 
         if len(TDs) != 5:
             continue
@@ -47,7 +47,7 @@ def scrape(url : str) -> list[dict]:
         description : str = TDs[3].get_text()
 
         gameName = None
-        URL_START : str = "https://fictionalcrossover.fandom.com"
+        URL_START: str = "https://fictionalcrossover.fandom.com"
 
         # for TDs[1] (the name of the franchise this one references), find a descendant <a> tag
         # if the <a> tag is of class "mw-redirect", extract the URL and send a request to follow the redirect to the original page. 
@@ -70,8 +70,8 @@ def scrape(url : str) -> list[dict]:
                 if url in redirectMap:
                     gameName: str = redirectMap[url]
                 else:
-                    originalURL : str = getURLAfterRedirects(URL_START + url)
-                    gameName : str = Utilities.convertURLtoFranchise(originalURL)
+                    originalURL: str = getURLAfterRedirects(URL_START + url)
+                    gameName: str = Utilities.convertURLtoFranchise(originalURL)
                     redirectMap[url] = gameName
             else:
                 gameName: str = TDs[1].string
@@ -133,15 +133,15 @@ if __name__ == "__main__":
     parser.add_argument('-s', "--start-index", type=int, default=-1, help="The index from which to continue scraping (used if script crashes in the middle)")
     args: argparse.Namespace = parser.parse_args()
 
-    startIndex : int = args.start_index
+    startIndex: int = args.start_index
 
     # idLookup maps franchise name to its id in the database
     # urlLookup maps franchise name to its wiki url
     idLookup: dict = {}
     urlLookup: dict = {}
     franchises = [None]
-    conn : sqlite3.Connection = sqlite3.connect('crossovers.db')
-    cursor : sqlite3.Cursor = conn.cursor()
+    conn: sqlite3.Connection = sqlite3.connect('crossovers.db')
+    cursor: sqlite3.Cursor = conn.cursor()
 
     cursor.execute("SELECT id, name, url FROM game;")
     rows = cursor.fetchall()
@@ -168,8 +168,8 @@ if __name__ == "__main__":
         removedLinks = set([r.strip() for r in file.readlines()])
 
 
-    INSERT_QUERY : str = "INSERT INTO links (gameID, COgameID, description, crossoverDate, linkType) VALUES (?, ?, ?, ?, ?)"
-    i : int = 1
+    INSERT_QUERY: str = "INSERT INTO links (gameID, COgameID, description, crossoverDate, linkType) VALUES (?, ?, ?, ?, ?)"
+    i: int = 1
 
     try: 
         for franchise in franchises:
@@ -185,9 +185,9 @@ if __name__ == "__main__":
             if franchise in crossoverJSON:
                 crossovers = crossoverJSON[franchise]
             else:
-                crossovers : list[dict] = scrape(urlLookup[franchise])
+                crossovers: list[dict] = scrape(urlLookup[franchise])
 
-            id : int = idLookup[franchise]
+            id: int = idLookup[franchise]
 
             for crossover in crossovers:
                 if crossover["game"] not in idLookup:

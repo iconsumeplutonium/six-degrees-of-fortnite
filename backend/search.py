@@ -109,10 +109,10 @@ def bfs(startingFranchise: int, minLinkType: int, log: bool = False) -> None:
 
 
 if __name__ == "__main__":
-    parser : argparse.ArgumentParser = argparse.ArgumentParser(description="connects franchise")
+    parser: argparse.ArgumentParser = argparse.ArgumentParser(description="connects franchise")
     parser.add_argument("-s", "--start", type=str, help="The franchise to start from")
     parser.add_argument("-l", "--min-link", type=int, help="The minimum link type to consider as a valid path")
-    args : argparse.Namespace = parser.parse_args()
+    args: argparse.Namespace = parser.parse_args()
 
     if not args.start:
         print("Error: start is required")
