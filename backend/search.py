@@ -135,9 +135,15 @@ def dfs(startingFranchise: int, minLinkType: int) -> None:
 
 
 def recurse(franchise: int, minLinktype: int, visited: set[int], currentPath: list, allPaths: list):
+    if franchise == 4177:
+        print("in here, investigating")
+
     currentPath.append(franchise)
     if len(currentPath) > 6:
         currentPath.pop()
+        if franchise == 4177:
+            print("this is too long, returning")
+            print(pathToNames(currentPath))
         return
     
     visited.add(franchise)
