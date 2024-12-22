@@ -27,27 +27,36 @@ function App() {
 	}
 
 	return (
-		<div>
-			<input
-				type="text"
-				list="franchise"
-				value={inputQuery}
-				onChange={(e) => { setInput(e.target.value) }}
-				onKeyDown={(e) => {
-					if (e.key === 'Enter') {
-						validateSelection(inputQuery)
-					}
-				}}
-				onInput={(e) => {
-					const test = e.target as HTMLInputElement;
-					validateSelection(test.value);
-				}}
-				placeholder="Search..."
-			/>
-			<datalist id="franchise">
-				{inputQuery && filterFranchises()}
-			</datalist>
-		</div>
+		<>
+			<div>
+				<h1>Six Degrees of Fortnite</h1>
+				{"Connect "}
+				<input
+					type="text"
+					list="franchise"
+					value={inputQuery}
+					onChange={(e) => { setInput(e.target.value) }}
+					onKeyDown={(e) => {
+						if (e.key === 'Enter') {
+							validateSelection(inputQuery)
+						}
+					}}
+					onInput={(e) => {
+						const test = e.target as HTMLInputElement;
+						validateSelection(test.value);
+					}}
+					placeholder="Search..."
+				/>
+				<datalist id="franchise">
+					{inputQuery && filterFranchises()}
+				</datalist>
+				{" to Fortnite"}
+			</div>
+			<br />			
+			<button>
+				Go!
+			</button>
+		</>
 	)
 }
 
