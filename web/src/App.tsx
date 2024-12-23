@@ -1,4 +1,5 @@
 import { useState, useMemo, useEffect } from 'react';
+import Card from './components/Card';
 import './App.css';
 
 const MAX_RESULTS = 10;
@@ -38,22 +39,21 @@ function App() {
 
 		return Array.from(franchiseList)
 			.filter((option: string) => {
-			return regexSearch.test(option);
+				return regexSearch.test(option);
 			})
 			.slice(0, MAX_RESULTS)
 			.map((option: string, index: number) => {
-			return (<option key={index} value={option} />)
+				return (<option key={index} value={option} />)
 			})
 	}
 
 	const getCrossover = async () => {
 		console.log(selectedFranchise);
 		try {
-			const response = await fetch(`http://localhost:8000/path/${encodeURIComponent(selectedFranchise)}?minLinkType=1`, {method: 'POST'});
+			const response = await fetch(`http://localhost:8000/path/${encodeURIComponent(selectedFranchise)}?minLinkType=1`, { method: 'POST' });
 			if (!response.ok) throw new Error('Error: Something went wrong accessing API');
 
 			const data = await response.json();
-			if (!data["found"]) throw new Error("Error: franchise doesn't exist");
 
 			setCrossoverDict(data);
 		} catch (error) {
@@ -62,16 +62,16 @@ function App() {
 	}
 
 	const formatData = () => {
-		if (!crossoverDict.found) return "No connection found.";
+		if (!crossoverDict.found) return `No connection found. ${selectedFranchise} isn't part of the Fortnite multiverse.`;
 
-		const path: any = crossoverDict.path;
-		let displayString = `${selectedFranchise}\n\n`;
-
-		path.forEach((crossover: Record<string, unknown>) => {
-			displayString += `${crossover.name} (${crossover.date})\n${crossover.description}\n\n`;
-		});
-
-		return <div style={{ whiteSpace: 'pre-line' }}>{displayString}</div>;
+		return (crossoverDict.path as any).map((crossover: Record<string, unknown>, index: number) => (
+			<Card
+				key={index}
+				title={crossover.name as string}
+				date={crossover.date as string}
+				description={crossover.description as string}
+			/>
+		));
 	}
 
 
@@ -115,7 +115,9 @@ function App() {
 				Go!
 			</button>
 			<br /><br />
-			{formatData()}
+			<div style={{display: 'flex', flexDirection: 'row'}}>
+				{formatData()}
+			</div>
 		</>
 	)
 }

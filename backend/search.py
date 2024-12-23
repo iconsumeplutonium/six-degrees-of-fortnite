@@ -114,7 +114,10 @@ def bfs(startingFranchise: int, minLinkType: int, log: bool = False) -> None:
                 visited.add(crossoverID)
                 predecessor[crossoverID] = franchiseID
 
-    if log: print(f"No path could be found from {nameFromID[startingFranchise]} to Fortnite")
+    if log: 
+        print(f"No path could be found from {nameFromID[startingFranchise]} to Fortnite")
+    else:
+        return {"found": False}
 
 
 
