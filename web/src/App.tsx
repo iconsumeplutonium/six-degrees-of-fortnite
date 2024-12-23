@@ -42,6 +42,19 @@ function App() {
 			})
 	}
 
+	const getCrossover = async () => {
+		console.log(selectedFranchise);
+		try {
+			const response = await fetch(`http://localhost:8000/path/${encodeURIComponent(selectedFranchise)}`, {method: 'POST'});
+			if (!response.ok) throw new Error('Error: Something went wrong accessing API');
+
+			const data = await response.json();
+			if (!data["found"]) throw new Error("Error: franchise doesn't exist");
+		} catch (error) {
+			console.error('Error:', error);
+		}
+	}
+
 
 	return (
 		<>
@@ -78,7 +91,7 @@ function App() {
 			</div>
 			<br />
 			<button
-				onClick={() => { console.log(selectedFranchise) }}
+				onClick={() => { getCrossover() }}
 			>
 				Go!
 			</button>

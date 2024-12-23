@@ -2,6 +2,7 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI, Request, HTTPException
 from . import search
 import urllib.parse
+from fastapi.middleware.cors import CORSMiddleware
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -9,6 +10,13 @@ async def lifespan(app: FastAPI):
     yield
 
 api: FastAPI = FastAPI(lifespan=lifespan)
+api.add_middleware(
+    CORSMiddleware, 
+    allow_origins=["http://localhost:5173"], 
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @api.post("/path/{franchise}")
 async def getPath(franchise: str, request: Request, minLinkType: int | None = None):
