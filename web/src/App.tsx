@@ -1,10 +1,13 @@
 import { useState, useMemo, useEffect } from 'react';
 import './App.css';
 
+const MAX_RESULTS = 10;
+
 function App() {
 	const [inputQuery, setInput] = useState('');
 	const [selectedFranchise, setSelectedFranchise] = useState('')
 	const [franchiseList, setFranchiseList] = useState<string[]>([]);
+	const [crossoverDict, setCrossoverDict] = useState<Record<string, unknown>>({});
 
 	const franchiseSet = useMemo(() => new Set(franchiseList), [franchiseList]);
 
@@ -35,24 +38,40 @@ function App() {
 
 		return Array.from(franchiseList)
 			.filter((option: string) => {
-				return regexSearch.test(option);
+			return regexSearch.test(option);
 			})
+			.slice(0, MAX_RESULTS)
 			.map((option: string, index: number) => {
-				return (<option key={index} value={option} />)
+			return (<option key={index} value={option} />)
 			})
 	}
 
 	const getCrossover = async () => {
 		console.log(selectedFranchise);
 		try {
-			const response = await fetch(`http://localhost:8000/path/${encodeURIComponent(selectedFranchise)}`, {method: 'POST'});
+			const response = await fetch(`http://localhost:8000/path/${encodeURIComponent(selectedFranchise)}?minLinkType=1`, {method: 'POST'});
 			if (!response.ok) throw new Error('Error: Something went wrong accessing API');
 
 			const data = await response.json();
 			if (!data["found"]) throw new Error("Error: franchise doesn't exist");
+
+			setCrossoverDict(data);
 		} catch (error) {
 			console.error('Error:', error);
 		}
+	}
+
+	const formatData = () => {
+		if (!crossoverDict.found) return "No connection found.";
+
+		const path: any = crossoverDict.path;
+		let displayString = `${selectedFranchise}\n\n`;
+
+		path.forEach((crossover: Record<string, unknown>) => {
+			displayString += `${crossover.name} (${crossover.date})\n${crossover.description}\n\n`;
+		});
+
+		return <div style={{ whiteSpace: 'pre-line' }}>{displayString}</div>;
 	}
 
 
@@ -91,10 +110,12 @@ function App() {
 			</div>
 			<br />
 			<button
-				onClick={() => { getCrossover() }}
+				onClick={getCrossover}
 			>
 				Go!
 			</button>
+			<br /><br />
+			{formatData()}
 		</>
 	)
 }
