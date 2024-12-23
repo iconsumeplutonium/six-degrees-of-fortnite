@@ -1,15 +1,31 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import './App.css';
 
 function App() {
 	const [inputQuery, setInput] = useState('');
-	const [selectedFranchise, setSelectedFranchise] = useState('')
-	const a = ['Fortnite', 'Apex Legends', 'Mirror\'s edge', 'Minecraft', 'Call of Duty', 'Overwatch', 'League of Legends', 'Valorant', 'Rainbow Six Siege', 'GTA V', 'Cyberpunk 2077', 'Red Dead Redemption 2', 'The Witcher 3', 'Assassin\'s Creed', 'God of War', 'The Last of Us', 'Uncharted'];
-	const aSet = useMemo(() => new Set(a), []);
+	const [_selectedFranchise, setSelectedFranchise] = useState('')
+	const [franchiseList, setFranchiseList] = useState<string[]>([]);
 
+	const aSet = useMemo(() => new Set(franchiseList), [franchiseList]);
+
+	useEffect(() => {
+		const readFileIntoArray = async () => {
+			try {
+				const response = await fetch('/franchises_filtered.txt');
+				if (!response.ok) throw new Error('Failed to load franchises');
+
+				const text = await response.text();
+				const lines = text.split('\n').map(line => line.trim());
+				setFranchiseList(lines);
+			} catch (error) {
+				console.error('Error reading file:', error);
+			}
+		};
+		readFileIntoArray();
+	}, []);
 
 	const filterFranchises = () => {
-		return Array.from(a)
+		return Array.from(franchiseList)
 			.filter((option: string) => {
 				const regexSearch = new RegExp(`^${inputQuery}`, "i");
 				return regexSearch.test(option);
