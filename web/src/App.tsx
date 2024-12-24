@@ -115,7 +115,7 @@ function App() {
 				Go!
 			</button>
 			<br /><br />
-			<div style={{display: 'flex', flexDirection: 'row'}}>
+			<div style={{ display: 'flex', flexDirection: 'column' }}>
 				{formatData()}
 			</div>
 		</>

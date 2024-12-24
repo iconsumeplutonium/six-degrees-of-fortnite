@@ -56,6 +56,7 @@ def bfs(startingFranchise: int, minLinkType: int, log: bool = False) -> None:
     
     while (len(queue) > 0):
         qSize: int = len(queue)
+        print(queue)
         for i in range(qSize):
             franchiseID: int = queue.popleft()
             if franchiseID == FORTNITE:
@@ -79,7 +80,7 @@ def bfs(startingFranchise: int, minLinkType: int, log: bool = False) -> None:
 
                 # print path in readable format
                 for i in range(1, len(path)):
-                    cursor.execute(f"SELECT crossoverDate, description, linkType FROM links WHERE gameID = {path[i - 1]} AND COgameID = {path[i]};")
+                    cursor.execute(f"SELECT crossoverDate, description, linkType FROM links WHERE gameID = {path[i - 1]} AND COgameID = {path[i]} AND linkType <= {minLinkType};")
                     crossoverInfo: list[tuple] = cursor.fetchall()[0]
 
                     name: str = nameFromID[path[i]]
