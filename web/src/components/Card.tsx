@@ -12,11 +12,15 @@ const Card: React.FC<CardProps> = ({ title, date, description }) => {
         <div className="cardContainer">
             <div className="card">
                 <div className="title">
-                    <h3 style={{ margin: '0px' }}>{title}</h3>
-                    <p style={{ margin: '0px', fontSize: '15px' }}>{date}</p>
+                    <h3 className="franchiseName">{title}</h3>
+                    <p className="crossoverDate">{date}</p>
                 </div>
-                <hr style={{color: 'white'}} />
-                <p>{description}</p>
+                
+                <hr className="dividerBar" />
+
+                <div style={{textAlign: 'left'}}>
+                    <p className="description">{description}</p>
+                </div>
             </div>
         </div>
     );

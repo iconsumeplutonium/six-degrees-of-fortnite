@@ -10,8 +10,8 @@ function App() {
 	const [franchiseList, setFranchiseList] = useState<string[]>([]);
 	const [crossoverDict, setCrossoverDict] = useState<Record<string, unknown>>({});
 
+	//load list of all franchises into memory on page load
 	const franchiseSet = useMemo(() => new Set(franchiseList), [franchiseList]);
-
 	useEffect(() => {
 		const readFileIntoArray = async () => {
 			try {
@@ -50,7 +50,7 @@ function App() {
 	const getCrossover = async () => {
 		console.log(selectedFranchise);
 		try {
-			const response = await fetch(`http://localhost:8000/path/${encodeURIComponent(selectedFranchise)}?minLinkType=1`, { method: 'POST' });
+			const response = await fetch(`http://192.168.189.162:8000/path/${encodeURIComponent(selectedFranchise)}?minLinkType=1`, { method: 'POST' });
 			if (!response.ok) throw new Error('Error: Something went wrong accessing API');
 
 			const data = await response.json();
