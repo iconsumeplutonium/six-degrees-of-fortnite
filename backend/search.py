@@ -56,7 +56,6 @@ def bfs(startingFranchise: int, minLinkType: int, log: bool = False) -> None:
     
     while (len(queue) > 0):
         qSize: int = len(queue)
-        print(queue)
         for i in range(qSize):
             franchiseID: int = queue.popleft()
             if franchiseID == FORTNITE:
@@ -77,6 +76,8 @@ def bfs(startingFranchise: int, minLinkType: int, log: bool = False) -> None:
                 if log:
                     print(f"Path to Fortnite found: {path}\n")
                     print(nameFromID[startingFranchise])
+                
+                minLinkType = min(minLinkType, 3)  # for when minlinktype is infinity
 
                 # print path in readable format
                 for i in range(1, len(path)):
