@@ -10,6 +10,7 @@
     border-radius: 5px;
     padding: 16px;
     width: 80%;
+
     display: grid;
     grid-template-columns: 1fr auto 3fr;
     gap: 10px;
@@ -36,7 +37,7 @@
 
 .dividerBar {
     color: white;
-    height: 50px;
+    height: 70px;
     margin: 0;
 }
 
