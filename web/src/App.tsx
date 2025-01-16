@@ -1,8 +1,7 @@
 import { useState, useMemo, useEffect } from 'react';
 import Card from './components/Card';
+import Autocomplete from './components/Autocomplete';
 import './App.css';
-
-const MAX_RESULTS = 10;
 
 function App() {
 	const [inputQuery, setInput] = useState('');
@@ -27,25 +26,6 @@ function App() {
 		};
 		readFileIntoArray();
 	}, []);
-
-	const filterFranchises = () => {
-		let regexSearch;
-		try {
-			regexSearch = new RegExp(`^${inputQuery}`, "i");
-		} catch (error) {
-			//if the regex fails (e.g a \ at the end of inputQuery), dont bother trying to match
-			return;
-		}
-
-		return Array.from(franchiseList)
-			.filter((option: string) => {
-				return regexSearch.test(option);
-			})
-			.slice(0, MAX_RESULTS)
-			.map((option: string, index: number) => {
-				return (<option key={index} value={option} />)
-			})
-	}
 
 	const getCrossover = async () => {
 		console.log(selectedFranchise);
@@ -83,7 +63,7 @@ function App() {
 					<label className="connectText">
 						{"Connect "}
 					</label>
-					<input
+					{/* <input
 						className="inputBox"
 						type="text"
 						list="franchise"
@@ -102,7 +82,13 @@ function App() {
 					/>
 					<datalist id="franchise">
 						{inputQuery && filterFranchises()}
-					</datalist>
+					</datalist> */}
+					<Autocomplete 
+						data={franchiseList}
+						currentValue={inputQuery}
+						onChange={setInput}
+					/>
+
 					<label className='connectText'>
 						{" to Fortnite"}
 					</label>

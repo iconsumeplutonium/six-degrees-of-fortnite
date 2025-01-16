@@ -1,5 +1,5 @@
 import signal
-
+from tqdm import tqdm
 import requests, bs4, Utilities, sqlite3, argparse, json, urllib.parse
 
 redirectMap = None
@@ -17,7 +17,6 @@ def scrape(url: str) -> list[dict]:
     
     soup: bs4.BeautifulSoup = bs4.BeautifulSoup(webpage.content, 'lxml')
     table: bs4.ResultSet = soup.find('table').find('tbody').find_all('tr')
-
     crossovers: list[dict] = []
 
     for i in range(len(table)):
@@ -80,7 +79,7 @@ def scrape(url: str) -> list[dict]:
                     
         if gameName is None: continue
         
-        gameName: str = str(urllib.parse.unquote(gameName))
+        gameName: str = str(urllib.parse.unquote(gameName.strip()))
         if gameName in removedLinks: continue
 
         # these franchises just link to the "Shonen Jump covers" article, which is just an article about a magazone cover. skip it.
@@ -100,6 +99,10 @@ def scrape(url: str) -> list[dict]:
             gameName = "Journey (Thatgamecompany)"
 
         description = description.replace("(see details)", "")
+
+        # edge case: the Doom article mentions Cities Skylines, but links cities.fandom.com for some reason. 
+        if gameName == "Cities: Skylines": 
+            continue                        
 
         crossovers.append({
             #"arrow": arrowType.replace(".png", "").replace("_", " "),
@@ -172,13 +175,13 @@ if __name__ == "__main__":
     i: int = 1
 
     try: 
-        for franchise in franchises:
+        for franchise in tqdm(franchises):
             if franchise is None: continue # skip the first one (make list indices align with SQL ids [which are 1 indexed])
             if i < startIndex:
                 i += 1
                 continue
 
-            print(f"Scraping {franchise} ({i}/{len(franchises)})")
+            tqdm.write(f"Current franchise: {franchise}")
 
             # pull crossover data from cache if present in json file
             # otherwise, scrape its wiki page
@@ -192,6 +195,7 @@ if __name__ == "__main__":
             for crossover in crossovers:
                 if crossover["game"] not in idLookup:
                     raise Exception(f"{crossover['game']} not in known ids. Full data is as follows:\n {crossover}")
+
 
                 thisID = idLookup[crossover["game"]]
                 cursor.execute(INSERT_QUERY, (id, thisID, crossover["description"], crossover["date"], crossover["linkType"]))

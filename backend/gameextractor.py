@@ -1,4 +1,5 @@
 import requests, bs4, sqlite3, argparse, re, Utilities, json
+from tqdm import tqdm
 
 ALL_PAGES_API = "https://fictionalcrossover.fandom.com/api.php?action=query&list=allpages&aplimit=max&format=json"
 
@@ -45,26 +46,34 @@ def filterAll():
     knownRedirects : set[str] = Utilities.getRedirects()
     miscRemovals   : set[str] = Utilities.getRemovals()
     removalsWasUpdated : bool = False
+    deduplication: set[str] = set()
 
     with open('text/franchises_unfiltered.txt', 'r', encoding='utf-8') as unfiltered:
         with open('text/filtered_franchises.txt', 'w', encoding='utf-8') as filtered:
             for franchise in unfiltered:
                 franchise : str = franchise.strip()
                 
-                if franchise in knownRedirects or franchise in miscRemovals:
+                # if known non-franchise, skip
+                if franchise in miscRemovals:
                     continue
 
+                # check if it matches regex
                 matchesRegex : bool = False
                 for regex in disallowedCaptures:
                     if regex.match(franchise) is not None:
                         matchesRegex = True
                         break
                 
+                # if it matches regex, skip
                 if matchesRegex:
                     miscRemovals.add(franchise)
                     removalsWasUpdated = True
                     continue
-
+                
+                # if redirect, skip
+                if franchise in knownRedirects:
+                    continue
+                
                 filtered.write(franchise + '\n')
             
             # several franchises with " X " in the name get filtered out by the regex
@@ -83,6 +92,26 @@ def filterAll():
                 removals.write(removal + '\n')
 
 
+def cacheRedirects():
+    with open('text/franchises_unfiltered.txt', 'r', encoding='utf-8') as file:
+        franchises: list[str] = [f.strip() for f in file.readlines()]
+
+    redirects: dict[str, str] = {}
+
+    for franchise in tqdm(franchises):
+        response: requests.Response = requests.get(Utilities.URL_BASE + Utilities.convertFranchiseToURL(franchise), allow_redirects=False)
+        if response.status_code != 301 and response.status_code != 302:
+            continue
+
+        originalArticle: str = response.headers["location"]
+        redirects[franchise] = Utilities.convertURLtoFranchise(originalArticle)
+
+    with open("text/redirects.json", "w", encoding='utf-8') as file:
+        json.dump(redirects, file, indent=4)
+
+    
+
+
 # franchises_unfiltered.txt ->   list of all franchises from the wiki. includes ads, redirects, etc.
 # franchises_filtered.txt   ->   filtered list of franchises from the wiki, filtering out ads, redirects, etc.
 # misc_removals.txt         ->   list of articles that are ads/promos/etc. that were filtered out, or can't be caught by regex (found manually)
@@ -93,6 +122,7 @@ def filterAll():
 if __name__ == "__main__":
     parser : argparse.ArgumentParser = argparse.ArgumentParser(description="stuff")
     parser.add_argument('-e', "--extract",          action='store_true', help="Extract all webpages on fictional crossover wiki")
+    parser.add_argument('-r', "--cache-redirects",  action='store_true', help="Goes through franchises_unfiltered.txt and stores all redirects in redirects.json") 
     parser.add_argument('-f', "--filter",           action='store_true', help="Filters franchise list by removing commercials, cameos, trailers, redirects, etc.")
     parser.add_argument('-i', "--insert",           action='store_true', help="Inserts filtered franchise list into filtered_franchises.txt")
     args : argparse.ArgumentParser = parser.parse_args()
@@ -101,8 +131,12 @@ if __name__ == "__main__":
     # (1) Extract all pages from the All Pages section of the wiki --------------------------------------------------------------------------------------------------------------------------------
     if args.extract:
         extractLinks()
+    
+    # (2) (Optional) Go through all articles in unfiltered_franchises.txt and determine which are redirects. Cache them in redirects.json --------------------------------------------------------
+    if args.cache_redirects:
+        cacheRedirects()
 
-    # (2) Go through franchises_unfiltered.txt and remove ads, redirects, etc ---------------------------------------------------------------------------------------------------------------------
+    # (3) Go through franchises_unfiltered.txt and remove ads, cameos, etc -----------------------------------------------------------------------------------------------------------------------
     if args.filter:
         filterAll()
 

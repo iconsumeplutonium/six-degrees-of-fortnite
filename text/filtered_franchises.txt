@@ -27,6 +27,7 @@
 3D Mania
 3 Ninjas
 404 GAME RE:SET
+500 Days of Summer
 50 First Dates
 6teen
 7 Dwarves
@@ -172,6 +173,7 @@ Antarctic Adventure
 Antonball
 Antz
 Any Malu
+Ao Oni
 Aoi Sekai no Chushin de
 Ape Escape
 Ape Out
@@ -426,6 +428,7 @@ Bleed
 Blend S
 Blended
 Blizzard Arcade Collection
+Block Party (Nickelodeon)
 Blockhead
 Blockout
 Blondie
@@ -536,7 +539,7 @@ Burnout
 Butch Cassidy and the Sundance Kids (Hanna-Barbera)
 Buzz!
 C-12: Final Resistance
-C.H.A.I.N.G.E.D.
+C.H.A.I.N.
 C.H.U.D.
 CBBC
 CB Bears
@@ -716,6 +719,7 @@ Circus Caper
 Citizen Kane
 City Connection
 City Hunter
+City Shrouded in Shadow
 Civilization
 Clamp in Wonderland
 Clannad
@@ -725,6 +729,7 @@ Clash of the Titans
 Class (BBC)
 Class of '09 (SBN3)
 Class of 3000
+Class of the Titans
 ClayFighter
 Cleopatra Fortune
 Clerks
@@ -785,6 +790,7 @@ Cook, Serve, Delicious!
 Cookie Crisp
 Cookie Run
 Cooking Companions
+Cool Shock B.T.
 Cooped Up
 Cooties
 Cop Rock
@@ -814,6 +820,7 @@ Crazy Frog
 Crazy Kong
 Crazy Taxi
 Crazylegs Crane
+Creation Club
 Creature Comforts
 Creature From The Black Lagoon
 Creatures
@@ -839,6 +846,7 @@ Cthulhu Saves the World
 Cubivore
 Cujo
 Cult of the Lamb
+Cunk
 Cuphead
 Curious George
 Custom Robo
@@ -976,6 +984,7 @@ Digimon
 Digital Devil Saga
 Dilbert
 Dillon's Rolling Western
+Dimension Drive
 Dino Crisis
 Dino Rex
 Dino Run
@@ -985,6 +994,7 @@ Dinosaurs (ABC)
 Dirty Harry
 Disaster: Day of Crisis
 Disc Room
+Discworld
 Disenchantment
 Disgaea
 Dishonored
@@ -1136,6 +1146,7 @@ Egg (G&W)
 Eggerland
 Eggy Party
 Ehrgeiz
+Eight Crazy Nights
 El Chapulin Colorado
 El Chavo
 El Tigre
@@ -1321,6 +1332,7 @@ Frank Bruno's Boxing
 Frankenstein (Universal)
 Frankenstein Jr. and The Impossibles
 Frankenweenie
+Franky, Joe & Dirk: On the Tiles
 Frasier
 Fraymakers
 Freakazoid!
@@ -1387,6 +1399,7 @@ Gantz
 Garbage Pail Kids
 Garfield
 Gargoyles
+Garry's Mod
 Garten of Banban
 Gatchaman
 Gato Roboto
@@ -1607,6 +1620,7 @@ Heavy Rain
 Hebereke
 Hellbenders
 Hellboy
+Helldivers
 Hello Kitty
 Hello Neighbor
 Hellraiser
@@ -1811,6 +1825,7 @@ Jamal and Rachel
 James Bond
 James Hound
 James and the Giant Peach
+Janky & Guggimon
 Japan Detectives Club
 Jaws
 Jay and Silent Bob
@@ -2107,6 +2122,7 @@ Lily for President?
 Limbo
 Lineage
 Link's Crossbow Training
+Link Click
 Lion (G&W)
 Lippy The Lion and Hardy Har Har
 Liquid Kids
@@ -2452,6 +2468,7 @@ Mutant Mudds
 Mute (Netflix)
 Mutt & Stuff
 MySims
+My Deer Friend Nokotan
 My Friend Pedro
 My Gym Partner's a Monkey
 My Hero (Sega)
@@ -2524,6 +2541,7 @@ Neopets
 Nesquik
 Nestea
 Nester
+Neuro-sama
 Never Been Kissed
 New Girl
 New Space Order
@@ -2602,6 +2620,7 @@ Nurses (NBC)
 Nyan Cat
 O.N.G.E.K.I.
 OK K.O.!
+OMOCAT
 OMORI
 Obey Me!
 Observation
@@ -2618,6 +2637,7 @@ Oh Baby Kart
 Oh My School!
 Oil Panic
 Oishi High School Battle
+Ojamajo Doremi
 Old Jack's Boat
 Oliver & Company
 Omega Strikers
@@ -2848,6 +2868,7 @@ Princess Peach
 Princess Remedy
 Princess Tomato in the Salad Kingdom
 Problem Child
+Professor Chalk
 Professor Layton
 Progear
 Progressive
@@ -3391,6 +3412,7 @@ Steel Jeeg
 Stellar Blade
 Step by Step
 Steven Universe
+Stingray (ITV)
 Stoked
 Stomp Party
 Story of Seasons
@@ -3816,6 +3838,7 @@ The Shadow (Street & Smith)
 The Shaggy Dog
 The Shape of Water
 The Shawshank Redemption
+The Shield (FX)
 The Shining
 The Shnookums & Meat Funny Cartoon Show
 The Simpsons
@@ -3840,6 +3863,7 @@ The Three-Eyed One
 The Three Stooges
 The Thundermans
 The Tick
+The Time Warp Trio
 The Tommyknockers
 The Totally Stonking, Surprisingly Educational And Utterly Mindboggling Comic Relief Comic
 The Tower (Ketchapp)
@@ -4076,6 +4100,7 @@ Utawarerumono
 Uzumaki
 V/H/S
 VA-11 Hall-A
+VRChat
 VR Troopers
 VShojo
 VVVVVV
@@ -4103,6 +4128,7 @@ Video Game High School
 Video Mods
 Video Violence
 Viewtiful Joe
+Villager News
 Villainous (Cartoon Network)
 Vindicators
 Vinyl Goddess from Mars
@@ -4173,6 +4199,7 @@ We are Manga-ka: The Tokiwa-so Story
 Weathering with You
 Webkinz
 Weeds (Showtime)
+Weekly World News
 Weird Science
 Weiss Schwarz
 Welcome to Bon's Burgers

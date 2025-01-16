@@ -1,4 +1,4 @@
-import urllib.parse
+import urllib.parse, json
 URL_BASE = "https://fictionalcrossover.fandom.com/wiki/"
 
 def convertFranchiseToURL(name : str) -> str:
@@ -13,11 +13,10 @@ def sanitize(name : str) -> str:
     return name.replace("“", '"').replace("”", '"')
 
 
-def getRedirects() -> set[str]:
-    knownRedirects : set[str] = set()
-    with open('text/known_redirects.txt', 'r', encoding='utf-8') as redirects:
-        for redirect in redirects.readlines():
-            knownRedirects.add(redirect.strip())
+def getRedirects() -> dict[str]:
+    knownRedirects : dict[str, str] = {}
+    with open('text/redirects.json', 'r', encoding='utf-8') as redirects:
+        knownRedirects = json.loads(redirects.read())
     
     return knownRedirects
 
