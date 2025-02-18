@@ -14,12 +14,14 @@ function App() {
 	useEffect(() => {
 		const readFileIntoArray = async () => {
 			try {
-				const response = await fetch('/franchises_filtered.txt');
+				const response = await fetch('/filtered_franchises.txt');
 				if (!response.ok) throw new Error('Failed to load franchises');
 
 				const text = await response.text();
 				const lines = text.split('\n').map(line => line.trim());
 				setFranchiseList(lines);
+
+				console.log(lines);
 			} catch (error) {
 				console.error('Error reading file:', error);
 			}
