@@ -57,7 +57,8 @@ A simple FastAPI webserver that returns the path to a specified franchise.
                     "date": "string",
                     "description": "string",
                     "linkType": 1
-                }
+                },
+                ...
             ]
         }
         ```
