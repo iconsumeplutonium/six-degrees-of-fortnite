@@ -26,6 +26,7 @@ function App() {
 		readFileIntoArray();
 	}, []);
 
+
 	const getCrossover = async () => {
 		try {
 			const response = await fetch(`http://10.0.0.89:8000/path/${encodeURIComponent(selectedFranchise)}?minLinkType=1`, { method: 'POST' });
@@ -39,12 +40,15 @@ function App() {
 		}
 	}
 
+
 	//call getcrossover whenever selectedFranchise is updated (when Autocomplete calls onFranchiseSelect)
 	useEffect(() => {
 		if (selectedFranchise.length > 0) getCrossover();
 	}, [selectedFranchise]);
+	
 
 	const formatData = () => {
+		if (!selectedFranchise) return;
 		if (!crossoverDict.found) return `No connection found. ${selectedFranchise} isn't part of the Fortnite multiverse.`;
 
 		return (crossoverDict.path as any).map((crossover: Record<string, unknown>, index: number) => (
@@ -85,9 +89,7 @@ function App() {
 				</div>
 			</div>
 			<br />
-			<button
-				onClick={getCrossover}
-			>
+			<button onClick={getCrossover}>
 				Go!
 			</button>
 			<br /><br />

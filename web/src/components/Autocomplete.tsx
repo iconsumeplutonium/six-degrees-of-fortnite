@@ -4,13 +4,12 @@ import './Autocomplete.css'
 const MAX_RESULTS = 10;
 
 interface AutocompleteProps {
-	data: string[],            //the list of franchises
-	onFranchiseInput: (franchiseName: string) => void
+	data: string[],                                     //the list of franchises
+	onFranchiseInput: (franchiseName: string) => void   //the function to call once a franchise was inputted
 }
 
 function filterFranchises(franchiseList: string[], inputQuery: string) {
-	// if (franchiseList.length == 0) (<div></div>);
-	if (!inputQuery || inputQuery.length == 0) return [];
+	if (!inputQuery) return [];
 
 	let regexSearch;
 	try {
@@ -47,6 +46,7 @@ const Autocomplete: React.FC<AutocompleteProps> = ({ data, onFranchiseInput }) =
 					setSuggestions(filterFranchises(data, a));
 				}}
 				ref={(input) => {
+					//deselect textbox if textbox is deselected (https://c.tenor.com/KsvZ1G5XL1UAAAAC/tenor.gif)
 					if (!isFocus && input) {
 						input.blur();
 					}
@@ -71,7 +71,6 @@ const Autocomplete: React.FC<AutocompleteProps> = ({ data, onFranchiseInput }) =
 							break;
 						case 'Enter':
 							if (selectedIndex < 0) break;
-							console.log(suggestions[selectedIndex]);
 							setCurrentValue(suggestions[selectedIndex]);
 							setIsFocus(false);
 
@@ -83,18 +82,22 @@ const Autocomplete: React.FC<AutocompleteProps> = ({ data, onFranchiseInput }) =
 			/>
 
 			{isFocus && (currentValue.length > 0) &&
-				<div className="resultsList" style={{ position: 'absolute', zIndex: 1000, top: '100%' }}>
+				<div className="resultsList">
 					{suggestions.map((option: string, index: number) => {
 						return (
 							<div
 								key={option}
 								className="option"
-								onMouseDown={(e) => {
+								ref={(el) => {
+									//scroll into view if selection is off-screen
+									if (el && index === selectedIndex) {
+										el.scrollIntoView({ block: 'nearest' });
+									}
+								}}
+								onMouseDown={(_) => {
 									setCurrentValue(option);
 									setIsFocus(false);
 									onFranchiseInput(option);
-
-									console.log(option);
 								}}
 								style={{
 									...(index === selectedIndex && { backgroundColor: "#0000FF" }),
