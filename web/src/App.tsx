@@ -32,7 +32,7 @@ function App() {
 	const getCrossover = async () => {
 		console.log(selectedFranchise);
 		try {
-			const response = await fetch(`http://192.168.189.162:8000/path/${encodeURIComponent(selectedFranchise)}?minLinkType=1`, { method: 'POST' });
+			const response = await fetch(`http://10.0.0.89:8000/path/${encodeURIComponent(selectedFranchise)}?minLinkType=1`, { method: 'POST' });
 			if (!response.ok) throw new Error('Error: Something went wrong accessing API');
 
 			const data = await response.json();
@@ -65,30 +65,14 @@ function App() {
 					<label className="connectText">
 						{"Connect "}
 					</label>
-					{/* <input
-						className="inputBox"
-						type="text"
-						list="franchise"
-						value={inputQuery}
-						onChange={(e) => { setInput(e.target.value) }}
-						onKeyDown={(e) => {
-							if (e.key === 'Enter' && franchiseSet.has(inputQuery))
-								setSelectedFranchise(inputQuery);
-						}}
-						onInput={(e) => {
-							const test = e.target as HTMLInputElement;
-							if (franchiseSet.has(test.value))
-								setSelectedFranchise(test.value);
-						}}
-						placeholder="Search..."
-					/>
-					<datalist id="franchise">
-						{inputQuery && filterFranchises()}
-					</datalist> */}
 					<Autocomplete 
 						data={franchiseList}
 						currentValue={inputQuery}
-						onChange={setInput}
+						onCurrentValueChange={setInput}
+						onFranchiseInput={async (f: string) => {
+							setSelectedFranchise(f);
+							await getCrossover();
+						}}
 					/>
 
 					<label className='connectText'>
