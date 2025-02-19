@@ -5,8 +5,6 @@ const MAX_RESULTS = 10;
 
 interface AutocompleteProps {
 	data: string[],            //the list of franchises
-	currentValue: string,      //the current text typed in the textbox (react state variable)
-	onCurrentValueChange: (newValue: string) => void,      //the function that will change currentValue (react state function thing)
 	onFranchiseInput: (franchiseName: string) => void
 }
 
@@ -29,13 +27,14 @@ function filterFranchises(franchiseList: string[], inputQuery: string) {
 		.slice(0, MAX_RESULTS);
 }
 
-const Autocomplete: React.FC<AutocompleteProps> = ({ data, currentValue, onCurrentValueChange, onFranchiseInput }) => {
+const Autocomplete: React.FC<AutocompleteProps> = ({ data, onFranchiseInput }) => {
+	const [currentValue, setCurrentValue] = useState<string>('');
 	const [isFocus, setIsFocus] = useState(false);
 	const [selectedIndex, setSelectedIndex] = useState(0);
 	const [suggestions, setSuggestions] = useState<string[]>([]);
 
 	return (
-		<div className="autocompleteParent">
+		<div className="autocompleteParent" style={{position: 'relative'}}>
 			<input
 				className="inputBox"
 				type="text"
@@ -43,9 +42,14 @@ const Autocomplete: React.FC<AutocompleteProps> = ({ data, currentValue, onCurre
 				value={currentValue}
 				onChange={(e) => {
 					const a = e.target.value;
-					onCurrentValueChange(a);
+					setCurrentValue(a);
 					setSelectedIndex(0);
 					setSuggestions(filterFranchises(data, a));
+				}}
+				ref={(input) => {
+					if (!isFocus && input) {
+						input.blur();
+					}
 				}}
 				onFocus={() => (setIsFocus(true))}
 				onBlur={() => (setIsFocus(false))}
@@ -68,7 +72,7 @@ const Autocomplete: React.FC<AutocompleteProps> = ({ data, currentValue, onCurre
 						case 'Enter':
 							if (selectedIndex < 0) break;
 							console.log(suggestions[selectedIndex]);
-							onCurrentValueChange(suggestions[selectedIndex]);
+							setCurrentValue(suggestions[selectedIndex]);
 							setIsFocus(false);
 
 							onFranchiseInput(suggestions[selectedIndex]);
@@ -79,17 +83,22 @@ const Autocomplete: React.FC<AutocompleteProps> = ({ data, currentValue, onCurre
 			/>
 
 			{isFocus && (currentValue.length > 0) &&
-				<div className="resultsList">
+				<div className="resultsList" style={{ position: 'absolute', zIndex: 1000, top: '100%' }}>
 					{suggestions.map((option: string, index: number) => {
 						return (
 							<div
 								key={option}
 								className="option"
 								onMouseDown={(e) => {
-									e.preventDefault();
+									setCurrentValue(option);
+									setIsFocus(false);
+									onFranchiseInput(option);
+
 									console.log(option);
 								}}
-								style={index == selectedIndex ? { backgroundColor: "#0000FF" } : {}}
+								style={{
+									...(index === selectedIndex && { backgroundColor: "#0000FF" }),
+								}}
 							>
 								{option}
 							</div>)

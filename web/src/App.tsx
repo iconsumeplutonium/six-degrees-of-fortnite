@@ -4,7 +4,6 @@ import Autocomplete from './components/Autocomplete';
 import './App.css';
 
 function App() {
-	const [inputQuery, setInput] = useState('');
 	const [selectedFranchise, setSelectedFranchise] = useState('')
 	const [franchiseList, setFranchiseList] = useState<string[]>([]);
 	const [crossoverDict, setCrossoverDict] = useState<Record<string, unknown>>({});
@@ -20,8 +19,6 @@ function App() {
 				const text = await response.text();
 				const lines = text.split('\n').map(line => line.trim());
 				setFranchiseList(lines);
-
-				console.log(lines);
 			} catch (error) {
 				console.error('Error reading file:', error);
 			}
@@ -30,7 +27,6 @@ function App() {
 	}, []);
 
 	const getCrossover = async () => {
-		console.log(selectedFranchise);
 		try {
 			const response = await fetch(`http://10.0.0.89:8000/path/${encodeURIComponent(selectedFranchise)}?minLinkType=1`, { method: 'POST' });
 			if (!response.ok) throw new Error('Error: Something went wrong accessing API');
@@ -42,6 +38,11 @@ function App() {
 			console.error('Error:', error);
 		}
 	}
+
+	//call getcrossover whenever selectedFranchise is updated (when Autocomplete calls onFranchiseSelect)
+	useEffect(() => {
+		if (selectedFranchise.length > 0) getCrossover();
+	}, [selectedFranchise]);
 
 	const formatData = () => {
 		if (!crossoverDict.found) return `No connection found. ${selectedFranchise} isn't part of the Fortnite multiverse.`;
@@ -67,11 +68,14 @@ function App() {
 					</label>
 					<Autocomplete 
 						data={franchiseList}
-						currentValue={inputQuery}
-						onCurrentValueChange={setInput}
-						onFranchiseInput={async (f: string) => {
-							setSelectedFranchise(f);
-							await getCrossover();
+						onFranchiseInput={(f: string) => {
+							if (!franchiseSet.has(f)) return;
+							
+							// getCrossover is called automatically whenever setSelectedFranchise is called
+							setSelectedFranchise(_ => {
+								console.log(f);
+								return f;
+							});
 						}}
 					/>
 
