@@ -29,7 +29,7 @@ function App() {
 
 	const getCrossover = async () => {
 		try {
-			const response = await fetch(`http://10.0.0.89:8000/path/${encodeURIComponent(selectedFranchise)}?minLinkType=1`, { method: 'POST' });
+			const response = await fetch(`http://169.233.167.178:8000/path/${encodeURIComponent(selectedFranchise)}?minLinkType=1`, { method: 'POST' });
 			if (!response.ok) throw new Error('Error: Something went wrong accessing API');
 
 			const data = await response.json();

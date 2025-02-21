@@ -23,7 +23,7 @@ def extractLinks() -> None:
             break
 
     
-    with open('text/franchises_unfiltered.txt', 'a', encoding='utf-8') as file:
+    with open('text/franchises_unfiltered.txt', 'w', encoding='utf-8') as file:
         for franchise in allArticles:
             file.write(Utilities.sanitize(franchise) + "\n")
 

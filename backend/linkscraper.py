@@ -38,8 +38,18 @@ def scrape(url: str) -> list[dict]:
         # ".25" in a <span> tag with display:none. This fucks it up. Just remove the ".25" from the string
         linkType: str = TDs[4].get_text().replace('a', '').replace('.25', '') 
 
-        # arrow type: Left, Right, Left & Right, Double Left, Double Right, Dash
-        crossoverDirection: str = TDs[0].find('a').find('img').get('alt')
+        # try:
+        #     # arrow type: Left, Right, Left & Right, Double Left, Double Right, Dash
+        #     crossoverDirection: str = TDs[0].find('a').find('img').get('alt')
+        # except Exception as e:
+        #     # if the arrow is broken, just skip
+        #     # https://fictionalcrossover.fandom.com/wiki/Peter_Pan_(Disney)
+        #     # fortnite is a right arrow here, but we're skipping all right arrows
+        #     # what do we do here?
+        #     print("error error")
+        #     print(crossovers)
+        #     exit(1)
+        #     continue
 
         # date and description
         date        : str = TDs[2].get_text()
@@ -64,14 +74,15 @@ def scrape(url: str) -> list[dict]:
 
             if 'mw-redirect' in element.get('class', []): 
                 url: str = element.get('href')
+                unquotedURL: str = Utilities.convertURLtoFranchise(url).replace('/wiki/', '').replace('wiki/', '')
 
                 # if we know where this url redirects to, use that instead of making a new request
-                if url in redirectMap:
-                    gameName: str = redirectMap[url]
+                if unquotedURL in redirectMap:
+                    gameName: str = redirectMap[unquotedURL]
                 else:
                     originalURL: str = getURLAfterRedirects(URL_START + url)
                     gameName: str = Utilities.convertURLtoFranchise(originalURL)
-                    redirectMap[url] = gameName
+                    redirectMap[unquotedURL] = gameName
             else:
                 gameName: str = TDs[1].string
             
@@ -105,15 +116,12 @@ def scrape(url: str) -> list[dict]:
             continue                        
 
         crossovers.append({
-            #"arrow": arrowType.replace(".png", "").replace("_", " "),
+            # "arrow": crossoverDirection.replace("Arrow ", ""),
             "game": gameName.strip(),
             "date": ' '.join(date.split(' ')[1:]),
             "description": description,
             "linkType": float(linkType.strip())
         })
-
-    # print(crossovers)
-    # exit(0)
 
     return crossovers
 
@@ -170,12 +178,11 @@ if __name__ == "__main__":
     with open('text/misc_removals.txt', 'r', encoding='utf-8') as file:
         removedLinks = set([r.strip() for r in file.readlines()])
 
-
     INSERT_QUERY: str = "INSERT INTO links (gameID, COgameID, description, crossoverDate, linkType) VALUES (?, ?, ?, ?, ?)"
     i: int = 1
 
     try: 
-        for franchise in tqdm(franchises):
+        for franchise in tqdm(franchises, desc='Scraping crossovers'):
             if franchise is None: continue # skip the first one (make list indices align with SQL ids [which are 1 indexed])
             if i < startIndex:
                 i += 1
@@ -224,14 +231,21 @@ if __name__ == "__main__":
 # arrow types
 # <--- means that this franchises references another
 # ---> means that another franchise references this one
-# ignore all right arrows, we need to extract only arrows pointing left or lines
 
 # <---       Arrow_L.png
 # <--- --->  Arrow_L_&_R.png
 # <===       Double_Arrow_L.png
 # ===>       Double_Arrow_R.png
 # ---        Dash.png
-# --->       Arrow_R.png (ignore this)
+# --->       Arrow_R.png
+
+# I initially dediced to ignore all right arrow connections, because my though process was that if Franchise A only references Franchise B (but
+# B doesn't reference A), then A should be able to go to B, but B shouldn't go through A 
+# However, the wiki is really inconsistent about the left or right arrows. For instance, Star Wars and Lethal Company's articles have right arrow links to Fortnite
+# which means that a BFS traversal for Star Wars goes through Transformers, Avengers, and then Fortnite (note that transformers appears in fortnite too), and
+# and Lethal Company has no links to Fortnite (despite being in Fortnite).
+
+# Because of this, I am treating all arrows as bidirectional, even if it doesn't make sense in some situations
 
 
 # some good test URLs
