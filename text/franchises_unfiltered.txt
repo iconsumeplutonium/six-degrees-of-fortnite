@@ -38,6 +38,7 @@
 2020 Walmart Big Game Commercial
 2023 Ster-Kinekor Theaters Mario Movie promo
 2064: Read Only Memories
+2112
 24
 24 (Fox)
 2 Broke Girls
@@ -215,6 +216,7 @@ All in the Family
 Alleyway
 Alleyway X Mario
 Ally McBeal
+Almastriga: Relics of Azathoth
 Alone in the Dark
 Alpha Mission
 Alpha Mission X Super Smash Bros.
@@ -367,6 +369,7 @@ Arkista's Ring
 Arknights
 Arm Wrestling (Nintendo)
 Arm Wrestling (Nintendo) X Punch-Out!!
+Arma's Quest
 Armada
 Armageddon (Touchstone)
 Armed Police Batrider
@@ -706,6 +709,7 @@ Beyond Good & Evil X Asterix
 Beyond Two Souls
 Big Air Adventure
 Big Bang Theory
+Big Boy (Mascot)
 Big Brain Academy
 Big Brain Academy X Mario
 Big Brain Academy X Wario
@@ -822,6 +826,7 @@ Blossom
 Bloxeed
 Bloxeed X Tetris
 Blue's Clues
+Blue Archive
 Blue Beetle
 Blue Bloods
 Blue Lock
@@ -913,6 +918,8 @@ Bravest Warriors
 Bravoman
 Bravoman X Taiko no Tatsujin
 Brawl Stars
+Brawl Stars X Pop-Up Pirate
+Brawl Stars X South Park
 Brawl Stars X Toy Story
 Brawlhalla
 Brawlout
@@ -1304,6 +1311,7 @@ Clockwork Orange
 Clone High
 Clone High X Spider-Man
 Close Enough
+Cloud Meadow
 Cloudy With a Chance of Meatballs
 Cloudy with a Chance of Meatballs
 Clover Theater
@@ -1352,6 +1360,7 @@ Columbia (Mascot)
 Columbo
 Columns
 Combat Colin
+Combo Crew
 Comic Relief's Helping Hand
 Comix Zone
 Commander Keen
@@ -1433,6 +1442,7 @@ Crazy Taxi
 Crazylegs Crane
 Creation Club
 Creature Comforts
+Creature Features (KOFY-TV)
 Creature From The Black Lagoon
 Creatures
 Creatures X MediEvil
@@ -1780,6 +1790,7 @@ Disney Friends
 Disney Heroes: Battle Mode
 Disney Infinity
 Disney Infinity X Avatar (Fox)
+Disney Infinity X Oz (Disney)
 Disney Jr. Music shorts
 Disney Junior Music shorts
 Disney Magic Kingdoms
@@ -2065,6 +2076,7 @@ Drakengard
 Drawn To Life
 Drawn Together
 Drawn Together X Zelda
+Dread X Collection
 DreamMix TV World Fighters
 DreamWorks' Puss in Boots
 DreamWorks (Mascot)
@@ -2198,6 +2210,7 @@ Encounter in the Third Dimension
 EndWar
 Enduro X Call of Duty
 Energizer
+English Training
 Enigma Pinball
 Ensemble Stars!
 Enter the Dragon
@@ -2213,6 +2226,7 @@ Eric and the Floaters
 Escape Plan (Game)
 Escape from New York
 Esurance
+Eternal Champions
 Eternal Darkness
 Eternal Sunshine of the Spotless Mind
 Etrian Odyssey
@@ -2239,6 +2253,7 @@ Evil Ernie
 Evil Within (Tango Gameworks)
 Evolution Skateboarding
 Evolve
+Excel Saga
 Excite
 Excite X Animal Crossing
 Excite X Mario
@@ -2439,6 +2454,7 @@ Fist of the North Star
 Fist of the North Star X JoJo's Bizarre Adventure
 Fist of the North Star X Jump (Series)
 Fitness Boxing
+Five Nights at Candy's
 Five Nights at Freddy's
 Five Nights at Freddy's X One Night at Flumpty's
 Five nights at freddy's
@@ -2591,6 +2607,7 @@ Futurama X Fortnite
 Futurama X Mario
 Futurama X Star Fox
 Future-Worm!
+Future Fragments
 Future Generations
 Fuuka
 FЯED
@@ -2774,6 +2791,7 @@ Going Under
 Gold Digger
 Goldbergs
 Golden Axe
+Golden Crisp
 Golden Girls
 Golden Sun
 Golden Sun X Zelda
@@ -3271,6 +3289,7 @@ Indie Pogo X Super Dangerous Dungeons
 Indie Rumble
 Indivisible
 Infamous
+Inferno Cop
 Infestation
 Infinity Train
 Infinity Train X OK K.O.!
@@ -3284,6 +3303,7 @@ Inscryption
 Inside Job (Netflix)
 Inside Out (Pixar)
 Inspector Gadget
+Instacart's We're Here Commercial
 Instant Mom
 Intern
 Interview with the Vampire
@@ -3294,6 +3314,7 @@ Inuyasha X Taiko no Tatsujin
 Invader Zim
 Invincible
 Invincible (Image)
+Invincible (Image) X Spider-Man
 Invincible (Image Comics)
 Invincible Fight Girl
 Invincible X Fortnite
@@ -3309,6 +3330,7 @@ Is the Order a Rabbit?
 Isekai Ojisan
 Isekai Quartet
 Isekai Quartet X Re:Zero
+Isekai∞Isekai
 It's Always Sunny in Philadelphia
 It's Garry Shandling's Show
 It's Gonna Be A Great Day Kellogg's Commercial
@@ -3413,6 +3435,7 @@ JoJo's Bizarre Adventure X Terminator
 JoJo's Bizarre Adventure X Tetsujin 28
 JoJo's Bizarre Adventure X The Matrix
 JoJo's Bizarre Married Life
+Joe's Apartment
 Joe & Mac
 Joe & Mac X Mario
 Joe Danger
@@ -3605,6 +3628,8 @@ Kimetsu no Yaiba
 Kin-iro Mosaic
 Kindaichi Case Files
 Kindergarten
+Kindergarten: The Musical
+Kindergarten The Musical
 King's Quest
 King Kong
 King Kong X Donkey Kong
@@ -3882,6 +3907,7 @@ Link
 Link's Crossbow Training
 Link's Crossbow Training X Zelda
 Link Click
+Linus the Lionhearted
 Lion (G&W)
 Lion (G&W) X Super Smash Bros.
 Lion King
@@ -3909,6 +3935,7 @@ Liv and Maddie
 Liv and Maddie X Best Friends Whenever
 Live A Live
 Live from PS5
+Living Dead
 Lizzie McGuire
 Locke & Key
 LocoRoco
@@ -3935,6 +3962,7 @@ Lords Mobile
 Loser (Columbia)
 Lost Boys
 Lost Girl
+Lost Highway
 Lost Planet
 Lost Planet X Asura's Wrath
 Lost Vikings
@@ -3969,6 +3997,7 @@ Luxo, Jr.
 Luxo Jr.
 Lycoris Recoil
 Lyle, Lyle, Crocodile
+M&M's
 M&M's
 M&M's X Shrek
 M*A*S*H
@@ -4406,6 +4435,7 @@ Marvel Cinematic Universe
 Marvel Land
 Marvel Rivals
 Marvel Snap
+Marvel Strike Force
 Marvel Super Heroes (Capcom)
 Marvel Super Heroes (Capcom) X Captain Commando
 Marvel Super Heroes (Capcom) X Final Fight
@@ -4636,6 +4666,7 @@ Mischief Makers
 Misery
 Misfortune Of Being Ned
 Miss Kobayashi's Dragon Maid
+Miss Monochrome
 Missile Command
 Missing Link (Laika)
 Mission: Impossible
@@ -4768,6 +4799,7 @@ Mr. Potato Head
 Mr. Rogers' Neighborhood
 Mrs. Butterworth's
 Mrs. Doubtfire
+Ms. Marvel
 Muffin the Mule
 Mulan (Disney)
 MultiVersus
@@ -4910,6 +4942,7 @@ Nazo no Murasame Jo X Donkey Kong
 Nazo no Murasame Jo X Super Smash Bros
 Nazo no Murasame Jo X Super Smash Bros.
 Nazoler Land
+Ne Zha (Beijing Enlight Media)
 Ned's Declassified School Survival Guide
 Ned's Declassified School Survival Guide X The Fairly OddParents
 Need for Speed
@@ -4936,6 +4969,7 @@ Neuro-sama
 Never Been Kissed
 NewZealand Story
 New Andy Griffith Show
+New Game!
 New Girl
 New Space Order
 Newgrounds Rumble
@@ -5100,7 +5134,6 @@ OK K.O.! X Uncle Grandpa
 OK K.O.! X Victor and Valentino
 OK K.O.! X We Bare Bears
 OK K.O.! X Whatever Happened to... Robot Jones?
-OMOCAT
 OMORI
 Obey Me!
 Observation
@@ -5126,6 +5159,7 @@ Oishi High School Battle
 Ojamajo Doremi
 Okami X Street Fighter
 Old Jack's Boat
+Old Spice
 Oliver & Company
 Oliver and Company
 Omega Strikers
@@ -5193,6 +5227,8 @@ Overlord (Kagune Maruyama)
 Overwatch
 Owl House
 Owlboy
+Oz (Disney)
+Oz (Disney) X Disney Infinity
 PAW Patrol
 PGA Tour
 PJ Masks
@@ -5274,11 +5310,13 @@ Party Land X Dig Dug
 Party Land X Mappy
 Party Land X Sky Kid
 Party Land X Valkyrie (Namco)
+Party Zone
 Passions
 Patapon
 Path To Nowhere
 Path to Nowhere
 Pathfinder (Paizo Inc.)
+Patlabor
 Paul (Universal)
 Paul Blart: Mall Cop
 Payday
@@ -5349,6 +5387,7 @@ Pinball (Nintendo)
 Pinball (Nintendo) X Donkey Kong
 Pinball (Nintendo) X Mario
 Pinball (Nintento) X Animal Crossing
+Pinball FX
 Ping Pong
 Pingu
 Pink Panther
@@ -5451,6 +5490,7 @@ Pop'n Music
 Pop'n Music X Mario
 Pop-Tarts
 Pop-Up Pirate
+Pop-Up Pirate X Brawl Stars
 Pop Team Epic
 Pop n' Pop
 Popeye
@@ -5492,6 +5532,7 @@ Predator (Fox)
 Predator (Fox) X Street Fighter
 Predator (Yautja)
 Prep & Landing
+Pressure
 Presto (Pixar)
 Presto (Pixar Short)
 Pretty Cure
@@ -5619,6 +5660,7 @@ Qix
 Qix X Mario
 Qix X Tetris
 Quake
+Quake (Quaker)
 Quake X Asterix
 Quantum Break
 Quantum Leap
@@ -5627,6 +5669,7 @@ Queen's Blade
 QuickSpot
 Quick Draw McGraw
 Quiet Place
+Quisp
 Quiz Caravan Cult Q
 Quiz Magic Academy
 Quiz Nanairo Dreams
@@ -5725,6 +5768,7 @@ Red Sonja
 Red vs Blue
 Redungeon
 Regina & Mac
+Regretevator
 Regular Show
 Regular Show X Mario
 Regular Show X Q*bert
@@ -5817,6 +5861,7 @@ Robot Jones
 Robot Odyssey
 Robot Tank X Call of Duty
 Robotron
+Robots (Blue Sky Studios)
 Rock 'Em Sock 'Em Robots
 Rock 'n Ball
 Rock Band
@@ -5874,11 +5919,15 @@ Running Stadium X Duck Hunt
 Running Stadium X Mario
 Running to the Moon for a Banquet
 Rurouni Kenshin
+Rust
+Rust (Facepunch)
+Rust (Facepunch Studios)
 Rust Bucket
 Rusty's Real Deal Baseball
 Ryan's World
 Rygar
 S.W.A.T.
+SCP: Secret Laboratory
 SINoALICE
 SMG4
 SMG4 X Among Us
@@ -6036,6 +6085,7 @@ Shadow Warrior
 Shadow of the Colossus
 Shadow the Hedgehog
 Shadowverse
+Shady Lewd Kart
 Shaggy Dog Story
 Shake It Up
 Shakugan no Shana
@@ -6088,6 +6138,7 @@ Shock Wave
 Shogun Curse
 Shonen Jump covers
 Shooty Skies
+Shopkins
 Short Circuit (TriStar)
 Shorts
 Shovel Knight
@@ -6278,6 +6329,7 @@ South Park X Akira
 South Park X Alien (Fox)
 South Park X Alien Nation
 South Park X Bionic Man
+South Park X Brawl Stars
 South Park X Ghostbusters
 South Park X Jurassic Park
 South Park X Mario
@@ -6307,6 +6359,7 @@ Space Invaders X Asterix
 Space Manbow
 Space Odyssey
 Space Odyssey X Mario
+Space Patrol Luluco
 Space Quest
 Space Warlord Organ Trading Simulator
 Spaceballs
@@ -6332,6 +6385,7 @@ Spider-Man
 Spider-Man X Clone High
 Spider-Man X Fortnite
 Spider-Man X Invincible
+Spider-Man X Invincible (Image)
 Spider-Man X JoJo's Bizarre Adventure
 Spider-Man X Shinobi
 Spider Fighter X Call of Duty
@@ -6371,6 +6425,7 @@ Spooky Month
 Spore
 Spore X Mario
 Spore X Mass Effect
+Sprout Diner
 Spy Hunter
 Spy Hunter X Mortal Kombat
 Spy Kids
@@ -6772,6 +6827,7 @@ Sym-Bionic Titan
 Sym-Biotic Titan
 Symphogear
 Syphon Filter
+System Shock
 Syvalion
 T'ai Fu: Wrath of the Tiger
 T.U.F.F. Puppy
@@ -6872,6 +6928,7 @@ Taken
 Takeshi no Chōsenjō
 Tales From The Crypt
 Tales of
+Tales of (Namco)
 Tales of (Series)
 Tales of Series
 Tales of the Beanworld
@@ -7004,6 +7061,7 @@ Texas Chainsaw Massacre
 Texting of the Bread
 Thanos
 That's My Boy
+That's So Raven
 That's So Suite Life of Hannah Montana
 That's my Boy
 That '70s Show
@@ -7045,6 +7103,7 @@ The Banana Splits
 The Basement Collection
 The Battle Cats
 The Baz (Mascot)
+The Berenstain Bears
 The Beverly Hillbillies
 The Beverly Hillbillies X Mario
 The Big Bang Theory
@@ -7079,6 +7138,7 @@ The Boondocks
 The Boss Baby
 The Boxtrolls
 The Boys
+The Bradford McKinley Chronicles
 The Brady Bunch
 The Brak Show
 The Breakfast Club
@@ -7216,6 +7276,7 @@ The Haunted Mansion
 The Haunted World of El Superbeasto
 The Herculoids
 The Hex
+The Hidden Wizard
 The Hitchhiker's Guide to the Galaxy
 The Honeymooners
 The House of the Dead
@@ -7228,6 +7289,7 @@ The Indian in the Cupboard
 The Inheritance Cycle
 The Innkeepers
 The Intern
+The Invisible Man (Universal)
 The Irate Gamer
 The Iron Giant
 The Irregular at Magic High School
@@ -7327,12 +7389,15 @@ The Ninja Warriors
 The Office
 The Official BBC Children in Need Medley
 The Official BBC Children in Need Meledy
+The Omen
 The Orange Box
 The Order
 The Order: 1886
+The Otachan Show
 The Owl House
 The Parkers
 The Partridge Family
+The Party Zone
 The Patrick Star Show
 The Peter Potamus Show
 The Phantom
@@ -7402,6 +7467,7 @@ The Sims
 The Sims X Asterix
 The Sin of Madelon Claudet
 The Single Guy
+The Sisters of Dorley
 The Six Million Dollar Man
 The Sixth Sense
 The Smurfs
@@ -7446,6 +7512,7 @@ The Venture Bros.
 The Very Hungry Caterpillar
 The Vicar of Dibley
 The Village (Touchstone)
+The Wacky World of Tex Avery
 The Walking Dead
 The Walten Files
 The Waterboy
@@ -7493,6 +7560,7 @@ This Is the End
 Thomas & Friends
 Thomas Was Alone
 Thor (Marvel)
+Three Cheers for Sweet Revenge
 Three Flavours Cornetto
 Three Men and a Baby X Mario
 Three Wonders
@@ -7839,6 +7907,7 @@ Wake, Rattle, and Roll
 Waku Waku 7
 Walker, Texas Ranger
 Walkure Romanze
+Wallace & Gromit
 Wallace and Gromit
 Wally Bear
 Wally Gator
@@ -7929,6 +7998,7 @@ We Bare Bears
 We Cheer
 We Need Girlfriends
 We Never Learn
+We Ski
 We are Family Foundation Video
 We are Manga-ka: The Tokiwa-so Story
 We are the Main Characters of the Demon World!
@@ -8013,6 +8083,7 @@ Wonder Woman
 Wonder Woman X MultiVersus
 Woody Pop
 Woody Woodpecker
+Wooser's Hand-to-Mouth Life
 World Flipper
 World Gone Sour X Mario
 World Heroes
@@ -8082,6 +8153,8 @@ Yakuman
 Yakuman X Mario
 Yakuza
 Yandere Simulator
+Yars
+Year Zero
 Yellow Submarine
 Yertle the Turtle
 Yie Ar Kung-Fu
@@ -8136,6 +8209,8 @@ YuruYuri
 Yuru Yuri
 Yuyuki
 Yōkai Dōchūki
+ZONE
+ZONE (Zink Animation)
 Zack & Wiki
 Zangeki no Reginleiv
 Zatch Bell!
