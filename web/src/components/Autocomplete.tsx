@@ -1,5 +1,5 @@
 import { useState } from "react"
-import './Autocomplete.css'
+import '../styles/Autocomplete.css'
 
 const MAX_RESULTS = 10;
 

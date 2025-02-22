@@ -1,7 +1,8 @@
 import { useState, useMemo, useEffect } from 'react';
 import Card from './components/Card';
 import Autocomplete from './components/Autocomplete';
-import './App.css';
+import Timeline from './components/Timeline'
+import './styles/App.css';
 
 function App() {
 	const [selectedFranchise, setSelectedFranchise] = useState('')
@@ -29,7 +30,7 @@ function App() {
 
 	const getCrossover = async () => {
 		try {
-			const response = await fetch(`http://169.233.167.178:8000/path/${encodeURIComponent(selectedFranchise)}?minLinkType=1`, { method: 'POST' });
+			const response = await fetch(`http://localhost:8000/path/${encodeURIComponent(selectedFranchise)}?minLinkType=1`, { method: 'POST' });
 			if (!response.ok) throw new Error('Error: Something went wrong accessing API');
 
 			const data = await response.json();
@@ -65,8 +66,8 @@ function App() {
 	return (
 		<>
 			<div>
-				<h1>Six Degrees of Fortnite</h1>
-				<div>
+				<h1>Title</h1>
+				<div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
 					<label className="connectText">
 						{"Connect "}
 					</label>
@@ -95,6 +96,11 @@ function App() {
 			<br /><br />
 			<div style={{ display: 'flex', flexDirection: 'column' }}>
 				{formatData()}
+				{/* <Timeline 
+					description='the pumping lemma says that for any regular language L, there exists a constant p such that any string w in L with length at least p can be split into three substrings x, y and z (w=xyz, with y being non-empty), such that the strings xz, xyz, xyyz, xyyyz,... are also in L.'
+					date='February 28, 2004'
+					franchiseName='insert franchise here'
+				/> */}
 			</div>
 		</>
 	)
