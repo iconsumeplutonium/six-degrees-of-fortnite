@@ -66,7 +66,7 @@ function App() {
 	return (
 		<>
 			<div>
-				<h1>Title</h1>
+				<h1>Six Degrees of Fortnite</h1>
 				<div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
 					<label className="connectText">
 						{"Connect "}
