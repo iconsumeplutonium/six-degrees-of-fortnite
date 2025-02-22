@@ -91,7 +91,7 @@ function App() {
 			</div>
 			<br />
 			<button onClick={getCrossover}>
-				Go!
+				<b>Go!</b>
 			</button>
 			<br /><br />
 			<div style={{ display: 'flex', flexDirection: 'column' }}>

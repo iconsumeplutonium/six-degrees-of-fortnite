@@ -100,7 +100,7 @@ const Autocomplete: React.FC<AutocompleteProps> = ({ data, onFranchiseInput }) =
 									onFranchiseInput(option);
 								}}
 								style={{
-									...(index === selectedIndex && { backgroundColor: "#0000FF" }),
+									...(index === selectedIndex && { backgroundColor: "#5E5E5E" }),
 								}}
 							>
 								{option}
