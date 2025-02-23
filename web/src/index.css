@@ -1,12 +1,19 @@
+@font-face {
+	font-family: 'BurbankBigCondensed';
+	src: url('burbankbigcondensed_black.otf')
+}
+
 :root {
 	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	/* font-family: BurbankBigCondensed; */
 	line-height: 1.5;
 	font-weight: 400;
 
 	color-scheme: light dark;
 	color: rgb(255, 255, 255);
 	/* background: -moz-linear-gradient(#4a0474, #0029a4); */
-	background: linear-gradient(#0029a4 10%, #3e7cff);
+	/* background: linear-gradient(#0029a4 10%, #3e7cff); */
+	background: #131315;
 
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;

@@ -1,0 +1,64 @@
+.timelineCardParent {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.arrowLine {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    background-color: white;
+    /* move 2px up to make sure arrow point looks normal, subtract 2px from the height to account for that */
+    height: 38px;
+    bottom: 2px
+}
+
+.arrowHead {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid white;
+}
+
+.cardParent {
+    background-color: #264775;
+    border-radius: 5px;
+    padding: 8px;
+    width: 80%;
+
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.title {
+    padding: 0px;
+    margin: 0;
+    flex: 1;
+    min-width: 0;
+}
+
+.franchiseName {
+    margin: 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.crossoverDate {
+    margin: 0px;
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+.dividerBar {
+    width: 95%;
+    height: 0px;
+    margin: 0 auto;
+}
+
+/* .description {
+    margin-left: 50px;
+} */

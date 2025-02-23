@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import '../styles/Autocomplete.css'
 
 const MAX_RESULTS = 10;
@@ -31,6 +31,16 @@ const Autocomplete: React.FC<AutocompleteProps> = ({ data, onFranchiseInput }) =
 	const [isFocus, setIsFocus] = useState(false);
 	const [selectedIndex, setSelectedIndex] = useState(0);
 	const [suggestions, setSuggestions] = useState<string[]>([]);
+	const [randomFranchiseIndex, setRandomFranchiseIndex] = useState<number>(0);
+
+	// pick random number every few seconds for the placeholder text
+	useEffect(() => {
+		const timer = setInterval(() => {
+			setRandomFranchiseIndex(Math.round(Math.random() * data.length));
+		}, 2000);
+
+		return () => clearInterval(timer);
+	}, []);
 
 	return (
 		<div className="autocompleteParent" style={{position: 'relative'}}>
@@ -78,7 +88,7 @@ const Autocomplete: React.FC<AutocompleteProps> = ({ data, onFranchiseInput }) =
 							break;
 					}
 				}}
-				placeholder="Search..."
+				placeholder={data[randomFranchiseIndex]}
 			/>
 
 			{isFocus && (currentValue.length > 0) &&

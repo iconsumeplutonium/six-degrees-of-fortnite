@@ -1,7 +1,7 @@
 import { useState, useMemo, useEffect } from 'react';
 import Card from './components/Card';
 import Autocomplete from './components/Autocomplete';
-import Timeline from './components/Timeline'
+import Timeline from './components/Timeline';
 import './styles/App.css';
 
 function App() {
@@ -46,20 +46,48 @@ function App() {
 	useEffect(() => {
 		if (selectedFranchise.length > 0) getCrossover();
 	}, [selectedFranchise]);
-	
+
 
 	const formatData = () => {
 		if (!selectedFranchise) return;
 		if (!crossoverDict.found) return `No connection found. ${selectedFranchise} isn't part of the Fortnite multiverse.`;
 
-		return (crossoverDict.path as any).map((crossover: Record<string, unknown>, index: number) => (
-			<Card
-				key={index}
-				title={crossover.name as string}
-				date={crossover.date as string}
-				description={crossover.description as string}
-			/>
-		));
+		// return [
+		// 	<Card
+		// 		key="start"
+		// 		title={selectedFranchise}
+		// 		date=""
+		// 		description="Starting point"
+		// 	/>,
+		// 	...(crossoverDict.path as any).map((crossover: Record<string, unknown>, index: number) => (
+		// 		<Card
+		// 			key={index}
+		// 			title={crossover.name as string}
+		// 			date={crossover.date as string}
+		// 			description={crossover.description as string}
+		// 		/>
+		// 	))
+		// ];
+
+		return [
+			<Timeline
+				key={0}
+				franchiseName={selectedFranchise}
+				date=""
+				description=""
+				displayArrow={false}
+			/>,
+			...(crossoverDict.path as any).map((crossover: Record<string, unknown>, index: number) => (
+				<Timeline
+					key={index + 1}
+					franchiseName={crossover.name as string}
+					date={crossover.date as string}
+					description={crossover.description as string}
+					displayArrow={true}
+				/>
+			))
+
+		];
 	}
 
 
@@ -71,11 +99,11 @@ function App() {
 					<label className="connectText">
 						{"Connect "}
 					</label>
-					<Autocomplete 
+					<Autocomplete
 						data={franchiseList}
 						onFranchiseInput={(f: string) => {
 							if (!franchiseSet.has(f)) return;
-							
+
 							// getCrossover is called automatically whenever setSelectedFranchise is called
 							setSelectedFranchise(_ => {
 								console.log(f);
@@ -89,14 +117,13 @@ function App() {
 					</label>
 				</div>
 			</div>
-			<br />
-			<button onClick={getCrossover}>
+			<button onClick={getCrossover} style={{marginTop: '10px'}}>
 				<b>Go!</b>
 			</button>
 			<br /><br />
 			<div style={{ display: 'flex', flexDirection: 'column' }}>
 				{formatData()}
-				{/* <Timeline 
+				{/* <Timeline
 					description='the pumping lemma says that for any regular language L, there exists a constant p such that any string w in L with length at least p can be split into three substrings x, y and z (w=xyz, with y being non-empty), such that the strings xz, xyz, xyyz, xyyyz,... are also in L.'
 					date='February 28, 2004'
 					franchiseName='insert franchise here'
