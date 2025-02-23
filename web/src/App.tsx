@@ -2,6 +2,7 @@ import { useState, useMemo, useEffect } from 'react';
 import Card from './components/Card';
 import Autocomplete from './components/Autocomplete';
 import Timeline from './components/Timeline';
+import Navigation from './components/Navigation';
 import './styles/App.css';
 
 function App() {
@@ -93,6 +94,7 @@ function App() {
 
 	return (
 		<>
+			<Navigation />
 			<div>
 				<h1>Six Degrees of Fortnite</h1>
 				<div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>

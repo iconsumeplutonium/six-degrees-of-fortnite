@@ -29,10 +29,17 @@
     background-color: #264775;
     border-radius: 5px;
     padding: 8px;
-    width: 80%;
+    width: 40%;
+    z-index: 3;
 
+    /* transition: transform 200ms ease-in-out; */
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
 }
+
+/* .cardParent:hover {
+    transform: scale(1.05);
+    transition: transform 200ms ease-in-out;
+} */
 
 .title {
     padding: 0px;
@@ -57,8 +64,10 @@
     width: 95%;
     height: 0px;
     margin: 0 auto;
+    border: 1px solid #FFFFFF;
 }
 
-/* .description {
-    margin-left: 50px;
-} */
+.description {
+    /* width: 40%; */
+    text-align: center;
+}

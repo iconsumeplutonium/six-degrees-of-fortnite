@@ -40,7 +40,7 @@ const Autocomplete: React.FC<AutocompleteProps> = ({ data, onFranchiseInput }) =
 		}, 2000);
 
 		return () => clearInterval(timer);
-	}, []);
+	}, [data]);
 
 	return (
 		<div className="autocompleteParent" style={{position: 'relative'}}>

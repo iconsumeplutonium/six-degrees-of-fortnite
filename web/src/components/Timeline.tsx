@@ -29,11 +29,11 @@ const Timeline: React.FC<TimelineProps> = ({ date, description, franchiseName, d
 
 				{/* only display the crossover date and description if this isnt the starting point (without this, there'll be extra padding under the title) */}
 				{displayArrow &&
-					<>
+					<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
 						<p className='crossoverDate'>{date}</p>
 						<hr className="dividerBar" />
 						<p className='description'>{description}</p>
-					</>
+					</div>
 				}
 
 			</div>
