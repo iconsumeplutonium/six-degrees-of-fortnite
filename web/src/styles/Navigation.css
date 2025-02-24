@@ -1,0 +1,17 @@
+.navParent {
+    display: flex;
+    gap: 20px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.verticalSeparator {
+    border-left: 1px solid #ccc;
+    margin: 0 0px;
+}
+
+.navLinkText {
+    color: white;
+}

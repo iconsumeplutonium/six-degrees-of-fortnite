@@ -1,17 +1,22 @@
 import { NavLink } from "react-router";
+import '../styles/Navigation.css';
 
 function Navigation() {
 	return (
-		<nav>
-			<NavLink to="/" end>
+		<nav className="navParent">
+			<NavLink to="/" end className="navLinkText">
 				Home
 			</NavLink>
-			<NavLink to="/about" end>
+			<span className="verticalSeparator"></span>
+
+			<NavLink to="/about" end className="navLinkText">
 				About
 			</NavLink>
-			<NavLink to="https://github.com/iconsumeplutonium/six-degrees-of-fortnite" end>
-                Github
-            </NavLink>
+			<span className="verticalSeparator"></span>
+
+			<NavLink to="https://github.com/iconsumeplutonium/six-degrees-of-fortnite" end className="navLinkText">
+				GitHub
+			</NavLink>
 		</nav>
 	)
 }

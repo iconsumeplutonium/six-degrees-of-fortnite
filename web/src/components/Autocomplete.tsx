@@ -31,7 +31,7 @@ const Autocomplete: React.FC<AutocompleteProps> = ({ data, onFranchiseInput }) =
 	const [isFocus, setIsFocus] = useState(false);
 	const [selectedIndex, setSelectedIndex] = useState(0);
 	const [suggestions, setSuggestions] = useState<string[]>([]);
-	const [randomFranchiseIndex, setRandomFranchiseIndex] = useState<number>(0);
+	const [randomFranchiseIndex, setRandomFranchiseIndex] = useState<number>(Math.round(Math.random() * data.length));
 
 	// pick random number every few seconds for the placeholder text
 	useEffect(() => {
