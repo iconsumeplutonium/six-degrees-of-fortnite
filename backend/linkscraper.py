@@ -101,14 +101,6 @@ def scrape(url: str) -> list[dict]:
         if gameName in set(["maimai", "asdfmovie", "eFootball", "normalman", "iCarly", "ilomilo", "bit Generations"]):
             gameName = gameName[0].upper() + gameName[1:]
 
-        # "Malcolm in the Middle" has two spaces between "in" and "the" in the Powerpuff Girls article for some reason
-        if gameName == "Malcolm in  the Middle":
-            gameName = "Malcolm in the Middle"
-        
-        # "Journey (Thatgamecompany)" has two spaces in The Unfinished Swan article for some reason
-        if gameName == "Journey  (Thatgamecompany)":
-            gameName = "Journey (Thatgamecompany)"
-
         description = description.replace("(see details)", "")
 
         # edge case: the Doom article mentions Cities Skylines, but links cities.fandom.com for some reason. 
