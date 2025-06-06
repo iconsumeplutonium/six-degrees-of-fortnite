@@ -1,3204 +1,3238 @@
-Project Zero X Mario
-Hamtaro X Zelda
-Lego City X Zelda
-Mario X Dragon Ball
-Capcom Girl no Mind Puzzle X Star Gladiator
-Scratch Haunts Chibi Tiny Tales
-Super Smash Bros. X Doki Doki Literature Club
-Wario X Balloon Fight
-Capcom Fighting X Tekken
-Pac-Man X Friends
-Ben 10 X The Secret Saturdays
-Doodle God references
-Street Fighter X Onimusha
-Fast and Furious X Tekken
-John Dortmunder X The Fall Guy
-E.T. X JoJo's Bizarre Adventure
-Zelda X Call of Duty
-Star Wars X Doodle God
-Resident Evil X Higemaru
-Demon Turf X Here Comes Niko!
-Metroid X Tetris
-StarTropics X Famicom Robot
-Arm Wrestling (Nintendo) X Punch-Out!!
-Zelda X F-Zero
-Samurai Asshole X UFA
-Doctor Who X Call of Duty
-Punch-Out!! X Tekken
-Darkstalkers X Street Fighter
-Professor Layton X Ace Attorney
-Yu-Gi-Oh X Jump (Series)
-Mario X Ratchet & Clank
-Mario Kart X Animal Crossing
-Jump (Series) X Haikyu!!
-Breath of Fire X Blade Fantasia
-Mega Man X Strider
-Pitfall X Marvel: Ultimate Alliance
-Jump (Series) X Saint Seiya
-Darkest Powers X Zelda
-Soccer (Nintendo) X Super Smash Bros.
-Hulk (Marvel) X Friends
-Mario X Pushmo
-Super Smash Bros. X Captain Toad
-The Fall Guy X The Stunt Man
-Donpen (Mascot)
-Wario X Baseball (Nintendo)
-Link's Crossbow Training X Zelda
-Mario X 1080°
-Five Nights at Freddy's X One Night at Flumpty's
-The Fall Guy movie clips
-Parking Lot Commercial
-My Life as a Teenage Robot X Mario
-Parachute X Mario
-Undertale X Taiko no Tatsujin
-Alien (Fox) X Street Fighter
-2014 RadioShack SuperBowl Commercial
-Gradius X Snatcher
-Barry Steakfries X Dan The Man
-Froot Loops X Angry Birds
-Famicom Robot X StarTropics
-Super Smash Bros. X Kururin
-Ape Escape X Taiko no Tatsujin
-Fallout X Doom
-Final Fantasy X Kingdom Hearts
-Astal X Mario
-Donkey Kong X Ice Climber
-OK K.O.! X Teen Titans
-Doom (ID Software) X Fallout
-MultiVersus X Game of Thrones
-Tetris X The Simpsons
-Asterix X Pac-Man
-Wrecking Crew X Mobile Golf
-Power Rangers sub-series links
-Enduro X Call of Duty
+SpongeBob X Mario
+Format crossover
+Animal Crossing X Taiko no Tatsujin
+Donkey Kong X Nazo no Murasame Jo
 The Simpsons X Mario
-Donkey Kong X Mazinger
-Zelda X Durango Kids
-The Wonderful 101 X Zelda
-Haunting Ground X Street Fighter
-Fire Emblem X Super Smash Bros.
-Call of Duty X Robot Tank
-Gravity Falls X Mario
-Mario X World Gone Sour
-Dragon Quest X Jump Series
-Ghosthunter references
-Metal Slug X Super Smash Bros.
-Rival Schools X Fortnite
-NES Remix X Tennis (Nintendo)
-OK K.O.! X Long Live the Royals
-George Lopez X Mario
-Donkey Kong X Code Monkeys
-Super Smash Bros. X James Bond
-Mario X Godzilla
-Best Friends Whenever X Meets World
-Weathering with You X Taiko no Tatsujin
-Angry Video Game Nerd X Mario
-Boxing (Activision) X Call of Duty
-Futurama X Asteroids (Atari)
-Metroid X Mario
-Purple Pirate Penguin (Mascot)
-Spider-Man X Shinobi
-Teenage Mutant Ninja Turtles X Paper Mario
-Star Fox X Tekken
-My Hero Academia X Jump Series
-Gal*Gun X Megaman
-Kaku's Big Plan
-Metal Gear X Zelda
-Lord of the Rings X MediEvil
-Here Comes Niko! X Demon Turf
-Duck Hunt X Mario
-Dragon Ball X Jump (Series)
-Fortnite X Skibidi Toilet
-Donkey Kong X Babylonian Castle Saga
-Teenage Mutant Ninja Turtles X 3D Dot Game Hereos
-Game of Thrones X MultiVersus
-Super Smash Bros. X Custom Robo
-Catherine X Persona
-Capcom Fighting X JoJo's Bizarre Adventure
-OK K.O.! X Infinity Train
-Donkey Kong X The Muppets
-Animal Crossing X Ice Climber
-Qix X Tetris
-Taiko no Tatsujin X Rolling Thunder (Namco)
-The Drew Carey Show X Grace Under Fire
-JoJo's Bizarre Adventure X Peanuts
-Metroid X F-1 Race
-Baseball (Nintendo) X Animal Crossing
-F-1 Race X Donkey Kong
-Bill & Ted's Excellent Halloween Adventure
-Final Fantasy X Dragon Ball
-Castlevania X Snatcher
-Mario X Yume Kojo: Doki Doki Panic
-Call of Duty X Spider Fighter
-Donkey Kong X Hamtaro
-Zelda X The Simpsons
-Punch-Out!! X 3D Dot Game Heroes
-Viewtiful Joe X Mario
-Mega Man X 194X
-Mario and Sonic in Mega Turrican
-Taiko no Tatsujin X Sonic
-Tekken X Commando (Capcom)
-Shaman King X Jump (Series)
-Taiko no Tatsujin X Saint Seiya
-Parachute X Super Smash Bros.
-Taiko no Tatsujin X Attack on Titan
-Detective Conan X Taiko no Tatsujin
-Super Smash Bros. X Oil Panic
-Sub-series
-Wreckateer
-Monstober Spooktacular Weekend
-Taiko no Tatsujin X Fullmetal Alchemist
-Gurren Lagann X Mario
-Suite Life X Raven (Disney)
-Mickey Mouse X Donkey Kong
-Barrel of Monkeys X Mario
-Twisted Metal X Friends
-Live from PS5
-Hello Kitty X Taiko no Tatsujin
-Wario Land X WarioWare
-Mario X Space Odyssey
-Super Smash Bros. X Balloon Fight
-OK K.O.! X Camp Lazlo
-Super Smash Bros. X Kid Icarus
-Itadaki Street X Mario
-OK K.O.! X Hi Hi Puffy AmiYumi
-Shinobi X Godzilla
-The Grim Adventures of Billy & Mandy X Ben 10
-Balloon Fight X Tetris
-Commando (Capcom) X Resident Evil
-Ball (G&W) X Super Smash Bros.
-NES Remix X Mario
-Mario X Project Zero
-Matt Hazard X Mario
-Looney Tunes X Scooby Doo
-Indie Pogo X Chicken Wiggle
-Mario X Motoko-chan no Wonder Kitchen
-Daigasso! Band Brothers X Donkey Kong
-Tower of Babel (Namco) X Taiko no Tatsujin
-Ellen X The Drew Carey Show
-Metroid X Uniracers
-Famicom Robot X Mario
-Real Life Representation rule
-Azure Striker Gunvolt X Gal*Gun
-As Time Goes By
-Barnstorming X Call of Duty
-Taiko no Tatsujin X Bravoman
-Sky Kid X Party Land
-Durango Kids X Zelda
-OK K.O.! X Chowder
-Zelda X Robot Chicken
-Higemaru X Ghosts 'n Goblins
-Nostalgia Critic X Mario
-Barcode Battler X Sunsoft
-Disney Jr. Music shorts
-Among Us X SMG4
-Mario Golf X Zelda
-Kirby X Super Smash Bros./Inhale transformations
-Asterix X Lemmings
-Mary Poppins X Mario
-Class of '09 (SBN3) X Pokémon
-OK K.O.! X Steven Universe
-Sabreman X Donkey Kong
-Gremlins (Warner Bros.) X MultiVersus
-Armored Warriors X Street Fighter
-Zelda X The Wizard
-Zelda X Captain N
-Festival Supreme
-BoxBoy! X Kirby
-OK K.O.! X The Fungies!
-Mario X Mobile Golf
-Katekyo Hitman Reborn! X Jump (Series)
-UFA X Samurai Asshole
-The Legend of Zelda X Super Smash Bros.
-El Tigre X Mario
-Mario X Turtle Bridge
-Art Style X Wrecking Crew
-Okami X Street Fighter
-Mario X Ace Combat
-JoJo's Bizarre Adventure X Fist of the North Star
-Super Smash Bros. X Splatoon
-Ace Combat X Pikmin
-2020 Walmart Big Game Commercial
-Minecraft X Donkey Kong
-Samurai Shodown X Super Smash Bros.
-Donkey Kong X Super Robot Monkey Team Hyperforce Go!
-Ratchet & Clank X PlayStation All-Stars
-MediEvil X Primal
-Cuphead X Super Smash Bros.
-Pushmo X Mario
-Rally-X X Wreck-It Ralph
-Mario X Super Princess Peach
-Captain N X Donkey Kong
-Wario X Big Brain Academy
-Donkey Kong X Dragon Ball
-Fist of the North Star X JoJo's Bizarre Adventure
-Mobile Golf X Mario
-Donkey Kong X Fire Emblem
-Metal Gear X Assassin's Creed
-Capcom Black Jack X Breath of Fire
-Fortnite X Rival Schools
-Sly X Asterix
-Yoshi X Nintendo Puzzle Collection
-Marvel Super Heroes (Capcom) X Captain Commando
-SSX X Mario
-MediEvil X Ghosthunter
-Fast and Furious X Donkey Kong
-Mario X Coins in the Fountain
-Metroid X Super Smash Bros.
-My Name Is Earl X Dig Dug
-Golf (Nintendo) X Animal Crossing
-Capcom Girl no Mind Puzzle X Street Fighter
-Wario X Alex Rider
-Super Smash Bros. X Parachute
-Tetris X Wario
-Fast and Furious X Pac-Man
-D.Gray-man X Jump (Series)
-Donkey Kong X Konami's Ping Pong
-Donkey Kong X American Dad!
-Ghosts 'n Goblins X Gun Survivor
-Spin-off
-Pokémon X Vocaloid
-Mario X Keroro
-Nazo Waku Yakata X Ghosts 'n Goblins
-Q*bert X Frogger
-Glitch appearances
-Yoshi X Game & Watch Gallery
-Coach (ABC) X Grace Under Fire
-Asterix X Terminator
-F-Zero X Mario
-OK K.O.! X The Problem Solverz
-Famicom Robot X Wario
-Bayside Shakedown X Donkey Kong
-Mario X Alex Rider
-Super Scope X Tin Star
-God Hand X Street Fighter
-Mega Man X Street Fighter
-Fortnite X Street Fighter
-Harley Quinn X MultiVersus
-Earthworm Jim X Donkey Kong
-Mario Kart X Wrecking Crew
-Ace Combat X Mario
-Rabbids X Mario
-Splatoon X Super Smash Bros.
-Mario X F-Zero
-Beethoven (Universal) X Mario
-OK K.O.! X Codename: Kids Next Door
-Blade Fantasia X Breath of Fire
-Star Wars X Mario
-Mario X Sim
-Chibi-Robo! X Primopuel
-On Golden Pond X Mario
-OK K.O.! X Regular Show
-Zelda X Metal Gear
-Kirby X BoxBoy!
-Mario X Asterix
-OK K.O.! X Jorel's Brother
-Mario X N-Gang
-DragonFable X Zelda
-Animal Crossing X Pikmin
-Street Fighter X Legendary Wings
-Hai no Majutsushi X Antarctic Adventure
-Donkey Kong X Space Ace
-Mario X Starfy
-Balloon Fight X Taiko no Tatsujin
-JoJo's Bizarre Adventure X Taiko no Tatsujin
-Mario X Nintendogs
-Ned's Declassified School Survival Guide X The Fairly OddParents
-Indiana Jones X Donkey Kong
-Dragon Ball X Taiko no Tatsujin
-Donkey Kong X Daigasso! Band Brothers
-The Fugitive X South Park
-Taiko no Tatsujin X Genpei Toma Den
-Rival Schools X Street Fighter
-Tetris X Excite
-Jump Series X One Piece
-Space Ace X Kangaroo (Atari)
-Transformers X Fortnite
-Balloon Fight X Pushmo
-Wario X Tennis (Nintendo)
+F-1 Race X Metroid
+Mario X Rabbids
+Mario X The Binding of Isaac
+Mother X Donkey Kong
 Alex Rider X Wario
-Pikmin X Mario
-Devil World X Tetris
-Nintendo World Championships X Mario
-Netflix Universe commercials
-The Blue Max X The Fall Guy
-Star Wars X Super Sentai-Power Rangers
-Killer Instinct (Rare) X Battletoads
-Michael - PS3 Long Live Play
-Spider-Man X Fortnite
-Wario X Yoshi
-Gal*Gun X Mighty No. 9
-Zelda X Picross
-Mario X Beverly Hillbillies
-Star Fox X Animal Crossing
-Sleeping Dogs (Square Enix) X Square Enix
-Quake X Asterix
-Tetris X Pokémon
-Mega Man X Mario
-Sky Kid X Donkey Kong
-My Name Is Earl X Donkey Kong
-Spore X Mario
-Zelda X Fable (Lionhead)
-Darkstalkers X Resident Evil
-JoJo's Bizarre Adventure X E.T.
-Mappy X Donkey Kong
-Mario X Histeria!
-Super Smash Bros. X Alpha Mission
-Mario-Tetris X Nintendo World Cup
-Mascot
-Earthworm Jim X ClayFighter
-Asterix X Final Fantasy
-Babylonian Castle Saga X Party Land
-OK K.O.! X The Marvelous Misadventures of Flapjack
-Mario X Nintendo World Championships
-Mario & Luigi X Star Fox
-Keroro Gunsō X Mario
-Star vs. the Forces of Evil X Gravity Falls
-Megaman X Inti Creates
-Rival Schools X Capcom Black Jack
-The Lost Vikings X Mario
-Fire Attack X Mario
-Captain
-Glitch cameos
-Super Smash Bros. X ARMS
-Animation Throwdown: The Quest for Cards
-Gish X Dumbo & Cool
-Powerpuff Girls X Zelda
-Flappy Bird X Talking Tom & Friends
-Donkey Kong X Detective Conan
-Barcode Battler X Blaster Master
-OK K.O.! X Adventure Time
-Asterix X Jak and Daxter
-Xena X Primal
-Panel de Pon X Nintendo Puzzle Collection
-Higemaru X Resident Evil
-Mario X Oil Panic
-Dragon Ball X Donkey Kong
-Taiko no Tatsujin X Evangelion
-Terminator X Asterix
-Dragon Quest X Mario
-Golf (Nintendo) X Captain Rainbow
-Warcraft X Wolverine
-Donkey Kong X Mappy
-Wario X Metroid
-Mario X Galaxian
-Asterix X Quake
-Lego Rescue
-Taiko no Tatsujin X Ghosts 'n Goblins
-Puppet Master X Elvira
-Asterix X Sly Cooper
-Comic Relief's Helping Hand
-MediEvil X WipEout
-Super Smash Bros. X Animal Crossing
-Nester & Punch-Out!! X Scott Pilgrim
-Adult Swim Museum bumper
-Spider-Man X Invincible
-Fire (G&W) X Super Smash Bros.
-Tekken X Star Fox
-Skylanders X Donkey Kong
-Wario X Donkey Kong
-F-Zero X Ace Combat
-OK K.O.! X Summer Camp Island
-Yakuman X Mario
-TimeRiders X Mario
-Tommy Westphall Universe
-Devil May Cry X Capcom Fighting
-Mario Bros. X Super Mario Land
-Party Land X Babylonian Castle Saga
-Infinity Train X OK K.O.!
-Mario X Tamagotchi
-Capcom Fighting X Pocket Fighter
-Ellen X Grace Under Fire
-Jessie (Disney) X I Didn't Do It (Disney)
-Zelda X Angry Video Game Nerd
-Animaniacs songs
-SonSon X Street Fighter
-Nintendo X Tetris
-Jump Series X My Hero Academia
-H.E.R.O. X Call of Duty
-Nazo Waku Yakata X Street Fighter
-Punch-Out!! X Fight Night
-Anthology rule
-JoJo's Bizarre Adventure X Jump (Series)
-Ready to Learn
-Super Stars (Ertl) X Smokey and the Bandit
-Kirby X Harry Potter
-Street Fighter X Darkstalkers
-Nintendo World Championships X Tetris
-Mario X Fatal Frame
-Disney's The Hunchback of Notre Dame X SpongeBob SquarePants
-Kangaroo (Atari) X Space Ace
-Powerpuff Girls X Mario
-Super Smash Bros. X Sonic
-Brawl Stars X Pop-Up Pirate
-Zelda X Sim
-Taiko no Tatsujin X Bleach
-Pushmo Nintendo Murales
-Gradius X Hai no Majutsushi
-OK K.O.! X Over the Garden Wall
-Banjo-Kazooie X Super Smash Bros.
-Minecraft X Mass Effect
-Frogger X Pitfall
-Aim for the Ace! X Donkey Kong
-Donkey Kong X Captain N
-Joe & Mac X Mario
-Book People Unite Commercial
-Taiko no Tatsujin X Detective Conan
-Pokémon X Zelda
-Donkey Kong X Sonic
-Ty the Tasmanian Tiger X Spyro
-Kingdom
-Balloon Fight X Wario
-Dreamworks (Mascot)
-Donkey Kong X Indiana Jones
-Zelda X Art Style
-Modern Family X Star Wars
-Austin & Ally X Meets World
-Mega Twins X Street Fighter
-Adventure Quiz X Mega Man
-Super Smash Bros. X Street Fighter
-Mario X Captain Rainbow
-Jill of the Jungle X Vinyl Goddess from Mars
-Warcraft X Mario
-Metroid X Wario
-Yoshi X Super Smash Bros.
-CBeebies LIVE!
-Asterix X Legacy of Kain
-OK K.O.! X Robotomy
-Star Fox X Super Smash Bros.
-Once Upon a Studio
-Godzilla X Mario
-Super Smash Bros. X Greenhouse
-Little Ghost Q-Taro X Doraemon
-C-12: Final Resistance X MediEvil
-Animal Crossing X Donkey Kong
-Fortnite X Teenage Mutant Ninja Turtles
-Dig Dug X Fast and Furious
-JoJo's Bizarre Adventure X Mickey Mouse
-Barcode Battler X Dead Zone
-Tekken X Zelda
-The Goonies X South Park
-Art Style X Mario
-Scott Pilgrim X Zelda
-Duck Hunt X Running Stadium
-Zelda X Yoshi
-Donkey Kong X Buffy
-Pac-Man X My Name Is Earl
-Zelda X Game & Watch Gallery
-Taiko no Tatsujin X Jimmy Neutron
-Wrecking Crew X Chibi-Robo!
-Mario X Lep's World
-Street Fighter X Okami
-Mario X Tiny Toon Adventures
-Star Wars X Kirby
-Dead Space X Fortnite
-SpongeBob X Nickelodeon All-Star Brawl
-Bleach X Jump (Series)
-"Michael" - PS3 Long Live Play
-MultiVersus X Scooby-Doo
-Pink Panther X Pac-Man
-Spyro X Ty the Tasmanian Tiger
-MultiVersus X Superman
-SpongeBob SquarePants X Nickelodeon All-Star Brawl
-Game & Watch Collection X Donkey Kong
-Capcom Black Jack X Resident Evil
-Mortal Kombat X Asterix
-Mario X Chowder
-Golden Sun X Zelda
-Billy Madison X Donkey Kong
-Tekken X Fast and Furious
-Super Smash Bros. X Wii games
-Super Smash Bros. X Egg (G&W)
-Excite X Pushmo
-Resident Evil X Darkstalkers
-MediEvil X Lord of the Rings
-Zelda X It's Kind of a Funny Story
-Taiko no Tatsujin X Star Wars
-Mario X Nintendo Land
-Dead Zone X Barcode Battler
-Tekken X Capcom Fighting
-Babylonian Castle Saga X Donkey Kong
-Jill of the Jungle X Onesimus: A Quest for Freedom
-Mario & Luigi X Metroid
-Mega Man X Yoshi
-Animal Crossing X Golf (Nintendo)
-Golf (Nintendo) X Punch-Out!!
-Mario X Animal Crossing
-Luigi's Mansion X Mario
-Metroid X Animal Crossing
-Pac-Man X Mario
+Snatcher X Alien (Fox)
+Metroid X F-1 Race
+Mario X Arthur
+Call of Duty X Private Eye (Activision)
+The Big Bang Theory X Rock Band
+The League of Gentlemen
+Super Smash Bros. X ARMS (Nintendo)
+Commando (Capcom) X Street Fighter
+Nazo Waku Yakata X Ace Attorney
+The Secret Saturdays X Ben 10
+Elvira X Hobgoblins
+OK K.O.! X Courage the Cowardly Dog
+Famicom Robot X Super Smash Bros.
+El Tigre X Mario
 Tetris X Metroid
-Category:Marvel
-Sectaurs
-Mortal Kombat X Spy Hunter
-Taiko no Tatsujin songs
-Henry Stickmin X Sonic
-Goat Simulator X Fortnite
-Jump Series X Bleach
-Space Ace X Donkey Kong
-Big Brain Academy X Wario
-Mario X Megas XLR
-Galaxy Express 999 X Donkey Kong
-Zelda X Link's Crossbow Training
-Jurassic Park X South Park
-Nickelodeon All-Star Brawl X SpongeBob
-Heidi, Girl of the Alps X Donkey Kong
-Tingle X Zelda
-Akira X South Park
-Clu Clu Land X Zelda
-Super Smash Bros. X Psycho Soldier
-Mario X Haiyore! Nyaruko-san
-Mega Man X Resident Evil
-Azure Striker Gunvolt X Mighty No. 9
-Adult Swim Wheelz Race Bumper
-Team Fortress X Sonic
-Zelda X Donkey Kong
-Zelda X Tingle
-Tetris X Gyromite
-Golf (Nintendo) X Wii games
-Frankenstein (Universal) X Fortnite
-The Simpsons X Zelda
-South Park X Bionic Man
-Sonic & Sega All-Stars X Team Fortress
-Tekken X Punch-Out!!
-Crunchyroll-Hime (Mascot)
-Mask
-Asterix X Mario
-Halloween X Mario
-Donkey Kong X Dance Dance Revolution
-Mario X Barrel of Monkeys
-Instacart's We're Here Commercial
-Yoshi X Blast Corps
-Mario X Honey, I Shrunk the Kids
-Mario Bros. X Pilotwings
-Hang On X Taiko no Tatsujin
-Super Smash Bros. X Urban Champion
-Zelda X BS-X: Sore wa Namae o Nusumareta Machi no Monogatari
-Mario X Dance Dance Revolution
-Jessie X Mario
-Futurama X BurgerTime
-Tiger & Bunny X Taiko no Tatsujin
-Street Fighter X Star Gladiator
-Soul (Namco) X Asterix
-Mario X Nostalgia Critic
-Star Gladiator X Resident Evil
-Futurama X Doodle God
-Xevious X Donkey Kong
-Indie Pogo X Slayin
-Famicom Medley in Super Smash Bros.
-Donkey Kong X Super Smash Bros.
+Mario X Keroro Gunsō
+Tarzan (Disney) X Kingdom Hearts
+Final Fantasy X Kingdom Hearts
+Zelda X Hamtaro
+Street Fighter X Okami
+Itadaki Street X Mario
+Devil World X Super Smash Bros.
+Pink Panther X Donkey Kong
+Adventure Quiz X Mega Man
+Marvel: Ultimate Alliance X Zelda
+Sonic X Team Fortress
+Taiko no Tatsujin X Moana
+Lego Rescue
+Barcode Battler X J. League Excite Stage
+Resident Evil X Star Gladiator
+Vermin X Super Smash Bros.
+Kirby X Animal Crossing
+Golf (Nintendo) X Mario
+Sky Riders X The Fall Guy
+Hogan's Alley X Wario
+Tetris X Nintendo
+"Michael" - PS3 Long Live Play
+Drill Dozer X Mario
+Project X Zone
+Mario X Ratchet & Clank
+OK K.O.! X Foster's Home for Imaginary Friends
+Tetris X Nintendo World Cup
+Dread X Collection
+Street Fighter X 194X
+Super Smash Bros. X Kururin
+Sly X Asterix
+OK K.O.! X Codename: Kids Next Door
+Adventure Time X Mario
+Mario X El Chavo
+Mario X Taiko no Tatsujin
+MediEvil X C-12: Final Resistance
+Mario X Rocky
+Baseball (Nintendo) X Wario
+Asterix X BloodRayne
+Festival Supreme
+Designing Women X Mario
+F-Zero X Mario
+JoJo's Bizarre Adventure X Peanuts
+Mario X Game & Watch Gallery
+Jill of the Jungle X Onesimus: A Quest for Freedom
+Pokémon X Super Smash Bros.
+Punch-Out!! X Scott Pilgrim
+Animation Plus Trailer
 Mario & Luigi X Wario
 Sim X Asterix
-OK K.O.! X Courage the Cowardly Dog
-Regular Show X Q*bert
-Crash Bandicoot X Ty the Tasmanian Tiger
-Destiny Game X Wario
-OK K.O.! X Uncle Grandpa
-Final Fight X Street Fighter
-Tetris X Nintendo World Cup
-Taiko no Tatsujin X Lucky Star
-Saint Seiya X Jump (Series)
-Final Fantasy X Super Smash Bros.
-Weebo's LCD Screen
-Taiko no Tatsujin X Animal Crossing
-Baseball (Nintendo) X Wario
-Zelda X Tetris
-Zelda X Darkest Powers
-Pac-Man X Pink Panther
-Kid Icarus X Super Smash Bros./Palutena’s Guidance
-Adult Swim New Year’s Countdown 2005
-Wario X Mario
-Plok X Mario
-Barcode Battler X The Wing of Madoola
-Ace Combat X Donkey Kong
-Bethesda Creation Club
-Wreck-It Ralph X Sega Superstars
-Mario X Nester
-Child's Play X Mario
-OK K.O.! X Whatever Happened to... Robot Jones?
-Videogame references in Pokémon Stadium 2
-Monster Hunter X Asura's Wrath
-Capcom Fighting X Battle Circuit
-Giana Sisters X Hard'n'Heavy
-Honey, I Shrunk the Kids X Mario
-Mappy X Party Land
-Spyro X Asterix
-Golf (Nintendo) X Donkey Kong
-Mario Bros. X Pokémon
-Matrix X Asterix
-Donkey Kong X Pitfall
-Call of Duty X Zelda
-Alex Kidd X Mario
-Brawl Stars X Toy Story
-Bomberman X Asterix
-Donkey Kong X Jetman
-Hard'n'Heavy X Giana Sisters
-Duke Dashington X Indie Pogo
-Nostalgia Critic X Zelda
-Wario X Wrecking Crew
-South Park X Pokemon
-Spyro X Skylanders
-LOST X Wolverine
-Capcom Girl no Mind Puzzle X Mega Man
-Vinyl Goddess from Mars X Jill of the Jungle
-Baseball (Nintendo) X NES Remix
-Snatcher X Kamen Rider
-Mario X Dragon Quest
-James Bond X Mario
-Terminator X Street Fighter
-Super Smash Bros. X Vermin
-Ghosts 'n Goblins X Nazo Waku Yakata
-Final Fantasy X Mario
-Half-Life X Asterix
-Easters eggs in Asura's Wrath
-Taito Harikiri Daifugo X Cleopatra Fortune
-MultiVersus X Gremlins (Warner Bros.)
-Crossover Wiki pages
-Gary Unmarried X Gears of War
-Resident Evil X Power Stone
-Wario X Hogan's Alley
-Angry Birds x Froot Loops
-Tetris X Panel de Pon
-F-1 Race X Metroid
-Street Fighter X God Hand
-Zelda X Homestar Runner
-Firefly
-Xeno Series X Super Smash Bros.
-Fish Hooks X Donkey Kong
-Excite X Mario
-Super Smash Bros. X Bayonetta
-Super Smash Bros. X Devil World
-Mr. Clean X Planters
-Tetris X Nintendo
-Chibi-Robo! X Wrecking Crew
-Captain Rainbow X Mario
-OK K.O.! X Mao Mao: Heroes of Pure Heart
-Ugh and Edd Commercial
-Guardians of the Galaxy X GoBots
-McPixel X Mario
-Rammie (Mascot)
-Super Smash Bros. X Mega Man
-(Is This the Way to) Amarillo
-Asura's Wrath X Street Fighter
-Punch-Out!! X Mario
-Arguable link
-Donkey Kong X Yoshi
-Famicom Grand Prix X F-1 Race
-Animal Crossing X Metroid
-Street Fighter X Commando (Capcom)
-Soccer (Nintendo) X Animal Crossing
-The Fall Guy X Moving Violation
-Golf (Nintendo) X NES Remix
-Dr. Mario X How I Met Your Mother
-Marvel Super Heroes (Capcom) X Mega Man
-Tekken X Asterix
-Indiana Jones X Mario
-Disney Infinity X Avatar (Fox)
-Street Fighter X Adventure Quiz
-Donkey Kong X Shin-chan
-Taiko no Tatsujin X Naruto
-Character cameos in Street Fighter Alpha 2
-2007 DirecTV Christmas Commercial
-Dino Crisis X Street Fighter
-Boonie Bears X Minecraft
-Asterix X Blinx
-Frank Bruno's Boxing X Punch-Out!!
-Ghosts 'n Goblins X Resident Evil
-Final Fantasy X Itadaki Street
-Incidental reference
-Terraria X Zelda
-Sonic X Donkey Kong
-Valkyrie (Namco) X Party Land
-Call of Duty X Enduro
-Animal Crossing X Soccer (Nintendo)
-Ice Climber X Animal Crossing
-Mario X The Wizard
-Zelda X Uniracers
-Story of Seasons X Zelda
-Mario X Hellraiser
-Grand Theft Auto X Asterix
-Super Smash Bros. X ARMS (Nintendo)
-Puppet Aid
-Q*bert X Regular Show
-Turrican X Sonic
-Mad Max X Mario
-Tetris X Flash Point (Sega)
-Star Gladiator X Capcom Girl no Mind Puzzle
-Tamagotchi X Mario
-Castlevania X Zelda
-Mario X F-1 Race
-Soul Series X Asterix
-Rain Shower (G&W) X Mario
-Mario X On Golden Pond
-Keroro X Mario
-Killer Instinct (Rare) X Donkey Kong
-Rhythm Heaven X Mario
-Grand Prix (Activision) X Call of Duty
-Mario X Super Hornio Brothers
-Mario X Doraemon
-Futurama X Mario
-Resident Evil X 194X
-Ghosts 'n Goblins X Sonic
-Super Smash Bros. X Panel de Pon
-Mario X Mystery Science Theater 3000
-Beyond Good & Evil X Asterix
-Street Fighter X Gun Survivor
-Art Style X Baseball (Nintendo)
-Wario X Destiny Game
-Bionic Man X South Park
-Balloon Fight X Animal Crossing
-Gary Unmarried X Mario
-Animal Crossing X Tennis (Nintendo)
-Diary of a Wimpy Kid X Poptropica
-Space Odyssey X Mario
-DreamWorks (Mascot)
-Wario X Parachute
-Wii games
-MultiVersus X The Peter Potamus Show
-I Didn't Do It (Disney) X Austin & Ally
-Devil May Cry X Asterix
-Section Z X Street Fighter
-Hamtaro X Donkey Kong
-Animation Plus Promotional Art
-Hellraiser X Mario
-How I Met Your Mother X Mario
-Ghosthunter X Charlie's Angels
-Chu Chu Rocket X Asterix
-Predator (Fox) X Street Fighter
-Zelda X Powerpuff Girls
-Race with the Devil X The Fall Guy
-World Gone Sour X Mario
-Tetris X Duck Hunt
-Asterix X Chu Chu Rocket
-Hitman (IO Interactive) X Sleeping Dogs (Square Enix)
-Red Earth X Street Fighter
-Asterix X Doom
-Donkey Kong X Doraemon
-Animal Crossing X Excite
-Cyberbots X Street Fighter
-My Name Is Earl X Pac-Man
-MultiVersus X Friday the 13th
-Super Mario X Wrecking Crew
-Donkey Kong X Q*bert
-Metroid X Zelda
-Skylanders X Crash Bandicoot
-Nazo no Murasame Jo X Donkey Kong
-Dragon Ball X Mario
-AR Games X Zelda
-Barcode Battler X Barcode Fighter
-Kirby X Uniracers
-Star Trek X South Park
-Pinball (Nintendo) X Donkey Kong
-Chowder X Mario
-CITV Commercial
-Fire (G&W) X Donkey Kong
-Call of Duty X Starmaster
-Power Stone X Street Fighter
-Guardians of the Galaxy X Manhattan Love Story
-Mario X Call of Duty
-Kid Icarus X Pushmo
-JoJo's Bizarre Adventure X Mazinger
-Star Fox X Zelda
-That's So Suite Life of Hannah Montana
-Mario X Futurama
-Futurama X Fortnite
-Pushmo X Ice Climber
-Barbie X Teenage Mutant Ninja Turtles
-Sleeping Dogs (Square Enix) X Hitman (IO Interactive)
-Shaolin Wooden Men X Tobal
-Mario X Star Fox
-Frozen (Disney) X Tangled
-X-Men X Manhattan Love Story
-Captain Toad X Super Smash Bros.
-Jump (Series) X My Hero Academia
-Mr. Destructoid (Mascot)
-Dead Cells X Hollow Knight
-Bloxeed X Tetris
-Donkey Kong X Crash Bandicoot
-Manhattan Love Story X X-Men
-Hyundai Super Comboy Commercial
-Donpen appearances
-Mario X Need for Speed
-Tetris X Mario
-Final Fantasy X Zelda
-F-1 Race cameos
-Capcom Girl no Mind Puzzle X Resident Evil
-Duck Hunt X Super Smash Bros.
-Ty the Tasmanian Tiger trailer
-Sim X Zelda
-Mario X Nintendo Puzzle Collection
-Lilo & Stitch X Lion King
-Tin Star X Super Scope
-Law & Order X Mario
-Everybody's Golf X MediEvil
-Blinx X Asterix
-Mario X Designing Women
-Street Fighter X Ōkami
-South Park X Zelda
-Urban Champion X Pushmo
-Bubble Bobble X Taito Harikiri Daifugo
-Kid Icarus X Mario
-Tennis (Nintendo) X Animal Crossing
-Zelda X Castlevania
-Mario X The Simpsons
-Charlie and the Chocolate Factory X The Giraffe and the Pelly and Me
-Mass Effect X Spore
-Hollow Knight X Dead Cells
-Family Guy X Ice Age
-Sega Superstars X Wreck-It Ralph
-Mario X Fire (G&W)
-Party Land X Sky Kid
-Ice Climber X Wario
-JoJo's Bizarre Adventure X Jump Series
-Mario X Maniac Mansion
-Clone High X Spider-Man
-Bully (Rockstar) X Mario
-Yoshi X Zelda
-Scott Pilgrim X Donkey Kong
-Mario Kart X How I Met Your Mother
-Street Fighter X Rival Schools
-Game & Watch X Super Smash Bros.
-Taiko no Tatsujin X Howl's Moving Castle
-Mario X The Powerpuff Girls
-Ghosthunter X G.I. Joe
-Zelda X Warriors (Koei)
-The Fall Guy X Super Stars (Ertl)
-Fallout X Doom (ID Software)
-Fatal Fury X Super Smash Bros.
-Crocodile Dundee X Mario
-Mario X Rabbids
-Lemmings X Asterix
-Red Earth X Strider
+Famicom Medley in Super Smash Bros.
+Donpen (Mascot)
 Friday the 13th X Mario
-Mario X Pac-Man
-Animal Crossing X Baseball (Nintendo)
-Stunt Race FX cameos
-Shaolin Wooden Men X Tekken X Tobal
-Big Kahuna Burger
-Zelda X Zero Escape
-Raven (Disney) X Hannah Montana
-Donkey Kong X Rabbids
-Wario X Kid Icarus
-Ice Climber X Pushmo
-Judge (G&W) X Super Smash Bros.
-Mario X Viewtiful Joe
-Baz (Mascot)
-Tekken X Mega Man
-Asterix X Half-Life
-Annoying Orange X Smosh
-Mario X Metal Gear
-Starfy X Donkey Kong
-Crazy Kong X Donkey Kong
-Asterix & Obelix XXL 2 references
-Soul Series X Zelda
-Batman X Doodle God
-Mario X Picross
-Video games in The Bozeman Reaction
-Super Smash Bros. X Banjo-Kazooie
-Ghosts 'n Goblins X Breath of Fire
-The Matrix X JoJo's Bizarre Adventure
-Special Flag appearances
-Alleyway X Mario
-Metroid X Marvel: Ultimate Alliance
-Jetpac X Donkey Kong
-Captain N X Tetris
-3D Dot Game Heroes loading art
-Dungeons & Dragons X Quiz Nanairo Dreams
-Mario X Kirby
-Asterix X Spyro
-Clu Clu Land X Donkey Kong
-Mole (Taomee) X Mario
-Peanuts X Garfield
-The Big Bang Theory X Donkey Kong
-Dragon Quest X Taiko no Tatsujin
-Mario X Keroro Gunsou
-Metal Gear X Mario
-Tingle X Punch-Out!!
-Godzilla X Shinobi
-Captain Commando X Marvel Super Heroes (Capcom)
-Lego Divers
-Donkey Kong X Gremlins
-Mario X Pinball (Nintendo)
-Street Fighter X Cyberbots
-South Park X Star Wars
-Xbox Rareware Commercial
-Taito Harikiri Daifugo X Pocky & Rocky
-Picross X Mario
-Namco × Capcom X Galaxian
-Mario X Jessie (Disney)
-Game & Watch Gallery X Wario
-Toy Story X Brawl Stars
-Mario X Henry Stickmin
-Paper Mario X Kirby
-Pushmo X Donkey Kong
-Ace Combat X Zelda
-1985 NBC Saturday Morning Cartoons Ad
-Henry Stickmin X Super Smash Bros.
-Frogger X Donkey Kong
-Persona X Catherine
-The Sims X Asterix
-Mario & Sonic X Donkey Kong
-Superman X MultiVersus
-Paper Mario X Animal Crossing
-Call of Duty X Halloween
-Donkey Kong X Billy Madison
-SpongeBob X Disney's The Hunchback of Notre-Dame
-The Matrix X Final Fantasy
-Captain Rainbow X Zelda
-Alien (Fox) X South Park
-Asterix X Pong
-Crash Bandicoot X Friends
-Zelda X Terraria
-ChuckleVision
-Sabrina the Teenage Witch X Meets World
-Guacamelee! X Mario
-The Royle Family
-Athena (SNK) X Super Smash Bros.
-Donkey Kong X Jetpac
-Mario X Metroid
-Meets World X Sabrina the Teenage Witch
-Dragon Spirit X Taiko no Tatsujin
-MultiVersus X Black Adam
-Dance Dance Revolution X Super Smash Bros.
-Tomb Raider X Asterix
-Slayin X Indie Pogo
-Spyro X Mario
-Asterix X Star Fox
-Super Sentai-Power Rangers X Angry Video Game Nerd
-Qix X Mario
-Street Fighter X Asura's Wrath
-Street Fighter X Quiz Nanairo Dreams
-Super Smash Bros. X Tropical Fish
-Mario X Death Note
-Wario X Nintendo Badge Arcade
-Wario X Devil World
-FaceBreaker X Mario
-Donkey Kong X Chibi Maruko-chan
-Mr. Destructoid cameos
-Dance Dance Revolution X Mario
-Mario X SpongeBob
-Jump (Series) X Dragon Ball
-Duck Hunt X Tetris
-Puss 'n Boots (Toei) X Captain N
-Mario X Ball (G&W)
-Billy Madison X Donkey Kong & Mortal Kombat
-Super Smash Bros X The Wonderful 101
-Ace Attorney X Street Fighter
-Ghostbusters X The Fall Guy
-Donkey Kong X Picross
-Braid (Number None) X Donkey Kong
-Star Gladiator X Capcom Fighting
-Yin Yang Yo! X Mario
-JoJo's Bizarre Adventure Bohemian Rhapsody story cameos
-Super Smash Bros. X Super Princess Peach
-Gary Unmarried X Gears of War & Mario
-Mario X Hot Tub Time Machine
-The Shining X MediEvil
-Pink Panther X Donkey Kong
-Hulk (Marvel) X The Fall Guy
-Tomb Raider X Futurama
-Shrek X M&M's
-Kirby X Arcana
-Super Smash Bros. X Sim
-Mario X Famicom Grand Prix
-Ace Combat X Taiko no Tatsujin
-OK K.O.! X I Am Weasel
-Code Name: S.T.E.A.M. X Super Smash Bros.
-Coconut Fred X Mario
-Mario X South Park
-Ice Climber X Tetris
-Zelda X Wario
-Mario X TimeRiders
-Mario X Wii games
-Jump (Series) X Bleach
-Donkey Kong X Pikmin
-Donkey Kong X Banjo-Kazooie
-Donkey Kong X James Bond
-Super Mario X Mario Bros.
-PlayStation All-Stars X Ratchet & Clank
-Flash Point (Sega) X Tetris
-Alex Kidd in Shinobi World X Mario
-Punch-Out!! X Power Punch
-Ellen X Coach (ABC)
-Mario X Brain Training
-Capcom Black Jack X Rival Schools
-Mario X El Chavo
-Ghosts 'n Goblins X Higemaru
-Resident Evil X Capcom Girl no Mind Puzzle
-Ratchet & Clank X PlayStation All-Stars Battle Royale
-Donkey Kong X Naruto
-Team Fortress X Sega Superstars
-OK K.O.! X Miguzi
-Star Fox X Futurama
-Yume Kojo: Doki Doki Panic X Mario
-Street Fighter X Forgotten Worlds
-Yoshi X Uniracers
-Mario X Muppets
-Uniracers X Star Fox
-Pulseman X Pokémon
-Best Friends Whenever X Liv and Maddie
-Pong X Asterix
-OK K.O.! X The Life and Times of Juniper Lee
-Zelda X Mother
-Paper Mario X Brain Training
-Asterix X Beyhond Good and Evil
-Super Smash Bros. X 1080°
-Fast and Furious X Dig Dug
-South Park X The Goonies
-Balloon Fight X Donkey Kong
-Donkey Kong X Mario
-Game Boy (Valiant) X Mario
-Mortal Kombat X Dragon Ball
-E.T. X Mario
-Mario X Manhole
-The Fall Guy X Silver Streak
-Donkey Kong X Nazo no Murasame Jo
-Wave Race X Super Smash Bros.
-OK K.O.! X We Bare Bears
-MediEvil X Indiana Jones
-Jump Series X JoJo's Bizarre Adventure
-Taiko no Tatsujin X Katamari
-Donkey Kong X Lego City
-Yoshi X Mario
-Lupin the Third X Taiko no Tatsujin
-Turtle Bridge X Mario
-Saturday Supercade links
-Grace Under Fire X Coach (ABC)
-Super Smash Bros. X Ball (G&W)
-Donkey Kong X Gremlins (Warner Bros.)
-The Drew Carey Show X Ellen
-Quiz Nanairo Dreams X Dungeons & Dragons
-Taiko no Tatsujin X Indiana Jones
-Super Smash Bros. X Wrecking Crew
-Mario X El Tigre
-Portal X X-Men
-Hunter X Hunter
-Nintendo X Uniracers
-Class 1-B’s Romeo and Juliet and the Prisoner of Azkaban: The Return of the King
-Capcom Black Jack X Street Fighter
-Mario X Super Smash Bros.
-Asterix X Matrix
-Invincible (Image) X Spider-Man
-Punch-Out!! X Wario
-Dead Rising X Nazo Waku Yakata
-Minimoni de Bremen no Ongakutai X Donkey Kong
-Taiko no Tatsujin X Kirby
-Frontline X Mario
-Zelda X Scott Pilgrim
-Elvira X Puppet Master
-Mario X Jessie
-Nazo Waku Yakata X Ace Attorney
-Crash Bandicoot X Croc
-Modern Disney Afternoon Commercial
-Crash Bandicoot X Asterix
-Donkey Kong X Kangaroo (Atari)
-Mario X Teenage Mutant Ninja Turtles
-Capcom Fighting X Darkstalkers
-The Fall Guy X Hulk (Marvel)
-Onesimus: A Quest for Freedom X Jill of the Jungle
-Konami Man (Mascot)
-Commercial rule
-Tom and Jerry X MultiVersus
-Kid Icarus X Captain N
-My Hero (BBC)
-Street Fighter X Nazo Waku Yakata
-SMG4 X Among Us
-Moving Violation X The Fall Guy
-Asterix X The Sims
-Amiibo
-Super Mario X Game & Watch Gallery
-Konami's Ping Pong X Donkey Kong
-Donkey Kong X Game & Watch Gallery
-Diddy Kong Racing X Donkey Kong
-Street Fighter X Trojan
-Taiko no Tatsujin X K-On
-McDonald's X Bill & Ted
-Banjo-Kazooie X Mario
-Super Scope X Super Smash Bros.
-Rabbids X Donkey Kong
-Animal Crossing X Mario
-Super Smash Bros. X Ice Climber
-Zelda X Psych
-Super Mario Land X Mario Bros.
-Primal
-Adventure Time X Final Fantasy
-Snatcher X Planet of the Apes
-The Suite Life X That's So Raven
-Wreck-It Ralph X Mario
-Zelda X 1080°
-Dance Dance Revolution X Donkey Kong
-Zelda X 3D Dot Game Heroes
-Mario X Fire Attack
-The Adventures of Willy Beamish X Mario
-Super Scope X Mario
-Fist of the North Star X Jump (Series)
-Taiko no Tatsujin X My Little Pony
-Zelda X Nintendogs
-Donkey Kong X Scott Pilgrim
-Manhole X Mario
-How Heavy Are the Dumbbells You Lift? X Taiko no Tatsujin
-Mario X Monster Hunter
-Donkey Kong X Mickey Mouse
-Mother X Zelda
-Freddy Funko (Mascot)
-Carrie's Order Up! X Indie Pogo
-Procter & Gamble "When We Come Together" Super Bowl Commercial
-Super Smash Bros. X Punch-Out!!
-Dino Crisis X Rival Schools
-Donkey Kong X Skylanders
-All Together Cereal
-Greenhouse X Donkey Kong
-The Big Bang Theory X Zelda
-The Fall Guy X Race with the Devil
-Bleach X Jump Series
-Star Fox X Donkey Kong
-Hunter × Hunter X Jump Series
-Family Guy X Mario
-Blast Corps X Mega Man X Yoshi
-Ball (G&W) X Mario
-Castlevania X Captain N
-Snatcher X Ultraman
-Austin & Ally X K.C. Undercover
-Super Smash Bros. X Castlevania
-Mario X Kiki Trick
-Monster Hunter X Zelda
-Animal Crossing X Kirby
-Fortnite X Edward Scissorhands
-Punch-Out!! X Boxing (G&W)
-D.Gray-man X Taiko no Tatsujin
-Rock Band X The Big Bang Theory
-Flagman X Super Smash Bros.
-Coolmath Games Official Trailer
-Mario X 3 Ninjas
-Clu Clu Land X Wario
-Fishing Derby X Call of Duty
-Cyberbots X Capcom Girl no Mind Puzzle
-Open All Hours
-Captain N X Kid Icarus
-Super Sentai-Power Rangers X Donkey Kong
-Mario X Three Men and a Baby
-OK K.O.! X Generator Rex
-Super Smash Bros. X Soccer (Nintendo)
-Unreal X Asterix
-Gintama X Jump (Series)
-StarTropics X Mario
-Asterix X Space Invaders
-Mario X My Life as a Teenage Robot
-The Mask X Mario
-Indie Pogo X Duke Dashington
-Beavis and Butt-Head X King of the Hill
-Mario/Mass Effect X Spore
-Ōkami X Nazo Waku Yakata
-Boxing (G&W) X Mario
-Wold Newton family
-Street Fighter X Devil May Cry
-X
-Another Code X Zelda
-Ratchet & Clank X Asterix
-Mario X Zelda
-Adult Swim "Swim Fighter" Bumper
-Jump Series X Dragon Ball
-Ty the Tasmanian Tiger X Sonic
-Uncle Grandpa X Mario
-King Kong X Donkey Kong
-Transformers X Mario
-Jump (Series) X One Piece
-Barcode Battler X Gimmick! (Sunsoft)
-Warcraft X Zelda
-Zelda X Pushmo
-Final Fantasy X Adventure Time
-NES Remix X Golf (Nintendo)
-Dragon Ball X Yoshi
-Taiko no Tatsujin X Monster Hunter
-Classic Disney series X Kingdom Hearts
-Pink Panther X Street Fighter
-F-1 Race X Zelda
-Street Fighter X Section Z
-Halo X The Big Bang Theory
-Pokémon X Animal Crossing
-Taiko no Tatsujin X Ape Escape
-Road Warriors X Indie Pogo
-The Wonderful 101 X Super Smash Bros
-Zelda X The Binding of Isaac
-D.A.R.E. Bear Yogi PSA
-Indie Pogo X Pizza Vs. Skeletons
-Asterix X Unreal
-Donkey Kong X F-1 Race
-Cleopatra Fortune X Taito Harikiri Daifugo
-Super Smash Bros. X Metroid
-Smurfs X Samurai Asshole
-Gun Survivor X Ghosts 'n Goblins
-Mario X Mega Jump
-Pac-Man X Super Smash Bros./Namco Roulette
-Super Smash Bros. X Tetris
-Mario X Advent Rising
-Donkey Kong X Conker
-Nazo Waku Yakata X Mega Man
-Croc X Mario
-Trojan X Street Fighter
-Boxing (G&W) X Punch-Out!!
-Breath of Fire X Sonic
-Zelda X Pikmin
-Legendary Wings X Street Fighter
-Sonic X Breath of Fire
-Xeno Series X Final Fantasy
-Donkey Kong X Heidi, Girl of the Alps
-Cubivore X Super Smash Bros.
-Disney's Beauty and the Beast X Taiko no Tatsujin
-F-Zero X Tekken
-Mario X Powerpuff Girls
-Minecraft X Super Smash Bros.
-Type 2 link
-Tekken X Metroid
-Yu Yu Hakusho X Jump (Series)
-Tetris X Yoshi
-Pop'n Music X Mario
-Puzzle League X Mario
-Donkey Kong X Mother
-Zelda X Drawn Together
-Mega Man X Blast Corps
-Wario X Zelda
-3 Ninjas X Mario
-Just Cause (Eidos) X Sleeping Dogs (Square Enix)
-Mario X Robot Chicken
-Shaggy Dog Story
-Race Across Yorkshire
-Meets World X Best Friends Whenever
-Pico (Newgrounds) X UFA
-Sabrina the Teenage Witch X Teen Angel
-Asura's Wrath X Mega Man
-Monkey (Nippon Television) X Donkey Kong
-ARMS X Super Smash Bros.
-Wario X Tetris
-Donkey Kong X Wreck-It Ralph
-Fullmetal Alchemist X Donkey Kong
-Super Smash Bros. X Minecraft
-Monster Hunter X Mario
-Donkey Kong X Gundam
-Sega Superstars X Team Fortress
-Mario X Angry Birds
-Wolverine X LOST
-Batman X Shinobi
-Oz (Disney) X Disney Infinity
-Oil Panic X Super Smash Bros.
-Donkey Kong X Wario
-Dora the Explorer X Family Guy
-Super Smash Bros. X Metal Gear
-Modern Family X Say Anything
-Crash Bandicoot X Spyro
-Mario X Angry Video Game Nerd
-Donkey Kong X Earthworm Jim
-Code Monkeys X Donkey Kong
-Street Fighter X 194X
-Super Dangerous Dungeons X Indie Pogo
-Dino Crisis X Resident Evil
-Touch (Shogakukan) X Donkey Kong
-Scott Pilgrim X Nester
-Alan Partridge X The Thick of It
-Tetris X Nintendo World Championships
-Mario X Tennis (Nintendo)
-Eversion X Mario
-CarBot: A 30th Anniversary Cartoon
-Paper Mario X Mad Max
-Demon Attack X Call of Duty
-Donkey Kong X Uniracers
-Taiko no Tatsujin X Mickey Mouse
-Kool-Aid X Mr. Peanut
-Star Wars X JoJo's Bizarre Adventure
-Call of Duty X Skiing (Activision)
-Itadaki Street X Final Fantasy
-Mario X Friday the 13th
-Ace Combat X F-Zero
-OK K.O.! X Megas XLR
-Lion (G&W) X Super Smash Bros.
-The Fairly OddParents X Donkey Kong
-Elvira X Hobgoblins
-Donkey Kong X Kaiketsu Zorori
-Mario X E.T.
-Bar scene references in Snatcher
-CN City
-SonSon X Mega Man
-Pushmo X Metroid
-Kool-Aid X Planters
-Kaboom! X Call of Duty
-Wii games X Donkey Kong
-Twilight Zone X Ghosthunter
-Mario X Shinobi
-Plättchen Twist 'n' Paint X Donkey Kong
-Super Smash Bros. X Star Fox
-SNES games in Legacy of Goku II
-Art Style X Zelda
-The Fall Guy X Speedway (1968 movie)
-Terrahawks
-Itadaki Street X Dragon Quest
-Gundam X Super Smash Bros.
-Mega Man X Capcom Girl no Mind Puzzle
-Shaolin Wooden Men X Tekken
-Mario X Warcraft
-Liv and Maddie X Best Friends Whenever
-Alien vs. Predator X Street Fighter
-Resident Evil X Star Gladiator
-Super Mario X Pokémon
-Mario X Rocky (United Artists)
-Jump (Series) X Naruto
-Mario X Uncle Grandpa
-Mario X The Fresh Prince of Bel-Air
-Super Smash Bros. X Fire Attack
-Street Fighter X Mega Twins
-Super Smash Bros. X Wave Race
-Ratchet & Clank X Mario
-Superman X Happy Tree Friends
-Donkey Kong X Xevious
-Mario X The World God Only Knows
-WipEout X MediEvil
-Barcode Battler X Doraemon
-Castle of Shikigami X Mobile Light Force
-Skies of Arcadia X Valkyria Chronicles
-E.T. X Star Wars
-Cowboy Bebop X Taiko no Tatsujin
-Mario & Luigi X Pikmin
-My Name Is Earl X Frogger
-Foster's Home For Imaginary Friends X Mario
-Tetris X Super Smash Bros.
-Fortnite X Transformers
-Captain Commando X Street Fighter
-Shaun the Sheep X Mario
-Uniracers X Yoshi
-Party Land X Dig Dug
-Wario X Pikmin
-Donkey Kong X Game & Watch Collection
-Super Smash Bros. X Pokémon
-Turrican X Mario
-Jump (Series) X Toriko
-Dragon Ball X The Amazing World of Gumball
-Jump (Series) X Hunter × Hunter
-Wario X Golf (Nintendo)
-Avatar
-Tomb Raider X Primal
-Amazing World of Gumball X Dragon Ball
-Tangled X Frozen (Disney)
-Law & Order X Chicago (NBC)
-Assassination Classroom X Jump (Series)
-Pikmin X Zelda
-Donkey Kong X Wii games
-OK K.O.! X Periwinkle Around the World
-Gundam X Donkey Kong
-Primal X Xena
-Donkey Kong X The Fast and the Furious
-Ōkami X Street Fighter
-Fire (G&W) X Mario
-Taiko no Tatsujin X Pac-Man
-Metroid X Ace Combat
-Zelda X Soul (Series)
-Zelda X Golden Sun
-Doraemon X Taiko no Tatsujin
-Columbia (Mascot)
-Hogan's Alley X Wario
-Robot Chicken X Mario
-Jump (Series) X Dragon Quest
-Dig Dug X Party Land
-Mr. Peanut X Kool-Aid
-Mario X Balloon Fight
-Metroid Prime 3 Ship Bumper Stickers
-Asterix X BloodRayne
-Alien Nation X South Park
-Scarface X Class of '09 (SBN3)
-Marvel Super Heroes (Capcom) X Final Fight
-Dragon Quest X Final Fantasy
-Nickelodeon India Teacher's Day: Guru Cool Commercial
-Zelda X Soul Series
-Hatsune Miku X Pokémon
-Super Robot Monkey Team Hyperforce Go! X Mario
-1080° X Super Smash Bros.
-Breath of Fire X Capcom Black Jack
-Asura's Wrath X Vulgus
-Call of Duty X Grand Prix (Activision)
-LOST (ABC) X Wolverine
-One Piece X Jump Series
-JoJo's Bizarre Adventure X Spider-Man
-Happy Tree Friends X Superman
-Kirby X Donkey Kong
-My Hero Academia X Lord of the Rings
-Super Smash Bros. X Game & Watch Gallery
-Robot Chicken X Zelda
-Scott Pilgrim X Punch-Out!!
-Picross X Donkey Kong
-N-Gang X Zelda
-Sleeping Dogs (Square Enix) X Just Cause (Eidos)
-Hello, Paramount
-Forgotten Worlds X Street Fighter
-Minecraft X Skibidi Toilet
-The Big Bang Theory X Call of Duty
-Gadget X Asterix
-Star Wars X Snatcher
-Animal Crossing X Clu Clu Land
-Famicom Robot X Tetris
-Harvest Moon X Zelda
-Super Smash Bros. X Wario
-Mario X Lego City
-Super Smash Bros. X Lion (G&W)
-Family Basic games X Mario
-Friends X Twisted Metal
-Capcom Girl no Mind Puzzle X Cyberbots
-Game & Watch Gallery X Donkey Kong
-Donkey Konga songs
-Ace Attorney X Taiko no Tatsujin
-Mario X Boxing (G&W)
-Star Fox X Mario
-JoJo's Bizarre Adventure X The Matrix
-Pokémon X Donkey Kong
-Punch-Out!! X Tingle
-Mario X Stunt Race FX
-Identity V X Junji Ito Collection
-Darius X Taiko no Tatsujin
-Shinobi X Rambo
-Mario X Rayman
-Sonic X Ty the Tasmanian Tiger
-Zelda X Nostalgia Critic
-Street Fighter X Power Stone
-Street Fighter X Strider
-Street Fighter X Ghosts 'n Goblins
-Mii Plaza X Mario
-Resident Evil X Mega Man
-Uniracers X Zelda
-N-Gang X Mario
-Smokey and the Bandit X Super Stars (Ertl)
-Mario X The Beverly Hillbillies
-My Hero Academia X Harry Potter
-MultiVersus X Harley Quinn
-Street Fighter V's Ring of Arcade stage references
-The Fairly OddParents X Ned's Declassified School Survival Guide
-Uniracers X Wario
-Chibi-Robo! X Mario
-Mario X Famicom Robot
-Super Smash Bros. X Mother
-Mighty No. 9 X Azure Striker Gunvolt
-Yu-Gi-Oh X Metal Gear
-Popeye X Donkey Kong
-Ghostbusters X Mario
-Rad Racer X Nintendo World Championships
-Fontana-Wolf universe
-M&M's X Shrek
-Paper Mario X Zelda
-Splatoon X Wario
-Battletoads X Killer Instinct (Rare)
-Zelda X Super Smash Bros.
-Roll Call
-Ghost
-Adventure Time X Mario
-Series
-Space Invaders X Angry Birds
-Sim X Mario
-Angry Birds X Space Invaders
-Skiing (Activision) X Call of Duty
-Metal Gear X Super Smash Bros.
-OK K.O.! X Time Squad
-Wario X Clu Clu Land
-Speedway (1968 movie) X The Fall Guy
-Critical Reflex Promotional Art
-Kaiketsu Zorori X Donkey Kong
-OK K.O.! X Clarence
-Code Monkeys X Mario
-Pokémon X Pikmin
-Hai no Majutsushi X Castlevania
-Muppets X Donkey Kong
-Gotcha Force X Capcom Fighting
-Tetris X Zelda
-Snatcher X Castlevania
-Animal Crossing X Punch-Out!!
-Dance Dance Revolution X Wrecking Crew
-Summer Camp Secrets X Zelda
-F-Zero X Super Smash Bros.
-Say Anything... X Modern Family
-Doraemon X Jurassic Park
-Super Smash Bros. X Kirby
-Avatar (Nickelodeon) X Punch-Out!!
-Taiko no Tatsujin songs/summary
-Zelda X Big Brain Academy
-Mario X Gurren Lagann
-Mobile Light Force X Castle of Shikigami
-South Park X Akira
-Mario X Bomberman
-Sonic X Street Fighter
-Mario X Baseball (Nintendo)
-Splinter Cell X Asterix
-Xenogears X Final Fantasy
-Pac-Man X Fast and Furious
-Animal Crossing X Taiko no Tatsujin
-Action Henk X Indie Pogo
-Fast and Furious X Katamari
-Gravity
-Mario Golf X Yoshi
-Ghosts 'n Goblins X Street Fighter
-Zelda X Mario
-Henry Stickmin X Mario
-Taiko no Tatsujin X Balloon Fight
-Super Smash Bros. X Princess Peach
-Fullmetal Alchemist X Taiko no Tatsujin
-Spyro X Crash Bandicoot
-Donkey Kong X Manhole
-Street Fighter X Final Fight
-Chicken Wiggle X Indie Pogo
-Super Smash Bros. X Game & Watch
-Bobobo-bo Bo-bobo X Donkey Kong
-Ice Climber X Super Smash Bros.
-Spy X Family
-Zelda X Tekken
-The Simpsons X Tetris
-Luigi X Mario
-Tiny Tower X Mario
-The Simpsons X James Bond
-Daigasso! Band Brothers X Zelda
-Captain Toad X Wario
-Mario X Dr. Giggles
-The World God Only Knows X Mario
-Kangaroo (Atari) X Q*bert
-Taiko no Tatsujin X Bartender
-Donkey Kong X Super Sentai-Power Rangers
-Donkey Kong X Pokémon
-Mario X Modern Family
-Madagascar X Shrek
-UGSF Timeline
-Three Men and a Baby X Mario
-Hasbro All-Stars
-Zelda X Harvest Moon
-Mario X Meets World
-OK K.O.! X My Gym Partner's A Monkey
-Mario X Chef (G&W)
-Zelda X Super Robot Monkey Team Hyperforce Go!
-Super Smash Bros. X Xeno Series
-Gyromite X Tetris
-Pokémon X Asterix
-Tennis (Nintendo) X Mario
-The Fall Guy X Elvira
-Fortnite X Resident Evil
-Wario X F-Zero
-Donkey Kong X Starfy
-Mario & Luigi X Zelda
-Ace Combat X Metroid
-South Park X Alien Nation
-Golf (Nintendo) X Wario
-Hannah Montana X Raven (Disney)
-Kirby X Kid Icarus
-Mario X Tiny Tower
-Wrecking Crew X Dance Dance Revolution
-Mega Man X Super Smash Brothers
-Zelda X Story of Seasons
-Doodle God X Batman
-Mass Effect X Minecraft
-Chef (G&W) X Mario
-Mario X Dig Dug
-Alex Rider X Mario
-Peanuts X JoJo's Bizarre Adventure
-Sonic X Asterix
-The Fall Guy X Sky Riders
-Snatcher X Gradius
-Phantasy Star X Mario
-Wario X Captain Toad
-Red Earth X Darkstalkers
-Mario & Luigi X Excite
-Raiders of the Lost Arcade references
-Teenage Mutant Ninja Turtles X Mario
-Viewtiful Joe X Street Fighter
-Mario X Adventure Time
-Indie Pogo X Jack N' Jill
-Yoshi X Tetris
-The Secret Life of Pets X Minions
-Splatoon X Pikmin
-Super Mario Land X Zelda
-Street Fighter X Terminator
-Hello Kitty X Shimajiro
-Elvira X The Fall Guy
-MultiVersus X Batman
-Star Gladiator X Red Earth
-Power Stone X Capcom Fighting
-OK K.O.! X Victor and Valentino
-Snatcher X Kinnikuman
-Laika Holiday Posts
-Asterix X Grand Theft Auto
-The Powerpuff Girls X Zelda
-Hai no Majutsushi X Snatcher
-A Hat in Time X Here Comes Niko!
-Sabrina the Teenage Witch X You Wish
-Mario X Giana Sisters
-Primal X Tomb Raider
-Q*bert X Space Ace
-NES games in Animal Crossing
-Google Hangout with Wallace and Gromit
-The Fall Guy X John Dortmunder
-MultiVersus X Tom and Jerry
-MediEvil X C-12: Final Resistance
-Nintendo Puzzle Collection X Panel de Pon
-Cover rule
-Mario X Shaun the Sheep
-The Fall Guy X Derek Flint
-Tekken X Super Smash Bros.
-Super Scope X Bazooka Blitzkrieg
-Vermin X Super Smash Bros.
-The Art of 5th Cell Cover Art
-Punch-Out!! X Animal Crossing
-Asterix X Tekken
-Rival Schools X Capcom Girl no Mind Puzzle
-K.C. Undercover X Jessie (Disney)
-The Simpsons X Donkey Kong
-Super Smash Bros. X Famicom Grand Prix
-Mario X Octopus
-Super Mario Bros. X Wario
-Super Smash Bros. X Gundam
-Megaman X Gal*Gun
-The Poseidon Adventure X The Fall Guy
-Captain N X Punch-Out!!
-Mario X Qix
-2004 SuperTarget Commercial
-Pretty Cure X Donkey Kong
-Tetsujin 28 X JoJo's Bizarre Adventure
-Golf (Nintendo) X Mario
-Fast and Furious X Mr. Driller
-NBA Street X Mario
-Mario X Drake & Josh
-Mega Man X Marvel Super Heroes (Capcom)
-Mii appearances
-Flappy Bird X Mario
-Spider-Man X JoJo's Bizarre Adventure
-Asterix X Donkey Kong
-Baseball (Nintendo) X Art Style
-Mario X Alex Kidd
-Toriko X Jump (Series)
-Mirror's Edge X Mario
-Angry Video Game Nerd X Zelda
-Spider Fighter X Call of Duty
-Donkey Kong X Greenhouse
-Mario X Wario
-Winnie the Pooh X Kingdom Hearts
-Pokémon X Super Smash Bros.
-Super Smash Bros. X Monster Hunter
-Street Fighter X Predator (Fox)
-Street Fighter X Fortnite
-Super Smash Bros. X Fatal Fury
-Sonic X Transformers
-Donkey Kong X Robot Chicken
-Morning Funnies Cereal Commercial
-Uniracers X Metroid
-Zelda X How I Met Your Mother
-Donkey Kong X Minimoni de Bremen no Ongakutai
-Taito Harikiri Daifugo X Bubble Bobble
-Super Mario X F-1 Race
-Mazinger X Donkey Kong
-Monkey Island X Asterix
-Donkey Kong X Animal Crossing
-RadioShack: Goodbye '80s
-Mascot link
-Tobal X Tekken
-Mega Man X Nazo Waku Yakata
-One Foot in the Grave
-Super Smash Bros. X The Legend of Zelda
-Asterix X Soul (Namco)
-Death Note X Mario
-Fortnite X Frankenstein (Universal)
-Galaxian X Taiko no Tatsujin
-Kill Me Baby X Taiko no Tatsujin
-Kid Icarus X Tetris
-Street Fighter X Capcom Girl no Mind Puzzle
-McPixel X Teenage Mutant Ninja Turtles
-Hissatsu Buraiken X Street Fighter
-Halloween X Call of Duty
-Satella-Q X Mario
-Excite X Animal Crossing
-Ace Combat X Pac-Man
-The Fast and the Furious X Donkey Kong
-Splatoon X Animal Crossing
-Mario X Phantasy Star
-SNL's Recurring Characters for Unity (1993)
-Mario Kart X Nester
-Mega Jump X Mario
-Mr. Pants X Donkey Kong
-Angry Birds X Mario
-Pokémon X South Park
-Punch-Out!! X Avatar: The Last Airbender
-Jump Series X Naruto
-Barcode Battler X Dragon Slayer
-Donkey Kong X Pushmo
-Pokémon X Hatsune Miku
-Nintendo World Cup X Tetris
-Snatcher X Hai no Majutsushi
-Donkey Kong X Minecraft
-The Suite Life X Hannah Montana
-Mickey Mouse X Zelda
-Sonic X Wreck-It Ralph
-Pinball (Nintento) X Animal Crossing
-2019 Walmart Big Game Commercial
-Kirby X Mario
-Street Fighter X Dino Crisis
-Coach (ABC) X The Drew Carey Show
-Dig Dug X My Name Is Earl
-Zelda X Star Fox
-Borderlands X Donkey Kong
-Taiko no Tatsujin X JoJo's Bizarre Adventure
-Zelda X Warcraft
-Mario X Mary Poppins
-Minecraft X Henry Stickmin
-Call of Duty X Boxing (Activision)
-Pushmo X Urban Champion
-Barry Steakfries Series X Fruit Ninja
-Mario X Super Sentai-Power Rangers
-Cars (Pixar) X Monsters (Pixar)
-Resident Evil X Street Fighter
-The King of Fighters X Super Smash Bros.
-JoJo's Bizarre Adventure X Terminator
-Asterix X Devil May Cry
-Mario X Wreck-It Ralph
-Friday Night Nicktoons Opening
-Wreck-It Ralph X Donkey Kong
-Donkey Kong X Megamind
-Brand Aid
-Ghostbusters X South Park
-Henry Stickmin X Minecraft
-El Chavo X Mario
-Ghosts 'n Goblins X Taiko no Tatsujin
-Pirates of the Caribbean X MediEvil
-Blast Corps X Mega Man
-The Big Bang Theory X Rock Band
-Fortnite X Goat Simulator
-Bayonetta X Super Smash Bros.
-Nazo no Murasame Jo X Super Smash Bros.
-Kirby X Animal Crossing
-Kool-Aid & Mr. Clean X Planters
-MonsterVerse
-Art of Fighting X Super Smash Bros.
-Rain Shower (G&W) X Donkey Kong
-OK K.O.! X Cow and Chicken
-Star Wars X E.T.
-Mario X Beethoven (Universal)
-Mario X Family Basic games
-CN Always on the Run
-Bugdroid (Mascot)
-Mario X NBA Street
-Super Smash Bros. X Henry Stickmin
-OK K.O.! X Johnny Bravo
-OK K.O.! X Mike, Lu & Og
-MasterCard Icons Commercial
-Super Smash Bros. X Egg
-Barcode Battler X Zelda
-Mario X Family Guy
-Breaking Bad X Home Fries
-Wario Land X Mario
-Jack N' Jill X Indie Pogo
-Donkey Kong X Metroid
-Marvel: Ultimate Alliance X Pitfall
-Tetris X Ice Climber
-Mario X Gary Unmarried
-Mario X Itadaki Street
-Donkey Kong X Futurama
-Zelda X Skinjacker
-Conker X Donkey Kong
-Mario X The Adventures of Willy Beamish
-Nintendo costumes in Tekken Tag Tournament 2
-Evil Bong X Elvira
-Creatures X MediEvil
-Urban Champion X Super Smash Bros.
-Video game references in My Name Is Earl
-Cave Story X Mario
-Suicide Squad X MultiVersus
-Snatcher X Alien (Fox)
-Poptropica X Diary of a Wimpy Kid
-Class of '09 (SBN3) X Tony Hawk's
-Side Arms X Asura's Wrath
-Duck Hunt X Mario X Running Stadium
-Call of Duty X Cosmic Commuter
-Yoshi X Super Princess Peach
-Star Wars X Transformers
-Mario X Evil Dead
-Donkey Kong X Fast and Furious
-Taiko no Tatsujin X Fast and Furious
-Croc X Tomb Raider
-Taiko no Tatsujin X Pirates of the Caribbean
-Mario X Super Smash Bros./Trophies
-Star Fox X Stunt Race FX
-Mickey Mouse X JoJo's Bizarre Adventure
-Murdered: Soul Suspect
-Mario X Ren & Stimpy
-Taiko no Tatsujin X Digimon
-Mario X Just Dance
-Category:DC Comics
-Indiana Jones X MediEvil
-Q*bert X Pitfall
-Kid Icarus X Wario
-Octopus X Super Smash Bros.
-Lego Outback
-Lucky Star X Taiko no Tatsujin
-Zelda X Mickey Mouse
-Mega Man X Ghosts 'n Goblins
-Barcode Battler X J.League Excite Stage
-Donkey Kong X Golf (Nintendo)
-Tennis (Nintendo) X Kiki Trick
-F-Zero X Zelda
-Hanna-Barbera references in Scoob!
-AT&T
-Donkey Kong X Touch (Shogakukan)
-Project X Zone
-Capcom Fighting X Power Stone
-Zelda X Asterix
-Taiko no Tatsujin X Dragon Ball
-Punch-Out!! X Captain N
-Donkey Kong X My Name Is Earl
-Dig Dug X Mario
-Donkey Kong X The Fairly OddParents
-Famicom Robot X Super Smash Bros.
-Super Mario X Yoshi
-Pushmo X Balloon Fight
-Charlie's Angels X Ghosthunter
-Star Fox X Ace Combat
-Jump (Series) X Fist of the North Star
-Jump (Series) X Bobobo-bo Bo-bobo
-2012 MetLife Super Bowl Commercial
-Mario X Back to the Future
-James Bond X Ghosthunter
-Street Fighter X SonSon
-Robo Force
-Zelda X N-Gang
-Zelda X Kirby
-Tetris X Balloon Fight
-Rayman X Mario
-Super Robot Monkey Team Hyperforce Go! X Zelda
-Cartoon Network Parking Lot Commercial
-Tetris X Qix
-Nintendo World Championships X Rad Racer
-Mario X George Lopez
-Dan The Man X Barry Steakfries
-Super Stars (Ertl) X The Fall Guy
-Deus Ex X Sleeping Dogs (Square Enix)
-Giana Sisters X Mario
-Hebereke X Barcode Battler
-Mega Man X Adventure Quiz
-The League of Gentlemen
-Cyber (Namco) X Galaxian
-Super Smash Bros. X Judge (G&W)
-Final Fantasy X Asterix
-Toy Story rule
-Call of Duty X Seaquest (Activision)
-Wario X Punch-Out!!
-Taiko no Tatsujin X Splatoon
-Metal Gear X Yu-Gi-Oh
-Wrecking Crew X Art Style
-Helmet X Mario
-Mario Kart X Wii games
-Slam Masters X Street Fighter
-Tris
-Vulgus X Asura's Wrath
-Junji Ito Collection X Identity V
-Mystery Science Theater 3000 X Mario
-Party Land X Valkyrie (Namco)
-Gears of War X Gary Unmarried
-Gun Survivor X Darkstalkers
-Mario X StarTropics
-Angel (Warner Bros.) X Donkey Kong
-Mario X Mother
-Mickey Mouse X Kingdom Hearts
-OK K.O.! X Firebreather
-Taito Harikiri Daifugo X Turn it Around
-River Raid X Call of Duty
-Fruit Ninja X Barry Steakfries Series
-Indie Pogo X Action Henk
-Tropical Fish X Super Smash Bros.
-Tetris X Devil World
-Donkey Kong X Star Fox
-The Modern Disney Afternoon Commercial
-Wrecking Crew X Wario
-Mario X The Mask
-Fortnite X Superman
-Space Invaders X Asterix
-Disney Infinity X Oz (Disney)
-Doodle God X Star Wars
-Duck Hunt X Wario
-Transformers X Star Wars
-Pokémon X Mario
-Super Smash Bros. X Samurai Shodown
-1994 Nickelodeon Fruit Roll-Ups Commercial
-Resident Evil X Captain Commando
-Diskun (Mascot)
-Mario X Rhythm Heaven
-Perfect World
-Excite X Wario
-Smosh X Annoying Orange
-The Secret Saturdays X Ben 10
-Format crossover
-Mach Rider X Mario
-Captain Rainbow X Punch-Out!!
-Zelda X Phantasy Star
-Uniracers X Kirby
-Animation Plus Trailer
-Taiko no Tatsujin X Dragon Quest
-Super Smash Bros. X Super Scope
-Sleeping Dogs (Square Enix) X Hitman
-Type 3 link
-Kiki Trick X Nintendo
-South Park X The Fugitive
-Donkey Kong X Muppets
-Wolverine X Warcraft
-Pac-Man X Ace Combat
-Red Earth X Star Gladiator
-Punch Out!! X Avatar (Nick)
-Super Smash Bros. X Code Name: S.T.E.A.M.
-Luigi X Super Smash Bros.
-Jessie (Disney) X Mario
-Kiki Trick X Tennis (Nintendo)
-Oil Panic X Mario
-Tekken X Street Fighter
-Forgotten Worlds X Final Fight
-Super Smash Bros. X The Wonderful 101
-ARMS (Nintendo) X Super Smash Bros.
-Metroid X Warriors (Koei)
-Mega Man X Tekken
-Donkey Kong X Pretty Cure
-AR Games X Mario
-Ganbare Goemon X Hai no Majutsushi
-Megami Tensei X Super Smash Bros.
-Taiko no Tatsujin X Ace Combat
-Running to the Moon for a Banquet
-MultiVersus X Wonder Woman
-Mario X Excite
-Doom (ID Software) X Starfield
-The Thick of It X Alan Partridge
-Sonic X Ghosts 'n Goblins
-Shinobi X Terminator
-3D Dot Game Heroes X Punch-Out!!
-Dumbo & Cool X Gish
-Mario X Uniracers
-Kingdom Hearts X Super Smash Bros.
-Mario X Fish Hooks
-Mega Man X Super Smash Bros.
-Ren & Stimpy X Mario
-Indiana Jones X Taiko no Tatsujin
-Katamari X Fast and Furious
-Battle Circuit X Capcom Fighting
-Barry Steakfries X Fruit Ninja
-Barcode Battler X Hebereke
-Nester X Scott Pilgrim
-Gon X Tekken
-Final Fight X Captain Commando
-Animal Crossing X Balloon Fight
-Donkey Kong X Fire (G&W)
-Zelda X Wii games
-Mother X Kirby
-Darkstalkers X Tekken
-Street Fighter X Sonic
-Octopus X Mario
-Jump (Series) X Yu Yu Hakusho
-Mario & Luigi X Final Fantasy
-Kingdom Hearts X Final Fantasy
-Mario X Homestar Runner
-Codename: Kids Next Door X The Grim Adventures of Billy & Mandy
-King Kong X Mario
-Pitfall X Frogger
-Shimajiro X Hello Kitty
-Final Fight X Forgotten Worlds
-Bonus chapter in Nazo Waku Yakata
-Mario Kart X Scribblenauts
-Hot Tub Time Machine X Mario
-Punch-Out!! X Frank Bruno's Boxing
-Just Dance X Mario
-Astro Boy X JoJo's Bizarre Adventure
-Keroro Gunsou X Mario
-MultiVersus X Joker (DC Comics)
-Mario X Play Action Football
-Fight Night X Punch-Out!!
-Strong Bad X Donkey Kong
-Mario Party X Zelda
-The Suite Life X Wizards of Waverly Place
-Asterix X Monkey Island
-Super Mario Land X Wrecking Crew
-Taiko no Tatsujin X Laputa: Castle in the Sky
-The Fall Guy X Singin' in the Rain
-Mario X Nintendo World Cup
-Mario Tennis X Luigi
-Kangaroo (Atari) X Donkey Kong
-Animal Crossing X Pokémon
-Nester X Mario
-NES Remix X Zelda
-Resident Evil X Fortnite
-Pac-Man X Super Smash Bros.
-Donkey Kong X Killer Instinct (Rare)
-Diskun appearances
-Hai no Majutsushi X Gradius
-Mario X Taiko no Tatsujin
-Sleeping Dogs (Square Enix) X Deus Ex
-Mega Man X SonSon
-American Dad X Donkey Kong
-It's Kind of a Funny Story X Zelda
-Pizza Tower X Mort the Chicken
-Super Mario in Die Nacht des Grauens cameos
-Call of Duty X H.E.R.O.
-Clu Clu Land X Animal Crossing
-WarioWare X Mario
-Jump Series X Dragon Quest
-Zelda X Pokémon
-Street Fighter X Cannon Spike
-It's Gonna Be A Great Day Kellogg's Commercial
-Mario X Matt Hazard
-Skibidi Toilet X Fortnite
-Barcode Battler X Mario
-Paper Mario X Mother
-Wreck-It Ralph X Sonic
-Dante's Inferno X Dead Space
-Crash Bandicoot X Donkey Kong
-Modern Family X Say Anything...
-Hai no Majutsushi X Ganbare Goemon
-Super Sentai-Power Rangers X Taiko no Tatsujin
-Beethoven X Mario
-Family Guy X Brady Bunch
-Galaxian X Mario
-USA Cartoon Express
-Zelda X Marvel: Ultimate Alliance
-Mario X Arthur (PBS)
-Picross X Zelda
-Super Smash Bros. X Spitball Sparky
-Vocaloid X Pokémon
-Vermin X Mario
-Taiko no Tatsujin X My Neighbor Totoro
-Super Smash Bros. X The King of Fighters
-Ghosts 'n Goblins X Marvel Super Heroes (Capcom)
-Super Smash Bros. X Shantae
-Tetris X Famicom Robot
-Donkey Kong X Rain Shower (G&W)
-Pokémon X Class of '09 (SBN3)
-Mana X Dragon Ball
-Diddy Kong Racing X Banjo-Kazooie
-Zelda X Kid Icarus
-Tekken X Star Gladiator
-Zelda X Ace Combat
-Asura's Wrath X Side Arms
-Harry Potter X Kirby
-Mario X Battletoads
-Yoshi X Era's Adventures
-Fire Emblem X Wario
-Mario X Banjo-Kazooie
-Donkey Kong X Matt Hazard
-Sonic X Turrican
-Dig Dug X Donkey Kong
-Shrek X Madagascar
-Animal Crossing X Zelda
-Maximo X Asterix
-Spirit Camera X Mario
-OK K.O.! X Tig n' Seek
-Haikyu!! X Jump (Series)
-Beyhond Good and Evil X Asterix
-Assassin's Creed X Mario
-Marvel Super Heroes (Capcom) X Ghosts 'n Goblins
-Mario X Rally-X
-Motoko-chan no Wonder Kitchen X Mario
-Taiko no Tatsujin X How Heavy Are the Dumbbells You Lift
-Super Smash Bros. X Pac-Man
-Tekken X Ghosts 'n Goblins
-Wonder Woman X MultiVersus
-Mario X Cave Story
-Taiko no Tatsujin X Disney's Beauty and the Beast
-Family Guy X Fortnite
-Turtle Bridge X Super Smash Bros.
-Capcom Black Jack X Darkstalkers
-Cartoon Network 2020 Halloween Bumper
-Mario Kart X Haiyore! Nyaruko-san
-Super Hornio Brothers X Mario
-SpongeBob SquarePants X The Loud House
-Big Brain Academy X Mario
-Zelda X F-1 Race
-Manhole X Super Smash Bros.
-Lost Planet X Asura's Wrath
-Nintendogs X Mario
-Mario X Banjo
-Histeria! X Mario
-Doom X Asterix
-Super Smash Bros. X Xenoblade
-Paramount+ Expedition
-Super Smash Bros. X Cuphead
-1080° X Mario
-Rise of Nightmares
-Punch-Out!! X Donkey Kong
-Street Fighter X Tekken
-Private Eye (Activision) X Call of Duty
-Here Comes Niko! X A Hat in Time
-Frogger X My Name Is Earl
-Mario vs. Donkey Kong X Super Smash Bros.
-Mario X Fire Emblem
-Crash Bandicoot X Mario
-Zelda X DragonFable
-Capcom Fighting X Gotcha Force
-Donkey Kong X Kappa Mikey
-James Bond X Donkey Kong
-Kirby X Star Wars
-Chef (G&W) X Super Smash Bros.
-Dr. Mario X Donkey Kong
-Metroid X Dragon Ball
-Super Princess Peach X Yoshi
-Zelda X Taiko no Tatsujin
-Mario X Turrican
-Mario X Luigi
-Zelda X South Park
-Galaxian X Cyber (Namco)
-MediEvil X Everybody's Golf
-1995 Totally Fox Kids Magazine Centerfold
-Mario X Pokémon
-Dragon Ball X Final Fantasy
-Looney Tunes X MultiVersus
-Joker (DC Comics) X MultiVersus
-Mario and TMNT in McPixel
-Pokémon X Wario
-Jump (Series) X Yu-Gi-Oh
-Home Fries X Breaking Bad
-Greenhouse X Super Smash Bros.
-Metroid X Captain N
-Zelda X Animal Crossing
-Star Wars X South Park
-Mortal Kombat X Billy Madison
-Zelda X Metroid
-OK K.O.! X Sheep in the Big City
-Donkey Kong X Fullmetal Alchemist
-Austin & Ally X I Didn't Do It (Disney)
-South Park X Pokémon
-Punch-Out!! X Arm Wrestling (Nintendo)
-Hobgoblins X Elvira
-Beverly Hillbillies X Mario
-Pitfall X Q*bert
-Billy Madison X Mortal Kombat
-Naruto X Donkey Kong
-Snatcher X Star Wars
-Yoshi X Wario
-Rayman X Asterix
-Tekken X F-Zero
-Fish Hooks X Mario
-MediEvil X Pirates of the Caribbean
-Mario X Game & Watch Gallery
-Harry Potter X My Hero Academia
-Marvel vs. Capcom X Street Fighter
-Re:Zero X Isekai Quartet
-Warriors (Koei) X Zelda
-Mario Golf X Pikmin
-Zelda X Monster Hunter
-Taiko no Tatsujin X Sailor Moon
-Scooby-Doo X MultiVersus
-Donnie Darko X Smurfs
-Quiz Nanairo Dreams X Darkstalkers
-Time Bomb
-Ben 10 X The Grim Adventures of Billy & Mandy
-Pokémon X Tetris
-Barcode Battler X J. League Excite Stage
-Call of Duty X Chopper Command
-Nintendo Puzzle Collection X Mario
-Street Fighter X Mario
-Imaginationland references
-Mario & Luigi X Rayman
-List of Youtooz Promotional Art
-Captain N X Mario
-Psycho Soldier X Super Smash Bros.
-Pizza Vs. Skeletons X Indie Pogo
-Memberberries quotes
-Dr. Giggles X Mario
-Teenage Mutant Ninja Turtles X McPixel
-Kamen Rider X Snatcher
-Castlevania X Super Smash Bros.
-Resident Evil X SonSon
-Fortnite X Futurama
-Captain Commando X Final Fight
-Hasbro Comic Book Universe
-Crash Bandicoot X Futurama
-Taiko no Tatsujin X Hello Kitty
-Wario Land X Animal Crossing
-Custom Robo X Super Smash Bros.
-Kirby X Super Smash Bros.
-Adventure Quiz X Street Fighter
-Adventure Time X MultiVersus
-Indie Pogo X Super Dangerous Dungeons
-Mario X Law & Order
-Zelda X Another Code
-Asterix X Tomb Raider
-Kingdom Hearts X Winnie the Pooh
-It's Time to Play - PS4
-Capcom Fighting X Street Fighter
-Fast and Furious X Taiko no Tatsujin
-Mario X Indiana Jones
-Hitman X Sleeping Dogs (Square Enix)
-Modern Family X Mario
-The Big Bang Theory X Mario
-Power Stone X Rival Schools
-Robot Chicken X Donkey Kong
-Undirect link
-Strider X Red Earth
-Super Smash Bros. X Card Hero
-Lego City X Mario
-Donkey Kong X Sky Kid
-Shonen Jump covers
-Friends X Pac-Man
-Banjo X Mario
-Back to the Future X Mario
-Frogger X Q*bert
-Call of Duty X Demon Attack
-South Park X Mario
-Portal X Wolverine
-Mario X Game Boy (Valiant)
-Futurama X Family Guy
-The Matrix X Super Sentai-Power Rangers
-The Big Bang Theory X Pac-Man
-Grace Under Fire X Ellen
-Drill Dozer X Mario
-Wolverine X Portal
-Mario X Frontline
-Mario X The Exorcist
-Mario Kart X Wreck-It Ralph
-Beijing 2022 Winter Olympics Game Trailer (Shanghai Animation Film Studio)
-The Baz (Mascot)
-Bazooka Blitzkrieg X Super Scope
-Zelda X Hamtaro
-GoBots X Guardians of the Galaxy
-Capcom Girl no Mind Puzzle X Darkstalkers
-Taiko no Tatsujin X Dragon Spirit
-Ace Attorney X Nazo Waku Yakata
-Dragon Quest X Jump (Series)
-Animal Crossing X Super Smash Bros.
-Skibidi Toilet X Minecraft
-Talking Tom & Friends X Flappy Bird
-BS-X: Sore wa Namae o Nusumareta Machi no Monogatari X Zelda
-Ghosthunter X James Bond
-Asterix X Mortal Kombat
-Mario X Drill Dozer
-Alpha Mission X Super Smash Bros.
-Pikmin X Splatoon
-Wario X Famicom Robot
-Rubbadubbers
-Devil World X Wario
-Android robot (Mascot)
-Street Fighter X Human Killing Machine
-The Program Picker at CW4Kids.com
-Futurama X Donkey Kong
-Super Princess Peach X Super Smash Bros.
-Taiko no Tatsujin X Frozen (Disney)
-Crossover rules
-Doshin the Giant X Super Smash Bros.
-Ace Combat X Star Fox
-Pocky & Rocky X Taito Harikiri Daifugo
-Ace Attorney X Professor Layton
-Ace Attorney X Zelda
-Gunbird X Mobile Light Force
-Taiko no Tatsujin X Lupin the Third
-Asterix X Crash Bandicoot
-Animal Crossing X Pinball (Nintendo)
-Egg X Super Smash Bros.
-The Drew Carey Show X Coach (ABC)
-Atari games in Call of Duty
-Mario X Mach Rider
-WarioWare X Wario Land
-Fire Attack X Super Smash Bros.
-Star Wars X Modern Family
-Breath of Fire X Mega Man
-Donkey Kong X Atashin'chi
-Gremlins X Donkey Kong
-Bubble Bobble X Asterix
-Turn it Around X Taito Harikiri Daifugo
-Game & Watch Gallery X Mario
-Terminator X JoJo's Bizarre Adventure
-Stunt Race FX X Star Fox
-Viva Las Vegas
-Robot Tank X Call of Duty
-Mario X Bully (Rockstar)
-Gun Survivor X Street Fighter
-Donkey Kong X Angel (Warner Bros.)
-Ridge Racer X Mario
-Donkey Kong X Aim for the Ace!
-Sheriff (Nintendo) X Family Basic games
-Kirby X F-Zero
-Street Fighter X Asterix
-Taiko no Tatsujin X Darius
-SpongeBob X Mario
-Asterix X Street Fighter
-Homestar Runner X Zelda
-194X X Resident Evil
-Mario X Game Boy Camera
-Mario X Keroro Gunsō
-Johnny Bravo X Scooby Doo
-Nazo Waku Yakata X Dead Rising
-Taiko no Tatsujin X Ponyo
-Glitch (Mascot)
-Mario X Panel de Pon
-3D Dot Game Heroes X Zelda
-Call of Duty X Pitfall
-Bomberman X Mario
-Jak and Daxter X Asterix
-Breath of Fire X Ghosts 'n Goblins
-Hercules
-Legacy of Kain X Asterix
-Avatar (Fox) X Disney Infinity
-Donkey Kong X Tetris
-Super Smash Bros. X Ace Combat
-Super Smash Bros. X Final Fantasy
-Friends X Crash Bandicoot
-Zelda X Chowder
-Street Fighter X Super Smash Bros.
-Soul (Series) X Zelda
-Panel de Pon X Tetris
-Asterix X Splinter Cell
-Mario X Dexter's Laboratory
-Kid Icarus X Zelda
-Mr. Clean X Mr. Peanut
-OK K.O.! X Dexter's Laboratory
-Nintendo Land X Zelda
-One Night at Flumpty's X Zelda
-Devil May Cry X Street Fighter
-Pokémon X Super Smash Bros./Trophies
-Donkey Kong X American Dad
-Konami 50th Anniversary Artwork
-Cannon Spike X Street Fighter
-Super Robot Monkey Team Hyperforce Go! X Donkey Kong
-Wario X Uniracers
-Taiko no Tatsujin X Kinnikuman
-Mario X Tekken
-Wario X Pokémon
-Mario X Satella-Q
-Space Ace X Q*bert
-Persona X Super Smash Bros.
-Mario X Big Brain Academy
-Egg (G&W) X Super Smash Bros.
-Grace Under Fire X The Drew Carey Show
-Castlevania X Hai no Majutsushi
-Kid Icarus X F-1 Race
-Family Guy X American Dad!
-Princess Peach X Super Smash Bros.
-Two and a Half Men X Donkey Kong
-Mario X Diddy Kong Racing
-Fire Emblem X Donkey Kong
-Mario X Croc
-The Fresh Prince of Bel-Air X Mario
-Dragon Quest X Zelda
-Wherever you are, Apple Arcade is open
-Super Smash Bros. X Tekken
-Lord of the Rings X My Hero Academia
-Pushmo X Zelda
-Mario X Yin Yang Yo!
-Mario X Pilotwings
-Spore X Mass Effect
-Inuyasha X Taiko no Tatsujin
-Street Fighter X Viewtiful Joe
-Pitfall X Donkey Kong
-Mario X Ridge Racer
-The Fall Guy X Dirty Mary, Crazy Larry
-Donkey Kong X Frogger
-Nightmare on Elm Street X Mario
-Tetris X Kid Icarus
-Brawl Stars X South Park
-Rally-X X Mario
-Mario Kart X Famicom Grand Prix
-OK K.O.! X Ben 10
-Darkstalkers X Gun Survivor
-Marvel: Ultimate Alliance X Zelda
-SilverLoad X Creatures
-OK K.O.! X The Amazing World of Gumball
-MediEvil: Resurrection film references
-Excite X Tetris
-Punch-Out!! X Scott Pilgrim
-SpongeBob SquarePants X Disney's The Hunchback of Notre-Dame
-Mario X King Kong
-Taiko no Tatsujin X Cowboy Bebop
-Your Name. X Taiko no Tatsujin
-MultiVersus X Looney Tunes
-Black Jack X Taiko no Tatsujin
-Final Fantasy X The Big Bang Theory
-Scooby-Doo X Looney Tunes
-Street Fighter X Armored Warriors
-Power Stone X Resident Evil
-Asterix X Soul Series
-One Night at Flumpty's X Five Nights at Freddy's
-Mario X Alleyway
-Android robot appearances
-Jessie (Disney) X K.C. Undercover
-Henry Stickmin X Grand Theft Auto
-Taiko no Tatsujin X Galaxian
-Ghosthunter X MediEvil
-Tekken X Mario
-F-1 Race X Mario
-Diddy Kong Racing X Conker
-Wario X Brain Training
-Lego City X Donkey Kong
-Futurama X Battlezone (Atari)
-Donkey Kong X Bobobo-bo Bo-bobo
-Power Stone X Legendary Wings
-Dragon Quest X Captain N
-Kid Icarus X Donkey Kong
-Taiko no Tatsujin X Street Fighter
-Mario X Crocodile Dundee
-Arcana X Kirby
-Crossover Nexus
-Genpei Toma Den X Taiko no Tatsujin
-Mario X The Lost Vikings
-Captain Rainbow X Golf (Nintendo)
-Megas XLR X Mario
-Metroid X Kirby
-Asterix X Sim
-Rick and Morty X MultiVersus
-Tobal X Shaolin Wooden Men
-JoJo's Bizarre Adventure X Tetsujin 28
-Meihao Yunyu Olympics Promotional Art
-SpongeBob SquarePants X Disney's The Hunchback of Notre Dame
-Metroid X Tekken
-Pitfall X Call of Duty
-Waterloo Road
-Pikmin X Donkey Kong
-Donkey Kong X Gravity Falls
-Crayon Shin-chan X Donkey Kong
-Wario X Helmet
-JoJo's Bizarre Adventure X Star Wars
-Adult Swim Kickball bumper
-Spy Hunter X Mortal Kombat
-Monster Hunter X Super Smash Bros.
-Donkey Kong X The Simpsons
-Transformers X Sonic
-Asura's Wrath X Monster Hunter
-Super Smash Bros. X Turtle Bridge
-Pikmin X Ace Combat
-Megamind X Donkey Kong
-Hannah Montana X The Suite Life
-Power Punch X Punch-Out!!
-Mario X Mega Man
-Silver Streak X The Fall Guy
-Wii games X Zelda
-Taiko no Tatsujin X One Piece
-Dragon Ball X Amazing World of Gumball
-Primal X MediEvil
-Street Fighter X Alien (Fox)
-South Park X Ghostbusters
-AVGN rule
-Street Fighter X Slam Masters
-Imagination Land references
-Atashin'chi X Donkey Kong
-Croc X Crash Bandicoot
-Batman X Superman
-Donkey Kong X Balloon Fight
-OK K.O.! X Sym-Bionic Titan
-Mario X Pikmin
-Naruto X Jump Series
-Teenage Mutant Ninja Turtles X Barbie
-Street Fighter X Marvel vs. Capcom
-Henry Stickmin X Among Us
-Chibi Maruko-chan X Donkey Kong
-Mario X Arthur
-Street Fighter X Capcom Fighting
-Perfect Dark X Super Smash Bros.
-Bravoman X Taiko no Tatsujin
-Namco drift charms in The Fast and the Furious
-Tetris X Urban Champion
-Rocky (United Artists) X Mario
-Green Giant Friendsgiving
-Killer Instinct (Rare) X Conker
-NES Remix crossovers
-The Exorcist X Mario
-Skinjacker X Zelda
-Running Stadium X Duck Hunt
-James Bond 007 X The Simpsons
-Super Smash Bros. X Manhole
-Ghosthunter X Primal
-Devil World X Super Smash Bros.
-Angry Birds X Froot Loops
-Sonic X Mario
-South Park X The Simpsons
-Donkey Kong X Zelda
-Zelda X Clu Clu Land
-Taiko no Tatsujin X D.Gray-man
-Daigasso! Band Brothers X Mario
-Mario X Nightmare on Elm Street
-Garfield X Mickey Mouse
-Mario X Daigasso! Band Brothers
-Mario X Joe & Mac
-Jump Series X Hunter × Hunter
-Donkey Kong X Oil Panic
-Star Gladiator X Tekken
-Diddy Kong Racing X Mario
-Zelda X Ace Attorney
-Evangelion X Taiko no Tatsujin
-Mario X Star Wars
-Scott Pilgrim X Mario
-Jump (Series) X Assassination Classroom
-2023 Ster-Kinekor Theaters Mario Movie promo
-Dragon Quest X Super Smash Bros.
-JoJo's Bizarre Adventure X Capcom Fighting
-Type 1 link
-Family Guy X Futurama
-Coach (ABC) X Ellen
-Mighty Gunvolt
-Arthur (PBS) X Mario
-Mario X Puzzle League
-Pink Panther X Dance Dance Revolution
-Zelda X The Big Bang Theory
-Mario X Sonic
-Capcom Girl no Mind Puzzle X Rival Schools
-Hyokkori Hyotan-jima X Donkey Kong
-Marvel: Ultimate Alliance X Metroid
-Wii games X Mario
-Mazinger X JoJo's Bizarre Adventure
-Wario X Duck Hunt
-The Tower
-American Dad! X Family Guy
-Breath of Fire X Resident Evil
-Advent Rising X Mario
-Super Smash Bros. X Megami Tensei
-Final Fantasy X Xenogears
-The Wizard X Mario
-Asterix X Ratchet & Clank
-Game & Watch Gallery X Yoshi
-Donkey Kong X Pinball (Nintendo)
-Star Gladiator X Street Fighter
-Power Pros X Snatcher
-Lego City/sets
-Singin' in the Rain X The Fall Guy
-Chowder X Zelda
-F-1 Race X Kid Icarus
-The Fall Guy X Ghostbusters
-OK K.O.! X Out of Jimmy's Head
-Commando (Capcom) X Street Fighter
-Super Princess Peach X Mario
-Donkey Kong X Diddy Kong Racing
-Super Smash Bros. X Kingdom Hearts
-Yoshi X Dragon Ball
-The Big Bang Theory X Sonic
-Family Basic games X Donkey Kong
-Ys X Taiko no Tatsujin
-Mighty No. 9 X Gal*Gun
-OK K.O.! X Ed, Edd n Eddy
-Mario X Foster's Home for Imaginary Friends
-Mario Bros. X Super Mario
-Donkey Kong X N-Gang
-Game & Watch Gallery X Super Smash Bros.
-Dragon Ball X Jump Series
-Braid (Number None) X Mario
-Kirby X Taiko no Tatsujin
-Starfy X Mario
-Mario X Eversion
-MediEvil X Creatures
-Wrecking Crew X Super Smash Bros.
-Asterix X Sonic
-The Big Bang Theory X Halo
-Jump (Series) X Katekyo Hitman Reborn!
-The Wing of Madoola X Barcode Battler
-Derek Flint X The Fall Guy
-Matt Hazard X Donkey Kong
-Teenage Mutant Ninja Turtles X Fortnite
-Punch-Out!! X Captain Rainbow
-Boy Meets World X Mario
-Mega Man X Breath of Fire
-Family Basic games X Sheriff (Nintendo)
-Yoshi X Pokémon
-Ghosts 'n Goblins X Mega Man
-Super Smash Bros. X Famicom Robot
-Fruit Ninja X Barry Steakfries
-Uniracers X Donkey Kong
-Planters - Baby Nut commercial
-Taiko no Tatsujin X Pokémon
-Yu-Gi-Oh X Taiko no Tatsujin
-Fortnite X Dead Space
-Black Adam X MultiVersus
-Bill & Ted X McDonald's
-Mickey Mouse X Garfield
-Sly Cooper X Asterix
-Tekken X Shaolin Wooden Men
-Balloon Fight X Mario
-Xeno (Series)
-Q*bert X Kangaroo (Atari)
-Street Fighter X Hissatsu Buraiken
-Mario X Gravity Falls
-Pikmin X Wario
-Rocky X Mario
-Psych X Zelda
-Fable (Lionhead) X Zelda
-Metroid X Kiki Trick
 Call of Duty X Mario
-Dread X Collection
-Link
-Mario X McPixel
-Super Smash Bros. X Art of Fighting
-Shinobi X Batman
-Mario X Child's Play
-Youtooz Promotional Art
-Godzilla X Batman
-Lilo & Stitch X The Lion King
-Taiko no Tatsujin X Magi
-Mario & Luigi X Super Scope
-South Park X Star Trek
-Stranger Things X Teenage Mutant Ninja Turtles
-Street Fighter X Mega Man
-Dragon Ball X Mortal Kombat
-MediEvil X The Shining
-Taiko no Tatsujin X Mario
-2012 MetLife Super Bowl commercial
-Jak and Daxter X Ratchet & Clank
-Paper Mario X Tetris
-Judge (G&W) X Wario
-Mario X Regular Show
-Taiko no Tatsujin X Moana
-Kiki Trick X Metroid
-Kappa Mikey X Donkey Kong
-Taiko no Tatsujin X Hang On
-Mario X Wrecking Crew
-Call of Duty X Barnstorming
-Nintendo Land X Donkey Kong
-The Great Garloo
-Tetris X Animal Crossing
-My Hero Academia X Star Wars
-The Wizard X Zelda
-Nintendo aircraft in Ace Combat
-Wario X Fire Emblem
-Bobobo-bo Bo-bobo X Jump (Series)
-Mario X Coconut Fred
-Street Fighter X Captain Commando
-Spitball Sparky X Super Smash Bros.
-Katamari X Taiko no Tatsujin
-Super Smash Bros. X Octopus
-James Bond X Super Smash Bros.
-How I Met Your Mother X Zelda
-NES Remix X Baseball (Nintendo)
-Nickelodeon All-Star Brawl X SpongeBob SquarePants
-Last of the Summer Wine
-Donkey Kong X Bayside Shakedown
-Taiko no Tatsujin X Super Sentai-Power Rangers
-General Mills Cereal Squad
-Kinnikuman X Snatcher
-Mario X AR Games
-Regular Show X Mario
-Kinnikuman X Taiko no Tatsujin
-Taiko no Tatsujin X Inuyasha
-Banjo-Kazooie X Donkey Kong
-OK K.O.! X Evil Con Carne
-Super Smash Bros. X Persona
-I Didn't Do It (Disney) X Jessie (Disney)
-Mario X Mad Max
-Isekai Quartet X Re:Zero
-Game & Watch Gallery X Zelda
-Donkey Kong X Galaxy Express 999
-Pinball (Nintendo) X Mario
-Nintendo World Cup X Mario
-Friends X Hulk (Marvel)
-Doki Doki Literature Club X Super Smash Bros.
-The Fall Guy X The Blue Max
-OK K.O.! X Squirrel Boy
-Snatcher X Power Pros
-Ōkami X Asura's Wrath
-Mario X Halloween
-Zelda X Coconut Fred
-King of the Hill X Beavis and Butt-Head
-Asterix X Tetris
-Mario X Kid Icarus
-Taiko no Tatsujin X Doraemon
-MultiVersus X Rick and Morty
-Tennis (Nintendo) X Wario
-Nickelodeon Cartoon Cartoon Fridays Promo
-Jump (Series) X Gintama
-Dead Space X Dante's Inferno
-Mario X Ghostbusters
-South Park X Brawl Stars
-Earthworm Jim X Asterix
-Mario X Spore
-Mario X Spirit Camera
-Manhattan Love Story X Guardians of the Galaxy
-Gundam X Taiko no Tatsujin
-Sheep in the Big Cafeteria
-Duo (Mascot)
-Pushmo X Excite
-Phantasy Star X Zelda
-Tennis (Nintendo) X NES Remix
-Jump (Series) X Shaman King
-Barcode Fighter X Barcode Battler
-Commando (Capcom) X Tekken
-Urban Champion X Tetris
-Shinobi X Spider-Man
-Mort the Chicken X Pizza Tower
-Donkey Kong X Hyokkori Hyotan-jima
-Drake & Josh X Mario
-Asterix X Zelda
-Mr. Peanut X Mr. Clean
-Donkey Kong X The Big Bang Theory
-Mario X Scribblenauts
-Avatar (Nick) X Punch-Out!!
-Galaxian X Namco × Capcom
-Coins in the Fountain X Mario
-Blast Corps X Yoshi
-Mario Party X Kirby
-Final Fantasy X The Matrix
-Stunt Race FX X Mario
-Mario X Flappy Bird
-Mario X Scott Pilgrim
-Mario X FaceBreaker
-Sonic X Super Smash Bros.
-Rocky (United Artists) X Super Stars (Ertl)
-Hybrid
-Donkey Kong X Pink Panther
-Mother X Mario
-SonSon X Resident Evil
-Darkstalkers X Capcom Black Jack
-Dreamcast It's Thinking Commercials
-Wario X Super Smash Bros.
-Detective Conan X Donkey Kong
-Strider X Street Fighter
-Final Fantasy X Xeno Series
-Batman X MultiVersus
-Q*bert X Donkey Kong
-Street Fighter X Pink Panther
-Jimmy Neutron X Taiko no Tatsujin
-Call of Duty X The Big Bang Theory
-Jump (Series) X JoJo's Bizarre Adventure
-Spider-Man X Invincible (Image)
-Onimusha X Street Fighter
-BloodRayne X Asterix
-F-Zero X Wario
-Donkey Kong X Borderlands
-Excite X Super Smash Bros.
-Primopuel X Chibi-Robo!
-Ghosts 'n Goblins X Tekken
-Rival Schools X Power Stone
-Panel de Pon X Super Smash Bros.
-Party Land X Mappy
-Samurai Asshole X Smurfs
-Indie Pogo X Pix the Cat
-Frozen (Disney) X Taiko no Tatsujin
-Animal Crossing X Wario
-Donkey Kong X Ace Combat
-Starmaster X Call of Duty
-Muppets X Mario
-Taiko no Tatsujin X Spirited Away
-Teenage Mutant Ninja Turtles X Stranger Things
-Zelda X Daigasso! Band Brothers
-Zelda X Dragon Ball
-Code Monkeys X Zelda
-Sheep in the Big City
-Street Fighter X Haunting Ground
-Family Basic games X Binary Land
-Dragon Ball X Mana
-Donkey Kong X Kid Icarus
-Ultraman X Snatcher
-Elvira X Evil Bong
-Jurassic Park X Doraemon
-Donkey Kong X Mr. Pants
-Minions X The Secret Life of Pets
-Resident Evil X Breath of Fire
-Super Smash Bros. X Perfect Dark
-Fourth wall breaking
-Mobile Light Force X Gunbird
-Wii games X Golf (Nintendo)
-2point4 Children
-Donkey Kong X Family Basic games
-Oil Panic X Donkey Kong
-Asterix X Bubble Bobble
-Mario X Glee
-Wario X Excite Racing
-Wario X Judge (G&W)
-Maniac Mansion X Mario
-Mario X Golf (Nintendo)
-Super Smash Bros. X Luigi
-Haiyore! Nyaruko-san X Mario
-Strider X Mega Man
-Dragon Ball X Zelda
-Asterix X Earthworm Jim
-The Muppets X Donkey Kong
-Parachute X Wario
-Mario X Gadget
-Asterix X Sly
-Super Smash Bros. X Doshin the Giant
-Mario X NES Remix
-Futurama X Star Fox
-Mario & Luigi X Kirby
-Taiko no Tatsujin X Pikmin
-Mario X Mole (Taomee)
-Yoshi X Pikmin
-Tron X Mario
-Asterix X Rayman
-Call of Duty X River Raid
-Rocket Knight X Snatcher
-Evil Dead X Mario
-Gravity Falls X Donkey Kong
-Mario X Jill of the Jungle
-Asura's Wrath X Lost Planet
-Superman X Batman
-Pushmo X Kid Icarus
-Super Smash Bros. X Chef (G&W)
-Zelda X Soul (Namco)
-Mario X Super Robot Monkey Team Hyperforce Go!
-The Grim Adventures of Billy & Mandy X Codename: Kids Next Door
-Donkey Kong X Nintendo Land
-N-Gang X Donkey Kong
-Wario X Star Fox
-Mario X Transformers
-Over the Garden Wall X OK K.O.!
-Breath of Fire X Street Fighter
-Alien (Fox) X Snatcher
-Mario X Boy Meets World
-Resident Evil X Dino Crisis
-Mother X Super Smash Bros.
-UFA X Pico (Newgrounds)
-We are Family Foundation Video
-Avatar: The Last Airbender X Punch-Out!!
-Pac-Man X Donkey Kong
-Mario X The Muppets
-Super Smash Bros. X Cubivore
-Zelda X Scribblenauts
-Dance Dance Revolution X Pink Panther
-Mario X Chibi-Robo!
-Seaquest (Activision) X Call of Duty
-Darkstalkers X Red Earth
-Shantae X Super Smash Bros.
-Doraemon X Donkey Kong
-1080° X Zelda
-Mario X Vermin
-Dig Dug X Namco × Capcom
-Tekken X Taiko no Tatsujin
-Crossover Wiki
-Kirby X Stunt Race FX
-Donkey Kong X Plättchen Twist 'n' Paint
-Blaster Master X Barcode Battler
-Tetris X Captain N
-Metroid X Pushmo
-Mickey Mouse/Improper spin-offs
-Era's Adventures X Yoshi
-Mario X Beethoven
-Zelda X The Wonderful 101
-Zelda X Code Monkeys
-Zelda X Final Fantasy
-Futurama X Berzerk
-Tekken X Final Fight
-Resident Evil X Commando (Capcom)
-Croc advertisement references
-Super Smash Bros. X Pikmin
-Kingdom Hearts X Mickey Mouse
-John Wick X Fortnite
-The Binding of Isaac X Mario
-Say Anything X Modern Family
-Nintendo Puzzle Collection X Yoshi
-Nazo Waku Yakata X Ōkami
-Mario Kart X Fish Hooks
-Dirty Mary, Crazy Larry X The Fall Guy
-Brain Training X Mario
-Super Mario X Famicom Grand Prix
-Darkstalkers X Capcom Girl no Mind Puzzle
-G.I. Joe X Ghosthunter
-Punch-Out!! X Super Smash Bros.
-Fortnite X Invincible
-Friday the 13th X MultiVersus
-Brain Training X Wario
-Mario X The Binding of Isaac
-Donkey Kong X Pac-Man
-Video Mods/Video list
-James Bond X Super Smash Bros
-Star Wars X My Hero Academia
-Zelda X Lego City
-Manhole X Donkey Kong
-Wizards on Deck with Hannah Montana
-F-1 Race X Famicom Grand Prix
-American Dad! X Donkey Kong
-Nintendo Land X Mario
-Class of '09 (SBN3) X Scarface
 Super Stars (Ertl) X Rocky (United Artists)
-Fast and Furious X Soul (Namco)
-Star Fox X Uniracers
-Asterix X Pokémon
-Need for Speed X Mario
-K-On X Taiko no Tatsujin
-Mario X Rain Shower (G&W)
-Sonic X The Big Bang Theory
-PlayStation All-Stars Battle Royale X Ratchet & Clank
-Shinobi X Mario
-Super Smash Bros. X Helmet
-Donkey Kong X Parachute
-Mobile Golf X Wrecking Crew
-Cosmic Commuter X Call of Duty
-Street Fighter X Ace Attorney
-Indie Pogo X Carrie's Order Up!
-Donkey Kong X Popeye
-Warriors (Koei) X Metroid
-Mario X Rocky
-Batman X Godzilla
-Pikmin X Super Smash Bros.
-Donkey Kong X Kirby
-Wario X Game & Watch Gallery
-Hunter × Hunter X Jump (Series)
-Mario X Parachute
-Jump (Series) X D.Gray-man
-Fortnite X Family Guy
+Disney's The Hunchback of Notre Dame X SpongeBob SquarePants
+Mario X SSX
+Identity V X Junji Ito Collection
+Asterix X Quake
+Action Henk X Indie Pogo
+Lego City X Mario
+Donkey Kong X Galaxy Express 999
+Tetris X Asterix
+Mario X Nintendo World Championships
+Tingle X Zelda
+Ugh and Edd Commercial
+Charlie's Angels X Ghosthunter
+Konami Man (Mascot)
+Final Fight X Tekken
+Lucky Star X Taiko no Tatsujin
+Angry Birds x Froot Loops
+Super Smash Bros. X Wario
+MultiVersus X Friday the 13th
+Animal Crossing X Golf (Nintendo)
+Super Smash Bros. X Devil World
+Rocky X Mario
+Super Smash Bros. X F-Zero
+Class of '09 (SBN3) X Pokémon
+Terminator X JoJo's Bizarre Adventure
+Fortnite X Rival Schools
+Marvel Super Heroes (Capcom) X Mega Man
+Mario X Cave Story
+MediEvil X Lord of the Rings
+Call of Duty X Boxing (Activision)
+Qix X Tetris
+Super Mario X Wrecking Crew
+Rival Schools X Dino Crisis
+Asterix & Obelix XXL 2 references
+Fortnite X Teenage Mutant Ninja Turtles
+Indie Pogo X Jack N' Jill
+Code Monkeys X Donkey Kong
+Monkey Island X Asterix
+Super Smash Bros. X Greenhouse
+Bionic Man X South Park
+Legacy of Kain X Asterix
+Jump (Series) X Bleach
+Xenoblade X Super Smash Bros.
+Metroid X Super Smash Bros.
+Mario X Rally-X
+Jump (Series) X JoJo's Bizarre Adventure
+Taiko no Tatsujin X Genpei Toma Den
+Street Fighter X God Hand
+Gish X Dumbo & Cool
+Commercial Rule
+Mario X Warcraft
+Taiko no Tatsujin X Bleach
+Harley Quinn X MultiVersus
+Jump Series X Bleach
+Adult Swim New Year’s Countdown 2005
+Zelda X Nintendogs
+Mario X Game Boy Camera
+Okami X Street Fighter
+F-1 Race X Famicom Grand Prix
+Everybody's Golf X MediEvil
+Carrie's Order Up! X Indie Pogo
+Duo (Mascot)
+Maximo X Asterix
+Super Smash Bros. X Super Scope
+Arcana X Kirby
+Futurama X Mario
+Mario X Modern Family
+Fire Emblem X Mario
+Power Pros X Snatcher
+Croc X Crash Bandicoot
+Punch-Out!! X Captain Rainbow
+Metroid X Animal Crossing
+Egg X Super Smash Bros.
+Spy X Family
+NES Remix crossovers
+Indie Pogo X Slayin
+Ghosts 'n Goblins X Street Fighter
+Taiko no Tatsujin X Fullmetal Alchemist
+F-Zero X Ace Combat
+Psycho Soldier X Super Smash Bros.
+Wario X Wrecking Crew
+Donkey Kong X Strong Bad
+Brawl Stars X Toy Story
+Qix X Mario
+3D Dot Game Heroes X Zelda
+Nickelodeon India Teacher's Day: Guru Cool Commercial
+The Program Picker at CW4Kids.com
+Family Guy X Dora the Explorer
+N-Gang X Zelda
+Star Wars X Kirby
+Robot Chicken X Mario
+Resident Evil X SonSon
+Jurassic Park X Doraemon
+Zelda X Darkest Powers
+Donkey Kong X American Dad
+Dragon Ball X Mortal Kombat
+Family Guy X Mario
+Mega Man X SonSon
+Coconut Fred X Zelda
+Street Fighter X Hissatsu Buraiken
+Tin Star X Super Scope
+Asterix X Rayman
+Rival Schools X Street Fighter
+Mario X Vermin
+Tekken X Darkstalkers
+Ghostbusters X South Park
+Level-5 20th Anniversary Artwork
+The Wonderful 101 X Super Smash Bros.
+Gravity Falls X Mario
+Balloon Fight X Animal Crossing
+Mobile Light Force X Gunbird
+Star Wars X My Hero Academia
+Super Smash Bros. X Street Fighter
+Game & Watch Gallery X Mario
+Donkey Kong X Megamind
+Wrecking Crew X Wario
+Smokey and the Bandit X Super Stars (Ertl)
+Famicom Grand Prix X F-1 Race
+Yoshi X Wario
+Rain Shower (G&W) X Mario
+Ball (G&W) X Mario
+Hasbro All-Stars
+OK K.O.! X Regular Show
+Wii games
+JoJo's Bizarre Adventure X Spider-Man
+Dig Dug X Fast and Furious
+Street Fighter X Final Fight
+Capcom Fighting X Ace o Nerae!
+Yu-Gi-Oh X Taiko no Tatsujin
+MediEvil X Everybody's Golf
+Modern Family X Say Anything
+Futurama X Berzerk
+OK K.O.! X Jorel's Brother
+Mario X Viewtiful Joe
+Kirby X Kid Icarus
+Donkey Kong X Muppets
+Tetris X Kid Icarus
+Street Fighter X Breath of Fire
+The Modern Disney Afternoon Commercial
+Babylonian Castle Saga X Party Land
+Rock Band X The Big Bang Theory
+Urban Champion X Super Smash Bros.
+Tekken X Ghosts 'n Goblins
+Zelda X Ace Attorney
+Mii appearances
+Jump (Series) X Hunter × Hunter
+Crash Bandicoot X Asterix
+Donkey Kong X Skylanders
+Laika Holiday Posts
+Fire (G&W) X Mario
+Spider-Man X Invincible (Image)
+Red Earth X Street Fighter
+Star Wars X E.T.
+Donkey Kong X Frogger
+Animal Crossing X Tennis (Nintendo)
+Forgotten Worlds X Street Fighter
+Animaniacs songs
+Asterix X Soul (Namco)
+Zelda X Yoshi
+Asterix X Mortal Kombat
+Tetris X Yoshi
+Mario & Luigi X Metroid
+The Wonderful 101 X Super Smash Bros
+Duck Hunt X Mario
+Cyber (Namco) X Galaxian
 Super Smash Bros. X Dance Dance Revolution
-Famicom Grand Prix X Mario
-Dexter's Laboratory X Mario
+Fortnite X John Wick
+Kid Icarus X Super Smash Bros.
+Mario X The Big Bang Theory
+Google Hangout with Wallace and Gromit
+Azure Striker Gunvolt X Mighty No. 9
+Cuphead X Super Smash Bros.
+Zelda X N-Gang
+Super Smash Bros. X Wave Race
+Mega Man X Yoshi
+Taiko no Tatsujin X Darius
+Party Land X Mappy
+Mr. Destructoid appearances
+One Foot in the Grave
+Rhythm Heaven X Mario
+Golf (Nintendo) X Wario
+Ghosthunter X James Bond
+Star Wars X Snatcher
+Murdered: Soul Suspect
+Castle of Shikigami X Mobile Light Force
+Shinobi X Spider-Man
+Donkey Kong X Parachute
+The Wing of Madoola X Barcode Battler
+Hai no Majutsushi X Antarctic Adventure
+Android robot appearances
+Donkey Kong X Hamtaro
+The Wizard X Mario
+Zelda X Tingle
+Zelda X Barcode Battler
+It's Kind of a Funny Story X Zelda
+Super Smash Bros. X Famicom Robot
+Super Princess Peach X Super Smash Bros.
+Captain Commando X Street Fighter
+Star Fox X Famicom Robot
+Haunting Ground X Street Fighter
+Street Fighter X Capcom Fighting
+Tekken X Fast and Furious
+Star Wars X Doodle God
+Donkey Kong X Crayon Shin-chan
+Commando (Capcom) X Resident Evil
+Super Smash Bros. X Perfect Dark
+Captain N X Kid Icarus
+Super Mario X F-1 Race
+Lost Planet X Asura's Wrath
+Say Anything X Modern Family
+Instacart's We're Here Commercial
+Asura's Wrath X Street Fighter
+Asterix X Half-Life
+JoJo's Bizarre Adventure X Terminator
+Kingdom Hearts X Tarzan (Disney)
+Cover rule
+Robo Force
+Doctor Who X Call of Duty
+MultiVersus X Game of Thrones
+Anthology rule
+Taiko no Tatsujin X Pikmin
+Donkey Kong X Earthworm Jim
+Indie Pogo X Pizza Vs. Skeletons
+Indiana Jones X Taiko no Tatsujin
+Xevious X Donkey Kong
+Urban Champion X Pushmo
+Persona X Super Smash Bros.
+Donkey Kong X My Name Is Earl
+Mario X Kiki Trick
+The Fall Guy X Elvira
+Super Smash Bros. X Wrecking Crew
+Mario X Duck Hunt
+Mario X Galaxian
+Mega Man X Tekken
+Mario X Brain Training
+Superman X Batman
+Wario X Parachute
+Futurama X Asteroids (Atari)
+Mario X Alleyway
+Shaolin Wooden Men X Tekken
+Capcom Girl no Mind Puzzle X Cyberbots
+MediEvil X Creatures
+Beyhond Good and Evil X Asterix
+SonSon X Resident Evil
+Mario X Gurren Lagann
+Balloon Fight X Mario
+MultiVersus X Adventure Time
+Greenhouse X Donkey Kong
+Tony Hawk's X Class of '09 (SBN3)
+Kirby X Super Smash Bros.
+Breath of Fire X Resident Evil
+Tetris X Duck Hunt
+Asterix X Bubble Bobble
+Dragon Ball X Taiko no Tatsujin
+Taiko no Tatsujin X Pirates of the Caribbean
+Mario & Luigi X Pikmin
+Gun Survivor X Street Fighter
+Mario/Mass Effect X Spore
+Wreck-It Ralph X Donkey Kong
+Super Smash Bros. X Luigi
+Super Smash Bros. X Art of Fighting
+Mickey Mouse X Zelda
+Mega Man X Adventure Quiz
+Matrix X Asterix
+Class 1-B’s Romeo and Juliet and the Prisoner of Azkaban: The Return of the King
+Mr. Clean X Mr. Peanut
+Stella Street
+OK K.O.! X Hi Hi Puffy AmiYumi
+Taito Harikiri Daifugo X Pocky & Rocky
+Monkey (Nippon Television) X Donkey Kong
+Teenage Mutant Ninja Turtles X Barbie
+Mario X Haiyore! Nyaruko-san
+Barcode Battler X Hebereke
+Street Fighter X Haunting Ground
+Tekken X Commando (Capcom)
+Wario X Judge (G&W)
+Nintendo Land X Mario
+Zelda X Code Monkeys
+ChuckleVision
+The Secret Life of Pets X Minions
+Warriors (Koei) X Zelda
+Wherever you are, Apple Arcade is open
+Taiko no Tatsujin X Pokémon
+Puppet Master X Elvira
+Sonic X Wreck-It Ralph
+Final Fantasy X Dragon Ball
+Frankenstein (Universal) X Fortnite
+Genpei Toma Den X Taiko no Tatsujin
+Mario X Pikmin
+Mario X Metroid
+Dig Dug X Namco × Capcom
+Splatoon X Super Smash Bros.
+Captain Rainbow X Punch-Out!!
+Class of 3000 X Donkey Kong
+Video Mods/Video list
+JoJo's Bizarre Adventure X Batman
+Capcom Fighting X Devil May Cry
+Tetris X Zelda
+Dr. Mario X Donkey Kong
+Wario X Mario
+Mario X Gary Unmarried
+Lord of the Rings X MediEvil
+SNL's Recurring Characters for Unity (1993)
+Imagination Land references
+Barnstorming X Call of Duty
+Street Fighter X Star Gladiator
+Pop'n Music X Mario
+OK K.O.! X Out of Jimmy's Head
+Pirates of the Caribbean X MediEvil
+Mary Poppins X Mario
+Crayon Shin-chan X Donkey Kong
+Taiko no Tatsujin X Lucky Star
+MediEvil X Ghosthunter
+Dead Space X Dante's Inferno
+Punch-Out!! X Wario
+Super Hornio Brothers X Mario
+Superman X MultiVersus
+Foster's Home For Imaginary Friends X Mario
+Spirit Camera X Mario
+Mario X Banjo
+Cyberbots X Capcom Girl no Mind Puzzle
+Super Smash Bros. X Excite
+Babylonian Castle Saga X Donkey Kong
+Family Guy X American Dad!
+Yoshi X Zelda
+Hello Kitty X Taiko no Tatsujin
+Mario X F-1 Race
+Charlie and the Chocolate Factory X The Giraffe and the Pelly and Me
+Nintendo Badge Arcade X Wario
+Transformers X Mario
+The Fall Guy X Singin' in the Rain
+Real Life Representation rule
+Kinnikuman X Taiko no Tatsujin
+Freddy Funko (Mascot)
+Konami Man appearances
+Dragon Ball X Donkey Kong
+Nester X Scott Pilgrim
+Just Dance X Mario
+Gradius X Snatcher
+Chicken Wiggle X Indie Pogo
+Snatcher X Hai no Majutsushi
+Pizza Tower X Mort the Chicken
+Galaxian X Taiko no Tatsujin
+Wario X Baseball (Nintendo)
+Punch-Out!! X Captain N
+Star Fox X Futurama
+Ratchet & Clank X PlayStation All-Stars Battle Royale
+Donkey Kong X Xevious
+Ty the Tasmanian Tiger trailer
+Mario X Jill of the Jungle
+Ice Climber X Animal Crossing
+Hot Tub Time Machine X Mario
+Drawn Together X Zelda
+Stunt Race FX X Kirby
+Super Smash Bros. X Xenoblade
+Mascot link
+Dante's Inferno X Dead Space
+As Time Goes By
+Paper Mario X Mad Max
+Sabrina the Teenage Witch X You Wish
+Pitfall X Donkey Kong
+Paper Mario X Kirby
+Scott Pilgrim X Mario
+Sonic X Street Fighter
+Batman X MultiVersus
+Mario X TimeRiders
+Nazo no Murasame Jo X Super Smash Bros
+Froot Loops X Angry Birds
+Star Gladiator X Capcom Girl no Mind Puzzle
+Quiz Nanairo Dreams X Street Fighter
+Snatcher X Rocket Knight
+Pushmo X Zelda
+2point4 Children
+Crash Bandicoot X Futurama
+Wario X Super Smash Bros.
+F-1 race X Donkey Kong
+Mario X Croc
+Wario X Uniracers
+Punch-Out!! X Avatar: The Last Airbender
+Henry Stickmin X Grand Theft Auto
+Sonic X Donkey Kong
+Mario X Turtle Bridge
+Mario & Sonic X Donkey Kong
+Resident Evil X Fortnite
+Alien (Fox) X Snatcher
+Indie Pogo X Chicken Wiggle
+Space Ace X Q*bert
+Mario X Flappy Bird
+Mario X Luigi's Mansion
+Mario X NBA Street
+UGSF Timeline
+Human Killing Machine X Street Fighter
+Marvel vs. Capcom X Street Fighter
+Kangaroo (Atari) X Space Ace
+Snatcher X Power Pros
+Wario X Yoshi
+Terminator X Asterix
+Metroid X Captain N
+Home Fries X Breaking Bad
+101 Dalmatians X Kingdom Hearts
+Transformers X Fortnite
+Yu-Gi-Oh X Metal Gear
+Mario X King Kong
+Mario X George Lopez
+Tekken X F-Zero
+Rain Shower (G&W) X Donkey Kong
+Family Guy X Brady Bunch
+Strider X Red Earth
+Zelda X Big Brain Academy
+Super Smash Bros. X Gundam
+Turtle Bridge X Mario
+Foster's Home for Imaginary Friends X Mario
+Cars (Pixar) X Monsters (Pixar)
+Turrican X Mario
+Zelda X Castlevania
+Shaun the Sheep X Mario
+Call of Duty X Barnstorming
+Luigi X Super Smash Bros.
+Capcom Fighting X Power Stone
+Zelda X Animal Crossing
+Ty the Tasmanian Tiger X Spyro
+Wii games X Super Smash Bros.
+Zelda X Kaeru no Tame ni Kane wa Naru
+Zelda X Sim
+Star Wars X Transformers
+South Park X Mario
+Ellen X Grace Under Fire
+Q*bert X Space Ace
+Donkey Kong X Mario
+Banjo X Mario
+Jump (Series) X Yu-Gi-Oh
+Q*bert X Donkey Kong
+Pac-Man X Super Smash Bros./Namco Roulette
+Kurzgesagt X Cyberpunk
+Ready to Learn
+NES games in Animal Crossing
+Mario X Call of Duty
+Breath of Fire X Mega Man
+Asterix X Star Fox
+Itadaki Street X Final Fantasy
+Mario X Dr. Giggles
+Mario X Captain N
+Taiko no Tatsujin X Animal Crossing
+Fire Attack X Mario
+Fast and Furious X Dig Dug
+Skinjacker X Zelda
+Crash Bandicoot X Ty the Tasmanian Tiger
+American Dad! X Donkey Kong
+MediEvil X Indiana Jones
+Mario X Need for Speed
+Balloon Fight X Pushmo
+Marvel: Ultimate Alliance X Pitfall
+Rammie (Mascot)
+Flappy Bird X Talking Tom & Friends
+Plok X Mario
+Punch-Out!! X Tingle
+Zelda X AR Games
+Star Fox X Tekken
+Resident Evil X Darkstalkers
+Taiko no Tatsujin X Magi
+The Shining X MediEvil
+South Park X The Simpsons
+Metroid X Kiki Trick
+Call of Duty X Grand Prix (Activision)
+Mario X Beethoven (Universal)
+Shaman King X Jump (Series)
+WipEout X MediEvil
+Sheriff (Nintendo) X Family Basic games
+Bar scene references in Snatcher
+Big Boy (Mascot)
+The Matrix X Final Fantasy
+Frogger X Q*bert
+Ben 10 X The Grim Adventures of Billy & Mandy
+Fast and Furious X Soul (Namco)
+Call of Duty X Fishing Derby
+Digimon X Taiko no Tatsujin
+Mario X Mole (Taomee)
+Among Us X SMG4
+Crossover rules
+Zelda X Zero Escape
+Bobobo-bo Bo-bobo X Jump (Series)
+Mega Twins X Street Fighter
+Helmet X Super Smash Bros.
+Crash Bandicoot X Mario
+Wii games X Golf (Nintendo)
+Donkey Kong X Matt Hazard
+The Lost Vikings X Mario
+Mario X Coins in the Fountain
+Super Sentai-Power Rangers X Angry Video Game Nerd
+Egg (G&W) X Super Smash Bros.
+Darius X Taiko no Tatsujin
+Taiko no Tatsujin X Splatoon
+Buffy X Donkey Kong
+Super Smash Bros. X Yoshi
+Asura's Wrath X Ōkami
+Wario Land X Mario
+Monster Hunter X Super Smash Bros.
+Ghosts 'n Goblins X Taiko no Tatsujin
+Dreamcast It's Thinking Commercials
+Your Name. X Taiko no Tatsujin
+Donkey Kong X Konami's Ping Pong
+Donkey Kong X Kaiketsu Zorori
+Mario X Super Hornio Brothers
+Mega Man X Asura's Wrath
+Tekken X Zelda
+Pikmin X Mario
+Glitch (Mascot)
+Big Brain Academy X Zelda
+Animal Crossing X Donkey Kong
+Zelda X Picross
+Earthworm Jim X ClayFighter
+Donkey Kong X Star Fox
+Star Gladiator X Street Fighter
+Zelda X Uniracers
+Mario X Ace Combat
+A Hat in Time X Here Comes Niko!
+Mario X McPixel
+Futurama X Fortnite
+Black Jack X Taiko no Tatsujin
+Cannon Spike X Street Fighter
+Eversion X Mario
+Pokémon X South Park
+Jessie X Mario
+Taiko no Tatsujin X Street Fighter
+Mario X Zelda
+Weathering with You X Taiko no Tatsujin
+Mario & Sonic X Yoshi
+The Fall Guy X Speedway (1968 movie)
+Pushmo X Mario
+Zelda X Chowder
+Mario X Nightmare on Elm Street
+Mario X Rocky (United Artists)
+Mario X Lep's World
+Theatrhythm music
+Ridge Racer X Mario
+Dragon Ball X Metroid
+Kingdom Hearts X 101 Dalmatians
+One Piece X Jump Series
+Nintendo World Cup X Tetris
+Transformers X Star Wars
+Running Stadium X Duck Hunt
+Mario X Foster's Home for Imaginary Friends
+Ghosts 'n Goblins X Breath of Fire
+Rabbids X Donkey Kong
+Donkey Kong X Touch (Shogakukan)
+Portal X X-Men
+Tennis (Nintendo) X Kiki Trick
+JoJo's Bizarre Adventure X Mickey Mouse
+USA Cartoon Express
+Asterix X Crash Bandicoot
+Mario X Muppets
+Taiko no Tatsujin X Digimon
+Batman X JoJo's Bizarre Adventure
+The Matrix X Super Sentai-Power Rangers
+Zelda X Pikmin
+Wario X Game & Watch Gallery
+Viewtiful Joe X Mario
+Resident Evil X Street Fighter
+Category:DC Comics
+The Simpsons X Donkey Kong
+Tiny Toon Adventures X Mario
+JoJo's Bizarre Adventure X Astro Boy
+Mario Kart X Fish Hooks
+Shrek X M&M's
+Teenage Mutant Ninja Turtles X Fortnite
+Street Fighter X Asura's Wrath
+Star Fox X Stunt Race FX
+Zelda X Robot Chicken
+Nester & Punch-Out!! X Scott Pilgrim
+Dig Dug X Donkey Kong
+Namco drift charms in The Fast and the Furious
+Super Smash Bros. X ARMS
+Taiko no Tatsujin X Monster Hunter
+Mario X Lego City
+Mario X Guacamelee!
+Mario X Phantasy Star
+Darkstalkers X Quiz Nanairo Dreams
+South Park X Brawl Stars
+Mario X Pinball (Nintendo)
+Mario X Dragon Quest
+Scratch Haunts Chibi Tiny Tales
+Barry Steakfries Series X Fruit Ninja
+Sonic X Turrican
+Robot Tank X Call of Duty
+Suite Life X Raven (Disney)
+Smosh X Annoying Orange
+Donkey Kong X Mappy
+X
+Mario X Futurama
+Hunter X Hunter
+Alien (Fox) X South Park
+Xenogears X Final Fantasy
+F-1 Race X Zelda
+Gravity Falls X Star vs. the Forces of Evil
+Cubivore X Super Smash Bros.
+Zelda X Scribblenauts
+Donkey Kong X Starfy
+Mario X Satella-Q
+Mario X 3 Ninjas
+Wario X Balloon Fight
+Taiko no Tatsujin X Dragon Spirit
+2004 SuperTarget Commercial
+Donkey Kong X Killer Instinct (Rare)
+Dig Dug X Party Land
+Yoshi X Pokémon
+The Big Bang Theory X Zelda
+Party Land X Valkyrie (Namco)
+Donkey Kong X Pac-Man
+Donkey Kong X Gravity Falls
+My Hero (BBC)
+Donkey Kong X Pushmo
+SimCity X Mario
+Alien (Fox) X Street Fighter
+Wario X Captain Toad
+Stranger Things X Teenage Mutant Ninja Turtles
+Donkey Kong X Captain N
+Donkey Kong X Shin-chan
+Mario X Barcode Battler
+N-Gang X Mario
+Taiko no Tatsujin X Galaxian
+Dragon Quest X Jump (Series)
+Animal Crossing X Pokémon
+Mystery Science Theater 3000 X Mario
+NES Remix X Zelda
+Donkey Kong X Oil Panic
+Kid Icarus X Mario
+Starfy X Mario
+Pokémon X Wario
+Coach (ABC) X The Drew Carey Show
+Crash Bandicoot X Croc
+Metroid X Tetris
+OK K.O.! X The Amazing World of Gumball
+Dragon Quest X Mario
+MediEvil X Pirates of the Caribbean
+Donkey Kong X Minecraft
+Darkstalkers X Gun Survivor
+Star Fox X Mario
+Angry Video Game Nerd X Mario
+The Simpsons X James Bond
+Ōkami X Nazo Waku Yakata
+Ghosthunter X G.I. Joe
+Bill & Ted's Excellent Halloween Adventure
+Mario X Pac-Man
+Minecraft X Henry Stickmin
+Fight Night X Punch-Out!!
+Donkey Kong X Pokémon
+Taiko no Tatsujin X Hang On
+Call of Duty X Starmaster
+Zelda X The Wizard
+Dragon Ball X Jump (Series)
+Mario X Rhythm Heaven
+Resident Evil X Power Stone
+Pokémon X Donkey Kong
+Mario X South Park
+Zelda X Super Robot Monkey Team Hyperforce Go!
+Mario X The World God Only Knows
+Taiko no Tatsujin X Indiana Jones
+Mario X My Life as a Teenage Robot
+Mario X Angry Birds
+Wario X Pokémon
+Mario X On Golden Pond
+The Big Bang Theory X Mario
+Dead Space X Fortnite
+Heidi, Girl of the Alps X Donkey Kong
+Wrecking Crew X Mobile Golf
+Spyro X Ty the Tasmanian Tiger
+Kirby X Donkey Kong
+Zelda X BS-X: Sore wa Namae o Nusumareta Machi no Monogatari
+Flappy Bird X Mario
+Zelda X Ace Combat
+Meets World X Sabrina the Teenage Witch
+Star Fox X Asterix
+Donkey Kong X King Kong
+Pushmo Nintendo Murales
+Super Smash Bros. X Punch-Out!!
+Mortal Kombat X Billy Madison
+Wolverine X Portal
+Fortnite X Frankenstein (Universal)
+Amazing World of Gumball X Dragon Ball
+Zelda X Homestar Runner
+Shonen Jump covers
+Adult Swim "Swim Fighter" Bumper
+Robot Chicken X Zelda
+Darkstalkers X Capcom Fighting
+JoJo's Bizarre Adventure X Tetsujin 28
+Creatures X SilverLoad
+Avatar: The Last Airbender X Punch-Out!!
+Adult Swim Kickball Bumper
+BS-X: Sore wa Namae o Nusumareta Machi no Monogatari X Zelda
+Race with the Devil X The Fall Guy
+Mario X Tetris
+Galaxian X Cyber (Namco)
+Purple Pirate Penguin (Mascot)
+Donkey Kong X Super Sentai-Power Rangers
+Evangelion X Taiko no Tatsujin
+Donkey Kong X Tetris
+The Great Garloo
+Primal
+Wario X Devil World
+Jump Series X Hunter × Hunter
+Super Mario Land X Mario Bros.
+Undirect link
+Super Smash Bros. X The Wonderful 101
+Tetris X Famicom Robot
+Meets World X Best Friends Whenever
+Mario X Alex Rider
+Zelda X Monster Hunter
+Glitch cameos
+The Fall Guy X Derek Flint
+Metroid X Marvel: Ultimate Alliance
+Elvira X Evil Bong
+Mario X Pokémon
+Mega Man X Mario
+Xeno Series X Final Fantasy
+Elvira X Puppet Master
+Yoshi X Super Princess Peach
+1994 Nickelodeon Fruit Roll-Ups Commercial
+Zelda X Soul (Series)
+Kid Icarus X Super Smash Bros./Palutena’s Guidance
+Crash Bandicoot X Donkey Kong
+Hang On X Taiko no Tatsujin
+Chibi Maruko-chan X Donkey Kong
+Super Smash Bros. X Pikmin
+Cars X Monsters (Pixar)
+Sub-series
+Captain Rainbow X Zelda
+Mega Man X Marvel Super Heroes (Capcom)
+Coach (ABC) X Grace Under Fire
+Taiko no Tatsujin X D.Gray-man
+Mario X Super Robot Monkey Team Hyperforce Go!
+Fortnite X Street Fighter
+Fire Attack X Super Smash Bros.
+Donpen appearances
+Shaggy Dog Story
+Daigasso! Band Brothers X Mario
+Super Smash Bros. X Code Name: S.T.E.A.M.
+Mario X Picross
+Mario & Luigi X Rayman
+Sonic X Ghosts 'n Goblins
+Game Boy (Valiant) X Mario
+Metroid X Uniracers
+Chopper Command X Call of Duty
+Pokémon X Hatsune Miku
+Donkey Kong X NES Remix
+Super Smash Bros. X Pokémon
+Old Spice
+Star Gladiator X Red Earth
+Final Fantasy X Super Smash Bros.
+Mask
+Friends X Twisted Metal
+Pushmo X Excite
+StarTropics X Famicom Robot
+OK K.O.! X Johnny Bravo
+Mobile Light Force X Castle of Shikigami
+Super Smash Bros. X Star Fox
+Zelda X DragonFable
+Child's Play X Mario
+Street Fighter X Section Z
+Silver Streak X The Fall Guy
+Muppets X Donkey Kong
+Super Princess Peach X Mario
+Over the Garden Wall X OK K.O.!
+Tetris X The Simpsons
+Dead Zone X Barcode Battler
+Tennis (Nintendo) X Animal Crossing
+Mario X Monster Hunter
+Mario X Game Boy (Valiant)
+Donkey Kong X Q*bert
+Twisted Metal X Friends
+Mario X Ridge Racer
+Super Smash Bros. X Cubivore
+Street Fighter X Ghosts 'n Goblins
+Pokémon X Pulseman
+Hello Kitty X Shimajiro
+Back to the Future X Mario
+Golf (Nintendo) X Donkey Kong
+Super Scope X Super Smash Bros.
+Street Fighter X Pink Panther
+Soul (Namco) X Fast and Furious
+Tetris X Qix
+Doraemon X Mario
+Mickey Mouse/Improper spin-offs
+Super Smash Bros. X Wii games
+Rise of Nightmares
+Mario X Doraemon
+Super Smash Bros. X Parachute
+Pac-Man X Donkey Kong
+Final Fight X Forgotten Worlds
+Oil Panic X Donkey Kong
+Pushmo X Ice Climber
+Street Fighter X Armored Warriors
+Mr. Destructoid cameos
+Hanna-Barbera references in Scoob!
+Ace Combat X Metroid
+Galaxian X Namco × Capcom
+Banjo-Kazooie X Super Smash Bros.
+Need for Speed X Mario
+Red Earth X Star Gladiator
+Castlevania X Super Smash Bros.
+Futurama X Doodle God
+Wreck-It Ralph X Mario
+Terminator X Street Fighter
+Death Note X Mario
+Mario X Matt Hazard
+Zelda X Pokémon
+Art of Fighting X Super Smash Bros.
+Godzilla X Batman
+Mario X Famicom Robot
+Yoshi X Dragon Ball
+Donkey Kong X Jetpac
+Doom X Asterix
+Donkey Kong X Yoshi
+CarBot: A 30th Anniversary Cartoon
+Asura's Wrath X Vulgus
+Barcode Battler X Dragon Slayer
+SilverLoad X Creatures
+Zelda X Soul (Namco)
+Pokémon X Mario
+Scribblenauts X Mario
+Punch-Out!! X Golf (Nintendo)
+Code Name: S.T.E.A.M. X Super Smash Bros.
+Taiko no Tatsujin X Star Wars
+Super Scope X Tin Star
+Taiko no Tatsujin X Evangelion
+Super Smash Bros. X Doki Doki Literature Club
+Shimajiro X Hello Kitty
+Samurai Shodown X Super Smash Bros.
+Snatcher X Star Wars
+NES Remix X Donkey Kong
+OK K.O.! X Time Squad
+OK K.O.! X Over the Garden Wall
+Fruit Ninja X Barry Steakfries Series
+Mario Kart X Haiyore! Nyaruko-san
+OK K.O.! X We Bare Bears
+Donkey Kong X Babylonian Castle Saga
+Commercial rule
+El Chavo X Mario
+Adventure Time X MultiVersus
+Donkey Kong X Diddy Kong Racing
+Indie Pogo X Road Warriors
+Mario X Famicom Grand Prix
+That's So Suite Life of Hannah Montana
+Puzzle League X Mario
+Mario X The Muppets
+Mario X Beverly Hillbillies
+Star vs. the Forces of Evil X Gravity Falls
+Zelda X Story of Seasons
+Ratchet & Clank X Mario
+Tomb Raider X Croc
+Powerpuff Girls X Mario
+Captain Toad X Super Smash Bros.
+Mario X Turrican
+Angry Birds X Pokémon
+Fire Emblem X Donkey Kong
+Capcom Black Jack X Street Fighter
+Final Fantasy X Asterix
+Mario X Shinobi
+Kirby X Zelda
+Mario X Bomberman
+Mario X Pop'n Music
+Punch-Out!! X Fight Night
+Devil May Cry X Asterix
+Call of Duty X Demon Attack
+Mario X Mega Man
+Mario X Drake & Josh
+Barcode Battler X Mario
+Princess Peach X Super Smash Bros.
+The Big Bang Theory X Call of Duty
+Dragon Ball X Jump Series
+Bobobo-bo Bo-bobo X Donkey Kong
+Flash Point (Sega) X Tetris
+Manhattan Love Story X X-Men
+The Royle Family
+Suicide Squad X MultiVersus
+Mario X Designing Women
+Donkey Kong X Pinball (Nintendo)
+Monster Hunter X Mario
+The Fall Guy X The Stunt Man
+Hybrid
+My Name Is Earl X Donkey Kong
+Turtle Bridge X Super Smash Bros.
+World Gone Sour X Mario
+Looney Tunes X MultiVersus
+Mother X Mario
+God Hand X Street Fighter
+Mortal Kombat X Spy Hunter
+Saint Seiya X Jump (Series)
+Animal Crossing X Baseball (Nintendo)
+Starfy X Donkey Kong
+Street Fighter X Resident Evil
+SpongeBob SquarePants X The Loud House
+Mario X Gadget
+Inuyasha X Taiko no Tatsujin
+Zelda X Tetris
+The Fairly OddParents X Ned's Declassified School Survival Guide
+List of Youtooz Promotional Art
+Wonder Woman X MultiVersus
+Mario X Bully (Rockstar)
+Hunter × Hunter X Jump (Series)
+Super Smash Bros. X Mario
+Gremlins (Warner Bros.) X MultiVersus
+Video games in The Bozeman Reaction
+UFA X Pico (Newgrounds)
+Donkey Kong X Kappa Mikey
+Capcom Fighting X Darkstalkers
+The Legend of Zelda X Super Smash Bros.
+Mario X Tiny Toon Adventures
+Mario X Daigasso! Band Brothers
+Pac-Man X Friends
+Dino Crisis X Rival Schools
+F-Zero X Tekken
+Sabreman X Donkey Kong
+Star Fox X Ace Combat
+Jump Series X Dragon Ball
+Ghostbusters X Mario
+Super Scope X Bazooka Blitzkrieg
+Zelda X Metal Gear
+Fist of the North Star X Jump (Series)
+The Fresh Prince of Bel-Air X Mario
+Hunter × Hunter X Jump Series
+Gun Survivor X Ghosts 'n Goblins
+Hannah Montana X Raven (Disney)
+Fruit Ninja X Barry Steakfries
+NBA Street X Mario
+Satella-Q X Mario
+Kiki Trick X Metroid
+The Fall Guy X The Blue Max
+Dance Dance Revolution X Super Smash Bros.
+Arthur X Mario
+Taiko no Tatsujin X Katamari
+MasterCard Icons Commercial
+Super Princess Peach X Yoshi
+Braid (Number None) X Mario
+CBeebies LIVE!
+Portal X Wolverine
+Youtooz Promotional Art
+South Park X Zelda
+Indiana Jones X Mario
+Zelda X Star Fox
+LOST (ABC) X Wolverine
+Mickey Mouse X JoJo's Bizarre Adventure
+Ice Climber X Super Smash Bros.
+Histeria! X Mario
+Star Fox X Super Smash Bros.
+Donkey Kong X Crash Bandicoot
+Pokémon X Asterix
+Modern Disney Afternoon Commercial
+Akira X South Park
+Chibi-Robo! X Mario
+Jump Series X JoJo's Bizarre Adventure
+Ben 10 X The Secret Saturdays
+Croc X Tomb Raider
+Mario X The Adventures of Willy Beamish
+Killer Instinct (Rare) X Donkey Kong
+Singin' in the Rain X The Fall Guy
+Dino Crisis X Street Fighter
+Brand Aid
+Mario X Scott Pilgrim
+Amiibo
+Pushmo X Metroid
+One Night at Flumpty's X Zelda
+Mario X The Fresh Prince of Bel-Air
+Legendary Wings X Street Fighter
+The Muppets X Mario
+DragonFable X Zelda
+Hitman (IO Interactive) X Sleeping Dogs (Square Enix)
+Mach Rider X Mario
+Conker X Donkey Kong
+Super Smash Bros. X Fire (G&W)
+Mr. Pants X Donkey Kong
+Grace Under Fire X Coach (ABC)
+Asterix X Chu Chu Rocket
+Earthworm Jim X Donkey Kong
+Ratchet & Clank X Asterix
+ARMS X Super Smash Bros.
+Batman X Godzilla
+Capcom Fighting X Star Gladiator
+Asterix X Beyond Good & Evil
+Code Monkeys X Zelda
+Nintendo X Uniracers
+South Park X Akira
+Battle Circuit X Capcom Fighting
+Mario & Luigi X Final Fantasy
+WarioWare X Wario Land
+Fishing Derby X Call of Duty
+Mario X Angry Video Game Nerd
+Mario X Balloon Fight
+Donkey Kong X Fullmetal Alchemist
+Spore X Mario
+Power Stone X Rival Schools
+Street Fighter X Nazo Waku Yakata
+Teenage Mutant Ninja Turtles X McPixel
+Jump Series X One Piece
+Toy Story X Brawl Stars
+Nazo Waku Yakata X Street Fighter
+Marvel Super Heroes (Capcom) X Final Fight
+Ren & Stimpy X Mario
+Mario X Star Wars
+Mario X Yin Yang Yo!
+Punch-Out!! X Super Smash Bros.
+Mario X Mirror's Edge
+Super Smash Bros. X Captain Toad
+Creatures X MediEvil
+Hai no Majutsushi X Gradius
+Asterix X Matrix
+Alien Nation X South Park
+Animal Crossing X Zelda
+Wreckateer
+Mario X Henry Stickmin
+Donkey Kong X Game & Watch Gallery
+Gundam X Super Smash Bros.
+Tron X Mario
+Mario X Coconut Fred
+Baz (Mascot)
+Sonic X Ty the Tasmanian Tiger
+Pink Panther X Street Fighter
+Warcraft X Mario
+Nintendo Puzzle Collection X Panel de Pon
+Pop-Up Pirate X Brawl Stars
+Kiki Trick X Nintendo
+Yoshi X Donkey Kong
+Super Mario X Pokémon
+Pinball (Nintendo) X Mario
+The Grim Adventures of Billy & Mandy X Ben 10
+Spyro X Skylanders
+Super Smash Bros. X Kingdom Hearts
+Super Smash Bros. X Manhole
+Gal*Gun X Azure Striker Gunvolt
+Ice Climber X Wario
+Wario X Star Fox
+Super Smash Bros. X Duck Hunt
+Project Zero X Mario
+Crash Bandicoot X Spyro
+Fast and Furious X Tekken
+All Together Cereal
+Gary Unmarried X Gears of War
+Sonic X Breath of Fire
+Donkey Kong X Mazinger
+JoJo's Bizarre Adventure X Star Wars
+Asterix X Donkey Kong
+Donkey Kong X Mother
+Wreck-It Ralph X Sega Superstars
+Animal Crossing X Mario
+The Matrix X JoJo's Bizarre Adventure
+Mario X Beethoven
+Dragon Ball X Yoshi
+Half-Life X Asterix
+Zelda X The Binding of Isaac
+It's Time to Play - PS4
+Zelda X Strong Bad
+Invincible X Spider-Man
+Destiny Game X Wario
+Pokémon X Class of '09 (SBN3)
+Wrecking Crew X Chibi-Robo!
+Donkey Kong X Bayside Shakedown
+The Fall Guy X The Poseidon Adventure
+Ghosts 'n Goblins X Nazo Waku Yakata
+Asterix X Final Fantasy
+Donald Duck X Kingdom Hearts
+E.T. X Mario
+Jump Series X Naruto
+Zelda X Game & Watch Gallery
+Vocaloid X Pokémon
+The Fall Guy X Moving Violation
+Henry Stickmin X Minecraft
+Zelda X Fable (Lionhead)
+Mario X Kirby
+Super Smash Bros. X Pac-Man
+Raven (Disney) X Suite Life
+Super Smash Bros. X Custom Robo
+Primal X Tomb Raider
+Star Wars X South Park
+JoJo's Bizarre Adventure X Mazinger
+Mario X Rain Shower (G&W)
+Kid Icarus X Tetris
+Avatar
+Robot Chicken X Donkey Kong
+Quake X Asterix
+Super Smash Bros. X Fire Attack
+Dig Dug X Mario
+Special Flag appearances
+Taiko no Tatsujin X Attack on Titan
+Mario X Excite
+Jump (Series) X Katekyo Hitman Reborn!
+Tetris X Animal Crossing
+Strider X Street Fighter
+Wario X Big Brain Academy
+Mario X Fish Hooks
+Konami 50th Anniversary Artwork
+Ace Combat X Pac-Man
+LOST X Wolverine
+Spitball Sparky X Super Smash Bros.
+Donkey Kong X Ice Climber
+Wario X Splatoon
+Manhattan Love Story X Guardians of the Galaxy
+Final Fight X Street Fighter
+OK K.O.! X Victor and Valentino
+Shinobi X Terminator
+Batman X Shinobi
+Asterix X Ratchet & Clank
+Taiko no Tatsujin X Kirby
+Zelda X Donkey Kong
+Punch Out!! X Avatar (Nick)
+Asterix X Gadget
+Asterix X Tomb Raider
+Diddy Kong Racing X Conker
+Kirby X Uniracers
+Wario X Donkey Kong
+Jak and Daxter X Asterix
+Super Dangerous Dungeons X Indie Pogo
+Super Smash Bros. X Sim
+Famicom Robot X StarTropics
+Taiko no Tatsujin X Cowboy Bebop
+Gadget X Mario
+OK K.O.! X Robotomy
+Skies of Arcadia X Valkyria Chronicles
+Metroid X Ace Combat
+Spy Hunter X Mortal Kombat
+Wario X Animal Crossing
+Meets World X Austin & Ally
+Angry Birds X Froot Loops
+Evil Dead X MediEvil
+Gimmick! (Sunsoft) X Barcode Battler
+Wario X Golf (Nintendo)
+Hyundai Super Comboy Commercial
+Super Smash Bros. X Psycho Soldier
+Mario X Mystery Science Theater 3000
+Garfield X Mickey Mouse
+Ace Combat X Zelda
+Super Smash Bros. X Castlevania
+Hai no Majutsushi X Ganbare Goemon
+Crocodile Dundee X Mario
+Blaster Master X Barcode Battler
+Snatcher X Gradius
+Jessie (Disney) X I Didn't Do It (Disney)
+Power Lords
+Sonic X Yoshi
+Spider-Man X Clone High
+Wold Newton family
+Duck Hunt X Tetris
+Street Fighter X Onimusha
+Donkey Kong X Rabbids
+Vulgus X Asura's Wrath
+Animal Crossing X Star Fox
+Pac-Man X Asterix
+Zelda X Warcraft
+Street Fighter X Fortnite
+Deus Ex X Sleeping Dogs (Square Enix)
+Nintendo aircraft in Ace Combat
+OK K.O.! X Teen Titans
+Card Hero X Super Smash Bros.
+Mario & Luigi X Yoshi
+Ape Escape X Taiko no Tatsujin
+Super Smash Bros. X 1080°
+SMG4 X Among Us
+Avatar (Nickelodeon) X Punch-Out!!
+Mario X Child's Play
+Poptropica X Diary of a Wimpy Kid
+Ghost
+Donkey Kong X Plättchen Twist 'n' Paint
+It's Gonna Be A Great Day Kellogg's Commercial
+Avatar (Nick) X Punch-Out!!
+Asterix X Doom
+Gunbird X Mobile Light Force
+Wrecking Crew X Dance Dance Revolution
+Antarctic Adventure X Hai no Majutsushi
+Ghosts 'n Goblins X Sonic
+Megamind X Donkey Kong
+2023 Ster-Kinekor Theaters Mario Movie promo
+Coolmath Games Official Trailer
+Tiny Tower X Mario
+Classic Disney series X Kingdom Hearts
+Devil World X Wario
+OK K.O.! X Mao Mao: Heroes of Pure Heart
+Croc X Mario
+Super Mario X Yoshi
+American Dad X Donkey Kong
+Strider X Mega Man
+Katamari X Fast and Furious
+Zelda X Angry Video Game Nerd
+Matt Hazard X Donkey Kong
+Taiko no Tatsujin X Spirited Away
+Urban Champion X Tetris
+Donkey Kong X Jetman
+Mickey Mouse X Kingdom Hearts
+Lemmings X Asterix
+Jill of the Jungle X Mario
+Zelda X Mother
+Nightmare on Elm Street X Mario
+H.E.R.O. X Call of Duty
+Wii games X Donkey Kong
+Mega Man X Capcom Girl no Mind Puzzle
+Party Land X Dig Dug
+Super Smash Bros. X Urban Champion
+Darkstalkers X Tekken
+Ace Combat X Mario
+Taiko no Tatsujin X Ace Combat
+MultiVersus X Duck Dodgers
+Oil Panic X Mario
+Best Friends Whenever X Meets World
+Donkey Kong X Daigasso! Band Brothers
+Breath of Fire X Blade Fantasia
+Croc advertisement references
+Captain Rainbow X Golf (Nintendo)
+Super Smash Bros. X Balloon Fight
+Donkey Kong X The Muppets
+Pink Panther X Pac-Man
+Chibi-Robo! X Primopuel
+Call of Duty X Cosmic Commuter
+Wario X Ice Climber
+Donkey Kong X Indiana Jones
+The Suite Life X That's So Raven
+Mario X Captain Rainbow
+Tetsujin 28 X JoJo's Bizarre Adventure
+Mario & Luigi X Star Fox
+Mario X Arthur (PBS)
+Mighty No. 9 X Azure Striker Gunvolt
+Fortnite X Superman
+Samurai Asshole X Smurfs
+Mario X Star Fox
+Demon Turf X Here Comes Niko!
+Brain Training X Wario
+Angry Video Game Nerd X Zelda
+Class of '09 (SBN3) X Scarface
+Zelda X Coconut Fred
+Street Fighter X Human Killing Machine
+Primopuel X Chibi-Robo!
+Xeno (Series)
+Pulseman X Pokémon
+Teenage Mutant Ninja Turtles X Paper Mario
+Donkey Kong X Super Robot Monkey Team Hyperforce Go!
+SpongeBob SquarePants X Disney's The Hunchback of Notre-Dame
+Donkey Kong X Sonic
+Jack N' Jill X Indie Pogo
+Futurama X Star Fox
+Uniracers X Mario
+Guardians of the Galaxy X GoBots
+Futurama X Family Guy
+Spin-off
+Spider-Man X Fortnite
+Family Guy X Robot Chicken
+Mario X Yume Kojo: Doki Doki Panic
+Street Fighter X Capcom Girl no Mind Puzzle
+Code Monkeys X Mario
+Mario-Tetris X Nintendo World Cup
+OK K.O.! X Mike, Lu & Og
+Kid Icarus X F-1 Race
+Mario X Nester
+Wario Land X Animal Crossing
+Bloxeed X Tetris
+Asterix X Earthworm Jim
+Taiko no Tatsujin X Naruto
+Pitfall X Frogger
+Game & Watch Gallery X Zelda
+Alleyway X Mario
+Pac-Man X Pink Panther
+Mario X Little Ghost Q-Taro
+OK K.O.! X Dexter's Laboratory
+Mario X Alex Kidd
+Yu Yu Hakusho X Jump (Series)
+Darkstalkers X Capcom Girl no Mind Puzzle
+Mario X Wario
+Section Z X Street Fighter
+How Heavy Are the Dumbbells You Lift? X Taiko no Tatsujin
+Excite X Pushmo
+Taiko no Tatsujin X One Piece
+Capcom Fighting X Gotcha Force
+Mario X N-Gang
+Street Fighter X Mario
+Mario X Mad Max
+Taito Harikiri Daifugo X Bubble Bobble
+Adventure Time X Final Fantasy
+Futurama X Donkey Kong
+Little Ghost Q-Taro X Mario
+Toukana (Mascot)
+Disney Infinity X Avatar (Fox)
+Kirby X Arcana
+Animal Crossing X Ice Climber
+Hissatsu Buraiken X Street Fighter
+MonsterVerse
+Halloween X Call of Duty
+Lupin the Third X Taiko no Tatsujin
+Wolverine X LOST
+MediEvil X WipEout
+Tiger & Bunny X Taiko no Tatsujin
+Pokémon X Pikmin
+Mirror's Edge X Mario
+Asterix X Legacy of Kain
+Ghostbusters X The Fall Guy
+Tetris X Nintendo World Championships
+Zelda X Daigasso! Band Brothers
+Taiko no Tatsujin X Fast and Furious
+James Bond X Super Smash Bros.
+Power Rangers sub-series links
+MultiVersus X Batman
+Taiko no Tatsujin X Ghosts 'n Goblins
+Cleopatra Fortune X Taito Harikiri Daifugo
+Kirby X Super Smash Bros./Inhale transformations
+Super Smash Bros. X Dragon Quest
+Super Mario X Game & Watch Gallery
+Easters eggs in Asura's Wrath
+Last of the Summer Wine
+Ganbare Goemon X Hai no Majutsushi
+Asterix X Monkey Island
+Ice Climber X Donkey Kong
+Asterix X Grand Theft Auto
+M&M's X Shrek
+Wario X Luigi
+Tekken X Super Smash Bros.
+Spider-Man X Invincible
+Taiko no Tatsujin X Laputa: Castle in the Sky
+Ned's Declassified School Survival Guide X The Fairly OddParents
+Doki Doki Literature Club X Super Smash Bros.
+Zelda X F-Zero
+Pac-Man X Fast and Furious
+Smurfs X Samurai Asshole
+Super Smash Bros. X Egg
+Nintendogs X Mario
+Scooby-Doo X MultiVersus
+Tekken X Punch-Out!!
+Scott Pilgrim X Zelda
+Sonic X The Big Bang Theory
+Game & Watch Gallery X Donkey Kong
+Capcom Girl no Mind Puzzle X Rival Schools
+Zelda X Powerpuff Girls
+Street Fighter X Red Earth
+Tower of Babel (Namco) X Taiko no Tatsujin
+Famicom Robot X Mario
+Indiana Jones X Donkey Kong
+Star Gladiator X Capcom Fighting
+Duck Dodgers X MultiVersus
+Tetris X Pokémon
+Super Smash Bros. X Tropical Fish
+Kangaroo (Atari) X Q*bert
+Daigasso! Band Brothers X Zelda
+Weebo's LCD Screen
+Wolverine X Warcraft
+My Life as a Teenage Robot X Mario
+The Art of 5th Cell Cover Art
+Pikmin X Wario
+Ghosts 'n Goblins X Marvel Super Heroes (Capcom)
+My Name Is Earl X Dig Dug
+K-On X Taiko no Tatsujin
+Donkey Kong X Uniracers
+Donkey Kong X Space Ace
+Captain N X Mario
+Modern Family X Say Anything...
+Nester X Mario
+Taiko no Tatsujin X Ponyo
+Wario X Tennis (Nintendo)
+Darkstalkers X Resident Evil
+Kingdom Hearts X Mickey Mouse
+Mario X Super Scope
+The Big Bang Theory X Halo
+Shinobi X Batman
+Street Fighter X Cyberbots
+Super Stars (Ertl) X Smokey and the Bandit
+Pretty Cure X Donkey Kong
+Animal Crossing X Pinball (Nintendo)
+Zelda X Asterix
+Xbox Avatar appearances
+Metroid X Warriors (Koei)
+Taiko no Tatsujin X Black Jack
+Re:Zero X Isekai Quartet
+Rayman X Asterix
+Yoshi X Blast Corps
+Grace Under Fire X Ellen
+Ace Combat X F-Zero
+Donkey Kong X Kid Icarus
+Ball (G&W) X Super Smash Bros.
+OK K.O.! X Megas XLR
+Resident Evil X Mega Man
+NES Remix X Tennis (Nintendo)
+Mario X Fire Attack
+Yoshi X Sonic
+Galaxy Express 999 X Donkey Kong
+Crunchyroll-Hime (Mascot)
+Bomberman X Mario
+Lilo & Stitch X Lion King
+Fortnite X Edward Scissorhands
+Mario X Gravity Falls
+Kid Icarus X Captain N
+Street Fighter X Power Stone
+Street Fighter X Dino Crisis
+Doom (ID Software) X Starfield
+Zelda X Mario
+Punch-Out!! X Frank Bruno's Boxing
+Fullmetal Alchemist X Donkey Kong
+Disney Infinity X Oz (Disney)
+Capcom Fighting X Tekken
+Mario X Dance Dance Revolution
+Mario X Tiny Tower
+Taiko no Tatsujin X Frozen (Disney)
+Zelda X The Wonderful 101
+Street Fighter X Cannon Spike
+Harry Potter X My Hero Academia
+Zelda X Clu Clu Land
+Boy Meets World X Mario
+Asura's Wrath X Side Arms
+Flagman X Super Smash Bros.
+Capcom Black Jack X Rival Schools
+Lord of the Rings X My Hero Academia
+Lep's World X Mario
+MultiVersus X Harley Quinn
+Dance Dance Revolution X Wrecking Crew
+Tekken X Star Fox
+Barry Steakfries X Fruit Ninja
+Zelda X Tekken
+Nazo Waku Yakata X Mega Man
+The Fall Guy X Dirty Mary, Crazy Larry
+Wario X Destiny Game
+Nazo Waku Yakata X Dead Rising
+Ice Climber X Tetris
+Tetris X Wario
+Donkey Kong X Mr. Pants
+Minecraft X Super Smash Bros.
+The Drew Carey Show X Grace Under Fire
+Kaiketsu Zorori X Donkey Kong
+OK K.O.! X Tig n' Seek
+Mega Man X Breath of Fire
+Mario X Indiana Jones
+Super Smash Bros. X Athena (SNK)
+Shaolin Wooden Men X Tekken X Tobal
+Fish Hooks X Donkey Kong
+Super Smash Bros. X The Legend of Zelda
+Rayman X Mario
+Valkyrie (Namco) X Party Land
+Plättchen Twist 'n' Paint X Donkey Kong
+Mario X Fire Emblem
+Pikmin X Zelda
+Tomb Raider X Futurama
+Tennis (Nintendo) X Mario
+Super Robot Monkey Team Hyperforce Go! X Zelda
+Ty the Tasmanian Tiger X Sonic
+Keroro Gunsou X Mario
+Dr. Mario X Kid Icarus
+2014 RadioShack SuperBowl Commercial
+Excite X Mario
+Tetris X Flash Point (Sega)
+Superman X Happy Tree Friends
+Brawl Stars X Pop-Up Pirate
+Rival Schools X Fortnite
+Barcode Battler X Dead Zone
+Pitfall X Marvel: Ultimate Alliance
+Street Fighter X Forgotten Worlds
+OK K.O.! X Whatever Happened to... Robot Jones?
+SNES games in Legacy of Goku II
+1080° X Super Smash Bros.
+Fallout X Doom
+JoJo's Bizarre Adventure X The Matrix
+Mario & Luigi X Excite
+Tingle X Punch-Out!!
+Super Smash Bros. X Banjo-Kazooie
+Punch-Out!! X Boxing (G&W)
+Tekken X Metroid
+Mario Kart X Famicom Grand Prix
+The King of Fighters X Super Smash Bros.
+MultiVersus X Looney Tunes
+Warriors (Koei) X Metroid
+Boxing (G&W) X Mario
+Mario X Regular Show
+Zelda X Warriors (Koei)
+Mario X Mii Plaza
+Yoshi X Mario
+Mole (Taomee) X Mario
+OK K.O.! X Cow and Chicken
+Talking Tom & Friends X Flappy Bird
+Evil Dead X Mario
+Mega Man X Blast Corps
+Paper Mario X Brain Training
+Mario X Punch-Out!!
+Hollow Knight X Dead Cells
+Mega Man X Strider
+Super Smash Bros. X Chef (G&W)
+Evil Bong X Elvira
+Duck Hunt X Super Smash Bros.
+Super Smash Bros. X Vermin
+Yoshi X Pikmin
+Open All Hours
+Super Smash Bros X The Wonderful 101
+Best Friends Whenever X Liv and Maddie
+Call of Duty X Zelda
+Minimoni de Bremen no Ongakutai X Donkey Kong
+Final Fight X Captain Commando
+Mobile Golf X Wrecking Crew
+OK K.O.! X Apple & Onion
+McPixel X Teenage Mutant Ninja Turtles
+Nintendo costumes in Tekken Tag Tournament 2
+Roll Call
+Hatsune Miku X Pokémon
+Q*bert X Regular Show
+D.A.R.E. Bear Yogi PSA
+The Blue Max X The Fall Guy
+Donkey Kong X Asterix
+South Park X Ghostbusters
+OK K.O.! X Ed, Edd n Eddy
+Gintama X Jump (Series)
+Kaku's Big Plan
+Big Brain Academy X Mario
+Donkey Kong X Fish Hooks
+Lego City X Zelda
+Mario X Pilotwings
+Blast Corps X Mega Man X Yoshi
+Taiko no Tatsujin songs/summary
+Ghosthunter X Twilight Zone
+King Kong X Donkey Kong
+OK K.O.! X Summer Camp Island
+Baseball (Nintendo) X Animal Crossing
+Asterix X Space Invaders
+Hai no Majutsushi X Snatcher
+Donkey Kong X Dig Dug
+Zelda X Mickey Mouse
+My Name Is Earl X Frogger
+MultiVersus X Wonder Woman
+194X X Resident Evil
+Resident Evil X Capcom Girl no Mind Puzzle
+Baseball (Nintendo) X Mario
+Mario X Crocodile Dundee
+Psych X Zelda
+Zelda X Pushmo
+Mario Bros. X Pokémon
+Skibidi Toilet X Fortnite
+Mario Golf X Yoshi
+Mario X Dexter's Laboratory
+SonSon X Street Fighter
+Star Wars X Mario
+Call of Duty X The Big Bang Theory
+Hamtaro X Zelda
 Doodle God X Futurama
-Zelda X Dragon Quest
-Mario X Street Fighter
+Donkey Kong X Wii games
+Donkey Kong X Dragon Ball
+Tomb Raider X Primal
+Stunt Race FX X Mario
+Yakuman X Mario
+Donkey Kong X Family Basic games
+We are Family Foundation Video
+Yoshi X Mega Man
+Azure Striker Gunvolt X Gal*Gun
+OK K.O.! X Ben 10
+Mario X Death Note
+2012 MetLife Super Bowl commercial
+Asterix X Pikmin
+Red Earth X Strider
+Dragon Quest X Jump Series
+Spyro X Mario
+Street Fighter X Strider
+Perfect Dark X Super Smash Bros.
+Asterix X Maximo
+The Big Bang Theory X Final Fantasy
+Street Fighter X Rival Schools
+Space Invaders X Angry Birds
+RadioShack: Goodbye '80s
+Zelda X Captain N
+Wrecking Crew X Art Style
+Mario X Advent Rising
+Monstober Spooktacular Weekend
+Kinnikuman X Snatcher
 Buffy the Vampire Slayer X Donkey Kong
-Brady Bunch X Family Guy
-Men Behaving Badly
+Call of Duty X H.E.R.O.
+Excite X Super Smash Bros.
+Capcom Fighting X Pocket Fighter
+Breath of Fire X Ghosts 'n Goblins
+Capcom Fighting X JoJo's Bizarre Adventure
+Powerpuff Girls X Zelda
+Donkey Kong X Pitfall
+Super Mario X Mario Bros.
+Super Smash Bros. X Tetris
+Super Smash Bros. X Cuphead
+Super Sentai-Power Rangers X Mario
+Tris
+Zelda X F-1 Race
+Strong Bad X Donkey Kong
+F-1 Race X Kid Icarus
+F-Zero X Wario
+Call of Duty X Pitfall
+Mario & Luigi X Super Scope
+Super Smash Bros. X Spitball Sparky
+Super Smash Bros. X Famicom Grand Prix
+Gradius X Hai no Majutsushi
+Mario vs. Donkey Kong X Super Smash Bros.
+Professor Layton X Ace Attorney
+Greenhouse X Super Smash Bros.
+Teenage Mutant Ninja Turtles X Stranger Things
+Puppet Aid
+Metroid X Tekken
+Mario X Motoko-chan no Wonder Kitchen
+Firefly
+Crash Bandicoot X Friends
+JoJo's Bizarre Adventure X Jump Series
+Cave Story X Mario
+Godzilla X Shinobi
+Marvel Super Heroes (Capcom) X Ghosts 'n Goblins
+Ghosthunter X Primal
+Mario X Tamagotchi
+Mario & Luigi X Kirby
+Shinobi X Mario
+Animal Crossing X Punch-Out!!
+Ratchet & Clank X PlayStation All-Stars
+Nickelodeon All-Star Brawl X SpongeBob
+Quiz Nanairo Dreams X Darkstalkers
+Kid Icarus X Donkey Kong
+Call of Duty X Kaboom!
+Super Robot Monkey Team Hyperforce Go! X Mario
+Sleeping Dogs (Square Enix) X Hitman
+Ty the Tasmanian Tiger X Crash Bandicoot
+South Park X Pokémon
+Phantasy Star X Zelda
+Dr. Mario X How I Met Your Mother
+Ghosthunter X Charlie's Angels
+The Sims X Asterix
+Pikmin X Donkey Kong
+Jimmy Neutron X Taiko no Tatsujin
+MediEvil: Resurrection film references
+Donkey Kong X Chibi Maruko-chan
+Mario Bros. X Pilotwings
+Pocky & Rocky X Taito Harikiri Daifugo
+Animation Throwdown: The Quest for Cards
+Mario X Mega Jump
+Viewtiful Joe X Street Fighter
+Zelda X Scott Pilgrim
+Speedway (1968 movie) X The Fall Guy
+Donkey Kong X Picross
+Wario X Clu Clu Land
+Gary Unmarried X Mario
+Wario X Brain Training
+Metal Gear X Zelda
+Power Punch X Punch-Out!!
+Donkey Kong X Popeye
+Superman X Fortnite
+The Fall Guy X Silver Streak
+Panel de Pon X Mario
+Mascot
+Annoying Orange X Smosh
+OK K.O.! X The Moxy Show
+Friends X Crash Bandicoot
+Kingdom Hearts X Donald Duck
+Super Smash Bros. X Soccer (Nintendo)
+Battletoads X Mario
+I Didn't Do It (Disney) X Jessie (Disney)
+Yu-Gi-Oh X Jump (Series)
+PlayStation All-Stars X Ratchet & Clank
+Futurama X Battlezone (Atari)
+Strong Bad X Zelda
+Indie Pogo X Action Henk
+Barbie X Teenage Mutant Ninja Turtles
+Ice Age X Family Guy
+Mario X Uncle Grandpa
+Mario X Jessie
+Donkey Kong X Zelda
+Meets World X Mario
+Art Style X Wrecking Crew
+Mario X Assassin's Creed
+OK K.O.! X Sheep in the Big City
+Volvy (Mascot)
+Teenage Mutant Ninja Turtles X Mario
+Kamen Rider X Snatcher
+Goat Simulator X Fortnite
+Banjo-Kazooie X Donkey Kong
+Street Fighter X Asterix
+Punch-Out!! X Arm Wrestling (Nintendo)
+The Fall Guy X Hulk (Marvel)
+Mario X Baseball (Nintendo)
+The Drew Carey Show X Ellen
+Splatoon X Animal Crossing
+Snatcher X Kamen Rider
+Super Smash Bros. X Zelda
+Donkey Kong X Fire Emblem
+Asterix X Sim
+OK K.O.! X Clarence
+Fast and Furious X Donkey Kong
+Nintendo Puzzle Collection X Mario
+Mario Golf X Pikmin
+Mario X Boy Meets World
+Cartoon Network Parking Lot Commercial
+One Night at Flumpty's X Five Nights at Freddy's
+Bubble Bobble X Asterix
+Asterix X Tekken
+Madagascar X Shrek
+Yoshi X Era's Adventures
+Xeno Series X Super Smash Bros.
+Chef (G&W) X Super Smash Bros.
+Metroid X Mario
+Donkey Kong X Pretty Cure
+Hercules
+Turrican X Sonic
+3 Ninjas X Mario
+Super Smash Bros. X Xeno Series
+Disney Jr. Music shorts
+Animation Plus Promotional Art
+Blinx X Asterix
+Mr. Driller X Fast and Furious
+Donkey Kong X Super Smash Bros.
+Aim for the Ace! X Donkey Kong
+Shinobi X Godzilla
+Pocket Fighter X Capcom Fighting
+James Bond X The Simpsons
+Invincible (Image) X Spider-Man
+Mario X Meets World
+Mortal Kombat X Asterix
+Splatoon X Wario
+James Bond 007 X The Simpsons
+Captain
+Mario X Super Princess Peach
+Zelda X Lego City
+Nintendo Land X Donkey Kong
+Famicom Robot X Wario
+Mario X Crash Bandicoot
+Mario X Parachute
+Moving Violation X The Fall Guy
+C-12: Final Resistance X MediEvil
+Hai no Majutsushi X Castlevania
+Ice Climber X Pushmo
+Splatoon X Pikmin
+Mario X Mary Poppins
+Private Eye (Activision) X Call of Duty
+D.Gray-man X Jump (Series)
+Punch-Out!! X Mario
+The Big Bang Theory X Pac-Man
+Pizza Vs. Skeletons X Indie Pogo
+Taiko no Tatsujin X How Heavy Are the Dumbbells You Lift
+Taiko no Tatsujin X Kinnikuman
+Atashin'chi X Donkey Kong
+Mario X Glee
+Mario X Street Fighter
+Zelda X Kirby
+Donkey Kong X Lego City
+Starmaster X Call of Duty
+My Hero Academia X Lord of the Rings
+Tekken X Final Fight
+Crossover Wiki pages
+Barcode Battler X J.League Excite Stage
+Zelda X Dragon Ball
+Mario X Honey, I Shrunk the Kids
+ARMS (Nintendo) X Super Smash Bros.
+Mario X Panel de Pon
+Mario X Chef (G&W)
+Chip 'n' Dale X Kingdom Hearts
+Space Ace X Donkey Kong
+Mario X Giana Sisters
+Wario X Kid Icarus
+Zelda X Link's Crossbow Training
+Popeye X Donkey Kong
+Mario X The Simpsons
+Wrecking Crew X Mario
+John Wick X Fortnite
+Fullmetal Alchemist X Taiko no Tatsujin
+Athena (SNK) X Super Smash Bros.
+Uniracers X Kirby
+Donkey Kong X Pikmin
+Super Smash Bros. X Metal Slug
+Zelda X Marvel: Ultimate Alliance
+Pikmin X Splatoon
+Super Smash Bros. X Super Princess Peach
+Lego City X Donkey Kong
+Super Smash Bros. X Helmet
+Sim X Mario
+Mighty Gunvolt
+Taiko no Tatsujin X Gundam
+Devil May Cry X Street Fighter
+Mario X Yakuman
+Pinball (Nintento) X Animal Crossing
+Boxing (Activision) X Call of Duty
+Taiko no Tatsujin X Lupin the Third
+OK K.O.! X Firebreather
+Another Code X Zelda
+JoJo's Bizarre Adventure X Taiko no Tatsujin
+Dead Cells X Hollow Knight
+Taiko no Tatsujin X Detective Conan
+K.C. Undercover X Jessie (Disney)
+Capcom Girl no Mind Puzzle X Mega Man
+Minions X The Secret Life of Pets
+Mario X Dig Dug
+Mother X Kirby
+Mario X Law & Order
+Party Land X Babylonian Castle Saga
+Hobgoblins X Elvira
+Harvest Moon X Zelda
+Rival Schools X Power Stone
+Super Smash Bros. X Mega Man
+Dino Crisis X Resident Evil
+Assassin's Creed X Mario
+Batman X Doodle God
+Mario X Luigi
+Asterix X The Sims
+Frogger X My Name Is Earl
+Character cameos in Street Fighter Alpha 2
+Ghosthunter X MediEvil
+Capcom Girl no Mind Puzzle X Street Fighter
+James Bond X Super Smash Bros
+Mario Kart X Scribblenauts
+Soul (Namco) X Zelda
+Manhole X Donkey Kong
+Dinnerladies
+Judge (G&W) X Wario
+BoxBoy! X Kirby
+Fortnite X Resident Evil
+Warcraft X Wolverine
+Bazooka Blitzkrieg X Super Scope
+The Simpsons X South Park
+Super Smash Bros. X Flagman
+Gravity
+Barcode Battler X Zelda
+The Wonderful 101 X Zelda
+Mario X Space Odyssey
+Taiko no Tatsujin X Pac-Man
+WarioWare X Mario
+Daemon X Machina
+Kingdom
+Yoshi X Super Smash Bros.
+Category:Marvel
+Donkey Kong X Futurama
+SSX X Mario
+Asterix X Blinx
+Asterix X Pokémon
+Megas XLR X Mario
+Donkey Kong X Gremlins (Warner Bros.)
+Onimusha X Street Fighter
+Tobal X Shaolin Wooden Men
+Mazinger X JoJo's Bizarre Adventure
+Mario X Golf (Nintendo)
+Captain Toad X Wario
+Cosmic Commuter X Call of Duty
+Diddy Kong Racing X Donkey Kong
+Picross X Zelda
+Mario X The Beverly Hillbillies
+Tekken X Capcom Fighting
+Sectaurs
+Onesimus: A Quest for Freedom X Jill of the Jungle
+Famicom Grand Prix X Mario
+Pac-Man X Ace Combat
 Scribblenauts X Zelda
-Captain N X Zelda
+Invincible (Image) X Fortnite
+Star Wars X JoJo's Bizarre Adventure
+Doraemon X Donkey Kong
+Wario X Alex Rider
+Wario X F-Zero
+Nintendo X Tetris
+Mario X Spirit Camera
+Katekyo Hitman Reborn! X Jump (Series)
+Golf (Nintendo) X Wii games
+South Park X Alien (Fox)
+OK K.O.! X Squirrel Boy
+Taiko no Tatsujin X Hatsune Miku
+Pokémon X Vocaloid
+Mario X SpongeBob
+Street Fighter X Terminator
+Super Smash Bros. X Bayonetta
+Nintendo World Championships X Mario
+Konami's Ping Pong X Donkey Kong
+Jump (Series) X Toriko
+Primal X Xena
+Fast and Furious X Taiko no Tatsujin
+Taiko no Tatsujin X Saint Seiya
+Zelda X South Park
+Nickelodeon Cartoon Cartoon Fridays Promo
+Minecraft X Mass Effect
+Book People Unite Commercial
+Dr. Giggles X Mario
+Zelda X How I Met Your Mother
+Zelda X Captain Rainbow
+Keroro X Mario
+Friends X Hulk (Marvel)
+Tamagotchi X Mario
+South Park X Star Wars
+Gadget X Asterix
+MultiVersus X Gremlins (Warner Bros.)
+Space Odyssey X Mario
+Atari games in Call of Duty
+Dragon Quest X Zelda
+Type 1 link
+Zelda X The Simpsons
+Boxing (G&W) X Punch-Out!!
+Doshin the Giant X Super Smash Bros.
+Luigi's Mansion X Mario
+Bully (Rockstar) X Mario
+Kid Icarus X Zelda
+Assassination Classroom X Jump (Series)
+Ellen X The Drew Carey Show
+Bayonetta X Super Smash Bros.
+Stunt Race FX X Star Fox
+Tekken X Tobal
+Mario X Hellraiser
+Q*bert X Pitfall
+Pikmin X Animal Crossing
+Megaman X Gal*Gun
+The Fall Guy X Race with the Devil
+Sim X Zelda
+The Fall Guy X Super Stars (Ertl)
+Tetris X Ice Climber
+Indiana Jones X MediEvil
+MediEvil X Evil Dead
+Mario X The Lost Vikings
+Kirby X Harry Potter
+Street Fighter X Predator (Fox)
+Chowder X Zelda
+Snatcher X Planet of the Apes
+Metal Slug X Super Smash Bros.
+Donkey Kong X Kirby
+Junji Ito Collection X Identity V
+FaceBreaker X Mario
+Zelda X It's Kind of a Funny Story
+Art of 5th Cell Cover Art
+Mario X The Powerpuff Girls
+Street Fighter X Marvel vs. Capcom
+Taiko no Tatsujin X Bartender
+The Goonies X South Park
+River Raid X Call of Duty
+Street Fighter X Adventure Quiz
+Taito Harikiri Daifugo X Turn it Around
+Johnny Bravo X Scooby Doo
+Hard'n'Heavy X Giana Sisters
+Resident Evil X 194X
+Gary Unmarried X Gears of War & Mario
+Asterix X Beyhond Good and Evil
+Tekken X Taiko no Tatsujin
+Mario X Asterix
+Doodle God references
+The Wizard X Zelda
+Balloon Fight X Wario
+Mario Party X Zelda
+Elvira X The Fall Guy
+Dungeons & Dragons X Quiz Nanairo Dreams
+Mario X StarTropics
+Jump (Series) X Shaman King
+Era's Adventures X Yoshi
+Capcom Black Jack X Breath of Fire
+Kirby X Star Wars
+Duke Dashington X Indie Pogo
+Mario X Uniracers
+Mario X Octopus
+Street Fighter X Devil May Cry
+Itadaki Street X Dragon Quest
+Breath of Fire X Street Fighter
+Tennis (Nintendo) X Wario
+Call of Duty X Skiing (Activision)
+Donkey Kong X Manhole
+Indie Pogo X Pix the Cat
+Metal Gear X Assassin's Creed
+Touch (Shogakukan) X Donkey Kong
+Mario X Friday the 13th
+Doraemon X Taiko no Tatsujin
+Super Smash Bros. X Judge (G&W)
+Mario X Nintendo Puzzle Collection
+Mario X Halloween
+Asterix X Bomberman
+Balloon Fight X Tetris
+Unreal X Asterix
+Yoshi X Alex Rider
+Super Smash Bros. X Ace Combat
+Invincible X Fortnite
+Tobal X Tekken
+Family Guy X Fortnite
+Mario X Family Basic games
+Donkey Kong X F-1 Race
+Donkey Kong X Nintendo Land
+Helmet X Mario
+Imaginationland references
+OK K.O.! X Steven Universe
+Street Fighter X Commando (Capcom)
+Star Trek X South Park
+Asterix X Spyro
+Dragon Quest X Final Fantasy
+Metroid X Donkey Kong
+OK K.O.! X Sym-Bionic Titan
+Zelda X Psych
+Super Scope X Mario
+Donkey Kong X Minimoni de Bremen no Ongakutai
+Donkey Kong X Heidi, Girl of the Alps
+Street Fighter X SonSon
+Rabbids X Mario
+Mario Kart X Nester
+George Lopez X Mario
+Crazy Kong X Donkey Kong
+Minecraft X Boonie Bears
+MultiVersus X Scooby-Doo
+Advent Rising X Mario
+Live from PS5
+Zelda X Final Fantasy
+Isekai Quartet X Re:Zero
+Nazo Waku Yakata X Ōkami
+Mario X Plok
+Mario X Itadaki Street
+John Dortmunder X The Fall Guy
+Capcom Black Jack X Darkstalkers
+Hannah Montana X The Suite Life
+Spyro X Crash Bandicoot
+Kappa Mikey X Donkey Kong
+Dexter's Laboratory X Mario
+Kangaroo (Atari) X Donkey Kong
+Barcode Battler X Barcode Fighter
+Jump (Series) X Dragon Quest
+Ōkami X Asura's Wrath
+Animal Crossing X Metroid
+Ghosts 'n Goblins X Higemaru
+Mario Kart X Animal Crossing
+Five Nights at Freddy's X One Night at Flumpty's
+Mario X Joe & Mac
+Incidental reference
+Donkey Kong X Pink Panther
+Bomberman X Asterix
+Big Brain Academy X Wario
+The Big Bang Theory X Donkey Kong
+Stunt Race FX cameos
+Columbia (Mascot)
+Adult Swim Kickball bumper
+Pikmin X Ace Combat
+Wario X Duck Hunt
+Halo X The Big Bang Theory
+Mario X Chowder
+Coach (ABC) X Ellen
+Super Mario Land X Zelda
+Asterix X Devil May Cry
+Spider Fighter X Call of Duty
+Katamari X Taiko no Tatsujin
+Capcom Girl no Mind Puzzle X Resident Evil
+Pinball (Nintendo) X Donkey Kong
+South Park X Pokemon
+F-Zero X Zelda
+Nintendo World Championships X Rad Racer
+Kingdom Hearts X Super Smash Bros.
+Lilo & Stitch X The Lion King
+Metal Gear X Mario
+Super Smash Bros. X Donkey Kong
+Soul Series X Asterix
+Lego Divers
+Mario X Rayman
+Godzilla X Mario
+Adult Swim Museum Bumper
+Bleach X Taiko no Tatsujin
+Hitman X Sleeping Dogs (Square Enix)
+Zelda X Phantasy Star
+Donkey Kong X Class of 3000
+Rocket Knight X Snatcher
+Scott Pilgrim X Nester
+Wii games X Zelda
+Famicom Robot X Star Fox
+Blast Corps X Mega Man
+CN City
+Vinyl Goddess from Mars X Jill of the Jungle
+Maniac Mansion X Mario
+Donkey Kong X Hyokkori Hyotan-jima
+Gurren Lagann X Mario
+Class of '09 (SBN3) X Tony Hawk's
+Mario X Keroro
+Parking Lot Commercial
+Shantae X Super Smash Bros.
+Mario X Evil Dead
+Kool-Aid & Mr. Clean X Planters
+Mario X El Tigre
+Donkey Kong X Balloon Fight
+Final Fantasy X The Big Bang Theory
+Peanuts X JoJo's Bizarre Adventure
+Super Smash Bros. X Princess Peach
+Judge (G&W) X Super Smash Bros.
+Q*bert X Frogger
+Fire (G&W) X Super Smash Bros.
+Barcode Battler X Sunsoft
+Super Smash Bros. X Sonic
+Clu Clu Land X Wario
+Zelda X Nostalgia Critic
+Donkey Kong X Sky Kid
+Call of Duty X Robot Tank
+Donkey Kong X Ace Combat
+Pac-Man X My Name Is Earl
+OK K.O.! X My Gym Partner's A Monkey
+The Thick of It X Alan Partridge
+Astal X Mario
+Ace Combat X Super Smash Bros.
+Barcode Battler X Blaster Master
+Dreamworks (Mascot)
+Ghosts 'n Goblins X Mega Man
+Mario X Ghostbusters
+Wario X Zelda
+Happy Tree Friends X Superman
+CN Always on the Run
+Taiko no Tatsujin X Kill Me Baby
+Ace Combat X Star Fox
+Mario X Dragon Ball
+Uncle Grandpa X Mario
+Paper Mario X Tetris
+Soccer (Nintendo) X Super Smash Bros.
+Mario X Three Men and a Baby
+Paper Mario X Zelda
+Oil Panic X Super Smash Bros.
+Bayside Shakedown X Donkey Kong
+Family Basic games X Binary Land
+The Hipster Whale (Mascot)
+Nazo no Murasame Jo X Super Smash Bros.
+Gal*Gun X Megaman
+GoBots X Guardians of the Galaxy
+Mario X Shaun the Sheep
+My Hero Academia X Jump Series
+Ace Attorney X Professor Layton
+The Drew Carey Show X Coach (ABC)
+SpongeBob X Disney's The Hunchback of Notre-Dame
+Parachute X Mario
+Pokémon X Tetris
+Darkstalkers X Street Fighter
+Darkest Powers X Zelda
+Pushmo X Kid Icarus
+Armored Warriors X Street Fighter
+Mario X The Exorcist
+Mario X Astal
+Game & Watch Gallery X Super Smash Bros.
+Mappy X Party Land
+Mario X Family Guy
+Mario X Mother
+Zero Escape X Zelda
+Animal Crossing X Excite
+Avatar (Fox) X Disney Infinity
+Pikmin X Asterix
+Ace Combat X Donkey Kong
+Art Style X Zelda
+Luigi X Mario
+Dead Rising X Nazo Waku Yakata
+Parachute X Wario
+Baseball (Nintendo) X Art Style
+Skiing (Activision) X Call of Duty
+Soul (Series) X Zelda
+The Muppets X Donkey Kong
+Metroid X Zelda
+F-1 Race X Mario
+Giana Sisters X Hard'n'Heavy
+Xbox Rareware Commercial
+Wreck-It Ralph X Rally-X
+Mario Golf X Zelda
+Balloon Fight X Taiko no Tatsujin
+Once Upon a Studio
+Call of Duty X Chopper Command
+Super Smash Bros. X Game & Watch Gallery
+Bill & Ted X McDonald's
+Tekken X Street Fighter
+Zelda X Durango Kids
+Super Smash Bros. X Shantae
+Jump (Series) X Yu Yu Hakusho
+Haikyu!! X Jump (Series)
+Taito Harikiri Daifugo X Cleopatra Fortune
+Taiko no Tatsujin X Ape Escape
+Super Smash Bros. X Persona
+Fatal Fury X Super Smash Bros.
+Super Smash Bros. X Metroid
+Mario X Godzilla
+Henry Stickmin X Mario
+Wario X Metroid
+Street Fighter X Gun Survivor
+Punch-Out!! X 3D Dot Game Heroes
+Fire Emblem X Wario
+Animal Crossing X Balloon Fight
+Ace Attorney X Street Fighter
+Hulk (Marvel) X Friends
+Diskun appearances
+Side Arms X Asura's Wrath
+Star Fox X Animal Crossing
+Alien vs. Predator X Street Fighter
+Picross X Mario
+McDonald's X Bill & Ted
+Alpha Mission X Super Smash Bros.
+Tekken X Mega Man
+Luigi X Wario
+Fire Emblem X Super Smash Bros.
+Super Smash Bros. X Animal Crossing
+Pong X Asterix
+AT&T
+Doodle God X Batman
+Tom and Jerry X MultiVersus
+Chu Chu Rocket X Asterix
+Excite X Wario
+Super Smash Bros. X Alpha Mission
+Fontana-Wolf universe
+Zelda X Metroid
+Viva Las Vegas
+Donkey Kong X Detective Conan
+Cyberpunk X Kurzgesagt
+Men Behaving Badly
+Street Fighter X Darkstalkers
+E.T. X JoJo's Bizarre Adventure
+Series
+Mario X Big Brain Academy
+Undertale X Taiko no Tatsujin
+Dragon Quest X Taiko no Tatsujin
+Henry Stickmin X Super Smash Bros.
+Mario X 1080°
+OK K.O.! X Miguzi
+Tetris X Panel de Pon
+The Adventures of Willy Beamish X Mario
+Golf (Nintendo) X NES Remix
+Mario X Diddy Kong Racing
+Zelda X Drawn Together
+Mass Effect X Minecraft
+Yume Kojo: Doki Doki Panic X Mario
+1080° X Mario
+Legendary Wings X Power Stone
+Astro Boy X JoJo's Bizarre Adventure
+Rally-X X Wreck-It Ralph
+Asura's Wrath X Monster Hunter
+Soul Series X Zelda
+Pink Panther X Dance Dance Revolution
+Asterix X Sonic
+Pushmo X Urban Champion
+Star Wars X Modern Family
+Nickelodeon All-Star Brawl X SpongeBob SquarePants
+Breath of Fire X Sonic
+Mario X The Mask
+Kaboom! X Call of Duty
+Mega Man X Super Smash Bros.
+Excite X Animal Crossing
+Law & Order X Chicago (NBC)
+Super Mario Land X Wrecking Crew
+StarTropics X Mario
+Taiko no Tatsujin X Jimmy Neutron
+Sonic & Sega All-Stars X Team Fortress
+Saturday Supercade links
+Cowboy Bebop X Taiko no Tatsujin
+F-1 Race X Donkey Kong
+Star Gladiator X Tekken
+Jump (Series) X Saint Seiya
+Family Basic games X Sheriff (Nintendo)
+Kirby X Mario
+Sheep in the Big City
+Donkey Kong X Clu Clu Land
+Mario X Barrel of Monkeys
+Sonic X Transformers
+Animal Crossing X Soccer (Nintendo)
+Mario X Battletoads
+Pushmo X Donkey Kong
+Yin Yang Yo! X Mario
+Dance Dance Revolution X Mario
+2020 Walmart Big Game Commercial
+Summer Camp Secrets X Zelda
+Megaman X Inti Creates
+Donkey Kong X The Fast and the Furious
+MultiVersus X Suicide Squad
+Kingdom Hearts X Final Fantasy
+Mario X Mach Rider
+Puss 'n Boots (Toei) X Captain N
+Donkey Kong X Aim for the Ace!
+Ghosthunter references
+Mario Kart X Wreck-It Ralph
+Donkey Kong X Wario
+Donkey Kong X Wreck-It Ralph
+Higemaru X Resident Evil
+1995 Totally Fox Kids Magazine Centerfold
+South Park X The Goonies
+Mario X Chibi-Robo!
+Detective Conan X Donkey Kong
+Boonie Bears X Minecraft
+Say Anything... X Modern Family
+Final Fight X Marvel Super Heroes (Capcom)
+Clu Clu Land X Zelda
+Jetpac X Donkey Kong
+Duck Hunt X Wario
+Mario X Transformers
+Final Fantasy X Xenogears
+Ace Combat X Taiko no Tatsujin
+Uniracers X Donkey Kong
+Mario X Boxing (G&W)
+Resident Evil X Ghosts 'n Goblins
+Skylanders X Crash Bandicoot
+Yoshi X Uniracers
+Fable (Lionhead) X Zelda
+Naruto X Jump Series
+Jump (Series) X Bobobo-bo Bo-bobo
+The Fugitive X South Park
+Frogger X Donkey Kong
+Donkey Kong X Fire (G&W)
+Coins in the Fountain X Mario
+Keroro Gunsō X Mario
+Mario X Tennis (Nintendo)
+The Fall Guy X Ghostbusters
+Dance Dance Revolution X Pink Panther
+Taiko no Tatsujin X K-On
+Donkey Kong X Two and a Half Men
+Mario Kart X How I Met Your Mother
+Zelda X 3D Dot Game Heroes
+Breath of Fire X Capcom Black Jack
+Rival Schools X Capcom Girl no Mind Puzzle
+2012 MetLife Super Bowl Commercial
+Regular Show X Q*bert
+Taiko no Tatsujin X My Neighbor Totoro
+Super Smash Bros. X Fire Emblem
+Modern Family X Mario
+Taiko no Tatsujin X JoJo's Bizarre Adventure
+Dragon Quest X Captain N
+Pico (Newgrounds) X UFA
+Golf (Nintendo) X Punch-Out!!
+Ace Combat X Pikmin
+Bugdroid (Mascot)
+Hipster Whale (Mascot)
+Mario & Luigi X Zelda
+Bravoman X Taiko no Tatsujin
+Oz (Disney) X Disney Infinity
+Final Fantasy X Itadaki Street
+Final Fantasy X Xeno Series
+Mario X James Bond
+Party Land X Sky Kid
+Zelda X NES Remix
+Ace Attorney X Zelda
+Nintendogs X Zelda
+Jurassic Park X South Park
+Enduro X Call of Duty
+Spider-Man X JoJo's Bizarre Adventure
+Asterix X Street Fighter
+MultiVersus X Superman
+Call of Duty X Halloween
+Howl's Moving Castle X Taiko no Tatsujin
+Sleeping Dogs (Square Enix) X Just Cause (Eidos)
+SpongeBob SquarePants X Disney's The Hunchback of Notre Dame
+Jump (Series) X Assassination Classroom
+Monster Hunter X Asura's Wrath
+Sleeping Dogs (Square Enix) X Deus Ex
+Mario X Keroro Gunsou
+Tetris X Captain N
+Snatcher X Castlevania
+Donkey Kong X Bobobo-bo Bo-bobo
+Mario X Drill Dozer
+Spore X Mass Effect
+Wario X Pikmin
+Metal Gear X Super Smash Bros.
+Barcode Fighter X Barcode Battler
+Mario X Mobile Golf
+Super Smash Bros. X Final Fantasy
+Donkey Kong X Code Monkeys
+Tetris X Super Smash Bros.
+Big Kahuna Burger
+Kool Aid X Planters
+Star Fox X Donkey Kong
+Fast and Furious X Katamari
+American Dad! X Family Guy
+Mario X Back to the Future
+Q*bert X Kangaroo (Atari)
+Pitfall X Q*bert
+Angry Birds X Mario
+Mario X Wii games
+Mario X Just Dance
+Edward Scissorhands X Fortnite
+Fast and Furious X Mr. Driller
+Street Fighter X Captain Commando
+Dan The Man X Barry Steakfries
+Smurfs X Donnie Darko
+Billy Madison X Donkey Kong
+Castlevania X Zelda
+Street Fighter X Ace Attorney
+Donkey Kong X Banjo-Kazooie
+Angry Birds X Space Invaders
+Barrel of Monkeys X Mario
+Nazo no Murasame Jo X Donkey Kong
+Dance Dance Revolution X Donkey Kong
+Clu Clu Land X Donkey Kong
+Lion (G&W) X Super Smash Bros.
+Taiko no Tatsujin X Mario
+Donkey Kong X Metroid
+Quiz Nanairo Dreams X Dungeons & Dragons
+Mario X Homestar Runner
+194X X Street Fighter
+Mario X Jessie (Disney)
+Chef (G&W) X Mario
+Friday Night Nicktoons Opening
+Yoshi X Nintendo Puzzle Collection
+Tomb Raider X Asterix
+NES Remix X Wrecking Crew
+Zelda X Dragon Quest
+Tekken X Star Gladiator
+McPixel X Mario
+Two and a Half Men X Donkey Kong
+Taiko no Tatsujin X Sailor Moon
+Golf (Nintendo) X Animal Crossing
+Castlevania X Hai no Majutsushi
+Friday the 13th X MultiVersus
+Excite X Tetris
+Mega Man X Resident Evil
+Gundam X Donkey Kong
+Taiko no Tatsujin X Mickey Mouse
+Donkey Kong X American Dad!
+Donkey Kong X Dance Dance Revolution
+Tetris X Excite
+Matt Hazard X Mario
+Kingdom Hearts X Chip 'n' Dale
+Brawl Stars X South Park
+My Hero Academia X Star Wars
+Call of Duty X Spider Fighter
+OK K.O.! X The Fungies!
+Wario X Nintendo Badge Arcade
+Waterloo Road
+On Golden Pond X Mario
+Jak and Daxter X Ratchet & Clank
+Mort the Chicken X Pizza Tower
+Mario Bros. X Super Mario
+Space Ace X Kangaroo (Atari)
+Asterix X Zelda
+Animal Crossing X Pikmin
+Metroid Prime 3 Ship Bumper Stickers
+Indie Pogo X Super Dangerous Dungeons
+Nintendo World Championships X Tetris
+Sabrina the Teenage Witch X Teen Angel
+Paper Mario X Teenage Mutant Ninja Turtles
+Galaxian X Mario
+Minecraft X Skibidi Toilet
+The Powerpuff Girls X Zelda
+Guardians of the Galaxy X Manhattan Love Story
+3D Dot Game Heroes X Punch-Out!!
+Super Smash Bros. X Lion (G&W)
+NES Remix X Baseball (Nintendo)
+Captain N X Punch-Out!!
+Mario X Project Zero
+Doraemon X Jurassic Park
+Tetris X Devil World
+OK K.O.! X Infinity Train
+Beethoven X Mario
+The Big Bang Theory X Sonic
+Zelda X Art Style
+Mario and Sonic in Mega Turrican
+Mario X Megas XLR
+Fortnite X Dead Space
+Nintendo World Cup X Mario
+Asterix X Pac-Man
+Super Smash Bros. X Oil Panic
+OK K.O.! X Powerpuff Girls
+Forgotten Worlds X Final Fight
+Wario Land X WarioWare
+Mario X Super Smash Bros.
+Borderlands X Donkey Kong
+Tetris X Mario
+Fortnite X Invincible (Image)
+Yoshi X Tetris
+Link
+Dragon Ball X Zelda
+Ōkami X Street Fighter
+Chowder X Mario
+Phantasy Star X Mario
+Peanuts X Garfield
+Mario X Oil Panic
+Raiders of the Lost Arcade references
+Looney Tunes X Scooby Doo
+Cartoon Network 2020 Halloween Bumper
+Futurama X BurgerTime
+SpongeBob X Nickelodeon All-Star Brawl
+Pushmo X Balloon Fight
+Glitch appearances
+Taiko no Tatsujin X Dragon Ball
+Capcom Girl no Mind Puzzle X Darkstalkers
+Mario X Ball (G&W)
+Duck Hunt X Running Stadium
+JoJo's Bizarre Adventure X Capcom Fighting
+Binary Land X Family Basic games
+Zelda X Harvest Moon
+Wreck-It Ralph X Sonic
+Super Smash Bros. X Mother
+F-Zero X Super Smash Bros.
+Donkey Kong X Golf (Nintendo)
+Kiki Trick X Mario
+My Hero Academia X Harry Potter
+OK K.O.! X Long Live the Royals
+Liv and Maddie X Best Friends Whenever
+Taiko no Tatsujin X Dragon Quest
+Mario X Yoshi
+Gremlins X Donkey Kong
+Super Sentai-Power Rangers X Donkey Kong
+Mana X Dragon Ball
+Wario X Excite Racing
+Higemaru X Ghosts 'n Goblins
+Perfect World
+Marvel Super Heroes (Capcom) X Captain Commando
+Rival Schools X Capcom Black Jack
+The Suite Life X Wizards of Waverly Place
+Street Fighter X Super Smash Bros.
+Diddy Kong Racing X Mario
+Guacamelee! X Mario
+The World God Only Knows X Mario
+King Kong X Mario
+Donkey Kong X Rain Shower (G&W)
+Rick and Morty X MultiVersus
+Uniracers X Metroid
+Tennis (Nintendo) X NES Remix
+Beijing 2022 Winter Olympics Game Trailer (Shanghai Animation Film Studio)
+Kingdom Hearts X Winnie the Pooh
+Punch-Out!! X Donkey Kong
+Batman X Superman
+Mario X Nintendogs
+Dirty Mary, Crazy Larry X The Fall Guy
+CITV Commercial
+Regular Show X Mario
+Super Smash Bros. X Egg (G&W)
+Rubbadubbers
+The Suite Life X Hannah Montana
+Mario X Metal Gear
+JoJo's Bizarre Adventure X Jump (Series)
+Asura's Wrath X Mega Man
+Team Fortress X Sega Superstars
+Zelda X Skinjacker
+Mario X Powerpuff Girls
+Super Mario X Famicom Grand Prix
+Terraria X Zelda
+OK K.O.! X I Am Weasel
+Lego City/sets
+Beethoven (Universal) X Mario
+Donkey Kong X Robot Chicken
+Paramount+ Expedition
+Super Smash Bros. X Octopus
+Donkey Kong X Sabreman
+Mario X FaceBreaker
+Parachute X Donkey Kong
+Dragon Ball X Amazing World of Gumball
+Xena X Primal
+Wizards on Deck with Hannah Montana
+Frozen (Disney) X Taiko no Tatsujin
+Adventure Quiz X Street Fighter
+Hello, Paramount
+Space Invaders X Asterix
+Donkey Kong X James Bond
+Modern Family X Star Wars
+Donkey Kong X Game & Watch Collection
+Custom Robo X Super Smash Bros.
+Zelda X Wario
+Super Smash Bros. X Ice Climber
+Street Fighter X Sonic
+Fortnite X Skibidi Toilet
+Bill and Ted's Excellent Halloween Adventure
+Mario X Super Sentai-Power Rangers
+Diddy Kong Racing X Banjo-Kazooie
+Mario X Frontline
+Pokémon X Zelda
+Ace Attorney X Nazo Waku Yakata
+Donkey Kong X Punch-Out!!
+Daigasso! Band Brothers X Donkey Kong
+Donkey Kong X The Big Bang Theory
+Zelda X Golden Sun
+Wario X Helmet
+Taiko no Tatsujin X Rolling Thunder (Namco)
+Zelda X Summer Camp Secrets
+JoJo's Bizarre Adventure Bohemian Rhapsody story cameos
+Yoshi X Game & Watch Gallery
+Pac-Man X Super Smash Bros.
+MultiVersus X Rick and Morty
+Motoko-chan no Wonder Kitchen X Mario
+Mario X The Wizard
+The Grim Adventures of Billy & Mandy X Codename: Kids Next Door
+Mario X Starfy
+Mario X Helmet
+Bubble Bobble X Taito Harikiri Daifugo
+Picross X Donkey Kong
+Mobile Golf X Mario
+Taiko no Tatsujin X My Little Pony
+Scott Pilgrim X Donkey Kong
+Marvel: Ultimate Alliance X Metroid
+Mario Party X Kirby
+(Is This the Way to) Amarillo
+Skibidi Toilet X Minecraft
+Video game references in My Name Is Earl
+Memberberries quotes
+Alex Kidd X Mario
+Capcom Black Jack X Resident Evil
+Naruto X Donkey Kong
+Mario X Animal Crossing
+Kool-Aid X Planters
+Donkey Kong X Fast and Furious
+Mario X How I Met Your Mother
+Mario X Histeria!
+Octopus X Super Smash Bros.
+SonSon X Mega Man
+Call of Duty X Seaquest (Activision)
+Super Smash Bros. X Tekken
+Punch-Out!! X Animal Crossing
+The Binding of Isaac X Zelda
+E.T. X Star Wars
+Taiko no Tatsujin X Inuyasha
+Super Mario in Die Nacht des Grauens cameos
+Arm Wrestling (Nintendo) X Punch-Out!!
+Sleeping Dogs (Square Enix) X Hitman (IO Interactive)
+Mega Man X Ghosts 'n Goblins
+Durango Kids X Zelda
+Zelda X Super Smash Bros.
+Street Fighter X Capcom Black Jack
+Barcode Battler X The Wing of Madoola
+James Bond X Donkey Kong
+Red Earth X Darkstalkers
+Paper Mario X Animal Crossing
+Snatcher X Ultraman
+Mario X Wrecking Crew
+Mii Plaza X Mario
+Ace Attorney X Taiko no Tatsujin
+Mr. Peanut X Mr. Clean
+Comic Relief's Helping Hand
+Skylanders X Donkey Kong
+Punch-Out!! X Power Punch
+Helmet X Wario
+Reize (Mascot)
+Mr. Clean X Planters
+G.I. Joe X Ghosthunter
+Tekken X Shaolin Wooden Men
+Mario X AR Games
+Jump (Series) X Haikyu!!
+Mother X Super Smash Bros.
+Parachute X Super Smash Bros.
+Zelda X Nintendo Land
+Sabrina the Teenage Witch X Meets World
+Mario X Nintendo World Cup
+How I Met Your Mother X Mario
+MediEvil X Primal
+Nostalgia Critic X Mario
+Mario X Ren & Stimpy
+Mega Man X Nazo Waku Yakata
+Resident Evil X Breath of Fire
+OK K.O.! X The Marvelous Misadventures of Flapjack
+Winnie the Pooh X Kingdom Hearts
+Asterix X Sly Cooper
+Diary of a Wimpy Kid X Poptropica
+Fist of the North Star X JoJo's Bizarre Adventure
+SpongeBob SquarePants X Nickelodeon All-Star Brawl
+Adult Swim Wheelz Race Bumper
+Gravity Falls X Donkey Kong
+Android robot (Mascot)
+Commando (Capcom) X Tekken
+Blade Fantasia X Breath of Fire
+Alan Partridge X The Thick of It
+NES Remix X Golf (Nintendo)
+OK K.O.! X Periwinkle Around the World
+Henry Stickmin X Sonic
+Super Smash Bros. X Ball (G&W)
+Mickey Mouse X Donkey Kong
+Asterix X Terminator
+Taiko no Tatsujin X Balloon Fight
+Pikmin X Super Smash Bros.
+Team Fortress X Sonic
+Asterix X Tetris
+Bartender X Taiko no Tatsujin
+Donkey Kong X Billy Madison
+Mega Man X Street Fighter
+Tommy Westphall Universe
+Hulk (Marvel) X The Fall Guy
+Fire (G&W) X Donkey Kong
+Persona X Catherine
+JoJo's Bizarre Adventure X E.T.
+Donkey Kong X N-Gang
+Grand Prix (Activision) X Call of Duty
+Art Style X Baseball (Nintendo)
+OK K.O.! X Uncle Grandpa
+Taiko no Tatsujin X Metal Black
+Super Smash Bros. X Metal Gear
+Three Men and a Baby X Mario
+Nazo Waku Yakata X Ghosts 'n Goblins
+Beverly Hillbillies X Mario
+Taiko no Tatsujin X Mega Man
+Street Fighter X Alien (Fox)
+Mario X Maniac Mansion
+Earthworm Jim X Asterix
+Dig Dug X My Name Is Earl
+Super Robot Monkey Team Hyperforce Go! X Donkey Kong
+The Fast and the Furious X Donkey Kong
+Fish Hooks X Mario
+Fortnite X Futurama
+Metroid X Kirby
+Mario X Spore
+Primal X Ghosthunter
+Street Fighter X Tekken
+Pix the Cat X Indie Pogo
+James Bond X Ghosthunter
+Adult Swim Museum bumper
+Austin & Ally X Meets World
+PlayStation All-Stars Battle Royale X Ratchet & Clank
+Road Warriors X Indie Pogo
+MultiVersus X The Peter Potamus Show
+Frogger X Pitfall
+Super Smash Bros. X Panel de Pon
 Lego Nautica
+Street Fighter X Legendary Wings
+Balloon Fight X Super Smash Bros.
+Dragon Ball X The Amazing World of Gumball
+Game & Watch X Super Smash Bros.
+Disney's Beauty and the Beast X Taiko no Tatsujin
+Dumbo & Cool X Gish
+Asterix X Soul Series
+The Tower
+Resident Evil X Dino Crisis
+Jump Series X My Hero Academia
+Glee X Mario
+Super Smash Bros. X Splatoon
+Videogame references in Pokémon Stadium 2
+Dragon Ball X Final Fantasy
+3D Dot Game Heroes loading art
+The Fall Guy movie clips
+Alex Kidd in Shinobi World X Mario
+Brady Bunch X Family Guy
+Power Stone X Legendary Wings
+Mighty No. 9 X Gal*Gun
+Star Wars X Super Sentai-Power Rangers
+MultiVersus X Tom and Jerry
+JoJo's Bizarre Adventure X Fist of the North Star
+Mario X Tekken
+Pac-Man X The Big Bang Theory
+Michael - PS3 Long Live Play
+How I Met Your Mother X Zelda
+Super Mario Bros. X Wario
+Play Action Football X Mario
+Street Fighter X Slam Masters
+Henry Stickmin X Among Us
+Clone High X Spider-Man
+Game & Watch Collection X Donkey Kong
+Zelda X Terraria
+Taiko no Tatsujin X Super Sentai-Power Rangers
+Final Fantasy X Mario
+Jump Series X Dragon Quest
+Animal Crossing X Super Smash Bros.
+Ys X Taiko no Tatsujin
+Joker (DC Comics) X MultiVersus
+Haiyore! Nyaruko-san X Mario
+Taiko no Tatsujin X Sonic
+Jump (Series) X Naruto
+Shinobi X Rambo
+Crossover Wiki
+Gyromite X Tetris
+Donkey Kong X Kangaroo (Atari)
+AR Games X Mario
+Mazinger X Donkey Kong
+Twilight Zone X Ghosthunter
+Donkey Kong X Greenhouse
+Kirby X Stunt Race FX
+Manhole X Mario
+Zelda X Taiko no Tatsujin
+Kid Icarus X Pushmo
+Battletoads X Killer Instinct (Rare)
+Darkstalkers X Capcom Black Jack
+Time Bomb
+Golf (Nintendo) X Captain Rainbow
+Asterix X Pong
+Rocky (United Artists) X Mario
+Detective Conan X Taiko no Tatsujin
+Mario X Tron
+Bethesda Creation Club
+Zelda X Soul Series
+Slayin X Indie Pogo
+Wario X Tetris
+Race Across Yorkshire
+Spider-Man X Shinobi
+Frozen (Disney) X Tangled
+Pac-Man X Mario
+Sleeping Dogs (Square Enix) X Square Enix
+Animal Crossing X Kirby
+The Exorcist X Mario
+Donkey Kong X Doraemon
+Zelda X Another Code
+Here Comes Niko! X Demon Turf
+Mario X Nostalgia Critic
+Street Fighter V's Ring of Arcade stage references
+Doom (ID Software) X Fallout
+Mario X E.T.
+Sheep in the Big Cafeteria
+Fortnite X Spider-Man
+Mario X Nintendo Land
+Billy Madison X Donkey Kong & Mortal Kombat
+Star Gladiator X Resident Evil
+Looney Tunes X Scooby-Doo
+Muppets X Mario
+Primal X MediEvil
+Grace Under Fire X The Drew Carey Show
+Sonic X Super Smash Bros.
+Wrecking Crew X Super Smash Bros.
+Donkey Konga songs
+Sly Cooper X Asterix
+Super Smash Bros. X Monster Hunter
+Ghosts 'n Goblins X Resident Evil
+Sega Superstars X Team Fortress
+Famicom Robot X Tetris
+Taiko no Tatsujin X Hello Kitty
+Game & Watch Gallery X Yoshi
+Captain Commando X Resident Evil
+X-Men X Manhattan Love Story
+Mario X Stunt Race FX
+Mother X Zelda
+Mario X World Gone Sour
+Breaking Bad X Home Fries
+Green Giant Friendsgiving
+Sky Kid X Donkey Kong
+Tangled X Frozen (Disney)
+Trojan X Street Fighter
+K.C. Undercover X Austin & Ally
+Captain Rainbow X Mario
+Halloween X Mario
+Balloon Fight X Donkey Kong
+Donkey Kong X Buffy
+Diskun (Mascot)
+Uniracers X Zelda
+Spyro X Asterix
+Kool-Aid X Mr. Peanut
+Fourth wall breaking
+Call of Duty X River Raid
+Barry Steakfries X Dan The Man
+Donkey Kong X Monkey (Nippon Television)
+Catherine X Persona
+Zelda X Kid Icarus
+Mega Man X 194X
+Angel (Warner Bros.) X Donkey Kong
+Shaolin Wooden Men X Tobal
+OK K.O.! X Generator Rex
+Mario Kart X Wii games
+Snatcher X Kinnikuman
+Crossover Nexus
+Jump (Series) X Fist of the North Star
+Super Smash Bros. X Megami Tensei
+Super Smash Bros. X Card Hero
+Resident Evil X Capcom Black Jack
+Family Guy X Ice Age
+The Fall Guy X John Dortmunder
+Taiko no Tatsujin X Howl's Moving Castle
+Mega Jump X Mario
+Doodle God X Star Wars
+Kid Icarus X Wario
+Dora the Explorer X Family Guy
+Clu Clu Land X Animal Crossing
+General Mills Cereal Squad
+Sonic X Asterix
+The Binding of Isaac X Mario
+Panel de Pon X Nintendo Puzzle Collection
+Blast Corps X Yoshi
+BloodRayne X Asterix
+Gal*Gun X Mighty No. 9
+Codename: Kids Next Door X The Grim Adventures of Billy & Mandy
+Capcom Fighting X Street Fighter
+OK K.O.! X Chowder
+Power Stone X Resident Evil
+Banjo-Kazooie X Mario
+Donkey Kong X Naruto
+King of the Hill X Beavis and Butt-Head
+Metroid X Wario
+Shrek X Madagascar
+Indie Pogo X Duke Dashington
+Duck Hunt X Mario X Running Stadium
+Hyokkori Hyotan-jima X Donkey Kong
+Cyberbots X Street Fighter
+Street Fighter X Mega Twins
+Arthur (PBS) X Mario
+Mario X Fatal Frame
+Mad Max X Mario
+Joe & Mac X Mario
+Donkey Kong X Gundam
+Wave Race X Super Smash Bros.
+Mario Bros. X Super Mario Land
+Animal Crossing X Wario
+Zelda X Call of Duty
+Star Fox X Uniracers
+Super Smash Bros. X Doshin the Giant
+The Simpsons X Tetris
 Mario X Running Stadium
 Tetris X Bloxeed
-NES Remix X Wrecking Crew
-Pokémon X Pulseman
-Theatrhythm music
-Super Smash Bros. X Donkey Kong
-Mario X Guacamelee!
-Panel de Pon X Mario
-Street Fighter X Capcom Black Jack
-Mario X Mii Plaza
-Volvy (Mascot)
-Donkey Kong X Crazy Kong
-Balloon Fight X Super Smash Bros.
-Binary Land X Family Basic games
-Soul (Namco) X Zelda
-South Park X Jurassic Park
-Taiko no Tatsujin X Hatsune Miku
-Mario X Crash Bandicoot
-Family Guy X Robot Chicken
-Daemon X Machina
-Taiko no Tatsujin X Black Jack
-The Fall Guy X The Poseidon Adventure
-Donkey Kong X Strong Bad
-Pix the Cat X Indie Pogo
-Planet of the Apes X Snatcher
-The Muppets X Mario
-Quiz Nanairo Dreams X Street Fighter
-Wario X Animal Crossing
-Ice Climber X Donkey Kong
-Running Stadium X Mario
-Street Fighter X Red Earth
-Bartender X Taiko no Tatsujin
-Ty the Tasmanian Tiger X Crash Bandicoot
-Bleach X Taiko no Tatsujin
-Mario X Super Scope
-Mario X How I Met Your Mother
-Edward Scissorhands X Fortnite
-Call of Duty X Private Eye (Activision)
-Family Guy X Dora the Explorer
-Mario X Duck Hunt
-Capcom Fighting X Ace o Nerae!
-Donkey Kong X Fish Hooks
-Zelda X AR Games
-F-1 race X Donkey Kong
-The Beverly Hillbillies X Mario
-Big Brain Academy X Zelda
-Wrecking Crew X Mario
-Capcom Fighting X Star Gladiator
-Super Smash Bros. X Excite
-Donkey Kong X Clu Clu Land
-Gadget X Mario
-Mario X Tron
-Super Smash Bros. X Duck Hunt
-Donkey Kong X Crayon Shin-chan
-Mario X Spyro
-MediEvil X Evil Dead
-Zelda X Captain Rainbow
-Spider-Man X Clone High
-Mario X Little Ghost Q-Taro
-Tony Hawk's X Class of '09 (SBN3)
-Pop-Up Pirate X Brawl Stars
-SimCity X Mario
-Rival Schools X Dino Crisis
-Call of Duty X Kaboom!
-Parachute X Donkey Kong
-Donkey Kong X NES Remix
-Mario X Donkey Kong
-MultiVersus X Adventure Time
-James Bond X The Simpsons
-Mario X SSX
-Nintendogs X Zelda
-Final Fight X Marvel Super Heroes (Capcom)
-Mario X Luigi's Mansion
-194X X Street Fighter
-Meets World X Austin & Ally
-Pikmin X Asterix
-Mario X Code Monkeys
-Invincible X Fortnite
-Call of Duty X Fishing Derby
-Zelda X NES Remix
-K.C. Undercover X Austin & Ally
-Mario & Luigi X Yoshi
-Howl's Moving Castle X Taiko no Tatsujin
-Helmet X Super Smash Bros.
-Xbox Avatar appearances
-Asterix X Beyond Good & Evil
-Human Killing Machine X Street Fighter
-Pac-Man X Asterix
-Street Fighter X Breath of Fire
-Evil Dead X MediEvil
-Raven (Disney) X Suite Life
-Stella Street
-Pac-Man X The Big Bang Theory
-Smurfs X Donnie Darko
-Pikmin X Animal Crossing
-Art of 5th Cell Cover Art
-Star Fox X Famicom Robot
-Donkey Kong X Two and a Half Men
-Strong Bad X Zelda
-Super Smash Bros. X Mario
-Mr. Driller X Fast and Furious
-Fire Emblem X Mario
-Snatcher X Rocket Knight
-Zelda X Nintendo Land
-The Simpsons X South Park
-Zelda X Summer Camp Secrets
-Meets World X Mario
-Fortnite X Spider-Man
-Dr. Mario X Kid Icarus
-Invincible X Spider-Man
-Buffy X Donkey Kong
-Super Smash Bros. X F-Zero
-Tomb Raider X Croc
-Asterix X Gadget
-The Big Bang Theory X Final Fantasy
-Mario X Plok
-Wrecking Crew X NES Remix
-Super Smash Bros. X Fire Emblem
-Street Fighter X Resident Evil
-Mr. Destructoid appearances
-Mega Man X Asura's Wrath
-Wario X Luigi
-Mario X Astal
-MultiVersus X Duck Dodgers
-Taiko no Tatsujin X Metal Black
-Super Smash Bros. X Fire (G&W)
-Play Action Football X Mario
-Asterix X Bomberman
-The Wonderful 101 X Super Smash Bros.
-Luigi X Wario
-Ice Age X Family Guy
-Uniracers X Mario
-Wii games X Super Smash Bros.
-Super Smash Bros. X Yoshi
-Dinnerladies
-Mario X Yakuman
-Donkey Kong X Punch-Out!!
-Indie Pogo X Road Warriors
-Captain Commando X Resident Evil
-194X X Mega Man
-Antarctic Adventure X Hai no Majutsushi
-Superman X Fortnite
-Donkey Kong X Class of 3000
-Paper Mario X Teenage Mutant Ninja Turtles
-Kururin X Super Smash Bros.
-Creatures X SilverLoad
-Zelda X Barcode Battler
-Gravity Falls X Star vs. the Forces of Evil
-Xenoblade X Super Smash Bros.
-Super Smash Bros. X Zelda
-Punch-Out!! X Golf (Nintendo)
-Nazo no Murasame Jo X Super Smash Bros
-Taiko no Tatsujin X Kill Me Baby
-Magi X Taiko no Tatsujin
-OK K.O.! X Apple & Onion
-Darkstalkers X Quiz Nanairo Dreams
-Wreck-It Ralph X Rally-X
-Gal*Gun X Azure Striker Gunvolt
-Tetris X Asterix
-Angry Birds X Pokémon
-NES Remix X Donkey Kong
-Tetris X Donkey Kong
-Super Smash Bros. X Metal Slug
-Taiko no Tatsujin X Gundam
-Final Fight X Tekken
-Sky Riders X The Fall Guy
-Designing Women X Mario
-Famicom Robot X Star Fox
-Donkey Kong X Sabreman
-Sonic X Team Fortress
-Jill of the Jungle X Mario
-Donkey Kong X King Kong
-Mario X Tetris
-The Binding of Isaac X Zelda
-Taiko no Tatsujin X Mega Man
-Primal X Ghosthunter
-Ghosthunter X Twilight Zone
-Kiki Trick X Mario
-JoJo's Bizarre Adventure X Batman
-Famicom Grand Prix X Super Smash Bros.
-Wario X Splatoon
-Looney Tunes X Scooby-Doo
-Mario X Assassin's Creed
-Dragon Ball X Metroid
-Drawn Together X Zelda
-Batman X JoJo's Bizarre Adventure
-Darkstalkers X Capcom Fighting
-Super Smash Bros. X Dragon Quest
-Class of 3000 X Donkey Kong
-Kaeru no Tame ni Kane wa Naru X Zelda
-Donkey Kong X Asterix
-Taiko no Tatsujin X Ace Attorney
-Metroid X Donkey Kong
-Battletoads X Mario
-Zelda X Strong Bad
-The Stunt Man X The Fall Guy
-Super Smash Bros. X Athena (SNK)
-Super Smash Bros. X Flagman
-Lep's World X Mario
-Mario & Sonic X Yoshi
-JoJo's Bizarre Adventure X Astro Boy
-Super Sentai-Power Rangers X Mario
-Digimon X Taiko no Tatsujin
-Mario X Mirror's Edge
-Commercial Rule
-Resident Evil X Ghosts 'n Goblins
-Chopper Command X Call of Duty
-Konami Man appearances
-Tekken X Tobal
-Mario X Yoshi
-Mario X Barcode Battler
-Kirby X Zelda
-Fortnite X John Wick
-Foster's Home for Imaginary Friends X Mario
-Level-5 20th Anniversary Artwork
-Ace Combat X Super Smash Bros.
-Helmet X Wario
-Card Hero X Super Smash Bros.
-Little Ghost Q-Taro X Mario
-Zelda X Kaeru no Tame ni Kane wa Naru
-Yoshi X Mega Man
-Power Lords
-Gimmick! (Sunsoft) X Barcode Battler
-Mario X Pop'n Music
-Baseball (Nintendo) X Mario
-Doraemon X Mario
+Capcom Girl no Mind Puzzle X Star Gladiator
+Hasbro Comic Book Universe
+OK K.O.! X The Problem Solverz
+Fortnite X Family Guy
 The Official BBC Children in Need Medley
-OK K.O.! X The Moxy Show
-Zero Escape X Zelda
-Legendary Wings X Power Stone
-Coconut Fred X Zelda
-Mario X Punch-Out!!
-Nintendo Badge Arcade X Wario
-Pocket Fighter X Capcom Fighting
-Reize (Mascot)
+Darkstalkers X Red Earth
+Metroid X Pushmo
+Wario X Hogan's Alley
+Jill of the Jungle X Vinyl Goddess from Mars
+Gun Survivor X Darkstalkers
+Dragon Ball X Mana
+Devil World X Tetris
+2007 DirecTV Christmas Commercial
+Zelda X Wii games
+Seaquest (Activision) X Call of Duty
+Just Cause (Eidos) X Sleeping Dogs (Square Enix)
+Donkey Kong X Gremlins
+Mario X Eversion
 Mario X Art Style
-Kid Icarus X Super Smash Bros.
-Tiny Toon Adventures X Mario
-Mario X The Big Bang Theory
-Yoshi X Sonic
-Cars X Monsters (Pixar)
-Star Fox X Asterix
-Mario X James Bond
-Resident Evil X Capcom Black Jack
-Arthur X Mario
-OK K.O.! X Powerpuff Girls
-Scribblenauts X Mario
-Asterix X Maximo
-MultiVersus X Suicide Squad
-Donkey Kong X Dig Dug
-Animal Crossing X Star Fox
-Minecraft X Boonie Bears
-Asterix X Pikmin
-Tekken X Darkstalkers
-Donkey Kong X Monkey (Nippon Television)
-Mario X Captain N
-South Park X Alien (Fox)
-Yoshi X Alex Rider
-Duck Dodgers X MultiVersus
-OK K.O.! X Foster's Home for Imaginary Friends
-Glee X Mario
-Mario X Helmet
-Bill and Ted's Excellent Halloween Adventure
-Capcom Fighting X Devil May Cry
-Yoshi X Donkey Kong
-Wario X Ice Climber
+Netflix Universe commercials
+Star Fox X Zelda
+Jump (Series) X Dragon Ball
+Namco × Capcom X Galaxian
+Wrecking Crew X NES Remix
+Hebereke X Barcode Battler
+Gundam X Taiko no Tatsujin
+Fallout X Doom (ID Software)
+Asterix X Sly
+Nintendo Puzzle Collection X Yoshi
+Mario X Pushmo
+Scarface X Class of '09 (SBN3)
+Street Fighter X Ōkami
+UFA X Samurai Asshole
+Hamtaro X Donkey Kong
+Gears of War X Gary Unmarried
+Donnie Darko X Smurfs
+Animal Crossing X Clu Clu Land
+The Baz (Mascot)
+Running Stadium X Mario
+Mass Effect X Spore
+TimeRiders X Mario
+Mario X Hot Tub Time Machine
+Running to the Moon for a Banquet
+Ellen X Coach (ABC)
+Mario X Kid Icarus
+Taiko no Tatsujin X Disney's Beauty and the Beast
+Austin & Ally X I Didn't Do It (Disney)
+Barcode Battler X Doraemon
+Pokémon X Super Smash Bros./Trophies
+Killer Instinct (Rare) X Conker
+Mario X Scribblenauts
+Paper Mario X Mother
+Meihao Yunyu Olympics Promotional Art
+Mega Man X Super Smash Brothers
+Mario X F-Zero
+Lego Outback
+Mario X Banjo-Kazooie
+Street Fighter X Mega Man
+My Name Is Earl X Pac-Man
+Splinter Cell X Asterix
+Tetris X Donkey Kong
+Game of Thrones X MultiVersus
+Manhole X Super Smash Bros.
+Famicom Grand Prix X Super Smash Bros.
+Final Fantasy X The Matrix
+N-Gang X Donkey Kong
+Donkey Kong X Crazy Kong
+Rad Racer X Nintendo World Championships
+Here Comes Niko! X A Hat in Time
+Link's Crossbow Training X Zelda
+Little Ghost Q-Taro X Doraemon
+Donkey Kong X Scott Pilgrim
+Hellraiser X Mario
+Homestar Runner X Zelda
+Super Smash Bros. X Kirby
+AVGN rule
+Dragon Spirit X Taiko no Tatsujin
+Bonus chapter in Nazo Waku Yakata
+Infinity Train X OK K.O.!
+Billy Madison X Mortal Kombat
+Nintendo Land X Zelda
+Black Adam X MultiVersus
+Mario X Sim
+Harry Potter X Kirby
+Mario X Code Monkeys
+Sky Kid X Party Land
+Warcraft X Zelda
+Super Smash Bros. X Samurai Shodown
+South Park X Star Trek
+Giana Sisters X Mario
+Type 2 link
+Resident Evil X Higemaru
+Resident Evil X Commando (Capcom)
+Donkey Kong X Animal Crossing
+Donkey Kong X Borderlands
+Street Fighter X Quiz Nanairo Dreams
+Mario X Wreck-It Ralph
+Brain Training X Mario
+Jump (Series) X D.Gray-man
+Kiki Trick X Tennis (Nintendo)
+Wario X Fire Emblem
+Punch-Out!! X Tekken
+Minecraft X Donkey Kong
+Taiko no Tatsujin songs
+Family Guy X Futurama
+Captain N X Tetris
+Donkey Kong X Atashin'chi
+F-1 Race cameos
+Asterix X Splinter Cell
+Wario X Famicom Robot
+Street Fighter X Viewtiful Joe
+Slam Masters X Street Fighter
+Mario X Sonic
+Taiko no Tatsujin X Ace Attorney
+Tetris X Urban Champion
+Frank Bruno's Boxing X Punch-Out!!
+Taiko no Tatsujin X Bravoman
+Austin & Ally X K.C. Undercover
+Family Basic games X Donkey Kong
+Donkey Kong X Conker
+Grand Theft Auto X Asterix
+Jessie (Disney) X K.C. Undercover
+Asterix X Unreal
+Super Smash Bros. X The King of Fighters
+Killer Instinct (Rare) X Battletoads
+Fortnite X Goat Simulator
+Friends X Pac-Man
+Art Style X Mario
+NES Remix X Mario
+Beyond Good & Evil X Asterix
+Final Fantasy X Zelda
+Pokémon X Animal Crossing
+Wario X Punch-Out!!
+Final Fantasy X Adventure Time
+The Fairly OddParents X Donkey Kong
+Rally-X X Mario
+I Didn't Do It (Disney) X Austin & Ally
+Call of Duty X Enduro
+Super Stars (Ertl) X The Fall Guy
+Asterix X Jak and Daxter
+Gon X Tekken
+Super Smash Bros. X Henry Stickmin
+Castlevania X Snatcher
+Arguable link
+Castlevania X Captain N
+AR Games X Zelda
+Toriko X Jump (Series)
+South Park X The Fugitive
+Zelda X 1080°
+Donkey Kong X Angel (Warner Bros.)
+Mario X Donkey Kong
+South Park X Bionic Man
+Demon Attack X Call of Duty
+Power Stone X Capcom Fighting
 Mario X Final Fantasy
-Asura's Wrath X Ōkami
-Sonic X Yoshi
-Soul (Namco) X Fast and Furious
-Stunt Race FX X Kirby
-Mother X Donkey Kong
-Kool Aid X Planters
-Big Boy (Mascot)
-Old Spice
+Bleach X Jump Series
+Mr. Peanut X Kool-Aid
+Captain N X Zelda
+Devil May Cry X Capcom Fighting
+Morning Funnies Cereal Commercial
+Panel de Pon X Super Smash Bros.
+Donkey Kong X Mickey Mouse
+Family Basic games X Mario
+Wii games X Mario
+Critical Reflex Promotional Art
+Rocky (United Artists) X Super Stars (Ertl)
+Mario X Manhole
+Procter & Gamble "When We Come Together" Super Bowl Commercial
+Scooby-Doo X Looney Tunes
+Planters - Baby Nut commercial
+Soul (Namco) X Asterix
+Sega Superstars X Wreck-It Ralph
+Tropical Fish X Super Smash Bros.
+Mr. Destructoid (Mascot)
+Mario X Teenage Mutant Ninja Turtles
+Gotcha Force X Capcom Fighting
+Samurai Asshole X UFA
+Tekken X Mario
+Drake & Josh X Mario
+Kirby X F-Zero
+The Mask X Mario
+Uniracers X Wario
+South Park X Alien Nation
+Pitfall X Call of Duty
+Toy Story rule
+Donkey Kong X The Fairly OddParents
+Barcode Battler X Gimmick! (Sunsoft)
+Mickey Mouse X Garfield
+Jump (Series) X My Hero Academia
+The Fall Guy X Sky Riders
+James Bond X Mario
+Super Smash Bros. X James Bond
+Captain N X Donkey Kong
+Captain Commando X Final Fight
+Mario X Spyro
+Mario X Adventure Time
+Terrahawks
+Jessie (Disney) X Mario
+1985 NBC Saturday Morning Cartoons Ad
+Mario and TMNT in McPixel
+Mappy X Donkey Kong
+Resident Evil X Captain Commando
+Uniracers X Yoshi
+Metal Gear X Yu-Gi-Oh
+DreamWorks (Mascot)
+D.Gray-man X Taiko no Tatsujin
+Power Stone X Street Fighter
+Ghosts 'n Goblins X Tekken
+The Poseidon Adventure X The Fall Guy
+Nostalgia Critic X Zelda
+Zelda X The Big Bang Theory
+Mario X NES Remix
+Turn it Around X Taito Harikiri Daifugo
+Super Smash Bros. X Game & Watch
+Predator (Fox) X Street Fighter
+Mario Tennis X Luigi
+Super Smash Bros. X Kid Icarus
+Mario X Fire (G&W)
+Transformers X Sonic
+Ghosts 'n Goblins X Gun Survivor
+Bleach X Jump (Series)
+Mario X Qix
+Game & Watch Gallery X Wario
+Kill Me Baby X Taiko no Tatsujin
+Captain Commando X Marvel Super Heroes (Capcom)
+Megami Tensei X Super Smash Bros.
+Taiko no Tatsujin X Doraemon
+Fast and Furious X Pac-Man
+OK K.O.! X Camp Lazlo
+Raven (Disney) X Hannah Montana
+Kirby X Taiko no Tatsujin
+Soccer (Nintendo) X Animal Crossing
+Braid (Number None) X Donkey Kong
+Tetris X Gyromite
+Type 3 link
+Tetris X Balloon Fight
+Fortnite X Transformers
+Sonic X Mario
+Capcom Fighting X Battle Circuit
+Chibi-Robo! X Wrecking Crew
+194X X Mega Man
+MultiVersus X Joker (DC Comics)
+The Simpsons X Zelda
+Story of Seasons X Zelda
+Fortnite X Invincible
+2019 Walmart Big Game Commercial
+Asura's Wrath X Lost Planet
+Donkey Kong X The Simpsons
+Honey, I Shrunk the Kids X Mario
+Kururin X Super Smash Bros.
+Law & Order X Mario
+Dragon Ball X Mario
+Magi X Taiko no Tatsujin
+Coconut Fred X Mario
+MultiVersus X Black Adam
+Mario X Robot Chicken
+Jump (Series) X One Piece
+Vermin X Mario
+Monster Hunter X Zelda
+Super Smash Bros. X Fatal Fury
+The Beverly Hillbillies X Mario
+OK K.O.! X Evil Con Carne
+Panel de Pon X Tetris
+Planet of the Apes X Snatcher
+Mario Kart X Wrecking Crew
+Mortal Kombat X Dragon Ball
+Indie Pogo X Carrie's Order Up!
+Baseball (Nintendo) X NES Remix
+Kaeru no Tame ni Kane wa Naru X Zelda
+Tekken X Asterix
+Teenage Mutant Ninja Turtles X 3D Dot Game Hereos
+Golden Sun X Zelda
+Kirby X BoxBoy!
+OK K.O.! X Adventure Time
+Mario X Super Smash Bros./Trophies
+Metroid X Dragon Ball
+MediEvil X The Shining
+Jump (Series) X Gintama
+Alex Rider X Mario
+Scott Pilgrim X Punch-Out!!
+Super Smash Bros. X Minecraft
+Street Fighter X Trojan
+Kids' WB NEWvember Promo
+Asterix X Mario
+1080° X Zelda
+The Stunt Man X The Fall Guy
+Frontline X Mario
+Dragon Quest X Super Smash Bros.
+Uniracers X Star Fox
+OK K.O.! X The Life and Times of Juniper Lee
+Super Sentai-Power Rangers X Taiko no Tatsujin
+Super Smash Bros. X Turtle Bridge
+Beavis and Butt-Head X King of the Hill
+Ultraman X Snatcher
+Derek Flint X The Fall Guy
+Mario X Play Action Football
+Octopus X Mario
+Mario X Puzzle League
+South Park X Jurassic Park
+Asterix X Lemmings
+1981 Family Seal Calendar
+2025 Yo Gabba Gabba Coachella Performance
+A Summoning (My Chemical Romance)
+Big Loo
+Fox Kids Ultimate Gag Team Challenge
+It's Pat
+Kids' WB Way Outta the Way Road Trip
+Macy's Thanksgiving Day Parade 1993 Broadway Medley
+Ryan Phillippe SNL Character Monologue
+SNL's "So Long, Farewell"
+SNL 40th Anniversary Musical Medley
+Songs and Stories That Children Love Cover
+The 100th Digital Short
+The Jimmy Awards Musical Medleys
+The Richmeister
+What Up With That?

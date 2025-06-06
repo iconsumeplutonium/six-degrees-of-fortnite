@@ -16,7 +16,18 @@ def scrape(url: str) -> list[dict]:
         return []
     
     soup: bs4.BeautifulSoup = bs4.BeautifulSoup(webpage.content, 'lxml')
-    table: bs4.ResultSet = soup.find('table').find('tbody').find_all('tr')
+
+    # if this line raises an "'NoneType' object has no attribute 'find'" error, that means this article is probably an ad/skit/etc 
+    # and needs to be moved into misc_removals.txt. i could have this automatically write to that file, but the situation im worried about is if
+    # the structure of the site changes, and valid articles get written to misc_removals and get filtered out. so im sticking to manually moving it to the file for now.
+    # i havent had any reason to think the structure would change, so maybe ill do that at some point.
+    try:
+        table: bs4.ResultSet = soup.find('table').find('tbody').find_all('tr')
+    except AttributeError as e:
+        tqdm.write(f"Unable to find a table in this article. Are you sure this is a franchise? Terminating...")
+        raise e
+    
+
     crossovers: list[dict] = []
 
     for i in range(len(table)):
@@ -37,19 +48,6 @@ def scrape(url: str) -> list[dict]:
         # Dead or Alive has a 2.5 crossover with The Dangers in my Heart, listed as a 2.5a crossover. However, the HTML structure has a hidden
         # ".25" in a <span> tag with display:none. This fucks it up. Just remove the ".25" from the string
         linkType: str = TDs[4].get_text().replace('a', '').replace('.25', '') 
-
-        # try:
-        #     # arrow type: Left, Right, Left & Right, Double Left, Double Right, Dash
-        #     crossoverDirection: str = TDs[0].find('a').find('img').get('alt')
-        # except Exception as e:
-        #     # if the arrow is broken, just skip
-        #     # https://fictionalcrossover.fandom.com/wiki/Peter_Pan_(Disney)
-        #     # fortnite is a right arrow here, but we're skipping all right arrows
-        #     # what do we do here?
-        #     print("error error")
-        #     print(crossovers)
-        #     exit(1)
-        #     continue
 
         # date and description
         date        : str = TDs[2].get_text()
@@ -203,8 +201,8 @@ if __name__ == "__main__":
             
             i += 1
     except Exception as e:
-        print("ERROR: Something went wrong")
-        print(e)
+        tqdm.write("ERROR: Something went wrong")
+        tqdm.write(str(e))
     finally:
         # errors if the script was killed with control c
         try:
