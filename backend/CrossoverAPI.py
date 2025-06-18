@@ -20,6 +20,7 @@ api.add_middleware(
     allow_headers=["*"],
 )
 
+# todo: precalculate all paths to fortnite and just do a lookup to that
 @api.post("/path/{franchise}")
 async def GetPath(franchise: str, request: Request, minLinkType: int = 9999999):
     if franchise not in search.adj:
@@ -29,6 +30,7 @@ async def GetPath(franchise: str, request: Request, minLinkType: int = 9999999):
 
     return search.bfs(search.idFromName[franchise], minLinkType, False)
 
+# returns the gzip-compressed json representation of the graph (with node positions precalculated)
 @api.get("/graph")
 async def GetGraph(request: Request):
     with open('backend/graph.gzip', 'rb') as file:

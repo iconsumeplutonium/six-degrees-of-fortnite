@@ -3,7 +3,7 @@ import gzip
 from collections import defaultdict
 import networkx
 
-def GetCrossoversInGraphFormat():
+if __name__ == "__main__":
     conn: sqlite3.Connection = sqlite3.connect('crossovers.db')
     cursor: sqlite3.Cursor = conn.cursor()
 
@@ -26,10 +26,12 @@ def GetCrossoversInGraphFormat():
         adjacencyList[id] = []
 
 
-    # build graph and get final positions of all nodes
+    # build graph and get final positions of all nodes (because calculating this live takes too long. on my machine, this takes anywhere from 10 to 40 seconds depending on the algorithm)
+    # todo: make this return positions in 3D and make a three.js representation?
     G: networkx.Graph = networkx.Graph(adjacencyList)
     positions: dict[int, list] = networkx.spectral_layout(G)
 
+    # construct the json representation of the graph
     nodes: list[dict] = []
     edges: list[dict] = []
     for id, name in franchises:
@@ -50,25 +52,3 @@ def GetCrossoversInGraphFormat():
 
     with open('graph.gzip', 'wb') as file:
         file.write(compressedGraph)
-
-
-    # print(position_list)
-
-    # # Construct nodes and edges
-    # nodes = []
-    # edges = []
-
-    # for id, name in games:
-    #     connections = link_map[id]
-    #     value: int = len(connections)
-    #     nodes.append({"id": id, "name": name, "value": value})
-
-    #     for c in connections:
-    #         edges.append({"source": id, "target": c})
-
-    # graphData: dict[str, list] = {"nodes": nodes, "links": edges}
-    # jsonString: str = json.dumps(graphData, separators=(',', ':')) # disallow spaces between the key and values and commas and stuff to further reduce space
-    
-    # return gzip.compress(jsonString.encode(('utf-8')))
-
-GetCrossoversInGraphFormat()
