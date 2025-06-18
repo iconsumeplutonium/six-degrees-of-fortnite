@@ -38,11 +38,9 @@ export function drawHover(context: CanvasRenderingContext2D, data: PlainObject, 
     const size = settings.labelSize;
     const font = settings.labelFont;
     const weight = settings.labelWeight;
-    const subLabelSize = size - 2;
 
     const label = data.label;
-    const subLabel = data.tag !== "unknown" ? data.tag : "";
-    const clusterLabel = data.clusterLabel;
+    const clusterLabel = `${data.outboundLinks} links`;
 
     // Then we draw the label background
     context.beginPath();
@@ -54,21 +52,17 @@ export function drawHover(context: CanvasRenderingContext2D, data: PlainObject, 
 
     context.font = `${weight} ${size}px ${font}`;
     const labelWidth = context.measureText(label).width;
-    context.font = `${weight} ${subLabelSize}px ${font}`;
-    const subLabelWidth = subLabel ? context.measureText(subLabel).width : 0;
-    context.font = `${weight} ${subLabelSize}px ${font}`;
     const clusterLabelWidth = clusterLabel ? context.measureText(clusterLabel).width : 0;
 
-    const textWidth = Math.max(labelWidth, subLabelWidth, clusterLabelWidth);
+    const textWidth = Math.max(labelWidth, clusterLabelWidth);
 
     const x = Math.round(data.x);
     const y = Math.round(data.y);
     const w = Math.round(textWidth + size / 2 + data.size + 3);
     const hLabel = Math.round(size / 2 + 4);
-    const hSubLabel = subLabel ? Math.round(subLabelSize / 2 + 9) : 0;
-    const hClusterLabel = Math.round(subLabelSize / 2 + 9);
+    const hClusterLabel = Math.round(size / 2 + 4);
 
-    drawRoundRect(context, x, y - hSubLabel - 12, w, hClusterLabel + hLabel + hSubLabel + 12, 5);
+    drawRoundRect(context, x, y - 12, w, hLabel + hClusterLabel + 12, 5);
     context.closePath();
     context.fill();
 
@@ -76,20 +70,15 @@ export function drawHover(context: CanvasRenderingContext2D, data: PlainObject, 
     context.shadowOffsetY = 0;
     context.shadowBlur = 0;
 
-    // And finally we draw the labels
+    // Draw the main label
     context.fillStyle = TEXT_COLOR;
     context.font = `${weight} ${size}px ${font}`;
     context.fillText(label, data.x + data.size + 3, data.y + size / 3);
 
-    if (subLabel) {
-        context.fillStyle = TEXT_COLOR;
-        context.font = `${weight} ${subLabelSize}px ${font}`;
-        context.fillText(subLabel, data.x + data.size + 3, data.y - (2 * size) / 3 - 2);
-    }
-
+    // Draw the cluster label underneath
     context.fillStyle = data.color;
-    context.font = `${weight} ${subLabelSize}px ${font}`;
-    context.fillText(clusterLabel, data.x + data.size + 3, data.y + size / 3 + 3 + subLabelSize);
+    context.font = `${weight} ${size}px ${font}`;
+    context.fillText(clusterLabel, data.x + data.size + 3, data.y + size / 3 + 13);
 }
 
 export function drawLabel(
@@ -126,7 +115,14 @@ export const LoadGraph = () => {
                 console.log(data);
                 const graph = new Graph();
                 data.nodes.forEach(node => {
-                    graph.addNode(node.id, { x: node.position[0], y: node.position[1], size: Math.log(node.value), label: node.name, color: "#FA4F40" });
+                    graph.addNode(node.id, { 
+                        x: node.position[0], 
+                        y: node.position[1], 
+                        size: Math.log(node.value), 
+                        label: node.name, 
+                        color: `#${Math.floor(Math.random()*16777215).toString(16)}`, 
+                        outboundLinks: node.value 
+                    });
                 });
 
                 data.links.forEach(link => {

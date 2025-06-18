@@ -29,7 +29,7 @@ if __name__ == "__main__":
     # build graph and get final positions of all nodes (because calculating this live takes too long. on my machine, this takes anywhere from 10 to 40 seconds depending on the algorithm)
     # todo: make this return positions in 3D and make a three.js representation?
     G: networkx.Graph = networkx.Graph(adjacencyList)
-    positions: dict[int, list] = networkx.spectral_layout(G)
+    positions: dict[int, list] = networkx.spectral_layout(G) # networkx.spring_layout(G, k=0.3, dim=3) for 3d
 
     # construct the json representation of the graph
     nodes: list[dict] = []
