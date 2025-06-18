@@ -4,6 +4,7 @@ import Autocomplete from './components/Autocomplete';
 import Timeline from './components/Timeline';
 import Navigation from './components/Navigation';
 import './styles/App.css';
+import CrossoverGraph from './CrossoverGraph';
 
 function App() {
 	const [selectedFranchise, setSelectedFranchise] = useState('')

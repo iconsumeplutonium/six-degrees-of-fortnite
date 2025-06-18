@@ -9,6 +9,11 @@ function Navigation() {
 			</NavLink>
 			<span className="verticalSeparator"></span>
 
+			<NavLink to="/3d-visualizer" end className="navLinkText">
+				3D Visualizer
+			</NavLink>
+			<span className="verticalSeparator"></span>
+
 			<NavLink to="/about" end className="navLinkText">
 				About
 			</NavLink>
