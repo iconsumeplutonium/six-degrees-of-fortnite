@@ -75,9 +75,9 @@ const CrossoverGraphThree = () => {
 
                 const matrix = new THREE.Matrix4();
                 const posScale = 100;
-                const sizeScale = (x: number) => {return Math.cbrt(x)};
+                const sizeScale = (x: number) => { return Math.cbrt(x) };
                 data.nodes.forEach((node: Vertex, index: number) => {
-                    matrix.makeTranslation(node.position[0] * posScale, node.position[1] * posScale, node.position[2] * posScale);                    
+                    matrix.makeTranslation(node.position[0] * posScale, node.position[1] * posScale, node.position[2] * posScale);
                     matrix.scale(new THREE.Vector3(sizeScale(node.value), sizeScale(node.value), sizeScale(node.value)));
                     instancedMesh.setMatrixAt(index, matrix);
                 });
@@ -139,7 +139,7 @@ const CrossoverGraphThree = () => {
                     `,
                     transparent: true
                 });
-                
+
                 const lines = new THREE.LineSegments(lineGeometry, lineMaterial);
                 scene.add(lines);
             });
@@ -166,11 +166,20 @@ const CrossoverGraphThree = () => {
             <div
                 ref={mountRef}
                 style={{
-                    width: '100vw',
-                    height: '100vh',
-                    overflow: 'hidden'
+                    width: '90vw',
+                    height: '80vh',
+                    overflow: 'hidden',
+                    position: 'fixed',
+                    top: '10%',
+                    left: '50%',
+                    transform: 'translateX(-50%)',
                 }}
             />
+            <style>{`
+                body {
+                    overflow: hidden;
+                }
+            `}</style>
         </>
     );
 };
