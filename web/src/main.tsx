@@ -5,13 +5,14 @@ import './index.css'
 import App from './App.tsx'
 import About from './About.tsx'
 import CrossoverGraph from './CrossoverGraph.tsx'
+import CrossoverGraphThree from './CrossoverGraphThree.tsx'
 
 createRoot(document.getElementById('root')!).render(
 	<BrowserRouter>
 		<Routes>
 			<Route path='/' element={<StrictMode><App /></StrictMode>}/>
 			<Route path='about' element={<About />} />
-			<Route path='3d-visualizer' element={<CrossoverGraph />} />
+			<Route path='3d-visualizer' element={<CrossoverGraphThree />} />
 		</Routes>
 	</BrowserRouter>,
 )

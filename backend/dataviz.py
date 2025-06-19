@@ -29,7 +29,7 @@ if __name__ == "__main__":
     # build graph and get final positions of all nodes (because calculating this live takes too long. on my machine, this takes anywhere from 10 to 40 seconds depending on the algorithm)
     # todo: make this return positions in 3D and make a three.js representation?
     G: networkx.Graph = networkx.Graph(adjacencyList)
-    positions: dict[int, list] = networkx.spectral_layout(G) # networkx.spring_layout(G, k=0.3, dim=3) for 3d
+    positions: dict[int, list] = networkx.kamada_kawai_layout(G, dim=3) # networkx.spring_layout(G, k=0.3, dim=3)# for 3d
 
     # construct the json representation of the graph
     nodes: list[dict] = []
@@ -39,8 +39,11 @@ if __name__ == "__main__":
             "id": id, 
             "name": name, 
             "value": len(adjacencyList[id]),
-            "position": list(positions[id])
+            "position": [float(c) for c in positions[id]]
         })
+
+        if len(positions[id]) != 3:
+            raise ValueError("len is", len(positions[id]))
 
         for neighbor in adjacencyList[id]:
             edges.append({"source": id, "target": neighbor})
@@ -50,5 +53,5 @@ if __name__ == "__main__":
     jsonString: str = json.dumps(graphData, separators=(',', ':')) # disallow spaces between the key and values and commas and stuff to further reduce space
     compressedGraph: bytes = gzip.compress(jsonString.encode(('utf-8')))
 
-    with open('graph.gzip', 'wb') as file:
+    with open('backend/graph.gzip', 'wb') as file:
         file.write(compressedGraph)
