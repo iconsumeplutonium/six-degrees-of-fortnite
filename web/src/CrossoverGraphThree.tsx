@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import Navigation from './components/Navigation';
@@ -16,8 +16,15 @@ type Edge = {
     target: number;
 }
 
+type Graph = {
+    nodes: Vertex[],
+    links: Edge[]
+}
+
 const CrossoverGraphThree = () => {
     const mountRef = useRef<HTMLDivElement>(null);
+    // const [graphData, setGraphData] = useState({} as Graph);
+    const graphDataRef = useRef<Graph | null>(null);
 
     useEffect(() => {
         if (!mountRef.current) return;
@@ -62,8 +69,10 @@ const CrossoverGraphThree = () => {
             .then(response => {
                 return response.json();
             })
-            .then(data => {
+            .then((data: Graph) => {
                 console.log(data);
+                // setGraphData(data);
+                graphDataRef.current = data;
 
                 // instanced rendering of spheres for each node in the graph
                 const sphereGeometry = new THREE.SphereGeometry(0.1, 16, 16);
@@ -142,17 +151,47 @@ const CrossoverGraphThree = () => {
 
                 const lines = new THREE.LineSegments(lineGeometry, lineMaterial);
                 scene.add(lines);
+
+                RenderAllShapes();
             });
 
-        const animate = () => {
+        const raycaster = new THREE.Raycaster();
+        const pointer = new THREE.Vector2();
+        let isOverCanvas: boolean = false;
+        let hasClicked: boolean = false;
+
+
+        renderer.domElement.addEventListener('click',        (_: MouseEvent)     => { hasClicked = true; })
+        renderer.domElement.addEventListener('pointerleave', ()                  => { isOverCanvas = false; });
+        renderer.domElement.addEventListener('pointermove',  (event: MouseEvent) => {
+            const rect = renderer.domElement.getBoundingClientRect();
+            pointer.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
+            pointer.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
+    
+            isOverCanvas = (event.clientX >= rect.left && event.clientX <= rect.right && event.clientY >= rect.top && event.clientY <= rect.bottom);
+        });
+
+        const RenderAllShapes = () => {
             stats.begin();
             controls.update();
+            if (isOverCanvas && hasClicked) {
+                hasClicked = false;
+
+                raycaster.setFromCamera(pointer, camera);
+                const intersections = raycaster.intersectObjects(scene.children);                
+                const sphereIntersection = intersections.find((intersection: THREE.Intersection) => intersection.object instanceof THREE.InstancedMesh);
+                
+                if (sphereIntersection) {
+                    const clickedNode = graphDataRef.current?.nodes[sphereIntersection.instanceId];
+
+                    console.log(clickedNode)
+                }
+            }
+
             renderer.render(scene, camera);
             stats.end();
-            requestAnimationFrame(animate);
+            requestAnimationFrame(RenderAllShapes);
         };
-
-        animate();
 
         return () => {
             window.removeEventListener('resize', handleResize);
