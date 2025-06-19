@@ -21,6 +21,9 @@ type Graph = {
     links: Edge[]
 }
 
+const posScale = 100;
+const sizeScale = (x: number) => { return Math.cbrt(x) };
+
 const CrossoverGraphThree = () => {
     const mountRef = useRef<HTMLDivElement>(null);      // hold the canvas
     const graphDataRef = useRef<Graph | null>(null);    // holds graph data
@@ -78,14 +81,9 @@ const CrossoverGraphThree = () => {
                 // instanced rendering of spheres for each node in the graph
                 const sphereGeometry = new THREE.SphereGeometry(0.1, 16, 16);
                 const sphereMaterial = new THREE.MeshBasicMaterial({ color: 0x0077ff });
-
                 const instancedMesh = new THREE.InstancedMesh(sphereGeometry, sphereMaterial, data.nodes.length);
-                instancedMesh.castShadow = true;
-                instancedMesh.receiveShadow = true;
 
                 const matrix = new THREE.Matrix4();
-                const posScale = 100;
-                const sizeScale = (x: number) => { return Math.cbrt(x) };
                 data.nodes.forEach((node: Vertex, index: number) => {
                     matrix.makeTranslation(node.position[0] * posScale, node.position[1] * posScale, node.position[2] * posScale);
                     matrix.scale(new THREE.Vector3(sizeScale(node.value), sizeScale(node.value), sizeScale(node.value)));
@@ -152,8 +150,6 @@ const CrossoverGraphThree = () => {
 
                 const lines = new THREE.LineSegments(lineGeometry, lineMaterial);
                 scene.add(lines);
-
-                RenderAllShapes();
             });
 
         const raycaster = new THREE.Raycaster();
@@ -175,6 +171,14 @@ const CrossoverGraphThree = () => {
         renderer.domElement.addEventListener('pointerleave', onMouseLeave);
         renderer.domElement.addEventListener('pointermove', onMouseMove);
 
+        const selectionSphereGeometry = new THREE.SphereGeometry(0.101, 16, 16);
+        const selectionSphereMaterial = new THREE.MeshStandardMaterial({
+            color: 0x0077ff,
+            emissive: 0x0077ff,
+            emissiveIntensity: 20,
+        });
+        const selectionSphere = new THREE.Mesh(selectionSphereGeometry, selectionSphereMaterial);
+
         const RenderAllShapes = () => {
             stats.begin();
             controls.update();
@@ -189,6 +193,20 @@ const CrossoverGraphThree = () => {
                     const clickedNode = graphDataRef.current?.nodes[sphereIntersection.instanceId];
 
                     console.log(clickedNode)
+
+                    // Set position and scale directly
+                    selectionSphere.position.set(
+                        clickedNode.position[0] * posScale,
+                        clickedNode.position[1] * posScale,
+                        clickedNode.position[2] * posScale
+                    );
+
+                    const scale = sizeScale(clickedNode.value);
+                    selectionSphere.scale.set(scale, scale, scale);
+
+                    scene.add(selectionSphere);
+                } else {
+                    scene.remove(selectionSphere);
                 }
             }
 
@@ -196,6 +214,8 @@ const CrossoverGraphThree = () => {
             stats.end();
             animationIdRef.current = requestAnimationFrame(RenderAllShapes);
         };
+
+        RenderAllShapes();
 
         return () => {
             if (animationIdRef.current) cancelAnimationFrame(animationIdRef.current);
