@@ -3,6 +3,7 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import Navigation from './components/Navigation';
 import Stats from 'stats-js';
+import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
 
 type Vertex = {
     id: number;
@@ -20,6 +21,23 @@ type Graph = {
     nodes: Vertex[],
     links: Edge[]
 }
+
+// Create info box element
+function createInfoBox(node: Vertex) {
+    const div = document.createElement('div');
+    div.className = 'node-info';
+    div.innerHTML = `
+        <h3>${node.name}</h3>
+        <p>Connections: ${node.value}</p>
+    `;
+    div.style.fontSize = '10px';
+    div.style.padding = '6px 0px';
+
+
+    const cssobj = new CSS2DObject(div);
+
+    return cssobj;
+};
 
 const posScale = 100;
 const sizeScale = (x: number) => { return Math.cbrt(x) };
@@ -41,14 +59,21 @@ const CrossoverGraphThree = () => {
 
         const renderer = new THREE.WebGLRenderer({ antialias: true });
         renderer.setSize(window.innerWidth, window.innerHeight);
-        // renderer.shadowMap.enabled = true;
-        // renderer.shadowMap.type = THREE.PCFSoftShadowMap;
         mountRef.current.appendChild(renderer.domElement);
+
+        const labelRenderer = new CSS2DRenderer();
+        labelRenderer.setSize(window.innerWidth, window.innerHeight);
+        labelRenderer.domElement.style.position = 'absolute';
+        labelRenderer.domElement.style.top = '0px';
+        labelRenderer.domElement.style.pointerEvents = 'none';
+        mountRef.current.appendChild(labelRenderer.domElement);
+        let currentInfoBox: CSS2DObject | null = null;
 
         const handleResize = () => {
             camera.aspect = window.innerWidth / window.innerHeight;
             camera.updateProjectionMatrix();
             renderer.setSize(window.innerWidth, window.innerHeight);
+            labelRenderer.setSize(window.innerWidth, window.innerHeight);
         };
         window.addEventListener('resize', handleResize);
 
@@ -190,11 +215,19 @@ const CrossoverGraphThree = () => {
                 const sphereIntersection = intersections.find((intersection: THREE.Intersection) => intersection.object instanceof THREE.InstancedMesh);
 
                 if (sphereIntersection) {
-                    const clickedNode = graphDataRef.current?.nodes[sphereIntersection.instanceId];
-
+                    const clickedNode: Vertex = graphDataRef.current?.nodes[sphereIntersection.instanceId];
                     console.log(clickedNode)
 
-                    // Set position and scale directly
+                    if (currentInfoBox) scene.remove(currentInfoBox);
+                    currentInfoBox = createInfoBox(clickedNode);
+                    currentInfoBox.position.set(
+                        clickedNode.position[0] * posScale,
+                        clickedNode.position[1] * posScale,
+                        clickedNode.position[2] * posScale
+                    );
+                    scene.add(currentInfoBox);
+
+
                     selectionSphere.position.set(
                         clickedNode.position[0] * posScale,
                         clickedNode.position[1] * posScale,
@@ -207,10 +240,15 @@ const CrossoverGraphThree = () => {
                     scene.add(selectionSphere);
                 } else {
                     scene.remove(selectionSphere);
+                    if (currentInfoBox) {
+                        scene.remove(currentInfoBox);
+                        currentInfoBox = null;
+                    }
                 }
             }
 
             renderer.render(scene, camera);
+            labelRenderer.render(scene, camera);
             stats.end();
             animationIdRef.current = requestAnimationFrame(RenderAllShapes);
         };
@@ -225,8 +263,8 @@ const CrossoverGraphThree = () => {
             renderer.domElement.removeEventListener('pointerleave', onMouseLeave);
             renderer.domElement.removeEventListener('pointermove', onMouseMove);
 
-
             renderer.dispose();
+            labelRenderer.dispose();
         };
     }, []);
 
@@ -248,6 +286,24 @@ const CrossoverGraphThree = () => {
             <style>{`
                 body {
                     overflow: hidden;
+                }
+                .node-info {
+                    background: rgba(0, 0, 0, 0.8);
+                    color: white;
+                    padding: 10px;
+                    border-radius: 5px;
+                    font-family: Arial, sans-serif;
+                    font-size: 12px;
+                    pointer-events: auto;
+                    min-width: 150px;
+                    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+                }
+                .node-info h3 {
+                    margin: 0 0 5px 0;
+                    color: #0077ff;
+                }
+                .node-info p {
+                    margin: 2px 0;
                 }
             `}</style>
         </>
