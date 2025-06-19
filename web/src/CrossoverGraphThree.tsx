@@ -22,9 +22,10 @@ type Graph = {
 }
 
 const CrossoverGraphThree = () => {
-    const mountRef = useRef<HTMLDivElement>(null);
-    // const [graphData, setGraphData] = useState({} as Graph);
-    const graphDataRef = useRef<Graph | null>(null);
+    const mountRef = useRef<HTMLDivElement>(null);      // hold the canvas
+    const graphDataRef = useRef<Graph | null>(null);    // holds graph data
+    const animationIdRef = useRef<number | null>(null); // holds current animation frame
+
 
     useEffect(() => {
         if (!mountRef.current) return;
@@ -160,16 +161,19 @@ const CrossoverGraphThree = () => {
         let isOverCanvas: boolean = false;
         let hasClicked: boolean = false;
 
-
-        renderer.domElement.addEventListener('click',        (_: MouseEvent)     => { hasClicked = true; })
-        renderer.domElement.addEventListener('pointerleave', ()                  => { isOverCanvas = false; });
-        renderer.domElement.addEventListener('pointermove',  (event: MouseEvent) => {
+        const handleClick = (_: MouseEvent) => { hasClicked = true; };
+        const onMouseLeave = () => { isOverCanvas = false; }
+        const onMouseMove = (event: MouseEvent) => {
             const rect = renderer.domElement.getBoundingClientRect();
             pointer.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
             pointer.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
-    
+
             isOverCanvas = (event.clientX >= rect.left && event.clientX <= rect.right && event.clientY >= rect.top && event.clientY <= rect.bottom);
-        });
+        }
+
+        renderer.domElement.addEventListener('click', handleClick)
+        renderer.domElement.addEventListener('pointerleave', onMouseLeave);
+        renderer.domElement.addEventListener('pointermove', onMouseMove);
 
         const RenderAllShapes = () => {
             stats.begin();
@@ -178,9 +182,9 @@ const CrossoverGraphThree = () => {
                 hasClicked = false;
 
                 raycaster.setFromCamera(pointer, camera);
-                const intersections = raycaster.intersectObjects(scene.children);                
+                const intersections = raycaster.intersectObjects(scene.children);
                 const sphereIntersection = intersections.find((intersection: THREE.Intersection) => intersection.object instanceof THREE.InstancedMesh);
-                
+
                 if (sphereIntersection) {
                     const clickedNode = graphDataRef.current?.nodes[sphereIntersection.instanceId];
 
@@ -190,11 +194,18 @@ const CrossoverGraphThree = () => {
 
             renderer.render(scene, camera);
             stats.end();
-            requestAnimationFrame(RenderAllShapes);
+            animationIdRef.current = requestAnimationFrame(RenderAllShapes);
         };
 
         return () => {
+            if (animationIdRef.current) cancelAnimationFrame(animationIdRef.current);
+
             window.removeEventListener('resize', handleResize);
+            renderer.domElement.removeEventListener('click', handleClick)
+            renderer.domElement.removeEventListener('pointerleave', onMouseLeave);
+            renderer.domElement.removeEventListener('pointermove', onMouseMove);
+
+
             renderer.dispose();
         };
     }, []);
