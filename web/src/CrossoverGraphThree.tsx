@@ -1,9 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
-import * as THREE from 'three';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import Navigation from './components/Navigation';
-import Stats from 'stats-js';
+import * as THREE from 'three';
+import Stats from 'three/examples/jsm/libs/stats.module.js';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
+import { Font, FontLoader } from 'three/addons/loaders/FontLoader.js';
+import { TextGeometry } from 'three/addons/geometries/TextGeometry.js';
 
 type Vertex = {
     id: number;
@@ -22,6 +24,8 @@ type Graph = {
     links: Edge[]
 }
 
+let font: Font;
+
 // Create info box element
 function createInfoBox(node: Vertex) {
     const div = document.createElement('div');
@@ -38,6 +42,31 @@ function createInfoBox(node: Vertex) {
 
     return cssobj;
 };
+
+
+// choose a point that is always to the right of the current selected vertex 
+function CreateInfoBoxMeshGeometry(font: Font, node: Vertex, cameraRight: THREE.Vector3) {
+    const nodePos = new THREE.Vector3(...node.position.map(c => c * posScale));
+    // const dirToCamera = nodePos.sub(cameraPos).normalize();
+    const newPos = nodePos.add(cameraRight.multiplyScalar(2.0));
+
+    const geometry = new TextGeometry(`${node.name}\n`, {
+        font: font,
+        size: 0.5,
+        depth: 0,
+        curveSegments: 12,
+    });
+
+    geometry.center();
+
+    const mesh = new THREE.Mesh(geometry, new THREE.MeshBasicMaterial({ color: 0xff0000 }));
+    mesh.position.set(newPos.x, newPos.y, newPos.z);
+
+    return mesh;
+}
+
+
+
 
 const posScale = 100;
 const sizeScale = (x: number) => { return Math.cbrt(x) };
@@ -67,7 +96,7 @@ const CrossoverGraphThree = () => {
         labelRenderer.domElement.style.top = '0px';
         labelRenderer.domElement.style.pointerEvents = 'none';
         mountRef.current.appendChild(labelRenderer.domElement);
-        let currentInfoBox: CSS2DObject | null = null;
+        let currentInfoBox: THREE.Mesh | null = null;
 
         const handleResize = () => {
             camera.aspect = window.innerWidth / window.innerHeight;
@@ -204,6 +233,8 @@ const CrossoverGraphThree = () => {
         });
         const selectionSphere = new THREE.Mesh(selectionSphereGeometry, selectionSphereMaterial);
 
+
+
         const RenderAllShapes = () => {
             stats.begin();
             controls.update();
@@ -218,21 +249,19 @@ const CrossoverGraphThree = () => {
                     const clickedNode: Vertex = graphDataRef.current?.nodes[sphereIntersection.instanceId];
                     console.log(clickedNode)
 
+                    const clickedNodePosWorldSpace = new THREE.Vector3(...clickedNode.position.map(c => c * posScale));
+
                     if (currentInfoBox) scene.remove(currentInfoBox);
-                    currentInfoBox = createInfoBox(clickedNode);
-                    currentInfoBox.position.set(
-                        clickedNode.position[0] * posScale,
-                        clickedNode.position[1] * posScale,
-                        clickedNode.position[2] * posScale
-                    );
+                    const dir = new THREE.Vector3();
+                    camera.getWorldDirection(dir);
+                    const right = dir.cross(camera.up);
+
+                    currentInfoBox = CreateInfoBoxMeshGeometry(font, clickedNode, right);
+                    // currentInfoBox.position.copy(clickedNodePosWorldSpace);
                     scene.add(currentInfoBox);
 
 
-                    selectionSphere.position.set(
-                        clickedNode.position[0] * posScale,
-                        clickedNode.position[1] * posScale,
-                        clickedNode.position[2] * posScale
-                    );
+                    selectionSphere.position.copy(clickedNodePosWorldSpace);
 
                     const scale = sizeScale(clickedNode.value);
                     selectionSphere.scale.set(scale, scale, scale);
@@ -247,13 +276,20 @@ const CrossoverGraphThree = () => {
                 }
             }
 
+            if (currentInfoBox) currentInfoBox.lookAt(camera.position);
+
             renderer.render(scene, camera);
             labelRenderer.render(scene, camera);
             stats.end();
             animationIdRef.current = requestAnimationFrame(RenderAllShapes);
         };
 
-        RenderAllShapes();
+        const fontLoader = new FontLoader();
+        fontLoader.load("https://threejs.org/examples/fonts/helvetiker_regular.typeface.json", function (f: Font) {
+            font = f;
+            RenderAllShapes();
+        })
+
 
         return () => {
             if (animationIdRef.current) cancelAnimationFrame(animationIdRef.current);
@@ -264,7 +300,6 @@ const CrossoverGraphThree = () => {
             renderer.domElement.removeEventListener('pointermove', onMouseMove);
 
             renderer.dispose();
-            labelRenderer.dispose();
         };
     }, []);
 
