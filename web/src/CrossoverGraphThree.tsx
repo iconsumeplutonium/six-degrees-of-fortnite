@@ -6,75 +6,17 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
 import { Font, FontLoader } from 'three/addons/loaders/FontLoader.js';
 import { TextGeometry } from 'three/addons/geometries/TextGeometry.js';
+import { Vertex, Edge, Graph } from './VisualizerUtilities.tsx';
+import * as VisualizerUtils from './VisualizerUtilities.tsx';
 
-type Vertex = {
-    id: number;
-    name: string;
-    value: number;
-    position: number[];
-}
-
-type Edge = {
-    source: number;
-    target: number;
-}
-
-type Graph = {
-    nodes: Vertex[],
-    links: Edge[]
-}
 
 let font: Font;
-
-// Create info box element
-function createInfoBox(node: Vertex) {
-    const div = document.createElement('div');
-    div.className = 'node-info';
-    div.innerHTML = `
-        <h3>${node.name}</h3>
-        <p>Connections: ${node.value}</p>
-    `;
-    div.style.fontSize = '10px';
-    div.style.padding = '6px 0px';
-
-
-    const cssobj = new CSS2DObject(div);
-
-    return cssobj;
-};
-
-
-// choose a point that is always to the right of the current selected vertex 
-function CreateInfoBoxMeshGeometry(font: Font, node: Vertex, cameraRight: THREE.Vector3) {
-    const nodePos = new THREE.Vector3(...node.position.map(c => c * posScale));
-    // const dirToCamera = nodePos.sub(cameraPos).normalize();
-    const newPos = nodePos.add(cameraRight.multiplyScalar(2.0));
-
-    const geometry = new TextGeometry(`${node.name}\n`, {
-        font: font,
-        size: 0.5,
-        depth: 0,
-        curveSegments: 12,
-    });
-
-    geometry.center();
-
-    const mesh = new THREE.Mesh(geometry, new THREE.MeshBasicMaterial({ color: 0xff0000 }));
-    mesh.position.set(newPos.x, newPos.y, newPos.z);
-
-    return mesh;
-}
-
-
-
-
-const posScale = 100;
-const sizeScale = (x: number) => { return Math.cbrt(x) };
 
 const CrossoverGraphThree = () => {
     const mountRef = useRef<HTMLDivElement>(null);      // hold the canvas
     const graphDataRef = useRef<Graph | null>(null);    // holds graph data
     const animationIdRef = useRef<number | null>(null); // holds current animation frame
+    const selectedVertexRef = useRef<Vertex | null>(null); // Change to ref
 
 
     useEffect(() => {
@@ -128,82 +70,11 @@ const CrossoverGraphThree = () => {
                 return response.json();
             })
             .then((data: Graph) => {
-                console.log(data);
-                // setGraphData(data);
                 graphDataRef.current = data;
 
-                // instanced rendering of spheres for each node in the graph
-                const sphereGeometry = new THREE.SphereGeometry(0.1, 16, 16);
-                const sphereMaterial = new THREE.MeshBasicMaterial({ color: 0x0077ff });
-                const instancedMesh = new THREE.InstancedMesh(sphereGeometry, sphereMaterial, data.nodes.length);
-
-                const matrix = new THREE.Matrix4();
-                data.nodes.forEach((node: Vertex, index: number) => {
-                    matrix.makeTranslation(node.position[0] * posScale, node.position[1] * posScale, node.position[2] * posScale);
-                    matrix.scale(new THREE.Vector3(sizeScale(node.value), sizeScale(node.value), sizeScale(node.value)));
-                    instancedMesh.setMatrixAt(index, matrix);
-                });
-
-                instancedMesh.instanceMatrix.needsUpdate = true;
-                scene.add(instancedMesh);
-
-
-                // instanced rendering of lines for each edge in the graph with distance-based fading
-                const points: THREE.Vector3[] = [];
-                data.links.forEach((link: Edge) => {
-                    const sourceNode = data.nodes.find((node: Vertex) => node.id === link.source);
-                    const targetNode = data.nodes.find((node: Vertex) => node.id === link.target);
-                    points.push(
-                        new THREE.Vector3(sourceNode.position[0] * posScale, sourceNode.position[1] * posScale, sourceNode.position[2] * posScale),
-                        new THREE.Vector3(targetNode.position[0] * posScale, targetNode.position[1] * posScale, targetNode.position[2] * posScale)
-                    );
-
-                });
-
-                const lineGeometry = new THREE.BufferGeometry().setFromPoints(points);
-                const lineMaterial = new THREE.ShaderMaterial({
-                    uniforms: {
-                        camPos: { value: camera.position },
-                        color: { value: new THREE.Color(0xFFFFFF) },
-                    },
-                    vertexShader: `
-                        varying vec3 vWorldPosition;
-                        void main() {
-                            vec4 worldPosition = modelMatrix * vec4(position, 1.0);
-                            vWorldPosition = worldPosition.xyz;
-                            gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
-                        }
-                    `,
-                    fragmentShader: `
-                        precision mediump float;
-                        uniform vec3 camPos;
-                        uniform vec3 color;
-                        uniform float fadeDistance;
-                        uniform float minAlpha;
-                        varying vec3 vWorldPosition;
-                        
-                        void main() {
-                            float distFromCamera = length(vWorldPosition - camPos);
-                            float distFromOrigin = length(camPos);
-
-                            // map from range [0, +inf) down to [0, 100]
-                            float distFromOrigin01 = smoothstep(0.0, 100.0, distFromOrigin);
-
-                            // when near the center of the graph, the fade distance should be 5.0, so only edges close to the camera are visible
-                            // otherwise it becomes a very laggy mess and the entire screen is covered with white lines
-                            // when near the outisde of the graph, the fade distance should be 50.0 so we can see more edges (if we're near the edge theres less edges to clog the screen)
-                            float updatedFadeDist = mix(1.0, 75.0, distFromOrigin01);
-
-
-                            float alpha = 1.0 - smoothstep(0.0, updatedFadeDist, distFromCamera);
-                            gl_FragColor = vec4(color, alpha);
-                        }
-                    `,
-                    transparent: true
-                });
-
-                const lines = new THREE.LineSegments(lineGeometry, lineMaterial);
-                scene.add(lines);
+                const [nodes, edges] = VisualizerUtils.GenerateGraphMesh(data, camera);
+                scene.add(nodes);
+                scene.add(edges);
             });
 
         const raycaster = new THREE.Raycaster();
@@ -247,23 +118,24 @@ const CrossoverGraphThree = () => {
 
                 if (sphereIntersection) {
                     const clickedNode: Vertex = graphDataRef.current?.nodes[sphereIntersection.instanceId];
+                    selectedVertexRef.current = clickedNode;
                     console.log(clickedNode)
 
-                    const clickedNodePosWorldSpace = new THREE.Vector3(...clickedNode.position.map(c => c * posScale));
+                    const clickedNodePosWorldSpace = new THREE.Vector3(...clickedNode.position.map(c => c * VisualizerUtils.posScale));
 
                     if (currentInfoBox) scene.remove(currentInfoBox);
                     const dir = new THREE.Vector3();
                     camera.getWorldDirection(dir);
                     const right = dir.cross(camera.up);
 
-                    currentInfoBox = CreateInfoBoxMeshGeometry(font, clickedNode, right);
+                    currentInfoBox = VisualizerUtils.CreateInfoBoxMeshGeometry(font, clickedNode, right);
                     // currentInfoBox.position.copy(clickedNodePosWorldSpace);
                     scene.add(currentInfoBox);
 
 
                     selectionSphere.position.copy(clickedNodePosWorldSpace);
 
-                    const scale = sizeScale(clickedNode.value);
+                    const scale = VisualizerUtils.sizeScale(clickedNode.value);
                     selectionSphere.scale.set(scale, scale, scale);
 
                     scene.add(selectionSphere);
@@ -272,14 +144,34 @@ const CrossoverGraphThree = () => {
                     if (currentInfoBox) {
                         scene.remove(currentInfoBox);
                         currentInfoBox = null;
+                        selectedVertexRef.current = null;
                     }
                 }
             }
 
-            if (currentInfoBox) currentInfoBox.lookAt(camera.position);
+            if (currentInfoBox && selectedVertexRef.current) {
+                const selectedVertex = selectedVertexRef.current;
+                const nodePos = new THREE.Vector3(...selectedVertex.position.map(c => c * VisualizerUtils.posScale) as [number, number, number]);
+
+                const cameraToNodeDir = nodePos.clone().sub(camera.position).normalize();
+
+                // get camera right
+                const cameraRight = new THREE.Vector3();
+                camera.getWorldDirection(cameraRight);
+                cameraRight.cross(camera.up).normalize();
+
+                // project camera's right vector onto the plane perpendicular to camera-to-node direction
+                const projectedRight = cameraRight.clone();
+                projectedRight.sub(cameraToNodeDir.clone().multiplyScalar(cameraRight.dot(cameraToNodeDir)));
+                projectedRight.normalize();
+
+                const scalar = 0.15 * VisualizerUtils.sizeScale(selectedVertex.value);
+                currentInfoBox.position.copy(nodePos.add(projectedRight.multiplyScalar(scalar)));
+                currentInfoBox.lookAt(camera.position);
+            }
 
             renderer.render(scene, camera);
-            labelRenderer.render(scene, camera);
+            // labelRenderer.render(scene, camera);
             stats.end();
             animationIdRef.current = requestAnimationFrame(RenderAllShapes);
         };
