@@ -43,7 +43,7 @@ def filterAll():
         re.compile(r".* [r|R]ule.*"),
     ]
 
-    knownRedirects : set[str] = Utilities.getRedirects()
+    knownRedirects : dict[str, str] = Utilities.getRedirects()
     miscRemovals   : set[str] = Utilities.getRemovals()
     removalsWasUpdated : bool = False
     deduplication: set[str] = set()
@@ -120,12 +120,12 @@ def cacheRedirects():
 
 
 if __name__ == "__main__":
-    parser : argparse.ArgumentParser = argparse.ArgumentParser(description="stuff")
+    parser: argparse.ArgumentParser = argparse.ArgumentParser(description="stuff")
     parser.add_argument('-e', "--extract",          action='store_true', help="Extract all webpages on fictional crossover wiki")
     parser.add_argument('-r', "--cache-redirects",  action='store_true', help="Goes through franchises_unfiltered.txt and stores all redirects in redirects.json") 
     parser.add_argument('-f', "--filter",           action='store_true', help="Filters franchise list by removing commercials, cameos, trailers, redirects, etc.")
     parser.add_argument('-i', "--insert",           action='store_true', help="Inserts filtered franchise list into filtered_franchises.txt")
-    args : argparse.ArgumentParser = parser.parse_args()
+    args: argparse.Namespace = parser.parse_args()
 
 
     # (1) Extract all pages from the All Pages section of the wiki --------------------------------------------------------------------------------------------------------------------------------
@@ -142,7 +142,7 @@ if __name__ == "__main__":
 
     # (3) Insert filtered franchise list into database --------------------------------------------------------------------------------------------------------------------------------------------
     if args.insert:
-        conn: sqlite3.Connection = sqlite3.connect('crossovers.db')
+        conn: sqlite3.Connection = sqlite3.connect('backend/crossovers.db')
         cursor: sqlite3.Cursor = conn.cursor()
         query: str = "INSERT INTO game (name, url) VALUES (?, ?)"
 

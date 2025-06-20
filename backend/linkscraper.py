@@ -10,8 +10,8 @@ def getURLAfterRedirects(url: str) -> str:
     response: requests.Response = requests.get(url, allow_redirects=True)
     return response.url
 
-def scrape(url: str) -> list[dict]:
-    webpage: requests.Response = requests.get(url)
+def scrape(articleURL: str) -> list[dict]:
+    webpage: requests.Response = requests.get(articleURL)
     if webpage.status_code != 200:
         return []
     
@@ -53,7 +53,7 @@ def scrape(url: str) -> list[dict]:
         date        : str = TDs[2].get_text()
         description : str = TDs[3].get_text()
 
-        gameName = None
+        gameName: str | None = None
         URL_START: str = "https://fictionalcrossover.fandom.com"
 
         # for TDs[1] (the name of the franchise this one references), find a descendant <a> tag
@@ -76,10 +76,10 @@ def scrape(url: str) -> list[dict]:
 
                 # if we know where this url redirects to, use that instead of making a new request
                 if unquotedURL in redirectMap:
-                    gameName: str = redirectMap[unquotedURL]
+                    gameName = redirectMap[unquotedURL]
                 else:
                     originalURL: str = getURLAfterRedirects(URL_START + url)
-                    gameName: str = Utilities.convertURLtoFranchise(originalURL)
+                    gameName = Utilities.convertURLtoFranchise(originalURL)
                     redirectMap[unquotedURL] = gameName
             else:
                 gameName: str = TDs[1].string
@@ -88,7 +88,7 @@ def scrape(url: str) -> list[dict]:
                     
         if gameName is None: continue
         
-        gameName: str = str(urllib.parse.unquote(gameName.strip()))
+        gameName = str(urllib.parse.unquote(gameName.strip()))
         if gameName in removedLinks: continue
 
         # these franchises just link to the "Shonen Jump covers" article, which is just an article about a magazone cover. skip it.
@@ -141,7 +141,7 @@ if __name__ == "__main__":
     idLookup: dict = {}
     urlLookup: dict = {}
     franchises = [None]
-    conn: sqlite3.Connection = sqlite3.connect('crossovers.db')
+    conn: sqlite3.Connection = sqlite3.connect('backend/crossovers.db')
     cursor: sqlite3.Cursor = conn.cursor()
 
     cursor.execute("SELECT id, name, url FROM game;")

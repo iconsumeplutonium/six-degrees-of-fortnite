@@ -13,7 +13,7 @@ def sanitize(name : str) -> str:
     return name.replace("“", '"').replace("”", '"')
 
 
-def getRedirects() -> dict[str]:
+def getRedirects() -> dict[str, str]:
     knownRedirects : dict[str, str] = {}
     with open('text/redirects.json', 'r', encoding='utf-8') as redirects:
         knownRedirects = json.loads(redirects.read())

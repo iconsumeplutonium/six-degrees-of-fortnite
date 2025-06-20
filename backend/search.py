@@ -18,7 +18,7 @@ def neighbors(franchise: str) -> list[tuple[int, int]]:
 def setup() -> None:
     global conn, cursor, idFromName, nameFromID, adj, FORTNITE
 
-    conn = sqlite3.connect('crossovers.db')
+    conn = sqlite3.connect('backend/crossovers.db')
     cursor = conn.cursor()
 
     # create mappings to get franchise ID from name and vice versa
@@ -43,7 +43,7 @@ def setup() -> None:
 
 
 # finds the shortest path from start to Fortnite
-def bfs(startingFranchise: int, minLinkType: int, log: bool = False) -> None:
+def bfs(startingFranchise: int, minLinkType: int, log: bool = False) -> dict | None:
     queue: deque[int] = deque()
     visited: set[int] = set()
     predecessor: dict[int, int] = {startingFranchise: -1}
