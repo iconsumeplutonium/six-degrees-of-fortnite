@@ -38,7 +38,7 @@ const CrossoverGraphThree = () => {
         labelRenderer.domElement.style.top = '0px';
         labelRenderer.domElement.style.pointerEvents = 'none';
         mountRef.current.appendChild(labelRenderer.domElement);
-        let currentInfoBox: THREE.Mesh | null = null;
+        let currentInfoBox: THREE.Group | null = null;
 
         const handleResize = () => {
             camera.aspect = window.innerWidth / window.innerHeight;
@@ -109,7 +109,7 @@ const CrossoverGraphThree = () => {
         const RenderAllShapes = () => {
             stats.begin();
             controls.update();
-            if (isOverCanvas && hasClicked) {
+            if (isOverCanvas) {
                 hasClicked = false;
 
                 raycaster.setFromCamera(pointer, camera);
@@ -118,7 +118,7 @@ const CrossoverGraphThree = () => {
 
                 if (sphereIntersection) console.log(sphereIntersection.distance);
 
-                if (sphereIntersection && sphereIntersection.distance <= 15) {
+                if (sphereIntersection && sphereIntersection.distance <= 35) {
                     const clickedNode: Vertex = graphDataRef.current?.nodes[sphereIntersection.instanceId];
                     selectedVertexRef.current = clickedNode;
                     setSelectedVert(clickedNode);

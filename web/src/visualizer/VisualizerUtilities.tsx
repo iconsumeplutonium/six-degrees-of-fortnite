@@ -70,6 +70,7 @@ export namespace VisualizerUtils {
             },
             vertexShader: `
                         varying vec3 vWorldPosition;
+
                         void main() {
                             vec4 worldPosition = modelMatrix * vec4(position, 1.0);
                             vWorldPosition = worldPosition.xyz;
@@ -82,6 +83,7 @@ export namespace VisualizerUtils {
                         uniform vec3 color;
                         uniform float fadeDistance;
                         uniform float minAlpha;
+                        
                         varying vec3 vWorldPosition;
                         
                         void main() {
@@ -132,7 +134,7 @@ export namespace VisualizerUtils {
 
     // choose a point that is always to the right of the current selected vertex 
     export function CreateInfoBoxMeshGeometry(font: Font, node: Vertex) {
-        const geometry = new TextGeometry(`${node.name}\n${node.value}`, {
+        const geometry = new TextGeometry(`${node.name}`, {
             font: font,
             size: 0.05 * sizeScale(node.value),
             depth: 0,
@@ -140,13 +142,44 @@ export namespace VisualizerUtils {
         });
 
 
-        const mesh = new THREE.Mesh(geometry, new THREE.MeshBasicMaterial({
-            color: 0xff0000,
+        const textMesh = new THREE.Mesh(geometry, new THREE.MeshBasicMaterial({
+            color: 0x00ffff,
             depthTest: false, //this forces it to render on top of everything else 
             depthWrite: false,
             transparent: true
         }));
 
-        return mesh;
+        textMesh.geometry.computeBoundingBox();
+        const boundingBox = textMesh.geometry.boundingBox!;
+
+        //background for the text
+        const backdropGeo = new THREE.BoxGeometry(
+            boundingBox.max.x - boundingBox.min.x + 0.1, 
+            boundingBox.max.y - boundingBox.min.y + 0.1,
+            0.01
+        );
+        const backdropMat = new THREE.MeshBasicMaterial({
+            color: 0x000000,
+            depthTest: false,
+            depthWrite: false,
+            transparent: true
+        })
+        const backdropMesh = new THREE.Mesh(backdropGeo, backdropMat);        
+        backdropMesh.position.set(
+            (boundingBox.max.x + boundingBox.min.x) / 2,
+            (boundingBox.max.y + boundingBox.min.y) / 2,
+            -0.001
+        );
+
+        //force backdrop to be rendered first, then text mesh on top of that, then everything else behind it
+        backdropMesh.renderOrder = 1;
+        textMesh.renderOrder = 2;
+        
+
+        const group = new THREE.Group();
+        group.add(backdropMesh);
+        group.add(textMesh);
+
+        return group;
     }
 }
