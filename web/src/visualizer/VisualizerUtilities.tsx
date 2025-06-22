@@ -31,9 +31,14 @@ export namespace VisualizerUtils {
         const sphereMaterial = new THREE.MeshBasicMaterial({ color: 0x0077ff });
         const nodeMesh = new THREE.InstancedMesh(sphereGeometry, sphereMaterial, graph.nodes.length);
 
+        const worldSpaceNodePos: THREE.Vector3[] = [];
+
         const matrix = new THREE.Matrix4();
         graph.nodes.forEach((node: Vertex, index: number) => {
-            matrix.makeTranslation(node.position[0] * posScale, node.position[1] * posScale, node.position[2] * posScale);
+            const nodePos = new THREE.Vector3(...node.position.map(c => c * posScale));
+            
+            worldSpaceNodePos.push(nodePos);
+            matrix.makeTranslation(nodePos);
             matrix.scale(new THREE.Vector3(sizeScale(node.value), sizeScale(node.value), sizeScale(node.value)));
             nodeMesh.setMatrixAt(index, matrix);
         });
@@ -47,9 +52,12 @@ export namespace VisualizerUtils {
         graph.links.forEach((link: Edge) => {
             const sourceNode = graph.nodes.find((node: Vertex) => node.id === link.source);
             const targetNode = graph.nodes.find((node: Vertex) => node.id === link.target);
+
+            if (!sourceNode || !targetNode) return; //literally will never happen, just to silence the linter
+
             points.push(
-                new THREE.Vector3(sourceNode.position[0] * posScale, sourceNode.position[1] * posScale, sourceNode.position[2] * posScale),
-                new THREE.Vector3(targetNode.position[0] * posScale, targetNode.position[1] * posScale, targetNode.position[2] * posScale)
+                new THREE.Vector3(...sourceNode.position.map(c => c * posScale)),
+                new THREE.Vector3(...targetNode.position.map(c => c * posScale))
             );
 
         });

@@ -116,11 +116,13 @@ const CrossoverGraphThree = () => {
                 const intersections = raycaster.intersectObjects(scene.children);
                 const sphereIntersection = intersections.find((intersection: THREE.Intersection) => intersection.object instanceof THREE.InstancedMesh);
 
-                if (sphereIntersection) {
+                if (sphereIntersection) console.log(sphereIntersection.distance);
+
+                if (sphereIntersection && sphereIntersection.distance <= 15) {
                     const clickedNode: Vertex = graphDataRef.current?.nodes[sphereIntersection.instanceId];
                     selectedVertexRef.current = clickedNode;
                     setSelectedVert(clickedNode);
-                    console.log(clickedNode)
+                    // console.log(clickedNode)
 
                     const clickedNodePosWorldSpace = new THREE.Vector3(...clickedNode.position.map(c => c * VisualizerUtils.posScale));
 
@@ -129,7 +131,7 @@ const CrossoverGraphThree = () => {
                     camera.getWorldDirection(dir);
                     const right = dir.cross(camera.up);
 
-                    currentInfoBox = VisualizerUtils.CreateInfoBoxMeshGeometry(font, clickedNode, right);
+                    currentInfoBox = VisualizerUtils.CreateInfoBoxMeshGeometry(font, clickedNode);
                     // currentInfoBox.position.copy(clickedNodePosWorldSpace);
                     scene.add(currentInfoBox);
 
@@ -151,6 +153,7 @@ const CrossoverGraphThree = () => {
                 }
             }
 
+            // rotate the 3d text to always be to the right of the selected sphere, and rotated to face the camera
             if (currentInfoBox && selectedVertexRef.current) {
                 const selectedVertex = selectedVertexRef.current;
                 const nodePos = new THREE.Vector3(...selectedVertex.position.map(c => c * VisualizerUtils.posScale) as [number, number, number]);
@@ -203,12 +206,14 @@ const CrossoverGraphThree = () => {
             <div
                 ref={mountRef}
                 className='canvas'
-            />
-            {selectedVert && (
-                <div className='selectionInfo'>
-                    <SelectedNode v={selectedVert}/>
-                </div>
-            )}
+            >
+                {selectedVert && (
+                    <div className='selectionInfo'>
+                        <SelectedNode v={selectedVert} />
+                    </div>
+                )}
+            </div>
+
         </>
     );
 };
