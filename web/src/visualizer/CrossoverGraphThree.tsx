@@ -1,23 +1,22 @@
 import { useEffect, useRef, useState } from 'react';
-import Navigation from './components/Navigation';
+import Navigation from '../components/Navigation.tsx';
 import * as THREE from 'three';
 import Stats from 'three/examples/jsm/libs/stats.module.js';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
 import { Font, FontLoader } from 'three/addons/loaders/FontLoader.js';
-import { TextGeometry } from 'three/addons/geometries/TextGeometry.js';
 import { Vertex, Edge, Graph } from './VisualizerUtilities.tsx';
-import * as VisualizerUtils from './VisualizerUtilities.tsx';
-
+import { VisualizerUtils } from './VisualizerUtilities.tsx';
+import SelectedNode from '../components/SelectedNode.tsx';
 
 let font: Font;
 
 const CrossoverGraphThree = () => {
-    const mountRef = useRef<HTMLDivElement>(null);      // hold the canvas
-    const graphDataRef = useRef<Graph | null>(null);    // holds graph data
-    const animationIdRef = useRef<number | null>(null); // holds current animation frame
-    const selectedVertexRef = useRef<Vertex | null>(null); // Change to ref
-
+    const mountRef = useRef<HTMLDivElement>(null);         // hold the canvas
+    const graphDataRef = useRef<Graph | null>(null);       // holds graph data
+    const animationIdRef = useRef<number | null>(null);    // holds current animation frame
+    const selectedVertexRef = useRef<Vertex | null>(null); // holds currently selected node (handles updates in the useeffect)
+    const [selectedVert, setSelectedVert] = useState<Vertex | null>(null);
 
     useEffect(() => {
         if (!mountRef.current) return;
@@ -82,7 +81,7 @@ const CrossoverGraphThree = () => {
         let isOverCanvas: boolean = false;
         let hasClicked: boolean = false;
 
-        const handleClick = (_: MouseEvent) => { hasClicked = true; };
+        const handleClick = () => { hasClicked = true; };
         const onMouseLeave = () => { isOverCanvas = false; }
         const onMouseMove = (event: MouseEvent) => {
             const rect = renderer.domElement.getBoundingClientRect();
@@ -119,6 +118,7 @@ const CrossoverGraphThree = () => {
                 if (sphereIntersection) {
                     const clickedNode: Vertex = graphDataRef.current?.nodes[sphereIntersection.instanceId];
                     selectedVertexRef.current = clickedNode;
+                    setSelectedVert(clickedNode);
                     console.log(clickedNode)
 
                     const clickedNodePosWorldSpace = new THREE.Vector3(...clickedNode.position.map(c => c * VisualizerUtils.posScale));
@@ -145,6 +145,7 @@ const CrossoverGraphThree = () => {
                         scene.remove(currentInfoBox);
                         currentInfoBox = null;
                         selectedVertexRef.current = null;
+                        setSelectedVert(null);
                     }
                 }
             }
@@ -210,27 +211,25 @@ const CrossoverGraphThree = () => {
                     transform: 'translateX(-50%)',
                 }}
             />
+            {selectedVert && (
+                <div style={{
+                    position: 'fixed',
+                    bottom: '20px',
+                    left: '20px',
+                    background: 'rgba(0, 0, 0, 0.8)',
+                    color: 'white',
+                    padding: '10px',
+                    borderRadius: '5px',
+                    zIndex: 1000,
+                    minWidth: '200px'
+                }}>
+                    <SelectedNode v={selectedVert}/>
+                </div>
+            )}
+            
             <style>{`
                 body {
                     overflow: hidden;
-                }
-                .node-info {
-                    background: rgba(0, 0, 0, 0.8);
-                    color: white;
-                    padding: 10px;
-                    border-radius: 5px;
-                    font-family: Arial, sans-serif;
-                    font-size: 12px;
-                    pointer-events: auto;
-                    min-width: 150px;
-                    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-                }
-                .node-info h3 {
-                    margin: 0 0 5px 0;
-                    color: #0077ff;
-                }
-                .node-info p {
-                    margin: 2px 0;
                 }
             `}</style>
         </>

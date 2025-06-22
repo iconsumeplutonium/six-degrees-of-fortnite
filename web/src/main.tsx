@@ -4,8 +4,8 @@ import { BrowserRouter, Routes, Route } from 'react-router'
 import './index.css'
 import App from './App.tsx'
 import About from './About.tsx'
-import CrossoverGraph from './CrossoverGraph.tsx'
-import CrossoverGraphThree from './CrossoverGraphThree.tsx'
+import CrossoverGraph from './visualizer/CrossoverGraph.tsx'
+import CrossoverGraphThree from './visualizer/CrossoverGraphThree.tsx'
 
 createRoot(document.getElementById('root')!).render(
 	<BrowserRouter>
