@@ -209,7 +209,8 @@ const CrossoverGraphThree = () => {
             >
                 {selectedVert && (
                     <div className='selectionInfo'>
-                        <SelectedNode v={selectedVert} />
+                        <h2 style={{ margin: "0px" }}>{selectedVert.name}</h2>
+                        <small>{selectedVert.value} links to other franchises</small>
                     </div>
                 )}
             </div>
