@@ -3,11 +3,12 @@ import Navigation from '../components/Navigation.tsx';
 import * as THREE from 'three';
 import Stats from 'three/examples/jsm/libs/stats.module.js';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
+import { CSS2DRenderer } from 'three/addons/renderers/CSS2DRenderer.js';
 import { Font, FontLoader } from 'three/addons/loaders/FontLoader.js';
-import { Vertex, Edge, Graph } from './VisualizerUtilities.tsx';
+import { Vertex, Graph } from './VisualizerUtilities.tsx';
 import { VisualizerUtils } from './VisualizerUtilities.tsx';
 import SelectedNode from '../components/SelectedNode.tsx';
+import '../styles/Graph.css';
 
 let font: Font;
 
@@ -201,37 +202,13 @@ const CrossoverGraphThree = () => {
             <Navigation />
             <div
                 ref={mountRef}
-                style={{
-                    width: '90vw',
-                    height: '80vh',
-                    overflow: 'hidden',
-                    position: 'fixed',
-                    top: '10%',
-                    left: '50%',
-                    transform: 'translateX(-50%)',
-                }}
+                className='canvas'
             />
             {selectedVert && (
-                <div style={{
-                    position: 'fixed',
-                    bottom: '20px',
-                    left: '20px',
-                    background: 'rgba(0, 0, 0, 0.8)',
-                    color: 'white',
-                    padding: '10px',
-                    borderRadius: '5px',
-                    zIndex: 1000,
-                    minWidth: '200px'
-                }}>
+                <div className='selectionInfo'>
                     <SelectedNode v={selectedVert}/>
                 </div>
             )}
-            
-            <style>{`
-                body {
-                    overflow: hidden;
-                }
-            `}</style>
         </>
     );
 };
