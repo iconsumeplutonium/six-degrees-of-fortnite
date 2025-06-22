@@ -25,7 +25,7 @@ const CrossoverGraphThree = () => {
         const scene = new THREE.Scene();
         scene.background = new THREE.Color(0x222222);
 
-        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 100000);
         camera.position.z = 5;
 
         const renderer = new THREE.WebGLRenderer({ antialias: true });
@@ -71,6 +71,7 @@ const CrossoverGraphThree = () => {
             })
             .then((data: Graph) => {
                 graphDataRef.current = data;
+                console.log(data)
 
                 const [nodes, edges] = VisualizerUtils.GenerateGraphMesh(data, camera);
                 scene.add(nodes);
@@ -116,9 +117,9 @@ const CrossoverGraphThree = () => {
                 const intersections = raycaster.intersectObjects(scene.children);
                 const sphereIntersection = intersections.find((intersection: THREE.Intersection) => intersection.object instanceof THREE.InstancedMesh);
 
-                if (sphereIntersection) console.log(sphereIntersection.distance);
+                // if (sphereIntersection) console.log(sphereIntersection.distance);
 
-                if (sphereIntersection && sphereIntersection.distance <= 35) {
+                if (sphereIntersection) { //&& sphereIntersection.distance <= 35) {
                     const clickedNode: Vertex = graphDataRef.current?.nodes[sphereIntersection.instanceId];
                     selectedVertexRef.current = clickedNode;
                     setSelectedVert(clickedNode);

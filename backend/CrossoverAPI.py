@@ -33,7 +33,7 @@ async def GetPath(franchise: str, request: Request, minLinkType: int = 9999999):
 # returns the gzip-compressed json representation of the graph (with node positions precalculated)
 @api.get("/graph")
 async def GetGraph(request: Request):
-    with open('backend/graph.gzip', 'rb') as file:
+    with open('backend/bfsgraph_kk.gz', 'rb') as file:
         data = file.read()
         
     return Response(

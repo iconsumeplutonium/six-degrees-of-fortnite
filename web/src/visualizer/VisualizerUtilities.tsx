@@ -22,8 +22,8 @@ export type Graph = {
 
 
 export namespace VisualizerUtils {
-    export const posScale = 100;
-    export const sizeScale = (x: number) => { return Math.cbrt(x) };
+    export const posScale = 800;
+    export const sizeScale = (x: number) => { return 10 + x };
 
     export function GenerateGraphMesh(graph: Graph, camera: THREE.Camera) {
         // instanced rendering of spheres for each node in the graph
@@ -45,6 +45,8 @@ export namespace VisualizerUtils {
 
         nodeMesh.instanceMatrix.needsUpdate = true;
         // scene.add(instancedMesh);
+
+        console.log(worldSpaceNodePos)
 
 
         // instanced rendering of lines for each edge in the graph with distance-based fading
@@ -108,7 +110,7 @@ export namespace VisualizerUtils {
             transparent: true
         });
 
-        const lines = new THREE.LineSegments(lineGeometry, lineMaterial);
+        const lines = new THREE.LineSegments(lineGeometry, new THREE.MeshBasicMaterial({color: 0xFFFFFF}));
 
         return [nodeMesh, lines];
     }
