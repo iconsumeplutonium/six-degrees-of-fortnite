@@ -7,7 +7,6 @@ import { CSS2DRenderer } from 'three/addons/renderers/CSS2DRenderer.js';
 import { Font, FontLoader } from 'three/addons/loaders/FontLoader.js';
 import { Vertex, Graph } from './VisualizerUtilities.tsx';
 import { VisualizerUtils } from './VisualizerUtilities.tsx';
-import SelectedNode from '../components/SelectedNode.tsx';
 import '../styles/Graph.css';
 
 let font: Font;
@@ -32,19 +31,12 @@ const CrossoverGraphThree = () => {
         renderer.setSize(window.innerWidth, window.innerHeight);
         mountRef.current.appendChild(renderer.domElement);
 
-        const labelRenderer = new CSS2DRenderer();
-        labelRenderer.setSize(window.innerWidth, window.innerHeight);
-        labelRenderer.domElement.style.position = 'absolute';
-        labelRenderer.domElement.style.top = '0px';
-        labelRenderer.domElement.style.pointerEvents = 'none';
-        mountRef.current.appendChild(labelRenderer.domElement);
         let currentInfoBox: THREE.Group | null = null;
 
         const handleResize = () => {
             camera.aspect = window.innerWidth / window.innerHeight;
             camera.updateProjectionMatrix();
             renderer.setSize(window.innerWidth, window.innerHeight);
-            labelRenderer.setSize(window.innerWidth, window.innerHeight);
         };
         window.addEventListener('resize', handleResize);
 
@@ -128,12 +120,7 @@ const CrossoverGraphThree = () => {
                     const clickedNodePosWorldSpace = new THREE.Vector3(...clickedNode.position.map(c => c * VisualizerUtils.posScale));
 
                     if (currentInfoBox) scene.remove(currentInfoBox);
-                    const dir = new THREE.Vector3();
-                    camera.getWorldDirection(dir);
-                    const right = dir.cross(camera.up);
-
                     currentInfoBox = VisualizerUtils.CreateInfoBoxMeshGeometry(font, clickedNode);
-                    // currentInfoBox.position.copy(clickedNodePosWorldSpace);
                     scene.add(currentInfoBox);
 
 
@@ -154,7 +141,7 @@ const CrossoverGraphThree = () => {
                 }
             }
 
-            // rotate the 3d text to always be to the right of the selected sphere, and rotated to face the camera
+            // position the 3d text to always be to the right of the selected sphere, and rotated to face the camera
             if (currentInfoBox && selectedVertexRef.current) {
                 const selectedVertex = selectedVertexRef.current;
                 const nodePos = new THREE.Vector3(...selectedVertex.position.map(c => c * VisualizerUtils.posScale) as [number, number, number]);
@@ -177,7 +164,6 @@ const CrossoverGraphThree = () => {
             }
 
             renderer.render(scene, camera);
-            // labelRenderer.render(scene, camera);
             stats.end();
             animationIdRef.current = requestAnimationFrame(RenderAllShapes);
         };
@@ -210,8 +196,7 @@ const CrossoverGraphThree = () => {
             >
                 {selectedVert && (
                     <div className='selectionInfo'>
-                        <h2 style={{ margin: "0px" }}>{selectedVert.name}</h2>
-                        <small>{selectedVert.value} links to other franchises</small>
+                        <h3 style={{ margin: "0px" }}>{selectedVert.name}</h3>
                     </div>
                 )}
             </div>

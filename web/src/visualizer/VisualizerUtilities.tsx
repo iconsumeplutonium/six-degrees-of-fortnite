@@ -1,6 +1,5 @@
 import * as THREE from 'three';
-import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
-import { Font, FontLoader } from 'three/addons/loaders/FontLoader.js';
+import { Font } from 'three/addons/loaders/FontLoader.js';
 import { TextGeometry } from 'three/addons/geometries/TextGeometry.js';
 
 export type Vertex = {
@@ -44,10 +43,6 @@ export namespace VisualizerUtils {
         });
 
         nodeMesh.instanceMatrix.needsUpdate = true;
-        // scene.add(instancedMesh);
-
-        console.log(worldSpaceNodePos)
-
 
         // instanced rendering of lines for each edge in the graph with distance-based fading
         const points: THREE.Vector3[] = [];
@@ -90,49 +85,18 @@ export namespace VisualizerUtils {
                         
                         void main() {
                             float distFromCamera = length(vWorldPosition - camPos);
-                            float distFromOrigin = length(camPos);
+                            float dist01 = 1.0 - clamp(distFromCamera / 1000.0, 0.0, 1.0);
 
-                            // map from range [0, +inf) down to [0, 100]
-                            float distFromOrigin01 = smoothstep(0.0, 100.0, distFromOrigin);
-
-                            // when near the center of the graph, the fade distance should be 5.0, so only edges close to the camera are visible
-                            // otherwise it becomes a very laggy mess and the entire screen is covered with white lines
-                            // when near the outisde of the graph, the fade distance should be 50.0 so we can see more edges (if we're near the edge theres less edges to clog the screen)
-                            float updatedFadeDist = mix(1.0, 75.0, distFromOrigin01);
-
-                            // todo: maybe make it so that the edges are visible close to a node, but fade out the further they are from one
-
-
-                            float alpha = 1.0 - smoothstep(0.0, updatedFadeDist, distFromCamera);
-                            gl_FragColor = vec4(color, alpha);
+                            gl_FragColor = vec4(color, dist01);
                         }
                     `,
             transparent: true
         });
 
-        const lines = new THREE.LineSegments(lineGeometry, new THREE.MeshBasicMaterial({color: 0xFFFFFF}));
+        const lines = new THREE.LineSegments(lineGeometry, lineMaterial);
 
         return [nodeMesh, lines];
     }
-
-
-    // Create info box element
-    function createInfoBox(node: Vertex) {
-        const div = document.createElement('div');
-        div.className = 'node-info';
-        div.innerHTML = `
-        <h3>${node.name}</h3>
-        <p>Connections: ${node.value}</p>
-    `;
-        div.style.fontSize = '10px';
-        div.style.padding = '6px 0px';
-
-
-        const cssobj = new CSS2DObject(div);
-
-        return cssobj;
-    };
-
 
     // choose a point that is always to the right of the current selected vertex 
     export function CreateInfoBoxMeshGeometry(font: Font, node: Vertex) {
