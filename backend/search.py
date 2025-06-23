@@ -1,12 +1,12 @@
-import sqlite3, argparse, json
+import sqlite3, argparse, json, sys
 from collections import deque
 
 # globals
 FORTNITE: int
 conn: sqlite3.Connection
 cursor: sqlite3.Cursor
-idFromName: dict
-nameFromID: dict
+idFromName: dict[str, int]
+nameFromID: dict[int, str]
 adj: dict
 
 def pathToNames(path: list[int]) -> list[str]:
@@ -22,8 +22,8 @@ def setup() -> None:
     cursor = conn.cursor()
 
     # create mappings to get franchise ID from name and vice versa
-    idFromName = {}
-    nameFromID = {}
+    idFromName: dict[str, int] = {}
+    nameFromID: dict[int, str] = {}
     cursor.execute("SELECT id, name, url FROM game;")
     rows = cursor.fetchall()
     for row in rows:
@@ -82,7 +82,7 @@ def bfs(startingFranchise: int, minLinkType: int, log: bool = False) -> dict | N
                 # print path in readable format
                 for i in range(1, len(path)):
                     cursor.execute(f"SELECT crossoverDate, description, linkType FROM links WHERE gameID = {path[i - 1]} AND COgameID = {path[i]} AND linkType <= {minLinkType};")
-                    crossoverInfo: list[tuple] = cursor.fetchall()[0]
+                    crossoverInfo: tuple[str, str, int] = cursor.fetchall()[0]
 
                     name: str = nameFromID[path[i]]
                     date: str = crossoverInfo[0]
@@ -100,7 +100,7 @@ def bfs(startingFranchise: int, minLinkType: int, log: bool = False) -> dict | N
                         })
                 
                 if log: 
-                    exit(0)
+                    sys.exit(0)
                 else:
                     return apiResponse
 
@@ -122,66 +122,15 @@ def bfs(startingFranchise: int, minLinkType: int, log: bool = False) -> dict | N
         return {"found": False}
 
 
-
-# experimental: finds multiple short paths, the same way Six Degrees of Wikipedia does
-# works sometimes, doesnt work with others (eg can only find paths from Under Night In-Birth if theres no min link type, and it wont find the same path bfs does)
-def dfs(startingFranchise: int, minLinkType: int) -> None:
-    # trivial path:
-    if startingFranchise == FORTNITE:
-        return [startingFranchise]
-
-    visited: set[int] = set()
-    allPaths: list[list] = []
-
-    recurse(startingFranchise, minLinkType, visited, [], allPaths)
-
-    for path in allPaths:
-        print(pathToNames(path))
-
-
-def recurse(franchise: int, minLinktype: int, visited: set[int], currentPath: list, allPaths: list):
-    if franchise == 4177:
-        print("in here, investigating")
-
-    currentPath.append(franchise)
-    if len(currentPath) > 6:
-        currentPath.pop()
-        if franchise == 4177:
-            print("this is too long, returning")
-            print(pathToNames(currentPath))
-        return
-    
-    visited.add(franchise)
-
-    if franchise == FORTNITE:
-        allPaths.append(currentPath[:])
-        currentPath.pop()
-        visited.remove(franchise)
-        return
-
-
-    adjacent: list = neighbors(franchise)
-    for crossover in adjacent:
-        crossoverID:   int = crossover[0]
-        crossovertype: int = crossover[1]
-
-        if crossoverID in visited or crossovertype > minLinkType: continue
-
-        recurse(crossoverID, minLinkType, visited, currentPath, allPaths)
-    
-    currentPath.pop()
-
-
 if __name__ == "__main__":
     parser: argparse.ArgumentParser = argparse.ArgumentParser(description="connects franchise")
     parser.add_argument("-s", "--start", type=str, help="The franchise to start from")
     parser.add_argument("-l", "--min-link", type=int, help="The minimum link type to consider as a valid path")
-    parser.add_argument("-d", "--dfs", action="store_true", help="Use depth-first search instead of breadth-first search")
     args: argparse.Namespace = parser.parse_args()
 
     if not args.start:
         print("Error: start is required")
-        exit(1)
+        sys.exit(1)
 
     setup()
 
@@ -190,9 +139,7 @@ if __name__ == "__main__":
         exit(2)
 
     start: str = idFromName[args.start]
-    minLinkType: int = args.min_link if args.min_link else float('inf')
+    minLinkType: int = args.min_link if args.min_link else 999999999999999999
 
-    if args.dfs:
-        dfs(start, minLinkType)
-    else:
-        bfs(start, minLinkType, True)
+
+    bfs(start, minLinkType, True)
