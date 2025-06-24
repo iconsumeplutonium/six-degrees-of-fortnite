@@ -1,5 +1,6 @@
 import sqlite3, argparse, json, sys
 from collections import deque
+from tqdm import tqdm
 
 # globals
 FORTNITE: int
@@ -22,8 +23,8 @@ def setup() -> None:
     cursor = conn.cursor()
 
     # create mappings to get franchise ID from name and vice versa
-    idFromName: dict[str, int] = {}
-    nameFromID: dict[int, str] = {}
+    idFromName = {}
+    nameFromID = {}
     cursor.execute("SELECT id, name, url FROM game;")
     rows = cursor.fetchall()
     for row in rows:
@@ -126,20 +127,29 @@ if __name__ == "__main__":
     parser: argparse.ArgumentParser = argparse.ArgumentParser(description="connects franchise")
     parser.add_argument("-s", "--start", type=str, help="The franchise to start from")
     parser.add_argument("-l", "--min-link", type=int, help="The minimum link type to consider as a valid path")
+    parser.add_argument("-a", "--all", action="store_true", help="Create JSON with all paths from every franchise to Fortnite (cannot be used with -s or -l)")
     args: argparse.Namespace = parser.parse_args()
 
-    if not args.start:
-        print("Error: start is required")
-        sys.exit(1)
+    if args.all and (args.start or args.min_link):
+        raise AssertionError("Cannot use -a with -s or -l")
+
+    if not args.start and not args.all:
+        raise AssertionError("Start is required when -a is not specified")
 
     setup()
-
-    if args.start not in idFromName:
-        print(f"Error: franchise {args.start} does not exist.")
-        exit(2)
-
-    start: str = idFromName[args.start]
     minLinkType: int = args.min_link if args.min_link else 999999999999999999
 
+    if args.start not in idFromName and not args.all:
+        raise AssertionError(f"Error: franchise {args.start} does not exist.")
 
-    bfs(start, minLinkType, True)
+    if not args.all:
+        start: str = idFromName[args.start]
+        bfs(start, minLinkType, True)
+    else:
+        allPaths: dict[str, dict] = {}
+        for id in tqdm(nameFromID):
+            path: dict = bfs(id, 1, False)
+            allPaths[nameFromID[id]] = path["path"] if path["found"] else []
+        
+        with open('backend/AllPaths.json', 'w') as f:
+            json.dump(allPaths, f, indent=4)
