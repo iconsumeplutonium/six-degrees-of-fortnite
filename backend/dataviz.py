@@ -31,7 +31,7 @@ def bfs(adjacencyList: dict, fortniteID: int) -> None:
         if node in visited: continue
         recurse(adjacencyList, node)
 
-def GetAdjList_ShortestPathsOnly() -> dict[str, list]:
+def GetAdjList_ShortestPathsOnly() -> dict[int, list]:
     with open('backend/AllPaths.json', 'r') as file:
         AllPaths: dict = json.load(file)
 
@@ -65,7 +65,7 @@ def GetAdjList_ShortestPathsOnly() -> dict[str, list]:
 
     return adjacencyList
 
-def GetAdjList_AllType1Links() -> dict[str, list]:
+def GetAdjList_AllType1Links() -> dict[int, list]:
     # get all franchise IDs
     cursor.execute("SELECT id, name FROM game;")
     franchises = cursor.fetchall()
@@ -94,7 +94,6 @@ def WriteCompressedGraph(graphData: dict[str, list], filename: str) -> None:
     with open(filename, 'wb') as file:
         file.write(compressedGraph)
 
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Precompute graph layout for visualization")
     parser.add_argument("-s", "--shortest-paths-only", action="store_true", help="Precompute graph that only uses shortest paths as edges")
@@ -106,7 +105,7 @@ if __name__ == "__main__":
 
     
     if args.all_type_one_links:
-        adjacencyList: dict[str, list] = GetAdjList_AllType1Links()
+        adjacencyList: dict[int, list] = GetAdjList_AllType1Links()
 
         # get Fortnite's ID to make sure that is the first source for bfs
         cursor.execute("SELECT id FROM game WHERE name = 'Fortnite';")
@@ -114,7 +113,7 @@ if __name__ == "__main__":
 
         bfs(adjacencyList, fortniteID)
 
-        # construct the bfs tree
+        # construct the bfs parent tree
         bfsTree: defaultdict = defaultdict(list)
         for node in parent:
             if parent[node] == node: continue
@@ -122,11 +121,28 @@ if __name__ == "__main__":
 
         print(f"bfs completed, generating graph")
 
-        # this takes up to an hour to run. todo: replace this with igraph
-        G: networkx.Graph = networkx.Graph(adjacencyList)
-        positions: dict[int, list] = networkx.kamada_kawai_layout(G, dim=3)
+        # convert to igraph graph format
+        V: set[int] = set()
+        E: list[tuple[int, int]] = []
+        for source, neighbors in adjacencyList.items():
+            V.add(source)
+            for n in neighbors:
+                V.add(n)
+                E.append((source, n))
 
-        # faster, but the layout fucking sucks: networkx.spring_layout(G, k=0.3, dim=3, interations=100)
+        vertexList = list(V)
+
+        # because igraph needs all nodes to be labeled 0..n (kys)
+        vertToIndex = {v: i for i, v in enumerate(vertexList)}
+        indexedEdges = [(vertToIndex[src], vertToIndex[tgt]) for src, tgt in E]
+
+        graph = igraph.Graph(n=len(vertexList), edges=indexedEdges)
+        layout = graph.layout_kamada_kawai(dim=3) # the actual layout calculations
+
+        # convert back to a mapping between node id and position
+        positions: dict[int, list] = {}
+        for i, vertex_id in enumerate(V):
+            positions[vertex_id] = layout[i]
 
         print("finished calculating positions, proceeding to create gzip file")
         
@@ -157,9 +173,9 @@ if __name__ == "__main__":
 
 
         graphData: dict[str, list] = {"nodes": nodes, "links": edges}
-        WriteCompressedGraph(graphData, "backend/bfsgraph_alltype1.gz")
+        WriteCompressedGraph(graphData, "backend/bfsgraph_alltype1_igraph.gz")
 
 
     if args.shortest_paths_only:
-        adjacencyList: dict[str, list] = GetAdjList_ShortestPathsOnly()
+        adjacencyList: dict[int, list] = GetAdjList_ShortestPathsOnly()
         pass
