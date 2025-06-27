@@ -4,7 +4,7 @@ import * as THREE from 'three';
 import Stats from 'three/examples/jsm/libs/stats.module.js';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { Font, FontLoader } from 'three/addons/loaders/FontLoader.js';
-import { Vertex, Edge, Graph } from './VisualizerUtilities.tsx';
+import { Vertex, Graph } from './VisualizerUtilities.tsx';
 import { VisualizerUtils } from './VisualizerUtilities.tsx';
 import '../styles/Graph.css';
 
@@ -45,23 +45,9 @@ const CrossoverGraphThree = () => {
         controls.target.set(0, 0, 0);
         controls.update();
 
-        // const ambientLight = new THREE.AmbientLight(0x404040, 10);
-        // scene.add(ambientLight);
-
-        // const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
-        // directionalLight.position.set(10, 10, 5);
-        // directionalLight.castShadow = true;
-        // scene.add(directionalLight);
-
-        // const pointLight = new THREE.PointLight(0xFFFFFF, 1000.0);
-        // pointLight.position.set(0, 0, 0);
-        // pointLight.castShadow = false;
-        // scene.add(pointLight);
-
         const stats = new Stats();
         stats.showPanel(0);
         mountRef.current.appendChild(stats.dom);
-
 
         const handleResize = () => {
             camera.aspect = window.innerWidth / window.innerHeight;
@@ -79,25 +65,22 @@ const CrossoverGraphThree = () => {
             .then((data: Graph) => {
                 // by default, the graph data sent over is unscaled and an array of 3 numbers
                 // as soon as data is received, scale the positions and store it as a three.vector3 so i dont have to rescale it everywhere else
-                // "as unknown as [n n n]" is to silence the type error thing because it comes in as [number number number] and i dont wanna change the graph type to have [n n n] because it messes up stuff elsewhere
+                // "as unknown as [n n n]" is to silence the type error thing because it comes in as [n n n] and i dont wanna change the graph type to have [n n n] because it messes up stuff elsewhere
                 data.nodes.forEach((node: Vertex) => {
                     node.position = new THREE.Vector3(...(node.position as unknown as [number, number, number]).map(c => c * VisualizerUtils.posScale));
-                })
+                    VisualizerUtils.nodeIDtoPosition[node.id] = node.position;
+                });
 
+                // set graph data, visualize nodes
                 graphDataRef.current = data;
-                console.log(data)
+                scene.add(VisualizerUtils.GenerateGraphNodes(data));
 
-                // const [nodes, edges] = VisualizerUtils.GenerateGraphMesh(data, camera);
-                // scene.add(nodes);
-                // scene.add(edges);
-                scene.add(VisualizerUtils.GenerateGraphNodes(data))
-
+                // set & visualize edges
                 const edges = VisualizerUtils.GenerateGraphEdges(data, camera);
                 visibleEdgesRef.current = edges ?? null;
                 allEdgesRef.current = edges ?? null;
 
                 if (visibleEdgesRef.current) scene.add(visibleEdgesRef.current);
-                // scene.add(sw)
             });
 
         const raycaster = new THREE.Raycaster();

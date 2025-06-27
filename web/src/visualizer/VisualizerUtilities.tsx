@@ -24,35 +24,24 @@ export type Graph = {
 export namespace VisualizerUtils {
     export const posScale = 800;
     export const sizeScale = (x: number) => { return Math.min(Math.max(x, 10), 100); };
+    export const nodeIDtoPosition: Record<number, THREE.Vector3> = {};
 
     export function GenerateGraphNodes(graph: Graph) {
         // instanced rendering of spheres for each node in the graph
-        const sphereGeometry = new THREE.SphereGeometry(0.1, 16, 16);
-        const sphereMaterial = new THREE.MeshBasicMaterial({ color: 0x0077ff });
-        const nodeMesh = new THREE.InstancedMesh(sphereGeometry, sphereMaterial, graph.nodes.length);
-
-        // const selectionSphereGeometry = new THREE.SphereGeometry(0.101, 16, 16);
-        // const selectionSphereMaterial = new THREE.MeshStandardMaterial({
-        //     color: 0xff0000
-        // });
-        // const selectionSphere = new THREE.Mesh(selectionSphereGeometry, selectionSphereMaterial);
-
-        // const NODETOFIND = "Oil Panic";
+        const nodeMesh = new THREE.InstancedMesh(
+            new THREE.SphereGeometry(0.1, 16, 16),
+            new THREE.MeshBasicMaterial({ color: 0x0077FF }),
+            graph.nodes.length
+        );
 
         const matrix = new THREE.Matrix4();
         graph.nodes.forEach((node: Vertex, index: number) => {
-            // if (node.name === NODETOFIND) {
-            //     selectionSphere.position.set(...node.position.map(c => c * posScale) as [number, number, number]);
-            //     selectionSphere.scale.set(50, 50, 50);
-            // }
-
             matrix.makeTranslation(node.position);
             matrix.scale(new THREE.Vector3(sizeScale(node.value), sizeScale(node.value), sizeScale(node.value)));
             nodeMesh.setMatrixAt(index, matrix);
         });
-        // nodeMesh.layers.enable(1);
+        
         nodeMesh.instanceMatrix.needsUpdate = true;
-
         return nodeMesh;
     }
 
@@ -60,32 +49,22 @@ export namespace VisualizerUtils {
         // instanced rendering of lines for each edge in the graph with distance-based fading
         const points: THREE.Vector3[] = [];
 
-        // no edge specified, just show all of them 
+        // no source specified, just show all of them 
         if (pathStartVertexID < 0) {
             graph.links.forEach((link: Edge) => {
-                const sourceNode = graph.nodes.find((node: Vertex) => node.id === link.source);
-                const targetNode = graph.nodes.find((node: Vertex) => node.id === link.target);
-
-                if (!sourceNode || !targetNode) return; //literally will never happen, just to silence the linter
-
                 points.push(
-                    sourceNode.position,
-                    targetNode.position
+                    nodeIDtoPosition[link.source],
+                    nodeIDtoPosition[link.target]
                 );
             });
         } else {
+            // source is specified, only show edges in its path 
             const path: number[] = graph.paths[pathStartVertexID];
             let source = pathStartVertexID;
             for (let i = 0; i < path.length; i++) {
-                //probably very bad for performance, but it seems to work good enough i guess
-                const sourceNode = graph.nodes.find((node: Vertex) => node.id === source);
-                const targetNode = graph.nodes.find((node: Vertex) => node.id === path[i]);
-
-                if (!sourceNode || !targetNode) return; //literally will never happen, just to silence the linter
-
                 points.push(
-                    sourceNode.position,
-                    targetNode.position
+                    nodeIDtoPosition[source],
+                    nodeIDtoPosition[path[i]]
                 );
 
                 source = path[i];
