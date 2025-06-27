@@ -1,4 +1,4 @@
-import sqlite3, json, gzip, sys, random, networkx, argparse, time
+import sqlite3, json, gzip, sys, random, networkx, argparse, time, numpy
 from collections import defaultdict, deque
 from tqdm import tqdm
 
@@ -68,8 +68,13 @@ if __name__ == "__main__":
 
         print(f"bfs completed, generating graph at {time.strftime('%H:%M:%S')}")
         G: networkx.Graph = networkx.Graph(adjacencyList)
-        positions: dict[int, list] = networkx.spring_layout(G, dim=3, seed=40, iterations=50) # type: ignore
+        positions: dict[int, numpy.ndarray] = networkx.spring_layout(G, dim=3, seed=40, iterations=50) # type: ignore
         print(f"finished calculating positions at {time.strftime('%H:%M:%S')}, proceeding to create gzip file")
+
+        # center the graph so Fortnite node is in the center
+        cursor.execute("SELECT id FROM game WHERE name = 'Fortnite';")
+        fID: int = cursor.fetchall()[0][0]
+        offset: list = positions[fID]
 
         cursor.execute("SELECT id, name FROM game;")
         franchises = cursor.fetchall()
@@ -80,8 +85,8 @@ if __name__ == "__main__":
             nodes.append({
                 "id": id, 
                 "name": name, 
-                "value": max(G.degree[id], 0), # number of connections this node has (used in visualizer to make node larger with more connections) # type: ignore
-                "position": [float(c) for c in positions[id]] # forgot why i did this, i think its because this is a numpy array by default? 
+                "value": G.degree[id], # number of connections this node has (used in visualizer to make node larger with more connections) # type: ignore
+                "position": [float(positions[id][i]) - offset[i] for i in range(3)]
             })
 
             for neighbor in adjacencyList[id]:
@@ -89,7 +94,7 @@ if __name__ == "__main__":
 
 
         graphData: dict[str, list] = {"nodes": nodes, "links": edges}
-        WriteCompressedGraph(graphData, "backend/shortestonlytest_spring_s40_i50.gz")
+        WriteCompressedGraph(graphData, "text/graph.gz")
 
 
     if args.shortest_paths_only:

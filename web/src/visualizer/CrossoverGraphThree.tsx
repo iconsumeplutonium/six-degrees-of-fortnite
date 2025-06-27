@@ -3,7 +3,6 @@ import Navigation from '../components/Navigation.tsx';
 import * as THREE from 'three';
 import Stats from 'three/examples/jsm/libs/stats.module.js';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-import { CSS2DRenderer } from 'three/addons/renderers/CSS2DRenderer.js';
 import { Font, FontLoader } from 'three/addons/loaders/FontLoader.js';
 import { Vertex, Graph } from './VisualizerUtilities.tsx';
 import { VisualizerUtils } from './VisualizerUtilities.tsx';
@@ -25,7 +24,8 @@ const CrossoverGraphThree = () => {
         scene.background = new THREE.Color(0x222222);
 
         const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 100000);
-        camera.position.z = 5;
+        camera.position.z = 50;
+        camera.lookAt(0, 0, 0);
 
         const renderer = new THREE.WebGLRenderer({ antialias: true });
         renderer.setSize(window.innerWidth, window.innerHeight);
@@ -33,29 +33,30 @@ const CrossoverGraphThree = () => {
 
         let currentInfoBox: THREE.Group | null = null;
 
+        const controls = new OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = true;
+        controls.dampingFactor = 0.25;
+        controls.target.set(0, 0, 0);
+        controls.update();
+
+        // const ambientLight = new THREE.AmbientLight(0x404040, 0.6);
+        // scene.add(ambientLight);
+
+        // const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
+        // directionalLight.position.set(10, 10, 5);
+        // directionalLight.castShadow = true;
+        // scene.add(directionalLight);
+
+        const stats = new Stats();
+        stats.showPanel(0);
+        mountRef.current.appendChild(stats.dom);
+
         const handleResize = () => {
             camera.aspect = window.innerWidth / window.innerHeight;
             camera.updateProjectionMatrix();
             renderer.setSize(window.innerWidth, window.innerHeight);
         };
         window.addEventListener('resize', handleResize);
-
-        const controls = new OrbitControls(camera, renderer.domElement);
-        controls.enableDamping = true;
-        controls.dampingFactor = 0.25;
-        controls.screenSpacePanning = false;
-
-        const ambientLight = new THREE.AmbientLight(0x404040, 0.6);
-        scene.add(ambientLight);
-
-        const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
-        directionalLight.position.set(10, 10, 5);
-        directionalLight.castShadow = true;
-        scene.add(directionalLight);
-
-        const stats = new Stats();
-        stats.showPanel(0);
-        mountRef.current.appendChild(stats.dom);
 
         fetch('http://127.0.0.1:8000/graph')
             .then(response => {
@@ -97,8 +98,6 @@ const CrossoverGraphThree = () => {
             emissiveIntensity: 20,
         });
         const selectionSphere = new THREE.Mesh(selectionSphereGeometry, selectionSphereMaterial);
-
-
 
         const RenderAllShapes = () => {
             stats.begin();
@@ -169,6 +168,11 @@ const CrossoverGraphThree = () => {
             animationIdRef.current = requestAnimationFrame(RenderAllShapes);
         };
 
+        // can only hide the scrollbar on this page by setting the body to have overflow: hidden
+        // but that affects it globally and prevents scrolling on all other pages too
+        // add this no-scroll property when the page is loaded, and remove it when it is unloaded
+        document.body.classList.add("no-scroll");
+
         const fontLoader = new FontLoader();
         fontLoader.load("https://threejs.org/examples/fonts/helvetiker_regular.typeface.json", function (f: Font) {
             font = f;
@@ -183,6 +187,7 @@ const CrossoverGraphThree = () => {
             renderer.domElement.removeEventListener('click', handleClick)
             renderer.domElement.removeEventListener('pointerleave', onMouseLeave);
             renderer.domElement.removeEventListener('pointermove', onMouseMove);
+            document.body.classList.remove('no-scroll')
 
             renderer.dispose();
         };

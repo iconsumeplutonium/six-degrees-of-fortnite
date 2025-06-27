@@ -22,15 +22,13 @@ export type Graph = {
 
 export namespace VisualizerUtils {
     export const posScale = 800;
-    export const sizeScale = (x: number) => { return Math.max(x, 10); };
+    export const sizeScale = (x: number) => { return Math.min(Math.max(x, 10), 100); };
 
     export function GenerateGraphMesh(graph: Graph, camera: THREE.Camera) {
         // instanced rendering of spheres for each node in the graph
         const sphereGeometry = new THREE.SphereGeometry(0.1, 16, 16);
         const sphereMaterial = new THREE.MeshBasicMaterial({ color: 0x0077ff });
         const nodeMesh = new THREE.InstancedMesh(sphereGeometry, sphereMaterial, graph.nodes.length);
-
-        const worldSpaceNodePos: THREE.Vector3[] = [];
 
         // const selectionSphereGeometry = new THREE.SphereGeometry(0.101, 16, 16);
         // const selectionSphereMaterial = new THREE.MeshStandardMaterial({
@@ -49,12 +47,11 @@ export namespace VisualizerUtils {
             //     selectionSphere.scale.set(50, 50, 50);
             // }
             
-            worldSpaceNodePos.push(nodePos);
             matrix.makeTranslation(nodePos);
             matrix.scale(new THREE.Vector3(sizeScale(node.value), sizeScale(node.value), sizeScale(node.value)));
             nodeMesh.setMatrixAt(index, matrix);
         });
-
+        nodeMesh.layers.enable(1);
         nodeMesh.instanceMatrix.needsUpdate = true;
 
         // instanced rendering of lines for each edge in the graph with distance-based fading
