@@ -1,11 +1,11 @@
-import sqlite3, json, gzip, sys, random, networkx, argparse, time, numpy
-from collections import defaultdict, deque
+import sqlite3, json, gzip, networkx, time, numpy
+from collections import defaultdict
 from tqdm import tqdm
 
 conn: sqlite3.Connection = sqlite3.connect('backend/crossovers.db')
 cursor: sqlite3.Cursor = conn.cursor()
 
-def GetAdjList_ShortestPathsOnly() -> dict[int, list]:
+def GetAdjListShortestPaths() -> dict[int, list]:
     with open('text/AllPaths.json', 'r') as file:
         AllPaths: dict = json.load(file)
 
@@ -81,54 +81,39 @@ def GetShortestPathsAsIDs() -> dict[int, list[int]]:
     return ShortestPathsAsIDs
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Precompute graph layout for visualization")
-    parser.add_argument("-s", "--shortest-paths-only", action="store_true", help="Precompute graph that only uses shortest paths as edges")
-    parser.add_argument("-a", "--all-type-one-links",  action="store_true", help="Precompute graph that uses all type 1 links as edges")
-    args: argparse.Namespace = parser.parse_args()
+    # create adjacency list using AllPaths.json    
+    adjacencyList: dict[int, list] = GetAdjListShortestPaths()
 
-    if not args.shortest_paths_only and not args.all_type_one_links:
-        raise ValueError("Must specify -s and/or -a")
+    print(f"Starting graph generation at {time.strftime('%H:%M:%S')}")
+    G: networkx.Graph = networkx.Graph(adjacencyList)
+    positions: dict[int, numpy.ndarray] = networkx.spring_layout(G, dim=3, seed=40, iterations=50) # type: ignore
+    print(f"Finished calculating positions at {time.strftime('%H:%M:%S')}, proceeding to create gzip file")
 
-    # creates an adjacency list comprised of all type 1 links
-    # then runs bfs on it and visualizes all strongly connected components
-    if args.all_type_one_links:
-        # adjacencyList: dict[int, list] = GetAdjList_AllType1Links()
-        adjacencyList: dict[int, list] = GetAdjList_ShortestPathsOnly()
+    # get the position of the fortnite node so the graph can be centered around it
+    cursor.execute("SELECT id FROM game WHERE name = 'Fortnite';")
+    fID: int = cursor.fetchall()[0][0]
+    offset: list[float] = list(positions[fID])
 
-        print(f"bfs completed, generating graph at {time.strftime('%H:%M:%S')}")
-        G: networkx.Graph = networkx.Graph(adjacencyList)
-        positions: dict[int, numpy.ndarray] = networkx.spring_layout(G, dim=3, seed=40, iterations=50) # type: ignore
-        print(f"finished calculating positions at {time.strftime('%H:%M:%S')}, proceeding to create gzip file")
+    # construct the json representation of the graph
+    cursor.execute("SELECT id, name FROM game;")
+    franchises = cursor.fetchall()
+    nodes: list[dict] = []
+    edges: list[dict] = []
+    paths: dict[int, list[int]] = GetShortestPathsAsIDs()
+    for id, name in franchises:
+        nodes.append({
+            "id": id, 
+            "name": name, 
+            "value": G.degree[id], # number of connections this node has (used in visualizer to make node larger with more connections) # type: ignore
+            "position": [float(positions[id][i]) - offset[i] for i in range(3)]
+        })
 
-        # center the graph so Fortnite node is in the center
-        cursor.execute("SELECT id FROM game WHERE name = 'Fortnite';")
-        fID: int = cursor.fetchall()[0][0]
-        offset: list = positions[fID]
-
-        cursor.execute("SELECT id, name FROM game;")
-        franchises = cursor.fetchall()
-        # construct the json representation of the graph
-        nodes: list[dict] = []
-        edges: list[dict] = []
-        paths: dict[int, list[int]] = GetShortestPathsAsIDs()
-        for id, name in franchises:
-            nodes.append({
-                "id": id, 
-                "name": name, 
-                "value": G.degree[id], # number of connections this node has (used in visualizer to make node larger with more connections) # type: ignore
-                "position": [float(positions[id][i]) - offset[i] for i in range(3)]
-            })
-
-            for neighbor in adjacencyList[id]:
-                edges.append({"source": id, "target": neighbor})
+        for neighbor in adjacencyList[id]:
+            edges.append({"source": id, "target": neighbor})
 
 
-        graphData: dict[str, list|dict] = {"nodes": nodes, "links": edges, "paths": paths}
-        WriteCompressedGraph(graphData, "text/graph.gz")
+    graphData: dict[str, list|dict] = {"nodes": nodes, "links": edges, "paths": paths}
+    WriteCompressedGraph(graphData, "text/graph.gz")
 
 
-    if args.shortest_paths_only:
-        # adjacencyList: dict[int, list] = GetAdjList_ShortestPathsOnly()
-        with open('temp.json', 'w') as file:
-            json.dump(GetShortestPathsAsIDs(), file)
 

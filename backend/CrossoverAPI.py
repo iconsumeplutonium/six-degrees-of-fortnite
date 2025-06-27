@@ -7,6 +7,7 @@ from fastapi import Response
 AllPaths: dict[str, list[dict[str, str]]]
 GraphData: Response
 
+# runs this function on server startup
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     global AllPaths, GraphData
