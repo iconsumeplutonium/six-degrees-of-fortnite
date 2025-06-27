@@ -16,11 +16,12 @@ const CrossoverGraphThree = () => {
     const graphDataRef = useRef<Graph | null>(null);       // holds graph data
     const animationIdRef = useRef<number | null>(null);    // holds current animation frame
     const selectedVertexRef = useRef<Vertex | null>(null); // holds currently selected node (handles updates in the useeffect)
-    
+
     const allEdgesRef = useRef<THREE.LineSegments | null>(null);      // holds all edges (reverts back to this if shift is not held down) 
     const visibleEdgesRef = useRef<THREE.LineSegments | null>(null);  // holds visible edges (handles udpates in useeffect);
 
     const [selectedVertex, setSelectedVertex] = useState<Vertex | null>(null); // same as selectedVertexRef, but needed to trigger rerenders of the box in the bottom left with the franchise name
+    const [shiftKey, setShiftKey] = useState<boolean>(false); // is the shift key being held (needed to trigger rerender of the box in the bottom left)
 
     useEffect(() => {
         if (!mountRef.current) return;
@@ -103,8 +104,8 @@ const CrossoverGraphThree = () => {
         const pointer = new THREE.Vector2();
         let cursorIsOverCanvas: boolean = false;
 
-        const onKeyPress = (event: KeyboardEvent) => { if (event.shiftKey) shiftKeyPress = true; }
-        const onKeyRelease = (event: KeyboardEvent) => { if (event.key === "Shift") shiftKeyPress = false; }
+        const onKeyPress = (event: KeyboardEvent) => { if (event.shiftKey) { shiftKeyPress = true; setShiftKey(true) } }
+        const onKeyRelease = (event: KeyboardEvent) => { if (event.key === "Shift") { shiftKeyPress = false; setShiftKey(false) } }
         const onMouseLeave = () => { cursorIsOverCanvas = false; }
         const onMouseMove = (event: MouseEvent) => {
             const rect = renderer.domElement.getBoundingClientRect();
@@ -133,27 +134,30 @@ const CrossoverGraphThree = () => {
             controls.update();
 
             if (cursorIsOverCanvas) {
+                // raycast
                 raycaster.setFromCamera(pointer, camera);
                 const intersections = raycaster.intersectObjects(scene.children);
                 const sphereIntersection = intersections.find((intersection: THREE.Intersection) => intersection.object instanceof THREE.InstancedMesh);
 
                 // if mouse is hovering over a node
                 if (sphereIntersection) {
+                    // get the vertex under the cursor
                     const clickedNode: Vertex = graphDataRef.current?.nodes[sphereIntersection.instanceId];
                     selectedVertexRef.current = clickedNode;
                     setSelectedVertex(clickedNode);
 
+                    // create new floating 3d text for this franchise name
                     if (currentInfoBox) scene.remove(currentInfoBox);
                     currentInfoBox = VisualizerUtils.CreateInfoBoxMeshGeometry(font, clickedNode);
                     scene.add(currentInfoBox);
 
-
+                    // position selection sphere at the selected vertex
                     selectionSphere.position.copy(clickedNode.position);
-
                     const scale = VisualizerUtils.sizeScale(clickedNode.value);
                     selectionSphere.scale.set(scale, scale, scale);
                     scene.add(selectionSphere);
 
+                    // if the shift key is being held, highlight only the edges from the selected vertex to fortnite
                     if (shiftKeyPress && graphDataRef.current && visibleEdgesRef.current) {
                         scene.remove(visibleEdgesRef.current)
 
@@ -161,9 +165,14 @@ const CrossoverGraphThree = () => {
                         visibleEdgesRef.current = edges ?? null;
 
                         if (visibleEdgesRef.current) scene.add(visibleEdgesRef.current);
+                    } else {
+                        scene.remove(visibleEdgesRef.current!);
+                        visibleEdgesRef.current = allEdgesRef.current!;
+                        scene.add(visibleEdgesRef.current);
                     }
 
                 } else {
+                    // if no intersection, remove selection sphere, delete the info box, and default to showing all edges
                     scene.remove(selectionSphere);
                     if (currentInfoBox) {
                         scene.remove(currentInfoBox);
@@ -242,8 +251,12 @@ const CrossoverGraphThree = () => {
             >
                 {selectedVertex && (
                     <div className='selectionInfo'>
-                        <h3 style={{ margin: "0px" }}>{selectedVertex.name}</h3>
-                        {shiftKeyPress && <p>test</p>}
+                        <h3 style={{ margin: "0px", textAlign: "left" }}>{selectedVertex.name}</h3>
+                        {shiftKey && graphDataRef.current &&
+                            <p style={{ marginTop: "0px" }}>
+                                {VisualizerUtils.PrintHopsFromFortnite(graphDataRef.current.paths[selectedVertex.id].length, selectedVertex.name)}
+                            </p>
+                        }
                     </div>
                 )}
             </div>
