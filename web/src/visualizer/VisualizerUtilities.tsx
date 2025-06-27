@@ -22,7 +22,7 @@ export type Graph = {
 
 export namespace VisualizerUtils {
     export const posScale = 800;
-    export const sizeScale = (x: number) => { return 10 + x };
+    export const sizeScale = (x: number) => { return Math.max(x, 10); };
 
     export function GenerateGraphMesh(graph: Graph, camera: THREE.Camera) {
         // instanced rendering of spheres for each node in the graph
@@ -32,9 +32,22 @@ export namespace VisualizerUtils {
 
         const worldSpaceNodePos: THREE.Vector3[] = [];
 
+        // const selectionSphereGeometry = new THREE.SphereGeometry(0.101, 16, 16);
+        // const selectionSphereMaterial = new THREE.MeshStandardMaterial({
+        //     color: 0xff0000
+        // });
+        // const selectionSphere = new THREE.Mesh(selectionSphereGeometry, selectionSphereMaterial);
+
+        // const NODETOFIND = "Oil Panic";
+
         const matrix = new THREE.Matrix4();
         graph.nodes.forEach((node: Vertex, index: number) => {
             const nodePos = new THREE.Vector3(...node.position.map(c => c * posScale));
+
+            // if (node.name === NODETOFIND) {
+            //     selectionSphere.position.set(...node.position.map(c => c * posScale) as [number, number, number]);
+            //     selectionSphere.scale.set(50, 50, 50);
+            // }
             
             worldSpaceNodePos.push(nodePos);
             matrix.makeTranslation(nodePos);
@@ -52,10 +65,16 @@ export namespace VisualizerUtils {
 
             if (!sourceNode || !targetNode) return; //literally will never happen, just to silence the linter
 
-            points.push(
-                new THREE.Vector3(...sourceNode.position.map(c => c * posScale)),
-                new THREE.Vector3(...targetNode.position.map(c => c * posScale))
-            );
+            // const targets = [NODETOFIND, 'Mario', "Teenage Mutant Ninja Turtles"];
+            
+            // if (targets.includes(sourceNode.name) || targets.includes(targetNode.name)) {
+                points.push(
+                    new THREE.Vector3(...sourceNode.position.map(c => c * posScale)),
+                    new THREE.Vector3(...targetNode.position.map(c => c * posScale))
+                );
+
+            // }
+
 
         });
 
@@ -95,7 +114,7 @@ export namespace VisualizerUtils {
 
         const lines = new THREE.LineSegments(lineGeometry, lineMaterial);
 
-        return [nodeMesh, lines];
+        return [nodeMesh, lines]//, selectionSphere];
     }
 
     // choose a point that is always to the right of the current selected vertex 

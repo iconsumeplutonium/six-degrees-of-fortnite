@@ -65,9 +65,10 @@ const CrossoverGraphThree = () => {
                 graphDataRef.current = data;
                 console.log(data)
 
-                const [nodes, edges] = VisualizerUtils.GenerateGraphMesh(data, camera);
+                const [nodes, edges, sw] = VisualizerUtils.GenerateGraphMesh(data, camera);
                 scene.add(nodes);
                 scene.add(edges);
+                // scene.add(sw)
             });
 
         const raycaster = new THREE.Raycaster();
