@@ -38,7 +38,7 @@ def GetAdjListShortestPaths() -> dict[int, list]:
 
     # convert sets to lists in adjacency list
     for key in adjacencyList:
-        adjacencyList[key] = list(adjacencyList[key])
+        adjacencyList[key] = list(adjacencyList[key])  # type: ignore
 
     return adjacencyList
 
@@ -114,6 +114,3 @@ if __name__ == "__main__":
 
     graphData: dict[str, list|dict] = {"nodes": nodes, "links": edges, "paths": paths}
     WriteCompressedGraph(graphData, "text/graph.gz")
-
-
-
