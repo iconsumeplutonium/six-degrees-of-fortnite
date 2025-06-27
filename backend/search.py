@@ -148,8 +148,7 @@ if __name__ == "__main__":
     else:
         allPaths: dict[str, dict] = {}
         for id in tqdm(nameFromID):
-            path: dict = bfs(id, 1, False)
-            allPaths[nameFromID[id]] = path["path"] if path["found"] else []
+            allPaths[nameFromID[id]] = bfs(id, 1, False)
         
-        with open('backend/AllPaths.json', 'w') as f:
+        with open('text/AllPaths.json', 'w') as f:
             json.dump(allPaths, f, indent=4)

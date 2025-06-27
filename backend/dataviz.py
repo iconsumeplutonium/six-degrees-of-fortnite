@@ -6,7 +6,7 @@ conn: sqlite3.Connection = sqlite3.connect('backend/crossovers.db')
 cursor: sqlite3.Cursor = conn.cursor()
 
 def GetAdjList_ShortestPathsOnly() -> dict[int, list]:
-    with open('backend/AllPaths.json', 'r') as file:
+    with open('text/AllPaths.json', 'r') as file:
         AllPaths: dict = json.load(file)
 
     # get all franchise IDs
@@ -23,14 +23,13 @@ def GetAdjList_ShortestPathsOnly() -> dict[int, list]:
     # construct adjacency list
     adjacencyList = defaultdict(set)
     for sourceName in tqdm(AllPaths):
-        sourceID: int = nameToID[sourceName]
-        path: list[dict[str, str]] = AllPaths[sourceName]
-        source: int = int(sourceID)
+        source: int = int(nameToID[sourceName])
 
-        if len(path) == 0:
+        if not AllPaths[sourceName]["found"]:
             adjacencyList[source] = set()
             continue
 
+        path: list[dict[str, str]] = AllPaths[sourceName]["path"]
         for p in path:
             targetID: int = nameToID[p["name"]]
             adjacencyList[source].add(targetID)
@@ -54,7 +53,7 @@ def WriteCompressedGraph(graphData: dict[str, list|dict], filename: str) -> None
 
 
 def GetShortestPathsAsIDs() -> dict[int, list[int]]:
-    with open('backend/AllPaths.json', 'r') as file:
+    with open('text/AllPaths.json', 'r') as file:
         AllPaths: dict[str, dict] = json.load(file)
     
     # get all franchise IDs
@@ -70,10 +69,12 @@ def GetShortestPathsAsIDs() -> dict[int, list[int]]:
 
     ShortestPathsAsIDs: dict[int, list] = {}
     for id, name in franchises:
-        path: list[dict] = AllPaths[name] # type: ignore
         idPath: list[int] = []
-        for p in path:
-            idPath.append(nameToID[p["name"]])
+
+        if AllPaths[name]["found"]:
+            path: list[dict] = AllPaths[name]["path"] # type: ignore
+            for p in path:
+                idPath.append(nameToID[p["name"]])
         
         ShortestPathsAsIDs[id] = idPath
 

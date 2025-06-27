@@ -1,14 +1,28 @@
 from contextlib import asynccontextmanager
 from fastapi import FastAPI, Request, HTTPException
-from . import search
-import urllib.parse
+import urllib.parse, json
 from fastapi.middleware.cors import CORSMiddleware
-from .import dataviz
 from fastapi import Response
+
+AllPaths: dict[str, list[dict[str, str]]]
+GraphData: Response
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    search.setup()
+    global AllPaths, GraphData
+
+    # load all shortest paths
+    with open('text/AllPaths.json', 'r') as file:
+        AllPaths = json.load(file)
+
+    # load graph data
+    with open('text/graph.gz', 'rb') as file:
+        GraphData = Response(
+            content=file.read(),
+            media_type="application/json",
+            headers={"Content-Encoding": "gzip"}
+        )
+    
     yield
 
 api: FastAPI = FastAPI(lifespan=lifespan)
@@ -20,24 +34,15 @@ api.add_middleware(
     allow_headers=["*"],
 )
 
-# todo: precalculate all paths to fortnite and just do a lookup to that
 @api.post("/path/{franchise}")
 async def GetPath(franchise: str, request: Request, minLinkType: int = 9999999):
-    if franchise not in search.adj:
+    if franchise not in AllPaths:
         raise HTTPException(status_code=404, detail="Franchise not found")
     
     franchise = urllib.parse.unquote(franchise)
-
-    return search.bfs(search.idFromName[franchise], minLinkType, False)
+    return AllPaths[franchise]
 
 # returns the gzip-compressed json representation of the graph (with node positions precalculated)
 @api.get("/graph")
 async def GetGraph(request: Request):
-    with open('text/graph.gz', 'rb') as file:
-        data = file.read()
-        
-    return Response(
-        content=data,
-        media_type="application/json",
-        headers={"Content-Encoding": "gzip"}
-    )
+    return GraphData
