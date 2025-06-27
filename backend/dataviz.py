@@ -43,13 +43,41 @@ def GetAdjList_ShortestPathsOnly() -> dict[int, list]:
 
     return adjacencyList
 
-def WriteCompressedGraph(graphData: dict[str, list], filename: str) -> None:
+
+def WriteCompressedGraph(graphData: dict[str, list|dict], filename: str) -> None:
     # compresses the entire graph with gzip encoding
     # disallow spaces between the key and values and commas and stuff to further reduce space
     jsonString: str = json.dumps(graphData, separators=(',', ':'))
     compressedGraph: bytes = gzip.compress(jsonString.encode(('utf-8')))
     with open(filename, 'wb') as file:
         file.write(compressedGraph)
+
+
+def GetShortestPathsAsIDs() -> dict[int, list[int]]:
+    with open('backend/AllPaths.json', 'r') as file:
+        AllPaths: dict[str, dict] = json.load(file)
+    
+    # get all franchise IDs
+    cursor.execute("SELECT id, name FROM game;")
+    franchises = cursor.fetchall()
+
+    # setup
+    idToName: dict[int, str] = {}
+    nameToID: dict[str, int] = {}
+    for id, name in franchises:
+        idToName[id] = name
+        nameToID[name] = id
+
+    ShortestPathsAsIDs: dict[int, list] = {}
+    for id, name in franchises:
+        path: list[dict] = AllPaths[name] # type: ignore
+        idPath: list[int] = []
+        for p in path:
+            idPath.append(nameToID[p["name"]])
+        
+        ShortestPathsAsIDs[id] = idPath
+
+    return ShortestPathsAsIDs
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Precompute graph layout for visualization")
@@ -81,6 +109,7 @@ if __name__ == "__main__":
         # construct the json representation of the graph
         nodes: list[dict] = []
         edges: list[dict] = []
+        paths: dict[int, list[int]] = GetShortestPathsAsIDs()
         for id, name in franchises:
             nodes.append({
                 "id": id, 
@@ -93,10 +122,12 @@ if __name__ == "__main__":
                 edges.append({"source": id, "target": neighbor})
 
 
-        graphData: dict[str, list] = {"nodes": nodes, "links": edges}
+        graphData: dict[str, list|dict] = {"nodes": nodes, "links": edges, "paths": paths}
         WriteCompressedGraph(graphData, "text/graph.gz")
 
 
     if args.shortest_paths_only:
-        adjacencyList: dict[int, list] = GetAdjList_ShortestPathsOnly()
-        pass
+        # adjacencyList: dict[int, list] = GetAdjList_ShortestPathsOnly()
+        with open('temp.json', 'w') as file:
+            json.dump(GetShortestPathsAsIDs(), file)
+

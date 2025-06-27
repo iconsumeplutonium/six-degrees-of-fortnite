@@ -6,7 +6,7 @@ export type Vertex = {
     id: number;
     name: string;
     value: number;
-    position: number[];
+    position: THREE.Vector3;
 }
 
 export type Edge = {
@@ -16,7 +16,8 @@ export type Edge = {
 
 export type Graph = {
     nodes: Vertex[],
-    links: Edge[]
+    links: Edge[],
+    paths: Record<number, number[]>
 }
 
 
@@ -24,7 +25,7 @@ export namespace VisualizerUtils {
     export const posScale = 800;
     export const sizeScale = (x: number) => { return Math.min(Math.max(x, 10), 100); };
 
-    export function GenerateGraphMesh(graph: Graph, camera: THREE.Camera) {
+    export function GenerateGraphNodes(graph: Graph) {
         // instanced rendering of spheres for each node in the graph
         const sphereGeometry = new THREE.SphereGeometry(0.1, 16, 16);
         const sphereMaterial = new THREE.MeshBasicMaterial({ color: 0x0077ff });
@@ -40,40 +41,56 @@ export namespace VisualizerUtils {
 
         const matrix = new THREE.Matrix4();
         graph.nodes.forEach((node: Vertex, index: number) => {
-            const nodePos = new THREE.Vector3(...node.position.map(c => c * posScale));
-
             // if (node.name === NODETOFIND) {
             //     selectionSphere.position.set(...node.position.map(c => c * posScale) as [number, number, number]);
             //     selectionSphere.scale.set(50, 50, 50);
             // }
-            
-            matrix.makeTranslation(nodePos);
+
+            matrix.makeTranslation(node.position);
             matrix.scale(new THREE.Vector3(sizeScale(node.value), sizeScale(node.value), sizeScale(node.value)));
             nodeMesh.setMatrixAt(index, matrix);
         });
-        nodeMesh.layers.enable(1);
+        // nodeMesh.layers.enable(1);
         nodeMesh.instanceMatrix.needsUpdate = true;
 
+        return nodeMesh;
+    }
+
+    export function GenerateGraphEdges(graph: Graph, camera: THREE.Camera, pathStartVertexID: number = -1) {
         // instanced rendering of lines for each edge in the graph with distance-based fading
         const points: THREE.Vector3[] = [];
-        graph.links.forEach((link: Edge) => {
-            const sourceNode = graph.nodes.find((node: Vertex) => node.id === link.source);
-            const targetNode = graph.nodes.find((node: Vertex) => node.id === link.target);
 
-            if (!sourceNode || !targetNode) return; //literally will never happen, just to silence the linter
+        // no edge specified, just show all of them 
+        if (pathStartVertexID < 0) {
+            graph.links.forEach((link: Edge) => {
+                const sourceNode = graph.nodes.find((node: Vertex) => node.id === link.source);
+                const targetNode = graph.nodes.find((node: Vertex) => node.id === link.target);
 
-            // const targets = [NODETOFIND, 'Mario', "Teenage Mutant Ninja Turtles"];
-            
-            // if (targets.includes(sourceNode.name) || targets.includes(targetNode.name)) {
+                if (!sourceNode || !targetNode) return; //literally will never happen, just to silence the linter
+
                 points.push(
-                    new THREE.Vector3(...sourceNode.position.map(c => c * posScale)),
-                    new THREE.Vector3(...targetNode.position.map(c => c * posScale))
+                    sourceNode.position,
+                    targetNode.position
+                );
+            });
+        } else {
+            const path: number[] = graph.paths[pathStartVertexID];
+            let source = pathStartVertexID;
+            for (let i = 0; i < path.length; i++) {
+                //probably very bad for performance, but it seems to work good enough i guess
+                const sourceNode = graph.nodes.find((node: Vertex) => node.id === source);
+                const targetNode = graph.nodes.find((node: Vertex) => node.id === path[i]);
+
+                if (!sourceNode || !targetNode) return; //literally will never happen, just to silence the linter
+
+                points.push(
+                    sourceNode.position,
+                    targetNode.position
                 );
 
-            // }
-
-
-        });
+                source = path[i];
+            }            
+        }
 
         const lineGeometry = new THREE.BufferGeometry().setFromPoints(points);
         const lineMaterial = new THREE.ShaderMaterial({
@@ -109,9 +126,7 @@ export namespace VisualizerUtils {
             transparent: true
         });
 
-        const lines = new THREE.LineSegments(lineGeometry, lineMaterial);
-
-        return [nodeMesh, lines]//, selectionSphere];
+        return new THREE.LineSegments(lineGeometry, lineMaterial);
     }
 
     // choose a point that is always to the right of the current selected vertex 
@@ -136,8 +151,8 @@ export namespace VisualizerUtils {
 
         //background for the text
         const backdropGeo = new THREE.BoxGeometry(
-            boundingBox.max.x - boundingBox.min.x + 0.1, 
-            boundingBox.max.y - boundingBox.min.y + 0.1,
+            boundingBox.max.x - boundingBox.min.x + 0.4,
+            boundingBox.max.y - boundingBox.min.y + 0.4,
             0.01
         );
         const backdropMat = new THREE.MeshBasicMaterial({
@@ -146,7 +161,7 @@ export namespace VisualizerUtils {
             depthWrite: false,
             transparent: true
         })
-        const backdropMesh = new THREE.Mesh(backdropGeo, backdropMat);        
+        const backdropMesh = new THREE.Mesh(backdropGeo, backdropMat);
         backdropMesh.position.set(
             (boundingBox.max.x + boundingBox.min.x) / 2,
             (boundingBox.max.y + boundingBox.min.y) / 2,
@@ -156,7 +171,7 @@ export namespace VisualizerUtils {
         //force backdrop to be rendered first, then text mesh on top of that, then everything else behind it
         backdropMesh.renderOrder = 1;
         textMesh.renderOrder = 2;
-        
+
 
         const group = new THREE.Group();
         group.add(backdropMesh);

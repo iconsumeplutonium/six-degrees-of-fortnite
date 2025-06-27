@@ -4,7 +4,7 @@ import * as THREE from 'three';
 import Stats from 'three/examples/jsm/libs/stats.module.js';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { Font, FontLoader } from 'three/addons/loaders/FontLoader.js';
-import { Vertex, Graph } from './VisualizerUtilities.tsx';
+import { Vertex, Edge, Graph } from './VisualizerUtilities.tsx';
 import { VisualizerUtils } from './VisualizerUtilities.tsx';
 import '../styles/Graph.css';
 
@@ -15,13 +15,14 @@ const CrossoverGraphThree = () => {
     const graphDataRef = useRef<Graph | null>(null);       // holds graph data
     const animationIdRef = useRef<number | null>(null);    // holds current animation frame
     const selectedVertexRef = useRef<Vertex | null>(null); // holds currently selected node (handles updates in the useeffect)
-    const [selectedVert, setSelectedVert] = useState<Vertex | null>(null);
+    const allEdgesRef = useRef<THREE.LineSegments | null>(null);
+    const visibleEdgesRef = useRef<THREE.LineSegments | null>(null);   // holds visible edges (handles udpates in useeffect);
 
     useEffect(() => {
         if (!mountRef.current) return;
 
         const scene = new THREE.Scene();
-        scene.background = new THREE.Color(0x222222);
+        scene.background = new THREE.Color(0x000000);
 
         const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 100000);
         camera.position.z = 50;
@@ -39,7 +40,7 @@ const CrossoverGraphThree = () => {
         controls.target.set(0, 0, 0);
         controls.update();
 
-        // const ambientLight = new THREE.AmbientLight(0x404040, 0.6);
+        // const ambientLight = new THREE.AmbientLight(0x404040, 10);
         // scene.add(ambientLight);
 
         // const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
@@ -47,9 +48,15 @@ const CrossoverGraphThree = () => {
         // directionalLight.castShadow = true;
         // scene.add(directionalLight);
 
+        // const pointLight = new THREE.PointLight(0xFFFFFF, 1000.0);
+        // pointLight.position.set(0, 0, 0);
+        // pointLight.castShadow = false;
+        // scene.add(pointLight);
+
         const stats = new Stats();
         stats.showPanel(0);
         mountRef.current.appendChild(stats.dom);
+
 
         const handleResize = () => {
             camera.aspect = window.innerWidth / window.innerHeight;
@@ -58,85 +65,115 @@ const CrossoverGraphThree = () => {
         };
         window.addEventListener('resize', handleResize);
 
+
+
         fetch('http://127.0.0.1:8000/graph')
             .then(response => {
                 return response.json();
             })
             .then((data: Graph) => {
+                // by default, the graph data sent over is unscaled and an array of 3 numbers
+                // as soon as data is received, scale the positions and store it as a three.vector3 so i dont have to rescale it everywhere else
+                // "as unknown as [number number number" is to silence the type error thing because it comes in as [number number number] and i dont wanna change the graph type to have [n n n] because it messes up stuff elsewhere
+                data.nodes.forEach((node: Vertex) => {
+                    node.position = new THREE.Vector3(...(node.position as unknown as [number, number, number]).map(c => c * VisualizerUtils.posScale));
+                })
+
                 graphDataRef.current = data;
                 console.log(data)
 
-                const [nodes, edges, sw] = VisualizerUtils.GenerateGraphMesh(data, camera);
-                scene.add(nodes);
-                scene.add(edges);
+                // const [nodes, edges] = VisualizerUtils.GenerateGraphMesh(data, camera);
+                // scene.add(nodes);
+                // scene.add(edges);
+                scene.add(VisualizerUtils.GenerateGraphNodes(data))
+
+                const edges = VisualizerUtils.GenerateGraphEdges(data, camera);
+                visibleEdgesRef.current = edges ?? null;
+                allEdgesRef.current = edges ?? null;
+
+                if (visibleEdgesRef.current) scene.add(visibleEdgesRef.current);
                 // scene.add(sw)
             });
 
         const raycaster = new THREE.Raycaster();
         const pointer = new THREE.Vector2();
-        let isOverCanvas: boolean = false;
-        let hasClicked: boolean = false;
+        let cursorIsOverCanvas: boolean = false;
+        let shiftKeyPress: boolean = false;
 
-        const handleClick = () => { hasClicked = true; };
-        const onMouseLeave = () => { isOverCanvas = false; }
+        const onKeyPress = (event: KeyboardEvent) => { if (event.shiftKey) shiftKeyPress = true; }
+        const onKeyRelease = (event: KeyboardEvent) => { if (event.key === "Shift") shiftKeyPress = false; }
+        const onMouseLeave = () => { cursorIsOverCanvas = false; }
         const onMouseMove = (event: MouseEvent) => {
             const rect = renderer.domElement.getBoundingClientRect();
             pointer.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
             pointer.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
 
-            isOverCanvas = (event.clientX >= rect.left && event.clientX <= rect.right && event.clientY >= rect.top && event.clientY <= rect.bottom);
+            cursorIsOverCanvas = (event.clientX >= rect.left && event.clientX <= rect.right && event.clientY >= rect.top && event.clientY <= rect.bottom);
         }
 
-        renderer.domElement.addEventListener('click', handleClick)
         renderer.domElement.addEventListener('pointerleave', onMouseLeave);
         renderer.domElement.addEventListener('pointermove', onMouseMove);
+        document.addEventListener('keydown', onKeyPress);
+        document.addEventListener('keyup', onKeyRelease);
 
-        const selectionSphereGeometry = new THREE.SphereGeometry(0.101, 16, 16);
-        const selectionSphereMaterial = new THREE.MeshStandardMaterial({
-            color: 0x0077ff,
-            emissive: 0x0077ff,
-            emissiveIntensity: 20,
-        });
-        const selectionSphere = new THREE.Mesh(selectionSphereGeometry, selectionSphereMaterial);
+        const selectionSphere = new THREE.Mesh(
+            new THREE.SphereGeometry(0.101, 16, 16),
+            new THREE.MeshStandardMaterial({
+                color: 0x0077ff,
+                emissive: 0x0077ff,
+                emissiveIntensity: 20,
+            })
+        );
 
         const RenderAllShapes = () => {
             stats.begin();
             controls.update();
-            if (isOverCanvas) {
-                hasClicked = false;
 
+            if (cursorIsOverCanvas) {
                 raycaster.setFromCamera(pointer, camera);
                 const intersections = raycaster.intersectObjects(scene.children);
                 const sphereIntersection = intersections.find((intersection: THREE.Intersection) => intersection.object instanceof THREE.InstancedMesh);
 
-                // if (sphereIntersection) console.log(sphereIntersection.distance);
-
-                if (sphereIntersection) { //&& sphereIntersection.distance <= 35) {
+                // if mouse is hovering over a node
+                if (sphereIntersection) {
                     const clickedNode: Vertex = graphDataRef.current?.nodes[sphereIntersection.instanceId];
                     selectedVertexRef.current = clickedNode;
-                    setSelectedVert(clickedNode);
-                    // console.log(clickedNode)
-
-                    const clickedNodePosWorldSpace = new THREE.Vector3(...clickedNode.position.map(c => c * VisualizerUtils.posScale));
 
                     if (currentInfoBox) scene.remove(currentInfoBox);
                     currentInfoBox = VisualizerUtils.CreateInfoBoxMeshGeometry(font, clickedNode);
                     scene.add(currentInfoBox);
 
 
-                    selectionSphere.position.copy(clickedNodePosWorldSpace);
+                    selectionSphere.position.copy(clickedNode.position);
 
                     const scale = VisualizerUtils.sizeScale(clickedNode.value);
                     selectionSphere.scale.set(scale, scale, scale);
-
                     scene.add(selectionSphere);
+
+                    if (shiftKeyPress && graphDataRef.current && visibleEdgesRef.current) {
+                        scene.remove(visibleEdgesRef.current)
+
+                        const edges = VisualizerUtils.GenerateGraphEdges(graphDataRef.current, camera, clickedNode.id);
+                        visibleEdgesRef.current = edges ?? null;
+
+                        if (visibleEdgesRef.current) scene.add(visibleEdgesRef.current);
+                    }
+
+
+
+
                 } else {
                     scene.remove(selectionSphere);
                     if (currentInfoBox) {
                         scene.remove(currentInfoBox);
                         currentInfoBox = null;
                         selectedVertexRef.current = null;
-                        setSelectedVert(null);
+                    }
+
+                    if (visibleEdgesRef.current) {
+                        scene.remove(visibleEdgesRef.current);
+                        visibleEdgesRef.current = allEdgesRef.current!;
+                        scene.add(visibleEdgesRef.current);
                     }
                 }
             }
@@ -144,7 +181,7 @@ const CrossoverGraphThree = () => {
             // position the 3d text to always be to the right of the selected sphere, and rotated to face the camera
             if (currentInfoBox && selectedVertexRef.current) {
                 const selectedVertex = selectedVertexRef.current;
-                const nodePos = new THREE.Vector3(...selectedVertex.position.map(c => c * VisualizerUtils.posScale) as [number, number, number]);
+                const nodePos = selectedVertex.position.clone();
 
                 const cameraToNodeDir = nodePos.clone().sub(camera.position).normalize();
 
@@ -184,9 +221,10 @@ const CrossoverGraphThree = () => {
             if (animationIdRef.current) cancelAnimationFrame(animationIdRef.current);
 
             window.removeEventListener('resize', handleResize);
-            renderer.domElement.removeEventListener('click', handleClick)
             renderer.domElement.removeEventListener('pointerleave', onMouseLeave);
             renderer.domElement.removeEventListener('pointermove', onMouseMove);
+            document.addEventListener('keydown', onKeyPress);
+            document.addEventListener('keyup', onKeyRelease);
             document.body.classList.remove('no-scroll')
 
             renderer.dispose();
@@ -200,9 +238,9 @@ const CrossoverGraphThree = () => {
                 ref={mountRef}
                 className='canvas'
             >
-                {selectedVert && (
+                {selectedVertexRef.current && (
                     <div className='selectionInfo'>
-                        <h3 style={{ margin: "0px" }}>{selectedVert.name}</h3>
+                        <h3 style={{ margin: "0px" }}>{selectedVertexRef.current.name}</h3>
                     </div>
                 )}
             </div>
