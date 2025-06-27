@@ -9,14 +9,18 @@ import { VisualizerUtils } from './VisualizerUtilities.tsx';
 import '../styles/Graph.css';
 
 let font: Font;
+let shiftKeyPress: boolean = false;
 
 const CrossoverGraphThree = () => {
     const mountRef = useRef<HTMLDivElement>(null);         // hold the canvas
     const graphDataRef = useRef<Graph | null>(null);       // holds graph data
     const animationIdRef = useRef<number | null>(null);    // holds current animation frame
     const selectedVertexRef = useRef<Vertex | null>(null); // holds currently selected node (handles updates in the useeffect)
-    const allEdgesRef = useRef<THREE.LineSegments | null>(null);
-    const visibleEdgesRef = useRef<THREE.LineSegments | null>(null);   // holds visible edges (handles udpates in useeffect);
+    
+    const allEdgesRef = useRef<THREE.LineSegments | null>(null);      // holds all edges (reverts back to this if shift is not held down) 
+    const visibleEdgesRef = useRef<THREE.LineSegments | null>(null);  // holds visible edges (handles udpates in useeffect);
+
+    const [selectedVertex, setSelectedVertex] = useState<Vertex | null>(null); // same as selectedVertexRef, but needed to trigger rerenders of the box in the bottom left with the franchise name
 
     useEffect(() => {
         if (!mountRef.current) return;
@@ -74,7 +78,7 @@ const CrossoverGraphThree = () => {
             .then((data: Graph) => {
                 // by default, the graph data sent over is unscaled and an array of 3 numbers
                 // as soon as data is received, scale the positions and store it as a three.vector3 so i dont have to rescale it everywhere else
-                // "as unknown as [number number number" is to silence the type error thing because it comes in as [number number number] and i dont wanna change the graph type to have [n n n] because it messes up stuff elsewhere
+                // "as unknown as [n n n]" is to silence the type error thing because it comes in as [number number number] and i dont wanna change the graph type to have [n n n] because it messes up stuff elsewhere
                 data.nodes.forEach((node: Vertex) => {
                     node.position = new THREE.Vector3(...(node.position as unknown as [number, number, number]).map(c => c * VisualizerUtils.posScale));
                 })
@@ -98,7 +102,6 @@ const CrossoverGraphThree = () => {
         const raycaster = new THREE.Raycaster();
         const pointer = new THREE.Vector2();
         let cursorIsOverCanvas: boolean = false;
-        let shiftKeyPress: boolean = false;
 
         const onKeyPress = (event: KeyboardEvent) => { if (event.shiftKey) shiftKeyPress = true; }
         const onKeyRelease = (event: KeyboardEvent) => { if (event.key === "Shift") shiftKeyPress = false; }
@@ -138,6 +141,7 @@ const CrossoverGraphThree = () => {
                 if (sphereIntersection) {
                     const clickedNode: Vertex = graphDataRef.current?.nodes[sphereIntersection.instanceId];
                     selectedVertexRef.current = clickedNode;
+                    setSelectedVertex(clickedNode);
 
                     if (currentInfoBox) scene.remove(currentInfoBox);
                     currentInfoBox = VisualizerUtils.CreateInfoBoxMeshGeometry(font, clickedNode);
@@ -159,15 +163,13 @@ const CrossoverGraphThree = () => {
                         if (visibleEdgesRef.current) scene.add(visibleEdgesRef.current);
                     }
 
-
-
-
                 } else {
                     scene.remove(selectionSphere);
                     if (currentInfoBox) {
                         scene.remove(currentInfoBox);
                         currentInfoBox = null;
                         selectedVertexRef.current = null;
+                        setSelectedVertex(null)
                     }
 
                     if (visibleEdgesRef.current) {
@@ -238,9 +240,10 @@ const CrossoverGraphThree = () => {
                 ref={mountRef}
                 className='canvas'
             >
-                {selectedVertexRef.current && (
+                {selectedVertex && (
                     <div className='selectionInfo'>
-                        <h3 style={{ margin: "0px" }}>{selectedVertexRef.current.name}</h3>
+                        <h3 style={{ margin: "0px" }}>{selectedVertex.name}</h3>
+                        {shiftKeyPress && <p>test</p>}
                     </div>
                 )}
             </div>
