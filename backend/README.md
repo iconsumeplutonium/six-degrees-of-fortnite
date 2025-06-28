@@ -81,25 +81,25 @@ A simple FastAPI webserver that returns the path to a specified franchise.
 	{
 	  "nodes": [
 		{
-			"id": integer, 
+			"id": 0,
 			"name": "string", 
-			"value": integer,
-			"position": [float, float, float]
+			"value": 5,                 // the degree of this vertex
+			"position": [0.5, 0.5, 0.5] // position in 3D space
 		},
 		...
 	  ],
 
 	  "links": [
 		{
-			"source": integer,
-			"target": integer
+			"source": 1, // ID of source vertex
+			"target": 2  // ID of target vertex
 		},
 		...
 	  ],
 
 	  "paths": {
-		0: [integer, integer, ...],
-		1: [integer, integer, ...],
+		0: [1, 2, ...], // The IDs of the vertices on the path from vertex 0 to Fortnite
+		1: [7, 9, ...], // The IDs of the vertices on the path from vertex 1 to Fortnite
 		2: [...],
 		...
 	  }
