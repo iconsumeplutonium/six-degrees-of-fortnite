@@ -27,7 +27,17 @@ Arguments:
 
 * `--start, -s <name>`: Required argument. The name of franchise to start from, as it appears in `text/crossovers.json` and `crossovers.db`. 
 * `--min-link, -l`: The minimum link type to be used as a valid path, ranges from 1 to 3. Defaults to 3 if not specified. See [here](https://fictionalcrossover.fandom.com/wiki/Link#Types_of_links) for what each link type entails. 
-* `--dfs, -d`: Experimental. Will use depth-first search instead of breadth-first search to find a path. Does not work properly, may or may not be removed in the future. 
+* `--all, -a`: Will search for a path from every single franchise to Fortnite and store the results in `text/AllPaths.json`
+
+#### `dataviz.py`
+
+Precomputes the positions of all nodes in the graph in 3D space for use in the 3D visualizer. It creates an adjacency list based on `text/AllPaths.json`, runs a NetworkX layout algorithm to compute the node positions, then stores the graph with gzip encoding as `text/graph.gz`.
+
+In the JSON structure, a node is defined as having an integer *id*, a string *name*, an integer *value* (the total degree of the vertex in the graph), and a 3-component float list for the position. 
+
+An edge has an integer source (the ID of the source node) and an integer target (the ID of the target node).
+
+The JSON also includes a dictionary *path* which contains the list of node IDs that represent the path from each node to Fortnite (used in the shift + hover feature of the graph).
 
 #### `CrossoverAPI.py`
 
@@ -36,29 +46,62 @@ A simple FastAPI webserver that returns the path to a specified franchise.
 * `/path/{franchise}`
   * Accepts only POST requests
   * Parameters:
-    * `franchise`: (required) the name of the franchise to search for, as it appears in `text/franchises_filtered.txt` and `crossover.db`
-    * `minLinkType`: (optional) The minimum link type that can be used as a valid path (see `-l` flag in `search.py`). Defaults to 3 if not specified. 
+	* `franchise`: (required) the name of the franchise to search for, as it appears in `text/franchises_filtered.txt` and `crossover.db`
+	* `minLinkType`: (optional) The minimum link type that can be used as a valid path (see `-l` flag in `search.py`). Defaults to 3 if not specified. 
   * Responses:
-    * 404: invalid franchise or no franchise specified
-    * 200: franchise is valid
-      * If path does not exist:
-        ```json
-        {
-            "found": false
-        }
-        ```
-      * If path exists:
-        ```json
-        {
-            "found": true,
-            "path": [
-                {
-                    "name": "string",
-                    "date": "string",
-                    "description": "string",
-                    "linkType": 1
-                },
-                ...
-            ]
-        }
-        ```
+	* 404: invalid franchise or no franchise specified
+	* 200: franchise is valid
+	  * If path does not exist:
+		```json
+		{
+			"found": false
+		}
+		```
+	  * If path exists:
+		```json
+		{
+			"found": true,
+			"path": [
+				{
+					"name": "string",
+					"date": "string",
+					"description": "string",
+					"linkType": 1
+				},
+				...
+			]
+		}
+		```
+* `/graph`
+  * Accepts only GET requests
+  * Parameters: None
+  * Responses:
+	* The layout of the graph (gzipped)
+	```json
+	{
+	  "nodes": [
+		{
+			"id": integer, 
+			"name": "string", 
+			"value": integer,
+			"position": [float, float, float]
+		},
+		...
+	  ],
+
+	  "links": [
+		{
+			"source": integer,
+			"target": integer
+		},
+		...
+	  ],
+
+	  "paths": {
+		0: [integer, integer, ...],
+		1: [integer, integer, ...],
+		2: [...],
+		...
+	  }
+	}
+	```
