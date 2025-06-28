@@ -47,6 +47,11 @@ const CrossoverGraphThree = () => {
 
         const stats = new Stats();
         stats.showPanel(0);
+        stats.dom.style.position = 'absolute';  //force it to be in the top right corner instead of top left
+        stats.dom.style.top = '0px';
+        stats.dom.style.right = '0px';
+        stats.dom.style.left = 'auto';
+        stats.dom.style.bottom = 'auto'
         mountRef.current.appendChild(stats.dom);
 
         const handleResize = () => {
@@ -236,12 +241,19 @@ const CrossoverGraphThree = () => {
                     <div className='selectionInfo'>
                         <h3 style={{ margin: "0px", textAlign: "left" }}>{selectedVertex.name}</h3>
                         {shiftKey && graphDataRef.current &&
-                            <p style={{ marginTop: "0px" }}>
+                            <p style={{ marginTop: "0px", textAlign: "left" }}>
                                 {VisualizerUtils.PrintHopsFromFortnite(graphDataRef.current.paths[selectedVertex.id].length, selectedVertex.name)}
                             </p>
                         }
                     </div>
                 )}
+                <div className='controlInfo'>
+                    <h4 style={{ margin: "0px" }}>Controls</h4>
+                    <p style={{ margin: "0px" }}>Left click + drag to pan</p>
+                    <p style={{ margin: "0px" }}>Scrollwheel to zoom</p>
+                    <p style={{ margin: "0px" }}>Mouse over node to view franchise name</p>
+                    <p style={{ margin: "0px" }}>Hold shift + mouse over node to view path to Fortnite</p>
+                </div>
             </div>
 
         </>

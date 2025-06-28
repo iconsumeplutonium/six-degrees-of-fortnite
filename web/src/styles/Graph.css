@@ -15,12 +15,24 @@ body.no-scroll {
 
 .selectionInfo {
     position: fixed;
+    top: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.controlInfo {
+    position: fixed;
     bottom: 10px;
     left: 10px;
     background: rgba(0, 0, 0, 0.8);
     color: white;
     padding: 10px;
     border-radius: 5px;
-    /* z-index: 1000;
-    min-width: 200px */
+    justify-content: left;
+    text-align: left;
+    line-height: 1.0;
+    font-size: 12px;
 }
