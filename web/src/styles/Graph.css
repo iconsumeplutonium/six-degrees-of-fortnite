@@ -2,7 +2,6 @@ body.no-scroll {
     overflow: hidden;
 }
 
-
 .canvas {
     width: 90vw;
     height: 80vh;
@@ -11,6 +10,11 @@ body.no-scroll {
     top: 10%;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.franchiseInfoBoxText {
+    margin: 0px;
+    text-align: left;
 }
 
 .selectionInfo {

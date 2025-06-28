@@ -239,9 +239,9 @@ const CrossoverGraphThree = () => {
             >
                 {selectedVertex && (
                     <div className='selectionInfo'>
-                        <h3 style={{ margin: "0px", textAlign: "left" }}>{selectedVertex.name}</h3>
+                        <h3 className='franchiseInfoBoxText'>{selectedVertex.name}</h3>
                         {shiftKey && graphDataRef.current &&
-                            <p style={{ marginTop: "0px", textAlign: "left" }}>
+                            <p className='franchiseInfoBoxText'>
                                 {VisualizerUtils.PrintHopsFromFortnite(graphDataRef.current.paths[selectedVertex.id].length, selectedVertex.name)}
                             </p>
                         }
