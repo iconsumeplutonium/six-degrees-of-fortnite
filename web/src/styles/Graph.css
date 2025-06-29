@@ -13,15 +13,13 @@ body.no-scroll {
     width: 90vw;
     height: 80vh;
     overflow: hidden;
-    margin-top: 10vh; /* top: 10vh, horizontal: auto, bottom: 0 */
+    margin-top: 10vh;
     position: relative;
 }
 
-.content-below {
-    flex: 1;
-    background: rgba(0,0,0,0.8);
-    color: white;
+.contentBelow {
     padding: 10px;
+    text-align: left;
 }
 
 .franchiseInfoBoxText {

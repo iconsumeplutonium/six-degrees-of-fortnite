@@ -257,9 +257,10 @@ const CrossoverGraphThree = () => {
                         <p style={{ margin: "0px" }}>Hold shift + mouse over node to view path to Fortnite</p>
                     </div>
                 </div>
-                <div className="contentBelow">
-                    A 3D visualization of every single shortest path to Fortnite. 
-                </div>
+            </div>
+            <div className="contentBelow">
+                This is a 3D visualization of every single franchise's shortest path to Fortnite. Note that this visualization works better on with
+                keyboard and mouse than on a touch display. 
             </div>
         </>
     );
