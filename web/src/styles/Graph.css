@@ -2,14 +2,26 @@ body.no-scroll {
     overflow: hidden;
 }
 
+.page-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+}
+
 .canvas {
     width: 90vw;
     height: 80vh;
     overflow: hidden;
-    position: fixed;
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-top: 10vh; /* top: 10vh, horizontal: auto, bottom: 0 */
+    position: relative;
+}
+
+.content-below {
+    flex: 1;
+    background: rgba(0,0,0,0.8);
+    color: white;
+    padding: 10px;
 }
 
 .franchiseInfoBoxText {
@@ -18,7 +30,7 @@ body.no-scroll {
 }
 
 .selectionInfo {
-    position: fixed;
+    position: absolute;
     top: 10px;
     left: 10px;
     background: rgba(0, 0, 0, 0.8);
@@ -28,7 +40,7 @@ body.no-scroll {
 }
 
 .controlInfo {
-    position: fixed;
+    position: absolute;
     bottom: 10px;
     left: 10px;
     background: rgba(0, 0, 0, 0.8);

@@ -29,12 +29,13 @@ const CrossoverGraphThree = () => {
         const scene = new THREE.Scene();
         scene.background = new THREE.Color(0x000000);
 
-        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 100000);
+        const camera = new THREE.PerspectiveCamera(75, mountRef.current!.clientWidth / mountRef.current!.clientHeight, 0.1, 100000);
         camera.position.z = 50;
         camera.lookAt(0, 0, 0);
 
         const renderer = new THREE.WebGLRenderer({ antialias: true });
-        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setPixelRatio(window.devicePixelRatio);
+        renderer.setSize(mountRef.current!.clientWidth, mountRef.current!.clientHeight);
         mountRef.current.appendChild(renderer.domElement);
 
         let currentInfoBox: THREE.Group | null = null;
@@ -55,15 +56,15 @@ const CrossoverGraphThree = () => {
         mountRef.current.appendChild(stats.dom);
 
         const handleResize = () => {
-            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.aspect = mountRef.current!.clientWidth / mountRef.current!.clientHeight;
             camera.updateProjectionMatrix();
-            renderer.setSize(window.innerWidth, window.innerHeight);
+            renderer.setSize(mountRef.current!.clientWidth, mountRef.current!.clientHeight);
         };
         window.addEventListener('resize', handleResize);
 
 
 
-        fetch('http://127.0.0.1:8000/graph')
+        fetch('http://192.168.189.162:8000/graph')
             .then(response => {
                 return response.json();
             })
@@ -207,7 +208,7 @@ const CrossoverGraphThree = () => {
         // can only hide the scrollbar on this page by setting the body to have overflow: hidden
         // but that affects it globally and prevents scrolling on all other pages too
         // add this no-scroll property when the page is loaded, and remove it when it is unloaded
-        document.body.classList.add("no-scroll");
+        // document.body.classList.add("no-scroll");
 
         const fontLoader = new FontLoader();
         fontLoader.load("https://threejs.org/examples/fonts/helvetiker_regular.typeface.json", function (f: Font) {
@@ -232,30 +233,34 @@ const CrossoverGraphThree = () => {
 
     return (
         <>
-            <Navigation />
-            <div
-                ref={mountRef}
-                className='canvas'
-            >
-                {selectedVertex && (
-                    <div className='selectionInfo'>
-                        <h3 className='franchiseInfoBoxText'>{selectedVertex.name}</h3>
-                        {shiftKey && graphDataRef.current &&
-                            <p className='franchiseInfoBoxText'>
-                                {VisualizerUtils.PrintHopsFromFortnite(graphDataRef.current.paths[selectedVertex.id].length, selectedVertex.name)}
-                            </p>
-                        }
+            <div className='pageContainer'>
+                <Navigation />
+                <div
+                    ref={mountRef}
+                    className='canvas'
+                >
+                    {selectedVertex && (
+                        <div className='selectionInfo'>
+                            <h3 className='franchiseInfoBoxText'>{selectedVertex.name}</h3>
+                            {shiftKey && graphDataRef.current &&
+                                <p className='franchiseInfoBoxText'>
+                                    {VisualizerUtils.PrintHopsFromFortnite(graphDataRef.current.paths[selectedVertex.id].length, selectedVertex.name)}
+                                </p>
+                            }
+                        </div>
+                    )}
+                    <div className='controlInfo'>
+                        <h4 style={{ margin: "0px" }}>Controls</h4>
+                        <p style={{ margin: "0px" }}>Left click + drag to pan</p>
+                        <p style={{ margin: "0px" }}>Scrollwheel to zoom</p>
+                        <p style={{ margin: "0px" }}>Mouse over node to view franchise name</p>
+                        <p style={{ margin: "0px" }}>Hold shift + mouse over node to view path to Fortnite</p>
                     </div>
-                )}
-                <div className='controlInfo'>
-                    <h4 style={{ margin: "0px" }}>Controls</h4>
-                    <p style={{ margin: "0px" }}>Left click + drag to pan</p>
-                    <p style={{ margin: "0px" }}>Scrollwheel to zoom</p>
-                    <p style={{ margin: "0px" }}>Mouse over node to view franchise name</p>
-                    <p style={{ margin: "0px" }}>Hold shift + mouse over node to view path to Fortnite</p>
+                </div>
+                <div className="contentBelow">
+                    A 3D visualization of every single shortest path to Fortnite. 
                 </div>
             </div>
-
         </>
     );
 };

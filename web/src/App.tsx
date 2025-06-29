@@ -32,7 +32,7 @@ function App() {
 		if (!selectedFranchise) return;
 
 		try {
-			const response = await fetch(`http://localhost:8000/path/${encodeURIComponent(selectedFranchise)}?minLinkType=1`, { method: 'POST' });
+			const response = await fetch(`http://192.168.189.162:8000/path/${encodeURIComponent(selectedFranchise)}?minLinkType=1`, { method: 'POST' });
 			if (!response.ok) throw new Error('Error: Something went wrong accessing API');
 
 			const data = await response.json();
