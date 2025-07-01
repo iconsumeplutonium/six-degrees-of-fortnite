@@ -29,7 +29,8 @@
     background-color: #264775;
     border-radius: 5px;
     padding: 8px;
-    width: 40%;
+    width: 85%;
+    max-width: 800px;
     z-index: 3;
 
     /* transition: transform 200ms ease-in-out; */

@@ -32,7 +32,7 @@ function App() {
 		if (!selectedFranchise) return;
 
 		try {
-			const response = await fetch(`http://192.168.189.162:8000/path/${encodeURIComponent(selectedFranchise)}?minLinkType=1`, { method: 'POST' });
+			const response = await fetch(`http://192.168.12.169:8000/path/${encodeURIComponent(selectedFranchise)}?minLinkType=1`, { method: 'POST' });
 			if (!response.ok) throw new Error('Error: Something went wrong accessing API');
 
 			const data = await response.json();
@@ -95,8 +95,8 @@ function App() {
 
 	return (
 		<>
-			<Navigation />
 			<div className="mainPageLayout">
+				<Navigation />
 				<h1 style={{ marginTop: '8vh' }}>Six Degrees of Fortnite</h1>
 				<div className='searchContainer'>
 					<label className="connectText">
@@ -120,11 +120,11 @@ function App() {
 					</label>
 				</div>
 			</div>
-			<button onClick={getCrossover} style={{marginTop: '10px'}}>
+			<button onClick={getCrossover} style={{ marginTop: '10px' }}>
 				<b>Go!</b>
 			</button>
 			<br /><br />
-			<div style={{ display: 'flex', flexDirection: 'column' }}>
+			<div style={{ display: 'flex', flexDirection: 'column', marginBottom: '30px' }}>
 				{formatData()}
 				{/* <Timeline
 					description='the pumping lemma says that for any regular language L, there exists a constant p such that any string w in L with length at least p can be split into three substrings x, y and z (w=xyz, with y being non-empty), such that the strings xz, xyz, xyyz, xyyyz,... are also in L.'
