@@ -96,9 +96,9 @@ function App() {
 	return (
 		<>
 			<Navigation />
-			<div>
-				<h1>Six Degrees of Fortnite</h1>
-				<div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+			<div className="mainPageLayout">
+				<h1 style={{ marginTop: '8vh' }}>Six Degrees of Fortnite</h1>
+				<div className='searchContainer'>
 					<label className="connectText">
 						{"Connect "}
 					</label>

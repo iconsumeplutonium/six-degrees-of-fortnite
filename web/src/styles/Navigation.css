@@ -4,14 +4,41 @@
     position: fixed;
     top: 20px;
     right: 20px;
-    z-index: 1000;
 }
 
 .verticalSeparator {
     border-left: 1px solid #ccc;
+    height: 1.7em;
     margin: 0 0px;
 }
 
 .navLinkText {
     color: white;
+}
+
+@media (max-width: 483px) {
+    .navParent {
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+        max-width: calc(100vw - 40px);
+        gap: 15px;
+    }
+
+    .verticalSeparator {
+        border-left: 1px solid #ccc;
+        height: 1.7em;
+        margin: 0 clamp(-10px, calc((100vw - 300px) / 300 * 25 - 20px), 5px);
+        flex-shrink: 0;
+    }
+
+    .navLinkText {
+        color: white;
+        white-space: nowrap;
+        flex-shrink: 1;
+        min-width: 0;
+        font-size: 16px;
+    }
 }

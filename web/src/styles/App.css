@@ -4,9 +4,10 @@
 	/* padding: 2rem; */
 	text-align: center;
 	min-height: 100vh;
-	align-items: flex-start;
+	/* align-items: flex-start; */
+	overflow-x: hidden;
 }
-
+/* 
 .inputBox {
 	width: 300px;
 	height: 25px;
@@ -15,10 +16,41 @@
 	border-radius: 2px;
 	outline: none;
 	padding: 0px;
-}
+} */
 
 .connectText {
 	font-size: 1.2rem;
 	padding-left: 4px;
 	padding-right: 4px;
+}
+
+.searchContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 483px) {
+	/* .inputBox {
+		width: 300px;
+		height: 25px;
+		font-size: 1.2rem;
+		text-align: center;
+		border-radius: 2px;
+		outline: none;
+		padding: 0px;
+	} */
+
+	.connectText {
+		font-size: 1.2rem;
+		padding-left: 4px;
+		padding-right: 4px;
+		flex-shrink: 0;
+	}
+
+	.searchContainer {
+        flex-direction: column;
+        /* gap: 10px; */
+        align-items: center;
+    }
 }
