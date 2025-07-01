@@ -7,21 +7,12 @@
 	/* align-items: flex-start; */
 	overflow-x: hidden;
 }
-/* 
-.inputBox {
-	width: 300px;
-	height: 25px;
-	font-size: 1.2rem;
-	text-align: center;
-	border-radius: 2px;
-	outline: none;
-	padding: 0px;
-} */
 
 .connectText {
 	font-size: 1.2rem;
 	padding-left: 4px;
 	padding-right: 4px;
+	flex-shrink: 0;
 }
 
 .searchContainer {
@@ -31,16 +22,6 @@
 }
 
 @media (max-width: 483px) {
-	/* .inputBox {
-		width: 300px;
-		height: 25px;
-		font-size: 1.2rem;
-		text-align: center;
-		border-radius: 2px;
-		outline: none;
-		padding: 0px;
-	} */
-
 	.connectText {
 		font-size: 1.2rem;
 		padding-left: 4px;
