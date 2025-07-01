@@ -121,16 +121,11 @@ function App() {
 				</div>
 			</div>
 			<button onClick={getCrossover} style={{ marginTop: '10px' }}>
-				<b>Go!</b>
+				<b style={{color: 'black'}}>Go!</b>
 			</button>
 			<br /><br />
 			<div style={{ display: 'flex', flexDirection: 'column', marginBottom: '30px' }}>
 				{formatData()}
-				{/* <Timeline
-					description='the pumping lemma says that for any regular language L, there exists a constant p such that any string w in L with length at least p can be split into three substrings x, y and z (w=xyz, with y being non-empty), such that the strings xz, xyz, xyyz, xyyyz,... are also in L.'
-					date='February 28, 2004'
-					franchiseName='insert franchise here'
-				/> */}
 			</div>
 		</>
 	)

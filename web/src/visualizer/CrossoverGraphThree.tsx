@@ -11,7 +11,7 @@ import '../styles/Graph.css';
 let font: Font;
 let shiftKeyPress: boolean = false;
 
-const CrossoverGraphThree = () => {
+export default function CrossoverGraphThree() {
     const mountRef = useRef<HTMLDivElement>(null);         // hold the canvas
     const graphDataRef = useRef<Graph | null>(null);       // holds graph data
     const animationIdRef = useRef<number | null>(null);    // holds current animation frame
@@ -259,11 +259,17 @@ const CrossoverGraphThree = () => {
                 </div>
             </div>
             <div className="contentBelow">
-                This is a 3D visualization of every single franchise's shortest path to Fortnite. Note that this visualization works better on with
-                keyboard and mouse than on a touch display. 
+                <p>
+                    This 3D graph visualizes the shortest paths from every franchise back to Fortnite (not every single possible link between every single franchise).
+                </p>
+                <p>
+                    At the center of the graph, you have the web of the Fortnite multiverse, sounded by an outer shell of miscellaneous franchises
+                    that have no connection back to Fortnite.
+                </p>
+                <p>
+                    Note that this visualization works better on with keyboard and mouse than on a touch display.
+                </p>
             </div>
         </>
     );
 };
-
-export default CrossoverGraphThree;
