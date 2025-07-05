@@ -1,29 +1,15 @@
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Autocomplete from './components/Autocomplete';
 import Timeline from './components/Timeline';
 import Navigation from './components/Navigation';
 import { Path } from './types';
 import './styles/App.css';
+import { getFranchises } from './hooks/GetFranchises';
 
 export default function App() {
 	const [selectedFranchise, setSelectedFranchise] = useState('')
-	const [franchiseList, setFranchiseList] = useState<string[]>([]);
 	const [crossoverDict, setCrossoverDict] = useState<Path>({ found: false, path: [] });
-
-	//load list of all franchises into memory on page load
-	const franchiseSet = useMemo(() => new Set(franchiseList), [franchiseList]);
-	useEffect(() => {
-		const readFileIntoArray = async () => {
-			const response = await fetch('/filtered_franchises.txt');
-			if (!response.ok) throw new Error('Failed to load franchises');
-
-			const text = await response.text();
-			const lines = text.split('\n').map(line => line.trim());
-			setFranchiseList(lines);
-		};
-		readFileIntoArray();
-	}, []);
-
+	const { franchiseList, franchiseSet } = getFranchises();
 
 	const GetCrossover = async () => {
 		if (!selectedFranchise) return;
