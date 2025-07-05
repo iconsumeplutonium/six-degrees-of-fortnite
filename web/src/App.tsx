@@ -3,8 +3,8 @@ import Autocomplete from './components/Autocomplete';
 import Timeline from './components/Timeline';
 import Navigation from './components/Navigation';
 import { Path } from './types';
-import './styles/App.css';
 import { getFranchises } from './hooks/GetFranchises';
+import './styles/App.css';
 
 export default function App() {
 	const [selectedFranchise, setSelectedFranchise] = useState('')
@@ -32,7 +32,8 @@ export default function App() {
 		<>
 			<div className="mainPageLayout">
 				<Navigation />
-				<h1 style={{ marginTop: '8vh' }}>Six Degrees of Fortnite</h1>
+				{/* <h1 style={{ marginTop: '8vh' }}>Six Degrees of Fortnite</h1> */}
+				<img className='logo' src="/6dof_logo.png"></img>
 				<div className='searchContainer'>
 					<label className="connectText">
 						{"Connect "}

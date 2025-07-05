@@ -1,18 +1,19 @@
 @font-face {
 	font-family: 'BurbankBigCondensed';
-	src: url('burbankbigcondensed_black.otf')
+      src: local('BurbankBigCondensed'), 
+           url('/burbankbigcondensed_black.otf') format('opentype');
+      font-weight: normal;
+      font-style: normal;
 }
 
 :root {
-	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-	/* font-family: BurbankBigCondensed; */
+	/* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+	font-family: /*BurbankBigCondensed,*/ Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 	line-height: 1.5;
 	font-weight: 400;
 
 	color-scheme: light dark;
 	color: rgb(255, 255, 255);
-	/* background: -moz-linear-gradient(#4a0474, #0029a4); */
-	/* background: linear-gradient(#0029a4 10%, #3e7cff); */
 	background: #131315;
 
 	font-synthesis: none;
@@ -58,25 +59,10 @@ button {
 }
 
 button:active {
-	background-color: #216b4e;
+	background-color: #969a10;
 }
 
 button:focus,
 button:focus-visible {
 	outline: 4px auto -webkit-focus-ring-color;
 }
-
-/* @media (prefers-color-scheme: light) {
-	:root {
-		color: #213547;
-		background-color: #ffffff;
-	}
-
-	a:hover {
-		color: #747bff;
-	}
-
-	button {
-		background-color: #f9f9f9;
-	}
-} */
