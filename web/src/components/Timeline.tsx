@@ -1,44 +1,33 @@
-import '../styles/Timeline.css';
+import { Path, Crossover } from './../types';
+import Card from './Card';
 
 interface TimelineProps {
-	date: string,
-	description: string,
-	franchiseName: string,
-	displayArrow: boolean // whether or not the arrow should show (false if this is the starting point, true otherwise)
+	selectedFranchise: string;
+	crossoverData: Path;
 }
 
-const Timeline: React.FC<TimelineProps> = ({ date, description, franchiseName, displayArrow }) => {
-	//remove margin if no arrow is to be displayed
-	const margin = (displayArrow) ? { marginTop: '30px' } : {};
+export default function Timeline({ selectedFranchise, crossoverData }: TimelineProps) {
+	if (!selectedFranchise) return;
+	if (!crossoverData.found) return `No connection found. ${selectedFranchise} isn't part of the Fortnite multiverse.`;
 
 	return (
-		<div className="timelineCardParent" style={margin}>
-
-			{/* the arrow */}
-			{displayArrow &&
-				<div style={{ position: 'relative' }}>
-					<div className="arrowLine"></div>
-					<div className="arrowHead"></div>
-				</div>
-			}
-
-
-			{/* the card itself */}
-			<div className="cardParent">
-				<h3 className='title'>{franchiseName}</h3>
-
-				{/* only display the crossover date and description if this isnt the starting point (without this, there'll be extra padding under the title) */}
-				{displayArrow &&
-					<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
-						<p className='crossoverDate'>{date}</p>
-						<hr className="dividerBar" />
-						<p className='description'>{description}</p>
-					</div>
-				}
-
-			</div>
+		<div style={{display: 'flex', flexDirection: 'column', marginBottom: '30px'}}>
+			<Card
+				key={0}
+				franchiseName={selectedFranchise}
+				date=""
+				description=""
+				displayArrow={false}
+			/>
+			{crossoverData.path.map((crossover: Crossover, index: number) => (
+				<Card
+					key={index + 1}
+					franchiseName={crossover.name}
+					date={crossover.date}
+					description={crossover.description}
+					displayArrow={true}
+				/>
+			))}
 		</div>
 	);
 }
-
-export default Timeline;

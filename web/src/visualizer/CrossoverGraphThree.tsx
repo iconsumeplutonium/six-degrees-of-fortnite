@@ -64,7 +64,7 @@ export default function CrossoverGraphThree() {
 
 
 
-        fetch('http://192.168.12.169:8000/graph')
+        fetch('http://192.168.189.162:8000/graph')
             .then(response => {
                 return response.json();
             })

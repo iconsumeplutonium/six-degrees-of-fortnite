@@ -1,25 +1,7 @@
 import * as THREE from 'three';
 import { Font } from 'three/addons/loaders/FontLoader.js';
 import { TextGeometry } from 'three/addons/geometries/TextGeometry.js';
-
-export type Vertex = {
-    id: number;
-    name: string;
-    value: number;
-    position: THREE.Vector3;
-}
-
-export type Edge = {
-    source: number;
-    target: number;
-}
-
-export type Graph = {
-    nodes: Vertex[],
-    links: Edge[],
-    paths: Record<number, number[]>
-}
-
+import { Vertex, Edge, Graph } from '../types';
 
 export namespace VisualizerUtils {
     export const posScale = 800;
