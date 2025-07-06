@@ -24,31 +24,29 @@ body.no-scroll {
     text-align: left;
 }
 
-.franchiseInfoBoxText {
-    margin: 0px;
-    text-align: left;
+.panel {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid white;
 }
 
 .selectionInfo {
     position: absolute;
     top: 10px;
     left: 10px;
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
+}
+
+.selectionInfo > * {
+    margin: 0px;
+    text-align: left;
 }
 
 .controlInfo {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
     justify-content: left;
     text-align: left;
     line-height: 1.0;
     font-size: 12px;
+    max-width: 20rem;
 }

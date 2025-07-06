@@ -1,11 +1,12 @@
 import { useEffect, useRef, useState } from 'react';
 import Navigation from '../components/Navigation.tsx';
+import GraphInfo from '../components/GraphInfo.tsx';
+import { VisualizerUtils } from './VisualizerUtilities.tsx';
 import * as THREE from 'three';
 import Stats from 'three/examples/jsm/libs/stats.module.js';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { Font, FontLoader } from 'three/addons/loaders/FontLoader.js';
-import { Vertex, Graph } from './VisualizerUtilities.tsx';
-import { VisualizerUtils } from './VisualizerUtilities.tsx';
+import { Vertex, Graph } from '../types.ts';
 import '../styles/Graph.css';
 
 let font: Font;
@@ -240,21 +241,30 @@ export default function CrossoverGraphThree() {
                     className='canvas'
                 >
                     {selectedVertex && (
-                        <div className='selectionInfo'>
-                            <h3 className='franchiseInfoBoxText'>{selectedVertex.name}</h3>
+                        <div className='panel selectionInfo'>
+                            <h3>{selectedVertex.name}</h3>
                             {shiftKey && graphDataRef.current &&
-                                <p className='franchiseInfoBoxText'>
+                                <p>
                                     {VisualizerUtils.PrintHopsFromFortnite(graphDataRef.current.paths[selectedVertex.id].length, selectedVertex.name)}
                                 </p>
                             }
                         </div>
                     )}
-                    <div className='controlInfo'>
-                        <h4 style={{ margin: "0px" }}>Controls</h4>
-                        <p style={{ margin: "0px" }}>Left click + drag to pan</p>
-                        <p style={{ margin: "0px" }}>Scrollwheel to zoom</p>
-                        <p style={{ margin: "0px" }}>Mouse over node to view franchise name</p>
-                        <p style={{ margin: "0px" }}>Hold shift + mouse over node to view path to Fortnite</p>
+
+                    <div style={{ position: 'absolute', bottom: '10px', left: '10px' }}>
+                        <div className='panel controlInfo'>
+                            This 3D graph visualizes the shortest paths from every franchise back to Fortnite.
+                            Note that this visualization works better on with keyboard and mouse than on a touch display.
+                            <br />
+                            <br />
+
+
+                            <h4 style={{ margin: "0px" }}>Controls</h4>
+                            <p style={{ margin: "0px" }}>Left click + drag to pan</p>
+                            <p style={{ margin: "0px" }}>Scrollwheel to zoom</p>
+                            <p style={{ margin: "0px" }}>Mouse over node to view franchise name</p>
+                            <p style={{ margin: "0px" }}>Hold shift + mouse over node to view path to Fortnite</p>
+                        </div>
                     </div>
                 </div>
             </div>

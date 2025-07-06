@@ -46,7 +46,9 @@ export default function App() {
 		<>
 			<div className="mainPageLayout">
 				<Navigation />
-				<img className='logo' src="/6dof_logo.png"></img>
+				<a href="/">
+					<img className='logo' src="/6dof_logo.png"></img>
+				</a>
 				<div className='searchContainer'>
 					<label className="connectText">
 						{"Connect "}
