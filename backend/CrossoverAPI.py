@@ -1,8 +1,7 @@
 from contextlib import asynccontextmanager
-from fastapi import FastAPI, Request, HTTPException
-import urllib.parse, json
+from fastapi import FastAPI, Request, HTTPException, Response
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi import Response
+import urllib.parse, json
 
 AllPaths: dict[str, list[dict[str, str]]]
 GraphData: Response
@@ -35,8 +34,8 @@ api.add_middleware(
     allow_headers=["*"],
 )
 
-@api.post("/path/{franchise}")
-async def GetPath(franchise: str, request: Request, minLinkType: int = 9999999):
+@api.get("/path/{franchise}")
+async def GetPath(franchise: str, _: Request):
     if franchise not in AllPaths:
         raise HTTPException(status_code=404, detail="Franchise not found")
     
@@ -45,5 +44,5 @@ async def GetPath(franchise: str, request: Request, minLinkType: int = 9999999):
 
 # returns the gzip-compressed json representation of the graph (with node positions precalculated)
 @api.get("/graph")
-async def GetGraph(request: Request):
+async def GetGraph(_: Request):
     return GraphData
