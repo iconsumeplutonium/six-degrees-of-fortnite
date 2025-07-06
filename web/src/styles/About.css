@@ -1,7 +1,15 @@
 .aboutParent {
+	max-width: 500px;
+	width: 60vh;
+	background-color: #000000;
+	border-radius: 3px;
+	z-index: 100;
+	position: absolute;
+	right: 10px;
+	top: 8vh;
+	padding-left: 10px;
+	padding-right: 10px;
 	text-align: left;
-	margin: 10vh 3vh 0 3vh;
-	max-width: 1200px;
 }
 
 .caption {
@@ -16,8 +24,21 @@
 	max-width: 100%;
 }
 
+.aboutText {
+	font-size: 15px;
+}
+
 @media (max-width: 483px) {
 	.caption {
 		font-size: 12px;
+	}
+
+	.aboutParent {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 90vw;
+		max-width: 500px;
+		right: auto;
 	}
 }

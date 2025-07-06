@@ -1,4 +1,6 @@
 @font-face {
+	/* the font that Fortnite uses, according to the internet */
+	/* looks terrible, so im not gonna use it */
 	font-family: 'BurbankBigCondensed';
       src: local('BurbankBigCondensed'), 
            url('/burbankbigcondensed_black.otf') format('opentype');
@@ -43,26 +45,4 @@ body {
 h1 {
 	font-size: 3.2em;
 	line-height: 1.1;
-}
-
-button {
-	/* color and border radius are to make it resemble the "play" button in the main lobby */
-	border-radius: 15px;
-	border: 1px solid transparent;
-	padding: 0.6em 1.2em;
-	font-size: 1em;
-	font-weight: 500;
-	font-family: inherit;
-	background-color: #f8ff1d;
-	cursor: pointer;
-	transition: border-color 0.25s;
-}
-
-button:active {
-	background-color: #969a10;
-}
-
-button:focus,
-button:focus-visible {
-	outline: 4px auto -webkit-focus-ring-color;
 }

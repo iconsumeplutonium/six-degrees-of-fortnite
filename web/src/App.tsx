@@ -69,7 +69,7 @@ export default function App() {
 					</label>
 				</div>
 			</div>
-			<button onClick={GetCrossover} style={{ marginTop: '10px' }}>
+			<button onClick={GetCrossover} style={{ marginTop: '10px' }} className='goButton'>
 				<b style={{ color: 'black' }}>Go!</b>
 			</button>
 			<br /><br />
