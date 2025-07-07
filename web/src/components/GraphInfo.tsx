@@ -27,7 +27,7 @@ export default function GraphInfo() {
 		</div>
 	) : (
 		<button onClick={() => {setOpen(true)}} className='helpButton'>
-			<img src='/q3.svg' style={{width: '15px', height: '15px', display: 'block'}}></img>
+			<img src='/question_mark.svg' style={{width: '15px', height: '15px', display: 'block'}}></img>
 		</button>
 	)
 }
