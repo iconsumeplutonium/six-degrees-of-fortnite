@@ -6,7 +6,7 @@ import App from './App.tsx'
 import CrossoverGraphThree from './visualizer/CrossoverGraphThree.tsx'
 
 createRoot(document.getElementById('root')!).render(
-	<BrowserRouter>
+	<BrowserRouter basename='/six-degrees-of-fortnite/'>
 		<Routes>
 			<Route path='/' element={<StrictMode><App /></StrictMode>}/>
 			<Route path='3d-visualizer' element={<CrossoverGraphThree />} />

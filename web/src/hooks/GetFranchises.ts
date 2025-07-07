@@ -1,4 +1,5 @@
 import { useState, useEffect, useMemo } from "react";
+import textFile from './../assets/filtered_franchises.txt';
 
 // on page load, read the contents of filtered_franchises.txt and load it into
 // a list (for use in the Autocomplete component's random suggestion thing) and
@@ -9,7 +10,7 @@ export function getFranchises() {
 
     useEffect(() => {
         const readFileIntoArray = async () => {
-            const response = await fetch('/filtered_franchises.txt');
+            const response = await fetch(textFile);
             if (!response.ok) throw new Error('Failed to load franchises');
 
             const text = await response.text();

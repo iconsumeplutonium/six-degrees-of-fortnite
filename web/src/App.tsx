@@ -6,6 +6,7 @@ import Navigation from './components/Navigation';
 import { Path } from './types';
 import { getFranchises } from './hooks/GetFranchises';
 import { API_URL } from './constants';
+import  Logo from './assets/6dof_logo.png';
 import './styles/App.css';
 
 export default function App() {
@@ -53,7 +54,7 @@ export default function App() {
 			<div className="mainPageLayout">
 				<Navigation />
 				<a href="/">
-					<img className='logo' src="/6dof_logo.png"></img>
+					<img className='logo' src={Logo}></img>
 				</a>
 				<div className='searchContainer'>
 					<label className="connectText">
