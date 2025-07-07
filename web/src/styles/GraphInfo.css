@@ -1,0 +1,23 @@
+.closeButton {
+    background-color: rgb(152, 0, 0);
+    border: 0px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.closeButton:hover {
+    background-color: rgb(100, 0, 0);
+}
+
+.helpButton {
+    border: 0px;
+    cursor: pointer;
+    background: transparent;
+    padding: 3px;
+    margin: 0px;
+    border-radius: 50%;
+}
+
+.helpButton:hover {
+    background-color: rgb(61, 61, 61, 0.8);
+}

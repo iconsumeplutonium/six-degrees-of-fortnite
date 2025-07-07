@@ -251,34 +251,10 @@ export default function CrossoverGraphThree() {
                         </div>
                     )}
 
-                    <div style={{ position: 'absolute', bottom: '10px', left: '10px' }}>
-                        <div className='panel controlInfo'>
-                            This 3D graph visualizes the shortest paths from every franchise back to Fortnite.
-                            Note that this visualization works better on with keyboard and mouse than on a touch display.
-                            <br />
-                            <br />
-
-
-                            <h4 style={{ margin: "0px" }}>Controls</h4>
-                            <p style={{ margin: "0px" }}>Left click + drag to pan</p>
-                            <p style={{ margin: "0px" }}>Scrollwheel to zoom</p>
-                            <p style={{ margin: "0px" }}>Mouse over node to view franchise name</p>
-                            <p style={{ margin: "0px" }}>Hold shift + mouse over node to view path to Fortnite</p>
-                        </div>
+                    <div className='panel controlInfo'>
+                        <GraphInfo />
                     </div>
                 </div>
-            </div>
-            <div className="contentBelow">
-                <p>
-                    This 3D graph visualizes the shortest paths from every franchise back to Fortnite (not every single possible link between every single franchise).
-                </p>
-                <p>
-                    At the center of the graph, you have the web of the Fortnite multiverse, sounded by an outer shell of miscellaneous franchises
-                    that have no connection back to Fortnite.
-                </p>
-                <p>
-                    Note that this visualization works better on with keyboard and mouse than on a touch display.
-                </p>
             </div>
         </>
     );

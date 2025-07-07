@@ -44,6 +44,10 @@ body.no-scroll {
 }
 
 .controlInfo {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+
     justify-content: left;
     text-align: left;
     line-height: 1.0;
