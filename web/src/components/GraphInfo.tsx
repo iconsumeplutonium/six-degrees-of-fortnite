@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import CloseSVG from '../assets/white_x.svg';
+import QuestionMarkSVG from '../assets/question_mark.svg';
 import './../styles/GraphInfo.css';
 
 export default function GraphInfo() {
@@ -21,13 +23,13 @@ export default function GraphInfo() {
 			</div>
 			<div>
 				<button onClick={() => {setOpen(false)}} className='closeButton'>
-					<img src="/white_x.svg" style={{width: '10px', height: '10px'}} alt="Close"></img>
+					<img src={CloseSVG} style={{width: '10px', height: '10px'}} alt="Close"></img>
 				</button>
 			</div>
 		</div>
 	) : (
 		<button onClick={() => {setOpen(true)}} className='helpButton'>
-			<img src='/question_mark.svg' style={{width: '15px', height: '15px', display: 'block'}}></img>
+			<img src={QuestionMarkSVG} style={{width: '15px', height: '15px', display: 'block'}}></img>
 		</button>
 	)
 }

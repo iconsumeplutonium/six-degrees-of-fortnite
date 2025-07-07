@@ -1,10 +1,11 @@
+import Meme from '../assets/cant_unconnect.png';
 import '../styles/About.css';
 
 export default function About() {
 	return (
 		<div className="aboutParent">
 			<figure style={{ textAlign: 'center' }}>
-				<img src="cant_unconnect.png" style={{ width: '65%' }} alt="Can't unconnect meme" />
+				<img src={Meme} style={{ width: '65%' }} alt="Can't unconnect meme" />
 				<figcaption className="caption">
 					Original Image: <a href="https://twitter.com/Snowfoot_/status/1422779901325807617">@Snowfoot_</a> on Twitter
 					<br />

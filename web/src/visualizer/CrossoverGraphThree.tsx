@@ -132,7 +132,7 @@ export default function CrossoverGraphThree() {
                 // if mouse is hovering over a node
                 if (sphereIntersection) {
                     // get the vertex under the cursor
-                    const clickedNode: Vertex = graphDataRef.current?.nodes[sphereIntersection.instanceId];
+                    const clickedNode: Vertex = graphDataRef.current!.nodes[sphereIntersection.instanceId!];
                     selectedVertexRef.current = clickedNode;
                     setSelectedVertex(clickedNode);
 
