@@ -20,7 +20,7 @@ export default function Navigation() {
 				<span className="verticalSeparator"></span>
 
 				<NavLink
-					to="javascript:void(0)"
+					to="#"
 					onClick={() => setAboutOpen(!isAboutOpen)}
 					className="navLinkText"
 				>
