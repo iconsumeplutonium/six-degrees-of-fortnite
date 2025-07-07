@@ -5,17 +5,18 @@ import Timeline from './components/Timeline';
 import Navigation from './components/Navigation';
 import { Path } from './types';
 import { getFranchises } from './hooks/GetFranchises';
+import { API_URL } from './constants';
 import './styles/App.css';
 
 export default function App() {
 	const [selectedFranchise, setSelectedFranchise] = useState('')
 	const [crossoverDict, setCrossoverDict] = useState<Path>({ found: false, path: [] });
+	const [wasAPIError, setAPIError] = useState<boolean>(false);
 	const { franchiseList, franchiseSet } = getFranchises();
 
 	const navigate = useNavigate();
 	const [searchParams] = useSearchParams();
 	const [prefill, setPrefill] = useState<string>("");
-
 
 	useEffect(() => {
 		const sourceFromURL = searchParams.get('source');
@@ -28,11 +29,16 @@ export default function App() {
 	const GetCrossover = async () => {
 		if (!selectedFranchise) return;
 
-		const response = await fetch(`http://192.168.189.162:8000/path/${encodeURIComponent(selectedFranchise)}`);
-		if (!response.ok) throw new Error('Error: Something went wrong accessing API');
+		try {
+			const response = await fetch(`${API_URL}/path/${encodeURIComponent(selectedFranchise)}`);
+			if (!response.ok) throw new Error('Error: Something went wrong accessing API');
 
-		const data = await response.json();
-		setCrossoverDict(data);
+			const data = await response.json();
+			setCrossoverDict(data);
+			setAPIError(false);
+		} catch (error) {
+			setAPIError(true);
+		}
 	}
 
 
@@ -78,6 +84,7 @@ export default function App() {
 			<Timeline
 				selectedFranchise={selectedFranchise}
 				crossoverData={crossoverDict}
+				wasAPIError={wasAPIError}
 			/>
 		</>
 	)

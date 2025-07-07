@@ -2,3 +2,5 @@ venv/
 psd_assets/
 web/node_modules
 .vscode/
+web/.env
+web/dist

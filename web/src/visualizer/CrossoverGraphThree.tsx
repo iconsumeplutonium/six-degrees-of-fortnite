@@ -7,6 +7,7 @@ import Stats from 'three/examples/jsm/libs/stats.module.js';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { Font, FontLoader } from 'three/addons/loaders/FontLoader.js';
 import { Vertex, Graph } from '../types.ts';
+import { API_URL } from '../constants.ts';
 import '../styles/Graph.css';
 
 let font: Font;
@@ -65,7 +66,7 @@ export default function CrossoverGraphThree() {
 
 
 
-        fetch('http://192.168.189.162:8000/graph')
+        fetch(`${API_URL}/graph`)
             .then(response => {
                 return response.json();
             })

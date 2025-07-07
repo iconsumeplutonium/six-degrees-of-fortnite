@@ -4,10 +4,12 @@ import Card from './Card';
 interface TimelineProps {
 	selectedFranchise: string;
 	crossoverData: Path;
+	wasAPIError: boolean;
 }
 
-export default function Timeline({ selectedFranchise, crossoverData }: TimelineProps) {
+export default function Timeline({ selectedFranchise, crossoverData, wasAPIError }: TimelineProps) {
 	if (!selectedFranchise) return;
+	if (wasAPIError) return "Something went wrong reaching the API. Please try again later.";
 	if (!crossoverData.found) return `No connection found. ${selectedFranchise} isn't part of the Fortnite multiverse.`;
 
 	return (
