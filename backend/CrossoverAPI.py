@@ -40,6 +40,8 @@ async def GetPath(franchise: str, _: Request):
         raise HTTPException(status_code=404, detail="Franchise not found")
     
     franchise = urllib.parse.unquote(franchise)
+
+    print(franchise)
     return AllPaths[franchise]
 
 # returns the gzip-compressed json representation of the graph (with node positions precalculated)
