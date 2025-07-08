@@ -25,7 +25,7 @@ export default function Card({ date, description, franchiseName, displayArrow }:
 
 			{/* the card itself */}
 			<div className="cardParent">
-				<a href={`https://fictionalcrossover.fandom.com/wiki/${franchiseName}`} style={{color: 'white'}} target="_blank">
+				<a href={`https://fictionalcrossover.fandom.com/wiki/${encodeURIComponent(franchiseName)}`} style={{color: 'white'}} target="_blank">
 					<h3 className='title'>{franchiseName}</h3>
 				</a>
 
