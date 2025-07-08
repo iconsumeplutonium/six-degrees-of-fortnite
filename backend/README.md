@@ -6,7 +6,7 @@ Extracts a list of all franchises on the Fictional Crossover wiki.
 Arguments:
 
 * `--extract, -e`: queries the internal Fandom API to get a list of all articles on the wiki, and stores it in `text/franchises_unfiltered.txt`
-* `--cache-redirects, -r`: Goes through every single article in `text/franchises_unfiltered.txt` and determines which articles are redirects by sending an HTTP request and checking if the response is 301 or 302. Stores redirects in `text/redirects.json`, where the key is the original article name and the value is the article it redirects to. 
+* `--cache-redirects, -r`: Goes through every single article in `text/franchises_unfiltered.txt` and determines which articles are redirects by sending an HTTP request and checking if the response is 301 or 302. Stores redirects in `text/redirects.json`, where the key is the original article name and the value is the article it redirects to. (This will send almost 9000 requests to the website, so this should be used very sparingly, if at all.) 
 * `--filter, -f`: Goes through all articles in `text/franchises_unfiltered.txt` and removes all commercials, cameos, trailers, redirects, etc. and stores the result in `text/filtered_franchises.txt`
 * `--insert, -i`: Loads the contents of `text/filtered_franchises.txt` into the `game` table in `crossovers.db`
 
@@ -17,7 +17,7 @@ Simple Powershell script used during the testing of `gameextractor.py`. Wipes `c
 
 #### `linkscraper.py`
 
-Scrapes the crossovers off every article in `text/filtered_franchises.txt`. Stores the crossover data in `text/crossovers.json` and `crossovers.db`. 
+Scrapes the crossovers from every article in `text/filtered_franchises.txt`. Stores the crossover data in `text/crossovers.json` and `crossovers.db`. 
 
 #### `search.py`
 
@@ -44,10 +44,9 @@ The JSON also includes a dictionary *path* which contains the list of node IDs t
 A simple FastAPI webserver that returns the path to a specified franchise.
 
 * `/path/{franchise}`
-  * Accepts only POST requests
+  * Accepts only GET requests
   * Parameters:
 	* `franchise`: (required) the name of the franchise to search for, as it appears in `text/franchises_filtered.txt` and `crossover.db`
-	* `minLinkType`: (optional) The minimum link type that can be used as a valid path (see `-l` flag in `search.py`). Defaults to 3 if not specified. 
   * Responses:
 	* 404: invalid franchise or no franchise specified
 	* 200: franchise is valid
