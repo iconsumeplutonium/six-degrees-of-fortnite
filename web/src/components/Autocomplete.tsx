@@ -87,7 +87,7 @@ const Autocomplete: React.FC<AutocompleteProps> = ({ data, onFranchiseInput, pre
 				placeholder={placeholder}
 			/>
 
-			{isFocus && (currentValue.length > 0) &&
+			{isFocus && currentValue &&
 				<div className="resultsList">
 					{suggestions.map((option: string, index: number) => {
 						return (

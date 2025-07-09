@@ -143,7 +143,7 @@ export namespace VisualizerUtils {
 
     export function PrintHopsFromFortnite(hops: number, name: string) {
         if (hops == 0) 
-            return (name === "Fortnite") ? "The Center of the Universe" : "No path to Fortnite";
+            return (name === "Fortnite") ? "The Center of the Multiverse" : "No path to Fortnite";
         else
             return `${hops} hop${hops > 1 ? "s" : ""} away from Fortnite`;
     }
