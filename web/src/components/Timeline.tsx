@@ -12,7 +12,7 @@ export default function Timeline({ selectedFranchise, crossoverData, wasAPIError
 	if (wasAPIError) return "Something went wrong reaching the API. Please try again later.";
 
 	if (selectedFranchise === 'Fortnite') return (
-		<img src='https://c.tenor.com/PXbKt334CHcAAAAd/tenor.gif' style={{width: '30%', height: 'auto'}}></img>
+		<img src='https://c.tenor.com/PXbKt334CHcAAAAd/tenor.gif' style={{width: '30vh', height: 'auto'}}></img>
 	)
 
 	if (!crossoverData.found) return `No connection found. ${selectedFranchise} isn't part of the Fortnite multiverse.`;
