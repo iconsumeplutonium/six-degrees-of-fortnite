@@ -79,7 +79,7 @@ export namespace VisualizerUtils {
                         
                         void main() {
                             float distFromCamera = length(vWorldPosition - camPos);
-                            float dist01 = 1.0 - clamp(distFromCamera / 1000.0, 0.0, 1.0);
+                            float dist01 = 1.0 - clamp(distFromCamera / 2000.0, 0.0, 1.0);
 
                             gl_FragColor = vec4(color, dist01);
                         }
