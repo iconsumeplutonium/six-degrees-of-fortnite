@@ -86,7 +86,7 @@ if __name__ == "__main__":
 
     print(f"Starting graph generation at {time.strftime('%H:%M:%S')}")
     G: networkx.Graph = networkx.Graph(adjacencyList)
-    positions: dict[int, numpy.ndarray] = networkx.spring_layout(G, dim=3, seed=40, iterations=50) # type: ignore
+    positions: dict[int, numpy.ndarray] = networkx.spring_layout(G, dim=3, seed=40, iterations=100) # type: ignore
     print(f"Finished calculating positions at {time.strftime('%H:%M:%S')}, proceeding to create gzip file")
 
     # get the position of the fortnite node so the graph can be centered around it
