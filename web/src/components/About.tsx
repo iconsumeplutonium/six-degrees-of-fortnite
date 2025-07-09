@@ -17,7 +17,7 @@ export default function About() {
 				Six Degrees of Fortnite attempts to find a way to connect any franchise back to Fortnite solely through crossovers.
 				<br />
 				<br />
-				All the crossover data on this website is sourced from the <a href="https://fictionalcrossover.fandom.com/wiki/Crossover_Wiki">Crossover Wiki</a>.
+				All the crossover data on this website is sourced from the <a href="https://fictionalcrossover.fandom.com/wiki/Crossover_Wiki">Fictional Crossover Wiki</a>.
 
 				All the franchises mentioned on this site are registered trademarks of their respective owners. Fortnite is a registered trademark of
 				Epic Games. This site was made by someone with no affiliation to any those brands/companies.

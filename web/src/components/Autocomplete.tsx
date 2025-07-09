@@ -6,7 +6,8 @@ const MAX_RESULTS = 10;
 interface AutocompleteProps {
 	data: string[],                                     //the list of franchises
 	onFranchiseInput: (franchiseName: string) => void,  //the function to call once a franchise was inputted
-	prefill: string										//text to prefill in the box (if navigating to page via ?source= in URL)
+	prefill: string,									//text to prefill in the box (if navigating to page via ?source= in URL)
+	placeholder: string									//the randomly selected franchise to be used as placeholder text (chosen randomly every 2 seconds)
 }
 
 function filterFranchises(franchiseList: string[], inputQuery: string) {
@@ -27,25 +28,15 @@ function filterFranchises(franchiseList: string[], inputQuery: string) {
 		.slice(0, MAX_RESULTS);
 }
 
-const Autocomplete: React.FC<AutocompleteProps> = ({ data, onFranchiseInput, prefill }) => {
+const Autocomplete: React.FC<AutocompleteProps> = ({ data, onFranchiseInput, prefill, placeholder }) => {
 	const [currentValue, setCurrentValue] = useState<string>('');
 	const [isFocus, setIsFocus] = useState(false);
 	const [selectedIndex, setSelectedIndex] = useState(0);
 	const [suggestions, setSuggestions] = useState<string[]>([]);
-	const [randomFranchiseIndex, setRandomFranchiseIndex] = useState<number>(Math.round(Math.random() * data.length));
 
 	useEffect(() => {
 		if (prefill.length > 0) setCurrentValue(prefill);
 	}, [prefill])
-
-	// pick random number every few seconds for the placeholder text
-	useEffect(() => {
-		const timer = setInterval(() => {
-			setRandomFranchiseIndex(Math.round(Math.random() * data.length));
-		}, 2000);
-
-		return () => clearInterval(timer);
-	}, [data]);
 
 	return (
 		<div className="autocompleteParent" style={{position: 'relative'}}>
@@ -93,7 +84,7 @@ const Autocomplete: React.FC<AutocompleteProps> = ({ data, onFranchiseInput, pre
 							break;
 					}
 				}}
-				placeholder={data[randomFranchiseIndex]}
+				placeholder={placeholder}
 			/>
 
 			{isFocus && (currentValue.length > 0) &&

@@ -4,21 +4,21 @@ import Autocomplete from './components/Autocomplete';
 import Timeline from './components/Timeline';
 import Navigation from './components/Navigation';
 import Attribution from './components/Attribution';
-import { getFranchises } from './hooks/GetFranchiseList';
+import { GetFranchises } from './hooks/GetFranchiseList';
 import CrossoverHooks from './hooks/GetCrossovers';
 import Logo from './assets/6dof_logo.png';
-import { Path } from './types';
 import './styles/App.css';
 
 export default function App() {
-	const [selectedFranchise, setSelectedFranchise] = useState('')
-	const { franchiseList, franchiseSet } = getFranchises();
-	const [crossoverData, isLoading, wasAPIError, GetCrossover] = CrossoverHooks() as [Path, boolean, boolean, (selectedFranchise: string) => Promise<void>];
+	const [selectedFranchise, setSelectedFranchise] = useState('');
+	const [franchiseList, franchiseSet, randomFranchiseSuggestion] = GetFranchises();
+	const [crossoverData, isLoading, wasAPIError, GetCrossover] = CrossoverHooks();
 
 	const navigate = useNavigate();
 	const [searchParams] = useSearchParams();
 	const [prefill, setPrefill] = useState<string>("");
 
+	//if navigating from direct URL, prefill the box with the franchise name, and mark it as selected so the crossover api can be called
 	useEffect(() => {
 		const sourceFromURL = searchParams.get('source');
 		if (sourceFromURL && franchiseSet.has(sourceFromURL)) {
@@ -28,10 +28,22 @@ export default function App() {
 	}, [searchParams, franchiseSet]);
 
 
-	//call getcrossover whenever selectedFranchise is updated (when Autocomplete calls onFranchiseSelect)
+	//Autocomplete calls onFranchiseSelect -> selectedFranchise is updated -> GetCrossver gets called
 	useEffect(() => {
 		GetCrossover(selectedFranchise);
 	}, [selectedFranchise]);
+
+
+	const onGoPress = () => {
+		// if the Go button is pressed when nothing is filled, just use the random suggestion
+		if (!selectedFranchise) {
+			setSelectedFranchise(randomFranchiseSuggestion);
+			setPrefill(randomFranchiseSuggestion);
+			navigate(`?source=${encodeURIComponent(randomFranchiseSuggestion)}`)
+		}
+
+		GetCrossover(selectedFranchise);
+	}
 
 	return (
 		<div style={{
@@ -60,6 +72,7 @@ export default function App() {
 								setSelectedFranchise(f);
 							}}
 							prefill={prefill}
+							placeholder={randomFranchiseSuggestion}
 						/>
 
 						<label className='connectText'>
@@ -67,7 +80,7 @@ export default function App() {
 						</label>
 					</div>
 				</div>
-				<button onClick={() => { GetCrossover(selectedFranchise) }} style={{ marginTop: '10px' }} className='goButton'>
+				<button onClick={onGoPress} style={{ marginTop: '10px' }} className='goButton'>
 					<b style={{ color: 'black' }}>Go!</b>
 				</button>
 				<br /><br />

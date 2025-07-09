@@ -25,5 +25,5 @@ export default function CrossoverHooks() {
 		setIsLoading(false);
 	}
 
-	return [crossoverData, isLoading, wasAPIError, GetCrossover];
+	return [crossoverData, isLoading, wasAPIError, GetCrossover] as const;
 }

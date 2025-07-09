@@ -1,24 +1,24 @@
-import { useState, useEffect, useMemo } from "react";
-import textFile from './../assets/filtered_franchises.txt';
+import { useEffect, useState } from "react";
+import { franchiseList } from "../assets/filtered_franchises";
 
-// on page load, read the contents of filtered_franchises.txt and load it into
-// a list (for use in the Autocomplete component's random suggestion thing) and
-// a set (so that when the enter key is pressed/the Go button is clicked, we can check if the input is a valid franchise in O(1))
-export function getFranchises() {
-    const [franchiseList, setFranchiseList] = useState<string[]>([]);
-    const franchiseSet = useMemo(() => new Set(franchiseList), [franchiseList]);
+const getRandomFranchise = () => { return franchiseList[Math.floor(Math.random() * franchiseList.length)] };
 
+export function GetFranchises() {
+    const [randomFranchise, setRandomFranchise] = useState<string>(getRandomFranchise());
+
+    // every 2000ms, pick a random franchise for the Autocomplete suggestions
     useEffect(() => {
-        const readFileIntoArray = async () => {
-            const response = await fetch(textFile);
-            if (!response.ok) throw new Error('Failed to load franchises');
+        const timer = setInterval(() => {
+            setRandomFranchise(getRandomFranchise());
+        }, 2000);
 
-            const text = await response.text();
-            const lines = text.split('\n').map(line => line.trim());
-            setFranchiseList(lines);
-        };
-        readFileIntoArray();
-    }, []);
+        return () => clearInterval(timer);
+    }, [franchiseList]);
 
-    return {franchiseList, franchiseSet}
+
+    return [
+        franchiseList,
+        new Set(franchiseList),
+        randomFranchise
+    ] as const;
 }
