@@ -3,7 +3,7 @@ from collections import deque
 from tqdm import tqdm
 
 # SETUP --------------------------------------------------------------------------------------
-conn: sqlite3.Connection = sqlite3.connect('backend/crossovers.db')
+conn: sqlite3.Connection = sqlite3.connect('text/crossovers.db')
 cursor: sqlite3.Cursor = conn.cursor()
 
 # create mappings to get franchise ID from name and vice versa
@@ -33,32 +33,6 @@ def pathToNames(path: list[int]) -> list[str]:
 
 def neighbors(franchise: int) -> list[tuple[int, int]]:
     return [(nameToID[crossover["game"]], crossover["linkType"]) for crossover in adj[idToName[franchise]]]
-
-# def setup() -> None:
-#     global conn, cursor, nameToID, idToName, adj, FORTNITE
-
-#     conn = sqlite3.connect('backend/crossovers.db')
-#     cursor = conn.cursor()
-
-#     # create mappings to get franchise ID from name and vice versa
-#     nameToID = {}
-#     idToName = {}
-#     cursor.execute("SELECT id, name, url FROM game;")
-#     rows = cursor.fetchall()
-#     for row in rows:
-#         id   : int = row[0]
-#         name : str = row[1]
-
-#         nameToID[name] = id
-#         idToName[id] = name
-
-#     # load adjacency list representation of all crossovers
-#     with open('text/crossovers.json', 'r') as crossoverJSON:
-#         adj = json.load(crossoverJSON)
-    
-#     # get Fortnite ID
-#     cursor.execute("SELECT id FROM game WHERE name = 'Fortnite';")
-#     FORTNITE = cursor.fetchall()[0][0]
 
 
 # finds the shortest path from start to Fortnite

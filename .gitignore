@@ -4,3 +4,5 @@ psd_assets/
 web/node_modules
 web/.env
 web/dist
+*.ps1
+*.ipynb

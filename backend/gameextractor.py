@@ -154,7 +154,7 @@ if __name__ == "__main__":
 
     # (3) Insert filtered franchise list into database --------------------------------------------------------------------------------------------------------------------------------------------
     if args.insert:
-        conn: sqlite3.Connection = sqlite3.connect('backend/crossovers.db')
+        conn: sqlite3.Connection = sqlite3.connect('text/crossovers.db')
         cursor: sqlite3.Cursor = conn.cursor()
         query: str = "INSERT INTO game (name, url) VALUES (?, ?)"
 

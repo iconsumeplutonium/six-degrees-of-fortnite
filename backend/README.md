@@ -1,4 +1,25 @@
-## Documentation 
+# Documentation 
+
+## Files
+
+* `franchises_unfiltered.txt`
+  * The full list of every single article on the Fictional Crossover Wiki
+* `filtered_franchises.txt`
+  * Filtered list of all franchises on the wiki after filtering out commercials, redirects, trailers, etc.
+* `misc_removals.txt`
+  * A combination of articles that were filtered out of `filtered_franchises.txt`, as well as many non-franchise wiki articles whose names do not follow any particular pattern
+* `redirects.json`
+  * Many articles on the wiki have multiple titles that all redirect back to the original (for instance `Neon Genesis Evangelion` redirects to `Evangelion`, `Disney's Cinderella` redirects to `Cinderella (Disney)`, etc.) This JSON keeps track of them all so different links to the same article are treated as the same link. 
+* `crossovers.db`
+  * an SQLite database containing every single franchise and its crossovers
+* `crossovers.json`
+  * A JSON representation of `crossovers.db`
+* `AllPaths.json`
+  * Stores the precalculated API response for every single path from every franchise back to Fortnite
+* `graph.gz`
+  * Stores precalculated positions for every single node, as well as edge and path data for the 3D visualizer, with gzip compression
+
+## Scripts
 
 #### `gameextractor.py`
 Extracts a list of all franchises on the Fictional Crossover wiki.
@@ -6,14 +27,9 @@ Extracts a list of all franchises on the Fictional Crossover wiki.
 Arguments:
 
 * `--extract, -e`: queries the internal Fandom API to get a list of all articles on the wiki, and stores it in `text/franchises_unfiltered.txt`
-* `--cache-redirects, -r`: Goes through every single article in `text/franchises_unfiltered.txt` and determines which articles are redirects by sending an HTTP request and checking if the response is 301 or 302. Stores redirects in `text/redirects.json`, where the key is the original article name and the value is the article it redirects to. (This will send almost 9000 requests to the website, so this should be used very sparingly, if at all.) 
+* `--cache-redirects, -r`: Goes through every single article in `text/franchises_unfiltered.txt` and determines which articles are redirects by sending an HTTP request and checking if the response is 301 or 302. Stores redirects in `text/redirects.json`, where the key is the redirect's name and the value is the article it redirects to. (As far as I am able to tell, there is no MediaWiki API that directly provides a list of every single redirect and its destination. There exists [this endpoint](https://fictionalcrossover.fandom.com/api.php?action=query&titles=Cinderella%20(Disney)&format=json&prop=redirects), but that only provides all redirects to one single specified article. There is also [this Special page ](https://fictionalcrossover.fandom.com/wiki/Special:ListRedirects) that lists both redirect and destination, but it only provides the first 1000 redirects, not all of them.)
 * `--filter, -f`: Goes through all articles in `text/franchises_unfiltered.txt` and removes all commercials, cameos, trailers, redirects, etc. and stores the result in `text/filtered_franchises.txt`
 * `--insert, -i`: Loads the contents of `text/filtered_franchises.txt` into the `game` table in `crossovers.db`
-
-
-#### `refilter.ps1`
-
-Simple Powershell script used during the testing of `gameextractor.py`. Wipes `crossovers.db`, deletes `text/filtered_franchises.txt`, and reruns `gameextractor.py` with the `-f` and `-i` flags (see above).
 
 #### `linkscraper.py`
 

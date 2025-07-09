@@ -2,7 +2,7 @@ import sqlite3, json, gzip, networkx, time, numpy
 from collections import defaultdict
 from tqdm import tqdm
 
-conn: sqlite3.Connection = sqlite3.connect('backend/crossovers.db')
+conn: sqlite3.Connection = sqlite3.connect('text/crossovers.db')
 cursor: sqlite3.Cursor = conn.cursor()
 
 def GetAdjListShortestPaths() -> dict[int, list]:

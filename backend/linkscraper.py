@@ -141,7 +141,7 @@ if __name__ == "__main__":
     idLookup: dict = {}
     urlLookup: dict = {}
     franchises = [None]
-    conn: sqlite3.Connection = sqlite3.connect('backend/crossovers.db')
+    conn: sqlite3.Connection = sqlite3.connect('text/crossovers.db')
     cursor: sqlite3.Cursor = conn.cursor()
 
     cursor.execute("SELECT id, name, url FROM game;")
