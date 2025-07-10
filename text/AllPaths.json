@@ -652,27 +652,27 @@
                 "linkType": 1.0
             },
             {
-                "name": "Get Smart",
+                "name": "Leave It to Beaver",
                 "date": "August 7, 1987",
-                "description": "Maxwell from Get Smart appears in Back to the Beach.",
+                "description": "June, Wally and Beaver from Leave It to Beaver appears in Back to the Beach.",
                 "linkType": 1.0
             },
             {
-                "name": "McDonald's",
-                "date": "July  1988",
-                "description": "Agent 86 from Get Smart appears in a McDonald commercial.",
+                "name": "Amazing Stories",
+                "date": "December 8, 1985",
+                "description": "June Cleaver appears in the Amazing Stories episode \"Remote Control Man\".",
                 "linkType": 1.0
             },
             {
-                "name": "Star Wars",
-                "date": " 2011",
-                "description": "Two Happys from McDonald's interact with Yoda in a 2012 Happy Meal toys commercial.",
+                "name": "Hulk (Marvel)",
+                "date": "December 8, 1985",
+                "description": "The Hulk appears in the Amazing Stories episode \"Remote Control Man\".",
                 "linkType": 1.0
             },
             {
                 "name": "Fortnite",
-                "date": "December 16, 2019",
-                "description": "An Imperial Stormtrooper, Rey, Finn, a Sith Trooper, Kylo Ren, Zori Bliss, The Mandalorian, Grogu, Boba Fett, Fennec Shand, Krrsantan, Obi-Wan Kenobi, Darth Vader, Luke Skywalker, Leia Organa, Han Solo, R2-D2, Anakin Skywalker, Padm\u00e9 Amidala, Darth Maul, Clone Troopers, Ahsoka, Chewbacca, Lando Calrissian, Yoda, an AWR Trooper, IG-11, Moff Gideon, a First Order Stormtrooper, Captain Phasma, Poe Dameron, Emperor Palpatine, Mace Windu, General Grievous, Jar Jar Banks, Darth Jar Jar, a customizable Mandalorian Warrior and C-3PO from Star Wars appear in Fortnite, alo with several Mythic items. Additionally, Samurai-inspired versions of Darth Vader and a Stormtrooper also appear. \"Fortnite: Galactic Battle\" is a Star Wars-themed season.",
+                "date": "December 8, 2022",
+                "description": "The Hulk appears in Fortnite. Additionally, Sakaaran Champion Hulk from Thor: Ragnarok also appears.",
                 "linkType": 1.0
             }
         ]
@@ -1118,27 +1118,7 @@
         "found": false
     },
     "A Series of Unfortunate Events": {
-        "found": true,
-        "path": [
-            {
-                "name": "Aflac",
-                "date": "December 17, 2004",
-                "description": "The Aflac Duck appears in Lemony Snicket's A Series of Unfortunate Events.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Looney Tunes",
-                "date": " 2004",
-                "description": "The Aflac duck appears with Bugs Bunny, Daffy Duck, Wile E. Coyote and the Road Runner in an Aflac commercial.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "July 2, 2021",
-                "description": "LeBron James, based on his appearance from Space Jam: A New Legacy, appears in Fortnite.",
-                "linkType": 1.0
-            }
-        ]
+        "found": false
     },
     "A Thousand Words": {
         "found": false
@@ -1579,23 +1559,6 @@
                 "name": "Fortnite",
                 "date": "December 14, 2023",
                 "description": "Leonardo, Donatello, Raphael, Michelangelo, April O'Neil, Master Splinter, the Shredder, Krang, Casey Jones, Krang's Android, Bebop and Rocksteady apear in Fortnite. Additionally, the Turtle Van also appears as a Car Body.",
-                "linkType": 1.0
-            }
-        ]
-    },
-    "Aflac": {
-        "found": true,
-        "path": [
-            {
-                "name": "Looney Tunes",
-                "date": " 2004",
-                "description": "The Aflac duck appears with Bugs Bunny, Daffy Duck, Wile E. Coyote and the Road Runner in an Aflac commercial.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "July 2, 2021",
-                "description": "LeBron James, based on his appearance from Space Jam: A New Legacy, appears in Fortnite.",
                 "linkType": 1.0
             }
         ]
@@ -2316,33 +2279,7 @@
         "found": false
     },
     "All My Children": {
-        "found": true,
-        "path": [
-            {
-                "name": "General Hospital",
-                "date": "January 12, 1999",
-                "description": "Rae Cummings from General Hospital appeared in 9 episodes of All My Children and is the mother of Skye Chandler from All My Children; Skye Chandler became a major character on General Hospital; Anna Devane from General Hospital has made several appearances on All My Children and is the twin sister of Alex Marick from All My Children; Alex Marick has made several appearances on General Hospital; Mac Scorpio and Robin Scorpio-Drake from General Hospital have appeared on All My Children.",
-                "linkType": 1.0
-            },
-            {
-                "name": "KFC",
-                "date": "June 6, 2018",
-                "description": "Colonel Sanders appears in an episode of General Hospital.",
-                "linkType": 1.0
-            },
-            {
-                "name": "The Flash",
-                "date": "October 9, 2015",
-                "description": "The Colonel of Two Worlds #1 is a comic crossover between Colonel Sanders and the Flash.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "February 13, 2021",
-                "description": "The Flash appears in Fortnite.",
-                "linkType": 1.0
-            }
-        ]
+        "found": false
     },
     "All in the Family": {
         "found": true,
@@ -2741,27 +2678,7 @@
         ]
     },
     "American Horror Story": {
-        "found": true,
-        "path": [
-            {
-                "name": "Halloween Horror Nights",
-                "date": "September 7, 2016",
-                "description": "Twisty from American Horror Story appears in an ad for Halloween Horror Nights 26.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Texas Chainsaw Massacre",
-                "date": "May 9, 2007",
-                "description": "In an ad for Halloween Horror Nights 17, Leatherface from The Texas Chainsaw Massacre appears with Jack the Clown.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": " 2024",
-                "description": "Leatherface appears in Fortnite.",
-                "linkType": 1.0
-            }
-        ]
+        "found": false
     },
     "American Idiot": {
         "found": true,
@@ -3808,9 +3725,6 @@
                 "linkType": 1.0
             }
         ]
-    },
-    "Apple Jacks": {
-        "found": false
     },
     "Aqua Teen Hunger Force": {
         "found": true,
@@ -5487,27 +5401,27 @@
         "found": true,
         "path": [
             {
-                "name": "Get Smart",
+                "name": "Leave It to Beaver",
                 "date": "August 7, 1987",
-                "description": "Maxwell from Get Smart appears in Back to the Beach.",
+                "description": "June, Wally and Beaver from Leave It to Beaver appears in Back to the Beach.",
                 "linkType": 1.0
             },
             {
-                "name": "McDonald's",
-                "date": "July  1988",
-                "description": "Agent 86 from Get Smart appears in a McDonald commercial.",
+                "name": "Amazing Stories",
+                "date": "December 8, 1985",
+                "description": "June Cleaver appears in the Amazing Stories episode \"Remote Control Man\".",
                 "linkType": 1.0
             },
             {
-                "name": "Star Wars",
-                "date": " 2011",
-                "description": "Two Happys from McDonald's interact with Yoda in a 2012 Happy Meal toys commercial.",
+                "name": "Hulk (Marvel)",
+                "date": "December 8, 1985",
+                "description": "The Hulk appears in the Amazing Stories episode \"Remote Control Man\".",
                 "linkType": 1.0
             },
             {
                 "name": "Fortnite",
-                "date": "December 16, 2019",
-                "description": "An Imperial Stormtrooper, Rey, Finn, a Sith Trooper, Kylo Ren, Zori Bliss, The Mandalorian, Grogu, Boba Fett, Fennec Shand, Krrsantan, Obi-Wan Kenobi, Darth Vader, Luke Skywalker, Leia Organa, Han Solo, R2-D2, Anakin Skywalker, Padm\u00e9 Amidala, Darth Maul, Clone Troopers, Ahsoka, Chewbacca, Lando Calrissian, Yoda, an AWR Trooper, IG-11, Moff Gideon, a First Order Stormtrooper, Captain Phasma, Poe Dameron, Emperor Palpatine, Mace Windu, General Grievous, Jar Jar Banks, Darth Jar Jar, a customizable Mandalorian Warrior and C-3PO from Star Wars appear in Fortnite, alo with several Mythic items. Additionally, Samurai-inspired versions of Darth Vader and a Stormtrooper also appear. \"Fortnite: Galactic Battle\" is a Star Wars-themed season.",
+                "date": "December 8, 2022",
+                "description": "The Hulk appears in Fortnite. Additionally, Sakaaran Champion Hulk from Thor: Ragnarok also appears.",
                 "linkType": 1.0
             }
         ]
@@ -7097,21 +7011,27 @@
         "found": true,
         "path": [
             {
-                "name": "McDonald's",
-                "date": " 1994",
-                "description": "Sister and Brother Bear from The Berenstain Bears appear in the Happy Birthday Happy Meal commercial from McDonald's.",
+                "name": "Sprout Diner",
+                "date": "September 27, 2006",
+                "description": "Papa Bear calls Sprout Diner in the episode \"Berenstain Bear's Breakfast Oatmeal\".",
                 "linkType": 1.0
             },
             {
-                "name": "Star Wars",
-                "date": " 2011",
-                "description": "Two Happys from McDonald's interact with Yoda in a 2012 Happy Meal toys commercial.",
+                "name": "Sesame Street",
+                "date": "September 18, 2006",
+                "description": "Elmo calls Sprout Diner in the episode \"Elmo's Funny-Faced Pizza Pies\".",
+                "linkType": 1.0
+            },
+            {
+                "name": "Superman",
+                "date": "July 21, 1969",
+                "description": "In a test show of Sesame Street, Superman appears.",
                 "linkType": 1.0
             },
             {
                 "name": "Fortnite",
-                "date": "December 16, 2019",
-                "description": "An Imperial Stormtrooper, Rey, Finn, a Sith Trooper, Kylo Ren, Zori Bliss, The Mandalorian, Grogu, Boba Fett, Fennec Shand, Krrsantan, Obi-Wan Kenobi, Darth Vader, Luke Skywalker, Leia Organa, Han Solo, R2-D2, Anakin Skywalker, Padm\u00e9 Amidala, Darth Maul, Clone Troopers, Ahsoka, Chewbacca, Lando Calrissian, Yoda, an AWR Trooper, IG-11, Moff Gideon, a First Order Stormtrooper, Captain Phasma, Poe Dameron, Emperor Palpatine, Mace Windu, General Grievous, Jar Jar Banks, Darth Jar Jar, a customizable Mandalorian Warrior and C-3PO from Star Wars appear in Fortnite, alo with several Mythic items. Additionally, Samurai-inspired versions of Darth Vader and a Stormtrooper also appear. \"Fortnite: Galactic Battle\" is a Star Wars-themed season.",
+                "date": "August 10, 2021",
+                "description": "Clark Kent/Superman appears in Fortnite. Additionally, Superman and Krypto from Superman (2025) also appear.",
                 "linkType": 1.0
             }
         ]
@@ -7261,21 +7181,27 @@
         "found": true,
         "path": [
             {
-                "name": "McDonald's",
-                "date": "July  1988",
-                "description": "Jed Clampett from The Beverly Hillbillies appears in a McDonald's commercial.",
+                "name": "Green Acres",
+                "date": "November 27, 1968",
+                "description": "There were several characters that crossoved over between The Beverly Hillbillies and Green Acres.",
                 "linkType": 1.0
             },
             {
-                "name": "Star Wars",
-                "date": " 2011",
-                "description": "Two Happys from McDonald's interact with Yoda in a 2012 Happy Meal toys commercial.",
+                "name": "Hogan's Heroes",
+                "date": "September 14, 1966",
+                "description": "In the Green Acres episode \"Wings Over Hooterville\", Hogan from Hogan's Heroes is mentioned, as well as Stalag 13, the setting of Hogan's Heroes.",
+                "linkType": 1.0
+            },
+            {
+                "name": "Batman",
+                "date": "December 1, 1966",
+                "description": "Colonel Klink from Hogan's Heroes meets Batman and Robin in an episode of Batman.",
                 "linkType": 1.0
             },
             {
                 "name": "Fortnite",
-                "date": "December 16, 2019",
-                "description": "An Imperial Stormtrooper, Rey, Finn, a Sith Trooper, Kylo Ren, Zori Bliss, The Mandalorian, Grogu, Boba Fett, Fennec Shand, Krrsantan, Obi-Wan Kenobi, Darth Vader, Luke Skywalker, Leia Organa, Han Solo, R2-D2, Anakin Skywalker, Padm\u00e9 Amidala, Darth Maul, Clone Troopers, Ahsoka, Chewbacca, Lando Calrissian, Yoda, an AWR Trooper, IG-11, Moff Gideon, a First Order Stormtrooper, Captain Phasma, Poe Dameron, Emperor Palpatine, Mace Windu, General Grievous, Jar Jar Banks, Darth Jar Jar, a customizable Mandalorian Warrior and C-3PO from Star Wars appear in Fortnite, alo with several Mythic items. Additionally, Samurai-inspired versions of Darth Vader and a Stormtrooper also appear. \"Fortnite: Galactic Battle\" is a Star Wars-themed season.",
+                "date": "September 21, 2019",
+                "description": "Batman, Joker, Poison Ivy, Deathstroke, The Batman Who Laughs and Robin appear in Fortnite, as well as Batman from The Dark Knight and a Feudal ninja-inspired version of Batman. Batman Begins was also screened in Fortnite during the \"Movie Nite\" event.",
                 "linkType": 1.0
             }
         ]
@@ -7845,41 +7771,6 @@
             }
         ]
     },
-    "Birds Eye": {
-        "found": true,
-        "path": [
-            {
-                "name": "Noel's House Party",
-                "date": "March 13, 1993",
-                "description": "Captain Birdseye appears in Noel's House Party.",
-                "linkType": 1.0
-            },
-            {
-                "name": "EastEnders",
-                "date": "October 18, 2009",
-                "description": "Mr Blobby fights Heather Mills and Phil Mitchell in Harry Hill's TV Burp.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Doctor Who",
-                "date": "November 26, 1993",
-                "description": "EastEnders and Doctor Who have a television crossover together in \"Dimensions in Time\".",
-                "linkType": 1.0
-            },
-            {
-                "name": "Green Lantern",
-                "date": "March 12, 1981",
-                "description": "Alan Moore had earlier stated in a 1982 interview that the Order of the Black Sun were \"an Earth-5 version of the Green Lantern Corps\".",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "October 26, 2021",
-                "description": "John Stewart/Green Lantern appears in Batman/Fortnite: Foundation.",
-                "linkType": 1.0
-            }
-        ]
-    },
     "Birds of a Feather": {
         "found": false
     },
@@ -8232,33 +8123,7 @@
         ]
     },
     "Blackadder": {
-        "found": true,
-        "path": [
-            {
-                "name": "Mr. Bean",
-                "date": "June 21, 2003",
-                "description": "A portrait of Edmund, Lord Blackadder from Blackadder II can be seen in Buckingham Palace in the Mr. Bean: The Animated Series episode Royal Bean.",
-                "linkType": 1.0
-            },
-            {
-                "name": "M&M's",
-                "date": " 1997",
-                "description": "M&M's characters meet Mr. Bean characters in a 1997 M&M's commerical.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Star Wars",
-                "date": " 2005",
-                "description": "M&M's characters meet Star Wars characters in a commercial for Star Wars M&M's.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "December 16, 2019",
-                "description": "An Imperial Stormtrooper, Rey, Finn, a Sith Trooper, Kylo Ren, Zori Bliss, The Mandalorian, Grogu, Boba Fett, Fennec Shand, Krrsantan, Obi-Wan Kenobi, Darth Vader, Luke Skywalker, Leia Organa, Han Solo, R2-D2, Anakin Skywalker, Padm\u00e9 Amidala, Darth Maul, Clone Troopers, Ahsoka, Chewbacca, Lando Calrissian, Yoda, an AWR Trooper, IG-11, Moff Gideon, a First Order Stormtrooper, Captain Phasma, Poe Dameron, Emperor Palpatine, Mace Windu, General Grievous, Jar Jar Banks, Darth Jar Jar, a customizable Mandalorian Warrior and C-3PO from Star Wars appear in Fortnite, alo with several Mythic items. Additionally, Samurai-inspired versions of Darth Vader and a Stormtrooper also appear. \"Fortnite: Galactic Battle\" is a Star Wars-themed season.",
-                "linkType": 1.0
-            }
-        ]
+        "found": false
     },
     "Blackthorne": {
         "found": true,
@@ -9739,9 +9604,6 @@
     "Boston Public": {
         "found": false
     },
-    "Bounty (Procter & Gamble)": {
-        "found": false
-    },
     "Bounty Battle": {
         "found": true,
         "path": [
@@ -9787,27 +9649,27 @@
                 "linkType": 1.0
             },
             {
-                "name": "Get Smart",
+                "name": "Leave It to Beaver",
                 "date": "August 7, 1987",
-                "description": "Maxwell from Get Smart appears in Back to the Beach.",
+                "description": "June, Wally and Beaver from Leave It to Beaver appears in Back to the Beach.",
                 "linkType": 1.0
             },
             {
-                "name": "McDonald's",
-                "date": "July  1988",
-                "description": "Agent 86 from Get Smart appears in a McDonald commercial.",
+                "name": "Amazing Stories",
+                "date": "December 8, 1985",
+                "description": "June Cleaver appears in the Amazing Stories episode \"Remote Control Man\".",
                 "linkType": 1.0
             },
             {
-                "name": "Star Wars",
-                "date": " 2011",
-                "description": "Two Happys from McDonald's interact with Yoda in a 2012 Happy Meal toys commercial.",
+                "name": "Hulk (Marvel)",
+                "date": "December 8, 1985",
+                "description": "The Hulk appears in the Amazing Stories episode \"Remote Control Man\".",
                 "linkType": 1.0
             },
             {
                 "name": "Fortnite",
-                "date": "December 16, 2019",
-                "description": "An Imperial Stormtrooper, Rey, Finn, a Sith Trooper, Kylo Ren, Zori Bliss, The Mandalorian, Grogu, Boba Fett, Fennec Shand, Krrsantan, Obi-Wan Kenobi, Darth Vader, Luke Skywalker, Leia Organa, Han Solo, R2-D2, Anakin Skywalker, Padm\u00e9 Amidala, Darth Maul, Clone Troopers, Ahsoka, Chewbacca, Lando Calrissian, Yoda, an AWR Trooper, IG-11, Moff Gideon, a First Order Stormtrooper, Captain Phasma, Poe Dameron, Emperor Palpatine, Mace Windu, General Grievous, Jar Jar Banks, Darth Jar Jar, a customizable Mandalorian Warrior and C-3PO from Star Wars appear in Fortnite, alo with several Mythic items. Additionally, Samurai-inspired versions of Darth Vader and a Stormtrooper also appear. \"Fortnite: Galactic Battle\" is a Star Wars-themed season.",
+                "date": "December 8, 2022",
+                "description": "The Hulk appears in Fortnite. Additionally, Sakaaran Champion Hulk from Thor: Ragnarok also appears.",
                 "linkType": 1.0
             }
         ]
@@ -10713,35 +10575,6 @@
             }
         ]
     },
-    "Burger King": {
-        "found": true,
-        "path": [
-            {
-                "name": "Subway Surfers",
-                "date": "July 18, 2022",
-                "description": "The Burger King appears in Subway Surfers as part of a collaboration event.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Ultraman",
-                "date": "January 12, 2023",
-                "description": "Characters from Ultraman appear in the Chinese version of Subway Surfers.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Godzilla",
-                "date": " 1978",
-                "description": "Ultraman monsters are in the Godzilla's Gang toyline.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "January 16, 2025",
-                "description": "Godzilla Evolved from Godzilla X Kong: The New Empire and Mechagodzilla from Godzilla vs. Kong appear in Fortnite.",
-                "linkType": 1.0
-            }
-        ]
-    },
     "Buriki One": {
         "found": true,
         "path": [
@@ -11635,23 +11468,6 @@
                 "name": "Fortnite",
                 "date": "February 20, 2021",
                 "description": "Ryu, Chun-Li, Cammy, Guile, Sakura and Blanka from Street Fighter appear in Fortnite.",
-                "linkType": 1.0
-            }
-        ]
-    },
-    "Cap'n Crunch": {
-        "found": true,
-        "path": [
-            {
-                "name": "Spider-Man",
-                "date": "January  1986",
-                "description": "A Spider-Man advertisement features elements and characters from Cap'n Crunch.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "December 4, 2021",
-                "description": "Spider-Man, Mary Jane Watson, the Green Goblin and the Prowler appear in Fortnite. Additionally, Spider-Man and Michelle Jones from Spider-Man: No Way Home and Spider-Gwen, Spider-Man (Miles Morales) and Spider-Man 2099 from Spider-Man: Across the Spider-Verse also appear. \"Sunflower - Spider-Man: Into the Spider-Verse\" by Post Malone & Swae Lee also appears as a Jam Track.",
                 "linkType": 1.0
             }
         ]
@@ -13177,27 +12993,7 @@
         ]
     },
     "Cavemen (ABC)": {
-        "found": true,
-        "path": [
-            {
-                "name": "GEICO",
-                "date": "October 02, 2007",
-                "description": "Cavemen is a spin-off of The Geico Cavemen Commericials.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Looney Tunes",
-                "date": "May 28, 2012",
-                "description": "Roadrunner and Wild E. Coyote appear in a GEICO commercial.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "July 2, 2021",
-                "description": "LeBron James, based on his appearance from Space Jam: A New Legacy, appears in Fortnite.",
-                "linkType": 1.0
-            }
-        ]
+        "found": false
     },
     "Celebrity Deathmatch": {
         "found": true,
@@ -13799,9 +13595,6 @@
             }
         ]
     },
-    "Cheetos": {
-        "found": false
-    },
     "Chef (G&W)": {
         "found": true,
         "path": [
@@ -13829,33 +13622,7 @@
         "found": false
     },
     "Chex Quest": {
-        "found": true,
-        "path": [
-            {
-                "name": "Monster Cereals",
-                "date": "May 18, 2020",
-                "description": "Count Chocula and Boo Berry appear in the audience of the NaCl 96 ending of Chex Quest HD.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Lucky Charms",
-                "date": " 2017",
-                "description": "Lucky The Leprechaun appears at a Halloween party in the back of the 2017 cereal box of The Monster Cereals.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Loki (Marvel)",
-                "date": "June 07, 2021",
-                "description": "Loki appears in a Lucky Charms commercial where he changes the cereal to \u201cLoki Charms\u201d.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "July 1, 2021",
-                "description": "Loki appears in Fortnite as a part of the Fortnite Crew subscription service. Additionally, Loki, Sylvie Laufeydottir and Miss Minutes from Loki also appear.",
-                "linkType": 1.0
-            }
-        ]
+        "found": false
     },
     "Cheyenne (Warner Bros.)": {
         "found": true,
@@ -14705,29 +14472,6 @@
             }
         ]
     },
-    "Chuck E. Cheese": {
-        "found": true,
-        "path": [
-            {
-                "name": "Roblox",
-                "date": "July 18, 2023",
-                "description": "Characters from Chuck E. Cheese appear in the Pi\u00f1ata Smashlings game in Roblox.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Transformers",
-                "date": "February 11, 2011",
-                "description": "In multiple limited-time events in Roblox, players could work for the Autobots or the Deceptions and even play as characters from Transformers.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "June 9, 2023",
-                "description": "Optimus Prime, Optimus Primal, Bumblebee, Megatron and a Battle Bus Transformer appear in Fortnite.",
-                "linkType": 1.0
-            }
-        ]
-    },
     "Chunithm": {
         "found": true,
         "path": [
@@ -14863,35 +14607,6 @@
                 "name": "Fortnite",
                 "date": "December 14, 2023",
                 "description": "Leonardo, Donatello, Raphael, Michelangelo, April O'Neil, Master Splinter, the Shredder, Krang, Casey Jones, Krang's Android, Bebop and Rocksteady apear in Fortnite. Additionally, the Turtle Van also appears as a Car Body.",
-                "linkType": 1.0
-            }
-        ]
-    },
-    "Cinnamon Toast Crunch": {
-        "found": true,
-        "path": [
-            {
-                "name": "Monster Cereals",
-                "date": " 2017",
-                "description": "The Crazy Squares appear at a Halloween party in the back of the 2017 cereal box of The Monster Cereals.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Lucky Charms",
-                "date": " 2017",
-                "description": "Lucky The Leprechaun appears at a Halloween party in the back of the 2017 cereal box of The Monster Cereals.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Loki (Marvel)",
-                "date": "June 07, 2021",
-                "description": "Loki appears in a Lucky Charms commercial where he changes the cereal to \u201cLoki Charms\u201d.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "July 1, 2021",
-                "description": "Loki appears in Fortnite as a part of the Fortnite Crew subscription service. Additionally, Loki, Sylvie Laufeydottir and Miss Minutes from Loki also appear.",
                 "linkType": 1.0
             }
         ]
@@ -15723,9 +15438,6 @@
             }
         ]
     },
-    "Coca-Cola": {
-        "found": false
-    },
     "Coco": {
         "found": true,
         "path": [
@@ -15739,46 +15451,6 @@
                 "name": "Fortnite",
                 "date": "September 27, 2024",
                 "description": "Mr. Incredible, Elastigirl and Frozone appear in Fortnite. Additionally, the Incredibile also appears as a Car Body.",
-                "linkType": 1.0
-            }
-        ]
-    },
-    "Coco Pops": {
-        "found": true,
-        "path": [
-            {
-                "name": "Star Wars",
-                "date": " 2003",
-                "description": "Coco the Monkey interacts with Star Wars characters in a 2003 commercial for Kellogg\u2019s cereals promoting Star Wars: Episode III - Attack of the Clones.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "December 16, 2019",
-                "description": "An Imperial Stormtrooper, Rey, Finn, a Sith Trooper, Kylo Ren, Zori Bliss, The Mandalorian, Grogu, Boba Fett, Fennec Shand, Krrsantan, Obi-Wan Kenobi, Darth Vader, Luke Skywalker, Leia Organa, Han Solo, R2-D2, Anakin Skywalker, Padm\u00e9 Amidala, Darth Maul, Clone Troopers, Ahsoka, Chewbacca, Lando Calrissian, Yoda, an AWR Trooper, IG-11, Moff Gideon, a First Order Stormtrooper, Captain Phasma, Poe Dameron, Emperor Palpatine, Mace Windu, General Grievous, Jar Jar Banks, Darth Jar Jar, a customizable Mandalorian Warrior and C-3PO from Star Wars appear in Fortnite, alo with several Mythic items. Additionally, Samurai-inspired versions of Darth Vader and a Stormtrooper also appear. \"Fortnite: Galactic Battle\" is a Star Wars-themed season.",
-                "linkType": 1.0
-            }
-        ]
-    },
-    "Cocoa Puffs": {
-        "found": true,
-        "path": [
-            {
-                "name": "Popeye",
-                "date": " 1987",
-                "description": "Sonny from Cocoa Puffs meets Popeye in two commercials.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Alien (Fox)",
-                "date": " 1992",
-                "description": "Popeye 3: WrestleCrazy features a Xenomorph from Aliens.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "March 1, 2021",
-                "description": "Ripley and the Xenomorph from Alien appear in Fortnite.",
                 "linkType": 1.0
             }
         ]
@@ -16143,23 +15815,6 @@
             }
         ]
     },
-    "Compare the Market": {
-        "found": true,
-        "path": [
-            {
-                "name": "Spider-Man",
-                "date": " 2017",
-                "description": "In a Compare the Market \"Meerkat Movies\" commercial advertising Spider-Man: Homecoming, Sergei finds and wears Spider-Man's suit.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "December 4, 2021",
-                "description": "Spider-Man, Mary Jane Watson, the Green Goblin and the Prowler appear in Fortnite. Additionally, Spider-Man and Michelle Jones from Spider-Man: No Way Home and Spider-Gwen, Spider-Man (Miles Morales) and Spider-Man 2099 from Spider-Man: Across the Spider-Verse also appear. \"Sunflower - Spider-Man: Into the Spider-Verse\" by Post Malone & Swae Lee also appears as a Jam Track.",
-                "linkType": 1.0
-            }
-        ]
-    },
     "Compati Hero": {
         "found": true,
         "path": [
@@ -16375,29 +16030,6 @@
             }
         ]
     },
-    "Cookie Crisp": {
-        "found": true,
-        "path": [
-            {
-                "name": "Trix",
-                "date": " 2023",
-                "description": "Chip the Wolf of Cookie Crisp appears alongside Trick the Trix Rabbit on cereal boxes for Trix. Chip appears in the Trix Toons episode Trix: The Musical.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Looney Tunes",
-                "date": " 1985",
-                "description": "Bugs Bunny tries to help Tricks the Trix Rabbit get some cereal in a two-part Trix commercial.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "July 2, 2021",
-                "description": "LeBron James, based on his appearance from Space Jam: A New Legacy, appears in Fortnite.",
-                "linkType": 1.0
-            }
-        ]
-    },
     "Cookie Run": {
         "found": true,
         "path": [
@@ -16585,9 +16217,6 @@
                 "linkType": 1.0
             }
         ]
-    },
-    "Corn Flakes": {
-        "found": false
     },
     "Coromon": {
         "found": true,
@@ -17890,21 +17519,27 @@
         "found": true,
         "path": [
             {
-                "name": "McDonald's",
-                "date": " 2014",
-                "description": "Happy from McDonald's interacts with Om Nom in a 2014 Happy Meal toys commercial.",
+                "name": "Dragon Adventures",
+                "date": "June 11, 2021",
+                "description": "Cut the Rope Collaboration Event was an event that was an official collaboration between Cut the Rope and Dragon Adventures.",
                 "linkType": 1.0
             },
             {
-                "name": "Star Wars",
-                "date": " 2011",
-                "description": "Two Happys from McDonald's interact with Yoda in a 2012 Happy Meal toys commercial.",
+                "name": "Roblox",
+                "date": "July 15, 2019",
+                "description": "Dragon Adventures was released as a Roblox experience and the player's Roblox Avatar can be used in it. Dragon Adventures was also part of the official Metaverse Champions event.",
+                "linkType": 1.0
+            },
+            {
+                "name": "Transformers",
+                "date": "February 11, 2011",
+                "description": "In multiple limited-time events in Roblox, players could work for the Autobots or the Deceptions and even play as characters from Transformers.",
                 "linkType": 1.0
             },
             {
                 "name": "Fortnite",
-                "date": "December 16, 2019",
-                "description": "An Imperial Stormtrooper, Rey, Finn, a Sith Trooper, Kylo Ren, Zori Bliss, The Mandalorian, Grogu, Boba Fett, Fennec Shand, Krrsantan, Obi-Wan Kenobi, Darth Vader, Luke Skywalker, Leia Organa, Han Solo, R2-D2, Anakin Skywalker, Padm\u00e9 Amidala, Darth Maul, Clone Troopers, Ahsoka, Chewbacca, Lando Calrissian, Yoda, an AWR Trooper, IG-11, Moff Gideon, a First Order Stormtrooper, Captain Phasma, Poe Dameron, Emperor Palpatine, Mace Windu, General Grievous, Jar Jar Banks, Darth Jar Jar, a customizable Mandalorian Warrior and C-3PO from Star Wars appear in Fortnite, alo with several Mythic items. Additionally, Samurai-inspired versions of Darth Vader and a Stormtrooper also appear. \"Fortnite: Galactic Battle\" is a Star Wars-themed season.",
+                "date": "June 9, 2023",
+                "description": "Optimus Prime, Optimus Primal, Bumblebee, Megatron and a Battle Bus Transformer appear in Fortnite.",
                 "linkType": 1.0
             }
         ]
@@ -21396,21 +21031,21 @@
         "found": true,
         "path": [
             {
-                "name": "Target",
-                "date": "November 29, 2014",
-                "description": "Doc McStuffins appears in a Target holidays commercial in Target Holiday 2014: What D\u2019ya Get?.",
+                "name": "Chip 'n' Dale",
+                "date": "May 20, 2022",
+                "description": "Doc from Doc Mcstuffins makes a cameo in the Chip 'n Dale Rescue Ranger movie",
                 "linkType": 1.0
             },
             {
-                "name": "SpongeBob SquarePants",
-                "date": " 2001",
-                "description": "A Target commercial has SpongeBob meet and chase after Bullseye.",
+                "name": "Transformers",
+                "date": "May 20, 2022",
+                "description": "Blaster appears in Rescue Rangers (2022).",
                 "linkType": 1.0
             },
             {
                 "name": "Fortnite",
-                "date": "December 16, 2024",
-                "description": "SpongeBob and Fishstick interact to promote Official Creative Maps based on SpongeBob in Fortnite.",
+                "date": "June 9, 2023",
+                "description": "Optimus Prime, Optimus Primal, Bumblebee, Megatron and a Battle Bus Transformer appear in Fortnite.",
                 "linkType": 1.0
             }
         ]
@@ -21607,23 +21242,6 @@
                 "name": "Fortnite",
                 "date": "February 07, 2020",
                 "description": "Harley Quinn appears in Fortnite.",
-                "linkType": 1.0
-            }
-        ]
-    },
-    "Domino's": {
-        "found": true,
-        "path": [
-            {
-                "name": "Hatsune Miku",
-                "date": "March 7, 2013",
-                "description": "Domino's App feat. Hatsune Miku was a food delivery app themed after the character of the same name.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "January 14, 2025",
-                "description": "Hatsune Miku appears in Fortnite, and is the featured Artist for Fortnite Festival Season 7.",
                 "linkType": 1.0
             }
         ]
@@ -22707,21 +22325,21 @@
                 "linkType": 1.0
             },
             {
-                "name": "McDonald's",
-                "date": " 2014",
-                "description": "Happy from McDonald's interacts with characters from How to Train Your Dragon in a 2014 Happy Meal toys commercial.",
+                "name": "Roblox",
+                "date": "June 12, 2014",
+                "description": "Roblox promoted How to Train Your Dragon with gear and characters from the series.",
                 "linkType": 1.0
             },
             {
-                "name": "Star Wars",
-                "date": " 2011",
-                "description": "Two Happys from McDonald's interact with Yoda in a 2012 Happy Meal toys commercial.",
+                "name": "Transformers",
+                "date": "February 11, 2011",
+                "description": "In multiple limited-time events in Roblox, players could work for the Autobots or the Deceptions and even play as characters from Transformers.",
                 "linkType": 1.0
             },
             {
                 "name": "Fortnite",
-                "date": "December 16, 2019",
-                "description": "An Imperial Stormtrooper, Rey, Finn, a Sith Trooper, Kylo Ren, Zori Bliss, The Mandalorian, Grogu, Boba Fett, Fennec Shand, Krrsantan, Obi-Wan Kenobi, Darth Vader, Luke Skywalker, Leia Organa, Han Solo, R2-D2, Anakin Skywalker, Padm\u00e9 Amidala, Darth Maul, Clone Troopers, Ahsoka, Chewbacca, Lando Calrissian, Yoda, an AWR Trooper, IG-11, Moff Gideon, a First Order Stormtrooper, Captain Phasma, Poe Dameron, Emperor Palpatine, Mace Windu, General Grievous, Jar Jar Banks, Darth Jar Jar, a customizable Mandalorian Warrior and C-3PO from Star Wars appear in Fortnite, alo with several Mythic items. Additionally, Samurai-inspired versions of Darth Vader and a Stormtrooper also appear. \"Fortnite: Galactic Battle\" is a Star Wars-themed season.",
+                "date": "June 9, 2023",
+                "description": "Optimus Prime, Optimus Primal, Bumblebee, Megatron and a Battle Bus Transformer appear in Fortnite.",
                 "linkType": 1.0
             }
         ]
@@ -22736,21 +22354,21 @@
                 "linkType": 1.0
             },
             {
-                "name": "Energizer",
-                "date": " 2008",
-                "description": "Po appears in an Energizer commercial.",
+                "name": "Super Brawl (Nickelodeon)",
+                "date": "March 24, 2013",
+                "description": "Kung Fu Panda characters are playable in Super Brawl 3.",
                 "linkType": 1.0
             },
             {
-                "name": "Looney Tunes",
-                "date": " 1994",
-                "description": "Wile E. Coyote appears in an Energizer commercial where he tries to go after the Energizer Bunny.",
+                "name": "SpongeBob SquarePants",
+                "date": "July 8, 2010",
+                "description": "Spongebob characters are playable in Super Brawl.",
                 "linkType": 1.0
             },
             {
                 "name": "Fortnite",
-                "date": "July 2, 2021",
-                "description": "LeBron James, based on his appearance from Space Jam: A New Legacy, appears in Fortnite.",
+                "date": "December 16, 2024",
+                "description": "SpongeBob and Fishstick interact to promote Official Creative Maps based on SpongeBob in Fortnite.",
                 "linkType": 1.0
             }
         ]
@@ -22765,21 +22383,21 @@
                 "linkType": 1.0
             },
             {
-                "name": "Energizer",
-                "date": " 2008",
-                "description": "Po appears in an Energizer commercial.",
+                "name": "Super Brawl (Nickelodeon)",
+                "date": "March 24, 2013",
+                "description": "Kung Fu Panda characters are playable in Super Brawl 3.",
                 "linkType": 1.0
             },
             {
-                "name": "Looney Tunes",
-                "date": " 1994",
-                "description": "Wile E. Coyote appears in an Energizer commercial where he tries to go after the Energizer Bunny.",
+                "name": "SpongeBob SquarePants",
+                "date": "July 8, 2010",
+                "description": "Spongebob characters are playable in Super Brawl.",
                 "linkType": 1.0
             },
             {
                 "name": "Fortnite",
-                "date": "July 2, 2021",
-                "description": "LeBron James, based on his appearance from Space Jam: A New Legacy, appears in Fortnite.",
+                "date": "December 16, 2024",
+                "description": "SpongeBob and Fishstick interact to promote Official Creative Maps based on SpongeBob in Fortnite.",
                 "linkType": 1.0
             }
         ]
@@ -24374,23 +23992,6 @@
             }
         ]
     },
-    "Energizer": {
-        "found": true,
-        "path": [
-            {
-                "name": "Looney Tunes",
-                "date": " 1994",
-                "description": "Wile E. Coyote appears in an Energizer commercial where he tries to go after the Energizer Bunny.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "July 2, 2021",
-                "description": "LeBron James, based on his appearance from Space Jam: A New Legacy, appears in Fortnite.",
-                "linkType": 1.0
-            }
-        ]
-    },
     "English Training": {
         "found": true,
         "path": [
@@ -24541,9 +24142,6 @@
     "Era's Adventures": {
         "found": false
     },
-    "Ernest": {
-        "found": false
-    },
     "Escape Plan (Game)": {
         "found": true,
         "path": [
@@ -24586,29 +24184,6 @@
     },
     "Escape from New York": {
         "found": false
-    },
-    "Esurance": {
-        "found": true,
-        "path": [
-            {
-                "name": "Space Ghost",
-                "date": " 2007",
-                "description": "In an Esurance commercial, Erin Esurance is a guest on Space Ghost: Coast to Coast.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Batman",
-                "date": "October 14, 2011",
-                "description": "Space Ghost appears in the Batman: The Brave and The Bold episode \"Bold Beginnings\".",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "September 21, 2019",
-                "description": "Batman, Joker, Poison Ivy, Deathstroke, The Batman Who Laughs and Robin appear in Fortnite, as well as Batman from The Dark Knight and a Feudal ninja-inspired version of Batman. Batman Begins was also screened in Fortnite during the \"Movie Nite\" event.",
-                "linkType": 1.0
-            }
-        ]
     },
     "Eternal Champions": {
         "found": true,
@@ -25943,21 +25518,27 @@
         "found": true,
         "path": [
             {
-                "name": "Progressive",
-                "date": "November 07, 2014",
-                "description": "Flo appeared in Farmville 2: Country Escape during a limited event.",
+                "name": "Rio (Blue Sky Studios)",
+                "date": "April 13, 2013",
+                "description": "Rio characters appear in FarmVille as part of a special collaboration.",
                 "linkType": 1.0
             },
             {
-                "name": "Ghostbusters",
-                "date": "June 19, 2016",
-                "description": "The Ecto-1 and Proton Pack appear in a Progressive commercial.",
+                "name": "Angry Birds",
+                "date": "March 22, 2011",
+                "description": "Angry Birds Rio is a crossover between both series.",
+                "linkType": 1.0
+            },
+            {
+                "name": "Star Wars",
+                "date": "November 8, 2012",
+                "description": "Angry Birds Star Wars and Angry Birds Star Wars II are crossovers between both series'.",
                 "linkType": 1.0
             },
             {
                 "name": "Fortnite",
-                "date": "October 25, 2020",
-                "description": "Skins and items based on Ghostbusters appear in Fortnite.",
+                "date": "December 16, 2019",
+                "description": "An Imperial Stormtrooper, Rey, Finn, a Sith Trooper, Kylo Ren, Zori Bliss, The Mandalorian, Grogu, Boba Fett, Fennec Shand, Krrsantan, Obi-Wan Kenobi, Darth Vader, Luke Skywalker, Leia Organa, Han Solo, R2-D2, Anakin Skywalker, Padm\u00e9 Amidala, Darth Maul, Clone Troopers, Ahsoka, Chewbacca, Lando Calrissian, Yoda, an AWR Trooper, IG-11, Moff Gideon, a First Order Stormtrooper, Captain Phasma, Poe Dameron, Emperor Palpatine, Mace Windu, General Grievous, Jar Jar Banks, Darth Jar Jar, a customizable Mandalorian Warrior and C-3PO from Star Wars appear in Fortnite, alo with several Mythic items. Additionally, Samurai-inspired versions of Darth Vader and a Stormtrooper also appear. \"Fortnite: Galactic Battle\" is a Star Wars-themed season.",
                 "linkType": 1.0
             }
         ]
@@ -25981,23 +25562,6 @@
                 "name": "Fortnite",
                 "date": "December 14, 2023",
                 "description": "Leonardo, Donatello, Raphael, Michelangelo, April O'Neil, Master Splinter, the Shredder, Krang, Casey Jones, Krang's Android, Bebop and Rocksteady apear in Fortnite. Additionally, the Turtle Van also appears as a Car Body.",
-                "linkType": 1.0
-            }
-        ]
-    },
-    "Farmers": {
-        "found": true,
-        "path": [
-            {
-                "name": "X-Men",
-                "date": " 2011",
-                "description": "Beast from X-Men appears in a Farmers commercial with the Professor.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "August 27, 2020",
-                "description": "Storm, Mystique, Wolverine, Dark Phoenix, Rogue, Gambit, Magneto, Cyclops, Colossus, Jubilee and Emma Frost appear in Fortnite.",
                 "linkType": 1.0
             }
         ]
@@ -26170,21 +25734,21 @@
                 "linkType": 1.0
             },
             {
-                "name": "M&M's",
-                "date": " 2004",
-                "description": "M&M's characters meet Shrek characters in a commercial for Shrek M&M's.",
+                "name": "Tony Hawk's",
+                "date": "October 4, 2004",
+                "description": "Shrek is playable in Underground 2.",
                 "linkType": 1.0
             },
             {
-                "name": "Star Wars",
-                "date": " 2005",
-                "description": "M&M's characters meet Star Wars characters in a commercial for Star Wars M&M's.",
+                "name": "Spider-Man",
+                "date": "September 20, 2000",
+                "description": "Spider-Man is playable in Tony Hawk's Pro Skater 2.",
                 "linkType": 1.0
             },
             {
                 "name": "Fortnite",
-                "date": "December 16, 2019",
-                "description": "An Imperial Stormtrooper, Rey, Finn, a Sith Trooper, Kylo Ren, Zori Bliss, The Mandalorian, Grogu, Boba Fett, Fennec Shand, Krrsantan, Obi-Wan Kenobi, Darth Vader, Luke Skywalker, Leia Organa, Han Solo, R2-D2, Anakin Skywalker, Padm\u00e9 Amidala, Darth Maul, Clone Troopers, Ahsoka, Chewbacca, Lando Calrissian, Yoda, an AWR Trooper, IG-11, Moff Gideon, a First Order Stormtrooper, Captain Phasma, Poe Dameron, Emperor Palpatine, Mace Windu, General Grievous, Jar Jar Banks, Darth Jar Jar, a customizable Mandalorian Warrior and C-3PO from Star Wars appear in Fortnite, alo with several Mythic items. Additionally, Samurai-inspired versions of Darth Vader and a Stormtrooper also appear. \"Fortnite: Galactic Battle\" is a Star Wars-themed season.",
+                "date": "December 4, 2021",
+                "description": "Spider-Man, Mary Jane Watson, the Green Goblin and the Prowler appear in Fortnite. Additionally, Spider-Man and Michelle Jones from Spider-Man: No Way Home and Spider-Gwen, Spider-Man (Miles Morales) and Spider-Man 2099 from Spider-Man: Across the Spider-Verse also appear. \"Sunflower - Spider-Man: Into the Spider-Verse\" by Post Malone & Swae Lee also appears as a Jam Track.",
                 "linkType": 1.0
             }
         ]
@@ -27246,27 +26810,7 @@
         ]
     },
     "Foodfight!": {
-        "found": true,
-        "path": [
-            {
-                "name": "Energizer",
-                "date": "May 3, 2012",
-                "description": "The Energizer Bunny appears in Foodfight!.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Looney Tunes",
-                "date": " 1994",
-                "description": "Wile E. Coyote appears in an Energizer commercial where he tries to go after the Energizer Bunny.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "July 2, 2021",
-                "description": "LeBron James, based on his appearance from Space Jam: A New Legacy, appears in Fortnite.",
-                "linkType": 1.0
-            }
-        ]
+        "found": false
     },
     "Football Manager": {
         "found": true,
@@ -28067,32 +27611,6 @@
             }
         ]
     },
-    "Froot Loops": {
-        "found": true,
-        "path": [
-            {
-                "name": "Mario",
-                "date": " 1994",
-                "description": "Mario meets Toucan Sam in a Froot Loops commercial.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Teenage Mutant Ninja Turtles",
-                "date": " 1989",
-                "description": "Mario meets Michelangelo from Teenage Mutant Ninja Turtles in the 1989 flyer, Catch the Title Wave. The titular characters from The Adventures of Super Mario Bros. 3 episode \"Sneaky Lying Cheating Giant Ninja Koopas\" as well as The Koopa Bros. from Paper Mario are based on the Teenage Mutant Ninja Turtles; The episode \"The Gaminator\" of the 2003 Teenage Mutant Ninja Turtles series features a reference to Super Mario Bros.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "December 14, 2023",
-                "description": "Leonardo, Donatello, Raphael, Michelangelo, April O'Neil, Master Splinter, the Shredder, Krang, Casey Jones, Krang's Android, Bebop and Rocksteady apear in Fortnite. Additionally, the Turtle Van also appears as a Car Body.",
-                "linkType": 1.0
-            }
-        ]
-    },
-    "Frosted Flakes": {
-        "found": false
-    },
     "Frosty the Snowman": {
         "found": true,
         "path": [
@@ -28103,21 +27621,27 @@
                 "linkType": 1.0
             },
             {
-                "name": "Aflac",
-                "date": " 2007",
-                "description": "The Aflac duck appears with characters from Rudolph the Red-Nosed Reindeer in an Aflac commercial.",
+                "name": "Mana",
+                "date": "August 06, 1993",
+                "description": "Rudolph appears in Secret of Mana.",
                 "linkType": 1.0
             },
             {
-                "name": "Looney Tunes",
-                "date": " 2004",
-                "description": "The Aflac duck appears with Bugs Bunny, Daffy Duck, Wile E. Coyote and the Road Runner in an Aflac commercial.",
+                "name": "Final Fantasy",
+                "date": "June 08, 1991",
+                "description": "The Mana series started with Seiken Densetsu: Final Fantasy Gaiden; a chocobo is unlockable as a pet in Legend of Mana, while Final Fantasy Legends: Toki no Suishou features Salamander and Undine from the Mana series as a summon called Spirit of Mana, and characters from Secret of Mana and Trias of Mana also appeared in Final Fantasy Brave Exvius during special collaborations; additionally Final Fantasy X-2 features a minor reference to Secret of Mana while Theatrhythm Final Fantasy Curtain Call features a downloadable track from Seiken Densetsu 3.",
+                "linkType": 1.0
+            },
+            {
+                "name": "The Matrix",
+                "date": "June 3, 2003",
+                "description": "The Animatrix features a short clip starring Aki from Final Fantasy: The Spirits Within.",
                 "linkType": 1.0
             },
             {
                 "name": "Fortnite",
-                "date": "July 2, 2021",
-                "description": "LeBron James, based on his appearance from Space Jam: A New Legacy, appears in Fortnite.",
+                "date": "December 16, 2021",
+                "description": "Several Matrix themed cosmetics appear in Fortnite, including a Sentinel machine as an unlockable glider for Winterfest 2021.",
                 "linkType": 1.0
             }
         ]
@@ -28338,21 +27862,21 @@
         "found": true,
         "path": [
             {
-                "name": "McDonald's",
-                "date": " 2013",
-                "description": "Happy from McDonald's interacts with some Furbies in a 2013 Happy Meal toys commercial.",
+                "name": "Mitchells Vs The Machines",
+                "date": "April 23, 2021",
+                "description": "The world's largest Furby appears in Mitchells Vs The Machines.",
                 "linkType": 1.0
             },
             {
-                "name": "Star Wars",
-                "date": " 2011",
-                "description": "Two Happys from McDonald's interact with Yoda in a 2012 Happy Meal toys commercial.",
+                "name": "Spider-Man",
+                "date": "June 2, 2023",
+                "description": "The wooden moose from The Mitchells vs. The Machines can be found in Spider-Man: Across the Spider-Verse",
                 "linkType": 1.0
             },
             {
                 "name": "Fortnite",
-                "date": "December 16, 2019",
-                "description": "An Imperial Stormtrooper, Rey, Finn, a Sith Trooper, Kylo Ren, Zori Bliss, The Mandalorian, Grogu, Boba Fett, Fennec Shand, Krrsantan, Obi-Wan Kenobi, Darth Vader, Luke Skywalker, Leia Organa, Han Solo, R2-D2, Anakin Skywalker, Padm\u00e9 Amidala, Darth Maul, Clone Troopers, Ahsoka, Chewbacca, Lando Calrissian, Yoda, an AWR Trooper, IG-11, Moff Gideon, a First Order Stormtrooper, Captain Phasma, Poe Dameron, Emperor Palpatine, Mace Windu, General Grievous, Jar Jar Banks, Darth Jar Jar, a customizable Mandalorian Warrior and C-3PO from Star Wars appear in Fortnite, alo with several Mythic items. Additionally, Samurai-inspired versions of Darth Vader and a Stormtrooper also appear. \"Fortnite: Galactic Battle\" is a Star Wars-themed season.",
+                "date": "December 4, 2021",
+                "description": "Spider-Man, Mary Jane Watson, the Green Goblin and the Prowler appear in Fortnite. Additionally, Spider-Man and Michelle Jones from Spider-Man: No Way Home and Spider-Gwen, Spider-Man (Miles Morales) and Spider-Man 2099 from Spider-Man: Across the Spider-Verse also appear. \"Sunflower - Spider-Man: Into the Spider-Verse\" by Post Malone & Swae Lee also appears as a Jam Track.",
                 "linkType": 1.0
             }
         ]
@@ -28515,23 +28039,6 @@
             }
         ]
     },
-    "GEICO": {
-        "found": true,
-        "path": [
-            {
-                "name": "Looney Tunes",
-                "date": "May 28, 2012",
-                "description": "Roadrunner and Wild E. Coyote appear in a GEICO commercial.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "July 2, 2021",
-                "description": "LeBron James, based on his appearance from Space Jam: A New Legacy, appears in Fortnite.",
-                "linkType": 1.0
-            }
-        ]
-    },
     "GG Bond": {
         "found": true,
         "path": [
@@ -28605,21 +28112,21 @@
         "found": true,
         "path": [
             {
-                "name": "KFC",
-                "date": " 1987",
-                "description": "Inspector Gadget meets KFC mascots Frederick Fox and Charlie Hawk in a 1987 commercial.",
+                "name": "Mario",
+                "date": "October 27, 1989",
+                "description": "Inspector Gadget guest stars in the live action episode Defective Gadgetry of The Super Mario Bros. Super Show!",
                 "linkType": 1.0
             },
             {
-                "name": "The Flash",
-                "date": "October 9, 2015",
-                "description": "The Colonel of Two Worlds #1 is a comic crossover between Colonel Sanders and the Flash.",
+                "name": "Teenage Mutant Ninja Turtles",
+                "date": " 1989",
+                "description": "Mario meets Michelangelo from Teenage Mutant Ninja Turtles in the 1989 flyer, Catch the Title Wave. The titular characters from The Adventures of Super Mario Bros. 3 episode \"Sneaky Lying Cheating Giant Ninja Koopas\" as well as The Koopa Bros. from Paper Mario are based on the Teenage Mutant Ninja Turtles; The episode \"The Gaminator\" of the 2003 Teenage Mutant Ninja Turtles series features a reference to Super Mario Bros.",
                 "linkType": 1.0
             },
             {
                 "name": "Fortnite",
-                "date": "February 13, 2021",
-                "description": "The Flash appears in Fortnite.",
+                "date": "December 14, 2023",
+                "description": "Leonardo, Donatello, Raphael, Michelangelo, April O'Neil, Master Splinter, the Shredder, Krang, Casey Jones, Krang's Android, Bebop and Rocksteady apear in Fortnite. Additionally, the Turtle Van also appears as a Car Body.",
                 "linkType": 1.0
             }
         ]
@@ -29363,27 +28870,7 @@
         ]
     },
     "General Hospital": {
-        "found": true,
-        "path": [
-            {
-                "name": "KFC",
-                "date": "June 6, 2018",
-                "description": "Colonel Sanders appears in an episode of General Hospital.",
-                "linkType": 1.0
-            },
-            {
-                "name": "The Flash",
-                "date": "October 9, 2015",
-                "description": "The Colonel of Two Worlds #1 is a comic crossover between Colonel Sanders and the Flash.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "February 13, 2021",
-                "description": "The Flash appears in Fortnite.",
-                "linkType": 1.0
-            }
-        ]
+        "found": false
     },
     "Generator Rex": {
         "found": true,
@@ -29625,21 +29112,27 @@
         "found": true,
         "path": [
             {
-                "name": "McDonald's",
-                "date": "July  1988",
-                "description": "Agent 86 from Get Smart appears in a McDonald commercial.",
+                "name": "The Love Boat",
+                "date": "November 7, 1981",
+                "description": "Konrad Siegfried from Get Smart appears in The Love Boat episode Chef's Special/Beginning Anew/Kleinschmidt.",
                 "linkType": 1.0
             },
             {
-                "name": "Star Wars",
-                "date": " 2011",
-                "description": "Two Happys from McDonald's interact with Yoda in a 2012 Happy Meal toys commercial.",
+                "name": "Brady Bunch",
+                "date": "February 27, 1987",
+                "description": "Mike and Carol Brady from The Brady Bunch appeared in \"Who Killed Maxwell Thorn?\"",
+                "linkType": 1.0
+            },
+            {
+                "name": "Superman",
+                "date": "October 7, 1972",
+                "description": "Superman makes a guest appearance on The Brady Kids.",
                 "linkType": 1.0
             },
             {
                 "name": "Fortnite",
-                "date": "December 16, 2019",
-                "description": "An Imperial Stormtrooper, Rey, Finn, a Sith Trooper, Kylo Ren, Zori Bliss, The Mandalorian, Grogu, Boba Fett, Fennec Shand, Krrsantan, Obi-Wan Kenobi, Darth Vader, Luke Skywalker, Leia Organa, Han Solo, R2-D2, Anakin Skywalker, Padm\u00e9 Amidala, Darth Maul, Clone Troopers, Ahsoka, Chewbacca, Lando Calrissian, Yoda, an AWR Trooper, IG-11, Moff Gideon, a First Order Stormtrooper, Captain Phasma, Poe Dameron, Emperor Palpatine, Mace Windu, General Grievous, Jar Jar Banks, Darth Jar Jar, a customizable Mandalorian Warrior and C-3PO from Star Wars appear in Fortnite, alo with several Mythic items. Additionally, Samurai-inspired versions of Darth Vader and a Stormtrooper also appear. \"Fortnite: Galactic Battle\" is a Star Wars-themed season.",
+                "date": "August 10, 2021",
+                "description": "Clark Kent/Superman appears in Fortnite. Additionally, Superman and Krypto from Superman (2025) also appear.",
                 "linkType": 1.0
             }
         ]
@@ -29980,21 +29473,27 @@
         "found": true,
         "path": [
             {
-                "name": "McDonald's",
-                "date": "July  1988",
-                "description": "Gilligan from Gilligan\u2019s Island appears in a McDonald commercial.",
+                "name": "Baywatch",
+                "date": "February 24, 1992",
+                "description": "Gilligan and Marry Ann from \"Gilligan's Island\" appear in the \"Baywatch\" episode \"Now Sit Right Back and You'll Hear a Tale\".",
                 "linkType": 1.0
             },
             {
-                "name": "Star Wars",
-                "date": " 2011",
-                "description": "Two Happys from McDonald's interact with Yoda in a 2012 Happy Meal toys commercial.",
+                "name": "What's Your Story?",
+                "date": "January 26, 2018",
+                "description": "Baywatch has a playable storyline in What's Your Story?",
+                "linkType": 1.0
+            },
+            {
+                "name": "Ghostbusters",
+                "date": "October 19, 2018",
+                "description": "Ghostbusters has a playable storyline in What's Your Story?.",
                 "linkType": 1.0
             },
             {
                 "name": "Fortnite",
-                "date": "December 16, 2019",
-                "description": "An Imperial Stormtrooper, Rey, Finn, a Sith Trooper, Kylo Ren, Zori Bliss, The Mandalorian, Grogu, Boba Fett, Fennec Shand, Krrsantan, Obi-Wan Kenobi, Darth Vader, Luke Skywalker, Leia Organa, Han Solo, R2-D2, Anakin Skywalker, Padm\u00e9 Amidala, Darth Maul, Clone Troopers, Ahsoka, Chewbacca, Lando Calrissian, Yoda, an AWR Trooper, IG-11, Moff Gideon, a First Order Stormtrooper, Captain Phasma, Poe Dameron, Emperor Palpatine, Mace Windu, General Grievous, Jar Jar Banks, Darth Jar Jar, a customizable Mandalorian Warrior and C-3PO from Star Wars appear in Fortnite, alo with several Mythic items. Additionally, Samurai-inspired versions of Darth Vader and a Stormtrooper also appear. \"Fortnite: Galactic Battle\" is a Star Wars-themed season.",
+                "date": "October 25, 2020",
+                "description": "Skins and items based on Ghostbusters appear in Fortnite.",
                 "linkType": 1.0
             }
         ]
@@ -30786,9 +30285,6 @@
             }
         ]
     },
-    "Golden Crisp": {
-        "found": false
-    },
     "Golden Sun": {
         "found": true,
         "path": [
@@ -31173,9 +30669,6 @@
                 "linkType": 1.0
             }
         ]
-    },
-    "Gorton's": {
-        "found": false
     },
     "Gossip Girl": {
         "found": false
@@ -31611,9 +31104,6 @@
             }
         ]
     },
-    "Green Giant": {
-        "found": false
-    },
     "Green Lantern": {
         "found": true,
         "path": [
@@ -31929,21 +31419,21 @@
         "found": true,
         "path": [
             {
-                "name": "Honey Nut Cheerios",
-                "date": " 2014",
-                "description": "Grumpy Cat appears in a Honey Nut Cheerios commercial with Buzz The Bee.",
+                "name": "Garfield",
+                "date": "December 13, 2017",
+                "description": "Garfield and Grumpy Cat have a crossover in the Grumpy Cat/Garfield Collection.",
                 "linkType": 1.0
             },
             {
-                "name": "Looney Tunes",
-                "date": " 1990",
-                "description": "Wile E. Coyote and The Roadrunner appear in a Honey Nut Cheerios commercial.",
+                "name": "Teenage Mutant Ninja Turtles",
+                "date": " 1991",
+                "description": "Garfield and Odie meets Teenage Mutant Ninja Turtles in an issue of Teenage Mutant Ninja Turtles Magazine.",
                 "linkType": 1.0
             },
             {
                 "name": "Fortnite",
-                "date": "July 2, 2021",
-                "description": "LeBron James, based on his appearance from Space Jam: A New Legacy, appears in Fortnite.",
+                "date": "December 14, 2023",
+                "description": "Leonardo, Donatello, Raphael, Michelangelo, April O'Neil, Master Splinter, the Shredder, Krang, Casey Jones, Krang's Android, Bebop and Rocksteady apear in Fortnite. Additionally, the Turtle Van also appears as a Car Body.",
                 "linkType": 1.0
             }
         ]
@@ -32742,23 +32232,6 @@
     "Halloween (Waren\u2019t Bros.)": {
         "found": false
     },
-    "Halloween Horror Nights": {
-        "found": true,
-        "path": [
-            {
-                "name": "Texas Chainsaw Massacre",
-                "date": "May 9, 2007",
-                "description": "In an ad for Halloween Horror Nights 17, Leatherface from The Texas Chainsaw Massacre appears with Jack the Clown.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": " 2024",
-                "description": "Leatherface appears in Fortnite.",
-                "linkType": 1.0
-            }
-        ]
-    },
     "Halloweentown": {
         "found": true,
         "path": [
@@ -32792,9 +32265,6 @@
                 "linkType": 1.0
             }
         ]
-    },
-    "Hamburger Helper": {
-        "found": false
     },
     "Hamster and Gretel": {
         "found": true,
@@ -33389,56 +32859,27 @@
                 "linkType": 1.0
             },
             {
-                "name": "Get Smart",
+                "name": "Leave It to Beaver",
                 "date": "August 7, 1987",
-                "description": "Maxwell from Get Smart appears in Back to the Beach.",
+                "description": "June, Wally and Beaver from Leave It to Beaver appears in Back to the Beach.",
                 "linkType": 1.0
             },
             {
-                "name": "McDonald's",
-                "date": "July  1988",
-                "description": "Agent 86 from Get Smart appears in a McDonald commercial.",
+                "name": "Amazing Stories",
+                "date": "December 8, 1985",
+                "description": "June Cleaver appears in the Amazing Stories episode \"Remote Control Man\".",
                 "linkType": 1.0
             },
             {
-                "name": "Star Wars",
-                "date": " 2011",
-                "description": "Two Happys from McDonald's interact with Yoda in a 2012 Happy Meal toys commercial.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "December 16, 2019",
-                "description": "An Imperial Stormtrooper, Rey, Finn, a Sith Trooper, Kylo Ren, Zori Bliss, The Mandalorian, Grogu, Boba Fett, Fennec Shand, Krrsantan, Obi-Wan Kenobi, Darth Vader, Luke Skywalker, Leia Organa, Han Solo, R2-D2, Anakin Skywalker, Padm\u00e9 Amidala, Darth Maul, Clone Troopers, Ahsoka, Chewbacca, Lando Calrissian, Yoda, an AWR Trooper, IG-11, Moff Gideon, a First Order Stormtrooper, Captain Phasma, Poe Dameron, Emperor Palpatine, Mace Windu, General Grievous, Jar Jar Banks, Darth Jar Jar, a customizable Mandalorian Warrior and C-3PO from Star Wars appear in Fortnite, alo with several Mythic items. Additionally, Samurai-inspired versions of Darth Vader and a Stormtrooper also appear. \"Fortnite: Galactic Battle\" is a Star Wars-themed season.",
-                "linkType": 1.0
-            }
-        ]
-    },
-    "Hawaiian Punch": {
-        "found": true,
-        "path": [
-            {
-                "name": "Foodfight!",
-                "date": "May 3, 2012",
-                "description": "Punchy appears in Foodfight!.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Energizer",
-                "date": "May 3, 2012",
-                "description": "The Energizer Bunny appears in Foodfight!.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Looney Tunes",
-                "date": " 1994",
-                "description": "Wile E. Coyote appears in an Energizer commercial where he tries to go after the Energizer Bunny.",
+                "name": "Hulk (Marvel)",
+                "date": "December 8, 1985",
+                "description": "The Hulk appears in the Amazing Stories episode \"Remote Control Man\".",
                 "linkType": 1.0
             },
             {
                 "name": "Fortnite",
-                "date": "July 2, 2021",
-                "description": "LeBron James, based on his appearance from Space Jam: A New Legacy, appears in Fortnite.",
+                "date": "December 8, 2022",
+                "description": "The Hulk appears in Fortnite. Additionally, Sakaaran Champion Hulk from Thor: Ragnarok also appears.",
                 "linkType": 1.0
             }
         ]
@@ -35130,49 +34571,6 @@
     "Honey, I Shrunk the Kids": {
         "found": false
     },
-    "Honey Monster Puffs": {
-        "found": true,
-        "path": [
-            {
-                "name": "Judge Dredd",
-                "date": " 1995",
-                "description": "Honey Monster meets Judge Dredd in a commercial for Sugar Puffs.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Batman",
-                "date": "December  1991",
-                "description": "Batman and Judge Dredd had a comic book crossover.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "September 21, 2019",
-                "description": "Batman, Joker, Poison Ivy, Deathstroke, The Batman Who Laughs and Robin appear in Fortnite, as well as Batman from The Dark Knight and a Feudal ninja-inspired version of Batman. Batman Begins was also screened in Fortnite during the \"Movie Nite\" event.",
-                "linkType": 1.0
-            }
-        ]
-    },
-    "Honey Nut Cheerios": {
-        "found": true,
-        "path": [
-            {
-                "name": "Looney Tunes",
-                "date": " 1990",
-                "description": "Wile E. Coyote and The Roadrunner appear in a Honey Nut Cheerios commercial.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "July 2, 2021",
-                "description": "LeBron James, based on his appearance from Space Jam: A New Legacy, appears in Fortnite.",
-                "linkType": 1.0
-            }
-        ]
-    },
-    "Honey Smacks": {
-        "found": false
-    },
     "Hong Kong 97 (HappySoft)": {
         "found": false
     },
@@ -35275,21 +34673,21 @@
                 "linkType": 1.0
             },
             {
-                "name": "KFC",
-                "date": " 1987",
-                "description": "Inspector Gadget meets KFC mascots Frederick Fox and Charlie Hawk in a 1987 commercial.",
+                "name": "Mario",
+                "date": "October 27, 1989",
+                "description": "Inspector Gadget guest stars in the live action episode Defective Gadgetry of The Super Mario Bros. Super Show!",
                 "linkType": 1.0
             },
             {
-                "name": "The Flash",
-                "date": "October 9, 2015",
-                "description": "The Colonel of Two Worlds #1 is a comic crossover between Colonel Sanders and the Flash.",
+                "name": "Teenage Mutant Ninja Turtles",
+                "date": " 1989",
+                "description": "Mario meets Michelangelo from Teenage Mutant Ninja Turtles in the 1989 flyer, Catch the Title Wave. The titular characters from The Adventures of Super Mario Bros. 3 episode \"Sneaky Lying Cheating Giant Ninja Koopas\" as well as The Koopa Bros. from Paper Mario are based on the Teenage Mutant Ninja Turtles; The episode \"The Gaminator\" of the 2003 Teenage Mutant Ninja Turtles series features a reference to Super Mario Bros.",
                 "linkType": 1.0
             },
             {
                 "name": "Fortnite",
-                "date": "February 13, 2021",
-                "description": "The Flash appears in Fortnite.",
+                "date": "December 14, 2023",
+                "description": "Leonardo, Donatello, Raphael, Michelangelo, April O'Neil, Master Splinter, the Shredder, Krang, Casey Jones, Krang's Android, Bebop and Rocksteady apear in Fortnite. Additionally, the Turtle Van also appears as a Car Body.",
                 "linkType": 1.0
             }
         ]
@@ -35606,21 +35004,21 @@
         "found": true,
         "path": [
             {
-                "name": "McDonald's",
-                "date": " 2014",
-                "description": "Happy from McDonald's interacts with characters from How to Train Your Dragon in a 2014 Happy Meal toys commercial.",
+                "name": "Roblox",
+                "date": "June 12, 2014",
+                "description": "Roblox promoted How to Train Your Dragon with gear and characters from the series.",
                 "linkType": 1.0
             },
             {
-                "name": "Star Wars",
-                "date": " 2011",
-                "description": "Two Happys from McDonald's interact with Yoda in a 2012 Happy Meal toys commercial.",
+                "name": "Transformers",
+                "date": "February 11, 2011",
+                "description": "In multiple limited-time events in Roblox, players could work for the Autobots or the Deceptions and even play as characters from Transformers.",
                 "linkType": 1.0
             },
             {
                 "name": "Fortnite",
-                "date": "December 16, 2019",
-                "description": "An Imperial Stormtrooper, Rey, Finn, a Sith Trooper, Kylo Ren, Zori Bliss, The Mandalorian, Grogu, Boba Fett, Fennec Shand, Krrsantan, Obi-Wan Kenobi, Darth Vader, Luke Skywalker, Leia Organa, Han Solo, R2-D2, Anakin Skywalker, Padm\u00e9 Amidala, Darth Maul, Clone Troopers, Ahsoka, Chewbacca, Lando Calrissian, Yoda, an AWR Trooper, IG-11, Moff Gideon, a First Order Stormtrooper, Captain Phasma, Poe Dameron, Emperor Palpatine, Mace Windu, General Grievous, Jar Jar Banks, Darth Jar Jar, a customizable Mandalorian Warrior and C-3PO from Star Wars appear in Fortnite, alo with several Mythic items. Additionally, Samurai-inspired versions of Darth Vader and a Stormtrooper also appear. \"Fortnite: Galactic Battle\" is a Star Wars-themed season.",
+                "date": "June 9, 2023",
+                "description": "Optimus Prime, Optimus Primal, Bumblebee, Megatron and a Battle Bus Transformer appear in Fortnite.",
                 "linkType": 1.0
             }
         ]
@@ -37134,39 +36532,7 @@
         ]
     },
     "Inspector Morse": {
-        "found": true,
-        "path": [
-            {
-                "name": "Blackadder",
-                "date": "February 25, 2018",
-                "description": "The 1890 Battle of Mboto Gorge from the Blackadder episode \u201cPlan F: Goodbyeee\u201d is mentioned by Dr. Laidlaw in the Endeavour episode \u201cColours\u201d.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Mr. Bean",
-                "date": "June 21, 2003",
-                "description": "A portrait of Edmund, Lord Blackadder from Blackadder II can be seen in Buckingham Palace in the Mr. Bean: The Animated Series episode Royal Bean.",
-                "linkType": 1.0
-            },
-            {
-                "name": "M&M's",
-                "date": " 1997",
-                "description": "M&M's characters meet Mr. Bean characters in a 1997 M&M's commerical.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Star Wars",
-                "date": " 2005",
-                "description": "M&M's characters meet Star Wars characters in a commercial for Star Wars M&M's.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "December 16, 2019",
-                "description": "An Imperial Stormtrooper, Rey, Finn, a Sith Trooper, Kylo Ren, Zori Bliss, The Mandalorian, Grogu, Boba Fett, Fennec Shand, Krrsantan, Obi-Wan Kenobi, Darth Vader, Luke Skywalker, Leia Organa, Han Solo, R2-D2, Anakin Skywalker, Padm\u00e9 Amidala, Darth Maul, Clone Troopers, Ahsoka, Chewbacca, Lando Calrissian, Yoda, an AWR Trooper, IG-11, Moff Gideon, a First Order Stormtrooper, Captain Phasma, Poe Dameron, Emperor Palpatine, Mace Windu, General Grievous, Jar Jar Banks, Darth Jar Jar, a customizable Mandalorian Warrior and C-3PO from Star Wars appear in Fortnite, alo with several Mythic items. Additionally, Samurai-inspired versions of Darth Vader and a Stormtrooper also appear. \"Fortnite: Galactic Battle\" is a Star Wars-themed season.",
-                "linkType": 1.0
-            }
-        ]
+        "found": false
     },
     "Inspector Willoughby": {
         "found": true,
@@ -37762,23 +37128,6 @@
                 "name": "Fortnite",
                 "date": "October 24, 2021",
                 "description": "Chris Redfield, Jill Valentine, Leon S. Kennedy and Claire Redfield appear in Fortnite.",
-                "linkType": 1.0
-            }
-        ]
-    },
-    "Jack in the Box": {
-        "found": true,
-        "path": [
-            {
-                "name": "Deadpool",
-                "date": "July 15, 2024",
-                "description": "Jack Box meets Deadpool in a Jack in the Box commercial.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "April 03, 2020",
-                "description": "Deadpool appears in Fortnite as the Chapter 2 Season 2 Battle Pass secret skin.",
                 "linkType": 1.0
             }
         ]
@@ -39320,23 +38669,6 @@
             }
         ]
     },
-    "KFC": {
-        "found": true,
-        "path": [
-            {
-                "name": "The Flash",
-                "date": "October 9, 2015",
-                "description": "The Colonel of Two Worlds #1 is a comic crossover between Colonel Sanders and the Flash.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "February 13, 2021",
-                "description": "The Flash appears in Fortnite.",
-                "linkType": 1.0
-            }
-        ]
-    },
     "Ka-Pow!": {
         "found": false
     },
@@ -39786,9 +39118,6 @@
                 "linkType": 1.0
             }
         ]
-    },
-    "Keebler": {
-        "found": false
     },
     "Kemono Friends": {
         "found": true,
@@ -40281,21 +39610,21 @@
         "found": true,
         "path": [
             {
-                "name": "Halloween Horror Nights",
-                "date": "August 18, 2022",
-                "description": "In an ad for Halloween Horror Nights 31, Killer Klowns from Killer Klowns from Outer Space appear.",
+                "name": "Elvira",
+                "date": "September 28, 2024",
+                "description": "Elvira appears in Killer Klowns from Outer Space: The Game as a DLC.",
                 "linkType": 1.0
             },
             {
-                "name": "Texas Chainsaw Massacre",
-                "date": "May 9, 2007",
-                "description": "In an ad for Halloween Horror Nights 17, Leatherface from The Texas Chainsaw Massacre appears with Jack the Clown.",
+                "name": "Harley Quinn",
+                "date": " 2025",
+                "description": "Elvira meets Harley Quinn in a crossover comic.",
                 "linkType": 1.0
             },
             {
                 "name": "Fortnite",
-                "date": " 2024",
-                "description": "Leatherface appears in Fortnite.",
+                "date": "February 07, 2020",
+                "description": "Harley Quinn appears in Fortnite.",
                 "linkType": 1.0
             }
         ]
@@ -41115,29 +40444,6 @@
             }
         ]
     },
-    "Kool-Aid": {
-        "found": true,
-        "path": [
-            {
-                "name": "Progressive",
-                "date": "May 10, 2016",
-                "description": "Kool-Aid Man appears in a Progressive commercial.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Ghostbusters",
-                "date": "June 19, 2016",
-                "description": "The Ecto-1 and Proton Pack appear in a Progressive commercial.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "October 25, 2020",
-                "description": "Skins and items based on Ghostbusters appear in Fortnite.",
-                "linkType": 1.0
-            }
-        ]
-    },
     "Kosuke Kindaichi": {
         "found": true,
         "path": [
@@ -41336,21 +40642,21 @@
         "found": true,
         "path": [
             {
-                "name": "Energizer",
-                "date": " 2008",
-                "description": "Po appears in an Energizer commercial.",
+                "name": "Super Brawl (Nickelodeon)",
+                "date": "March 24, 2013",
+                "description": "Kung Fu Panda characters are playable in Super Brawl 3.",
                 "linkType": 1.0
             },
             {
-                "name": "Looney Tunes",
-                "date": " 1994",
-                "description": "Wile E. Coyote appears in an Energizer commercial where he tries to go after the Energizer Bunny.",
+                "name": "SpongeBob SquarePants",
+                "date": "July 8, 2010",
+                "description": "Spongebob characters are playable in Super Brawl.",
                 "linkType": 1.0
             },
             {
                 "name": "Fortnite",
-                "date": "July 2, 2021",
-                "description": "LeBron James, based on his appearance from Space Jam: A New Legacy, appears in Fortnite.",
+                "date": "December 16, 2024",
+                "description": "SpongeBob and Fishstick interact to promote Official Creative Maps based on SpongeBob in Fortnite.",
                 "linkType": 1.0
             }
         ]
@@ -43575,27 +42881,7 @@
         "found": false
     },
     "Leo (Netflix)": {
-        "found": true,
-        "path": [
-            {
-                "name": "GEICO",
-                "date": "November 22, 2023",
-                "description": "Leo appears in a GEICO commercial. GEICO is also mentioned in Leo.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Looney Tunes",
-                "date": "May 28, 2012",
-                "description": "Roadrunner and Wild E. Coyote appear in a GEICO commercial.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "July 2, 2021",
-                "description": "LeBron James, based on his appearance from Space Jam: A New Legacy, appears in Fortnite.",
-                "linkType": 1.0
-            }
-        ]
+        "found": false
     },
     "Leo and Satan": {
         "found": true,
@@ -43735,23 +43021,6 @@
                 "name": "Fortnite",
                 "date": "October 24, 2021",
                 "description": "Chris Redfield, Jill Valentine, Leon S. Kennedy and Claire Redfield appear in Fortnite.",
-                "linkType": 1.0
-            }
-        ]
-    },
-    "Liberty Mutual": {
-        "found": true,
-        "path": [
-            {
-                "name": "Spider-Man",
-                "date": "November 17, 2021",
-                "description": "Spider-Man appears in a Liberty Mutual commercial with LiMu Emu and Doug.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "December 4, 2021",
-                "description": "Spider-Man, Mary Jane Watson, the Green Goblin and the Prowler appear in Fortnite. Additionally, Spider-Man and Michelle Jones from Spider-Man: No Way Home and Spider-Gwen, Spider-Man (Miles Morales) and Spider-Man 2099 from Spider-Man: Across the Spider-Verse also appear. \"Sunflower - Spider-Man: Into the Spider-Verse\" by Post Malone & Swae Lee also appears as a Jam Track.",
                 "linkType": 1.0
             }
         ]
@@ -44650,39 +43919,7 @@
         "found": false
     },
     "Lost Highway": {
-        "found": true,
-        "path": [
-            {
-                "name": "Twin Peaks",
-                "date": "February 21, 1997",
-                "description": "According to David Lynch (Word of God), Lost Highway is set in the same universe as Twin Peaks.",
-                "linkType": 1.0
-            },
-            {
-                "name": "General Hospital",
-                "date": "September 15, 2000",
-                "description": "Dr. Jacoby from Twin Peaks appears in three episodes of General Hospital.",
-                "linkType": 1.0
-            },
-            {
-                "name": "KFC",
-                "date": "June 6, 2018",
-                "description": "Colonel Sanders appears in an episode of General Hospital.",
-                "linkType": 1.0
-            },
-            {
-                "name": "The Flash",
-                "date": "October 9, 2015",
-                "description": "The Colonel of Two Worlds #1 is a comic crossover between Colonel Sanders and the Flash.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "February 13, 2021",
-                "description": "The Flash appears in Fortnite.",
-                "linkType": 1.0
-            }
-        ]
+        "found": false
     },
     "Lost Planet": {
         "found": true,
@@ -44947,23 +44184,6 @@
             }
         ]
     },
-    "Lucky Charms": {
-        "found": true,
-        "path": [
-            {
-                "name": "Loki (Marvel)",
-                "date": "June 07, 2021",
-                "description": "Loki appears in a Lucky Charms commercial where he changes the cereal to \u201cLoki Charms\u201d.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "July 1, 2021",
-                "description": "Loki appears in Fortnite as a part of the Fortnite Crew subscription service. Additionally, Loki, Sylvie Laufeydottir and Miss Minutes from Loki also appear.",
-                "linkType": 1.0
-            }
-        ]
-    },
     "Lucky Star": {
         "found": true,
         "path": [
@@ -45177,23 +44397,6 @@
             }
         ]
     },
-    "M&M's": {
-        "found": true,
-        "path": [
-            {
-                "name": "Star Wars",
-                "date": " 2005",
-                "description": "M&M's characters meet Star Wars characters in a commercial for Star Wars M&M's.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "December 16, 2019",
-                "description": "An Imperial Stormtrooper, Rey, Finn, a Sith Trooper, Kylo Ren, Zori Bliss, The Mandalorian, Grogu, Boba Fett, Fennec Shand, Krrsantan, Obi-Wan Kenobi, Darth Vader, Luke Skywalker, Leia Organa, Han Solo, R2-D2, Anakin Skywalker, Padm\u00e9 Amidala, Darth Maul, Clone Troopers, Ahsoka, Chewbacca, Lando Calrissian, Yoda, an AWR Trooper, IG-11, Moff Gideon, a First Order Stormtrooper, Captain Phasma, Poe Dameron, Emperor Palpatine, Mace Windu, General Grievous, Jar Jar Banks, Darth Jar Jar, a customizable Mandalorian Warrior and C-3PO from Star Wars appear in Fortnite, alo with several Mythic items. Additionally, Samurai-inspired versions of Darth Vader and a Stormtrooper also appear. \"Fortnite: Galactic Battle\" is a Star Wars-themed season.",
-                "linkType": 1.0
-            }
-        ]
-    },
     "M*A*S*H": {
         "found": false
     },
@@ -45313,27 +44516,7 @@
         ]
     },
     "Mac and Me": {
-        "found": true,
-        "path": [
-            {
-                "name": "McDonald's",
-                "date": "August 05, 1988",
-                "description": "Ronald McDonald makes a cameo appearance in the movie, Mac and Me.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Star Wars",
-                "date": " 2011",
-                "description": "Two Happys from McDonald's interact with Yoda in a 2012 Happy Meal toys commercial.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "December 16, 2019",
-                "description": "An Imperial Stormtrooper, Rey, Finn, a Sith Trooper, Kylo Ren, Zori Bliss, The Mandalorian, Grogu, Boba Fett, Fennec Shand, Krrsantan, Obi-Wan Kenobi, Darth Vader, Luke Skywalker, Leia Organa, Han Solo, R2-D2, Anakin Skywalker, Padm\u00e9 Amidala, Darth Maul, Clone Troopers, Ahsoka, Chewbacca, Lando Calrissian, Yoda, an AWR Trooper, IG-11, Moff Gideon, a First Order Stormtrooper, Captain Phasma, Poe Dameron, Emperor Palpatine, Mace Windu, General Grievous, Jar Jar Banks, Darth Jar Jar, a customizable Mandalorian Warrior and C-3PO from Star Wars appear in Fortnite, alo with several Mythic items. Additionally, Samurai-inspired versions of Darth Vader and a Stormtrooper also appear. \"Fortnite: Galactic Battle\" is a Star Wars-themed season.",
-                "linkType": 1.0
-            }
-        ]
+        "found": false
     },
     "Macbat 64": {
         "found": true,
@@ -45588,45 +44771,7 @@
         ]
     },
     "Mad Men": {
-        "found": true,
-        "path": [
-            {
-                "name": "Inspector Morse",
-                "date": "March 30, 2014",
-                "description": "In the Endeavor episode: \"Trove\", Val Todd's wife tells him that Lane from SCDP, a character from Mad Men, is on the phone.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Blackadder",
-                "date": "February 25, 2018",
-                "description": "The 1890 Battle of Mboto Gorge from the Blackadder episode \u201cPlan F: Goodbyeee\u201d is mentioned by Dr. Laidlaw in the Endeavour episode \u201cColours\u201d.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Mr. Bean",
-                "date": "June 21, 2003",
-                "description": "A portrait of Edmund, Lord Blackadder from Blackadder II can be seen in Buckingham Palace in the Mr. Bean: The Animated Series episode Royal Bean.",
-                "linkType": 1.0
-            },
-            {
-                "name": "M&M's",
-                "date": " 1997",
-                "description": "M&M's characters meet Mr. Bean characters in a 1997 M&M's commerical.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Star Wars",
-                "date": " 2005",
-                "description": "M&M's characters meet Star Wars characters in a commercial for Star Wars M&M's.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "December 16, 2019",
-                "description": "An Imperial Stormtrooper, Rey, Finn, a Sith Trooper, Kylo Ren, Zori Bliss, The Mandalorian, Grogu, Boba Fett, Fennec Shand, Krrsantan, Obi-Wan Kenobi, Darth Vader, Luke Skywalker, Leia Organa, Han Solo, R2-D2, Anakin Skywalker, Padm\u00e9 Amidala, Darth Maul, Clone Troopers, Ahsoka, Chewbacca, Lando Calrissian, Yoda, an AWR Trooper, IG-11, Moff Gideon, a First Order Stormtrooper, Captain Phasma, Poe Dameron, Emperor Palpatine, Mace Windu, General Grievous, Jar Jar Banks, Darth Jar Jar, a customizable Mandalorian Warrior and C-3PO from Star Wars appear in Fortnite, alo with several Mythic items. Additionally, Samurai-inspired versions of Darth Vader and a Stormtrooper also appear. \"Fortnite: Galactic Battle\" is a Star Wars-themed season.",
-                "linkType": 1.0
-            }
-        ]
+        "found": false
     },
     "Mad Monster Party": {
         "found": false
@@ -47592,23 +46737,6 @@
             }
         ]
     },
-    "McDonald's": {
-        "found": true,
-        "path": [
-            {
-                "name": "Star Wars",
-                "date": " 2011",
-                "description": "Two Happys from McDonald's interact with Yoda in a 2012 Happy Meal toys commercial.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "December 16, 2019",
-                "description": "An Imperial Stormtrooper, Rey, Finn, a Sith Trooper, Kylo Ren, Zori Bliss, The Mandalorian, Grogu, Boba Fett, Fennec Shand, Krrsantan, Obi-Wan Kenobi, Darth Vader, Luke Skywalker, Leia Organa, Han Solo, R2-D2, Anakin Skywalker, Padm\u00e9 Amidala, Darth Maul, Clone Troopers, Ahsoka, Chewbacca, Lando Calrissian, Yoda, an AWR Trooper, IG-11, Moff Gideon, a First Order Stormtrooper, Captain Phasma, Poe Dameron, Emperor Palpatine, Mace Windu, General Grievous, Jar Jar Banks, Darth Jar Jar, a customizable Mandalorian Warrior and C-3PO from Star Wars appear in Fortnite, alo with several Mythic items. Additionally, Samurai-inspired versions of Darth Vader and a Stormtrooper also appear. \"Fortnite: Galactic Battle\" is a Star Wars-themed season.",
-                "linkType": 1.0
-            }
-        ]
-    },
     "McPixel": {
         "found": true,
         "path": [
@@ -47980,21 +47108,27 @@
                 "linkType": 1.0
             },
             {
-                "name": "Progressive",
-                "date": "November 07, 2014",
-                "description": "Flo appeared in Farmville 2: Country Escape during a limited event.",
+                "name": "Rio (Blue Sky Studios)",
+                "date": "April 13, 2013",
+                "description": "Rio characters appear in FarmVille as part of a special collaboration.",
                 "linkType": 1.0
             },
             {
-                "name": "Ghostbusters",
-                "date": "June 19, 2016",
-                "description": "The Ecto-1 and Proton Pack appear in a Progressive commercial.",
+                "name": "Angry Birds",
+                "date": "March 22, 2011",
+                "description": "Angry Birds Rio is a crossover between both series.",
+                "linkType": 1.0
+            },
+            {
+                "name": "Star Wars",
+                "date": "November 8, 2012",
+                "description": "Angry Birds Star Wars and Angry Birds Star Wars II are crossovers between both series'.",
                 "linkType": 1.0
             },
             {
                 "name": "Fortnite",
-                "date": "October 25, 2020",
-                "description": "Skins and items based on Ghostbusters appear in Fortnite.",
+                "date": "December 16, 2019",
+                "description": "An Imperial Stormtrooper, Rey, Finn, a Sith Trooper, Kylo Ren, Zori Bliss, The Mandalorian, Grogu, Boba Fett, Fennec Shand, Krrsantan, Obi-Wan Kenobi, Darth Vader, Luke Skywalker, Leia Organa, Han Solo, R2-D2, Anakin Skywalker, Padm\u00e9 Amidala, Darth Maul, Clone Troopers, Ahsoka, Chewbacca, Lando Calrissian, Yoda, an AWR Trooper, IG-11, Moff Gideon, a First Order Stormtrooper, Captain Phasma, Poe Dameron, Emperor Palpatine, Mace Windu, General Grievous, Jar Jar Banks, Darth Jar Jar, a customizable Mandalorian Warrior and C-3PO from Star Wars appear in Fortnite, alo with several Mythic items. Additionally, Samurai-inspired versions of Darth Vader and a Stormtrooper also appear. \"Fortnite: Galactic Battle\" is a Star Wars-themed season.",
                 "linkType": 1.0
             }
         ]
@@ -48504,21 +47638,27 @@
         "found": true,
         "path": [
             {
-                "name": "Domino's",
-                "date": "October 29, 1988",
-                "description": "The Noid makes a cameo in the movie, Moonwalker.",
+                "name": "The Adventures of GamePro",
+                "date": "January  1991",
+                "description": "GamePro enters the world of Michael Jackson's Moonwalker.",
                 "linkType": 1.0
             },
             {
-                "name": "Hatsune Miku",
-                "date": "March 7, 2013",
-                "description": "Domino's App feat. Hatsune Miku was a food delivery app themed after the character of the same name.",
+                "name": "Ghosts 'n Goblins",
+                "date": "February  1990",
+                "description": "GamePro enters the world of Ghouls 'n Ghosts.",
+                "linkType": 1.0
+            },
+            {
+                "name": "Street Fighter",
+                "date": "November 19, 2013",
+                "description": "Arthur, Red Arremer, Astaroth, Princess Prin-Prin and other Ghosts 'n Goblins characters are selectable in Street Fighter \u00d7 All Capcom; Arthur and Red Arremer are featured in Street Fighter Battle Combination, and Arthur and Astaroth costumes are featured in Street Fighter V: Arcade Edition. There are other minor references between both series.",
                 "linkType": 1.0
             },
             {
                 "name": "Fortnite",
-                "date": "January 14, 2025",
-                "description": "Hatsune Miku appears in Fortnite, and is the featured Artist for Fortnite Festival Season 7.",
+                "date": "February 20, 2021",
+                "description": "Ryu, Chun-Li, Cammy, Guile, Sakura and Blanka from Street Fighter appear in Fortnite.",
                 "linkType": 1.0
             }
         ]
@@ -48905,9 +48045,6 @@
                 "linkType": 1.0
             }
         ]
-    },
-    "Mini Wheats": {
-        "found": false
     },
     "Minigore": {
         "found": true,
@@ -49344,21 +48481,27 @@
                 "linkType": 1.0
             },
             {
-                "name": "McDonald's",
-                "date": "July  1988",
-                "description": "Jed Clampett from The Beverly Hillbillies appears in a McDonald's commercial.",
+                "name": "Green Acres",
+                "date": "November 27, 1968",
+                "description": "There were several characters that crossoved over between The Beverly Hillbillies and Green Acres.",
                 "linkType": 1.0
             },
             {
-                "name": "Star Wars",
-                "date": " 2011",
-                "description": "Two Happys from McDonald's interact with Yoda in a 2012 Happy Meal toys commercial.",
+                "name": "Hogan's Heroes",
+                "date": "September 14, 1966",
+                "description": "In the Green Acres episode \"Wings Over Hooterville\", Hogan from Hogan's Heroes is mentioned, as well as Stalag 13, the setting of Hogan's Heroes.",
+                "linkType": 1.0
+            },
+            {
+                "name": "Batman",
+                "date": "December 1, 1966",
+                "description": "Colonel Klink from Hogan's Heroes meets Batman and Robin in an episode of Batman.",
                 "linkType": 1.0
             },
             {
                 "name": "Fortnite",
-                "date": "December 16, 2019",
-                "description": "An Imperial Stormtrooper, Rey, Finn, a Sith Trooper, Kylo Ren, Zori Bliss, The Mandalorian, Grogu, Boba Fett, Fennec Shand, Krrsantan, Obi-Wan Kenobi, Darth Vader, Luke Skywalker, Leia Organa, Han Solo, R2-D2, Anakin Skywalker, Padm\u00e9 Amidala, Darth Maul, Clone Troopers, Ahsoka, Chewbacca, Lando Calrissian, Yoda, an AWR Trooper, IG-11, Moff Gideon, a First Order Stormtrooper, Captain Phasma, Poe Dameron, Emperor Palpatine, Mace Windu, General Grievous, Jar Jar Banks, Darth Jar Jar, a customizable Mandalorian Warrior and C-3PO from Star Wars appear in Fortnite, alo with several Mythic items. Additionally, Samurai-inspired versions of Darth Vader and a Stormtrooper also appear. \"Fortnite: Galactic Battle\" is a Star Wars-themed season.",
+                "date": "September 21, 2019",
+                "description": "Batman, Joker, Poison Ivy, Deathstroke, The Batman Who Laughs and Robin appear in Fortnite, as well as Batman from The Dark Knight and a Feudal ninja-inspired version of Batman. Batman Begins was also screened in Fortnite during the \"Movie Nite\" event.",
                 "linkType": 1.0
             }
         ]
@@ -49825,29 +48968,6 @@
             }
         ]
     },
-    "Monster Cereals": {
-        "found": true,
-        "path": [
-            {
-                "name": "Lucky Charms",
-                "date": " 2017",
-                "description": "Lucky The Leprechaun appears at a Halloween party in the back of the 2017 cereal box of The Monster Cereals.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Loki (Marvel)",
-                "date": "June 07, 2021",
-                "description": "Loki appears in a Lucky Charms commercial where he changes the cereal to \u201cLoki Charms\u201d.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "July 1, 2021",
-                "description": "Loki appears in Fortnite as a part of the Fortnite Crew subscription service. Additionally, Loki, Sylvie Laufeydottir and Miss Minutes from Loki also appear.",
-                "linkType": 1.0
-            }
-        ]
-    },
     "Monster Galaxy": {
         "found": false
     },
@@ -50142,21 +49262,21 @@
         "found": true,
         "path": [
             {
-                "name": "McDonald's",
-                "date": " 2009",
-                "description": "Grimace interacts with Monsters vs. Aliens characters in a 2009 McDonald's Happy Meal commercial.",
+                "name": "Super Brawl (Nickelodeon)",
+                "date": "March 24, 2013",
+                "description": "Monsters vs Aliens characters are playable in Super Brawl 3.",
                 "linkType": 1.0
             },
             {
-                "name": "Star Wars",
-                "date": " 2011",
-                "description": "Two Happys from McDonald's interact with Yoda in a 2012 Happy Meal toys commercial.",
+                "name": "SpongeBob SquarePants",
+                "date": "July 8, 2010",
+                "description": "Spongebob characters are playable in Super Brawl.",
                 "linkType": 1.0
             },
             {
                 "name": "Fortnite",
-                "date": "December 16, 2019",
-                "description": "An Imperial Stormtrooper, Rey, Finn, a Sith Trooper, Kylo Ren, Zori Bliss, The Mandalorian, Grogu, Boba Fett, Fennec Shand, Krrsantan, Obi-Wan Kenobi, Darth Vader, Luke Skywalker, Leia Organa, Han Solo, R2-D2, Anakin Skywalker, Padm\u00e9 Amidala, Darth Maul, Clone Troopers, Ahsoka, Chewbacca, Lando Calrissian, Yoda, an AWR Trooper, IG-11, Moff Gideon, a First Order Stormtrooper, Captain Phasma, Poe Dameron, Emperor Palpatine, Mace Windu, General Grievous, Jar Jar Banks, Darth Jar Jar, a customizable Mandalorian Warrior and C-3PO from Star Wars appear in Fortnite, alo with several Mythic items. Additionally, Samurai-inspired versions of Darth Vader and a Stormtrooper also appear. \"Fortnite: Galactic Battle\" is a Star Wars-themed season.",
+                "date": "December 16, 2024",
+                "description": "SpongeBob and Fishstick interact to promote Official Creative Maps based on SpongeBob in Fortnite.",
                 "linkType": 1.0
             }
         ]
@@ -50634,56 +49754,7 @@
         ]
     },
     "Mr. Bean": {
-        "found": true,
-        "path": [
-            {
-                "name": "M&M's",
-                "date": " 1997",
-                "description": "M&M's characters meet Mr. Bean characters in a 1997 M&M's commerical.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Star Wars",
-                "date": " 2005",
-                "description": "M&M's characters meet Star Wars characters in a commercial for Star Wars M&M's.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "December 16, 2019",
-                "description": "An Imperial Stormtrooper, Rey, Finn, a Sith Trooper, Kylo Ren, Zori Bliss, The Mandalorian, Grogu, Boba Fett, Fennec Shand, Krrsantan, Obi-Wan Kenobi, Darth Vader, Luke Skywalker, Leia Organa, Han Solo, R2-D2, Anakin Skywalker, Padm\u00e9 Amidala, Darth Maul, Clone Troopers, Ahsoka, Chewbacca, Lando Calrissian, Yoda, an AWR Trooper, IG-11, Moff Gideon, a First Order Stormtrooper, Captain Phasma, Poe Dameron, Emperor Palpatine, Mace Windu, General Grievous, Jar Jar Banks, Darth Jar Jar, a customizable Mandalorian Warrior and C-3PO from Star Wars appear in Fortnite, alo with several Mythic items. Additionally, Samurai-inspired versions of Darth Vader and a Stormtrooper also appear. \"Fortnite: Galactic Battle\" is a Star Wars-themed season.",
-                "linkType": 1.0
-            }
-        ]
-    },
-    "Mr. Clean": {
-        "found": true,
-        "path": [
-            {
-                "name": "Foodfight!",
-                "date": "May 03, 2012",
-                "description": "Mr. Clean appears in Foodfight!.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Energizer",
-                "date": "May 3, 2012",
-                "description": "The Energizer Bunny appears in Foodfight!.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Looney Tunes",
-                "date": " 1994",
-                "description": "Wile E. Coyote appears in an Energizer commercial where he tries to go after the Energizer Bunny.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "July 2, 2021",
-                "description": "LeBron James, based on his appearance from Space Jam: A New Legacy, appears in Fortnite.",
-                "linkType": 1.0
-            }
-        ]
+        "found": false
     },
     "Mr. Dig (Sun)": {
         "found": false
@@ -50819,21 +49890,33 @@
         "found": true,
         "path": [
             {
-                "name": "McDonald's",
-                "date": " 2014",
-                "description": "Happy from McDonald's interacts with Mr. Peabody & Sherman in a 2014 Happy Meal toys commercial.",
+                "name": "DreamWorks Universe of Legends",
+                "date": "October 26, 2017",
+                "description": "Characters from Mr. Peabody & Sherman appear in DreamWorks Universe of Legends.",
                 "linkType": 1.0
             },
             {
-                "name": "Star Wars",
-                "date": " 2011",
-                "description": "Two Happys from McDonald's interact with Yoda in a 2012 Happy Meal toys commercial.",
+                "name": "Kung Fu Panda",
+                "date": "October 26, 2017",
+                "description": "Characters and locations from Kung Fu Panda appear in DreamWorks Universe of Legends.",
+                "linkType": 1.0
+            },
+            {
+                "name": "Super Brawl (Nickelodeon)",
+                "date": "March 24, 2013",
+                "description": "Kung Fu Panda characters are playable in Super Brawl 3.",
+                "linkType": 1.0
+            },
+            {
+                "name": "SpongeBob SquarePants",
+                "date": "July 8, 2010",
+                "description": "Spongebob characters are playable in Super Brawl.",
                 "linkType": 1.0
             },
             {
                 "name": "Fortnite",
-                "date": "December 16, 2019",
-                "description": "An Imperial Stormtrooper, Rey, Finn, a Sith Trooper, Kylo Ren, Zori Bliss, The Mandalorian, Grogu, Boba Fett, Fennec Shand, Krrsantan, Obi-Wan Kenobi, Darth Vader, Luke Skywalker, Leia Organa, Han Solo, R2-D2, Anakin Skywalker, Padm\u00e9 Amidala, Darth Maul, Clone Troopers, Ahsoka, Chewbacca, Lando Calrissian, Yoda, an AWR Trooper, IG-11, Moff Gideon, a First Order Stormtrooper, Captain Phasma, Poe Dameron, Emperor Palpatine, Mace Windu, General Grievous, Jar Jar Banks, Darth Jar Jar, a customizable Mandalorian Warrior and C-3PO from Star Wars appear in Fortnite, alo with several Mythic items. Additionally, Samurai-inspired versions of Darth Vader and a Stormtrooper also appear. \"Fortnite: Galactic Battle\" is a Star Wars-themed season.",
+                "date": "December 16, 2024",
+                "description": "SpongeBob and Fishstick interact to promote Official Creative Maps based on SpongeBob in Fortnite.",
                 "linkType": 1.0
             }
         ]
@@ -50860,29 +49943,6 @@
                 "name": "Fortnite",
                 "date": "September 27, 2024",
                 "description": "Mr. Incredible, Elastigirl and Frozone appear in Fortnite. Additionally, the Incredibile also appears as a Car Body.",
-                "linkType": 1.0
-            }
-        ]
-    },
-    "Mrs. Butterworth's": {
-        "found": true,
-        "path": [
-            {
-                "name": "KFC",
-                "date": " 2019",
-                "description": "Colonel Sanders dances with Mrs. Butterworth in commercials for KFC Chicken & Waffles.",
-                "linkType": 1.0
-            },
-            {
-                "name": "The Flash",
-                "date": "October 9, 2015",
-                "description": "The Colonel of Two Worlds #1 is a comic crossover between Colonel Sanders and the Flash.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "February 13, 2021",
-                "description": "The Flash appears in Fortnite.",
                 "linkType": 1.0
             }
         ]
@@ -52565,46 +51625,6 @@
                 "name": "Fortnite",
                 "date": "July 2, 2021",
                 "description": "LeBron James, based on his appearance from Space Jam: A New Legacy, appears in Fortnite.",
-                "linkType": 1.0
-            }
-        ]
-    },
-    "Nesquik": {
-        "found": true,
-        "path": [
-            {
-                "name": "Superman",
-                "date": " 1987",
-                "description": "Superman meets The Nesquik Bunny.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "August 10, 2021",
-                "description": "Clark Kent/Superman appears in Fortnite. Additionally, Superman and Krypto from Superman (2025) also appear.",
-                "linkType": 1.0
-            }
-        ]
-    },
-    "Nestea": {
-        "found": true,
-        "path": [
-            {
-                "name": "Space Ghost",
-                "date": " 2003",
-                "description": "In an Nestea commercial, The Nestea Snowman is a guest on Space Ghost: Coast to Coast.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Batman",
-                "date": "October 14, 2011",
-                "description": "Space Ghost appears in the Batman: The Brave and The Bold episode \"Bold Beginnings\".",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "September 21, 2019",
-                "description": "Batman, Joker, Poison Ivy, Deathstroke, The Batman Who Laughs and Robin appear in Fortnite, as well as Batman from The Dark Knight and a Feudal ninja-inspired version of Batman. Batman Begins was also screened in Fortnite during the \"Movie Nite\" event.",
                 "linkType": 1.0
             }
         ]
@@ -55114,33 +54134,7 @@
         ]
     },
     "One Life to Live": {
-        "found": true,
-        "path": [
-            {
-                "name": "General Hospital",
-                "date": "March 18, 1970",
-                "description": "Characters from One Life to Live and General Hospital frequently crossover into the other show.",
-                "linkType": 1.0
-            },
-            {
-                "name": "KFC",
-                "date": "June 6, 2018",
-                "description": "Colonel Sanders appears in an episode of General Hospital.",
-                "linkType": 1.0
-            },
-            {
-                "name": "The Flash",
-                "date": "October 9, 2015",
-                "description": "The Colonel of Two Worlds #1 is a comic crossover between Colonel Sanders and the Flash.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "February 13, 2021",
-                "description": "The Flash appears in Fortnite.",
-                "linkType": 1.0
-            }
-        ]
+        "found": false
     },
     "One Night at Flumpty's": {
         "found": true,
@@ -56990,48 +55984,25 @@
             }
         ]
     },
-    "Peperami": {
-        "found": true,
-        "path": [
-            {
-                "name": "Angry Birds",
-                "date": " 2016",
-                "description": "Red appears in a Peperami commercial where the Animal is Red's stunt double.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Star Wars",
-                "date": "November 8, 2012",
-                "description": "Angry Birds Star Wars and Angry Birds Star Wars II are crossovers between both series'.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "December 16, 2019",
-                "description": "An Imperial Stormtrooper, Rey, Finn, a Sith Trooper, Kylo Ren, Zori Bliss, The Mandalorian, Grogu, Boba Fett, Fennec Shand, Krrsantan, Obi-Wan Kenobi, Darth Vader, Luke Skywalker, Leia Organa, Han Solo, R2-D2, Anakin Skywalker, Padm\u00e9 Amidala, Darth Maul, Clone Troopers, Ahsoka, Chewbacca, Lando Calrissian, Yoda, an AWR Trooper, IG-11, Moff Gideon, a First Order Stormtrooper, Captain Phasma, Poe Dameron, Emperor Palpatine, Mace Windu, General Grievous, Jar Jar Banks, Darth Jar Jar, a customizable Mandalorian Warrior and C-3PO from Star Wars appear in Fortnite, alo with several Mythic items. Additionally, Samurai-inspired versions of Darth Vader and a Stormtrooper also appear. \"Fortnite: Galactic Battle\" is a Star Wars-themed season.",
-                "linkType": 1.0
-            }
-        ]
-    },
     "Peppa Pig": {
         "found": true,
         "path": [
             {
-                "name": "Target",
-                "date": "November 03, 2017",
-                "description": "Peppa Pig appears in the video \u201cTarget Holiday 2017 - A Home for the Holidays.",
+                "name": "Play-Doh",
+                "date": "January 16, 2021",
+                "description": "Characters from Peppa Pig have appeared in several episodes of The Play-Doh Show.",
                 "linkType": 1.0
             },
             {
-                "name": "SpongeBob SquarePants",
-                "date": " 2001",
-                "description": "A Target commercial has SpongeBob meet and chase after Bullseye.",
+                "name": "Transformers",
+                "date": "February 27, 2021",
+                "description": "Characters from Transformers have appeared in several episodes of The Play-Doh Show.",
                 "linkType": 1.0
             },
             {
                 "name": "Fortnite",
-                "date": "December 16, 2024",
-                "description": "SpongeBob and Fishstick interact to promote Official Creative Maps based on SpongeBob in Fortnite.",
+                "date": "June 9, 2023",
+                "description": "Optimus Prime, Optimus Primal, Bumblebee, Megatron and a Battle Bus Transformer appear in Fortnite.",
                 "linkType": 1.0
             }
         ]
@@ -57055,41 +56026,6 @@
                 "name": "Fortnite",
                 "date": "October 18, 2024",
                 "description": "Captain Hook appears in Fortnite.",
-                "linkType": 1.0
-            }
-        ]
-    },
-    "Pepsi Man": {
-        "found": true,
-        "path": [
-            {
-                "name": "Fighting Vipers",
-                "date": " 1995",
-                "description": "Pepsi Man is unlockable in the Japanese Sega Saturn version of the game.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fighters Megamix",
-                "date": "December 21, 1996",
-                "description": "All original characters from Fighting Vipers are selectable in Fighters Megamix.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Sonic",
-                "date": "December 21, 1996",
-                "description": "Fighters Megamix features two characters and two stages from Sonic the Fighters; Deku from Fighters Megamix makes a cameo appearance in the 50th issue of the Archie Sonic the Hedgehog comic.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Teenage Mutant Ninja Turtles",
-                "date": "February  1994",
-                "description": "In Sonic The Hedgehog #10, The Teenage Mutant Ninja Turtles make a brief cameo. Sonic Racing: CrossWorlds is set to include content from Teenage Mutant Ninja Turtles: Mutant Mayhem.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "December 14, 2023",
-                "description": "Leonardo, Donatello, Raphael, Michelangelo, April O'Neil, Master Splinter, the Shredder, Krang, Casey Jones, Krang's Android, Bebop and Rocksteady apear in Fortnite. Additionally, the Turtle Van also appears as a Car Body.",
                 "linkType": 1.0
             }
         ]
@@ -57721,29 +56657,6 @@
                 "name": "Fortnite",
                 "date": "September 29, 2022",
                 "description": "A Goat skin is available in Fortnite by pre-ordering Goat Simulator 3 on the Epic Games Launcher.",
-                "linkType": 1.0
-            }
-        ]
-    },
-    "Pillsbury": {
-        "found": true,
-        "path": [
-            {
-                "name": "Funko Pop! Blitz",
-                "date": "December 2, 2020",
-                "description": "The Pillsbury Dough Boy appears in Funko Pop! Blitz.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Frankenstein (Universal)",
-                "date": "October 28, 2020",
-                "description": "Frankenstein and the Bride of Frankenstein appear in Funko Pop! Blitz.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "October 5, 2021",
-                "description": "Frankenstein's Monster appears in Fortnite.",
                 "linkType": 1.0
             }
         ]
@@ -58386,9 +57299,6 @@
             }
         ]
     },
-    "Planters": {
-        "found": false
-    },
     "Plants vs. Zombies": {
         "found": true,
         "path": [
@@ -58958,29 +57868,6 @@
                 "name": "Fortnite",
                 "date": "October 18, 2024",
                 "description": "Captain Hook appears in Fortnite.",
-                "linkType": 1.0
-            }
-        ]
-    },
-    "Pop-Tarts": {
-        "found": true,
-        "path": [
-            {
-                "name": "Robot Chicken",
-                "date": "October 6, 2023",
-                "description": "Characters from Robot Chicken meet the Pop-Tarts mascots in a commercial.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Family Guy",
-                "date": "April 2, 2006",
-                "description": "Peter Griffin appears in the Robot Chicken episode \"Suck It\"; Stewie and Brian enter the world of Robot Chicken in the Family Guy episode \"Road to the Multiverse\". Robot Chicken is mentioned in several Family Guy episodes.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "December 2, 2023",
-                "description": "Peter Griffin, the Giant Chicken and Cleveland Brown appear in Fortnite. Fortnite is also mentioned in the Family Guy episodes: \"Start Me Up\", \"HBO-No\", \"All About Alana\" and \"Bend or Blockbuster\".",
                 "linkType": 1.0
             }
         ]
@@ -59827,23 +58714,6 @@
             }
         ]
     },
-    "Progressive": {
-        "found": true,
-        "path": [
-            {
-                "name": "Ghostbusters",
-                "date": "June 19, 2016",
-                "description": "The Ecto-1 and Proton Pack appear in a Progressive commercial.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "October 25, 2020",
-                "description": "Skins and items based on Ghostbusters appear in Fortnite.",
-                "linkType": 1.0
-            }
-        ]
-    },
     "Project ARMS": {
         "found": true,
         "path": [
@@ -60480,21 +59350,27 @@
         "found": true,
         "path": [
             {
-                "name": "Aflac",
-                "date": " 2022",
-                "description": "The Aflac Duck appears alongside Puss in Boots in an Aflac commercial.",
+                "name": "Shrek",
+                "date": "October 28, 2011",
+                "description": "Puss in Boots is a spinoff of Shrek.",
                 "linkType": 1.0
             },
             {
-                "name": "Looney Tunes",
-                "date": " 2004",
-                "description": "The Aflac duck appears with Bugs Bunny, Daffy Duck, Wile E. Coyote and the Road Runner in an Aflac commercial.",
+                "name": "Tony Hawk's",
+                "date": "October 4, 2004",
+                "description": "Shrek is playable in Underground 2.",
+                "linkType": 1.0
+            },
+            {
+                "name": "Spider-Man",
+                "date": "September 20, 2000",
+                "description": "Spider-Man is playable in Tony Hawk's Pro Skater 2.",
                 "linkType": 1.0
             },
             {
                 "name": "Fortnite",
-                "date": "July 2, 2021",
-                "description": "LeBron James, based on his appearance from Space Jam: A New Legacy, appears in Fortnite.",
+                "date": "December 4, 2021",
+                "description": "Spider-Man, Mary Jane Watson, the Green Goblin and the Prowler appear in Fortnite. Additionally, Spider-Man and Michelle Jones from Spider-Man: No Way Home and Spider-Gwen, Spider-Man (Miles Morales) and Spider-Man 2099 from Spider-Man: Across the Spider-Verse also appear. \"Sunflower - Spider-Man: Into the Spider-Verse\" by Post Malone & Swae Lee also appears as a Jam Track.",
                 "linkType": 1.0
             }
         ]
@@ -60691,29 +59567,6 @@
             }
         ]
     },
-    "Quake (Quaker)": {
-        "found": true,
-        "path": [
-            {
-                "name": "Cap'n Crunch",
-                "date": " 1970",
-                "description": "Quake appears in a Cap'n Crunch commercial.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Spider-Man",
-                "date": "January  1986",
-                "description": "A Spider-Man advertisement features elements and characters from Cap'n Crunch.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "December 4, 2021",
-                "description": "Spider-Man, Mary Jane Watson, the Green Goblin and the Prowler appear in Fortnite. Additionally, Spider-Man and Michelle Jones from Spider-Man: No Way Home and Spider-Gwen, Spider-Man (Miles Morales) and Spider-Man 2099 from Spider-Man: Across the Spider-Verse also appear. \"Sunflower - Spider-Man: Into the Spider-Verse\" by Post Malone & Swae Lee also appears as a Jam Track.",
-                "linkType": 1.0
-            }
-        ]
-    },
     "Quantum Break": {
         "found": true,
         "path": [
@@ -60843,29 +59696,6 @@
                 "name": "Fortnite",
                 "date": "March 16, 2021",
                 "description": "Raven, Beast Boy and Starfire from Teen Titans appear in Fortnite.",
-                "linkType": 1.0
-            }
-        ]
-    },
-    "Quisp": {
-        "found": true,
-        "path": [
-            {
-                "name": "Cap'n Crunch",
-                "date": " 1970",
-                "description": "Quisp appears in a Cap'n Crunch commercial.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Spider-Man",
-                "date": "January  1986",
-                "description": "A Spider-Man advertisement features elements and characters from Cap'n Crunch.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "December 4, 2021",
-                "description": "Spider-Man, Mary Jane Watson, the Green Goblin and the Prowler appear in Fortnite. Additionally, Spider-Man and Michelle Jones from Spider-Man: No Way Home and Spider-Gwen, Spider-Man (Miles Morales) and Spider-Man 2099 from Spider-Man: Across the Spider-Verse also appear. \"Sunflower - Spider-Man: Into the Spider-Verse\" by Post Malone & Swae Lee also appears as a Jam Track.",
                 "linkType": 1.0
             }
         ]
@@ -61331,9 +60161,6 @@
             }
         ]
     },
-    "Raisin Bran": {
-        "found": false
-    },
     "Rakugakids": {
         "found": true,
         "path": [
@@ -61482,21 +60309,27 @@
                 "linkType": 1.0
             },
             {
-                "name": "Progressive",
-                "date": "November 07, 2014",
-                "description": "Flo appeared in Farmville 2: Country Escape during a limited event.",
+                "name": "Rio (Blue Sky Studios)",
+                "date": "April 13, 2013",
+                "description": "Rio characters appear in FarmVille as part of a special collaboration.",
                 "linkType": 1.0
             },
             {
-                "name": "Ghostbusters",
-                "date": "June 19, 2016",
-                "description": "The Ecto-1 and Proton Pack appear in a Progressive commercial.",
+                "name": "Angry Birds",
+                "date": "March 22, 2011",
+                "description": "Angry Birds Rio is a crossover between both series.",
+                "linkType": 1.0
+            },
+            {
+                "name": "Star Wars",
+                "date": "November 8, 2012",
+                "description": "Angry Birds Star Wars and Angry Birds Star Wars II are crossovers between both series'.",
                 "linkType": 1.0
             },
             {
                 "name": "Fortnite",
-                "date": "October 25, 2020",
-                "description": "Skins and items based on Ghostbusters appear in Fortnite.",
+                "date": "December 16, 2019",
+                "description": "An Imperial Stormtrooper, Rey, Finn, a Sith Trooper, Kylo Ren, Zori Bliss, The Mandalorian, Grogu, Boba Fett, Fennec Shand, Krrsantan, Obi-Wan Kenobi, Darth Vader, Luke Skywalker, Leia Organa, Han Solo, R2-D2, Anakin Skywalker, Padm\u00e9 Amidala, Darth Maul, Clone Troopers, Ahsoka, Chewbacca, Lando Calrissian, Yoda, an AWR Trooper, IG-11, Moff Gideon, a First Order Stormtrooper, Captain Phasma, Poe Dameron, Emperor Palpatine, Mace Windu, General Grievous, Jar Jar Banks, Darth Jar Jar, a customizable Mandalorian Warrior and C-3PO from Star Wars appear in Fortnite, alo with several Mythic items. Additionally, Samurai-inspired versions of Darth Vader and a Stormtrooper also appear. \"Fortnite: Galactic Battle\" is a Star Wars-themed season.",
                 "linkType": 1.0
             }
         ]
@@ -62618,9 +61451,6 @@
             }
         ]
     },
-    "Rice Krispies": {
-        "found": false
-    },
     "Richie Rich": {
         "found": true,
         "path": [
@@ -63466,21 +62296,39 @@
         "found": true,
         "path": [
             {
-                "name": "Energizer",
-                "date": " 1995",
-                "description": "Boris & Natasha appear in two Energizer commercials where they try to go after the Energizer Bunny.",
+                "name": "Mr. Peabody & Sherman",
+                "date": "February 07, 2014",
+                "description": "The movie Mr. Peabody & Sherman is a spinoff to Rocky & Bullwinkle.",
                 "linkType": 1.0
             },
             {
-                "name": "Looney Tunes",
-                "date": " 1994",
-                "description": "Wile E. Coyote appears in an Energizer commercial where he tries to go after the Energizer Bunny.",
+                "name": "DreamWorks Universe of Legends",
+                "date": "October 26, 2017",
+                "description": "Characters from Mr. Peabody & Sherman appear in DreamWorks Universe of Legends.",
+                "linkType": 1.0
+            },
+            {
+                "name": "Kung Fu Panda",
+                "date": "October 26, 2017",
+                "description": "Characters and locations from Kung Fu Panda appear in DreamWorks Universe of Legends.",
+                "linkType": 1.0
+            },
+            {
+                "name": "Super Brawl (Nickelodeon)",
+                "date": "March 24, 2013",
+                "description": "Kung Fu Panda characters are playable in Super Brawl 3.",
+                "linkType": 1.0
+            },
+            {
+                "name": "SpongeBob SquarePants",
+                "date": "July 8, 2010",
+                "description": "Spongebob characters are playable in Super Brawl.",
                 "linkType": 1.0
             },
             {
                 "name": "Fortnite",
-                "date": "July 2, 2021",
-                "description": "LeBron James, based on his appearance from Space Jam: A New Legacy, appears in Fortnite.",
+                "date": "December 16, 2024",
+                "description": "SpongeBob and Fishstick interact to promote Official Creative Maps based on SpongeBob in Fortnite.",
                 "linkType": 1.0
             }
         ]
@@ -63853,21 +62701,27 @@
         "found": true,
         "path": [
             {
-                "name": "Aflac",
-                "date": " 2007",
-                "description": "The Aflac duck appears with characters from Rudolph the Red-Nosed Reindeer in an Aflac commercial.",
+                "name": "Mana",
+                "date": "August 06, 1993",
+                "description": "Rudolph appears in Secret of Mana.",
                 "linkType": 1.0
             },
             {
-                "name": "Looney Tunes",
-                "date": " 2004",
-                "description": "The Aflac duck appears with Bugs Bunny, Daffy Duck, Wile E. Coyote and the Road Runner in an Aflac commercial.",
+                "name": "Final Fantasy",
+                "date": "June 08, 1991",
+                "description": "The Mana series started with Seiken Densetsu: Final Fantasy Gaiden; a chocobo is unlockable as a pet in Legend of Mana, while Final Fantasy Legends: Toki no Suishou features Salamander and Undine from the Mana series as a summon called Spirit of Mana, and characters from Secret of Mana and Trias of Mana also appeared in Final Fantasy Brave Exvius during special collaborations; additionally Final Fantasy X-2 features a minor reference to Secret of Mana while Theatrhythm Final Fantasy Curtain Call features a downloadable track from Seiken Densetsu 3.",
+                "linkType": 1.0
+            },
+            {
+                "name": "The Matrix",
+                "date": "June 3, 2003",
+                "description": "The Animatrix features a short clip starring Aki from Final Fantasy: The Spirits Within.",
                 "linkType": 1.0
             },
             {
                 "name": "Fortnite",
-                "date": "July 2, 2021",
-                "description": "LeBron James, based on his appearance from Space Jam: A New Legacy, appears in Fortnite.",
+                "date": "December 16, 2021",
+                "description": "Several Matrix themed cosmetics appear in Fortnite, including a Sentinel machine as an unlockable glider for Winterfest 2021.",
                 "linkType": 1.0
             }
         ]
@@ -64924,21 +63778,27 @@
                 "linkType": 1.0
             },
             {
-                "name": "Aflac",
-                "date": " 2007",
-                "description": "The Aflac duck appears with characters from Rudolph the Red-Nosed Reindeer in an Aflac commercial.",
+                "name": "Mana",
+                "date": "August 06, 1993",
+                "description": "Rudolph appears in Secret of Mana.",
                 "linkType": 1.0
             },
             {
-                "name": "Looney Tunes",
-                "date": " 2004",
-                "description": "The Aflac duck appears with Bugs Bunny, Daffy Duck, Wile E. Coyote and the Road Runner in an Aflac commercial.",
+                "name": "Final Fantasy",
+                "date": "June 08, 1991",
+                "description": "The Mana series started with Seiken Densetsu: Final Fantasy Gaiden; a chocobo is unlockable as a pet in Legend of Mana, while Final Fantasy Legends: Toki no Suishou features Salamander and Undine from the Mana series as a summon called Spirit of Mana, and characters from Secret of Mana and Trias of Mana also appeared in Final Fantasy Brave Exvius during special collaborations; additionally Final Fantasy X-2 features a minor reference to Secret of Mana while Theatrhythm Final Fantasy Curtain Call features a downloadable track from Seiken Densetsu 3.",
+                "linkType": 1.0
+            },
+            {
+                "name": "The Matrix",
+                "date": "June 3, 2003",
+                "description": "The Animatrix features a short clip starring Aki from Final Fantasy: The Spirits Within.",
                 "linkType": 1.0
             },
             {
                 "name": "Fortnite",
-                "date": "July 2, 2021",
-                "description": "LeBron James, based on his appearance from Space Jam: A New Legacy, appears in Fortnite.",
+                "date": "December 16, 2021",
+                "description": "Several Matrix themed cosmetics appear in Fortnite, including a Sentinel machine as an unlockable glider for Winterfest 2021.",
                 "linkType": 1.0
             }
         ]
@@ -66061,29 +64921,6 @@
             }
         ]
     },
-    "Segata Sanshir\u014d": {
-        "found": true,
-        "path": [
-            {
-                "name": "Sonic",
-                "date": "November 16, 2012",
-                "description": "Sonic R is one of the games advertised by Segata Sanshir\u014d, while he cameos in Sonic the Hedgehog #269 and Sonic & All-Stars Racing Transformed.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Teenage Mutant Ninja Turtles",
-                "date": "February  1994",
-                "description": "In Sonic The Hedgehog #10, The Teenage Mutant Ninja Turtles make a brief cameo. Sonic Racing: CrossWorlds is set to include content from Teenage Mutant Ninja Turtles: Mutant Mayhem.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "December 14, 2023",
-                "description": "Leonardo, Donatello, Raphael, Michelangelo, April O'Neil, Master Splinter, the Shredder, Krang, Casey Jones, Krang's Android, Bebop and Rocksteady apear in Fortnite. Additionally, the Turtle Van also appears as a Car Body.",
-                "linkType": 1.0
-            }
-        ]
-    },
     "Seinfeld": {
         "found": true,
         "path": [
@@ -67148,27 +65985,7 @@
         ]
     },
     "Shopkins": {
-        "found": true,
-        "path": [
-            {
-                "name": "Target",
-                "date": "November 3, 2017",
-                "description": "The Cheeky Cherries appear in the video \u201cTarget Holiday 2017 - A Home for the Holidays.",
-                "linkType": 1.0
-            },
-            {
-                "name": "SpongeBob SquarePants",
-                "date": " 2001",
-                "description": "A Target commercial has SpongeBob meet and chase after Bullseye.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "December 16, 2024",
-                "description": "SpongeBob and Fishstick interact to promote Official Creative Maps based on SpongeBob in Fortnite.",
-                "linkType": 1.0
-            }
-        ]
+        "found": false
     },
     "Short Circuit (TriStar)": {
         "found": true,
@@ -67258,21 +66075,21 @@
         "found": true,
         "path": [
             {
-                "name": "M&M's",
-                "date": " 2004",
-                "description": "M&M's characters meet Shrek characters in a commercial for Shrek M&M's.",
+                "name": "Tony Hawk's",
+                "date": "October 4, 2004",
+                "description": "Shrek is playable in Underground 2.",
                 "linkType": 1.0
             },
             {
-                "name": "Star Wars",
-                "date": " 2005",
-                "description": "M&M's characters meet Star Wars characters in a commercial for Star Wars M&M's.",
+                "name": "Spider-Man",
+                "date": "September 20, 2000",
+                "description": "Spider-Man is playable in Tony Hawk's Pro Skater 2.",
                 "linkType": 1.0
             },
             {
                 "name": "Fortnite",
-                "date": "December 16, 2019",
-                "description": "An Imperial Stormtrooper, Rey, Finn, a Sith Trooper, Kylo Ren, Zori Bliss, The Mandalorian, Grogu, Boba Fett, Fennec Shand, Krrsantan, Obi-Wan Kenobi, Darth Vader, Luke Skywalker, Leia Organa, Han Solo, R2-D2, Anakin Skywalker, Padm\u00e9 Amidala, Darth Maul, Clone Troopers, Ahsoka, Chewbacca, Lando Calrissian, Yoda, an AWR Trooper, IG-11, Moff Gideon, a First Order Stormtrooper, Captain Phasma, Poe Dameron, Emperor Palpatine, Mace Windu, General Grievous, Jar Jar Banks, Darth Jar Jar, a customizable Mandalorian Warrior and C-3PO from Star Wars appear in Fortnite, alo with several Mythic items. Additionally, Samurai-inspired versions of Darth Vader and a Stormtrooper also appear. \"Fortnite: Galactic Battle\" is a Star Wars-themed season.",
+                "date": "December 4, 2021",
+                "description": "Spider-Man, Mary Jane Watson, the Green Goblin and the Prowler appear in Fortnite. Additionally, Spider-Man and Michelle Jones from Spider-Man: No Way Home and Spider-Gwen, Spider-Man (Miles Morales) and Spider-Man 2099 from Spider-Man: Across the Spider-Verse also appear. \"Sunflower - Spider-Man: Into the Spider-Verse\" by Post Malone & Swae Lee also appears as a Jam Track.",
                 "linkType": 1.0
             }
         ]
@@ -68069,21 +66886,21 @@
         "found": true,
         "path": [
             {
-                "name": "Target",
-                "date": "November 01, 2014",
-                "description": "Snapshot appears in a Target holidays commercials such as Target Holiday 2014: Alice in Marshmallow Land.",
+                "name": "Mario",
+                "date": "September 20, 2015",
+                "description": "Bowser appears as a playable amiibo in Skylanders: SuperChargers.",
                 "linkType": 1.0
             },
             {
-                "name": "SpongeBob SquarePants",
-                "date": " 2001",
-                "description": "A Target commercial has SpongeBob meet and chase after Bullseye.",
+                "name": "Teenage Mutant Ninja Turtles",
+                "date": " 1989",
+                "description": "Mario meets Michelangelo from Teenage Mutant Ninja Turtles in the 1989 flyer, Catch the Title Wave. The titular characters from The Adventures of Super Mario Bros. 3 episode \"Sneaky Lying Cheating Giant Ninja Koopas\" as well as The Koopa Bros. from Paper Mario are based on the Teenage Mutant Ninja Turtles; The episode \"The Gaminator\" of the 2003 Teenage Mutant Ninja Turtles series features a reference to Super Mario Bros.",
                 "linkType": 1.0
             },
             {
                 "name": "Fortnite",
-                "date": "December 16, 2024",
-                "description": "SpongeBob and Fishstick interact to promote Official Creative Maps based on SpongeBob in Fortnite.",
+                "date": "December 14, 2023",
+                "description": "Leonardo, Donatello, Raphael, Michelangelo, April O'Neil, Master Splinter, the Shredder, Krang, Casey Jones, Krang's Android, Bebop and Rocksteady apear in Fortnite. Additionally, the Turtle Van also appears as a Car Body.",
                 "linkType": 1.0
             }
         ]
@@ -68562,35 +67379,6 @@
                 "name": "Fortnite",
                 "date": "March 8, 2024",
                 "description": "Korra, Aang, Katara, Toph and Zuko appear in Fortnite.",
-                "linkType": 1.0
-            }
-        ]
-    },
-    "Smokey Bear": {
-        "found": true,
-        "path": [
-            {
-                "name": "Woody Woodpecker",
-                "date": "January 14, 1957",
-                "description": "Smokey Bear appears in the Woody Woodpecker short \"Red Riding Hoodlum\".",
-                "linkType": 1.0
-            },
-            {
-                "name": "Roger Rabbit",
-                "date": "June 22, 1988",
-                "description": "Woody Woodpecker appears in Who Framed Roger Rabbit.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Looney Tunes",
-                "date": "June 22, 1988",
-                "description": "Looney Tunes Characters appear in Who Framed Roger Rabbit.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "July 2, 2021",
-                "description": "LeBron James, based on his appearance from Space Jam: A New Legacy, appears in Fortnite.",
                 "linkType": 1.0
             }
         ]
@@ -70805,9 +69593,6 @@
             }
         ]
     },
-    "StarKist": {
-        "found": false
-    },
     "StarTropics": {
         "found": true,
         "path": [
@@ -71227,23 +70012,6 @@
     },
     "Starship Troopers": {
         "found": false
-    },
-    "State Farm": {
-        "found": true,
-        "path": [
-            {
-                "name": "Batman",
-                "date": " 2025",
-                "description": "Jake from State Farm meets Batman characters in a commercial.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "September 21, 2019",
-                "description": "Batman, Joker, Poison Ivy, Deathstroke, The Batman Who Laughs and Robin appear in Fortnite, as well as Batman from The Dark Knight and a Feudal ninja-inspired version of Batman. Batman Begins was also screened in Fortnite during the \"Movie Nite\" event.",
-                "linkType": 1.0
-            }
-        ]
     },
     "State of Survival": {
         "found": true,
@@ -72927,27 +71695,27 @@
                 "linkType": 1.0
             },
             {
-                "name": "Get Smart",
+                "name": "Leave It to Beaver",
                 "date": "August 7, 1987",
-                "description": "Maxwell from Get Smart appears in Back to the Beach.",
+                "description": "June, Wally and Beaver from Leave It to Beaver appears in Back to the Beach.",
                 "linkType": 1.0
             },
             {
-                "name": "McDonald's",
-                "date": "July  1988",
-                "description": "Agent 86 from Get Smart appears in a McDonald commercial.",
+                "name": "Amazing Stories",
+                "date": "December 8, 1985",
+                "description": "June Cleaver appears in the Amazing Stories episode \"Remote Control Man\".",
                 "linkType": 1.0
             },
             {
-                "name": "Star Wars",
-                "date": " 2011",
-                "description": "Two Happys from McDonald's interact with Yoda in a 2012 Happy Meal toys commercial.",
+                "name": "Hulk (Marvel)",
+                "date": "December 8, 1985",
+                "description": "The Hulk appears in the Amazing Stories episode \"Remote Control Man\".",
                 "linkType": 1.0
             },
             {
                 "name": "Fortnite",
-                "date": "December 16, 2019",
-                "description": "An Imperial Stormtrooper, Rey, Finn, a Sith Trooper, Kylo Ren, Zori Bliss, The Mandalorian, Grogu, Boba Fett, Fennec Shand, Krrsantan, Obi-Wan Kenobi, Darth Vader, Luke Skywalker, Leia Organa, Han Solo, R2-D2, Anakin Skywalker, Padm\u00e9 Amidala, Darth Maul, Clone Troopers, Ahsoka, Chewbacca, Lando Calrissian, Yoda, an AWR Trooper, IG-11, Moff Gideon, a First Order Stormtrooper, Captain Phasma, Poe Dameron, Emperor Palpatine, Mace Windu, General Grievous, Jar Jar Banks, Darth Jar Jar, a customizable Mandalorian Warrior and C-3PO from Star Wars appear in Fortnite, alo with several Mythic items. Additionally, Samurai-inspired versions of Darth Vader and a Stormtrooper also appear. \"Fortnite: Galactic Battle\" is a Star Wars-themed season.",
+                "date": "December 8, 2022",
+                "description": "The Hulk appears in Fortnite. Additionally, Sakaaran Champion Hulk from Thor: Ragnarok also appears.",
                 "linkType": 1.0
             }
         ]
@@ -73264,23 +72032,6 @@
                 "name": "Fortnite",
                 "date": "April 11, 2025",
                 "description": "Finn the Human, Jake the Dog, Princess Bubblegum, Marceline, BMO and Lumpy Space Princess from Adventure Time appear in Fortnite.",
-                "linkType": 1.0
-            }
-        ]
-    },
-    "Taco Bell": {
-        "found": true,
-        "path": [
-            {
-                "name": "Godzilla",
-                "date": " 1998",
-                "description": "The Taco Bell Dog appears in advertising for Godzilla.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "January 16, 2025",
-                "description": "Godzilla Evolved from Godzilla X Kong: The New Empire and Mechagodzilla from Godzilla vs. Kong appear in Fortnite.",
                 "linkType": 1.0
             }
         ]
@@ -73715,23 +72466,6 @@
             }
         ]
     },
-    "Target": {
-        "found": true,
-        "path": [
-            {
-                "name": "SpongeBob SquarePants",
-                "date": " 2001",
-                "description": "A Target commercial has SpongeBob meet and chase after Bullseye.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "December 16, 2024",
-                "description": "SpongeBob and Fishstick interact to promote Official Creative Maps based on SpongeBob in Fortnite.",
-                "linkType": 1.0
-            }
-        ]
-    },
     "Tarzan (Disney)": {
         "found": true,
         "path": [
@@ -73967,9 +72701,6 @@
                 "linkType": 1.0
             }
         ]
-    },
-    "Ted Lasso": {
-        "found": false
     },
     "Teddy Boy Blues": {
         "found": true,
@@ -74235,27 +72966,7 @@
         "found": false
     },
     "Temple Run": {
-        "found": true,
-        "path": [
-            {
-                "name": "GEICO",
-                "date": "March 20, 2018",
-                "description": "The Geico Gecko appears in the Temple Run world and interacts with Guy Dangerous in a GEICO commercial.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Looney Tunes",
-                "date": "May 28, 2012",
-                "description": "Roadrunner and Wild E. Coyote appear in a GEICO commercial.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "July 2, 2021",
-                "description": "LeBron James, based on his appearance from Space Jam: A New Legacy, appears in Fortnite.",
-                "linkType": 1.0
-            }
-        ]
+        "found": false
     },
     "Tenacious D": {
         "found": false
@@ -75513,21 +74224,21 @@
         "found": true,
         "path": [
             {
-                "name": "McDonald's",
-                "date": " 2014",
-                "description": "Happy from McDonald's interacts with characters from The Book of Life in a 2014 Happy Meal toys commercial.",
+                "name": "The Simpsons",
+                "date": "November 3, 2024",
+                "description": "La Catrina and Xibalba from The Book of Life appear in the couch gag for the Simpsons episode \"Treehouse of Horror XXXV\".",
                 "linkType": 1.0
             },
             {
-                "name": "Star Wars",
-                "date": " 2011",
-                "description": "Two Happys from McDonald's interact with Yoda in a 2012 Happy Meal toys commercial.",
+                "name": "King of the Hill",
+                "date": "November 9, 1997",
+                "description": "the Hill family, Dale, Bill and Boomhauer made a cameo in The Simpsons episode Bart Star.",
                 "linkType": 1.0
             },
             {
                 "name": "Fortnite",
-                "date": "December 16, 2019",
-                "description": "An Imperial Stormtrooper, Rey, Finn, a Sith Trooper, Kylo Ren, Zori Bliss, The Mandalorian, Grogu, Boba Fett, Fennec Shand, Krrsantan, Obi-Wan Kenobi, Darth Vader, Luke Skywalker, Leia Organa, Han Solo, R2-D2, Anakin Skywalker, Padm\u00e9 Amidala, Darth Maul, Clone Troopers, Ahsoka, Chewbacca, Lando Calrissian, Yoda, an AWR Trooper, IG-11, Moff Gideon, a First Order Stormtrooper, Captain Phasma, Poe Dameron, Emperor Palpatine, Mace Windu, General Grievous, Jar Jar Banks, Darth Jar Jar, a customizable Mandalorian Warrior and C-3PO from Star Wars appear in Fortnite, alo with several Mythic items. Additionally, Samurai-inspired versions of Darth Vader and a Stormtrooper also appear. \"Fortnite: Galactic Battle\" is a Star Wars-themed season.",
+                "date": "June 13, 2025",
+                "description": "Hank Hill from King of the Hill appears in Fortnite.",
                 "linkType": 1.0
             }
         ]
@@ -75774,35 +74485,6 @@
     "The Cable Guy": {
         "found": false
     },
-    "The California Raisins": {
-        "found": true,
-        "path": [
-            {
-                "name": "Foodfight!",
-                "date": "May 3, 2012",
-                "description": "The California Raisins appear in Foodfight!.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Energizer",
-                "date": "May 3, 2012",
-                "description": "The Energizer Bunny appears in Foodfight!.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Looney Tunes",
-                "date": " 1994",
-                "description": "Wile E. Coyote appears in an Energizer commercial where he tries to go after the Energizer Bunny.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "July 2, 2021",
-                "description": "LeBron James, based on his appearance from Space Jam: A New Legacy, appears in Fortnite.",
-                "linkType": 1.0
-            }
-        ]
-    },
     "The Callisto Protocol": {
         "found": false
     },
@@ -76002,21 +74684,21 @@
         "found": true,
         "path": [
             {
-                "name": "McDonald's",
-                "date": " 2013",
-                "description": "Happy from McDonald's interacts with characters from The Croods in a 2013 Happy Meal toys commercial.",
+                "name": "KouKou Love: Tap Blast",
+                "date": "December 13, 2022",
+                "description": "Characters from The Croods make an appearance in KouKou Love: Tap Blast.",
                 "linkType": 1.0
             },
             {
-                "name": "Star Wars",
-                "date": " 2011",
-                "description": "Two Happys from McDonald's interact with Yoda in a 2012 Happy Meal toys commercial.",
+                "name": "Frankenstein (Universal)",
+                "date": "December 13, 2022",
+                "description": "Characters from Frankenstein make an appearance in KouKou Love: Tap Blast.",
                 "linkType": 1.0
             },
             {
                 "name": "Fortnite",
-                "date": "December 16, 2019",
-                "description": "An Imperial Stormtrooper, Rey, Finn, a Sith Trooper, Kylo Ren, Zori Bliss, The Mandalorian, Grogu, Boba Fett, Fennec Shand, Krrsantan, Obi-Wan Kenobi, Darth Vader, Luke Skywalker, Leia Organa, Han Solo, R2-D2, Anakin Skywalker, Padm\u00e9 Amidala, Darth Maul, Clone Troopers, Ahsoka, Chewbacca, Lando Calrissian, Yoda, an AWR Trooper, IG-11, Moff Gideon, a First Order Stormtrooper, Captain Phasma, Poe Dameron, Emperor Palpatine, Mace Windu, General Grievous, Jar Jar Banks, Darth Jar Jar, a customizable Mandalorian Warrior and C-3PO from Star Wars appear in Fortnite, alo with several Mythic items. Additionally, Samurai-inspired versions of Darth Vader and a Stormtrooper also appear. \"Fortnite: Galactic Battle\" is a Star Wars-themed season.",
+                "date": "October 5, 2021",
+                "description": "Frankenstein's Monster appears in Fortnite.",
                 "linkType": 1.0
             }
         ]
@@ -76700,21 +75382,21 @@
         "found": true,
         "path": [
             {
-                "name": "McDonald's",
-                "date": " 2017",
-                "description": "Happy from McDonald's interacts with Gene in a 2017 Happy Meal toys commercial.",
+                "name": "Candy Crush Saga",
+                "date": "July 28, 2017",
+                "description": "Emoji characters enter the Candy Crush app in The Emoji Movie.",
                 "linkType": 1.0
             },
             {
-                "name": "Star Wars",
-                "date": " 2011",
-                "description": "Two Happys from McDonald's interact with Yoda in a 2012 Happy Meal toys commercial.",
+                "name": "Looney Tunes",
+                "date": "July 9, 2021",
+                "description": "Characters from Space Jam appear in Candy Crush Saga as part of a special collaboration.",
                 "linkType": 1.0
             },
             {
                 "name": "Fortnite",
-                "date": "December 16, 2019",
-                "description": "An Imperial Stormtrooper, Rey, Finn, a Sith Trooper, Kylo Ren, Zori Bliss, The Mandalorian, Grogu, Boba Fett, Fennec Shand, Krrsantan, Obi-Wan Kenobi, Darth Vader, Luke Skywalker, Leia Organa, Han Solo, R2-D2, Anakin Skywalker, Padm\u00e9 Amidala, Darth Maul, Clone Troopers, Ahsoka, Chewbacca, Lando Calrissian, Yoda, an AWR Trooper, IG-11, Moff Gideon, a First Order Stormtrooper, Captain Phasma, Poe Dameron, Emperor Palpatine, Mace Windu, General Grievous, Jar Jar Banks, Darth Jar Jar, a customizable Mandalorian Warrior and C-3PO from Star Wars appear in Fortnite, alo with several Mythic items. Additionally, Samurai-inspired versions of Darth Vader and a Stormtrooper also appear. \"Fortnite: Galactic Battle\" is a Star Wars-themed season.",
+                "date": "July 2, 2021",
+                "description": "LeBron James, based on his appearance from Space Jam: A New Legacy, appears in Fortnite.",
                 "linkType": 1.0
             }
         ]
@@ -77086,27 +75768,27 @@
         "found": true,
         "path": [
             {
-                "name": "Beverly Hillbillies",
-                "date": " 1990",
-                "description": "Will meets Jed Clampett in a promo for The Fresh Prince of Bel-Air.",
+                "name": "Diff'rent Strokes",
+                "date": "May 20, 1996",
+                "description": "Arnold and Mr. Drummond appear in The Fresh Prince of Bel-Air in the episode I, Done: Part 2.",
                 "linkType": 1.0
             },
             {
-                "name": "McDonald's",
-                "date": "July  1988",
-                "description": "Jed Clampett from The Beverly Hillbillies appears in a McDonald's commercial.",
+                "name": "Amazing Stories",
+                "date": "December 8, 1985",
+                "description": "Arnold Jackson appears in the Amazing Stories episode \"Remote Control Man\".",
                 "linkType": 1.0
             },
             {
-                "name": "Star Wars",
-                "date": " 2011",
-                "description": "Two Happys from McDonald's interact with Yoda in a 2012 Happy Meal toys commercial.",
+                "name": "Hulk (Marvel)",
+                "date": "December 8, 1985",
+                "description": "The Hulk appears in the Amazing Stories episode \"Remote Control Man\".",
                 "linkType": 1.0
             },
             {
                 "name": "Fortnite",
-                "date": "December 16, 2019",
-                "description": "An Imperial Stormtrooper, Rey, Finn, a Sith Trooper, Kylo Ren, Zori Bliss, The Mandalorian, Grogu, Boba Fett, Fennec Shand, Krrsantan, Obi-Wan Kenobi, Darth Vader, Luke Skywalker, Leia Organa, Han Solo, R2-D2, Anakin Skywalker, Padm\u00e9 Amidala, Darth Maul, Clone Troopers, Ahsoka, Chewbacca, Lando Calrissian, Yoda, an AWR Trooper, IG-11, Moff Gideon, a First Order Stormtrooper, Captain Phasma, Poe Dameron, Emperor Palpatine, Mace Windu, General Grievous, Jar Jar Banks, Darth Jar Jar, a customizable Mandalorian Warrior and C-3PO from Star Wars appear in Fortnite, alo with several Mythic items. Additionally, Samurai-inspired versions of Darth Vader and a Stormtrooper also appear. \"Fortnite: Galactic Battle\" is a Star Wars-themed season.",
+                "date": "December 8, 2022",
+                "description": "The Hulk appears in Fortnite. Additionally, Sakaaran Champion Hulk from Thor: Ragnarok also appears.",
                 "linkType": 1.0
             }
         ]
@@ -77186,23 +75868,6 @@
                 "name": "Fortnite",
                 "date": "September 27, 2024",
                 "description": "Mr. Incredible, Elastigirl and Frozone appear in Fortnite. Additionally, the Incredibile also appears as a Car Body.",
-                "linkType": 1.0
-            }
-        ]
-    },
-    "The General": {
-        "found": true,
-        "path": [
-            {
-                "name": "Transformers",
-                "date": "May 29, 2025",
-                "description": "Bumblebee meets The General in a commercial for The General insurance.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "June 9, 2023",
-                "description": "Optimus Prime, Optimus Primal, Bumblebee, Megatron and a Battle Bus Transformer appear in Fortnite.",
                 "linkType": 1.0
             }
         ]
@@ -79239,21 +77904,21 @@
         "found": true,
         "path": [
             {
-                "name": "McDonald's",
-                "date": " July, 1988",
-                "description": "Grandpa from The Munsters appears in a McDonald's commercial",
+                "name": "Funko Pop! Blitz",
+                "date": "March 9, 2022",
+                "description": "Characters from The Munsters appear in Funko Pop! Blitz.",
                 "linkType": 1.0
             },
             {
-                "name": "Star Wars",
-                "date": " 2011",
-                "description": "Two Happys from McDonald's interact with Yoda in a 2012 Happy Meal toys commercial.",
+                "name": "Frankenstein (Universal)",
+                "date": "October 28, 2020",
+                "description": "Frankenstein and the Bride of Frankenstein appear in Funko Pop! Blitz.",
                 "linkType": 1.0
             },
             {
                 "name": "Fortnite",
-                "date": "December 16, 2019",
-                "description": "An Imperial Stormtrooper, Rey, Finn, a Sith Trooper, Kylo Ren, Zori Bliss, The Mandalorian, Grogu, Boba Fett, Fennec Shand, Krrsantan, Obi-Wan Kenobi, Darth Vader, Luke Skywalker, Leia Organa, Han Solo, R2-D2, Anakin Skywalker, Padm\u00e9 Amidala, Darth Maul, Clone Troopers, Ahsoka, Chewbacca, Lando Calrissian, Yoda, an AWR Trooper, IG-11, Moff Gideon, a First Order Stormtrooper, Captain Phasma, Poe Dameron, Emperor Palpatine, Mace Windu, General Grievous, Jar Jar Banks, Darth Jar Jar, a customizable Mandalorian Warrior and C-3PO from Star Wars appear in Fortnite, alo with several Mythic items. Additionally, Samurai-inspired versions of Darth Vader and a Stormtrooper also appear. \"Fortnite: Galactic Battle\" is a Star Wars-themed season.",
+                "date": "October 5, 2021",
+                "description": "Frankenstein's Monster appears in Fortnite.",
                 "linkType": 1.0
             }
         ]
@@ -79712,21 +78377,27 @@
                 "linkType": 1.0
             },
             {
-                "name": "Progressive",
-                "date": "November 07, 2014",
-                "description": "Flo appeared in Farmville 2: Country Escape during a limited event.",
+                "name": "Rio (Blue Sky Studios)",
+                "date": "April 13, 2013",
+                "description": "Rio characters appear in FarmVille as part of a special collaboration.",
                 "linkType": 1.0
             },
             {
-                "name": "Ghostbusters",
-                "date": "June 19, 2016",
-                "description": "The Ecto-1 and Proton Pack appear in a Progressive commercial.",
+                "name": "Angry Birds",
+                "date": "March 22, 2011",
+                "description": "Angry Birds Rio is a crossover between both series.",
+                "linkType": 1.0
+            },
+            {
+                "name": "Star Wars",
+                "date": "November 8, 2012",
+                "description": "Angry Birds Star Wars and Angry Birds Star Wars II are crossovers between both series'.",
                 "linkType": 1.0
             },
             {
                 "name": "Fortnite",
-                "date": "October 25, 2020",
-                "description": "Skins and items based on Ghostbusters appear in Fortnite.",
+                "date": "December 16, 2019",
+                "description": "An Imperial Stormtrooper, Rey, Finn, a Sith Trooper, Kylo Ren, Zori Bliss, The Mandalorian, Grogu, Boba Fett, Fennec Shand, Krrsantan, Obi-Wan Kenobi, Darth Vader, Luke Skywalker, Leia Organa, Han Solo, R2-D2, Anakin Skywalker, Padm\u00e9 Amidala, Darth Maul, Clone Troopers, Ahsoka, Chewbacca, Lando Calrissian, Yoda, an AWR Trooper, IG-11, Moff Gideon, a First Order Stormtrooper, Captain Phasma, Poe Dameron, Emperor Palpatine, Mace Windu, General Grievous, Jar Jar Banks, Darth Jar Jar, a customizable Mandalorian Warrior and C-3PO from Star Wars appear in Fortnite, alo with several Mythic items. Additionally, Samurai-inspired versions of Darth Vader and a Stormtrooper also appear. \"Fortnite: Galactic Battle\" is a Star Wars-themed season.",
                 "linkType": 1.0
             }
         ]
@@ -79839,21 +78510,21 @@
         "found": true,
         "path": [
             {
-                "name": "GEICO",
-                "date": " 2009",
-                "description": "Prince Naveen from The Princess and the Frog appears in a GEICO commercial.",
+                "name": "Disney Princess",
+                "date": "March 14, 2010",
+                "description": "Tiana is one of the official Disney Princesses, joining the line-up with a coronation ceremony.",
                 "linkType": 1.0
             },
             {
-                "name": "Looney Tunes",
-                "date": "May 28, 2012",
-                "description": "Roadrunner and Wild E. Coyote appear in a GEICO commercial.",
+                "name": "Sleeping Beauty (Disney)",
+                "date": " 1994",
+                "description": "Aurora is one of the official Disney Princesses, first appearing in the original Disney's Musical Princess Collection; Prince Phillip was also included in the Disney's Dancing Princess Collection.",
                 "linkType": 1.0
             },
             {
                 "name": "Fortnite",
-                "date": "July 2, 2021",
-                "description": "LeBron James, based on his appearance from Space Jam: A New Legacy, appears in Fortnite.",
+                "date": "October 18, 2024",
+                "description": "Maleficent appears in Fortnite.",
                 "linkType": 1.0
             }
         ]
@@ -79925,21 +78596,33 @@
         "found": true,
         "path": [
             {
-                "name": "Halloween Horror Nights",
+                "name": "Freaky (Universal)",
                 "date": "August 7, 2024",
-                "description": "In an ad for Terror Tram: Enter the Blumhouse at Halloween Horror Nights, Purgers from The Purge appear alongside characters from other Blumhouse series.",
+                "description": "In an ad for Terror Tram: Enter the Blumhouse at Halloween Horror Nights, Purgers from The Purge and the killer from Freaky terrorize the same person.",
                 "linkType": 1.0
             },
             {
-                "name": "Texas Chainsaw Massacre",
-                "date": "May 9, 2007",
-                "description": "In an ad for Halloween Horror Nights 17, Leatherface from The Texas Chainsaw Massacre appears with Jack the Clown.",
+                "name": "M3GAN",
+                "date": "August 7, 2024",
+                "description": "In an ad for Terror Tram: Enter the Blumhouse at Halloween Horror Nights M3GAN and the killer from Freaky terrorizes the same person.",
+                "linkType": 1.0
+            },
+            {
+                "name": "Funko Fusion",
+                "date": "September 13, 2024",
+                "description": "M3GAN is a playable character in Funko Fusion.",
+                "linkType": 1.0
+            },
+            {
+                "name": "The Mummy (Universal)",
+                "date": "September 13, 2024",
+                "description": "The Mummy universe appears in Funko Fusion, with Rick O'Connell and Evelyn Carnahan appearing as playable characters.",
                 "linkType": 1.0
             },
             {
                 "name": "Fortnite",
-                "date": " 2024",
-                "description": "Leatherface appears in Fortnite.",
+                "date": "October 23, 2021",
+                "description": "The Mummy appears in Fortnite.",
                 "linkType": 1.0
             }
         ]
@@ -81401,21 +80084,21 @@
                 "linkType": 1.0
             },
             {
-                "name": "M&M's",
-                "date": " 2004",
-                "description": "M&M's characters meet Shrek characters in a commercial for Shrek M&M's.",
+                "name": "Tony Hawk's",
+                "date": "October 4, 2004",
+                "description": "Shrek is playable in Underground 2.",
                 "linkType": 1.0
             },
             {
-                "name": "Star Wars",
-                "date": " 2005",
-                "description": "M&M's characters meet Star Wars characters in a commercial for Star Wars M&M's.",
+                "name": "Spider-Man",
+                "date": "September 20, 2000",
+                "description": "Spider-Man is playable in Tony Hawk's Pro Skater 2.",
                 "linkType": 1.0
             },
             {
                 "name": "Fortnite",
-                "date": "December 16, 2019",
-                "description": "An Imperial Stormtrooper, Rey, Finn, a Sith Trooper, Kylo Ren, Zori Bliss, The Mandalorian, Grogu, Boba Fett, Fennec Shand, Krrsantan, Obi-Wan Kenobi, Darth Vader, Luke Skywalker, Leia Organa, Han Solo, R2-D2, Anakin Skywalker, Padm\u00e9 Amidala, Darth Maul, Clone Troopers, Ahsoka, Chewbacca, Lando Calrissian, Yoda, an AWR Trooper, IG-11, Moff Gideon, a First Order Stormtrooper, Captain Phasma, Poe Dameron, Emperor Palpatine, Mace Windu, General Grievous, Jar Jar Banks, Darth Jar Jar, a customizable Mandalorian Warrior and C-3PO from Star Wars appear in Fortnite, alo with several Mythic items. Additionally, Samurai-inspired versions of Darth Vader and a Stormtrooper also appear. \"Fortnite: Galactic Battle\" is a Star Wars-themed season.",
+                "date": "December 4, 2021",
+                "description": "Spider-Man, Mary Jane Watson, the Green Goblin and the Prowler appear in Fortnite. Additionally, Spider-Man and Michelle Jones from Spider-Man: No Way Home and Spider-Gwen, Spider-Man (Miles Morales) and Spider-Man 2099 from Spider-Man: Across the Spider-Verse also appear. \"Sunflower - Spider-Man: Into the Spider-Verse\" by Post Malone & Swae Lee also appears as a Jam Track.",
                 "linkType": 1.0
             }
         ]
@@ -83656,29 +82339,6 @@
             }
         ]
     },
-    "Toys \"R\" Us": {
-        "found": true,
-        "path": [
-            {
-                "name": "E.T.",
-                "date": " 2002",
-                "description": "Geoffrey the Giraffe meets E.T. in a Toys \"R\" Us commercial.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Indiana Jones",
-                "date": "December  1982",
-                "description": "Indiana Jones makes a cameo in the game E.T. The Extra-Terrestrial for Atari 2600. E.T. appears as one of the tiles in Indiana Jones and the Kingdom of the Crystal Skull.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "June 5, 2022",
-                "description": "Indiana Jones appears in Fortnite as the Chapter 3 Season 3 Battle Passes secret skin.",
-                "linkType": 1.0
-            }
-        ]
-    },
     "Track & Field": {
         "found": true,
         "path": [
@@ -84002,23 +82662,6 @@
             }
         ]
     },
-    "Trix": {
-        "found": true,
-        "path": [
-            {
-                "name": "Looney Tunes",
-                "date": " 1985",
-                "description": "Bugs Bunny tries to help Tricks the Trix Rabbit get some cereal in a two-part Trix commercial.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "July 2, 2021",
-                "description": "LeBron James, based on his appearance from Space Jam: A New Legacy, appears in Fortnite.",
-                "linkType": 1.0
-            }
-        ]
-    },
     "Trog (Midway)": {
         "found": true,
         "path": [
@@ -84309,21 +82952,21 @@
                 "linkType": 1.0
             },
             {
-                "name": "Energizer",
-                "date": " 2008",
-                "description": "Po appears in an Energizer commercial.",
+                "name": "Super Brawl (Nickelodeon)",
+                "date": "March 24, 2013",
+                "description": "Kung Fu Panda characters are playable in Super Brawl 3.",
                 "linkType": 1.0
             },
             {
-                "name": "Looney Tunes",
-                "date": " 1994",
-                "description": "Wile E. Coyote appears in an Energizer commercial where he tries to go after the Energizer Bunny.",
+                "name": "SpongeBob SquarePants",
+                "date": "July 8, 2010",
+                "description": "Spongebob characters are playable in Super Brawl.",
                 "linkType": 1.0
             },
             {
                 "name": "Fortnite",
-                "date": "July 2, 2021",
-                "description": "LeBron James, based on his appearance from Space Jam: A New Legacy, appears in Fortnite.",
+                "date": "December 16, 2024",
+                "description": "SpongeBob and Fishstick interact to promote Official Creative Maps based on SpongeBob in Fortnite.",
                 "linkType": 1.0
             }
         ]
@@ -84549,33 +83192,7 @@
         ]
     },
     "Twin Peaks": {
-        "found": true,
-        "path": [
-            {
-                "name": "General Hospital",
-                "date": "September 15, 2000",
-                "description": "Dr. Jacoby from Twin Peaks appears in three episodes of General Hospital.",
-                "linkType": 1.0
-            },
-            {
-                "name": "KFC",
-                "date": "June 6, 2018",
-                "description": "Colonel Sanders appears in an episode of General Hospital.",
-                "linkType": 1.0
-            },
-            {
-                "name": "The Flash",
-                "date": "October 9, 2015",
-                "description": "The Colonel of Two Worlds #1 is a comic crossover between Colonel Sanders and the Flash.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "February 13, 2021",
-                "description": "The Flash appears in Fortnite.",
-                "linkType": 1.0
-            }
-        ]
+        "found": false
     },
     "Twisted Childhood Universe": {
         "found": false
@@ -86634,9 +85251,6 @@
             }
         ]
     },
-    "Vlasic": {
-        "found": false
-    },
     "Vocaloid": {
         "found": true,
         "path": [
@@ -88379,29 +86993,6 @@
     "Wildfrost": {
         "found": false
     },
-    "Wilkins Coffee": {
-        "found": true,
-        "path": [
-            {
-                "name": "Muppets",
-                "date": "October 29, 2019",
-                "description": "Wilkins and Wontkins appear in the book, The Muppet Christmas Carol: The Illustrated Holiday Classic.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Spider-Man",
-                "date": "October  1978",
-                "description": "In Marvel Team-Up #74, Statler and Waldorf make a cameo appearance.",
-                "linkType": 1.0
-            },
-            {
-                "name": "Fortnite",
-                "date": "December 4, 2021",
-                "description": "Spider-Man, Mary Jane Watson, the Green Goblin and the Prowler appear in Fortnite. Additionally, Spider-Man and Michelle Jones from Spider-Man: No Way Home and Spider-Gwen, Spider-Man (Miles Morales) and Spider-Man 2099 from Spider-Man: Across the Spider-Verse also appear. \"Sunflower - Spider-Man: Into the Spider-Verse\" by Post Malone & Swae Lee also appears as a Jam Track.",
-                "linkType": 1.0
-            }
-        ]
-    },
     "Willow": {
         "found": true,
         "path": [
@@ -88495,21 +87086,21 @@
         "found": true,
         "path": [
             {
-                "name": "Honey Nut Cheerios",
-                "date": " 1988",
-                "description": "Winnie the Pooh and Tigger appear in a Honey Nut Cheerios commercial.",
+                "name": "Cartoon All-Stars To The Rescue",
+                "date": "April 21, 1990",
+                "description": "Winnie The Pooh and Tigger appear in Cartoon All-Stars To The Rescue.",
                 "linkType": 1.0
             },
             {
-                "name": "Looney Tunes",
-                "date": " 1990",
-                "description": "Wile E. Coyote and The Roadrunner appear in a Honey Nut Cheerios commercial.",
+                "name": "Ghostbusters",
+                "date": "April 21, 1990",
+                "description": "Slimer appears in Cartoon All-Stars To The Rescue.",
                 "linkType": 1.0
             },
             {
                 "name": "Fortnite",
-                "date": "July 2, 2021",
-                "description": "LeBron James, based on his appearance from Space Jam: A New Legacy, appears in Fortnite.",
+                "date": "October 25, 2020",
+                "description": "Skins and items based on Ghostbusters appear in Fortnite.",
                 "linkType": 1.0
             }
         ]

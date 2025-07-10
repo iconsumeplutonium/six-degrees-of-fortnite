@@ -1,7 +1,7 @@
 import requests, bs4, sqlite3, argparse, re, Utilities, json
 from tqdm import tqdm
 
-ALL_PAGES_API = "https://fictionalcrossover.fandom.com/api.php?action=query&list=allpages&aplimit=max&format=json"
+ALL_PAGES_API: str = "https://fictionalcrossover.fandom.com/api.php?action=query&list=allpages&aplimit=max&format=json"
 
 # call API to get all articles
 def extractLinks() -> None:
@@ -46,7 +46,6 @@ def filterAll():
     knownRedirects : dict[str, str] = Utilities.getRedirects()
     miscRemovals   : set[str] = Utilities.getRemovals()
     removalsWasUpdated : bool = False
-    deduplication: set[str] = set()
 
     with open('text/franchises_unfiltered.txt', 'r', encoding='utf-8') as unfiltered:
         with open('text/filtered_franchises.txt', 'w', encoding='utf-8') as filtered:
