@@ -2,32 +2,46 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8" />
-	<link rel="icon" type="image/png" href="/6dof_favicon.png?" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/6dof_favicon.png?" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Six Degrees of Fortnite</title>
     <meta name="description" content="Find a path from any franchise back to Fortnite through crossovers." />
-    
+
     <meta property="og:title" content="Six Degrees of Fortnite" />
     <meta property="og:type" content="website" />
     <meta property="og:description" content="Find a path from any franchise back to Fortnite through crossovers." />
     <meta property="og:image" content="https://sixdegreesoffortnite.com/assets/6dof_logo-BPNg_pSG.png" />
     <meta property="og:url" content="https://sixdegreesoffortnite.com" />
-    
+
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Six Degrees of Fortnite" />
     <meta name="twitter:description" content="Find a path from any franchise back to Fortnite through crossovers." />
     <meta name="twitter:image" content="https://sixdegreesoffortnite.com/assets/6dof_logo-BPNg_pSG.png" />
-    
+
     <meta name="theme-color" content="#6ec1ee" />
     <link rel="canonical" href="https://sixdegreesoffortnite.com/" />
 
 </head>
 
 <body>
-	<div id="root"></div>
-	<script type="module" src="/src/main.tsx"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+
+    <!-- source: https://github.com/orgs/community/discussions/50269#discussioncomment-5384077 -->
+    <script type="text/javascript">
+        (function (l) {
+            if (l.search[1] === '/') {
+                var decoded = l.search.slice(1).split('&').map(function (s) {
+                    return s.replace(/~and~/g, '&')
+                }).join('?');
+                window.history.replaceState(null, null,
+                    l.pathname.slice(0, -1) + decoded + l.hash
+                );
+            }
+        }(window.location))
+    </script>
 </body>
 
 </html>
