@@ -10,7 +10,8 @@ export default function GraphInfo() {
 		<div style={{display: "flex", flexDirection: "row"}}>
 			<div>
 				This 3D graph visualizes the shortest paths from every franchise back to Fortnite.
-				Note that this visualization works better on with keyboard and mouse than on a touch display.
+				Note that this visualization works better on with keyboard and mouse than on a touch display. For best performance,
+				make sure you have hardware acceleration enabled. 
 				<br />
 				<br />
 
