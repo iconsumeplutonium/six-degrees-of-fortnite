@@ -6,10 +6,11 @@
 -ish
 .hack
 007
-1001 Spikes
+10 Things I Hate About You
 100 Girls
 100 Girls (Arcana)
 100 Things to Do Before High School
+1001 Spikes
 100th Digital Short
 101 Dalmatians
 101 Dalmatians X Kingdom Hearts
@@ -17,7 +18,6 @@
 1080° X Mario
 1080° X Super Smash Bros.
 1080° X Zelda
-10 Things I Hate About You
 10th Muse
 11/22/63
 12 Angry Men
@@ -32,6 +32,8 @@
 1985 NBC Saturday Morning Cartoons Ad
 1994 Nickelodeon Fruit Roll-Ups Commercial
 1995 Totally Fox Kids Magazine Centerfold
+2 Broke Girls
+2 Stupid Dogs
 20,000 Leagues Under the Sea (Disney)
 2004 SuperTarget Commercial
 2007 DirecTV Christmas Commercial
@@ -46,55 +48,33 @@
 2112
 24
 24 (Fox)
-2 Broke Girls
-2 Stupid Dogs
 2point4 Children
+3 Ninjas
+3 Ninjas X Mario
 3-2-1 Penguins
-3008
-300 (Dark Horse Comics)
 30 Days of Night
 30 Rock
+300 (Dark Horse Comics)
+3008
 3D Dot Game Heroes
 3D Dot Game Heroes X Punch-Out!!
 3D Dot Game Heroes X Zelda
 3D Dot Game Heroes loading art
 3D Mania
-3 Ninjas
-3 Ninjas X Mario
 40-Year-Old Virgin
 404 GAME RE:SET
 41-Year-Old Virgin Who Knocked Up Sarah Marshall and Felt Superbad About It
-500 Days of Summer
 50 First Dates
+500 Days of Summer
 6teen
+7 Dwarves
 77 Sunset Strip
 7D
-7 Dwarves
 8-Bit Christmas
 9-1-1
 90210
 99
 99 Bricks
-A-Team
-A.N.T. Farm
-ADK World
-AFK Arena
-AFTERLOST
-AI: The Somnium Files
-ALF
-ALIEN XENOBLASTER
-ARMS
-ARMS (Nintendo)
-ARMS (Nintendo) X Super Smash Bros.
-ARMS X Super Smash Bros.
-AR Games
-AR Games X Mario
-AR Games X Zelda
-ASH: Archaic Sealed Heat
-AT&T
-AVGN
-AVGN rule
-AWHELLNAH Boxing
 A Boy and His Blob
 A Bug's Life
 A Certain (Series)
@@ -111,6 +91,26 @@ A Song of Ice and Fire
 A Summoning (My Chemical Romance)
 A Thousand Words
 A Way Out
+A-Team
+A.N.T. Farm
+ADK World
+AFK Arena
+AFTERLOST
+AI: The Somnium Files
+ALF
+ALIEN XENOBLASTER
+AR Games
+AR Games X Mario
+AR Games X Zelda
+ARMS
+ARMS (Nintendo)
+ARMS (Nintendo) X Super Smash Bros.
+ARMS X Super Smash Bros.
+ASH: Archaic Sealed Heat
+AT&T
+AVGN
+AVGN rule
+AWHELLNAH Boxing
 Aaahh!!! Real Monsters
 Abbott Elementary
 Abigail (Universal)
@@ -184,9 +184,9 @@ Aggressors of Dark Kombat
 Aggretsuko
 Ahoge Chanbara
 Aim for the Ace! X Donkey Kong
-AirMech
 Air (Key)
 Air Bud
+AirMech
 Airforce Delta
 Airplane!
 Akame ga Kill!
@@ -228,14 +228,15 @@ Alien Nation X South Park
 Alien Swarm
 Alien Syndrome
 Alien vs. Predator X Street Fighter
-All-Star Fighters
 All My Children
 All Together Cereal
 All in the Family
+All-Star Fighters
 Alleyway
 Alleyway X Mario
 Ally McBeal
 Almastriga: Relics of Azathoth
+Almost Naked Animals
 Alone in the Dark
 Alpha Mission
 Alpha Mission X Super Smash Bros.
@@ -252,10 +253,10 @@ Amazing Stories
 Amazing World Of Gumball
 Amazing World of Gumball X Dragon Ball
 American Dad
+American Dad X Donkey Kong
 American Dad!
 American Dad! X Donkey Kong
 American Dad! X Family Guy
-American Dad X Donkey Kong
 American Dragon: Jake Long
 American Gods
 American Graffiti
@@ -348,8 +349,8 @@ Another World
 Another World (Delphine)
 Another World (NBC)
 Anpanman
-Ant-Man
 Ant Bully
+Ant-Man
 Antarctic Adventure
 Antarctic Adventure X Hai no Majutsushi
 Anthology rule
@@ -372,8 +373,8 @@ Aquaman
 Aquapazza: Aquaplus Dream Match
 Aquaria
 Aquarium (Electronic Arts)
-Arcade's Greatest Hits
 Arcade Gamer Fubuki
+Arcade's Greatest Hits
 Arcaea
 Arcana
 Arcana (HAL Laboratory)
@@ -526,13 +527,13 @@ Austin & Ally X Meets World
 Austin Powers
 Auto Modellista
 Avatar
-Avatar: The Last Airbender X Punch-Out!!
 Avatar (Fox)
 Avatar (Fox) X Disney Infinity
 Avatar (Nick)
 Avatar (Nick) X Punch-Out!!
 Avatar (Nickelodeon)
 Avatar (Nickelodeon) X Punch-Out!!
+Avatar: The Last Airbender X Punch-Out!!
 Avenger Penguins
 Avengers
 Avengers (ITV)
@@ -540,8 +541,8 @@ Avengers (Marvel)
 Awesomenauts
 Axe Cop
 Axiom Verge
-Ayakashi: Samurai Horror Tales
 Ayakashi Triangle
+Ayakashi: Samurai Horror Tales
 Azur Lane
 Azure Striker Gunvolt
 Azure Striker Gunvolt X Gal*Gun
@@ -594,17 +595,17 @@ Balloon Fight X Wario
 Ballykissangel
 Baman Piderman
 Bambi
-Bambi: The Reckoning
 Bambi X Kingdom Hearts
+Bambi: The Reckoning
 BanG Dream!
 Banana Splits
 Band Stars
 Banjo
+Banjo X Mario
 Banjo-Kazooie
 Banjo-Kazooie X Donkey Kong
 Banjo-Kazooie X Mario
 Banjo-Kazooie X Super Smash Bros.
-Banjo X Mario
 Bar scene references in Snatcher
 Baraduke
 Barbarian (Titus)
@@ -618,8 +619,8 @@ Barcode Battler X Doraemon
 Barcode Battler X Dragon Slayer
 Barcode Battler X Gimmick! (Sunsoft)
 Barcode Battler X Hebereke
-Barcode Battler X J.League Excite Stage
 Barcode Battler X J. League Excite Stage
+Barcode Battler X J.League Excite Stage
 Barcode Battler X Mario
 Barcode Battler X Sunsoft
 Barcode Battler X The Wing of Madoola
@@ -660,7 +661,6 @@ Batman X MultiVersus
 Batman X Shinobi
 Batman X Superman
 Batter Up
-BattleBlock Theater
 Battle Angel Alita
 Battle Arena Toshinden
 Battle Breakers
@@ -675,6 +675,7 @@ Battle Racing Stars
 Battle Stadium D.O.N
 Battle Tryst
 Battle for Dream Island
+BattleBlock Theater
 Battlefield
 Battleship
 Battlestar Galactica
@@ -768,8 +769,8 @@ Bigfoot (Acclaim)
 Biker Mice from Mars
 Bilibili
 Bill & Ted
-Bill & Ted's Excellent Halloween Adventure
 Bill & Ted X McDonald's
+Bill & Ted's Excellent Halloween Adventure
 Bill Hodges Trilogy
 Bill and Ted
 Bill and Ted's Excellent Halloween Adventure
@@ -782,8 +783,8 @@ Billy Madison X Mortal Kombat
 Binary Land
 Binary Land X Family Basic games
 Binding of Isaac
-BioShock
 Bio Miracle Bokutte Upa
+BioShock
 Biohazard
 Bionic Commando
 Bionic Man X South Park
@@ -796,11 +797,10 @@ Birdemic
 Birdman and the Galaxy Trio
 Birds Eye
 Birds of a Feather
-Bit.Trip
 Bit Generations
+Bit.Trip
 Bite Jacker
 Bitejacker
-Black-ish
 Black Adam
 Black Adam X MultiVersus
 Black Bullet
@@ -820,6 +820,7 @@ Black Rock Shooter
 Black Scorpion (Roger Corman)
 Black Swan
 Black Tiger
+Black-ish
 Blackadder
 Blackthorne
 Blacktron
@@ -858,9 +859,9 @@ Blocks Cometh
 Blocks That Matter
 Blondie
 Blood
+Blood (GT Interactive)
 BloodRayne
 BloodRayne X Asterix
-Blood (GT Interactive)
 Bloodborne
 Bloodstained
 Bloodstained: Ritual of the Night
@@ -870,20 +871,20 @@ Bloons
 Blossom
 Bloxeed
 Bloxeed X Tetris
-Blue's Clues
 Blue Archive
 Blue Beetle
 Blue Bloods
 Blue Lock
 Blue Racer
 Blue Reflection
+Blue's Clues
 Blues Brothers
 Bluey (ABC)
 BoJack Horseman
 Board James
-Bob's Burgers
 Bob Newhart Show
 Bob the Builder
+Bob's Burgers
 Bobobo-bo Bo-bobo
 Bobobo-bo Bo-bobo X Donkey Kong
 Bobobo-bo Bo-bobo X Jump (Series)
@@ -913,8 +914,8 @@ Book Of Unwritten Tales
 Book People Unite Commercial
 Book of Life
 Bookworm
-BoomBots
 Boom Beach
+BoomBots
 Boondocks
 Boonie Bears
 Boonie Bears X Minecraft
@@ -950,20 +951,20 @@ Braid
 Braid (Number None)
 Braid (Number None) X Donkey Kong
 Braid (Number None) X Mario
-BrainPOP
 Brain Age
 Brain Training
 Brain Training X Mario
 Brain Training X Wario
+BrainPOP
 Brand Aid
 Brandon Rogers
 Brandy & Mr. Whiskers
 Brass Eye
 Bratz
-BraveStarr
 Brave (Pixar)
 Brave Frontier
 Brave Nine
+BraveStarr
 Braveheart
 Bravely
 Bravely Default
@@ -1011,8 +1012,8 @@ Buddies (Disney)
 Buffy X Donkey Kong
 Buffy the Vampire Slayer
 Buffy the Vampire Slayer X Donkey Kong
-Bug's Life
 Bug Fables
+Bug's Life
 Bugdroid (Mascot)
 Bugsnax
 Bully (Rockstar)
@@ -1025,8 +1026,8 @@ Bunkd
 Bunsen Is A Beast
 Bunsen Is a Beast
 Bunsen is a Beast
-BurgerTime
 Burger King
+BurgerTime
 Buriki One
 Burning Fight
 Burning Force
@@ -1035,15 +1036,15 @@ Burnout
 Butch Cassidy and the Sundance Kids
 Butch Cassidy and the Sundance Kids (Hanna-Barbera)
 Butter Battle Book
-Buzz!
 Buzz on Maggie
+Buzz!
 C-12: Final Resistance
 C-12: Final Resistance X MediEvil
 C.H.A.I.N.
 C.H.A.I.N.G.E.D.
 C.H.U.D.
-CBBC
 CB Bears
+CBBC
 CBeebies Get Creative
 CBeebies House
 CBeebies LIVE!
@@ -1176,9 +1177,9 @@ Captain Tsubasa
 Captain Underpants
 Captain Velvet Meteor
 Capy Fine Racing GP
+Car 54, Where Are You?
 Car's Life
 CarBot: A 30th Anniversary Cartoon
-Car 54, Where Are You?
 Caravan Stories
 Card City Nights
 Card Hero
@@ -1191,9 +1192,9 @@ CarnEvil
 Carnival Phantasm
 Carole & Tuesday
 Caroline in the City
+Carrie (Stephen King)
 Carrie's Order Up!
 Carrie's Order Up! X Indie Pogo
-Carrie (Stephen King)
 Carrion
 Cars
 Cars (Pixar)
@@ -1201,11 +1202,11 @@ Cars (Pixar) X Monsters (Pixar)
 Cars X Monsters (Pixar)
 Cartoon All-Stars To The Rescue
 Cartoon Box
+Cartoon Network 2020 Halloween Bumper
+Cartoon Network Parking Lot Commercial
 Cartoon Network: Battle Crashers
 Cartoon Network: Block Party
 Cartoon Network: Punch Time Explosion
-Cartoon Network 2020 Halloween Bumper
-Cartoon Network Parking Lot Commercial
 Casablanca
 Casagrandes
 Casper
@@ -1225,9 +1226,9 @@ Castlevania X Snatcher
 Castlevania X Super Smash Bros.
 Castlevania X Zelda
 Casualty
-CatDog
 Cat Busters
 Cat In The Hat
+CatDog
 Catcher in the Rye
 Catherine
 Catherine Tate Show
@@ -1259,16 +1260,16 @@ Chalien
 ChalkZone
 Challenger
 Channel Umptee-3
-Chaos;Head
 Chaos Wars
+Chaos;Head
 Chaotix
 Character cameos in Street Fighter Alpha 2
 Chariot
-Charlie's Angels
-Charlie's Angels X Ghosthunter
 Charlie and the Chocolate Factory
 Charlie and the Chocolate Factory X The Giraffe and the Pelly and Me
 Charlie the Unicorn
+Charlie's Angels
+Charlie's Angels X Ghosthunter
 Charlotte's Web
 Charmed
 Chase Chase Jokers
@@ -1283,12 +1284,12 @@ Chef (G&W) X Super Smash Bros.
 Chelmsford 123
 Chex Quest
 Cheyenne (Warner Bros.)
+Chibi Maruko-chan X Donkey Kong
+Chibi Tiny Tales
 Chibi-Robo!
 Chibi-Robo! X Mario
 Chibi-Robo! X Primopuel
 Chibi-Robo! X Wrecking Crew
-Chibi Maruko-chan X Donkey Kong
-Chibi Tiny Tales
 Chicago (NBC)
 Chicago Fire
 Chicago Hope
@@ -1300,18 +1301,18 @@ Chicken Wiggle
 Chicken Wiggle X Indie Pogo
 Chicory: A Colorful Tale
 Chigley
+Child of Light
 Child's Play
 Child's Play X Mario
-Child of Light
-Children's Party at the Palace
 Children in Need
 Children of the Corn
+Children's Party at the Palace
 Chilly Willy
 Chima
 Chinatown
+Chip 'n Dale Rescue Rangers
 Chip 'n' Dale
 Chip 'n' Dale X Kingdom Hearts
-Chip 'n Dale Rescue Rangers
 Chip and Dale
 Chipper & Sons Lumber Co.
 Chitty Chitty Bang Bang
@@ -1327,10 +1328,10 @@ Chowder X Zelda
 Chris Houlihan
 Chronicles Of Narnia
 Chrono
-ChuChu Rocket
 Chu Chu Rocket
 Chu Chu Rocket X Asterix
 Chu Liuxiang
+ChuChu Rocket
 Chuchel
 Chuck
 Chuck (NBC)
@@ -1463,6 +1464,7 @@ Cook, Serve, Delicious!
 Cookie Crisp
 Cookie Run
 Cooking Companions
+Cooking Mama
 Cool Shock B.T.
 Coolmath Games Official Trailer
 Cooped Up
@@ -1538,9 +1540,9 @@ Croc advertisement references
 Crocodile Dundee X Mario
 Croods
 Crooked Rot
-CrossCode
 Cross Edge
 Cross Impact
+CrossCode
 Crossing Souls
 Crossover
 Crossover (Image Comics)
@@ -1584,6 +1586,7 @@ Cyber (Namco) X Galaxian
 Cyberbots
 Cyberbots X Capcom Girl no Mind Puzzle
 Cyberbots X Street Fighter
+Cyberchase
 Cyberpunk
 Cyberpunk X Kurzgesagt
 Cyblade
@@ -1617,10 +1620,10 @@ Daigasso! Band Brothers X Zelda
 Daily Life of the Immortal King
 Daisenryaku
 Daitomodachi
-DanMachi
 Dan The Man
 Dan The Man X Barry Steakfries
 Dan Vs.
+DanMachi
 Dance Dance Revolution
 Dance Dance Revolution X Donkey Kong
 Dance Dance Revolution X Mario
@@ -1666,11 +1669,11 @@ Darkwing Duck
 Darling in the Franxx
 Dastardly and Muttley
 Date A Live
-Dave!
 Dave Mirra Freestyle
 Dave Mirra Freestyle BMX
 Dave the Barbarian
 Dave the Diver
+Dave!
 Dawn FM
 Dawson's Creek
 Day Job
@@ -1695,7 +1698,6 @@ Dead by Daylight
 Dead or Alive
 Deadly Mantis
 Deadpool
-Death's Door
 Death (Neil Gaiman)
 Death Battle!
 Death Note
@@ -1706,6 +1708,7 @@ Death Race (DevilArtemis)
 Death Rally
 Death Stranding
 Death and Taxes
+Death's Door
 Deathbat
 Deathloop
 Deathstroke
@@ -1719,12 +1722,12 @@ Defender (WMS Industries)
 Defenders of the Earth
 Delicious in Dungeon
 Delver's Drop
-Demon's Souls
 Demon Attack X Call of Duty
 Demon Girl Next Door
 Demon Slayer
 Demon Turf
 Demon Turf X Here Comes Niko!
+Demon's Souls
 Dengeki Bunko (Series)
 Dengeki Bunko Fighting Climax
 Dengeki Bunko Series
@@ -1778,12 +1781,12 @@ Devolver Bootleg
 Devolver Tumble Time
 Devolverland Expo
 Dexter
-Dexter's Laboratory
-Dexter's Laboratory X Mario
 Dexter (Crime Drama
 Dexter (Crime Drama)
 Dexter (Showtime)
 Dexter Riley
+Dexter's Laboratory
+Dexter's Laboratory X Mario
 Diablo
 Diagnosis: Murder
 Diary of a Wimpy Kid
@@ -1841,6 +1844,33 @@ Dishwasher
 Diskun
 Diskun (Mascot)
 Diskun appearances
+Disney All Star Party
+Disney All-Star Party
+Disney All-Stars Racers
+Disney Channel All Star Party
+Disney Dreamlight Valley
+Disney Fairies
+Disney Friends
+Disney Heroes: Battle Mode
+Disney Infinity
+Disney Infinity X Avatar (Fox)
+Disney Infinity X Oz (Disney)
+Disney Jr. Music shorts
+Disney Junior Music shorts
+Disney Magic Kingdoms
+Disney Magical World
+Disney Melee Mania
+Disney Mirrorverse
+Disney Princess
+Disney Solitare
+Disney Sorcerer's Arena
+Disney SpeedStorm
+Disney Speedstorm
+Disney Super Speedway
+Disney Universe
+Disney Villains Cursed Cafe
+Disney XD Villains Unite!
+Disney melee mania
 Disney's 101 Dalmatians
 Disney's Aladdin
 Disney's Alice in Wonderland
@@ -1867,42 +1897,15 @@ Disney's Snow White and the Seven Dwarves
 Disney's Tarzan
 Disney's The Aristocats
 Disney's The Fox and the Hound
-Disney's The Hunchback of Notre-Dame
 Disney's The Hunchback of Notre Dame
 Disney's The Hunchback of Notre Dame X SpongeBob SquarePants
+Disney's The Hunchback of Notre-Dame
 Disney's The Jungle Book
 Disney's The Little Mermaid
 Disney's The Princess and the Frog
 Disney's The Rescuers
 Disney's The Sword in the Stone
 Disney's Villains' Revenge
-Disney All-Star Party
-Disney All-Stars Racers
-Disney All Star Party
-Disney Channel All Star Party
-Disney Dreamlight Valley
-Disney Fairies
-Disney Friends
-Disney Heroes: Battle Mode
-Disney Infinity
-Disney Infinity X Avatar (Fox)
-Disney Infinity X Oz (Disney)
-Disney Jr. Music shorts
-Disney Junior Music shorts
-Disney Magic Kingdoms
-Disney Magical World
-Disney Melee Mania
-Disney Mirrorverse
-Disney Princess
-Disney Solitare
-Disney Sorcerer's Arena
-Disney SpeedStorm
-Disney Speedstorm
-Disney Super Speedway
-Disney Universe
-Disney Villains Cursed Cafe
-Disney XD Villains Unite!
-Disney melee mania
 District 9
 Divekick
 Divergent
@@ -1935,11 +1938,11 @@ Dollars Trilogy
 Dollars Triology
 Dollman (Full Moon)
 Domino's
+Don Doko Don
 Don't Starve
 Don't Touch Anything
 Don't Toy with Me, Miss Nagatoro
 DonPachi
-Don Doko Don
 Donald Duck
 Donald Duck X Kingdom Hearts
 Donkey Hodie
@@ -2131,9 +2134,6 @@ Dracula (Bram Stoker)
 Dracula (Universal)
 Drag-On Dragoon
 Dragalia Lost
-Dragon's Dogma
-Dragon's Lair
-DragonFable X Zelda
 Dragon Adventures
 Dragon Age
 Dragon Ball
@@ -2170,6 +2170,9 @@ Dragon Spirit
 Dragon Spirit X Taiko no Tatsujin
 Dragon Tales
 Dragon Warrior
+Dragon's Dogma
+Dragon's Lair
+DragonFable X Zelda
 Dragonseeds
 Drake & Josh
 Drake & Josh X Mario
@@ -2178,15 +2181,15 @@ Drawn To Life
 Drawn Together
 Drawn Together X Zelda
 Dread X Collection
+Dream Machine
 DreamMix TV World Fighters
-DreamWorks' Puss in Boots
 DreamWorks (Mascot)
 DreamWorks All-Star Kart Racing
 DreamWorks Kart
 DreamWorks Most Wanted
 DreamWorks Super Star Kartz
 DreamWorks Universe of Legends
-Dream Machine
+DreamWorks' Puss in Boots
 Dreamcast It's Thinking Commercials
 Dreamworks (Mascot)
 Drew Carey Show
@@ -2195,7 +2198,6 @@ Drill Dozer X Mario
 Drive
 Driving Miss Daisy
 Droopy
-DuckTales
 Duck Dodgers
 Duck Dodgers X MultiVersus
 Duck Game
@@ -2207,6 +2209,7 @@ Duck Hunt X Super Smash Bros.
 Duck Hunt X Tetris
 Duck Hunt X Wario
 Duck Season
+DuckTales
 Duckman
 Dudes of Hazmat
 Duel Masters
@@ -2247,9 +2250,9 @@ ENA
 ER
 EZ2DJ
 Early Edition
-EarthBound
 Earth Day Special
 Earth Defense Force (D3 Publisher)
+EarthBound
 Earthworm Jim
 Earthworm Jim X Asterix
 Earthworm Jim X ClayFighter
@@ -2257,8 +2260,8 @@ Earthworm Jim X Donkey Kong
 EastEnders
 Easters eggs in Asura's Wrath
 Ecco the Dolphin
-Ed, Edd n Eddy
 Ed Grimley
+Ed, Edd n Eddy
 Eddie the Head
 Eddsworld
 Eden's Zero
@@ -2347,9 +2350,9 @@ Evangelion X Taiko no Tatsujin
 Ever Oasis
 Everhood
 Eversion X Mario
+Everybody Loves Raymond
 Everybody's Golf
 Everybody's Golf X MediEvil
-Everybody Loves Raymond
 Evil (CBS)
 Evil Bong
 Evil Bong X Elvira
@@ -2379,6 +2382,7 @@ Extra Bases
 Extraordinary Ones
 Extreme Dinosaurs
 Eyeshield 21
+F Word
 F-1 Race
 F-1 Race X Donkey Kong
 F-1 Race X Famicom Grand Prix
@@ -2402,7 +2406,6 @@ FLIP
 FNAF
 FRED
 FTL: Faster Than Light
-F Word
 Fable (Lionhead) X Zelda
 FaceBreaker X Mario
 Factory Panic
@@ -2424,8 +2427,8 @@ Famicom Medley in Super Smash Bros.
 Famicom Medley in Super Smash Bros. Brawl
 Famicom Robot
 Famicom Robot X Mario
-Famicom Robot X StarTropics
 Famicom Robot X Star Fox
+Famicom Robot X StarTropics
 Famicom Robot X Super Smash Bros.
 Famicom Robot X Tetris
 Famicom Robot X Wario
@@ -2469,8 +2472,8 @@ Fantasy Life
 Fantasy War Tactics
 Fantasy Zone
 Far Cry
-FarmVille
 Farm Hokkorina
+FarmVille
 Farmers
 Fast And Furious
 Fast and Furious
@@ -2556,6 +2559,7 @@ Fire Emblem X Super Smash Bros.
 Fire Emblem X Wario
 Fire Force
 Firebreather
+Firebuds
 Firefly
 Firefly (Fox)
 Firefly (Lionsgate)
@@ -2601,8 +2605,8 @@ Flying Dog MOCO
 Flying Fox
 Flywrench
 Fontana-Wolf universe
-Food Wars!:Shokugeki no Soma
 Food Wars!: Shokugeki no Soma
+Food Wars!:Shokugeki no Soma
 Foodfight!
 Football Manager
 Footloose
@@ -2729,9 +2733,9 @@ Futurama X Family Guy
 Futurama X Fortnite
 Futurama X Mario
 Futurama X Star Fox
-Future-Worm!
 Future Fragments
 Future Generations
+Future-Worm!
 Fuuka
 FЯED
 G.I. Joe
@@ -2762,7 +2766,6 @@ Galaxy Force
 Galaxy Quest
 Galtar and the Golden Lance
 Gambler (CBS)
-GameCenter CX
 Game & Watch
 Game & Watch Collection
 Game & Watch Collection X Donkey Kong
@@ -2786,6 +2789,7 @@ Game no Kanzume
 Game of Life
 Game of Thrones
 Game of Thrones X MultiVersus
+GameCenter CX
 Gamera
 Gamers!
 Ganbare Goemon
@@ -2884,9 +2888,9 @@ Gintama
 Gintama X Jump (Series)
 Girl's Garden
 Girlchan in Paradise!
-Girls' Frontline
 Girls RPG: Cinderella Life
 Girls und Panzer
+Girls' Frontline
 Gish
 Gish X Dumbo & Cool
 Gladiator (DreamWorks)
@@ -2901,13 +2905,13 @@ Glory of Heracles
 Glove on Fight
 Glover
 Gnomeo and Juliet
+Go All Out!
+Go Mini Man Go!
 Go! Go! Moba Boy!
 Go! Godman
 Go, Diego, Go!
 GoBots
 GoBots X Guardians of the Galaxy
-Go All Out!
-Go Mini Man Go!
 Goat Simulator
 Goat Simulator X Fortnite
 Goblin Slayer
@@ -3048,12 +3052,12 @@ Guitar Hero
 Gulliver's Travels (Fox)
 Gumby
 Gummi Bears
-Gun.Smoke
 Gun Godz
 Gun Survivor
 Gun Survivor X Darkstalkers
 Gun Survivor X Ghosts 'n Goblins
 Gun Survivor X Street Fighter
+Gun.Smoke
 Gunbird
 Gunbird X Mobile Light Force
 Gunbuster
@@ -3111,9 +3115,9 @@ Hamtaro X Donkey Kong
 Hamtaro X Zelda
 Hancock
 Handy Manny
-Hang-On
 Hang On
 Hang On X Taiko no Tatsujin
+Hang-On
 Hangin' with Mr. Cooper
 Hangin´ with Mr. Cooper
 Hangover
@@ -3123,7 +3127,6 @@ Hannah Montana X Raven (Disney)
 Hannah Montana X The Suite Life
 Hannibal
 Hannibal Lecter
-Happy!
 Happy Days
 Happy Death Day
 Happy Feet
@@ -3131,6 +3134,7 @@ Happy Gilmore
 Happy Tree Friends
 Happy Tree Friends X Superman
 Happy Wheels
+Happy!
 Hard'n'Heavy
 Hard'n'Heavy X Giana Sisters
 Harley Quinn
@@ -3181,11 +3185,11 @@ Heidi, Girl of the Alps X Donkey Kong
 Hellbenders
 Hellboy
 Helldivers
-Hello, Paramount
 Hello Kitty
 Hello Kitty X Shimajiro
 Hello Kitty X Taiko no Tatsujin
 Hello Neighbor
+Hello, Paramount
 Hellraiser
 Hellraiser X Mario
 Hellsing
@@ -3207,21 +3211,21 @@ Henry Stickmin X Sonic
 Henry Stickmin X Super Smash Bros.
 Herbie
 Hercules
-Hercules: The Legendary Journeys
 Hercules (Disney)
 Hercules (Disney) X Kingdom Hearts
+Hercules: The Legendary Journeys
 Herculoids
-Here's Lucy
 Here Come The Brides
 Here Comes Niko!
 Here Comes Niko! X A Hat in Time
 Here Comes Niko! X Demon Turf
 Here Comes The Brides
-Herman's Head
+Here's Lucy
 Herman and Katnip
+Herman's Head
+Hero Cantare
 Hero's
 Hero: 108
-Hero Cantare
 Heroes Phantasia
 Heroes of the Storm
 Heroscape
@@ -3231,10 +3235,10 @@ Hex Heroes
 Hexion
 Hey Arnold!
 Hey Duggee
-Hi-Fi Rush
 Hi Hi Puffy AmiYumi
 Hi Honey, I'm Home!
 Hi and Lois
+Hi-Fi Rush
 Hidden Wizard
 Higemaru
 Higemaru X Ghosts 'n Goblins
@@ -3288,11 +3292,11 @@ Homestar Runner
 Homestar Runner X Zelda
 Homestuck
 Homicide: Life on the Street
-Honey, I Shrunk the Kids
-Honey, I Shrunk the Kids X Mario
 Honey Monster Puffs
 Honey Nut Cheerios
 Honey Smacks
+Honey, I Shrunk the Kids
+Honey, I Shrunk the Kids X Mario
 Honeymooners
 Hong Kong 97 (HappySoft)
 Hong Kong Phooey
@@ -3361,15 +3365,6 @@ Hyper Light Drifter
 Hyperdimension Neptunia
 Hyundai Super Comboy Commercial
 Hägar the Horrible
-I'm in the Band
-I, Claudius
-I, Robot
-ICarly
-IDARB
-IF
-IMSCARED
-INK
-IT (Stephen King)
 I Am Bread
 I Am Weasel
 I Didn't Do It (Disney)
@@ -3383,6 +3378,15 @@ I Survived
 I Wanna Be The Guy
 I am Bread
 I now pronounce you Chuck and Larry
+I'm in the Band
+I, Claudius
+I, Robot
+ICarly
+IDARB
+IF
+IMSCARED
+INK
+IT (Stephen King)
 Ice Age
 Ice Age X Family Guy
 Ice Breaker
@@ -3478,10 +3482,10 @@ Inuyasha
 Inuyasha X Taiko no Tatsujin
 Invader Zim
 Invincible
+Invincible (Image Comics)
 Invincible (Image)
 Invincible (Image) X Fortnite
 Invincible (Image) X Spider-Man
-Invincible (Image Comics)
 Invincible Fight Girl
 Invincible X Fortnite
 Invincible X Spider-Man
@@ -3497,6 +3501,7 @@ Isekai Ojisan
 Isekai Quartet
 Isekai Quartet X Re:Zero
 Isekai∞Isekai
+It Takes Two
 It's Always Sunny in Philadelphia
 It's Garry Shandling's Show
 It's Gonna Be A Great Day Kellogg's Commercial
@@ -3504,7 +3509,6 @@ It's Kind of a Funny Story X Zelda
 It's Pat
 It's Time to Play - PS4
 It's a Rumic World
-It Takes Two
 Itadaki Street
 Itadaki Street X Dragon Quest
 Itadaki Street X Final Fantasy
@@ -3607,11 +3611,11 @@ JoJo's Bizarre Adventure X Terminator
 JoJo's Bizarre Adventure X Tetsujin 28
 JoJo's Bizarre Adventure X The Matrix
 JoJo's Bizarre Married Life
-Joe's Apartment
 Joe & Mac
 Joe & Mac X Mario
 Joe Danger
 Joe McDoakes
+Joe's Apartment
 Joey
 Joey (NBC)
 Joey Bishop Show
@@ -3645,7 +3649,6 @@ Judge (G&W) X Wario
 Judge Dredd
 Jujutsu Kaisen
 Jumanji
-JumpJet Rex
 Jump (Series)
 Jump (Series) X Assassination Classroom
 Jump (Series) X Bleach
@@ -3665,8 +3668,8 @@ Jump (Series) X One Piece
 Jump (Series) X Saint Seiya
 Jump (Series) X Shaman King
 Jump (Series) X Toriko
-Jump (Series) X Yu-Gi-Oh
 Jump (Series) X Yu Yu Hakusho
+Jump (Series) X Yu-Gi-Oh
 Jump Rope Challenge
 Jump Series
 Jump Series X Bleach
@@ -3678,6 +3681,7 @@ Jump Series X My Hero Academia
 Jump Series X Naruto
 Jump Series X One Piece
 Jump Street
+JumpJet Rex
 Jungle Book (Disney)
 Jungle Cruise
 Jungle Emperor
@@ -3715,8 +3719,8 @@ Kaginado
 Kaguya-sama: Love Is War
 Kaiju No. 8
 Kaiketsu Zorori X Donkey Kong
-Kaku's Big Plan
 Kaku Spring Festival Gala
+Kaku's Big Plan
 Kakyoin Waifu Connoisseur
 Kamen Rider
 Kamen Rider X Snatcher
@@ -3736,8 +3740,8 @@ Karaoke Revolution
 Karate Champ
 Karate Kid
 Karnov
-KartRider
 Kart Kingdom
+KartRider
 Katamari
 Katamari Damacy
 Katamari X Fast and Furious
@@ -3753,9 +3757,9 @@ Keroro Gunsou X Mario
 Keroro Gunsō
 Keroro Gunsō X Mario
 Keroro X Mario
-Kick-Ass
 Kick Buttowski: Suburban Daredevil
 Kick the Buddy
+Kick-Ass
 Kickin' It
 Kid A
 Kid Dracula
@@ -3772,17 +3776,17 @@ Kid Icarus X Wario
 Kid Icarus X Zelda
 Kid Klown
 Kidd Video
+Kids for Character
 Kids' WB NEWvember Promo
 Kids' WB Way Outta the Way Road Trip
-Kids for Character
 Kiff
-Kiki's Delivery Service
 Kiki KaiKai
 Kiki Trick
 Kiki Trick X Mario
 Kiki Trick X Metroid
 Kiki Trick X Nintendo
 Kiki Trick X Tennis (Nintendo)
+Kiki's Delivery Service
 Kikoriki
 Kilala Princess
 Kill Bill
@@ -3790,7 +3794,6 @@ Kill Me Baby
 Kill Me Baby X Taiko no Tatsujin
 Kill la Kill
 Killadelphia
-Killer7
 Killer Instinct
 Killer Instinct (Rare)
 Killer Instinct (Rare) X Battletoads
@@ -3799,6 +3802,7 @@ Killer Instinct (Rare) X Donkey Kong
 Killer Is Dead
 Killer Klowns from Outer Space
 Killer is Dead
+Killer7
 Killing Floor
 Killzone
 Kim Possible
@@ -3807,11 +3811,10 @@ Kimetsu no Yaiba
 Kin-iro Mosaic
 Kindaichi Case Files
 Kindergarten
-Kindergarten: The Musical
 Kindergarten The Musical
+Kindergarten: The Musical
 Kinect Disneyland Adventures
 Kinect Rush: A Disney/Pixar Adventure
-King's Quest
 King Kong
 King Kong X Donkey Kong
 King Kong X Mario
@@ -3822,6 +3825,7 @@ King of Queens
 King of the Hat
 King of the Hill
 King of the Hill X Beavis and Butt-Head
+King's Quest
 Kingdom
 Kingdom (Shueisha)
 Kingdom Dragonion
@@ -3846,6 +3850,7 @@ Kingdom Hearts X Snow White and the Seven Dwarfs (Disney)
 Kingdom Hearts X Super Smash Bros.
 Kingdom Hearts X Tarzan (Disney)
 Kingdom Hearts X The Lion King
+Kingdom Hearts X The Little Mermaid (Disney)
 Kingdom Hearts X The Sword in the Stone (Disney)
 Kingdom Hearts X Winnie the Pooh
 Kings Watch
@@ -3892,8 +3897,6 @@ Koala Brothers
 KochiKame
 Kochikame
 Komi Can't Communicate
-Konami's Ping Pong
-Konami's Ping Pong X Donkey Kong
 Konami 50th Anniversary Artwork
 Konami Classics
 Konami GB Collection
@@ -3902,12 +3905,14 @@ Konami Man
 Konami Man (Mascot)
 Konami Man appearances
 Konami Wai Wai World
+Konami's Ping Pong
+Konami's Ping Pong X Donkey Kong
 KonoSuba
+Kool Aid X Planters
 Kool-Aid
 Kool-Aid & Mr. Clean X Planters
 Kool-Aid X Mr. Peanut
 Kool-Aid X Planters
-Kool Aid X Planters
 Kosuke Kindaichi
 Kotodaman
 KouKou Love: Tap Blast
@@ -3939,8 +3944,8 @@ LOST
 LOST (ABC)
 LOST (ABC) X Wolverine
 LOST X Wolverine
-La-Mulana
 La Rosa de Guadalupe
+La-Mulana
 Lab Rats
 Labyrinth (Jim Henson Company)
 Lady Bird
@@ -4017,12 +4022,12 @@ Lego Brawls
 Lego Castle
 Lego Chess
 Lego City
-Lego City/sets
 Lego City Center
 Lego City Space
 Lego City X Donkey Kong
 Lego City X Mario
 Lego City X Zelda
+Lego City/sets
 Lego Creator
 Lego Dimensions
 Lego Dino
@@ -4098,9 +4103,9 @@ Licca-chan
 Licorice Pizza
 Lidsville
 Lies of P
-LifeAfter
 Life Is Strange
 Life and Times of Juniper Lee
+LifeAfter
 Light Tennis
 Like a Dragon
 Lilo & Stitch
@@ -4110,9 +4115,9 @@ Lily for President?
 Limbo
 Lineage
 Link
+Link Click
 Link's Crossbow Training
 Link's Crossbow Training X Zelda
-Link Click
 Linus the Lionhearted
 Lion (G&W)
 Lion (G&W) X Super Smash Bros.
@@ -4120,7 +4125,6 @@ Lion King
 Lippy The Lion and Hardy Har Har
 Liquid Kids
 List of Youtooz Promotional Art
-LittleBigPlanet
 Little Alchemy
 Little Audrey
 Little Battlers Experience
@@ -4136,6 +4140,7 @@ Little Rascals
 Little Rosey
 Little Shop of Horrors
 Little Witch Academia
+LittleBigPlanet
 Littlest Pet Shop
 Liv and Maddie
 Liv and Maddie X Best Friends Whenever
@@ -4150,13 +4155,13 @@ Loki (Marvel)
 Lollipop Chainsaw
 Lone Ranger
 Longest Yard
-Look-See
 Look Who's Talking
+Look-See
 Loom
 Looney Tunes
 Looney Tunes X MultiVersus
-Looney Tunes X Scooby-Doo
 Looney Tunes X Scooby Doo
+Looney Tunes X Scooby-Doo
 Loopy De Loop
 Looty Dungeon
 Lorax
@@ -4176,12 +4181,12 @@ Lost World (Tezuka Productions)
 Lost World (manga)
 Lost in Vivo
 Loud House
-Love, Death & Robots
-Love, Simon
-LovePlus
 Love Actually
 Love Boat
 Love Live!
+Love, Death & Robots
+Love, Simon
+LovePlus
 Lovers in a Dangerous Spacetime
 Low Men in Yellow Coats
 Luann
@@ -4192,16 +4197,16 @@ Lucky Star X Taiko no Tatsujin
 Lufia
 Luftrausers
 Luigi
-Luigi's Mansion
-Luigi's Mansion X Mario
 Luigi X Mario
 Luigi X Super Smash Bros.
 Luigi X Wario
+Luigi's Mansion
+Luigi's Mansion X Mario
 Lunistice
 Lupin the Third
 Lupin the Third X Taiko no Tatsujin
-Luxo, Jr.
 Luxo Jr.
+Luxo, Jr.
 Lycoris Recoil
 Lyle, Lyle, Crocodile
 M&M's
@@ -4214,9 +4219,9 @@ MARVEL Strike Force
 MLB: The Show
 Maakies
 Mabinogi
-MacGyver
 Mac And Me
 Mac and Me
+MacGyver
 Macbat 64
 Mach Rider
 Mach Rider X Mario
@@ -4224,7 +4229,6 @@ Machete
 Machinarium
 Macross
 Macy's Thanksgiving Day Parade 1993 Broadway Medley
-MadWorld
 Mad About You
 Mad Dash Racing
 Mad Jack the Pirate
@@ -4232,6 +4236,7 @@ Mad Max
 Mad Max X Mario
 Mad Men
 Mad Monster Party
+MadWorld
 Madagascar
 Madagascar X Shrek
 Madame's Place
@@ -4244,7 +4249,6 @@ Madman (Mike Allred)
 Madness
 Magi
 Magi X Taiko no Tatsujin
-Magic: The Gathering
 Magic Knight Rayearth
 Magic Pengel
 Magic Roundabout
@@ -4253,6 +4257,7 @@ Magic Sword
 Magic The Gathering
 Magic Touch: Wizard for Hire
 Magic Tree House
+Magic: The Gathering
 Magical Battle Arena
 Magical Drop
 Magical Girl Lyrical Nanoha
@@ -4260,8 +4265,8 @@ Magical Sempai
 Magical Vacation
 Magilla Gorilla
 Magkid
-Magnum, P.I.
 Magnum P.I.
+Magnum, P.I.
 Magnus Chase
 Mago
 Mahjong Soul
@@ -4279,8 +4284,8 @@ Malcolm in the Middle
 Mallrats
 Maltese Falcon
 Mamma Mia!
-Man-Thing
 Man from U.N.C.L.E.
+Man-Thing
 Mana
 Mana X Dragon Ball
 Mandela Catalogue
@@ -4306,8 +4311,6 @@ Mappy X Donkey Kong
 Mappy X Party Land
 Marble Madness
 Mario
-Mario-Tetris X Nintendo World Cup
-Mario/Mass Effect X Spore
 Mario & Luigi X Excite
 Mario & Luigi X Final Fantasy
 Mario & Luigi X Kirby
@@ -4560,9 +4563,9 @@ Mario X Spirit Camera
 Mario X SpongeBob
 Mario X Spore
 Mario X Spyro
-Mario X StarTropics
 Mario X Star Fox
 Mario X Star Wars
+Mario X StarTropics
 Mario X Starfy
 Mario X Street Fighter
 Mario X Stunt Race FX
@@ -4619,6 +4622,8 @@ Mario and Sonic in Mega Turrican
 Mario and TMNT in McPixel
 Mario the Juggler
 Mario vs. Donkey Kong X Super Smash Bros.
+Mario-Tetris X Nintendo World Cup
+Mario/Mass Effect X Spore
 Markiplier
 Marmaduke
 Married... with Children
@@ -4629,10 +4634,6 @@ Martial Law
 Martian Manhunter
 Martin
 Martin (Fox)
-Marvel: Ultimate Alliance
-Marvel: Ultimate Alliance X Metroid
-Marvel: Ultimate Alliance X Pitfall
-Marvel: Ultimate Alliance X Zelda
 Marvel Cinematic Universe
 Marvel Cosmic Invasion
 Marvel Land
@@ -4650,6 +4651,10 @@ Marvel VS Capcom
 Marvel Zombies
 Marvel vs. Capcom
 Marvel vs. Capcom X Street Fighter
+Marvel: Ultimate Alliance
+Marvel: Ultimate Alliance X Metroid
+Marvel: Ultimate Alliance X Pitfall
+Marvel: Ultimate Alliance X Zelda
 Marvelous
 Marvelous (Nintendo)
 Marvelous Misadventures of Flapjack
@@ -4666,10 +4671,10 @@ Mask
 Mass Effect
 Mass Effect X Minecraft
 Mass Effect X Spore
-MasterCard Icons Commercial
 Master Detective Archives
 Master of Eternity
 Master of Kung Fu
+MasterCard Icons Commercial
 Masters of the Universe
 Matango
 Matlock
@@ -4700,13 +4705,12 @@ McPixel X Teenage Mutant Ninja Turtles
 Me & Roboco
 Me and Earl and the Dying Girl
 Mean Girls
-MeatCanyon
 Meat Boy
+MeatCanyon
 Medabots
 Medaka Box
 Medal of Honor
 MediEvil
-MediEvil: Resurrection film references
 MediEvil X C-12: Final Resistance
 MediEvil X Creatures
 MediEvil X Everybody's Golf
@@ -4718,6 +4722,7 @@ MediEvil X Pirates of the Caribbean
 MediEvil X Primal
 MediEvil X The Shining
 MediEvil X WipEout
+MediEvil: Resurrection film references
 Meego
 Meet The Spartans
 Meet the Robinsons
@@ -4726,7 +4731,6 @@ Meets World X Austin & Ally
 Meets World X Best Friends Whenever
 Meets World X Mario
 Meets World X Sabrina the Teenage Witch
-Mega64
 Mega Jump X Mario
 Mega Man
 Mega Man X 194X
@@ -4749,6 +4753,7 @@ Mega Man X Tekken
 Mega Man X Yoshi
 Mega Twins
 Mega Twins X Street Fighter
+Mega64
 Megablast
 Megaman
 Megaman X Gal*Gun
@@ -4813,12 +4818,12 @@ Metroid X Zelda
 Michael - PS3 Long Live Play
 Michael Jackson's Moonwalker
 Mickey Mouse
-Mickey Mouse/Improper spin-offs
 Mickey Mouse X Donkey Kong
 Mickey Mouse X Garfield
 Mickey Mouse X JoJo's Bizarre Adventure
 Mickey Mouse X Kingdom Hearts
 Mickey Mouse X Zelda
+Mickey Mouse/Improper spin-offs
 Micronauts
 Microsoft Flight Simulator
 Middle
@@ -4878,8 +4883,8 @@ Miss Kobayashi's Dragon Maid
 Miss Monochrome
 Missile Command
 Missing Link (Laika)
-Mission: Impossible
 Mission in Snowdriftland
+Mission: Impossible
 Mist (Stephen King)
 Mist Train Girls
 Mister Ed
@@ -4912,6 +4917,7 @@ Mole (Taomee) X Mario
 Mole Mania
 Mongrels
 Monica's Gang
+Monk
 Monkey (Nippon Television) X Donkey Kong
 Monkey Ball
 Monkey Island
@@ -4923,7 +4929,6 @@ Monogatari (Kodansha)
 Monogatari (NiSiOiSiN)
 Mononoke
 Monopoly
-MonsterVerse
 Monster Cereals
 Monster Galaxy
 Monster High
@@ -4943,6 +4948,7 @@ Monster Retsuden Oreca Battle
 Monster Sanctuary
 Monster Strike
 Monster in My Pocket
+MonsterVerse
 Monsterpocalypse
 Monsters (Oda)
 Monsters (Pixar)
@@ -4952,9 +4958,9 @@ Monty Python and the Holy Grail
 Monument Valley
 Moofia
 Moomin
-MoonQuest
 Moon Knight
 Moon Patrol
+MoonQuest
 Moonman
 Moonstone Island
 Mork & Mindy
@@ -5041,9 +5047,9 @@ Munsters
 Muppets
 Muppets X Donkey Kong
 Muppets X Mario
-Murder, She Wrote
 Murder Drones
 Murder by Numbers
+Murder, She Wrote
 Murdered: Soul Suspect
 Murdoch Mysteries
 Murphy Brown
@@ -5052,7 +5058,6 @@ Mushoku Tensei
 Mutant Mudds
 Mute (Netflix)
 Mutt & Stuff
-MySims
 My Deer Friend Nokotan
 My Friend Pedro
 My Gym Partner's a Monkey
@@ -5079,6 +5084,7 @@ My Name Is Earl X Pac-Man
 My Neighbor Totoro
 My Singing Monsters
 My Three Sons
+MySims
 Myst
 Mystery Dungeon
 Mystery Files of Shelby Woo
@@ -5088,6 +5094,7 @@ Mystery Science Theater 3000 X Mario
 Mystifying Oracle
 Märchen Maze
 N
+N (Metanet Software)
 N-Gang
 N-Gang X Donkey Kong
 N-Gang X Mario
@@ -5114,7 +5121,6 @@ NFL 2K
 NFL SuperPro
 NOS4A2
 NYPD Blue
-N (Metanet Software)
 NacelleVerse
 Nacho Libre
 Nailbiter
@@ -5184,25 +5190,25 @@ Nester X Scott Pilgrim
 Netflix Universe commercials
 Neuro-sama
 Never Been Kissed
-NewZealand Story
 New Andy Griffith Show
 New Game!
 New Girl
 New Space Order
+NewZealand Story
 Newgrounds Rumble
 Newhart
 Nexo Knights
 Next Gen
 Next Penelope
-NiGHTS
-Ni Hao, Kai-Lan
 Ni Hao Kai-Lan
+Ni Hao, Kai-Lan
 Ni no Kuni
-Nick's Not So Ultimate Boss Battles
+NiGHTS
 Nick Jr. Kids Bumpers Crossover Youtube
 Nick Jr. Lemonade Stand
 Nick Jr. Music Maker
 Nick Tennis
+Nick's Not So Ultimate Boss Battles
 Nickelodeon All-Star Brawl
 Nickelodeon All-Star Brawl X SpongeBob
 Nickelodeon All-Star Brawl X SpongeBob SquarePants
@@ -5300,6 +5306,7 @@ Nostalgia Critic X Zelda
 Not Man
 Nuclear Throne
 Numan Athletics
+Numb Chucks
 Numberblocks
 Nurses
 Nurses (NBC)
@@ -5372,9 +5379,9 @@ Off the Mark
 Oggy And The Cockroaches
 Oggy and the Cockroaches
 Ogre Battle
-Oh...Sir!
 Oh Baby Kart
 Oh My School!
+Oh...Sir!
 Oil Panic
 Oil Panic X Donkey Kong
 Oil Panic X Mario
@@ -5394,8 +5401,6 @@ Once Upon A Time
 Once Upon A Time (ABC)
 Once Upon a Studio
 Once Upon a Time... in Hollywood
-One-Punch Man
-OneShot
 One Foot in the Grave
 One Life to Live
 One Night at Flumpty's
@@ -5405,6 +5410,8 @@ One Piece
 One Piece X Jump Series
 One Step From Eden
 One on One
+One-Punch Man
+OneShot
 Onechanbara
 Onesimus: A Quest for Freedom
 Onesimus: A Quest for Freedom X Jill of the Jungle
@@ -5440,10 +5447,10 @@ Otogi Frontier
 Otomedius
 Otoranger
 Otto (Film series)
-Out-universe link
-OutRun
 Out Run
 Out of Jimmy's Head
+Out-universe link
+OutRun
 Outcast Odyssey
 Over the Garden Wall
 Over the Garden Wall X OK K.O.!
@@ -5515,8 +5522,8 @@ Parachute X Donkey Kong
 Parachute X Mario
 Parachute X Super Smash Bros.
 Parachute X Wario
-Paradigm: Reboot
 Paradigm (Jacob Janerka)
+Paradigm: Reboot
 Paradisa
 Paradise PD
 Paradroid
@@ -5576,8 +5583,8 @@ Persona X Super Smash Bros.
 Pet Sematary
 Petal Crash
 Pete's Dragon
-Peter Pan's Neverland Nightmare
 Peter Pan (Disney)
+Peter Pan's Neverland Nightmare
 Peter Potamus Show
 Peter Punk
 Petticoat Junction
@@ -5629,19 +5636,19 @@ Pink Panther X Dance Dance Revolution
 Pink Panther X Donkey Kong
 Pink Panther X Pac-Man
 Pink Panther X Street Fighter
-Pinky, Elmyra & the Brain
 Pinky and the Brain
-Pinocchio, Vampire Slayer
-Pinocchio: Unstrung
+Pinky, Elmyra & the Brain
 Pinocchio (Disney)
 Pinocchio (Disney) X Kingdom Hearts
+Pinocchio, Vampire Slayer
+Pinocchio: Unstrung
 Pioneer Trail
 Pippi Longstocking
 Pirate101
-Pirates101
 Pirates of Dark Water
 Pirates of the Caribbean
 Pirates of the Caribbean X MediEvil
+Pirates101
 Pitch Meeting
 Pitch Perfect
 Pitfall
@@ -5673,17 +5680,17 @@ Planters - Baby Nut commercial
 Plants VS Zombies
 Plants vs. Zombies
 Platform Panic
+Play Action Football X Mario
 Play-Doh
 PlayStation All-Stars
 PlayStation All-Stars Battle Royale
 PlayStation All-Stars Battle Royale X Ratchet & Clank
 PlayStation All-Stars X Ratchet & Clank
 PlayStation Move Heroes
-Play Action Football X Mario
 PlayerUnknown's Battlegrounds
 Pleasant Goat and Big Big Wolf
-Please, Don't Touch Anything
 Please Don't Touch Anything
+Please, Don't Touch Anything
 Plok
 Plok X Mario
 Plucky Duck Show
@@ -5727,13 +5734,13 @@ Pong X Asterix
 Pony Island
 Ponyo
 Poohniverse: Monsters Assemble
+Pop Team Epic
+Pop n' Pop
 Pop'n Music
 Pop'n Music X Mario
 Pop-Tarts
 Pop-Up Pirate
 Pop-Up Pirate X Brawl Stars
-Pop Team Epic
-Pop n' Pop
 Popeye
 Popeye X Donkey Kong
 Popful Mail
@@ -5748,7 +5755,6 @@ Postman Pat
 Pot of Gold Pinball
 Potion Craft
 Pou
-PowerWash Simulator
 Power Drift
 Power Instinct
 Power Jet Racing 2001
@@ -5767,6 +5773,7 @@ Power Stone X Resident Evil
 Power Stone X Rival Schools
 Power Stone X Street Fighter
 Power Team
+PowerWash Simulator
 Powerpuff Girls
 Powerpuff Girls X Mario
 Powerpuff Girls X Zelda
@@ -5777,8 +5784,8 @@ Predator (Fox) X Street Fighter
 Predator (Yautja)
 Prep & Landing
 Pressure
-Presto (Pixar)
 Presto (Pixar Short)
+Presto (Pixar)
 Pretty Cure
 Pretty Cure X Donkey Kong
 Pretty Little Liars
@@ -5834,11 +5841,11 @@ Psi-Ops
 Psych X Zelda
 Psychic Force
 Psycho
-Psycho-Pass
 Psycho (Universal)
 Psycho Fox
 Psycho Soldier
 Psycho Soldier X Super Smash Bros.
+Psycho-Pass
 Psychoban
 Psychonauts
 Puchi Carat
@@ -5848,6 +5855,8 @@ Pulp Fiction
 Pulp Panic
 Pulseman X Pokémon
 Pumpkin Jack
+Punch Out!! X Avatar (Nick)
+Punch Punch Forever
 Punch-Out!!
 Punch-Out!! X 3D Dot Game Heroes
 Punch-Out!! X Animal Crossing
@@ -5868,8 +5877,6 @@ Punch-Out!! X Super Smash Bros.
 Punch-Out!! X Tekken
 Punch-Out!! X Tingle
 Punch-Out!! X Wario
-Punch Out!! X Avatar (Nick)
-Punch Punch Forever
 Punisher
 Punishing: Gray Raven
 Punk Rock Holocaust
@@ -5911,8 +5918,8 @@ Q*bert X Pitfall
 Q*bert X Regular Show
 Q*bert X Space Ace
 QWOP
-Qi Jiguang (Kaku)
 Qi Jiguang (Kaku Kids)
+Qi Jiguang (Kaku)
 Qix
 Qix X Mario
 Qix X Tetris
@@ -5925,8 +5932,8 @@ Quartet
 Quartet (Sega)
 Quarth
 Queen's Blade
-QuickSpot
 Quick Draw McGraw
+QuickSpot
 Quiet Place
 Quintessential Quintuplets
 Quisp
@@ -5966,8 +5973,8 @@ Rain World
 Rainbow (ITV)
 Rainbow Bubblegem
 Rainbow Islands
-Rainbow Sea (Kaku)
 Rainbow Sea (Kaku Kids)
+Rainbow Sea (Kaku)
 Rainbow Six
 Raisin Bran
 Rakugaki Oukoku
@@ -6045,9 +6052,9 @@ Ren and Stimpy
 Renaine
 Renegade Ops
 Reno 911!
+Rent a Hero
 Rent-A-Girlfriend
 Rent-a-Girlfriend
-Rent a Hero
 Res-Q
 Rescuers
 Reservoir Dogs
@@ -6113,18 +6120,18 @@ River City Ransom
 River Raid X Call of Duty
 Riverbond
 RoBeats!
-RoadBlasters (Atari)
 Road Fighter
 Road Rovers
 Road Warriors
 Road Warriors X Indie Pogo
+RoadBlasters (Atari)
 Roary the Racing Car
 Robeats!
 Robin Hood (Disney)
 Roblox
-RoboCop
 Robo Army
 Robo Force
+RoboCop
 Robot (Isaac Asimov)
 Robot Chicken
 Robot Chicken X Donkey Kong
@@ -6144,11 +6151,11 @@ Rock Paper Scissors
 Rock n' Roll Racing
 Rock of Ages
 Rock of Ages (Atlus)
-Rocket: Robot on Wheels
 Rocket Knight
 Rocket Knight X Snatcher
 Rocket League
 Rocket Power
+Rocket: Robot on Wheels
 Rocketeer
 Rockman
 Rocko's Modern Life
@@ -6190,20 +6197,20 @@ Rugrats
 Rumble Roses
 Runaway Bride
 Runbow
-RuneScape
 Rune (Malibu Comics)
 Rune Factory
+RuneScape
 Running Stadium X Duck Hunt
 Running Stadium X Mario
 Running to the Moon for a Banquet
 Rurouni Kenshin
 Rust
-Rust (Facepunch)
 Rust (Facepunch Studios)
+Rust (Facepunch)
 Rust Bucket
 Rusty's Real Deal Baseball
-Ryan's World
 Ryan Phillippe SNL Character Monologue
+Ryan's World
 Rygar
 S.W.A.T.
 SCP: Secret Laboratory
@@ -6213,9 +6220,9 @@ SMG4 X Among Us
 SNES games in Legacy of Goku II
 SNK Heroines
 SNK vs. Capcom
+SNL 40th Anniversary Musical Medley
 SNL's "So Long, Farewell"
 SNL's Recurring Characters for Unity (1993)
-SNL 40th Anniversary Musical Medley
 SSB
 SSX
 SSX X Mario
@@ -6279,10 +6286,10 @@ Save Me Mr. Tako!
 Saved by the Bell
 Saving Private Ryan
 Saw
-Say Anything... X Modern Family
 Say Anything X Modern Family
-Sayonara, Zetsubou-Sensei
+Say Anything... X Modern Family
 Sayonara Wild Hearts
+Sayonara, Zetsubou-Sensei
 Scandal
 Scarface
 Scarface X Class of '09 (SBN3)
@@ -6291,17 +6298,17 @@ Scarlet Witch
 Scary Movie
 Schitt's Creek
 Scholastic Home Base
-School-Live!
 School of Rock
+School-Live!
 Schoolhouse Rock
 Schwarzerblitz
 Science Adventure Series
 Scissor Seven
 Scoob! (Crossover) (2020) (film)
+Scooby Doo
 Scooby-Doo
 Scooby-Doo X Looney Tunes
 Scooby-Doo X MultiVersus
-Scooby Doo
 Scoop
 Scorpion (CBS)
 Scorpion King
@@ -6421,9 +6428,9 @@ Shimajiro
 Shimajiro & Hello Kitty in Exercise with Friends
 Shimajiro X Hello Kitty
 Shimmer and Shine
-Shin-chan
 Shin Megami Tensei
 Shin Onigashima
+Shin-chan
 Shinbi Apartment
 Shingenki no Kyojin
 Shining (Sega)
@@ -6461,19 +6468,19 @@ Sigmund and the Sea Monsters
 Signs (Touchstone)
 Silence of the Lambs
 Silent Hill
+Silver Spoons
+Silver Streak X The Fall Guy
+Silver Surfer
 SilverHawks
 SilverLoad
 SilverLoad X Creatures
 SilverLoad x Creatures
-Silver Spoons
-Silver Streak X The Fall Guy
-Silver Surfer
 Sim
-SimCity
-SimCity X Mario
 Sim X Asterix
 Sim X Mario
 Sim X Zelda
+SimCity
+SimCity X Mario
 Simon & Simon
 Simpsons
 Sims
@@ -6485,16 +6492,16 @@ Singin' in the Rain X The Fall Guy
 Sinistar
 Sinnamon
 Siralim
-Sister, Sister
 Sister Act
+Sister, Sister
 Sisters of Dorley
 Sitting Ducks
 Six Million Dollar Man
 Sixteen Candles
 Sixth Sense
 Skate
-SkateBIRD
 Skate (Electronic Arts)
+SkateBIRD
 Skatoony
 Sket Dance
 Skibidi Toilet
@@ -6508,11 +6515,11 @@ Skim
 Skinjacker X Zelda
 Skul: The Hero Slayer
 Skullgirls
-Sky: Children of the Light
 Sky Kid
 Sky Kid X Donkey Kong
 Sky Kid X Party Land
 Sky Riders X The Fall Guy
+Sky: Children of the Light
 Skyhook
 Skylanders
 Skylanders X Crash Bandicoot
@@ -6538,8 +6545,8 @@ Sleeping Dogs (Square Enix) X Just Cause (Eidos)
 Sleeping Dogs (Square Enix) X Square Enix
 Sleepy Princess in the Demon Castle
 Slender
-Slime-san
 Slime Rancher
+Slime-san
 Slipstream
 Slither
 Sludge Brothers
@@ -6588,18 +6595,18 @@ Soccer (Nintendo) X Super Smash Bros.
 Social Monsters
 Sock
 Sofia the First
-Solar, Man of the Atom
 Solar Opposites
+Solar, Man of the Atom
 Solomon's Key
 Soma Bringer
 Something About
 Something Rotten!
 Something Special
+Son of Zorn
 SonSon
 SonSon X Mega Man
 SonSon X Resident Evil
 SonSon X Street Fighter
-Son of Zorn
 Song of the South
 Songs and Stories That Children Love Cover
 Sonic
@@ -6624,8 +6631,6 @@ Sonny with a Chance
 Sophie's Magic Diary
 Sopranos
 Sorcer Striker
-SoulCalibur
-SoulWorker
 Soul (Namco)
 Soul (Namco) X Asterix
 Soul (Namco) X Fast and Furious
@@ -6641,6 +6646,8 @@ Soul Series
 Soul Series X Asterix
 Soul Series X Zelda
 Soul series
+SoulCalibur
+SoulWorker
 Soulcalibur
 Sound Voltex
 South Park
@@ -6689,11 +6696,11 @@ Spawn
 Special Agent Oso
 Special Flag appearances
 Spectre (DC Comics)
-SpeedRunners
 Speed (Fox)
 Speed Buggy
 Speed Racer
 Speed Rumbler
+SpeedRunners
 Speedway (1968 movie) X The Fall Guy
 Spelunker
 Spelunky
@@ -6701,6 +6708,7 @@ Spewer
 Spica Adventure
 Spicy Candy
 Spicy Piggy
+Spider Fighter X Call of Duty
 Spider's Web: A Pig's Tale
 Spider-Man
 Spider-Man X Clone High
@@ -6709,7 +6717,6 @@ Spider-Man X Invincible
 Spider-Man X Invincible (Image)
 Spider-Man X JoJo's Bizarre Adventure
 Spider-Man X Shinobi
-Spider Fighter X Call of Duty
 Spike City
 Spin-off
 Spinal Tap
@@ -6735,15 +6742,15 @@ Splinter Cell X Asterix
 Spoilsbury Toast Boy
 SpongeBob
 SpongeBob SquarePants
-SpongeBob SquarePants X Disney's The Hunchback of Notre-Dame
 SpongeBob SquarePants X Disney's The Hunchback of Notre Dame
+SpongeBob SquarePants X Disney's The Hunchback of Notre-Dame
 SpongeBob SquarePants X Nickelodeon All-Star Brawl
 SpongeBob SquarePants X The Loud House
 SpongeBob X Disney's The Hunchback of Notre-Dame
 SpongeBob X Mario
 SpongeBob X Nickelodeon All-Star Brawl
-Spooky's Jump Scare Mansion
 Spooky Month
+Spooky's Jump Scare Mansion
 Spore
 Spore X Mario
 Spore X Mass Effect
@@ -6771,11 +6778,6 @@ Stacking
 Stand (Stephen King)
 Stand by Me
 Stanley Parable
-StarBlade
-StarKist
-StarTropics
-StarTropics X Famicom Robot
-StarTropics X Mario
 Star Cat
 Star Comics Magazine
 Star Force
@@ -6818,6 +6820,11 @@ Star Wars X Super Sentai-Power Rangers
 Star Wars X Transformers
 Star vs. the Forces of Evil
 Star vs. the Forces of Evil X Gravity Falls
+StarBlade
+StarKist
+StarTropics
+StarTropics X Famicom Robot
+StarTropics X Mario
 Starbound
 Starcraft
 Stardew Valley
@@ -6960,7 +6967,6 @@ Sunset Overdrive
 Sunset Paradise
 Sunset Riders
 Super
-SuperTed
 Super (IFC Films)
 Super 8
 Super Brawl (Nickelodeon)
@@ -7014,6 +7020,7 @@ Super Sentai-Power Rangers X Angry Video Game Nerd
 Super Sentai-Power Rangers X Donkey Kong
 Super Sentai-Power Rangers X Mario
 Super Sentai-Power Rangers X Taiko no Tatsujin
+Super Smash Bros X The Wonderful 101
 Super Smash Bros.
 Super Smash Bros. X 1080°
 Super Smash Bros. X ARMS
@@ -7119,7 +7126,6 @@ Super Smash Bros. X Xeno Series
 Super Smash Bros. X Xenoblade
 Super Smash Bros. X Yoshi
 Super Smash Bros. X Zelda
-Super Smash Bros X The Wonderful 101
 Super Sonico
 Super Stars (Ertl)
 Super Stars (Ertl) X Rocky (United Artists)
@@ -7127,6 +7133,7 @@ Super Stars (Ertl) X Smokey and the Bandit
 Super Stars (Ertl) X The Fall Guy
 Super Swing Golf
 Super Time Force
+SuperTed
 Superbad
 Superbrothers: Sword & Sworcery EP
 Supergirl
@@ -7168,7 +7175,6 @@ TMNT
 Taco Bell
 Taiko Drum Master
 Taiko no Tatsujin
-Taiko no Tatsujin/Links to other series (no songs)
 Taiko no Tatsujin X Ace Attorney
 Taiko no Tatsujin X Ace Combat
 Taiko no Tatsujin X Animal Crossing
@@ -7241,6 +7247,7 @@ Taiko no Tatsujin X Street Fighter
 Taiko no Tatsujin X Super Sentai-Power Rangers
 Taiko no Tatsujin songs
 Taiko no Tatsujin songs/summary
+Taiko no Tatsujin/Links to other series (no songs)
 Taimanin Asagi
 Taisen Hot Gimmick
 Taisen Net Gimmick
@@ -7271,10 +7278,10 @@ Tamagotchi
 Tamagotchi X Mario
 Tangled
 Tangled X Frozen (Disney)
-Tank! Tank! Tank!
 Tank Battalion
 Tank Girl
 Tank Troopers
+Tank! Tank! Tank!
 Tankmen
 Tapper
 Target
@@ -7397,14 +7404,14 @@ Tetsujin 28 X JoJo's Bizarre Adventure
 Texas Chainsaw Massacre
 Texting of the Bread
 Thanos
+That '70s Show
+That Girl Lay Lay
+That Time I Got Reincarnated as a Slime
 That's My Boy
 That's My Bush!
 That's So Raven
 That's So Suite Life of Hannah Montana
 That's my Boy
-That '70s Show
-That Girl Lay Lay
-That Time I Got Reincarnated as a Slime
 The 100th Digital Short
 The 10th Muse
 The 40-Year-Old Virgin
@@ -7690,6 +7697,7 @@ The Littl' Bits
 The Little King
 The Little Mermaid
 The Little Mermaid (Disney)
+The Little Mermaid (Disney) X Kingdom Hearts
 The Little Rascals
 The Lone Ranger
 The Longest Yard
@@ -7742,8 +7750,8 @@ The Mystery Files of Shelby Woo
 The Mystifying Oracle
 The Nanny
 The Neverhood
-The NewZealand Story
 The New Andy Griffith Show
+The NewZealand Story
 The Next Penelope
 The Nightmare Before Christmas
 The Ninja Kids
@@ -7852,6 +7860,7 @@ The Suite Life
 The Suite Life X Hannah Montana
 The Suite Life X That's So Raven
 The Suite Life X Wizards of Waverly Place
+The Super Globetrotters
 The Sword in the Stone (Disney)
 The Sword in the Stone (Disney) X Kingdom Hearts
 The Sword of Etheria
@@ -7861,8 +7870,8 @@ The Talos Principle
 The Thick of It
 The Thick of It X Alan Partridge
 The Thing
-The Three-Eyed One
 The Three Stooges
+The Three-Eyed One
 The Thundermans
 The Tick
 The Time Warp Trio
@@ -7914,9 +7923,9 @@ The Wonderful 101 X Super Smash Bros
 The Wonderful 101 X Super Smash Bros.
 The Wonderful 101 X Zelda
 The Woodentops
-The World's End
 The World Ends with You
 The World God Only Knows X Mario
+The World's End
 The Wubbulous World of Dr. Seuss
 The X's
 The X-Files
@@ -7943,28 +7952,27 @@ Three Men and a Baby X Mario
 Three Stooges
 Three Wonders
 Thundarr the Barbarian
-ThunderCats
 Thunder Blade
 Thunder Ceptor
 Thunder Force
+ThunderCats
 Thunderbirds
 Thundermans
 Thus Spoke Kishibe Rohan
 Tick
 Ticket Hero
 Tiger
-Tiger-Heli
-TigerSharks
 Tiger & Bunny
 Tiger & Bunny X Taiko no Tatsujin
 Tiger (King Features Syndicate)
 Tiger Nation
 Tiger Woods PGA Tour
+Tiger-Heli
+TigerSharks
 Tigra
 Tijuana Toads
 Timberman
 Time
-TimeRiders X Mario
 Time (David Firth)
 Time Bomb
 Time Crisis
@@ -7973,6 +7981,7 @@ Time Gal
 Time Squad
 Time Stalkers
 Time Warp Trio
+TimeRiders X Mario
 Tin Star
 Tin Star X Super Scope
 Tingle
@@ -7987,8 +7996,8 @@ Tiny Tower X Mario
 Titanfall
 Titanic (Paramount)
 To Be Hero
-To Love-Ru
 To Love Ru
+To Love-Ru
 To Rome with Love
 Tobal
 Tobal X Shaolin Wooden Men
@@ -8048,7 +8057,6 @@ Touché Turtle and Dum Dum
 Touhou Project
 Toukana (Mascot)
 Touken Ranbu
-TowerFall
 Tower (Ketchapp)
 Tower (OPeNBooK)
 Tower Heroes
@@ -8056,6 +8064,7 @@ Tower of Babel (Namco)
 Tower of Babel (Namco) X Taiko no Tatsujin
 Tower of God
 Tower of Saviors
+TowerFall
 Toxic Avenger
 Toxic Crusaders
 Toy Pop
@@ -8106,11 +8115,11 @@ Trumpton
 Tsukihime
 Tsukumojuku
 TumbleSeed
-TurboTime
 Turbo (DreamWorks)
-Turn-Undead
+TurboTime
 Turn it Around
 Turn it Around X Taito Harikiri Daifugo
+Turn-Undead
 Turning Red
 Turnip Boy
 Turok
@@ -8125,8 +8134,8 @@ Twilight Saga
 Twilight Syndrome
 Twilight Zone
 Twilight Zone X Ghosthunter
-TwinBee
 Twin Peaks
+TwinBee
 Twisted Childhood Universe
 Twisted Metal
 Twisted Metal X Friends
@@ -8144,10 +8153,11 @@ Tyler Perry's House of Payne
 Tyler Perry's Young Dylan
 Type 1 link
 Type 1a Link
-Type 2.5 link
 Type 2 link
+Type 2.5 link
 Type 3 link
 Tár
+U R Mr Gay
 U.B. Funkeys
 U.S. Acres
 UFA
@@ -8159,7 +8169,6 @@ UGSF Timeline
 ULTRAKILL
 UNO
 USA Cartoon Express
-U R Mr Gay
 Uchu Mega Fight
 Ufouria
 Ugh and Edd Commercial
@@ -8234,14 +8243,14 @@ Usual Suspects
 Utawarekumono
 Utawarerumono
 Uzumaki
+V for Vendetta
 V/H/S
 VA-11 Hall-A
 VCard
-VRChat
 VR Troopers
+VRChat
 VShojo
 VVVVVV
-V for Vendetta
 Valiant High
 Valkyria Chronicles
 Valkyrie (Namco)
@@ -8334,9 +8343,9 @@ Wander Over Yonder
 Wandersong
 Wangan Midnight
 Wanted
-WarGames
 War Thunder
 War of the Independents
+WarGames
 Warcraft
 Warcraft X Mario
 Warcraft X Wolverine
@@ -8347,8 +8356,6 @@ Wargroove
 Warhammer
 Warhawk
 Wario
-WarioWare X Mario
-WarioWare X Wario Land
 Wario Land X Animal Crossing
 Wario Land X Mario
 Wario X Alex Rider
@@ -8392,11 +8399,13 @@ Wario X Uniracers
 Wario X Wrecking Crew
 Wario X Yoshi
 Wario X Zelda
+WarioWare X Mario
+WarioWare X Wario Land
 Warning from Space
 Warp & Warp
+Warped Kart Racers
 Warped!
 Warped! (Nickelodeon)
-Warped Kart Racers
 Warrior's Way
 Warriors (Koei)
 Warriors (Koei) X Metroid
@@ -8412,7 +8421,6 @@ Wave Race X Super Smash Bros.
 Way Outta the Way Road Trip
 Wayne's World
 Waynehead
-We're Back! A Dinosaur's Story
 We Are the Main Characters of the Demon World!
 We Bare Bears
 We Cheer
@@ -8422,6 +8430,7 @@ We Ski
 We are Family Foundation Video
 We are Manga-ka: The Tokiwa-so Story
 We are the Main Characters of the Demon World!
+We're Back! A Dinosaur's Story
 Weathering with You
 Weathering with You X Taiko no Tatsujin
 Webkinz
@@ -8439,17 +8448,17 @@ West Wing
 West of Loathing
 Westworld
 Whack Your
-What's Your Story?
 What Up With That?
+What's Your Story?
 Whatever Happened to... Robot Jones
 Whatever Happened to... Robot Jones?
 Wheelie and the Chopper Bunch
 When Harry Met Sally...
 When They Cry
+Where the Wild Things Are
 Where's My Water?
 Where's Waldo?
 Where's Wally?
-Where the Wild Things Are
 Wherever you are, Apple Arcade is open
 Whiplash (Eidos)
 White Cat
@@ -8482,11 +8491,11 @@ Win or Lose
 Windy & Breezy
 Wing Commander
 Wing of Madoola
-Winnie-the-Pooh: Blood and Honey
 Winnie The Pooh
 Winnie the Pooh
 Winnie the Pooh (Disney)
 Winnie the Pooh X Kingdom Hearts
+Winnie-the-Pooh: Blood and Honey
 Winx Club
 WipEout
 WipEout X MediEvil
@@ -8495,10 +8504,10 @@ Wire (HBO)
 Wish (Disney)
 Witchblade
 Witcher
-Wizard101
 Wizard (Universal & Carolco)
 Wizard Of Oz (MGM)
 Wizard of Oz
+Wizard101
 Wizards & Warriors
 Wizards of Waverly Place
 Wizards on Deck with Hannah Montana
@@ -8556,6 +8565,9 @@ Wrecking Crew X Wario
 WrestleQuest
 Wubbulous World of Dr. Seuss
 X
+X (A24)
+X (Nintendo)
+X Zone
 X's
 X-Files
 X-Men
@@ -8564,20 +8576,17 @@ X-O Manowar
 X-Zone
 XCOM
 XDefiant
-X (A24)
-X (Nintendo)
-X Zone
 Xavier: Renegade Angel
 Xbox Avatar appearances
 Xbox Rareware Commercial
 Xena
 Xena X Primal
 Xeno
-Xeno(Series)
 Xeno (Series)
 Xeno Series
 Xeno Series X Final Fantasy
 Xeno Series X Super Smash Bros.
+Xeno(Series)
 Xenoblade
 Xenoblade X Super Smash Bros.
 Xenogears
@@ -8603,9 +8612,9 @@ Yertle the Turtle
 Yie Ar Kung-Fu
 Yin Yang Yo!
 Yin Yang Yo! X Mario
+Yo Gabba Gabba!
 Yo-Kai Watch
 Yo-kai Watch
-Yo Gabba Gabba!
 Yogi Bear
 Yooka-Laylee
 Yoot Tower
@@ -8638,20 +8647,20 @@ Your Name. X Taiko no Tatsujin
 Youtooz Promotional Art
 Ys
 Ys X Taiko no Tatsujin
+Yu Yu Hakusho
+Yu Yu Hakusho X Jump (Series)
 Yu-Gi-Oh
 Yu-Gi-Oh X Jump (Series)
 Yu-Gi-Oh X Metal Gear
 Yu-Gi-Oh X Taiko no Tatsujin
 YuYu Hakusho
-Yu Yu Hakusho
-Yu Yu Hakusho X Jump (Series)
-Yume-100
 Yume Kojo: Doki Doki Panic
 Yume Kojo: Doki Doki Panic X Mario
 Yume Nikki
+Yume-100
 Yuri on Ice
-YuruYuri
 Yuru Yuri
+YuruYuri
 Yuyuki
 Yōkai Dōchūki
 ZONE
@@ -8685,9 +8694,9 @@ Zelda X Code Monkeys
 Zelda X Daigasso! Band Brothers
 Zelda X Darkest Powers
 Zelda X Donkey Kong
-Zelda X DragonFable
 Zelda X Dragon Ball
 Zelda X Dragon Quest
+Zelda X DragonFable
 Zelda X Drawn Together
 Zelda X Durango Kids
 Zelda X F-1 Race

@@ -22,7 +22,9 @@ def extractLinks() -> None:
         else:
             break
 
-    
+    #for some reason, the API returns multiple Ratchet & Clank articles. remove duplicates here, then sort it so its back in alphabetical order
+    # (because making it a set makes it non-alphabetical for some reason)
+    allArticles = sorted(list(set(allArticles)) )
     with open('text/franchises_unfiltered.txt', 'w', encoding='utf-8') as file:
         for franchise in allArticles:
             file.write(Utilities.sanitize(franchise) + "\n")
