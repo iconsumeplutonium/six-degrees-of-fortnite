@@ -26,7 +26,7 @@ export default function App() {
 			setSelectedFranchise(sourceFromURL);
 			setPrefill(sourceFromURL);
 		}
-	}, [searchParams, franchiseSet]);
+	}, []);
 
 
 	//Autocomplete calls onFranchiseSelect -> selectedFranchise is updated -> GetCrossver gets called
@@ -38,12 +38,14 @@ export default function App() {
 	const onGoPress = () => {
 		// if the Go button is pressed when nothing is filled, just use the random suggestion
 		if (!currentValue) {
-			setSelectedFranchise(randomFranchiseSuggestion);
 			setPrefill(randomFranchiseSuggestion);
 			navigate(`?source=${encodeURIComponent(randomFranchiseSuggestion)}`)
+			setSelectedFranchise(randomFranchiseSuggestion);
 		}
 
-		GetCrossover(selectedFranchise);
+		// if there is a franchise already inputted, but the user hasn't inputted enter or clicked the suggestion for whatever reason,
+		// check if its valid and select it if it is
+		if (franchiseSet.has(currentValue)) setSelectedFranchise(currentValue);
 	}
 
 	return (
