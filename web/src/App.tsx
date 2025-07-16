@@ -13,6 +13,7 @@ export default function App() {
 	const [selectedFranchise, setSelectedFranchise] = useState('');
 	const [franchiseList, franchiseSet, randomFranchiseSuggestion] = GetFranchises();
 	const [crossoverData, isLoading, wasAPIError, GetCrossover] = CrossoverHooks();
+	const [currentValue, setCurrentValue] = useState<string>(''); //the current value inputted in the textbox
 
 	const navigate = useNavigate();
 	const [searchParams] = useSearchParams();
@@ -36,7 +37,7 @@ export default function App() {
 
 	const onGoPress = () => {
 		// if the Go button is pressed when nothing is filled, just use the random suggestion
-		if (!selectedFranchise) {
+		if (!currentValue) {
 			setSelectedFranchise(randomFranchiseSuggestion);
 			setPrefill(randomFranchiseSuggestion);
 			navigate(`?source=${encodeURIComponent(randomFranchiseSuggestion)}`)
@@ -73,6 +74,8 @@ export default function App() {
 							}}
 							prefill={prefill}
 							placeholder={randomFranchiseSuggestion}
+							currentValue={currentValue}
+							setCurrentValue={setCurrentValue}
 						/>
 
 						<label className='connectText'>

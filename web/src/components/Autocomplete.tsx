@@ -7,7 +7,9 @@ interface AutocompleteProps {
 	data: string[],                                     //the list of franchises
 	onFranchiseInput: (franchiseName: string) => void,  //the function to call once a franchise was inputted
 	prefill: string,									//text to prefill in the box (if navigating to page via ?source= in URL)
-	placeholder: string									//the randomly selected franchise to be used as placeholder text (chosen randomly every 2 seconds)
+	placeholder: string,								//the randomly selected franchise to be used as placeholder text (chosen randomly every 2 seconds)
+	currentValue: string,								//the current value in the textbox 
+	setCurrentValue: (a: string) => void				//function to update currentValue
 }
 
 function filterFranchises(franchiseList: string[], inputQuery: string) {
@@ -28,15 +30,14 @@ function filterFranchises(franchiseList: string[], inputQuery: string) {
 		.slice(0, MAX_RESULTS);
 }
 
-const Autocomplete: React.FC<AutocompleteProps> = ({ data, onFranchiseInput, prefill, placeholder }) => {
-	const [currentValue, setCurrentValue] = useState<string>('');
+const Autocomplete: React.FC<AutocompleteProps> = ({ data, onFranchiseInput, prefill, placeholder, currentValue, setCurrentValue }) => {
 	const [isFocus, setIsFocus] = useState(false);
 	const [selectedIndex, setSelectedIndex] = useState(0);
 	const [suggestions, setSuggestions] = useState<string[]>([]);
 
 	useEffect(() => {
 		if (prefill.length > 0) setCurrentValue(prefill);
-	}, [prefill])
+	}, [prefill]);
 
 	return (
 		<div className="autocompleteParent" style={{position: 'relative'}}>
