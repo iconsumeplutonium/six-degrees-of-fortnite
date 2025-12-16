@@ -6,3 +6,4 @@ web/.env
 web/dist
 *.ps1
 *.ipynb
+__pycache__/

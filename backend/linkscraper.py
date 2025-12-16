@@ -96,7 +96,7 @@ def scrape(articleURL: str) -> list[dict]:
         if gameName in set(["Hard-Boiled Cop and Dolphin", "High School Family"]): continue
 
         # random edge case: first letter of these articles need to be capitalized to match wiki article
-        if gameName in set(["maimai", "asdfmovie", "eFootball", "normalman", "iCarly", "ilomilo", "bit Generations"]):
+        if gameName in set(["maimai", "asdfmovie", "eFootball", "normalman", "iCarly", "ilomilo", "bit Generations", "osu!"]):
             gameName = gameName[0].upper() + gameName[1:]
 
         description = description.replace("(see details)", "")

@@ -29,6 +29,7 @@
 3008
 3D Dot Game Heroes
 3D Mania
+3D Movie Maker
 404 GAME RE:SET
 50 First Dates
 500 Days of Summer
@@ -64,6 +65,7 @@ AWHELLNAH Boxing
 Aaahh!!! Real Monsters
 Abbott Elementary
 Abigail (Universal)
+Abiotic Factor
 Abomi Nation
 Absolver
 Academy of Champions
@@ -71,6 +73,7 @@ Accel World
 Ace Attorney
 Ace Combat
 Ace Ventura
+Acecraft
 ActRaiser
 Action Henk
 Action Man
@@ -113,11 +116,12 @@ Alice Comedies
 Alice Fiction
 Alice Gear Aegis
 Alice in Wonderland (Disney)
-Alien (Fox)
+Alien (20th Century Studios)
 Alien Hominid
 Alien Nation
 Alien Swarm
 Alien Syndrome
+Alka-Seltzer
 All My Children
 All in the Family
 All-Star Fighters
@@ -134,6 +138,7 @@ Altered Beast
 Alvin and the Chipmunks
 Alwa's Awakening
 Amagami
+Amanda the Adventurer
 Amazing Stories
 American Dad
 American Dragon: Jake Long
@@ -145,6 +150,7 @@ American McGee's Alice
 American Pie
 American Psycho
 Amiibo Tap
+Amnesia (Frictional Games)
 Amnesiac
 Among Us
 Amphibia
@@ -153,6 +159,7 @@ An American Tail
 An American Werewolf
 Anal Paprika (Low Budget Pictures)
 Anarchy Reigns
+Anastasia (20th Century Studios)
 Anchorman
 Anchors Aweigh
 Andy Pandy
@@ -165,6 +172,7 @@ Angry Birds
 Angry Video Game Nerd
 Ani-Mayhem
 Animal Crossing
+Animal Well
 Animaniacs
 Animation x Paralympic
 Animator vs. Animation
@@ -269,7 +277,7 @@ Attack the Block
 Austin & Ally
 Austin Powers
 Auto Modellista
-Avatar (Fox)
+Avatar (20th Century Studios)
 Avatar (Nickelodeon)
 Avenger Penguins
 Avengers (Marvel)
@@ -280,6 +288,7 @@ Ayakashi Triangle
 Ayakashi: Samurai Horror Tales
 Azur Lane
 Azure Striker Gunvolt
+BASEketball
 BIONICLE
 BONEWORKS
 BS-X: Sore wa Namae o Nusumareta Machi no Monogatari
@@ -301,13 +310,13 @@ Bakuman
 Balatro
 Baldi's Basics
 Baldur's Gate
-Ball (G&W)
 Balloon Fight
 Ballykissangel
 Baman Piderman
 Bambi
 Bambi: The Reckoning
 BanG Dream!
+Bananas in Pyjamas
 Band Stars
 Banjo-Kazooie
 Baraduke
@@ -315,6 +324,7 @@ Barbarian (Titus)
 Barbie
 Barcode Battler
 Barcode Fighter
+Barnaby Jones
 Barney & Friends
 Barney Bear
 Barnstorming
@@ -341,6 +351,7 @@ Battle Stadium D.O.N
 Battle Tryst
 Battle for Dream Island
 BattleBlock Theater
+Battleborn
 Battlefield
 Battleship
 Battlestar Galactica
@@ -353,6 +364,7 @@ Be Kind Rewind
 Beany and Cecil
 Bear With Me
 Bear in the Big Blue House
+Beast (Marvel)
 Beastars
 Beatmania
 Beauty and the Beast (Disney)
@@ -369,6 +381,7 @@ Beetle Bailey
 Beetlejuice
 Being John Malkovich
 Bejeweled
+Bells Hells
 Ben 10
 Bendee
 Bendy
@@ -381,7 +394,7 @@ Betrayal at House on the Hill
 Better Call Saul
 Betty Boop
 Between The Lions
-Beverly Hillbillies
+Beverly Hills Chihuahua
 Beverly Hills Cop
 Bewitched
 Beyblade
@@ -403,10 +416,12 @@ Bilibili
 Bill & Ted
 Bill Hodges Trilogy
 Billie Bust Up
+Billy Dilley's Super-Duper Subterranean Summer
 Billy Hatcher
 Billy Madison
 Binary Land
 Bio Miracle Bokutte Upa
+Bio-Dome
 BioShock
 Bionic Commando
 Bionic Six
@@ -426,12 +441,14 @@ Black Clover
 Black Desert Online
 Black Jack
 Black Lagoon
+Black Mesa (Crowbar Collective)
 Black Mirror
 Black Panther
 Black Rock Shooter
 Black Scorpion (Roger Corman)
 Black Swan
 Black Tiger
+Black Widow (Marvel)
 Blackadder
 Blackthorne
 Blacktron
@@ -475,8 +492,10 @@ Blue's Clues
 Bluey (ABC)
 BoJack Horseman
 Board James
+Bob (CBS)
 Bob the Builder
 Bob's Burgers
+Bobby's World
 Bobobo-bo Bo-bobo
 Bocchi the Rock!
 Body Snatchers
@@ -488,6 +507,7 @@ Bomb Chicken
 Bomb Jack
 Bombergirl
 Bomberman
+Bonanza
 Bonanza Bros.
 Bone (Cartoon Books)
 Bones (Fox)
@@ -511,7 +531,6 @@ Bourbon Street Beat
 Bourne
 Bowmasters
 BoxBoy!
-Boxing (G&W)
 Boyhood
 Boyz n the Hood
 Bozo the Clown
@@ -546,6 +565,7 @@ Bright
 Brightburn
 Brigsby Bear
 Broforce
+Broken (Nine Inch Nails)
 Brooklyn Nine-Nine
 Brookside
 Brother Bear
@@ -553,6 +573,7 @@ Brütal Legend
 Bubble Bobble
 Bubble Guppies
 Bubsy
+Buckshot Roulette
 Bucky O'Hare
 Buddies (Disney)
 Buffy the Vampire Slayer
@@ -603,6 +624,7 @@ Canabalt
 Candies 'n Curses
 Candy Crush Saga
 Candy Land
+Cannon
 Cannon Spike
 Capcom Arcade
 Capcom Arcade Stadium
@@ -655,6 +677,7 @@ Carrion
 Cars (Pixar)
 Cartoon All-Stars To The Rescue
 Cartoon Box
+Cartoon Monsoon
 Cartoon Network: Battle Crashers
 Cartoon Network: Block Party
 Cartoon Network: Punch Time Explosion
@@ -671,6 +694,7 @@ Castle of Shikigami
 Castlevania
 Casualty
 Cat Busters
+Cat Fantasy
 Cat In The Hat
 CatDog
 Catcher in the Rye
@@ -685,6 +709,7 @@ Catwoman
 Cautious Hero
 Cave Story
 Cavemen (ABC)
+Cel Damage
 Celebrity Deathmatch
 Celeste
 Cell Vs (Team Four Star)
@@ -711,7 +736,6 @@ Chase H.Q.
 Chasing Amy
 Cheers
 Cheese Dreams
-Chef (G&W)
 Chelmsford 123
 Chex Quest
 Cheyenne (Warner Bros.)
@@ -722,6 +746,7 @@ Chicago Fire
 Chicago Hope
 Chicago Med
 Chicago P.D.
+Chick Chick Boom
 Chicken Little (Disney)
 Chicken Run
 Chicken Wiggle
@@ -758,9 +783,11 @@ Cinema Insomnia
 Cinnamoroll
 Circus Caper
 Citizen Kane
+City (Kodansha)
 City Connection
 City Hunter
 City Shrouded in Shadow
+CityVille
 Civilization
 Clamp in Wonderland
 Clannad
@@ -779,6 +806,7 @@ Clicker Heroes
 Clifford
 Clive 'N' Wrench
 Clock Tower
+Clockstoppers
 Clockwork Knight
 Clone High
 Close Enough
@@ -805,12 +833,13 @@ Code Shifter
 Code Vein
 Code of Princess
 Codename: Kids Next Door
-Coffee Talk
+Coffee Talk (SNL)
 Colossatron
 Columbo
 Columns
 Combat Colin
 Combo Crew
+Coming to America
 Comix Zone
 Commander Keen
 Commando (Capcom)
@@ -818,6 +847,7 @@ Commando (Fox)
 Community
 Company of Heroes
 Compati Hero
+Con Air
 Conan the Barbarian
 Condorito
 Condorman
@@ -832,13 +862,16 @@ Cookie Run
 Cooking Companions
 Cooking Mama
 Cool Shock B.T.
+Cool World
 Cooped Up
 Cooties
 Cop Rock
+Coral Island
 Coraline
 Core Keeper
 Coromon
 Coronation Street
+Corpse Bride
 Cory in the House
 Cosby (CBS)
 Cosmo Warrior Zero
@@ -851,6 +884,7 @@ Courage The Cowardly Dog
 Cow and Chicken
 Cowboy Bebop
 Craig of the Creek
+Crank Yankers
 Crankshaft
 Crash & Bernstein
 Crash Bandicoot
@@ -872,6 +906,7 @@ Creatures
 Creepshow
 Creepy Castle
 Criminal Minds
+Critical Role
 Critter Crunch
 Croc
 Crooked Rot
@@ -918,6 +953,7 @@ DC Universe (film franchise)
 DEEEER Simulator
 DJMax
 DOORS
+DREDGE
 DUSK
 Da Capo
 Dad 'n Me
@@ -932,6 +968,7 @@ DanMachi
 Dance Dance Revolution
 Dandadan
 Dandara
+Dandy's World
 Danganronpa
 Danger Force
 Danger Mouse
@@ -968,6 +1005,7 @@ Dead Space
 Dead Zone (SunSoft)
 Dead by Daylight
 Dead or Alive
+Deadlock
 Deadpool
 Death (Neil Gaiman)
 Death Battle!
@@ -1000,6 +1038,7 @@ Dennis the Menace (King Features Syndicate)
 Deploy And Destroy
 Deponia
 Deputy Dawg
+Der Wixxer
 Descendants
 Despera
 Desperation
@@ -1079,6 +1118,7 @@ Disney Villains Cursed Cafe
 Disney XD Villains Unite!
 Disney's Extreme Skate Adventure
 Disney's Villains' Revenge
+Dispatch
 District 9
 Divekick
 Divergent
@@ -1087,11 +1127,13 @@ Dizzy
 Django Unchained
 Do You Know Gaming?
 Doc McStuffins
+Doctor Doom
 Doctor Strange
 Doctor Who
 Dodgeball: A True Underdog Story
 Dog Man
 Dog of Man
+Dog with a Blog
 Dogma (View Askew Productions)
 Doki Adventures
 Doki Doki Literature Club
@@ -1100,6 +1142,7 @@ Dolittle (Universal)
 Dollars Trilogy
 Dollman (Full Moon)
 Don Doko Don
+Don't Hug Me I'm Scared
 Don't Starve
 Don't Toy with Me, Miss Nagatoro
 DonPachi
@@ -1125,6 +1168,7 @@ Doug
 Downwell
 Dr. Jekyll and Mr. Hyde (Longman)
 Dr. Katz, Professional Therapist
+Dr. Muto
 Dr. Robotnik's Mean Bean Machine
 Dr. Slump
 Dr. Stone
@@ -1147,6 +1191,7 @@ Dragon Tales
 Dragon's Dogma
 Dragon's Lair
 Dragonseeds
+Dragula (Boulet Brothers)
 Drake & Josh
 Drakengard
 Drawn To Life
@@ -1154,6 +1199,7 @@ Drawn Together
 DreamMix TV World Fighters
 DreamWorks Kart
 DreamWorks Most Wanted
+DreamWorks Movie Trivia DVD Game
 DreamWorks Universe of Legends
 Drill Dozer
 Drive
@@ -1170,6 +1216,7 @@ Duel Masters
 Duels of Fortune
 Duke Dashington
 Duke Nukem
+Dumb Ways to Die
 Dumb and Dumber
 Dumbo & Cool
 Dumbo (Disney)
@@ -1178,6 +1225,7 @@ Dungeon & Fighter
 Dungeon Defenders
 Dungeons & Dragons
 Dunk Dunk
+Dunston Checks In
 Durarara!!
 Dust: An Elysian Tail
 Dying Light
@@ -1193,6 +1241,7 @@ ER
 EZ2DJ
 Early Edition
 Earth Defense Force (D3 Publisher)
+Earth UFO Catcher
 Earthworm Jim
 EastEnders
 Ecco the Dolphin
@@ -1204,7 +1253,6 @@ Edens Zero
 Edward Scissorhands
 Eek! The Cat
 Eerie, Indiana
-Egg (G&W)
 Eggerland
 Eggy Party
 Ehrgeiz
@@ -1215,12 +1263,14 @@ El Tigre
 Elden Ring
 Elebits
 Electroplankton
+Elektra
 Elemental (Pixar)
 Elemental Story
 Elements Destiny
 Elena of Avalor
 Elevator Action
 Elf
+Elf Bowling
 Elite Beat Agents
 Elite Squad
 Ellen
@@ -1229,6 +1279,7 @@ Elsword
 Elvira
 Emily is Away
 Emmerdale
+Empire Records
 Empty Nest
 Encanto
 Enchanted
@@ -1273,9 +1324,11 @@ Exist Archive
 Exoprimal
 Expert Wrassling
 Exploding Kittens
+Extraordinary Ataro
 Extraordinary Ones
 Extreme Dinosaurs
 Eyeshield 21
+F Troop
 F-1 Race
 F-Zero
 FAITH
@@ -1333,6 +1386,7 @@ Felix the Cat
 Femme Fatales
 Ferris Bueller's Day Off
 Fez
+Fields of Mistria
 Fight Club
 Fight Klub
 Fight Night
@@ -1348,8 +1402,6 @@ Final Fight
 Final Furlong
 Final Space
 Finding Nemo
-Fire (G&W)
-Fire Attack
 Fire Emblem
 Fire Force
 Firebreather
@@ -1364,7 +1416,6 @@ Fist of the North Star
 Fitness Boxing
 Five Nights at Candy's
 Five Nights at Freddy's
-Flagman
 Flaming Carrot
 Flappy Bird
 Flappy Fighter
@@ -1380,6 +1431,7 @@ Flushed Away
 Flying Dog MOCO
 Flying Fox
 Flywrench
+Food Fantasy
 Food Wars!: Shokugeki no Soma
 Foodfight!
 Football Manager
@@ -1408,9 +1460,14 @@ Franky, Joe & Dirk: On the Tiles
 Frasier
 Fraymakers
 Freakazoid!
+Freaks and Geeks
 Freaky (Universal)
+Freaky Flyers
 Freaky Friday
+Fred Claus
 Fred's World
+Freddy Got Fingered
+Free Birds
 Free Fire
 Free Guy
 Freedom Planet
@@ -1435,6 +1492,8 @@ Funko Fusion
 Funko Pop! Blitz
 Funky Phantom
 Funky Winkerbean
+Funny Face
+Funny Movie
 Furby
 Fusionfall
 Futurama
@@ -1446,6 +1505,7 @@ FЯED
 G.I. Joe
 GG Bond
 GRIEFVILLE
+Gabby's Dollhouse
 Gachapin
 Gadget
 Gal*Gun
@@ -1456,10 +1516,10 @@ Galaxy Express 999
 Galaxy Fight
 Galaxy Force
 Galaxy Quest
+Galidor
 Galtar and the Golden Lance
+Gambit
 Game & Watch
-Game & Watch Collection
-Game & Watch Gallery
 Game Boy (Valiant)
 Game Boy Camera
 Game Shakers
@@ -1470,6 +1530,8 @@ GameCenter CX
 Gamera
 Gamers!
 Ganbare Goemon
+Gandy Goose
+Gang Beasts
 Ganso Saiyūki: Super Monkey Daibōken
 Gantz
 Garbage Pail Kids
@@ -1481,6 +1543,7 @@ Gatchaman
 Gato Roboto
 Gator Panic
 Gauntlet
+GeGeGe no Kitarō
 Gears of War
 General Hospital
 Generator Rex
@@ -1493,6 +1556,7 @@ George Lucas' Super Live Adventure
 George and Junior
 George of the Jungle
 Gerald's Game
+Geronimo Stilton
 Get Even (Namco Bandai)
 Get Out
 Get Smart
@@ -1532,6 +1596,7 @@ Girls' Frontline
 Gish
 Gladiator (DreamWorks)
 Glee
+Glitch Karts
 Glitch Techs
 Gloomy Bear
 Glory of Heracles
@@ -1540,7 +1605,6 @@ Glover
 Gnomeo and Juliet
 Go All Out!
 Go Mini Man Go!
-Go! Go! Moba Boy!
 Go! Godman
 Go, Diego, Go!
 GoBots
@@ -1584,6 +1648,7 @@ Granblue Fantasy
 Grand Chase
 Grand Summoners
 Grand Theft Auto
+Grandma Got Run Over by a Reindeer
 Grandma's Boy
 Granny
 Grape Ape
@@ -1598,7 +1663,6 @@ Green Eggs and Ham
 Green Lantern
 Green Lovers
 Green Ninja
-Greenhouse
 Gremlins (Warner Bros.)
 Grendizer
 Grey's Anatomy
@@ -1610,10 +1674,12 @@ Gris
 Groove Coaster
 Groovie Goolies
 Groundhog Day
+Growing Pains
 Grown Ups
 Growtopia
 Grumpy Cat
 Guacamelee!
+Guano Gladiators
 Guardian Tales
 Guardians of the Galaxy
 Gudetama
@@ -1622,7 +1688,8 @@ Guesstimation
 Guiding Light
 Guilty Gear
 Guitar Hero
-Gulliver's Travels (Fox)
+Gulliver's Travels (20th Century Studios)
+Gumball
 Gumby
 Gummi Bears
 Gun Godz
@@ -1632,6 +1699,7 @@ Gunbird
 Gunbuster
 Gundam
 Gunman Clive
+Gunshow
 Gunstar Heroes
 Gurren Lagann
 Guts & Blackpowder
@@ -1655,6 +1723,7 @@ Halloween (Warener Bros.)
 Halloween (Waren’t Bros.)
 Halloweentown
 Halo
+Hammerman
 Hamster and Gretel
 Hamtaro
 Hancock
@@ -1670,6 +1739,7 @@ Happy Gilmore
 Happy Tree Friends
 Happy Wheels
 Happy!
+Hard Drinkin' Lincoln
 Hard'n'Heavy
 Harley Quinn
 HarmoKnight
@@ -1701,6 +1771,7 @@ Heavy Barrel
 Heavy Rain
 Hebereke
 Heckle and Jeckle
+Heidi, Girl of the Alps
 Hellbenders
 Hellboy
 Helldivers
@@ -1710,7 +1781,6 @@ Hellraiser
 Hellsing
 Helltaker
 Helluva Boss
-Helmet
 Help!... It's the Hair Bear Bunch!
 Henry (King Features Syndicate)
 Henry Danger
@@ -1764,6 +1834,7 @@ Hollow Knight
 Hollyoaks
 Hollywood Party
 Hololive
+Holy Diver (Dio)
 Home (DreamWorks)
 Home Alone
 Home Fries
@@ -1773,11 +1844,13 @@ Home on the Range
 Homestar Runner
 Homestuck
 Homicide: Life on the Street
+Honey (Universal)
 Honey, I Shrunk the Kids
 Hong Kong 97 (HappySoft)
 Hong Kong Phooey
 Honkai
 Honor of Kings
+Hoodwinked!
 Hook (TriStar)
 Hop
 Horace
@@ -1817,6 +1890,7 @@ Hurry Up Tomorrow
 Hyper Light Drifter
 Hyperdimension Neptunia
 Hägar the Horrible
+I Am Bread
 I Am Weasel
 I Didn't Do It (Disney)
 I Dream of Jeannie
@@ -1825,7 +1899,7 @@ I Love Lucy
 I Now Pronounce You Chuck & Larry
 I Survived
 I Wanna Be The Guy
-I am Bread
+I Was a Teenage Exocolonist
 I'm in the Band
 I, Claudius
 I, Robot
@@ -1932,6 +2006,7 @@ Jazzpunk
 Jellystone!
 Jem
 Jenna (Narwain Publishing)
+Jennifer's Body
 Jerry Maguire
 Jessie (Disney)
 Jesterhead
@@ -1969,7 +2044,6 @@ Journey Into Imagination
 Joust (Atari)
 Joy Mech Fight
 Joylancer
-Judge (G&W)
 Judge Dredd
 Jujutsu Kaisen
 Jumanji
@@ -1977,6 +2051,7 @@ Jump (Series)
 Jump Rope Challenge
 Jump Street
 JumpJet Rex
+Jumper
 Jungle Cruise
 Jungle King Tar-chan
 Junji Ito Collection
@@ -1990,6 +2065,7 @@ K-9
 K-On
 K.C. Undercover
 KALPA
+KPop Demon Hunters
 Ka-Pow!
 Kaboom!
 Kaeru no Tame ni Kane wa Naru
@@ -2003,6 +2079,7 @@ Kamen no Ninja Hanamaru
 Kameo
 Kamihime Project
 Kangaroo (Atari)
+Kangaroo Jack
 Kannazuki no Miko
 Kanon
 Karaoke Revolution
@@ -2012,9 +2089,11 @@ Kart Kingdom
 KartRider
 Katamari
 Katana Zero
+Kelly Slater's Pro Surfer
 Kemono Friends
 Kengan Ashura
 Kenny the Shark
+Key & Peele
 Kick Buttowski: Suburban Daredevil
 Kick the Buddy
 Kick-Ass
@@ -2054,11 +2133,14 @@ King of the Hat
 King of the Hill
 King's Quest
 Kingdom (Shueisha)
+Kingdom Come: Deliverance
 Kingdom Dragonion
 Kingdom Hearts
 Kings Watch
 Kingsman
+KinitoPET
 Kinnikuman
+Kipper the Dog
 Kirara Fantasia
 Kirby
 Kirby Buckets
@@ -2069,6 +2151,7 @@ Knack (Sony)
 Knick Knack
 Knight Rider
 Knightmare (Konami)
+Knights of Guinevere
 Knights of the Round
 Knives Out (Netflix)
 Knock at the Cabin
@@ -2086,6 +2169,7 @@ KonoSuba
 Kosuke Kindaichi
 Kotodaman
 KouKou Love: Tap Blast
+Kraven the Hunter
 Krazy Kat
 Kubo and the Two Strings
 Kull of Atlantis
@@ -2132,7 +2216,6 @@ Lavalantula
 Laverne & Shirley
 Law & Order
 LazyTown
-League Of Extraordinary Gentlemen
 League of Legends
 Leap Day
 Leave It to Beaver
@@ -2180,6 +2263,7 @@ Lego Marvel Super Heroes
 Lego Minifigures
 Lego Monster Fighters
 Lego Paradisa
+Lego Party!
 Lego Pharaoh's Quest
 Lego Pirates
 Lego Power Miners
@@ -2221,8 +2305,10 @@ Licorice Pizza
 Lidsville
 Lies of P
 Life Is Strange
+Life with Louie
 LifeAfter
 Light Tennis
+Lights Out
 Lilo & Stitch
 Lily for President?
 Limbo
@@ -2230,7 +2316,6 @@ Lineage
 Link Click
 Link's Crossbow Training
 Linus the Lionhearted
-Lion (G&W)
 Lippy The Lion and Hardy Har Har
 Liquid Kids
 Little Alchemy
@@ -2238,6 +2323,7 @@ Little Audrey
 Little Battlers Experience
 Little Britain
 Little Busters!
+Little Caesars
 Little Monsters
 Little Nicky
 Little Nightmares
@@ -2250,6 +2336,7 @@ Liv and Maddie
 Live A Live
 Living Dead
 Lizzie McGuire
+Lobo (DC Comics)
 Locke & Key
 LocoRoco
 Lode Runner
@@ -2279,6 +2366,8 @@ Lovers in a Dangerous Spacetime
 Low Men in Yellow Coats
 Luann
 Luca
+Lucas the Spider
+Lucky Luke
 Lucky Star
 Lufia
 Luftrausers
@@ -2318,6 +2407,8 @@ Madea
 Madeline
 Madman (Mike Allred)
 Madness
+Mafia Wars
+Magenta Horizon
 Magi
 Magic Knight Rayearth
 Magic Pengel
@@ -2349,7 +2440,6 @@ Man-Thing
 Mana
 Mandrake the Magician
 Manhattan Love Story
-Manhole
 Maniac Mansion
 Manimal
 Mannix
@@ -2360,6 +2450,7 @@ Mappy
 Marble Madness
 Mario
 Mario Land
+Mario the Juggler
 Markiplier
 Marmaduke
 Married... with Children
@@ -2372,6 +2463,7 @@ Martin (Fox)
 Marvel Cinematic Universe
 Marvel Cosmic Invasion
 Marvel Land
+Marvel Mystic Mayhem
 Marvel Rivals
 Marvel Snap
 Marvel Strike Force
@@ -2389,6 +2481,7 @@ Mass Effect
 Master Detective Archives
 Master of Eternity
 Masters of the Universe
+Mat Hoffman's Pro BMX
 Matango
 Matlock
 Matt Foley
@@ -2397,6 +2490,7 @@ Maverick (Warner Bros.)
 Max Headroom
 Max Level Newbie
 Max Payne
+Maya and the Three
 Mazinger
 McPixel
 Me & Roboco
@@ -2409,9 +2503,11 @@ Medaka Box
 Medal of Honor
 MediEvil
 Meego
+Meet Dave
 Meet The Spartans
 Meet the Robinsons
 Meets World
+Meg
 Mega Man
 Mega Twins
 Mega64
@@ -2441,6 +2537,8 @@ Meteor Man
 Metro
 Metro-Cross
 Metroid
+Mewgenics
+Mi-Pha-Pu
 Michael Jackson's Moonwalker
 Mickey Mouse
 Micronauts
@@ -2484,7 +2582,6 @@ Mission: Impossible
 Mist Train Girls
 Mister Ed
 Mister Rogers' Neighborhood
-Mitchells Vs The Machines
 Mitsumete Knight
 Mixels
 Mizuiro Blood
@@ -2504,6 +2601,8 @@ Monica's Gang
 Monk
 Monkey Island
 Monkey Quest
+Monkey Wrench
+Monkeybone
 Monkie Kid
 Monogatari (NiSiOiSiN)
 Mononoke
@@ -2520,6 +2619,7 @@ Monster Rancher
 Monster Retsuden Oreca Battle
 Monster Sanctuary
 Monster Strike
+Monster Train
 Monster in My Pocket
 Monsterpocalypse
 Monsters (Oda)
@@ -2533,9 +2633,13 @@ Moon Knight
 Moon Patrol
 MoonQuest
 Moonstone Island
+Morbius
+Mordeo
+More Cowbell
 Mork & Mindy
 Mort the Chicken
 Mortal Kombat
+Morton Salt
 Moshi Monsters
 Mosquito Season
 Mother
@@ -2547,6 +2651,7 @@ Motor Crush
 Motorcity
 Motos
 Motu Patlu
+Mouse Hunt
 Mouse Trap
 Move or Die
 Mr. Bean
@@ -2627,6 +2732,7 @@ Namco × Capcom
 Nana
 Nancy Drew
 Napoleon (Nintendo)
+Napoleon Dynamite
 Naraka: Bladepoint
 Naruto
 Nathaniel Bandy
@@ -2664,6 +2770,7 @@ Next Gen
 Ni Hao, Kai-Lan
 Ni no Kuni
 NiGHTS
+Nichijou
 Nick Jr. Lemonade Stand
 Nick Jr. Music Maker
 Nick's Not So Ultimate Boss Battles
@@ -2679,6 +2786,7 @@ Night Court
 Night Man
 Night Striker
 Night at the Museum
+Night in the Woods
 Night of the Consumers
 Nightbreed
 Nightmare Cops
@@ -2713,6 +2821,7 @@ Nitroplus Blasterz
 No Country for Old Men
 No Game No Life
 No Man's Sky
+No Matter How I Look at It, It's You Guys' Fault I'm Not Popular!
 No More Heroes
 No Straight Roads
 Noblesse
@@ -2725,6 +2834,7 @@ Noel's House Party
 Noitu Love
 Nope
 NoriPro
+Norm of the North
 Normalman
 Nostalgia Critic
 Not Man
@@ -2733,6 +2843,7 @@ Numan Athletics
 Numb Chucks
 Numberblocks
 Nurses (NBC)
+Nyaight of the Living Cat
 Nyan Cat
 O.N.G.E.K.I.
 OK K.O.!
@@ -2743,7 +2854,6 @@ Ocean's
 Octodad
 Octonauts
 Octopath Traveler
-Octopus
 Oddworld
 Off the Mark
 Oggy and the Cockroaches
@@ -2751,7 +2861,6 @@ Ogre Battle
 Oh Baby Kart
 Oh My School!
 Oh...Sir!
-Oil Panic
 Oishi High School Battle
 Ojamajo Doremi
 Old Jack's Boat
@@ -2789,6 +2898,7 @@ Orville the Duck
 Oshi no Ko
 Osmosis Jones
 Osomatsu
+Osu!
 Osu! Tatakae! Ouendan
 Oswald the Lucky Rabbit
 Otogi Frontier
@@ -2801,7 +2911,7 @@ Outcast Odyssey
 Over the Garden Wall
 Over the Hedge
 Overcooked!
-Overlord (Kagune Maruyama)
+Overlord (Kugane Maruyama)
 Overwatch
 Owlboy
 Oz (Disney)
@@ -2833,7 +2943,6 @@ Paperboy
 Paperman (Disney)
 Papers, Please
 ParaNorman
-Parachute
 Paradigm (Jacob Janerka)
 Paradigm: Reboot
 Paradise PD
@@ -2884,10 +2993,12 @@ Phigros
 Philadelphia (TriStar)
 Phineas and Ferb
 Pibby
+Picayune Dreams
 Picket Fences
 Pickle and Peanut
 Pico (Newgrounds)
 Picross
+Piczle
 Pig Goat Banana Cricket
 Piggy
 Pikmin
@@ -2912,12 +3023,14 @@ Pitfall
 Pix the Cat
 Pixel Puzzle Collection
 Pixel Runner!
+Pixel Starships
 Pixels (Happy Madison Productions)
 Pizza Tower
 Pizza Vs. Skeletons
 Piñata Smashlings
 Plague Inc.
 Plan Bee
+Planes (Disney)
 Planes, Trains and Automobiles
 Planet Sheen
 Planet Terror
@@ -2930,6 +3043,7 @@ PlayStation Move Heroes
 Pleasant Goat and Big Big Wolf
 Please, Don't Touch Anything
 Plok
+Pluribus
 Pocahontas (Disney)
 Pocket Fighter
 Pocket God
@@ -2940,6 +3054,7 @@ Pogo (Publishers-Hall Syndicate)
 Point Blank
 Poison Ivy (New Line Cinema)
 Poker Night at the Inventory
+Pokopang
 Pokémon
 Pole Position (Namco)
 Police Quest
@@ -2970,7 +3085,7 @@ Power Rangers
 Power Shovel
 Power Stone
 PowerWash Simulator
-Predator (Fox)
+Predator (20th Century Studios)
 Prep & Landing
 Pressure
 Presto (Pixar)
@@ -2985,6 +3100,7 @@ Primordia (Wormwood Studios)
 Primos
 Prince of Persia
 Princess Connect!
+Princess Mononoke
 Princess Peach
 Princess Remedy
 Princess Tomato in the Salad Kingdom
@@ -2995,9 +3111,9 @@ Professor Layton
 Progear
 Project ARMS
 Project Hacker
+Project Tokyo Dolls
 Project Zeorymer
 Promare
-Prometheus
 Protect Me, Shugomaru!
 Psi-Ops
 Psychic Force
@@ -3019,6 +3135,7 @@ Punishing: Gray Raven
 Punk Rock Holocaust
 Punkstar
 Puppet Master
+Puppy Dog Pals
 Pure Pwnage
 Pushmo
 Puss in Boots (DreamWorks)
@@ -3055,7 +3172,6 @@ Radar Scope
 Rage of Bahamut
 Ragnarok (Daewon CI)
 Raimais
-Rain Shower (G&W)
 Rain World
 Rainbow (ITV)
 Rainbow Bubblegem
@@ -3111,6 +3227,7 @@ Rent-A-Girlfriend
 Reservoir Dogs
 Resident Evil
 Resistance (Sony)
+Resonance of Fate
 Retro City Rampage
 Reventure
 Revolution X
@@ -3128,6 +3245,7 @@ Riichi City
 Ring Fit Adventure
 Rio (Blue Sky Studios)
 Rising Dusk
+Risk (Hasbro)
 Risk of Rain
 Risky Business
 Ristar
@@ -3187,6 +3305,7 @@ Rude Dog
 Rudolph the Red-Nosed Reindeer
 Ruff Ruffman
 Rugrats
+Ruin of the Reckless
 Rumble Roses
 Runaway Bride
 Runbow
@@ -3194,9 +3313,11 @@ Rune (Malibu Comics)
 Rune Factory
 RuneScape
 Rurouni Kenshin
+Russian Subway Dogs
 Rust (Facepunch)
 Rust Bucket
 Rusty's Real Deal Baseball
+Rusty's Retirement
 Ryan's World
 Rygar
 S.W.A.T.
@@ -3251,6 +3372,7 @@ Saving Private Ryan
 Saw
 Sayonara Wild Hearts
 Sayonara, Zetsubou-Sensei
+Scaler
 Scandal
 Scarface
 Scarlet Nexus
@@ -3292,6 +3414,7 @@ Sega 3D Reprint Archives
 Sega Hard Girls
 Sega Heroes
 Sega Smash Pack
+Sega Splash! Golf
 Sega Superstars
 Segagaga
 Seinfeld
@@ -3332,6 +3455,7 @@ Shazam!
 Shazzan
 She's Having a Baby
 She's the Man
+She-Hulk
 She-Ra
 Shenmue
 Sheriff (Nintendo)
@@ -3341,6 +3465,7 @@ Shimmer and Shine
 Shin Megami Tensei
 Shin Onigashima
 Shining (Sega)
+Shinkalion
 Shinobi
 Shock Wave
 Shogun Curse
@@ -3412,6 +3537,7 @@ Slither
 Sludge Brothers
 Sly Cooper
 Small Soldiers
+Smart Guy
 Smart House
 Smash Court Tennis
 Smash TV
@@ -3422,18 +3548,22 @@ Smokey and the Bandit
 Smosh
 Smurfs
 Snack World
+Snake.io
 Snakes on a Plane
 Snatcher
 Snipperclips
 Snorks
 Snow White and the Seven Dwarfs (Disney)
+Snowpiercer
 So Random!
 Soccer (Nintendo)
 Social Monsters
 Sock
 Sofia the First
+Solace Inc.
 Solar Opposites
 Solar, Man of the Atom
+Solo Leveling
 Solomon's Key
 Soma Bringer
 Something About
@@ -3476,7 +3606,7 @@ Spark the Electric Jester
 Spawn
 Special Agent Oso
 Spectre (DC Comics)
-Speed (Fox)
+Speed (20th Century Studios)
 Speed Buggy
 Speed Racer
 SpeedRunners
@@ -3488,13 +3618,13 @@ Spicy Candy
 Spicy Piggy
 Spider's Web: A Pig's Tale
 Spider-Man
+Spider-Woman
 Spike City
 Spinal Tap
 Spiralmind (PHI3 Comics)
 Spirit Camera
 Spirited Away
 Spiritfall
-Spitball Sparky
 Spitting Image
 Splatoon
 Splatterhouse
@@ -3516,6 +3646,7 @@ Squid Game
 Squidbillies
 Squirrel Boy
 Squirrel Girl
+Squishmallows
 St. Elsewhere
 Stacking
 Stand by Me
@@ -3524,6 +3655,7 @@ Star Force
 Star Fox
 Star Gladiator
 Star Ocean
+Star Racer
 Star Raiders
 Star Soldier
 Star Trek
@@ -3541,6 +3673,7 @@ Starfy
 Stargate
 Starhawk
 Starlink
+Starship Regulars
 Starship Troopers
 State of Survival
 Static Shock
@@ -3622,9 +3755,12 @@ SuperTed
 Superbad
 Superbrothers: Sword & Sworcery EP
 Supergirl
+Superhero Movie
+Superhero Roommate
 Superior Soldiers
 Superjail!
 Superman
+Supermodels
 Supernatural (Warner Bros.)
 Superstore
 Surf's Up
@@ -3728,14 +3864,15 @@ The Adventure Pals
 The Adventures of Bayou Billy
 The Adventures of Dr. McNinja
 The Adventures of GamePro
+The Adventures of Pluto Nash
 The Adventures of Quik & Silva
 The Adventures of Rad Gravity
 The Adventures of Willy Beamish
 The Alchemist Code
 The Amazing Digital Circus
-The Amazing World Of Gumball
 The Andy Griffith Show
 The Ant Bully
+The Ants: Underground Kingdom
 The Aquabats!
 The Aristocats
 The Avengers (ITV)
@@ -3747,21 +3884,25 @@ The Banana Splits
 The Basement Collection
 The Battle Cats
 The Bear
+The Beverly Hillbillies
 The Bicentennial Man
 The Big Bang Theory
 The Big Guy and Rusty the Boy Robot
 The Big Lebowski
 The Big Lez Show
+The Big O
 The Binding of Isaac
 The Bionic Woman
 The Birch
 The Bird and the Album
+The Biskitts
 The Black Cauldron
 The Black Parade
 The Black Phone
 The Blocks Cometh
 The Blue Racer
 The Blues Brothers
+The Bob Cummings Show
 The Bob Newhart Show
 The Book of Life
 The Boondocks
@@ -3770,6 +3911,7 @@ The Boxtrolls
 The Boys
 The Bradford McKinley Chronicles
 The Brak Show
+The Brave Little Toaster
 The Breakfast Club
 The Brothers Grunt
 The Butter Battle Book
@@ -3843,8 +3985,11 @@ The Fresh Prince of Bel-Air
 The Furry Crusades
 The Gambler (CBS)
 The Game of Life
+The Gaslight District
+The Genie Family
 The Ghost Busters
 The Ghost and Molly McGee
+The Girl Next Door (Fox)
 The God of High School
 The Goddamn George Liquor Program
 The Godfather
@@ -3893,11 +4038,13 @@ The Karate Kid
 The King of Dragons
 The King of Fighters
 The King of Queens
+The King's Woman
 The Knights of Avalon
 The Koala Brothers
 The Krofft Supershow
 The Krofft Superstar Hour
 The Kwicky Koala Show
+The Ladies Man
 The Land Before Time
 The Land of Gorch
 The Last Blade
@@ -3905,11 +4052,13 @@ The Last Guardian
 The Last Of Us
 The Last Unicorn
 The Lawnmower Man
+The League of Extraordinary Gentlemen
 The Legend of Heroes
 The Legend of Isis (Blue Water Comics)
 The Legend of Kage
 The Legend of Luo Xiaohei
 The Legend of Qin
+The Legend of Zelda
 The Lego Movie
 The Life and Times of Juniper Lee
 The Lion King
@@ -3932,6 +4081,7 @@ The Mandela Catalogue
 The Marvelous Misadventures of Flapjack
 The Mary Tyler Moore Show
 The Mask
+The Master of Disguise
 The Matrix
 The Maw
 The Maxx
@@ -3943,6 +4093,7 @@ The Mighty Boosh
 The Mighty Heroes
 The Mighty Nein
 The Mist (Stephen King)
+The Mitchells Vs The Machines
 The Mouse and the Monster
 The Moxy Show
 The Mumbly Cartoon Show
@@ -3951,6 +4102,7 @@ The Munsters
 The Mystery Files of Shelby Woo
 The Mystifying Oracle
 The Nanny
+The Neighborhood (CBS)
 The Neverhood
 The New Andy Griffith Show
 The NewZealand Story
@@ -3975,13 +4127,16 @@ The Phantom (King Features Syndicate)
 The Pioneer Trail
 The Pirates of Dark Water
 The Plucky Duck Show
+The Polar Express
 The Power Team
 The Powerpuff Girls
 The Practice
+The Prince Of Egypt
 The Prince of Tennis
 The Princess Bride
 The Princess Switch
 The Princess and the Frog
+The Problem Solverz
 The Promised Neverland
 The Proud Family
 The Punisher
@@ -3996,10 +4151,12 @@ The Rescuers
 The Ring
 The Ripping Friends
 The Rising of the Shield Hero
+The Road to El Dorado
 The Roman Holidays
 The Room
 The Roxbury Guys
 The Ruff and Reddy Show
+The Rundown
 The Saga of Tanya the Evil
 The Sandman (Neil Gaiman)
 The Santa Clause
@@ -4088,6 +4245,7 @@ The Young and the Restless
 Theatrhythm
 Them!
 Theme
+Theodore Rex
 There Is No Game
 There She Is!!
 They Bleed Pixels
@@ -4104,6 +4262,7 @@ Thunder Ceptor
 Thunder Force
 ThunderCats
 Thunderbirds
+Thunderbolts (Marvel)
 Thus Spoke Kishibe Rohan
 Ticket Hero
 Tiger & Bunny
@@ -4113,6 +4272,7 @@ Tiger-Heli
 TigerSharks
 Tigra
 Tijuana Toads
+Tim and Eric Awesome Show, Great Job!
 Timberman
 Time (David Firth)
 Time Crisis
@@ -4120,12 +4280,14 @@ Time Fcuk
 Time Gal
 Time Squad
 Time Stalkers
+TimeSplitters
 Tin Star
 Tingle
 Tinkle Pit
 Tintin
 Tiny Hands Adventure
 Tiny Toon Adventures
+Titan A.E.
 Titanfall
 Titanic (Paramount)
 To Be Hero
@@ -4142,6 +4304,7 @@ Tokyo Ghoul
 Tokyo Necro
 Tokyo Revengers
 Tokyo School Life
+Tom Goes to the Mayor
 Tom and Jerry
 Tomato Adventure
 Tomb Raider
@@ -4178,6 +4341,7 @@ Tower of Babel (Namco)
 Tower of God
 Tower of Saviors
 TowerFall
+Toy Clash! Roboca Battle
 Toy Pop
 Toy Soldiers
 Toy Story
@@ -4202,7 +4366,6 @@ Trog (Midway)
 Trojan
 Trolls
 Tron
-Tropical Fish
 Trover Saves The Universe
 True Crime
 True Romance
@@ -4210,17 +4373,19 @@ Trumpton
 Tsukihime
 Tsukumojuku
 TumbleSeed
+Tunic
 Turbo (DreamWorks)
 Turn it Around
 Turn-Undead
+Turner & Hooch
 Turning Red
 Turnip Boy
 Turok
-Turtle Bridge
 Tutenstein
 Twilight Saga
 Twilight Syndrome
 Twin Peaks
+Twin Princess of Wonder Planet
 TwinBee
 Twisted Childhood Universe
 Twisted Metal
@@ -4260,9 +4425,10 @@ Underdog
 Underground Ernie
 Underhero
 Undertale
-Underwater (Fox)
+Underwater (20th Century Studios)
 Underworld
 Unfabulous
+UniVersus
 Unicorn: Warriors Eternal
 Unicorno
 Unikitty!
@@ -4271,7 +4437,6 @@ Uniracers
 Unison League
 Unit:E
 Universal Epic Universe
-Universal Fighting System
 Universal Movie Tycoon
 Universal Studios Theme Parks Adventure
 Unpacking
@@ -4304,6 +4469,8 @@ Valley of the Dinosaurs
 Valorant
 Vampire Survivors
 Vampirella
+Vampirina
+Van Helsing (Universal)
 Vantage Master
 Varth
 Vault
@@ -4311,8 +4478,8 @@ Vectorman
 VeggieTales
 Velocispider
 Venom
-Vermin
 Vertigo
+Vexx
 Vic Rattlehead
 Victor and Valentino
 Victorious
@@ -4337,8 +4504,10 @@ Vocaloid
 Volleyball (Nintendo)
 Voltage Fighter Gowcaizer
 Voltron
+Voodoo Vince
 Vox Machina
 Vulgus
+W.I.T.C.H.
 WACCA
 WALL-E
 WHAT THE GAMES?
@@ -4391,8 +4560,10 @@ We Never Learn
 We Ski
 We are Manga-ka: The Tokiwa-so Story
 We're Back! A Dinosaur's Story
+Weapons (New Line Cinema)
 Weathering with You
 Webkinz
+Wedding Crashers
 Weeds (Showtime)
 Weekend Update
 Weekly World News
@@ -4404,12 +4575,14 @@ Welcome to the Wayne
 West of Loathing
 Westworld
 Whack Your
+Whacked!
 What's Your Story?
 Whatever Happened to... Robot Jones?
 Wheelie and the Chopper Bunch
 When Harry Met Sally...
 When They Cry
 Where the Wild Things Are
+Where's Huddles?
 Where's My Water?
 Where's Wally?
 Whiplash (Eidos)
@@ -4426,6 +4599,7 @@ Wild West C.O.W.-Boys of Moo Mesa
 Wild Woody
 Wildfrost
 Willow
+Willy's Wonderland
 Win or Lose
 Windy & Breezy
 Wing Commander
@@ -4435,6 +4609,7 @@ Winx Club
 WipEout
 Wish (Disney)
 Witchblade
+Wizard with a Gun
 Wizard101
 Wizards & Warriors
 Wizards of Waverly Place
@@ -4467,6 +4642,7 @@ X-O Manowar
 X-Zone
 XCOM
 XDefiant
+Xavier Riddle and the Secret Museum
 Xavier: Renegade Angel
 Xena
 Xenoblade
@@ -4484,6 +4660,7 @@ Yandere Simulator
 Yars
 Year Zero
 Yellow Submarine
+Yellow Taxi Goes Vroom
 Yertle the Turtle
 Yie Ar Kung-Fu
 Yin Yang Yo!
@@ -4510,7 +4687,6 @@ Zack & Wiki
 Zangeki no Reginleiv
 Zatch Bell!
 Zeke and Luther
-Zelda
 Zenless Zone Zero
 Zeno Clash
 Zero Escape
