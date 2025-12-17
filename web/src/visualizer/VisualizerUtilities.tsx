@@ -1,6 +1,4 @@
 import * as THREE from 'three';
-import { Font } from 'three/addons/loaders/FontLoader.js';
-import { TextGeometry } from 'three/addons/geometries/TextGeometry.js';
 import { Vertex, Edge, Graph } from '../types';
 
 export namespace VisualizerUtils {
@@ -58,87 +56,40 @@ export namespace VisualizerUtils {
             uniforms: {
                 camPos: { value: camera.position },
                 color: { value: new THREE.Color(0xFFFFFF) },
+				farDistance: {value: window.innerWidth <= 483 ? 300 : 1000 } 
             },
             vertexShader: `
-                        varying vec3 vWorldPosition;
+				precision mediump float;
+				varying vec3 vWorldPosition;
 
-                        void main() {
-                            vec4 worldPosition = modelMatrix * vec4(position, 1.0);
-                            vWorldPosition = worldPosition.xyz;
-                            gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
-                        }
-                    `,
+				void main() {
+					vec4 worldPosition = modelMatrix * vec4(position, 1.0);
+					vWorldPosition = worldPosition.xyz;
+					gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+				}
+			`,
             fragmentShader: `
-                        precision mediump float;
-                        uniform vec3 camPos;
-                        uniform vec3 color;
-                        uniform float fadeDistance;
-                        uniform float minAlpha;
-                        
-                        varying vec3 vWorldPosition;
-                        
-                        void main() {
-                            float distFromCamera = length(vWorldPosition - camPos);
-                            float dist01 = 1.0 - clamp(distFromCamera / 1000.0, 0.0, 1.0);
+				precision mediump float;
+				uniform vec3 camPos;
+				uniform vec3 color;
+				uniform float farDistance;			
+				
+				varying vec3 vWorldPosition;
+				
+				void main() {
+					float distFromCamera = length(vWorldPosition - camPos);
+					float farScale   = 1.0 - clamp(distFromCamera / farDistance, 0.0, 1.0);
+					float closeScale = 1.0 - clamp(distFromCamera / 200.0, 0.0, 1.0);
 
-                            gl_FragColor = vec4(color, dist01);
-                        }
-                    `,
+					float alpha = mix(closeScale, farScale, clamp(length(camPos) / 1000.0, 0.0, 1.0));
+
+					gl_FragColor = vec4(color, farScale);
+				}
+			`,
             transparent: true
         });
 
         return new THREE.LineSegments(lineGeometry, lineMaterial);
-    }
-
-    // choose a point that is always to the right of the current selected vertex 
-    export function CreateInfoBoxMeshGeometry(font: Font, node: Vertex) {
-        const geometry = new TextGeometry(`${node.name}`, {
-            font: font,
-            size: 0.05 * sizeScale(node.value),
-            depth: 0,
-            curveSegments: 12
-        });
-
-
-        const textMesh = new THREE.Mesh(geometry, new THREE.MeshBasicMaterial({
-            color: 0x00ffff,
-            depthTest: false, //this forces it to render on top of everything else 
-            depthWrite: false,
-            transparent: true
-        }));
-
-        textMesh.geometry.computeBoundingBox();
-        const boundingBox = textMesh.geometry.boundingBox!;
-
-        //background for the text
-        const backdropGeo = new THREE.BoxGeometry(
-            boundingBox.max.x - boundingBox.min.x + 0.4,
-            boundingBox.max.y - boundingBox.min.y + 0.4,
-            0.01
-        );
-        const backdropMat = new THREE.MeshBasicMaterial({
-            color: 0x000000,
-            depthTest: false,
-            depthWrite: false,
-            transparent: true
-        })
-        const backdropMesh = new THREE.Mesh(backdropGeo, backdropMat);
-        backdropMesh.position.set(
-            (boundingBox.max.x + boundingBox.min.x) / 2,
-            (boundingBox.max.y + boundingBox.min.y) / 2,
-            -0.001
-        );
-
-        //force backdrop to be rendered first, then text mesh on top of that, then everything else behind it
-        backdropMesh.renderOrder = 1;
-        textMesh.renderOrder = 2;
-
-
-        const group = new THREE.Group();
-        group.add(backdropMesh);
-        group.add(textMesh);
-
-        return group;
     }
 
     export function PrintHopsFromFortnite(hops: number, name: string) {
