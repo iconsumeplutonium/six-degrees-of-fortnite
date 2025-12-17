@@ -10,6 +10,7 @@ import { API_URL } from '../constants.ts';
 import '../styles/Graph.css';
 
 let shiftKeyPress: boolean = false;
+let hasTappedScreen: boolean = false;
 let nodeMesh: THREE.InstancedMesh;
 
 export default function CrossoverGraphThree() {
@@ -23,6 +24,7 @@ export default function CrossoverGraphThree() {
 
 	const [selectedVertex, setSelectedVertex] = useState<Vertex | null>(null); // same as selectedVertexRef, but needed to trigger rerenders of the box in the bottom left with the franchise name
 	const [shiftKey, setShiftKey] = useState<boolean>(false); // is the shift key being held (needed to trigger rerender of the box in the bottom left)
+	const [isMobile, setIsMobile] = useState(window.innerWidth < 483);
 
 	useEffect(() => {
 		if (!mountRef.current) return;
@@ -41,6 +43,7 @@ export default function CrossoverGraphThree() {
 
 		const controls = new OrbitControls(camera, renderer.domElement);
 		controls.enableDamping = true;
+		controls.enablePan = false;
 		controls.dampingFactor = 0.25;
 		controls.target.set(0, 0, 0);
 		controls.update();
@@ -106,11 +109,22 @@ export default function CrossoverGraphThree() {
 
 			cursorIsOverCanvas = (event.clientX >= rect.left && event.clientX <= rect.right && event.clientY >= rect.top && event.clientY <= rect.bottom);
 		}
+		const onTouchStart = (event: TouchEvent) => {
+			hasTappedScreen = true;
+			setShiftKey(true);
+			if (event.touches.length == 0) return; 
+
+			const rect = renderer.domElement.getBoundingClientRect();
+			const touch = event.touches[0];
+			pointer.x = ((touch.clientX - rect.left) / rect.width) * 2 - 1;
+			pointer.y = -((touch.clientY - rect.top) / rect.height) * 2 + 1;
+		}
 
 		renderer.domElement.addEventListener('pointerleave', onMouseLeave);
 		renderer.domElement.addEventListener('pointermove', onMouseMove);
 		document.addEventListener('keydown', onKeyPress);
 		document.addEventListener('keyup', onKeyRelease);
+		renderer.domElement.addEventListener('touchstart', onTouchStart)
 
 		const selectionSphere = new THREE.Mesh(
 			new THREE.SphereGeometry(0.101, 16, 16),
@@ -131,12 +145,14 @@ export default function CrossoverGraphThree() {
 				nodeMesh.material.uniforms.topRight.value.copy(topRight);
 			}
 
-			if (cursorIsOverCanvas) {
+			// todo: if cursor postition has not changed between frames, skip
+			if (cursorIsOverCanvas || hasTappedScreen) {
+				console.log(cursorIsOverCanvas, hasTappedScreen)
 				// raycast
 				raycaster.setFromCamera(pointer, camera);
 				const intersections = raycaster.intersectObjects(scene.children);
 				const sphereIntersection = intersections.find((intersection: THREE.Intersection) => intersection.object instanceof THREE.InstancedMesh);
-
+				console.log("intersection?", sphereIntersection)
 				// if mouse is hovering over a node
 				if (sphereIntersection) {
 					// get the vertex under the cursor
@@ -149,9 +165,10 @@ export default function CrossoverGraphThree() {
 					const scale = VisualizerUtils.sizeScale(clickedNode.value);
 					selectionSphere.scale.set(scale, scale, scale);
 					scene.add(selectionSphere);
-
+					
+					// desktop: shift key held down, mobile: sphere is tapped
 					// if the shift key is being held, highlight only the edges from the selected vertex to fortnite
-					if (shiftKeyPress && graphDataRef.current && visibleEdgesRef.current) {
+					if ((shiftKeyPress || hasTappedScreen) && graphDataRef.current && visibleEdgesRef.current) {
 						scene.remove(visibleEdgesRef.current)
 
 						const edges = VisualizerUtils.GenerateGraphEdges(graphDataRef.current, camera, clickedNode.id);
@@ -165,8 +182,13 @@ export default function CrossoverGraphThree() {
 					}
 
 				} else {
-					// if no intersection, remove selection sphere, delete the info box, and default to showing all edges
+					// if no intersection, remove selection sphere, and default back to showing all edges
 					scene.remove(selectionSphere);
+					hasTappedScreen = false;
+					if (selectedVertexRef.current) {
+						selectedVertexRef.current = null;
+						setSelectedVertex(null);
+					}
 
 					if (visibleEdgesRef.current) {
 						scene.remove(visibleEdgesRef.current);
@@ -186,10 +208,8 @@ export default function CrossoverGraphThree() {
 		// add this no-scroll property when the page is loaded, and remove it when it is unloaded
 		// document.body.classList.add("no-scroll");
 
-		// const fontLoader = new FontLoader();
-		// fontLoader.load("https://threejs.org/examples/fonts/helvetiker_regular.typeface.json", function (f: Font) {
+
 		RenderAllShapes();
-		// })
 
 
 		return () => {
@@ -198,6 +218,7 @@ export default function CrossoverGraphThree() {
 			window.removeEventListener('resize', handleResize);
 			renderer.domElement.removeEventListener('pointerleave', onMouseLeave);
 			renderer.domElement.removeEventListener('pointermove', onMouseMove);
+			renderer.domElement.removeEventListener('touchstart', onTouchStart);
 			document.addEventListener('keydown', onKeyPress);
 			document.addEventListener('keyup', onKeyRelease);
 			document.body.classList.remove('no-scroll')
@@ -217,7 +238,7 @@ export default function CrossoverGraphThree() {
 					{selectedVertex && (
 						<div className='panel selectionInfo'>
 							<h3>{selectedVertex.name}</h3>
-							{shiftKey && graphDataRef.current &&
+							{(shiftKey) && graphDataRef.current &&
 								<p>
 									{VisualizerUtils.PrintHopsFromFortnite(graphDataRef.current.paths[selectedVertex.id].length, selectedVertex.name)}
 								</p>
