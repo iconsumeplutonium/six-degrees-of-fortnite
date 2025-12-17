@@ -10,6 +10,7 @@ import { API_URL } from '../constants.ts';
 import '../styles/Graph.css';
 
 let shiftKeyPress: boolean = false;
+let nodeMesh: THREE.InstancedMesh;
 
 export default function CrossoverGraphThree() {
 	const mountRef = useRef<HTMLDivElement>(null);         // hold the canvas
@@ -25,8 +26,6 @@ export default function CrossoverGraphThree() {
 
 	useEffect(() => {
 		if (!mountRef.current) return;
-
-		let nodeMesh: THREE.InstancedMesh;
 
 		const scene = new THREE.Scene();
 		scene.background = new THREE.Color(0x000000);
@@ -52,7 +51,7 @@ export default function CrossoverGraphThree() {
 		stats.dom.style.top = '0px';
 		stats.dom.style.right = '0px';
 		stats.dom.style.left = 'auto';
-		stats.dom.style.bottom = 'auto'
+		stats.dom.style.bottom = 'auto';
 		mountRef.current.appendChild(stats.dom);
 
 		const handleResize = () => {
@@ -71,7 +70,12 @@ export default function CrossoverGraphThree() {
 				// as soon as data is received, scale the positions and store it as a three.vector3 so i dont have to rescale it everywhere else
 				// "as unknown as [n n n]" is to silence the type error thing because it comes in as [n n n] and i dont wanna change the graph type to have [n n n] because it messes up stuff elsewhere
 				data.nodes.forEach((node: Vertex) => {
-					node.position = new THREE.Vector3(...(node.position as unknown as [number, number, number]).map(c => c * VisualizerUtils.posScale));
+					const scaledPos = new THREE.Vector3(...(node.position as unknown as [number, number, number]).map(c => c * VisualizerUtils.posScale));
+					const awayFromCenterDir = scaledPos.clone().normalize();
+
+					// force nodes to be a min distance away from the fortnite node so they dont intersect
+					// networkx uses different scale than threejs so i cant do it before sending the graph data over
+					node.position = scaledPos.add(awayFromCenterDir.multiplyScalar(5));
 					VisualizerUtils.nodeIDtoPosition[node.id] = node.position;
 				});
 

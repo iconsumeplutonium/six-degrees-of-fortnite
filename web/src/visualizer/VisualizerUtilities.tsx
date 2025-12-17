@@ -6,7 +6,6 @@ export namespace VisualizerUtils {
     export const sizeScale = (x: number) => { return Math.min(Math.max(x, 10), 100); };
     export const nodeIDtoPosition: Record<number, THREE.Vector3> = {};
 
-
     export function GenerateGraphNodes(graph: Graph) {
 		const sphereMaterial = new THREE.ShaderMaterial({
 			uniforms: {
