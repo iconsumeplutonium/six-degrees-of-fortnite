@@ -6,11 +6,39 @@ export namespace VisualizerUtils {
     export const sizeScale = (x: number) => { return Math.min(Math.max(x, 10), 100); };
     export const nodeIDtoPosition: Record<number, THREE.Vector3> = {};
 
+
     export function GenerateGraphNodes(graph: Graph) {
+		const sphereMaterial = new THREE.ShaderMaterial({
+			uniforms: {
+				topRight: {value: new THREE.Vector3(1, 1, 1)},
+			},
+			vertexShader: `
+				precision mediump float;
+				varying vec3 vNormal;
+
+				void main() {
+					vNormal = normal;
+					gl_Position = projectionMatrix * viewMatrix * instanceMatrix * vec4(position, 1.0);
+				}
+			`,
+			fragmentShader: `
+				precision mediump float;
+				uniform vec3 topRight;
+				varying vec3 vNormal;
+				
+				void main() {
+					float strength = clamp(dot(normalize(topRight), vNormal), 0.0, 1.0);
+					gl_FragColor = vec4(vec3(0.0, 0.46, 1.0) * strength, 1.0);
+				}
+			`
+		});
+
+
         // instanced rendering of spheres for each node in the graph
         const nodeMesh = new THREE.InstancedMesh(
             new THREE.SphereGeometry(0.1, 16, 16),
-            new THREE.MeshBasicMaterial({ color: 0x0077FF }),
+            // new THREE.MeshBasicMaterial({ color: 0x0077FF }),
+			sphereMaterial,
             graph.nodes.length
         );
 

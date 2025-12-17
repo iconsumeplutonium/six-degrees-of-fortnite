@@ -5,7 +5,6 @@ import { VisualizerUtils } from './VisualizerUtilities.tsx';
 import * as THREE from 'three';
 import Stats from 'three/examples/jsm/libs/stats.module.js';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-import { Font, FontLoader } from 'three/addons/loaders/FontLoader.js';
 import { Vertex, Graph } from '../types.ts';
 import { API_URL } from '../constants.ts';
 import '../styles/Graph.css';
@@ -26,6 +25,8 @@ export default function CrossoverGraphThree() {
 
 	useEffect(() => {
 		if (!mountRef.current) return;
+
+		let nodeMesh: THREE.InstancedMesh;
 
 		const scene = new THREE.Scene();
 		scene.background = new THREE.Color(0x000000);
@@ -61,8 +62,6 @@ export default function CrossoverGraphThree() {
 		};
 		window.addEventListener('resize', handleResize);
 
-
-
 		fetch(`${API_URL}/graph`)
 			.then(response => {
 				return response.json();
@@ -78,7 +77,8 @@ export default function CrossoverGraphThree() {
 
 				// set graph data, visualize nodes
 				graphDataRef.current = data;
-				scene.add(VisualizerUtils.GenerateGraphNodes(data));
+				nodeMesh = VisualizerUtils.GenerateGraphNodes(data);
+				scene.add(nodeMesh);
 
 				// set & visualize edges
 				const edges = VisualizerUtils.GenerateGraphEdges(data, camera);
@@ -120,6 +120,12 @@ export default function CrossoverGraphThree() {
 		const RenderAllShapes = () => {
 			stats.begin();
 			controls.update();
+
+			if (nodeMesh && nodeMesh?.material instanceof THREE.ShaderMaterial) {
+				// top right corner of the screen in world space
+				const topRight = new THREE.Vector3(1, 1, 0.0).unproject(camera);
+				nodeMesh.material.uniforms.topRight.value.copy(topRight);
+			}
 
 			if (cursorIsOverCanvas) {
 				// raycast
@@ -178,7 +184,7 @@ export default function CrossoverGraphThree() {
 
 		// const fontLoader = new FontLoader();
 		// fontLoader.load("https://threejs.org/examples/fonts/helvetiker_regular.typeface.json", function (f: Font) {
-			RenderAllShapes();
+		RenderAllShapes();
 		// })
 
 
