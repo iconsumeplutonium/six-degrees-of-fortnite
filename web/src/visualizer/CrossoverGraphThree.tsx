@@ -12,6 +12,7 @@ import '../styles/Graph.css';
 let shiftKeyPress: boolean = false;
 let hasTappedScreen: boolean = false;
 let nodeMesh: THREE.InstancedMesh;
+let isDraggingOrZooming: boolean = false;
 
 export default function CrossoverGraphThree() {
 	const mountRef = useRef<HTMLDivElement>(null);         // hold the canvas
@@ -84,11 +85,11 @@ export default function CrossoverGraphThree() {
 
 				// set graph data, visualize nodes
 				graphDataRef.current = data;
-				nodeMesh = VisualizerUtils.GenerateGraphNodes(data);
+				nodeMesh = VisualizerUtils.GenerateGraphNodes(data, camera);
 				scene.add(nodeMesh);
 
 				// set & visualize edges
-				const edges = VisualizerUtils.GenerateGraphEdges(data, camera);
+				const edges = VisualizerUtils.GenerateGraphEdges(data, camera, -1, true);
 				visibleEdgesRef.current = edges ?? null;
 				allEdgesRef.current = edges ?? null;
 
@@ -122,9 +123,12 @@ export default function CrossoverGraphThree() {
 
 		renderer.domElement.addEventListener('pointerleave', onMouseLeave);
 		renderer.domElement.addEventListener('pointermove', onMouseMove);
+		renderer.domElement.addEventListener('touchstart', onTouchStart);
 		document.addEventListener('keydown', onKeyPress);
 		document.addEventListener('keyup', onKeyRelease);
-		renderer.domElement.addEventListener('touchstart', onTouchStart)
+		controls.addEventListener('change', () => console.log('dragging'))
+		controls.addEventListener('start', () => isDraggingOrZooming = true);
+		controls.addEventListener('end', () => isDraggingOrZooming = false);
 
 		const selectionSphere = new THREE.Mesh(
 			new THREE.SphereGeometry(0.101, 16, 16),
@@ -143,16 +147,17 @@ export default function CrossoverGraphThree() {
 				// top right corner of the screen in world space
 				const topRight = new THREE.Vector3(1, 1, 0.0).unproject(camera);
 				nodeMesh.material.uniforms.topRight.value.copy(topRight);
+				nodeMesh.material.uniforms.camPos.value.copy(camera.position);
 			}
 
 			// todo: if cursor postition has not changed between frames, skip
-			if (cursorIsOverCanvas || hasTappedScreen) {
-				console.log(cursorIsOverCanvas, hasTappedScreen)
+			if (!isDraggingOrZooming && (cursorIsOverCanvas || hasTappedScreen)) {
+				// console.log(cursorIsOverCanvas, hasTappedScreen)
 				// raycast
 				raycaster.setFromCamera(pointer, camera);
 				const intersections = raycaster.intersectObjects(scene.children);
 				const sphereIntersection = intersections.find((intersection: THREE.Intersection) => intersection.object instanceof THREE.InstancedMesh);
-				console.log("intersection?", sphereIntersection)
+				// console.log("intersection?", sphereIntersection)
 				// if mouse is hovering over a node
 				if (sphereIntersection) {
 					// get the vertex under the cursor
