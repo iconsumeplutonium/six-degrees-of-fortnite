@@ -113,13 +113,15 @@ export default function CrossoverGraphThree() {
 		const onTouchStart = (event: TouchEvent) => {
 			hasTappedScreen = true;
 			setShiftKey(true);
-			if (event.touches.length == 0) return; 
+			if (event.touches.length == 0) return;
 
 			const rect = renderer.domElement.getBoundingClientRect();
 			const touch = event.touches[0];
 			pointer.x = ((touch.clientX - rect.left) / rect.width) * 2 - 1;
 			pointer.y = -((touch.clientY - rect.top) / rect.height) * 2 + 1;
 		}
+		const setIsDraggingTrue = () => isDraggingOrZooming = true;
+		const setIsDraggingFalse = () => isDraggingOrZooming = false;
 
 		renderer.domElement.addEventListener('pointerleave', onMouseLeave);
 		renderer.domElement.addEventListener('pointermove', onMouseMove);
@@ -127,8 +129,8 @@ export default function CrossoverGraphThree() {
 		document.addEventListener('keydown', onKeyPress);
 		document.addEventListener('keyup', onKeyRelease);
 		controls.addEventListener('change', () => console.log('dragging'))
-		controls.addEventListener('start', () => isDraggingOrZooming = true);
-		controls.addEventListener('end', () => isDraggingOrZooming = false);
+		controls.addEventListener('start', setIsDraggingTrue);
+		controls.addEventListener('end', setIsDraggingFalse);
 
 		const selectionSphere = new THREE.Mesh(
 			new THREE.SphereGeometry(0.101, 16, 16),
@@ -170,7 +172,7 @@ export default function CrossoverGraphThree() {
 					const scale = VisualizerUtils.sizeScale(clickedNode.value);
 					selectionSphere.scale.set(scale, scale, scale);
 					scene.add(selectionSphere);
-					
+
 					// desktop: shift key held down, mobile: sphere is tapped
 					// if the shift key is being held, highlight only the edges from the selected vertex to fortnite
 					if ((shiftKeyPress || hasTappedScreen) && graphDataRef.current && visibleEdgesRef.current) {
@@ -224,9 +226,11 @@ export default function CrossoverGraphThree() {
 			renderer.domElement.removeEventListener('pointerleave', onMouseLeave);
 			renderer.domElement.removeEventListener('pointermove', onMouseMove);
 			renderer.domElement.removeEventListener('touchstart', onTouchStart);
-			document.addEventListener('keydown', onKeyPress);
-			document.addEventListener('keyup', onKeyRelease);
-			document.body.classList.remove('no-scroll')
+			document.removeEventListener('keydown', onKeyPress);
+			document.removeEventListener('keyup', onKeyRelease);
+			document.body.classList.remove('no-scroll');
+			controls.removeEventListener('start', setIsDraggingTrue);
+			controls.removeEventListener('end', () => setIsDraggingFalse);
 
 			renderer.dispose();
 		};

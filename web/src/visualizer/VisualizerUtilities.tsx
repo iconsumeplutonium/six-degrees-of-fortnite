@@ -93,7 +93,6 @@ export namespace VisualizerUtils {
 			uniforms: {
 				camPos: { value: camera.position },
 				color: { value: new THREE.Color(0xFFFFFF) },
-				farDistance: { value: window.innerWidth <= 483 ? 300 : 1000 },
 				shouldDoCustomFade: {value: shouldDoCustomFade}
 			},
 			vertexShader: `
@@ -110,20 +109,19 @@ export namespace VisualizerUtils {
 				precision mediump float;
 				uniform vec3 camPos;
 				uniform vec3 color;
-				uniform float farDistance;
 				uniform bool shouldDoCustomFade;
 				
 				varying vec3 vWorldPosition;
 				
 				void main() {
 					float distFromCamera = length(vWorldPosition - camPos);
-					float farScale   = 1.0 - clamp(distFromCamera / farDistance, 0.0, 1.0);
+					float farScale   = 1.0 - clamp(distFromCamera / 1500.0, 0.0, 1.0);
 
 					if (!shouldDoCustomFade)
 						gl_FragColor = vec4(color, farScale);
 					else {
 						float closeScale = 1.0 - clamp(distFromCamera / 300.0, 0.0, 1.0);
-						float t = smoothstep(200.0, farDistance, distFromCamera);
+						float t = smoothstep(200.0, 1500.0, distFromCamera);
 						float alpha = mix(closeScale, farScale, t);
 	
 						gl_FragColor = vec4(color, alpha);
