@@ -5,12 +5,14 @@ import { VisualizerUtils } from './VisualizerUtilities.tsx';
 import * as THREE from 'three';
 import Stats from 'three/examples/jsm/libs/stats.module.js';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-import { Font, FontLoader } from 'three/addons/loaders/FontLoader.js';
 import { Vertex, Graph } from '../types.ts';
 import { API_URL } from '../constants.ts';
 import '../styles/Graph.css';
 
 let shiftKeyPress: boolean = false;
+let hasTappedScreen: boolean = false;
+let nodeMesh: THREE.InstancedMesh;
+let isDraggingOrZooming: boolean = false;
 
 export default function CrossoverGraphThree() {
 	const mountRef = useRef<HTMLDivElement>(null);         // hold the canvas
@@ -22,7 +24,15 @@ export default function CrossoverGraphThree() {
 	const visibleEdgesRef = useRef<THREE.LineSegments | null>(null);  // holds visible edges (handles udpates in useeffect);
 
 	const [selectedVertex, setSelectedVertex] = useState<Vertex | null>(null); // same as selectedVertexRef, but needed to trigger rerenders of the box in the bottom left with the franchise name
-	const [shiftKey, setShiftKey] = useState<boolean>(false); // is the shift key being held (needed to trigger rerender of the box in the bottom left)
+	const [shiftKey, _setShiftKey] = useState<boolean>(false); // is the shift key being held (needed to trigger rerender of the box in the bottom left)
+
+	// keep both the variable and state in sync
+	// react needs the state to trigger rerenders, but threejs cant read the updated state value (fucking web development)
+	// so i have shiftKeyPress, a regular variable, and shiftKey, the state variable
+	const setShiftKey = (value: boolean) => {
+		shiftKeyPress = value;
+		_setShiftKey(value);
+	}
 
 	useEffect(() => {
 		if (!mountRef.current) return;
@@ -41,6 +51,7 @@ export default function CrossoverGraphThree() {
 
 		const controls = new OrbitControls(camera, renderer.domElement);
 		controls.enableDamping = true;
+		controls.enablePan = false;
 		controls.dampingFactor = 0.25;
 		controls.target.set(0, 0, 0);
 		controls.update();
@@ -51,7 +62,7 @@ export default function CrossoverGraphThree() {
 		stats.dom.style.top = '0px';
 		stats.dom.style.right = '0px';
 		stats.dom.style.left = 'auto';
-		stats.dom.style.bottom = 'auto'
+		stats.dom.style.bottom = 'auto';
 		mountRef.current.appendChild(stats.dom);
 
 		const handleResize = () => {
@@ -60,8 +71,6 @@ export default function CrossoverGraphThree() {
 			renderer.setSize(mountRef.current!.clientWidth, mountRef.current!.clientHeight);
 		};
 		window.addEventListener('resize', handleResize);
-
-
 
 		fetch(`${API_URL}/graph`)
 			.then(response => {
@@ -72,16 +81,22 @@ export default function CrossoverGraphThree() {
 				// as soon as data is received, scale the positions and store it as a three.vector3 so i dont have to rescale it everywhere else
 				// "as unknown as [n n n]" is to silence the type error thing because it comes in as [n n n] and i dont wanna change the graph type to have [n n n] because it messes up stuff elsewhere
 				data.nodes.forEach((node: Vertex) => {
-					node.position = new THREE.Vector3(...(node.position as unknown as [number, number, number]).map(c => c * VisualizerUtils.posScale));
+					const scaledPos = new THREE.Vector3(...(node.position as unknown as [number, number, number]).map(c => c * VisualizerUtils.posScale));
+					const awayFromCenterDir = scaledPos.clone().normalize();
+
+					// force nodes to be a min distance away from the fortnite node so they dont intersect
+					// networkx uses different scale than threejs so i cant do it before sending the graph data over
+					node.position = scaledPos.add(awayFromCenterDir.multiplyScalar(5));
 					VisualizerUtils.nodeIDtoPosition[node.id] = node.position;
 				});
 
 				// set graph data, visualize nodes
 				graphDataRef.current = data;
-				scene.add(VisualizerUtils.GenerateGraphNodes(data));
+				nodeMesh = VisualizerUtils.GenerateGraphNodes(data, camera);
+				scene.add(nodeMesh);
 
 				// set & visualize edges
-				const edges = VisualizerUtils.GenerateGraphEdges(data, camera);
+				const edges = VisualizerUtils.GenerateGraphEdges(data, camera, -1, true);
 				visibleEdgesRef.current = edges ?? null;
 				allEdgesRef.current = edges ?? null;
 
@@ -90,10 +105,11 @@ export default function CrossoverGraphThree() {
 
 		const raycaster = new THREE.Raycaster();
 		const pointer = new THREE.Vector2();
+		const pointerPosLastFrame = new THREE.Vector2();
 		let cursorIsOverCanvas: boolean = false;
 
-		const onKeyPress = (event: KeyboardEvent) => { if (event.shiftKey) { shiftKeyPress = true; setShiftKey(true) } }
-		const onKeyRelease = (event: KeyboardEvent) => { if (event.key === "Shift") { shiftKeyPress = false; setShiftKey(false) } }
+		const onKeyPress = (event: KeyboardEvent) => { if (event.shiftKey) { setShiftKey(true) } }
+		const onKeyRelease = (event: KeyboardEvent) => { if (event.key === "Shift") { setShiftKey(false) } }
 		const onMouseLeave = () => { cursorIsOverCanvas = false; }
 		const onMouseMove = (event: MouseEvent) => {
 			const rect = renderer.domElement.getBoundingClientRect();
@@ -102,11 +118,27 @@ export default function CrossoverGraphThree() {
 
 			cursorIsOverCanvas = (event.clientX >= rect.left && event.clientX <= rect.right && event.clientY >= rect.top && event.clientY <= rect.bottom);
 		}
+		const onTouchStart = (event: TouchEvent) => {
+			if (event.touches.length == 0) return;
+
+			hasTappedScreen = true;
+			setShiftKey(true);
+
+			const rect = renderer.domElement.getBoundingClientRect();
+			const touch = event.touches[0];
+			pointer.x = ((touch.clientX - rect.left) / rect.width) * 2 - 1;
+			pointer.y = -((touch.clientY - rect.top) / rect.height) * 2 + 1;
+		}
+		const setIsDraggingTrue = () => isDraggingOrZooming = true;
+		const setIsDraggingFalse = () => isDraggingOrZooming = false;
 
 		renderer.domElement.addEventListener('pointerleave', onMouseLeave);
 		renderer.domElement.addEventListener('pointermove', onMouseMove);
+		renderer.domElement.addEventListener('touchstart', onTouchStart);
 		document.addEventListener('keydown', onKeyPress);
 		document.addEventListener('keyup', onKeyRelease);
+		controls.addEventListener('start', setIsDraggingTrue);
+		controls.addEventListener('end', setIsDraggingFalse);
 
 		const selectionSphere = new THREE.Mesh(
 			new THREE.SphereGeometry(0.101, 16, 16),
@@ -121,7 +153,14 @@ export default function CrossoverGraphThree() {
 			stats.begin();
 			controls.update();
 
-			if (cursorIsOverCanvas) {
+			if (nodeMesh && nodeMesh?.material instanceof THREE.ShaderMaterial) {
+				// top right corner of the screen in world space
+				const topRight = new THREE.Vector3(1, 0, 0.0).unproject(camera);
+				nodeMesh.material.uniforms.topRight.value.copy(topRight);
+				nodeMesh.material.uniforms.camPos.value.copy(camera.position);
+			}
+
+			if (!isDraggingOrZooming && (cursorIsOverCanvas || hasTappedScreen)) {
 				// raycast
 				raycaster.setFromCamera(pointer, camera);
 				const intersections = raycaster.intersectObjects(scene.children);
@@ -140,8 +179,9 @@ export default function CrossoverGraphThree() {
 					selectionSphere.scale.set(scale, scale, scale);
 					scene.add(selectionSphere);
 
+					// desktop: shift key held down, mobile: sphere is tapped
 					// if the shift key is being held, highlight only the edges from the selected vertex to fortnite
-					if (shiftKeyPress && graphDataRef.current && visibleEdgesRef.current) {
+					if ((shiftKeyPress || hasTappedScreen) && graphDataRef.current && visibleEdgesRef.current) {
 						scene.remove(visibleEdgesRef.current)
 
 						const edges = VisualizerUtils.GenerateGraphEdges(graphDataRef.current, camera, clickedNode.id);
@@ -155,8 +195,13 @@ export default function CrossoverGraphThree() {
 					}
 
 				} else {
-					// if no intersection, remove selection sphere, delete the info box, and default to showing all edges
+					// if no intersection, remove selection sphere, and default back to showing all edges
 					scene.remove(selectionSphere);
+					hasTappedScreen = false;
+					if (selectedVertexRef.current) {
+						selectedVertexRef.current = null;
+						setSelectedVertex(null);
+					}
 
 					if (visibleEdgesRef.current) {
 						scene.remove(visibleEdgesRef.current);
@@ -168,58 +213,58 @@ export default function CrossoverGraphThree() {
 
 			renderer.render(scene, camera);
 			stats.end();
+			pointerPosLastFrame.copy(pointer);
 			animationIdRef.current = requestAnimationFrame(RenderAllShapes);
 		};
 
 		// can only hide the scrollbar on this page by setting the body to have overflow: hidden
 		// but that affects it globally and prevents scrolling on all other pages too
 		// add this no-scroll property when the page is loaded, and remove it when it is unloaded
-		// document.body.classList.add("no-scroll");
+		document.body.classList.add("no-scroll");
 
-		// const fontLoader = new FontLoader();
-		// fontLoader.load("https://threejs.org/examples/fonts/helvetiker_regular.typeface.json", function (f: Font) {
-			RenderAllShapes();
-		// })
+
+		RenderAllShapes();
 
 
 		return () => {
 			if (animationIdRef.current) cancelAnimationFrame(animationIdRef.current);
+			document.body.classList.remove('no-scroll');
 
 			window.removeEventListener('resize', handleResize);
 			renderer.domElement.removeEventListener('pointerleave', onMouseLeave);
 			renderer.domElement.removeEventListener('pointermove', onMouseMove);
-			document.addEventListener('keydown', onKeyPress);
-			document.addEventListener('keyup', onKeyRelease);
-			document.body.classList.remove('no-scroll')
+			renderer.domElement.removeEventListener('touchstart', onTouchStart);
+			document.removeEventListener('keydown', onKeyPress);
+			document.removeEventListener('keyup', onKeyRelease);
+			controls.removeEventListener('start', setIsDraggingTrue);
+			controls.removeEventListener('end', setIsDraggingFalse);
 
 			renderer.dispose();
 		};
 	}, []);
 
 	return (
-		<>
-			<div className='pageContainer'>
-				<Navigation />
-				<div
-					ref={mountRef}
-					className='canvas'
-				>
-					{selectedVertex && (
-						<div className='panel selectionInfo'>
-							<h3>{selectedVertex.name}</h3>
-							{shiftKey && graphDataRef.current &&
-								<p>
-									{VisualizerUtils.PrintHopsFromFortnite(graphDataRef.current.paths[selectedVertex.id].length, selectedVertex.name)}
-								</p>
-							}
-						</div>
-					)}
-
-					<div className='panel controlInfo'>
-						<GraphInfo />
+		<div className='pageContainer'>
+			<Navigation />
+			<div
+				ref={mountRef}
+				className='canvas'
+			>
+				{selectedVertex && (
+					<div className='panel selectionInfo'>
+						<h3>{selectedVertex.name}</h3>
+						{(shiftKey) && graphDataRef.current &&
+							<p>
+								{VisualizerUtils.PrintHopsFromFortnite(graphDataRef.current.paths[selectedVertex.id].length, selectedVertex.name)}
+							</p>
+						}
 					</div>
+				)}
+
+				<div className='panel controlInfo'>
+					<GraphInfo />
 				</div>
 			</div>
-		</>
+		</div>
 	);
 };
