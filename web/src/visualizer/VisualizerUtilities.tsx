@@ -141,4 +141,9 @@ export namespace VisualizerUtils {
 		else
 			return `${hops} hop${hops > 1 ? "s" : ""} away from Fortnite`;
 	}
+
+	export function areVecsEqual(v1: THREE.Vector2, v2: THREE.Vector2) {
+		const epsilon = 0.001;
+		return (Math.abs(v1.x - v2.x) < epsilon) && (Math.abs(v1.y - v2.y) < epsilon);
+	}
 }

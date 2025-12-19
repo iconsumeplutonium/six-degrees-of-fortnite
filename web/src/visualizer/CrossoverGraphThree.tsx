@@ -24,8 +24,15 @@ export default function CrossoverGraphThree() {
 	const visibleEdgesRef = useRef<THREE.LineSegments | null>(null);  // holds visible edges (handles udpates in useeffect);
 
 	const [selectedVertex, setSelectedVertex] = useState<Vertex | null>(null); // same as selectedVertexRef, but needed to trigger rerenders of the box in the bottom left with the franchise name
-	const [shiftKey, setShiftKey] = useState<boolean>(false); // is the shift key being held (needed to trigger rerender of the box in the bottom left)
-	const [isMobile, setIsMobile] = useState(window.innerWidth < 483);
+	const [shiftKey, _setShiftKey] = useState<boolean>(false); // is the shift key being held (needed to trigger rerender of the box in the bottom left)
+
+	// keep both the variable and state in sync
+	// react needs the state to trigger rerenders, but threejs cant read the updated state value (fucking web development)
+	// so i have shiftKeyPress, a regular variable, and shiftKey, the state variable
+	const setShiftKey = (value: boolean) => {
+		shiftKeyPress = value;
+		_setShiftKey(value);
+	}
 
 	useEffect(() => {
 		if (!mountRef.current) return;
@@ -98,10 +105,11 @@ export default function CrossoverGraphThree() {
 
 		const raycaster = new THREE.Raycaster();
 		const pointer = new THREE.Vector2();
+		const pointerPosLastFrame = new THREE.Vector2();
 		let cursorIsOverCanvas: boolean = false;
 
-		const onKeyPress = (event: KeyboardEvent) => { if (event.shiftKey) { shiftKeyPress = true; setShiftKey(true) } }
-		const onKeyRelease = (event: KeyboardEvent) => { if (event.key === "Shift") { shiftKeyPress = false; setShiftKey(false) } }
+		const onKeyPress = (event: KeyboardEvent) => { if (event.shiftKey) { setShiftKey(true) } }
+		const onKeyRelease = (event: KeyboardEvent) => { if (event.key === "Shift") { setShiftKey(false) } }
 		const onMouseLeave = () => { cursorIsOverCanvas = false; }
 		const onMouseMove = (event: MouseEvent) => {
 			const rect = renderer.domElement.getBoundingClientRect();
@@ -111,9 +119,10 @@ export default function CrossoverGraphThree() {
 			cursorIsOverCanvas = (event.clientX >= rect.left && event.clientX <= rect.right && event.clientY >= rect.top && event.clientY <= rect.bottom);
 		}
 		const onTouchStart = (event: TouchEvent) => {
+			if (event.touches.length == 0) return;
+
 			hasTappedScreen = true;
 			setShiftKey(true);
-			if (event.touches.length == 0) return;
 
 			const rect = renderer.domElement.getBoundingClientRect();
 			const touch = event.touches[0];
@@ -128,7 +137,6 @@ export default function CrossoverGraphThree() {
 		renderer.domElement.addEventListener('touchstart', onTouchStart);
 		document.addEventListener('keydown', onKeyPress);
 		document.addEventListener('keyup', onKeyRelease);
-		controls.addEventListener('change', () => console.log('dragging'))
 		controls.addEventListener('start', setIsDraggingTrue);
 		controls.addEventListener('end', setIsDraggingFalse);
 
@@ -147,14 +155,12 @@ export default function CrossoverGraphThree() {
 
 			if (nodeMesh && nodeMesh?.material instanceof THREE.ShaderMaterial) {
 				// top right corner of the screen in world space
-				const topRight = new THREE.Vector3(1, 1, 0.0).unproject(camera);
+				const topRight = new THREE.Vector3(1, 0, 0.0).unproject(camera);
 				nodeMesh.material.uniforms.topRight.value.copy(topRight);
 				nodeMesh.material.uniforms.camPos.value.copy(camera.position);
 			}
 
-			// todo: if cursor postition has not changed between frames, skip
 			if (!isDraggingOrZooming && (cursorIsOverCanvas || hasTappedScreen)) {
-				// console.log(cursorIsOverCanvas, hasTappedScreen)
 				// raycast
 				raycaster.setFromCamera(pointer, camera);
 				const intersections = raycaster.intersectObjects(scene.children);
@@ -207,13 +213,14 @@ export default function CrossoverGraphThree() {
 
 			renderer.render(scene, camera);
 			stats.end();
+			pointerPosLastFrame.copy(pointer);
 			animationIdRef.current = requestAnimationFrame(RenderAllShapes);
 		};
 
 		// can only hide the scrollbar on this page by setting the body to have overflow: hidden
 		// but that affects it globally and prevents scrolling on all other pages too
 		// add this no-scroll property when the page is loaded, and remove it when it is unloaded
-		// document.body.classList.add("no-scroll");
+		document.body.classList.add("no-scroll");
 
 
 		RenderAllShapes();
@@ -221,6 +228,7 @@ export default function CrossoverGraphThree() {
 
 		return () => {
 			if (animationIdRef.current) cancelAnimationFrame(animationIdRef.current);
+			document.body.classList.remove('no-scroll');
 
 			window.removeEventListener('resize', handleResize);
 			renderer.domElement.removeEventListener('pointerleave', onMouseLeave);
@@ -228,9 +236,8 @@ export default function CrossoverGraphThree() {
 			renderer.domElement.removeEventListener('touchstart', onTouchStart);
 			document.removeEventListener('keydown', onKeyPress);
 			document.removeEventListener('keyup', onKeyRelease);
-			document.body.classList.remove('no-scroll');
 			controls.removeEventListener('start', setIsDraggingTrue);
-			controls.removeEventListener('end', () => setIsDraggingFalse);
+			controls.removeEventListener('end', setIsDraggingFalse);
 
 			renderer.dispose();
 		};
