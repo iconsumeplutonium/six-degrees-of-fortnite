@@ -165,7 +165,7 @@ export default function CrossoverGraphThree() {
 				raycaster.setFromCamera(pointer, camera);
 				const intersections = raycaster.intersectObjects(scene.children);
 				const sphereIntersection = intersections.find((intersection: THREE.Intersection) => intersection.object instanceof THREE.InstancedMesh);
-				// console.log("intersection?", sphereIntersection)
+
 				// if mouse is hovering over a node
 				if (sphereIntersection) {
 					// get the vertex under the cursor
@@ -244,29 +244,27 @@ export default function CrossoverGraphThree() {
 	}, []);
 
 	return (
-		<>
-			<div className='pageContainer'>
-				<Navigation />
-				<div
-					ref={mountRef}
-					className='canvas'
-				>
-					{selectedVertex && (
-						<div className='panel selectionInfo'>
-							<h3>{selectedVertex.name}</h3>
-							{(shiftKey) && graphDataRef.current &&
-								<p>
-									{VisualizerUtils.PrintHopsFromFortnite(graphDataRef.current.paths[selectedVertex.id].length, selectedVertex.name)}
-								</p>
-							}
-						</div>
-					)}
-
-					<div className='panel controlInfo'>
-						<GraphInfo />
+		<div className='pageContainer'>
+			<Navigation />
+			<div
+				ref={mountRef}
+				className='canvas'
+			>
+				{selectedVertex && (
+					<div className='panel selectionInfo'>
+						<h3>{selectedVertex.name}</h3>
+						{(shiftKey) && graphDataRef.current &&
+							<p>
+								{VisualizerUtils.PrintHopsFromFortnite(graphDataRef.current.paths[selectedVertex.id].length, selectedVertex.name)}
+							</p>
+						}
 					</div>
+				)}
+
+				<div className='panel controlInfo'>
+					<GraphInfo />
 				</div>
 			</div>
-		</>
+		</div>
 	);
 };
