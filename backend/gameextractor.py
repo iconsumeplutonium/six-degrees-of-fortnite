@@ -1,127 +1,152 @@
-import requests, bs4, sqlite3, argparse, re, Utilities, json
+import requests, bs4, sqlite3, argparse, re, Utilities, json, httpx, asyncio
 from tqdm import tqdm
+from tqdm.asyncio import tqdm
 
 ALL_PAGES_API: str = "https://fictionalcrossover.fandom.com/api.php?action=query&list=allpages&aplimit=max&format=json"
 
 # call API to get all articles
 def extractLinks() -> None:
-    allArticles: list[str] = []
-    url: str = str(ALL_PAGES_API)
-    
-    # api paginates the Special:AllPages article (500 max per page), so we loop until there is no continue parameter
-    while url:
-        response: requests.Response = requests.get(url)
-        data: dict = response.json()
+	allArticles: list[str] = []
+	url: str = str(ALL_PAGES_API)
+	
+	# api paginates the Special:AllPages article (500 max per page), so we loop until there is no continue parameter
+	while url:
+		response: requests.Response = requests.get(url)
+		data: dict = response.json()
 
-        if 'query' in data:
-            for page in data['query']['allpages']:
-                allArticles.append(page['title'])
-        
-        if 'continue' in data:
-            url = ALL_PAGES_API + f"&apcontinue={data['continue']['apcontinue']}"
-        else:
-            break
+		if 'query' in data:
+			for page in data['query']['allpages']:
+				allArticles.append(page['title'])
+		
+		if 'continue' in data:
+			url = ALL_PAGES_API + f"&apcontinue={data['continue']['apcontinue']}"
+		else:
+			break
 
-    #for some reason, the API returns multiple Ratchet & Clank articles. remove duplicates here, then sort it so its back in alphabetical order
-    # (because making it a set makes it non-alphabetical for some reason)
-    allArticles = sorted(list(set(allArticles)) )
-    with open('text/franchises_unfiltered.txt', 'w', encoding='utf-8') as file:
-        for franchise in allArticles:
-            file.write(Utilities.sanitize(franchise) + "\n")
+	#for some reason, the API returns multiple Ratchet & Clank articles. remove duplicates here, then sort it so its back in alphabetical order
+	# (because making it a set makes it non-alphabetical for some reason)
+	allArticles = sorted(list(set(allArticles)) )
+	with open('text/franchises_unfiltered.txt', 'w', encoding='utf-8') as file:
+		for franchise in allArticles:
+			file.write(Utilities.sanitize(franchise) + "\n")
 
 
 def filterAll():
-    disallowedCaptures: list[re.Pattern] = [
-        re.compile(r".* X .*"),
-        re.compile(r".*[c|C]ommercial"),
-        re.compile(r".*[p|P]romo.*"),
-        re.compile(r".*[a|A]ppearances"),
-        re.compile(r".*[b|B]umper"),
-        re.compile(r".*[c|C]rossover [w|W]iki.*"),
-        re.compile(r".*[c|C]ameo.*"),
-        re.compile(r".*[r|R]eference.*"),
-        re.compile(r".*[t|T]railer.*"),
-        re.compile(r".*[m|M]ascot.*"),
-        re.compile(r".* [r|R]ule.*"),
-    ]
+	disallowedCaptures: list[re.Pattern] = [
+		re.compile(r".* X .*"),
+		re.compile(r".*[c|C]ommercial"),
+		re.compile(r".*[p|P]romo.*"),
+		re.compile(r".*[a|A]ppearances"),
+		re.compile(r".*[b|B]umper"),
+		re.compile(r".*[c|C]rossover [w|W]iki.*"),
+		re.compile(r".*[c|C]ameo.*"),
+		re.compile(r".*[r|R]eference.*"),
+		re.compile(r".*[t|T]railer.*"),
+		re.compile(r".*[m|M]ascot.*"),
+		re.compile(r".* [r|R]ule.*"),
+	]
 
-    knownRedirects : dict[str, str] = Utilities.getRedirects()
-    miscRemovals   : set[str] = Utilities.getRemovals()
-    removalsWasUpdated : bool = False
+	knownRedirects : dict[str, str] = Utilities.getRedirects()
+	miscRemovals   : set[str] = Utilities.getRemovals()
+	removalsWasUpdated : bool = False
 
-    with open('text/franchises_unfiltered.txt', 'r', encoding='utf-8') as unfiltered:
-        with open('text/filtered_franchises.txt', 'w', encoding='utf-8') as filtered:
-            for franchise in unfiltered:
-                franchise : str = franchise.strip()
-                
-                # if known non-franchise, skip
-                if franchise in miscRemovals:
-                    continue
+	with open('text/franchises_unfiltered.txt', 'r', encoding='utf-8') as unfiltered:
+		with open('text/filtered_franchises.txt', 'w', encoding='utf-8') as filtered:
+			for franchise in unfiltered:
+				franchise : str = franchise.strip()
+				
+				# if known non-franchise, skip
+				if franchise in miscRemovals:
+					continue
 
-                # check if it matches regex
-                matchesRegex : bool = False
-                for regex in disallowedCaptures:
-                    if regex.match(franchise) is not None:
-                        matchesRegex = True
-                        break
-                
-                # if it matches regex, skip
-                if matchesRegex:
-                    miscRemovals.add(franchise)
-                    removalsWasUpdated = True
-                    continue
-                
-                # if redirect, skip
-                if franchise in knownRedirects:
-                    continue
-                
-                filtered.write(franchise + '\n')
-            
-            # several franchises with " X " in the name get filtered out by the regex
-            # manually insert them back in
-            insertion : list[str] = [
-                "Daemon X Machina",
-                "Project X Zone"
-            ]
+				# check if it matches regex
+				matchesRegex : bool = False
+				for regex in disallowedCaptures:
+					if regex.match(franchise) is not None:
+						matchesRegex = True
+						break
+				
+				# if it matches regex, skip
+				if matchesRegex:
+					miscRemovals.add(franchise)
+					removalsWasUpdated = True
+					continue
+				
+				# if redirect, skip
+				if franchise in knownRedirects:
+					continue
+				
+				filtered.write(franchise + '\n')
+			
+			# several franchises with " X " in the name get filtered out by the regex
+			# manually insert them back in
+			insertion : list[str] = [
+				"Daemon X Machina",
+				"Project X Zone"
+			]
 
-            for i in insertion:
-                filtered.write(i + "\n")
-    
-    if removalsWasUpdated:
-        with open('text/misc_removals.txt', 'w', encoding='utf-8') as removals:
-            for removal in miscRemovals:
-                removals.write(removal + '\n')
+			for i in insertion:
+				filtered.write(i + "\n")
+	
+	if removalsWasUpdated:
+		with open('text/misc_removals.txt', 'w', encoding='utf-8') as removals:
+			for removal in miscRemovals:
+				removals.write(removal + '\n')
 
 
-def cacheRedirects():
-    with open('text/franchises_unfiltered.txt', 'r', encoding='utf-8') as file:
-        franchises: list[str] = [f.strip() for f in file.readlines()]
+async def cacheRedirects():
+	async def checkIfRedirect(client: httpx.AsyncClient, franchise: str, semaphore: asyncio.Semaphore):
+		async with semaphore:
+			await asyncio.sleep(0.05)
+			url: str = Utilities.URL_BASE + Utilities.convertFranchiseToURL(franchise)
+			response = await client.get(url, follow_redirects=False)
+			print(f"[{franchise}] Status: {response.headers}")
+			exit(0)
+			if response.status_code not in [301, 302]: return None
 
-    redirects: dict[str, str] = {}
+			originalArticle: str = response.headers.get("location", "")
+			print(f"[{franchise}] Redirect location: {originalArticle}")
+			converted = Utilities.convertURLtoFranchise(originalArticle)
+			print(f"[{franchise}] Converted: {converted}")
+			return {franchise: converted}
 
-    for franchise in tqdm(franchises):
-        response: requests.Response = requests.get(Utilities.URL_BASE + Utilities.convertFranchiseToURL(franchise), allow_redirects=False)
-        if response.status_code != 301 and response.status_code != 302:
-            continue
 
-        originalArticle: str = response.headers["location"]
-        redirects[franchise] = Utilities.convertURLtoFranchise(originalArticle)
+	with open('text/franchises_unfiltered.txt', 'r', encoding='utf-8') as file:
+		franchises: list[str] = [f.strip() for f in file.readlines()]
 
-    with open("text/redirects.json", "w", encoding='utf-8') as file:
-        json.dump(redirects, file, indent=4)
+	semaphore: asyncio.Semaphore = asyncio.Semaphore(10)
+	async with httpx.AsyncClient() as client:
+		tasks = [checkIfRedirect(client, f, semaphore) for f in franchises]
+		results: list[dict] = await tqdm.gather(*tasks, desc="Checking redirects")
+
+	redirects: dict[str, str] = {}
+	for r in results:
+		if r: redirects.update(r)
+
+	# for franchise in tqdm(franchises):
+	# 	response: requests.Response = requests.get(Utilities.URL_BASE + Utilities.convertFranchiseToURL(franchise), allow_redirects=False)
+	# 	if response.status_code != 301 and response.status_code != 302:
+	# 		continue
+
+	# 	originalArticle: str = response.headers["location"]
+	# 	redirects[franchise] = Utilities.convertURLtoFranchise(originalArticle)
+
+	with open("text/redirects.json", "w", encoding='utf-8') as file:
+		json.dump(redirects, file, indent=4)
+
 
 
 def ConvertToTSArray() -> None:
-    with open("text/filtered_franchises.txt", "r", encoding="utf-8") as file:
-        franchises: list[str] = [f.strip().replace('"', '\\"') for f in file.readlines()]
+	with open("text/filtered_franchises.txt", "r", encoding="utf-8") as file:
+		franchises: list[str] = [f.strip().replace('"', '\\"') for f in file.readlines()]
 
-    with open("web/src/assets/filtered_franchises.ts", "w", encoding="utf-8") as file:
-        file.write("//autogenerated via python script\n")
-        file.write("//just copying over the file requires making a network request + splitting it and making an array, which takes too long\n")
-        file.write("export const franchiseList: string[] = [\n")
-        for f in franchises:
-            file.write(f'\t"{f}",\n')
-        file.write("];")
+	with open("web/src/assets/filtered_franchises.ts", "w", encoding="utf-8") as file:
+		file.write("//autogenerated via python script\n")
+		file.write("//just copying over the file requires making a network request + splitting it and making an array, which takes too long\n")
+		file.write("export const franchiseList: string[] = [\n")
+		for f in franchises:
+			file.write(f'\t"{f}",\n')
+		file.write("];")
 
 
 # franchises_unfiltered.txt ->   list of all franchises from the wiki. includes ads, redirects, etc.
@@ -132,37 +157,37 @@ def ConvertToTSArray() -> None:
 
 
 if __name__ == "__main__":
-    parser: argparse.ArgumentParser = argparse.ArgumentParser(description="stuff")
-    parser.add_argument('-e', "--extract",          action='store_true', help="Extract all webpages on fictional crossover wiki")
-    parser.add_argument('-r', "--cache-redirects",  action='store_true', help="Goes through franchises_unfiltered.txt and stores all redirects in redirects.json") 
-    parser.add_argument('-f', "--filter",           action='store_true', help="Filters franchise list by removing commercials, cameos, trailers, redirects, etc.")
-    parser.add_argument('-i', "--insert",           action='store_true', help="Inserts filtered franchise list into filtered_franchises.txt")
-    args: argparse.Namespace = parser.parse_args()
+	parser: argparse.ArgumentParser = argparse.ArgumentParser(description="stuff")
+	parser.add_argument('-e', "--extract",          action='store_true', help="Extract all webpages on fictional crossover wiki")
+	parser.add_argument('-r', "--cache-redirects",  action='store_true', help="Goes through franchises_unfiltered.txt and stores all redirects in redirects.json") 
+	parser.add_argument('-f', "--filter",           action='store_true', help="Filters franchise list by removing commercials, cameos, trailers, redirects, etc.")
+	parser.add_argument('-i', "--insert",           action='store_true', help="Inserts filtered franchise list into filtered_franchises.txt")
+	args: argparse.Namespace = parser.parse_args()
 
 
-    # (1) Extract all pages from the All Pages section of the wiki --------------------------------------------------------------------------------------------------------------------------------
-    if args.extract:
-        extractLinks()
-    
-    # (2) (Optional) Go through all articles in unfiltered_franchises.txt and determine which are redirects. Cache them in redirects.json --------------------------------------------------------
-    if args.cache_redirects:
-        cacheRedirects()
+	# (1) Extract all pages from the All Pages section of the wiki --------------------------------------------------------------------------------------------------------------------------------
+	if args.extract:
+		extractLinks()
+	
+	# (2) (Optional) Go through all articles in unfiltered_franchises.txt and determine which are redirects. Cache them in redirects.json --------------------------------------------------------
+	if args.cache_redirects:
+		asyncio.run(cacheRedirects())
 
-    # (3) Go through franchises_unfiltered.txt and remove ads, cameos, etc -----------------------------------------------------------------------------------------------------------------------
-    if args.filter:
-        filterAll()
-        ConvertToTSArray()
+	# (3) Go through franchises_unfiltered.txt and remove ads, cameos, etc -----------------------------------------------------------------------------------------------------------------------
+	if args.filter:
+		filterAll()
+		ConvertToTSArray()
 
-    # (3) Insert filtered franchise list into database --------------------------------------------------------------------------------------------------------------------------------------------
-    if args.insert:
-        conn: sqlite3.Connection = sqlite3.connect('text/crossovers.db')
-        cursor: sqlite3.Cursor = conn.cursor()
-        query: str = "INSERT INTO game (name, url) VALUES (?, ?)"
+	# (3) Insert filtered franchise list into database --------------------------------------------------------------------------------------------------------------------------------------------
+	if args.insert:
+		conn: sqlite3.Connection = sqlite3.connect('text/crossovers.db')
+		cursor: sqlite3.Cursor = conn.cursor()
+		query: str = "INSERT INTO game (name, url) VALUES (?, ?)"
 
-        with open('text/filtered_franchises.txt', 'r', encoding='utf-8') as file:
-            for line in file.readlines():
-                url: str = Utilities.URL_BASE + Utilities.convertFranchiseToURL(line)
-                cursor.execute(query, (line.strip(), url))
-        
-        conn.commit()
-        conn.close()
+		with open('text/filtered_franchises.txt', 'r', encoding='utf-8') as file:
+			for line in file.readlines():
+				url: str = Utilities.URL_BASE + Utilities.convertFranchiseToURL(line)
+				cursor.execute(query, (line.strip(), url))
+		
+		conn.commit()
+		conn.close()

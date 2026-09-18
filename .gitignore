@@ -1,9 +1,9 @@
 .vscode/
 venv/
 psd_assets/
-web/node_modules
-web/.env
-web/dist
+node_modules
+.env
+dist
 *.ps1
 *.ipynb
 __pycache__/

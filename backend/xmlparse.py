@@ -44,6 +44,11 @@ if __name__ == "__main__":
 	# if title is misc removal or should be filtered, ignore it
 	# insert to txt file
 
+	# note: redirects can furtuerh redirect
+	# eg     "Archie": "Archie (Comic Series)" and "Archie (Comic Series)": "Archie (Archie Comics)",
+	# or Minna to Series -> Minna to (Series) -> Minna to
+	# need to fix
+
 
 	print("Begining parse")
 	knownRedirects : dict[str, str] = Utilities.getRedirects()
@@ -66,11 +71,11 @@ if __name__ == "__main__":
 
 		franchises.append(title)
 
-	writeToFile("backend/test.txt", franchises)
+	writeToFile("text/filtered_franchises.txt", franchises)
 	if removalsWasUpdated:
 		with open('text/misc_removals.txt', 'w', encoding='utf-8') as removals:
 			for removal in miscRemovals:
 				removals.write(removal + '\n')
-	writeToJSON("backend/testredirect.json", redirects)
+	writeToJSON("text/redirects.json", redirects)
 
 		
