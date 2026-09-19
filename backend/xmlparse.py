@@ -1,19 +1,4 @@
-import bs4, lxml, time, re, Utilities, json, tqdm, sqlite3, urllib.parse, pickle
-
-disallowedCaptures: list[re.Pattern] = [
-	re.compile(r".* X .*"),
-	re.compile(r".*[c|C]ommercial"),
-	re.compile(r".*[p|P]romo.*"),
-	re.compile(r".*[a|A]ppearances"),
-	re.compile(r".*[b|B]umper"),
-	re.compile(r".*[c|C]rossover [w|W]iki.*"),
-	re.compile(r".*[c|C]ameo.*"),
-	re.compile(r".*[r|R]eference.*"),
-	re.compile(r".*[t|T]railer.*"),
-	re.compile(r".*[m|M]ascot.*"),
-	re.compile(r".* [r|R]ule.*"),
-	re.compile(r".*\(disambiguation\).*")
-]
+import bs4, lxml, time, re, Utilities, json, tqdm, sqlite3, urllib.parse
 
 categoriesRegex: re.Pattern = re.compile(r'\[\[Category:(.+)\]\]', re.IGNORECASE)
 disallowedCategories: set[str] = set([
@@ -23,29 +8,16 @@ disallowedCategories: set[str] = set([
 	"Direct links", 
 	"Disambiguation pages",
 	"Mascot links",
-	"Crossover rules"
+	"Crossover rules",
+	"Undirect links",
+	"Commercials"
 ])
-
-def isDisallowed(title: str) -> bool:
-	for regex in disallowedCaptures:
-		if regex.match(title) is not None:
-			return True
-
-	return False
 
 def inDisallowedCategory(p: bs4.element.Tag) -> bool:
 	articleText: str = p.revision.find("text").get_text() # type: ignore
 	matches: list[str] = re.findall(categoriesRegex, articleText)
 
 	return not disallowedCategories.isdisjoint(set(matches))
-
-def writeToFile(name: str, content: list[str]):
-	with open(name, "w", encoding="utf-8") as file:
-		file.writelines([c + '\n' for c in content])
-
-def writeToJSON(name: str, content: dict):
-	with open(name, "w", encoding="utf-8") as file:
-		json.dump(content, file, indent=4, sort_keys=True)
 
 def convertToTSArray() -> None:
 	with open("text/filtered_franchises.txt", "r", encoding="utf-8") as file:
@@ -59,39 +31,24 @@ def convertToTSArray() -> None:
 			file.write(f'\t"{f}",\n')
 		file.write("];")
 
-def extractTable(page: bs4.element.Tag, title: str) -> str:
+def extractTable(page: bs4.element.Tag, title: str) -> str|None:
 	content: str = page.revision.find("text").get_text() # type: ignore
 	try:
-		a = re.split(r'== ?Links? [t|T]o.+==', content) #some articles have "Link to other series" instead of "links"
-		b = a[1]
+		table: str = re.split(r'== ?Links? to other.+==', content, flags=re.IGNORECASE)[1] #some articles have "Link to other series" instead of "links"
 	except:
-		print(a)
-		print()
-		print(title)
-		exit(1)
-	return a[1]
-
-# notes:
-# "DC Extended Universe" article is under construction, remove from misc_removals once its completed
-# also maybe "DC Universe (film franchise)"?
+		return None
+	return table
 
 
 if __name__ == "__main__":
 	with open("text/fictionalcrossover_pages_current.xml", "r", encoding="UTF-8") as file:
 		content = ''.join(file.readlines())
 
-	soup: bs4.BeautifulSoup = bs4.BeautifulSoup(content, "lxml")
-	pages: list = sorted([p for p in soup.find_all("page") if p.ns and p.ns.text.strip() == '0'], key=lambda p: p.title.contents[0]) # type: ignore # all articles are in namespace 0
 	# note to self: it takes ~8 seconds to create the bs4 object. i tried
 	# dumping it to disk after creating it and reading the pkl file whenever i run the script
 	# it still takes 8 seconds to read it from disk
-
-	# for each page
-	# if redirect
-	# 	save original and destination
-	# 	continue
-	# if title is misc removal or should be filtered, ignore it
-	# insert to txt file
+	soup: bs4.BeautifulSoup = bs4.BeautifulSoup(content, "lxml")
+	pages: list = sorted([p for p in soup.find_all("page") if p.ns and p.ns.text.strip() == '0'], key=lambda p: p.title.contents[0]) # type: ignore # all articles are in namespace 0
 
 	# note: redirects can furtuerh redirect
 	# eg     "Archie": "Archie (Comic Series)" and "Archie (Comic Series)": "Archie (Archie Comics)",
@@ -107,13 +64,7 @@ if __name__ == "__main__":
 	franchises: list[str] = []
 	franchiseToPage: dict[str, str] = {}
 
-	# several franchises with " X " in the name get filtered out by the regex
-	# manually insert them back in
-	insertion: list[str] = [
-		"Daemon X Machina",
-		"Project X Zone"
-	]
-
+	failures = []
 	for p in tqdm.tqdm(pages):
 		title: str = Utilities.sanitize(p.title.contents[0])
 		if p.redirect:
@@ -122,21 +73,21 @@ if __name__ == "__main__":
 			continue
 
 		# not all articles are categorized correctly
-		if title not in insertion and (inDisallowedCategory(p)): #or isDisallowed(title) or title in miscRemovals):
-			miscRemovals.add(title)
-			removalsWasUpdated = True
+		if title in miscRemovals or inDisallowedCategory(p):
 			continue
 		
 
-		franchises.append(title)
-		franchiseToPage[title] = extractTable(p, title)
+		table: str|None = extractTable(p, title)
+		if not table: 
+			failures.append(title)
+			continue
 
-	writeToFile("text/filtered_franchises.txt", franchises)
-	if removalsWasUpdated:
-		with open('text/misc_removals.txt', 'w', encoding='utf-8') as removals:
-			for removal in miscRemovals:
-				removals.write(removal + '\n')
-	writeToJSON("text/redirects.json", redirects)
+		franchiseToPage[title] = table
+		franchises.append(title)
+
+	# Utilities.writeToFile("text/failures.txt", failures)
+	Utilities.writeToFile("text/filtered_franchises.txt", franchises)
+	Utilities.writeToJSON("text/redirects.json", redirects)
 	convertToTSArray()
 
 	with open("text/test.json", "w", encoding="utf-8") as file:
@@ -148,7 +99,7 @@ if __name__ == "__main__":
 
 	with open('text/filtered_franchises.txt', 'r', encoding='utf-8') as file:
 		for line in file.readlines():
-			url: str = urllib.parse.unquote(Utilities.URL_BASE + line)
+			url: str = Utilities.URL_BASE + urllib.parse.quote(line)
 			
 			cursor.execute(query, (line.strip(), url))
 	

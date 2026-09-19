@@ -28,3 +28,11 @@ def getRemovals() -> set[str]:
             miscRemovals.add(removal.strip())
     
     return miscRemovals
+
+def writeToFile(name: str, content: list[str]):
+	with open(name, "w", encoding="utf-8") as file:
+		file.writelines([c + '\n' for c in content])
+
+def writeToJSON(name: str, content: dict):
+	with open(name, "w", encoding="utf-8") as file:
+		json.dump(content, file, indent=4, sort_keys=True)

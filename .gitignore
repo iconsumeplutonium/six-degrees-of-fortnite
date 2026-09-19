@@ -7,3 +7,4 @@ dist
 *.ps1
 *.ipynb
 __pycache__/
+*.xml
