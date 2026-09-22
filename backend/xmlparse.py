@@ -57,7 +57,6 @@ if __name__ == "__main__":
 
 
 	print("Begining parse")
-	knownRedirects : dict[str, str] = Utilities.getRedirects()
 	miscRemovals   : set[str] = Utilities.getRemovals()
 	redirects: dict[str, str] = {}
 	removalsWasUpdated : bool = False
@@ -76,22 +75,21 @@ if __name__ == "__main__":
 		if title in miscRemovals or inDisallowedCategory(p):
 			continue
 		
-
 		table: str|None = extractTable(p, title)
 		if not table: 
 			failures.append(title)
 			continue
-
+			
 		franchiseToPage[title] = table
 		franchises.append(title)
 
 	# Utilities.writeToFile("text/failures.txt", failures)
 	Utilities.writeToFile("text/filtered_franchises.txt", franchises)
 	Utilities.writeToJSON("text/redirects.json", redirects)
+	Utilities.writeToJSON("text/pages.json", franchiseToPage)
 	convertToTSArray()
 
-	with open("text/test.json", "w", encoding="utf-8") as file:
-		json.dump(franchiseToPage, file, indent=4)
+
 
 	conn: sqlite3.Connection = sqlite3.connect('text/crossovers.db')
 	cursor: sqlite3.Cursor = conn.cursor()

@@ -1,19 +1,6 @@
 import sqlite3, json, Utilities, re, tqdm
 
-tableEntryRegex: re.Pattern = re.compile(r"\{\{(.+)\|(.+)\|(.+)\|(.+)\|\|(.+)\|(.+)\|(.+)\|(.+)}}")
-
-def parseTable(article: str):
-	matches: list = re.findall(tableEntryRegex, article)
-	results: list = []
-	for m in matches:
-		_, name, direction, link, month, day, year, description = m
-		results.append({
-			"game": name,
-			"date": f"{month}-{day}-{year}",
-			"description": description,
-			"linkType": link
-		})
-	return results
+tableEntryRegex: re.Pattern = re.compile(r"\{\{([^|]+)\|([^|]+)\|([^|]+)\|([^|]+)\|[^|]*\|([^|]+)\|([^|]+)\|([^|]+)\|(.*?)\}\}")
 	
 if __name__ == "__main__":
 	# idLookup maps franchise name to its id in the database
@@ -50,6 +37,7 @@ if __name__ == "__main__":
 		matches: list = re.findall(tableEntryRegex, articles[f])
 		for m in matches:
 			_, name, direction, link, day, month, year, description = m
+			description: str = description.replace("<nowiki>|</nowiki>", "|").replace("''", "'").strip()
 
 			while name in redirectMap:
 				name = redirectMap[name]
@@ -65,3 +53,4 @@ if __name__ == "__main__":
 			cursor.execute(INSERT_QUERY, (idLookup[f], idLookup[name], description, f"{month}-{day}-{year}", int(link[0])))
 
 	conn.commit()
+	conn.close()
