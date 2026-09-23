@@ -1,4 +1,5 @@
 import bs4, lxml, time, re, Utilities, json, tqdm, sqlite3, urllib.parse
+import mwparserfromhell
 
 categoriesRegex: re.Pattern = re.compile(r'\[\[Category:(.+)\]\]', re.IGNORECASE)
 disallowedCategories: set[str] = set([
