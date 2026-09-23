@@ -1,25 +1,29 @@
 import sqlite3, json, Utilities, re
 from tqdm import tqdm
 import mwparserfromhell
+from mwparserfromhell.nodes import Template
 
 tableEntryRegex: re.Pattern = re.compile(r"\{\{([^|]+)\|([^|]+)\|([^|]+)\|([^|]+)\|[^|]*\|([^|]+)\|([^|]+)\|([^|]+)\|(.*?)\}\}")
 
 def parseTable(article: str) -> list[dict]:
+	def get(t: Template, num: int) -> str:
+		return str(t.get(num).value.strip_code()).strip()
+
 	parsed: list[dict[str, str]] = []
-	templates: list = mwparserfromhell.parse(articles[f]).filter_templates()
+	templates: list[Template] = mwparserfromhell.parse(article).filter_templates()
 	for t in templates:
 		if not t.name.lower()[0] == "l": continue
 		# https://fictionalcrossover.fandom.com/wiki/Template:L#Usage
 		try:
 			parsed.append({
-				"name": str(t.get(1).value).strip(),
-				"direction": str(t.get(2).value).strip(),
-				"linktype": str(t.get(3).value).strip(),
-				# "specialsubtype": str(t.get(4).value).strip(),
-				"day": str(t.get(5).value).strip(),
-				"month": str(t.get(6).value).strip(),
-				"year": str(t.get(7).value).strip(),
-				"description": str(t.get(8).value).strip(),
+				"name": get(t, 1),
+				"direction": get(t, 2),
+				"linktype": get(t, 3),
+				# "specialsubtype": get(t, 4),
+				"day": get(t, 5),
+				"month": get(t, 6),
+				"year": get(t, 7),
+				"description": get(t, 8),
 			})
 		except:
 			print(t)
@@ -85,12 +89,10 @@ if __name__ == "__main__":
 				# exit(1)
 				continue
 
-			try:
-				cursor.execute(INSERT_QUERY, (idLookup[f], idLookup[name], description, f'{link["month"]}-{link["day"]}-{link["year"]}', linkInt))
-			except Exception as e:
-				tqdm.write(link)
-				tqdm.write(e)
-				exit(1)
+			date: str = f'{link["month"]}-{link["day"]}-{link["year"]}'.replace('--', '-') # in case theres no day
+
+			cursor.execute(INSERT_QUERY, (idLookup[f], idLookup[name], description, date, linkInt))
+
 
 	conn.commit()
 	conn.close()
