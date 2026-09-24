@@ -31,6 +31,11 @@ def parseTable(article: str) -> list[dict]:
 
 	return parsed
 
+def formatDate(month: str, day: str, year: str) -> str:
+	if not month and not day: return year
+	if not day: return f"{month}-{year}"
+	return f"{month}-{day}-{year}"
+
 	
 if __name__ == "__main__":
 	# idLookup maps franchise name to its id in the database
@@ -64,12 +69,8 @@ if __name__ == "__main__":
 		if not f: continue
 		tqdm.write(f)
 
-		# print(articles[f])
-		
-
 		links: list[dict[str, str]] = parseTable(articles[f])
 		for link in links:
-			# _, name, direction, link, day, month, year, description = m
 			description: str = link["description"].replace("''", "'").strip()
 
 			name: str = str(link["name"])
@@ -77,7 +78,7 @@ if __name__ == "__main__":
 				name = redirectMap[name]
 
 			if name not in idLookup: 
-				tqdm.write(f"skipping because {name} is unknown")
+				# tqdm.write(f"skipping because {name} is unknown")
 				# exit(1)
 				continue
 
@@ -85,12 +86,11 @@ if __name__ == "__main__":
 			try:
 				linkInt: int = int(link["linktype"][0])
 			except:
-				tqdm.write(f"skipping because {link} has unknown link type")
+				# tqdm.write(f"skipping because {link} has unknown link type")
 				# exit(1)
 				continue
 
-			date: str = f'{link["month"]}-{link["day"]}-{link["year"]}'.replace('--', '-') # in case theres no day
-
+			date: str = formatDate(link["month"], link["day"], link["year"])
 			cursor.execute(INSERT_QUERY, (idLookup[f], idLookup[name], description, date, linkInt))
 
 
