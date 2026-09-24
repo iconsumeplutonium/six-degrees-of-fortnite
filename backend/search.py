@@ -37,6 +37,27 @@ def neighbors(franchise: int) -> list[tuple[int, int]]:
 	# print(result)
 	# return [(nameToID[crossover["game"]], crossover["linkType"]) for crossover in adj[idToName[franchise]]]
 
+def getLink(start: int, end: int): #4594, 1781
+	cursor.execute('''
+		SELECT g.name, crossoverDate, description, linkType 
+		FROM links 
+		JOIN game g ON g.id = gameID 
+		WHERE 
+			gameID = ? and COgameID = ?;
+	''', (start, end))
+	try:
+		data: tuple = cursor.fetchall()[0]
+	except:
+		print(start)
+		print(end)
+		print(cursor.fetchall())
+	else:
+		return {
+			"name": data[0],
+			"date": data[1],
+			"description": data[2],
+			"linkType": data[3],
+		}
 
 # finds the shortest path from start to Fortnite
 def bfs(startingFranchise: int, minLinkType: int, log: bool = False) -> dict | None:
@@ -141,8 +162,61 @@ if __name__ == "__main__":
 		bfs(start, minLinkType, True)
 	else:
 		allPaths: dict[str, dict] = {}
-		for id in tqdm(idToName):
-			allPaths[idToName[id]] = bfs(id, 1, False)
+		highestID: int = cursor.execute("select max(id) from game;").fetchall()[0][0]
+
+		queue: deque[int] = deque()
+		visited: set[int] = set()
+		predecessor: dict[int, int] = {FORTNITE: -1}
+		queue.append(FORTNITE)
+		visited.add(FORTNITE)
+
+		with tqdm(total=highestID, desc="Pathfinding outwards") as bar:
+			while len(queue) > 0:
+				franchiseID: int = queue.popleft()
+				bar.update(1)
+				adjacent: list[tuple[int, int]] = neighbors(franchiseID)
+				for crossover in adjacent:
+					crossoverID:   int = crossover[0]
+					crossovertype: int = crossover[1]
+
+					if crossoverID in visited: continue
+					if crossovertype > minLinkType: continue
+
+					predecessor[crossoverID] = franchiseID
+					queue.append(crossoverID)
+					visited.add(crossoverID)
+			bar.n = highestID
+			bar.update()
+
+
+		for i in tqdm(range(1, highestID + 1), desc="Creating paths from predecessors"):
+			name: str = idToName[i]
+			if i not in predecessor:
+				allPaths[name] = {"found": False, "path": []}
+				continue
+
+			idPath: list[int] = [i]
+			parent = predecessor[i]
+			found: bool = True
+			for x in range(10):
+				if parent == -1: 
+					found = True
+					break
+				idPath.append(parent)
+				parent = predecessor[parent]
+
+			allPaths[name] = {"found": True, "path": []}
+			for hop in range(1, len(idPath)):
+				start: int = idPath[hop-1]
+				end: int = idPath[hop]
+				allPaths[name]["path"].append(getLink(end, start))
+
+			if not found:
+				print(f"couldnt find path from {i}")
+				exit(1)
+
+
+
 		
-		with open('text/AllPaths.json', 'w') as f:
+		with open('text/AllPaths2.json', 'w') as f:
 			json.dump(allPaths, f, indent=4)
