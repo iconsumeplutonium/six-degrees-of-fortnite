@@ -31,10 +31,17 @@ def parseTable(article: str) -> list[dict]:
 
 	return parsed
 
+months: list[str] = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 def formatDate(month: str, day: str, year: str) -> str:
 	if not month and not day: return year
-	if not day: return f"{month}-{year}"
-	return f"{month}-{day}-{year}"
+
+	# try:
+	displayMonth: str = months[int(month) - 1]
+	# except:
+	# 	print(month)
+	# 	exit(0)
+	if not day: return f"{displayMonth} {year}"
+	return f"{displayMonth} {day}, {year}"
 
 	
 if __name__ == "__main__":
@@ -46,7 +53,7 @@ if __name__ == "__main__":
 	conn: sqlite3.Connection = sqlite3.connect('text/crossovers.db')
 	cursor: sqlite3.Cursor = conn.cursor()
 
-	cursor.execute("SELECT id, name, url FROM game;")
+	cursor.execute("SELECT id, name, url FROM game order by id;")
 	rows = cursor.fetchall()
 	for row in rows:
 		id   : int = row[0]

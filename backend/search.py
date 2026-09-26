@@ -32,7 +32,7 @@ def pathToNames(path: list[int]) -> list[str]:
 	return [idToName[franchise] for franchise in path]
 
 def neighbors(franchise: int) -> list[tuple[int, int]]:
-	cursor.execute("select COgameID,linkType from links where gameID = ?", (franchise,))
+	cursor.execute("select COgameID,linkType from links where gameID = ? order by COgameID", (franchise,))
 	return cursor.fetchall()
 	# print(result)
 	# return [(nameToID[crossover["game"]], crossover["linkType"]) for crossover in adj[idToName[franchise]]]
@@ -180,7 +180,7 @@ if __name__ == "__main__":
 					crossovertype: int = crossover[1]
 
 					if crossoverID in visited: continue
-					if crossovertype > minLinkType: continue
+					if crossovertype > 1: continue
 
 					predecessor[crossoverID] = franchiseID
 					queue.append(crossoverID)
