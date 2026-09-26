@@ -218,5 +218,5 @@ if __name__ == "__main__":
 
 
 		
-		with open('text/AllPaths2.json', 'w') as f:
+		with open('text/AllPaths.json', 'w') as f:
 			json.dump(allPaths, f, indent=4)

@@ -256,6 +256,7 @@ Table links {
   COgameID integer
   description varchar
   crossoverDate varchar
+  linkType real
 }
 
 Ref: game.id < links.gameID

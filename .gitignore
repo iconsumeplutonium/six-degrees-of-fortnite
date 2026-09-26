@@ -8,3 +8,5 @@ dist
 *.ipynb
 __pycache__/
 *.xml
+stats
+pages.json
